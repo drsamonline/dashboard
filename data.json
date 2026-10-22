@@ -1,10 +1,10 @@
 {
   "generated": "2026-10-22",
-  "reckoning": "49 projects \u00b7 avg conformance 4.9/5 \u00b7 updated automatically.",
+  "reckoning": "56 projects \u00b7 avg conformance 4.9/5 \u00b7 updated automatically.",
   "cards": [
     {
       "title": "Projects",
-      "value": "49",
+      "value": "56",
       "tone": ""
     },
     {
@@ -25,13 +25,83 @@
   ],
   "repos": [
     {
+      "name": "case-kit",
+      "description": "Clinical case tracking: sections, dated symptoms, follow-ups, a timeline and a summary. Zero dependencies, MIT.",
+      "pushed_at": "2026-10-22T20:10:43Z",
+      "homepage": "https://drsamonline.github.io/case-kit/",
+      "html_url": "https://github.com/drsamonline/case-kit",
+      "download": "",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "book-kit",
+      "description": "The companion-app-from-a-book pattern: chapters, key points, practices, flashcards, search and reading progress. Zero dependencies, MIT.",
+      "pushed_at": "2026-10-22T20:10:38Z",
+      "homepage": "https://drsamonline.github.io/book-kit/",
+      "html_url": "https://github.com/drsamonline/book-kit",
+      "download": "",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "srs-kit",
+      "description": "Spaced repetition (SM-2) for flashcards: scheduling, lapses, due cards and stats. Zero dependencies, MIT.",
+      "pushed_at": "2026-10-22T20:10:34Z",
+      "homepage": "https://drsamonline.github.io/srs-kit/",
+      "html_url": "https://github.com/drsamonline/srs-kit",
+      "download": "",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "search-kit",
+      "description": "Ranked search over big corpora: an inverted index with prefix and fuzzy matching. Zero dependencies, MIT.",
+      "pushed_at": "2026-10-22T20:10:28Z",
+      "homepage": "https://drsamonline.github.io/search-kit/",
+      "html_url": "https://github.com/drsamonline/search-kit",
+      "download": "",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "repertory-kit",
+      "description": "The homeopathic repertorisation core: rubric grading and grade-weighted remedy scoring. Zero dependencies, MIT.",
+      "pushed_at": "2026-10-22T20:10:23Z",
+      "homepage": "https://drsamonline.github.io/repertory-kit/",
+      "html_url": "https://github.com/drsamonline/repertory-kit",
+      "download": "",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "app-panchang",
+      "description": "A daily Indian almanac \u2014 tithi, nakshatra, yoga, karana, rahu-kaal and muhurat, computed offline. Built with Forge.",
+      "pushed_at": "2026-10-22T19:43:39Z",
+      "homepage": "https://drsamonline.github.io/app-panchang/",
+      "html_url": "https://github.com/drsamonline/app-panchang",
+      "download": "",
+      "status": "4/5",
+      "status_tone": "ok"
+    },
+    {
       "name": "Matneo",
       "description": "AI-powered digital products and automation platform.",
-      "pushed_at": "2026-10-22T19:25:17Z",
+      "pushed_at": "2026-10-22T19:42:15Z",
       "homepage": "https://drsamonline.github.io/Matneo/",
       "html_url": "https://github.com/drsamonline/Matneo",
       "download": "",
       "status": "4/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "astro-kit",
+      "description": "The shared astronomy core for drsamonline apps: sun and moon longitude (Meeus), ayanamsa, sunrise/sunset, and tithi/nakshatra/yoga/karana. Zero dependencies. MIT.",
+      "pushed_at": "2026-10-22T19:42:08Z",
+      "homepage": "https://drsamonline.github.io/astro-kit/",
+      "html_url": "https://github.com/drsamonline/astro-kit",
+      "download": "",
+      "status": "5/5",
       "status_tone": "ok"
     },
     {
