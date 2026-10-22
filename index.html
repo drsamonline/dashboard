@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>drsamonline — system status</title>
+<style>
+  :root{--bg:#0f1115;--card:#171a21;--ink:#e7e9ee;--mut:#9aa3b2;--ok:#22c55e;--warn:#f59e0b;--bad:#ef4444;--line:#252a34}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+  header{padding:28px 20px 10px;max-width:1100px;margin:0 auto}
+  h1{margin:0 0 6px;font-size:22px}
+  #reckoning{color:var(--mut);margin:0}
+  main{max-width:1100px;margin:0 auto;padding:12px 20px 40px}
+  .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));margin:18px 0}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+  .card h3{margin:0 0 6px;font-size:15px}
+  .card p{margin:0;color:var(--mut);font-size:13px}
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);font-size:13px}
+  th{color:var(--mut);font-weight:600}
+  tr:last-child td{border-bottom:0}
+  a{color:#7dd3fc;text-decoration:none}
+  .pill{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11px;border:1px solid var(--line)}
+  .ok{color:var(--ok)} .warn{color:var(--warn)} .bad{color:var(--bad)}
+  footer{max-width:1100px;margin:0 auto;padding:0 20px 40px;color:var(--mut);font-size:12px}
+</style>
+</head>
+<body>
+<header>
+  <h1>drsamonline — system status</h1>
+  <p id="reckoning">Loading…</p>
+</header>
+<main>
+  <div class="grid" id="cards"></div>
+  <table>
+    <thead><tr><th>Repo</th><th>What it is</th><th>Last push</th><th>Links</th></tr></thead>
+    <tbody id="repos"></tbody>
+  </table>
+</main>
+<footer id="foot"></footer>
+
+<script>
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+function fmt(d){if(!d)return "—";try{return new Date(d).toISOString().slice(0,10);}catch(e){return d;}}
+
+fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(function(d){
+  document.getElementById("reckoning").textContent = d.reckoning || "";
+  document.getElementById("foot").textContent =
+    "Generated " + (d.generated||"") + " · © 2026 Dr Sohil Momin · Forge system";
+
+  var cards = d.cards || [];
+  document.getElementById("cards").innerHTML = cards.map(function(c){
+    return '<div class="card"><h3>'+esc(c.title)+'</h3><p class="'+esc(c.tone||"")+'">'+esc(c.value)+'</p></div>';
+  }).join("");
+
+  var repos = d.repos || [];
+  document.getElementById("repos").innerHTML = repos.map(function(r){
+    var links = [];
+    if(r.homepage) links.push('<a href="'+esc(r.homepage)+'">page</a>');
+    if(r.html_url) links.push('<a href="'+esc(r.html_url)+'">repo</a>');
+    if(r.download) links.push('<a href="'+esc(r.download)+'">download</a>');
+    var st = r.status ? '<span class="pill '+esc(r.status_tone||"")+'">'+esc(r.status)+'</span> ' : "";
+    return '<tr><td>'+st+'<strong>'+esc(r.name)+'</strong></td><td>'+esc(r.description)+'</td><td>'+fmt(r.pushed_at)+'</td><td>'+links.join(" · ")+'</td></tr>';
+  }).join("");
+}).catch(function(e){
+  document.getElementById("reckoning").textContent = "No data yet — the first Forge refresh has not run.";
+});
+</script>
+</body>
+</html>
