@@ -1,10 +1,10 @@
 {
   "generated": "2026-10-22",
-  "reckoning": "51 repos tracked \u00b7 28 products \u00b7 14 kits/engines \u00b7 avg conformance 3.7/5.",
+  "reckoning": "51 repos \u00b7 28 products \u00b7 14 kits/engines \u00b7 avg conformance 3.7/5 \u00b7 1 known issue.",
   "cards": [
     {
       "title": "Repos",
-      "value": "51 tracked",
+      "value": "51",
       "tone": ""
     },
     {
@@ -23,13 +23,18 @@
       "tone": "warn"
     },
     {
+      "title": "Known issues",
+      "value": "1 resolved",
+      "tone": "ok"
+    },
+    {
       "title": "Store",
       "value": "Matneo \u2014 live",
       "tone": "ok"
     },
     {
       "title": "Forge",
-      "value": "Step 1 done",
+      "value": "Step 3 done",
       "tone": "ok"
     }
   ],
