@@ -1,10 +1,10 @@
 {
-  "generated": "2026-10-22",
-  "reckoning": "56 projects \u00b7 avg conformance 4.9/5 \u00b7 updated automatically.",
+  "generated": "2026-10-23",
+  "reckoning": "57 projects \u00b7 avg conformance 4.9/5 \u00b7 updated automatically.",
   "cards": [
     {
       "title": "Projects",
-      "value": "56",
+      "value": "57",
       "tone": ""
     },
     {
@@ -24,6 +24,46 @@
     }
   ],
   "repos": [
+    {
+      "name": "helioprism",
+      "description": "One app, two optical transports \u2014 send a file with light over QR or a colour matrix. Offline, no network.",
+      "pushed_at": "2026-10-22T22:02:40Z",
+      "homepage": "https://drsamonline.github.io/helioprism/",
+      "html_url": "https://github.com/drsamonline/helioprism",
+      "download": "",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "blinkcode-ai",
+      "description": "BlinkCode AI \u2014 single-shot optical file transfer PWA (compression -> SpectraCode -> camera -> restore)",
+      "pushed_at": "2026-10-22T22:02:40Z",
+      "homepage": "https://drsamonline.github.io/blinkcode-ai/",
+      "html_url": "https://github.com/drsamonline/blinkcode-ai",
+      "download": "",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "BLINKTRANSFER",
+      "description": "DATA TRANSFER IN BLINK OF EYE",
+      "pushed_at": "2026-10-22T22:02:40Z",
+      "homepage": "https://drsamonline.github.io/BLINKTRANSFER/",
+      "html_url": "https://github.com/drsamonline/BLINKTRANSFER",
+      "download": "",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "app-companion-forge",
+      "description": "Companion Forge - an offline pocket console for the drsamonline Forge system: the build queue, state, kit graph and repo fleet. Built with Forge on web-kit.",
+      "pushed_at": "2026-10-22T21:31:30Z",
+      "homepage": "https://drsamonline.github.io/app-companion-forge/",
+      "html_url": "https://github.com/drsamonline/app-companion-forge",
+      "download": "",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
     {
       "name": "case-kit",
       "description": "Clinical case tracking: sections, dated symptoms, follow-ups, a timeline and a summary. Zero dependencies, MIT.",
@@ -80,16 +120,6 @@
       "pushed_at": "2026-10-22T19:43:39Z",
       "homepage": "https://drsamonline.github.io/app-panchang/",
       "html_url": "https://github.com/drsamonline/app-panchang",
-      "download": "",
-      "status": "4/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "Matneo",
-      "description": "AI-powered digital products and automation platform.",
-      "pushed_at": "2026-10-22T19:42:15Z",
-      "homepage": "https://drsamonline.github.io/Matneo/",
-      "html_url": "https://github.com/drsamonline/Matneo",
       "download": "",
       "status": "4/5",
       "status_tone": "ok"
@@ -220,36 +250,6 @@
       "pushed_at": "2026-10-22T18:43:50Z",
       "homepage": "https://drsamonline.github.io/whispering-body-first-aid/",
       "html_url": "https://github.com/drsamonline/whispering-body-first-aid",
-      "download": "",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "BLINKTRANSFER",
-      "description": "DATA TRANSFER IN BLINK OF EYE",
-      "pushed_at": "2026-10-22T18:28:38Z",
-      "homepage": "https://drsamonline.github.io/BLINKTRANSFER/",
-      "html_url": "https://github.com/drsamonline/BLINKTRANSFER",
-      "download": "",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "blinkcode-ai",
-      "description": "BlinkCode AI \u2014 single-shot optical file transfer PWA (compression -> SpectraCode -> camera -> restore)",
-      "pushed_at": "2026-10-22T18:28:32Z",
-      "homepage": "https://drsamonline.github.io/blinkcode-ai/",
-      "html_url": "https://github.com/drsamonline/blinkcode-ai",
-      "download": "",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "helioprism",
-      "description": "One app, two optical transports \u2014 send a file with light over QR or a colour matrix. Offline, no network.",
-      "pushed_at": "2026-10-22T18:28:25Z",
-      "homepage": "https://drsamonline.github.io/helioprism/",
-      "html_url": "https://github.com/drsamonline/helioprism",
       "download": "",
       "status": "5/5",
       "status_tone": "ok"
@@ -465,21 +465,21 @@
       "status_tone": "ok"
     },
     {
-      "name": "lexora",
-      "description": "LEXORA \u2014 Layered Exact-text Repository & Adaptive Compression Architecture",
-      "pushed_at": "2026-10-22T11:00:26Z",
-      "homepage": "https://drsamonline.github.io/lexora/",
-      "html_url": "https://github.com/drsamonline/lexora",
-      "download": "",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
       "name": "neon-engine",
       "description": "A code-only open-world game engine for the browser. No assets, no build step, no dependencies \u2014 every texture, mesh and sound is generated at runtime. MIT licensed.",
       "pushed_at": "2026-10-22T11:00:26Z",
       "homepage": "https://drsamonline.github.io/neon-engine/",
       "html_url": "https://github.com/drsamonline/neon-engine",
+      "download": "",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "lexora",
+      "description": "LEXORA \u2014 Layered Exact-text Repository & Adaptive Compression Architecture",
+      "pushed_at": "2026-10-22T11:00:26Z",
+      "homepage": "https://drsamonline.github.io/lexora/",
+      "html_url": "https://github.com/drsamonline/lexora",
       "download": "",
       "status": "5/5",
       "status_tone": "ok"
@@ -583,6 +583,16 @@
       "download": "",
       "status": "5/5",
       "status_tone": "ok"
+    },
+    {
+      "name": "OMM",
+      "description": "OPEN MATERIA MEDICA JSON FILES TO BE USED IN APPS MAKING IT EASY TO BUILD THME",
+      "pushed_at": "2026-10-10T17:20:18Z",
+      "homepage": "",
+      "html_url": "https://github.com/drsamonline/OMM",
+      "download": "",
+      "status": "2/5",
+      "status_tone": "bad"
     }
   ],
   "links": {
