@@ -1,167 +1,102 @@
 {
-  "generated": "2026-10-22",
-  "reckoning": "46 projects \u00b7 avg conformance 4.9/5 \u00b7 updated automatically.",
+  "generated": "2026-10-23",
+  "reckoning": "51 repos · 28 products · 14 kits/engines · avg conformance 3.7/5 · 1 open issue.",
   "cards": [
     {
-      "title": "Projects",
-      "value": "46",
+      "title": "Repos",
+      "value": "51",
+      "tone": ""
+    },
+    {
+      "title": "Products",
+      "value": "28",
+      "tone": ""
+    },
+    {
+      "title": "Kits / engines",
+      "value": "14",
       "tone": ""
     },
     {
       "title": "Avg conformance",
-      "value": "4.9/5",
-      "tone": "ok"
+      "value": "3.7/5",
+      "tone": "warn"
+    },
+    {
+      "title": "Known issues",
+      "value": "1 open · 1 resolved",
+      "tone": "warn"
     },
     {
       "title": "Store",
-      "value": "Matneo \u2014 live",
+      "value": "Matneo — live",
       "tone": "ok"
     },
     {
       "title": "Forge",
-      "value": "live",
+      "value": "Steps 0–6 done",
       "tone": "ok"
     }
   ],
   "repos": [
     {
-      "name": "compress-kit",
-      "description": "The shared compression core for drsamonline apps: gzip, deflate and deflate-raw via the platform's Compression Streams. One file, no dependencies. MIT.",
-      "pushed_at": "2026-10-22T19:08:37Z",
-      "homepage": "https://drsamonline.github.io/compress-kit/",
-      "html_url": "https://github.com/drsamonline/compress-kit",
+      "name": "helioprism",
+      "description": "One app, two optical transports — send a file with light over QR or a colour matrix. Offline, no network.",
+      "pushed_at": "2026-10-22T18:09:11Z",
+      "homepage": "https://drsamonline.github.io/helioprism/",
+      "html_url": "https://github.com/drsamonline/helioprism",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
-      "name": "today-card",
-      "description": "Today Card - one card for the day: your date, one intention, one task, and a streak. Offline, no accounts. Built with web-kit and Forge.",
-      "pushed_at": "2026-10-22T19:07:29Z",
-      "homepage": "https://drsamonline.github.io/today-card/",
-      "html_url": "https://github.com/drsamonline/today-card",
+      "name": "blinkcode-ai",
+      "description": "BlinkCode AI — single-shot optical file transfer PWA (compression -> SpectraCode -> camera -> restore)",
+      "pushed_at": "2026-10-22T18:07:29Z",
+      "homepage": "https://drsamonline.github.io/blinkcode-ai/",
+      "html_url": "https://github.com/drsamonline/blinkcode-ai",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
-      "name": "crypto-kit",
-      "description": "The shared crypto core for drsamonline apps: AES-256-GCM, PBKDF2 passphrase keys, sealed envelopes, one-time view. One file, Web Crypto. MIT.",
-      "pushed_at": "2026-10-22T19:07:25Z",
-      "homepage": "https://drsamonline.github.io/crypto-kit/",
-      "html_url": "https://github.com/drsamonline/crypto-kit",
-      "download": "",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "optical-kit",
-      "description": "The shared optical-transfer core: a systematic LT fountain code, self-describing frames, and a pluggable codec. One file, no dependencies. MIT.",
-      "pushed_at": "2026-10-22T19:07:22Z",
-      "homepage": "https://drsamonline.github.io/optical-kit/",
-      "html_url": "https://github.com/drsamonline/optical-kit",
-      "download": "",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "web-kit",
-      "description": "The shared offline-first runtime for drsamonline apps: storage, i18n (EN/HI/GU), CSV, PWA, theme, SEO, a11y. One file, no build step. MIT.",
-      "pushed_at": "2026-10-22T19:07:17Z",
-      "homepage": "https://drsamonline.github.io/web-kit/",
-      "html_url": "https://github.com/drsamonline/web-kit",
-      "download": "",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "Matneo",
-      "description": "AI-powered digital products and automation platform.",
-      "pushed_at": "2026-10-22T19:05:44Z",
-      "homepage": "https://drsamonline.github.io/Matneo/",
-      "html_url": "https://github.com/drsamonline/Matneo",
+      "name": "BLINKTRANSFER",
+      "description": "DATA TRANSFER IN BLINK OF EYE",
+      "pushed_at": "2026-10-22T18:07:18Z",
+      "homepage": "https://drsamonline.github.io/BLINKTRANSFER/",
+      "html_url": "https://github.com/drsamonline/BLINKTRANSFER",
       "download": "",
       "status": "4/5",
       "status_tone": "ok"
     },
     {
       "name": "offline-pdf-toolkit",
-      "description": "Merge, split, rotate, reorder, watermark, number and compress PDFs entirely in your browser. No upload, no account, no server \u2014 works offline. Single self-contained HTML file.",
-      "pushed_at": "2026-10-22T19:03:40Z",
+      "description": "Merge, split, rotate, reorder, watermark, number and compress PDFs entirely in your browser. No upload, no account, no server — works offline. Single self-contained HTML file.",
+      "pushed_at": "2026-10-22T16:34:16Z",
       "homepage": "https://drsamonline.github.io/offline-pdf-toolkit/",
       "html_url": "https://github.com/drsamonline/offline-pdf-toolkit",
       "download": "",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "remedy-relationship-explorer",
-      "description": "Offline, single-file explorer for homeopathic remedy relationships \u2014 built from public-domain materia medicas (Boericke 1927, Clarke 1900, Hering 1879). No server, no backend.",
-      "pushed_at": "2026-10-22T19:03:29Z",
-      "homepage": "https://drsamonline.github.io/remedy-relationship-explorer/",
-      "html_url": "https://github.com/drsamonline/remedy-relationship-explorer",
-      "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
       "name": "kent-repertory-explorer",
-      "description": "Offline, single-file explorer for Kent's Repertory (1897) \u2014 74,667 rubrics, 735,500 graded remedy links, case builder and grade-weighted repertorisation. No server, no backend.",
-      "pushed_at": "2026-10-22T19:03:10Z",
+      "description": "Offline, single-file explorer for Kent's Repertory (1897) — 74,667 rubrics, 735,500 graded remedy links, case builder and grade-weighted repertorisation. No server, no backend.",
+      "pushed_at": "2026-10-22T14:52:10Z",
       "homepage": "https://drsamonline.github.io/kent-repertory-explorer/",
       "html_url": "https://github.com/drsamonline/kent-repertory-explorer",
       "download": "",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "whispering-body-first-aid",
-      "description": "Companion app for the book 'The Whispering Body' by Dr. Sohil Momin \u2014 a home homeopathic first-aid box (30 remedies). Free to use; source code and book content are copyrighted.",
-      "pushed_at": "2026-10-22T18:43:50Z",
-      "homepage": "https://drsamonline.github.io/whispering-body-first-aid/",
-      "html_url": "https://github.com/drsamonline/whispering-body-first-aid",
-      "download": "",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "BLINKTRANSFER",
-      "description": "DATA TRANSFER IN BLINK OF EYE",
-      "pushed_at": "2026-10-22T18:28:38Z",
-      "homepage": "https://drsamonline.github.io/BLINKTRANSFER/",
-      "html_url": "https://github.com/drsamonline/BLINKTRANSFER",
-      "download": "",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "blinkcode-ai",
-      "description": "BlinkCode AI \u2014 single-shot optical file transfer PWA (compression -> SpectraCode -> camera -> restore)",
-      "pushed_at": "2026-10-22T18:28:32Z",
-      "homepage": "https://drsamonline.github.io/blinkcode-ai/",
-      "html_url": "https://github.com/drsamonline/blinkcode-ai",
-      "download": "",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "helioprism",
-      "description": "One app, two optical transports \u2014 send a file with light over QR or a colour matrix. Offline, no network.",
-      "pushed_at": "2026-10-22T18:28:25Z",
-      "homepage": "https://drsamonline.github.io/helioprism/",
-      "html_url": "https://github.com/drsamonline/helioprism",
-      "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
       "name": "read-live-transform-app",
-      "description": "The companion app to the book \"Read. Live. Transform.: A Practical Reading of the Qur'an\" by Dr Sohil Momin. Read the verse, live the practice, keep the change. Offline PWA, no dependencies. \u00a9 Dr Sohil Momin \u2014 all rights reserved; permission required to reuse.",
+      "description": "The companion app to the book \"Read. Live. Transform.: A Practical Reading of the Qur'an\" by Dr Sohil Momin. Read the verse, live the practice, keep the change. Offline PWA, no dependencies. © Dr Sohil Momin — all rights reserved; permission required to reuse.",
       "pushed_at": "2026-10-22T12:50:33Z",
       "homepage": "https://drsamonline.github.io/read-live-transform-app/",
       "html_url": "https://github.com/drsamonline/read-live-transform-app",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
@@ -171,27 +106,27 @@
       "homepage": "https://drsamonline.github.io/bmi-bmr-tdee-macros-fluid-calculator/",
       "html_url": "https://github.com/drsamonline/bmi-bmr-tdee-macros-fluid-calculator",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
       "name": "boericke-repertory",
-      "description": "Boericke's Repertory \u2014 a free, offline digital edition (single-file web app). Content by Oscar E. Boericke, M.D.; design & app by Dr. Sohil Momin. Free to use with compulsory attribution.",
+      "description": "Boericke's Repertory — a free, offline digital edition (single-file web app). Content by Oscar E. Boericke, M.D.; design & app by Dr. Sohil Momin. Free to use with compulsory attribution.",
       "pushed_at": "2026-10-22T12:50:23Z",
       "homepage": "https://drsamonline.github.io/boericke-repertory/",
       "html_url": "https://github.com/drsamonline/boericke-repertory",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
       "name": "All4ONE",
-      "description": "\ud83e\uddf0 551 portable Windows tools in ONE free .exe \u2014 file ops, hashing, PDF/Office batch, image/video/audio, network diagnostics, registry helpers, disk cleaner, security audits. Zero installs, zero telemetry, MIT licensed. CLI + GUI.",
+      "description": "🧰 551 portable Windows tools in ONE free .exe — file ops, hashing, PDF/Office batch, image/video/audio, network diagnostics, registry helpers, disk cleaner, security audits. Zero installs, zero telemetry, MIT licensed. CLI + GUI.",
       "pushed_at": "2026-10-22T12:48:48Z",
       "homepage": "https://drsamonline.github.io/All4ONE/",
       "html_url": "https://github.com/drsamonline/All4ONE",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
@@ -201,7 +136,7 @@
       "homepage": "https://drsamonline.github.io/homoeopathic-materia-medica-repertory-json/",
       "html_url": "https://github.com/drsamonline/homoeopathic-materia-medica-repertory-json",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
@@ -211,17 +146,17 @@
       "homepage": "https://drsamonline.github.io/The_Browser/",
       "html_url": "https://github.com/drsamonline/The_Browser",
       "download": "",
-      "status": "4/5",
-      "status_tone": "ok"
+      "status": "3/5",
+      "status_tone": "warn"
     },
     {
       "name": "HMS",
-      "description": "HHMS \u2014 Homeopathic Hospital Management System A LAN-based hospital management system purpose-built for homeopathic hospitals and clinics.  Runs entirely on the local network with a server-owned database \u2014 no internet dependency, no cloud lock-in.",
+      "description": "HHMS — Homeopathic Hospital Management System A LAN-based hospital management system purpose-built for homeopathic hospitals and clinics.  Runs entirely on the local network with a server-owned database — no internet dependency, no cloud lock-in.",
       "pushed_at": "2026-10-22T11:15:44Z",
       "homepage": "https://drsamonline.github.io/HMS/",
       "html_url": "https://github.com/drsamonline/HMS",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
@@ -231,37 +166,47 @@
       "homepage": "https://drsamonline.github.io/NEO/",
       "html_url": "https://github.com/drsamonline/NEO",
       "download": "",
+      "status": "3/5",
+      "status_tone": "warn"
+    },
+    {
+      "name": "whispering-body-first-aid",
+      "description": "Companion app for the book 'The Whispering Body' by Dr. Sohil Momin — a home homeopathic first-aid box (30 remedies). Free to use; source code and book content are copyrighted.",
+      "pushed_at": "2026-10-22T11:04:17Z",
+      "homepage": "https://drsamonline.github.io/whispering-body-first-aid/",
+      "html_url": "https://github.com/drsamonline/whispering-body-first-aid",
+      "download": "",
       "status": "4/5",
       "status_tone": "ok"
     },
     {
       "name": "neon-games",
-      "description": "Two free open-world browser games on the Neon Engine \u2014 Dead Zone (zombie survival) and Neon Police. Playable in the browser, no install. CC BY-NC-SA 4.0.",
+      "description": "Two free open-world browser games on the Neon Engine — Dead Zone (zombie survival) and Neon Police. Playable in the browser, no install. CC BY-NC-SA 4.0.",
       "pushed_at": "2026-10-22T11:04:08Z",
       "homepage": "https://drsamonline.github.io/neon-games/",
       "html_url": "https://github.com/drsamonline/neon-games",
       "download": "",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "open-materia-medica",
-      "description": "Open Materia Medica \u2014 the classical homeopathic materia medica in plain language: 344 remedy portraits. Free web edition and offline Android companion app to the book by Dr. Sohil Momin, BHMS. (c) 2026, all rights reserved.",
-      "pushed_at": "2026-10-22T11:04:07Z",
-      "homepage": "https://drsamonline.github.io/open-materia-medica/",
-      "html_url": "https://github.com/drsamonline/open-materia-medica",
-      "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
       "name": "neon-runner",
-      "description": "Retro auto-fire side-scrolling shooter. Move, jump, duck \u2014 your gun fires itself. One self-contained HTML file, zero dependencies, fully offline.",
+      "description": "Retro auto-fire side-scrolling shooter. Move, jump, duck — your gun fires itself. One self-contained HTML file, zero dependencies, fully offline.",
       "pushed_at": "2026-10-22T11:04:07Z",
       "homepage": "https://drsamonline.github.io/neon-runner/",
       "html_url": "https://github.com/drsamonline/neon-runner",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "open-materia-medica",
+      "description": "Open Materia Medica — the classical homeopathic materia medica in plain language: 344 remedy portraits. Free web edition and offline Android companion app to the book by Dr. Sohil Momin, BHMS. (c) 2026, all rights reserved.",
+      "pushed_at": "2026-10-22T11:04:07Z",
+      "homepage": "https://drsamonline.github.io/open-materia-medica/",
+      "html_url": "https://github.com/drsamonline/open-materia-medica",
+      "download": "",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
@@ -271,17 +216,17 @@
       "homepage": "https://drsamonline.github.io/ambient-sound-studio/",
       "html_url": "https://github.com/drsamonline/ambient-sound-studio",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
       "name": "retro-strike",
-      "description": "\ud83c\udfae A complete retro 3rd-person shooter in a single HTML file \u2014 custom software 3D renderer, chiptune audio, zero dependencies.",
+      "description": "🎮 A complete retro 3rd-person shooter in a single HTML file — custom software 3D renderer, chiptune audio, zero dependencies.",
       "pushed_at": "2026-10-22T11:03:55Z",
       "homepage": "https://drsamonline.github.io/retro-strike/",
       "html_url": "https://github.com/drsamonline/retro-strike",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
@@ -291,7 +236,7 @@
       "homepage": "https://drsamonline.github.io/lockhtml/",
       "html_url": "https://github.com/drsamonline/lockhtml",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
@@ -301,7 +246,7 @@
       "homepage": "https://drsamonline.github.io/gentle-pediatrics-companion/",
       "html_url": "https://github.com/drsamonline/gentle-pediatrics-companion",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
@@ -311,7 +256,7 @@
       "homepage": "https://drsamonline.github.io/the-symphony-companion/",
       "html_url": "https://github.com/drsamonline/the-symphony-companion",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
@@ -321,7 +266,7 @@
       "homepage": "https://drsamonline.github.io/idle-city-ages-of-growth/",
       "html_url": "https://github.com/drsamonline/idle-city-ages-of-growth",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
@@ -331,57 +276,57 @@
       "homepage": "https://drsamonline.github.io/Aethelgard-Engine/",
       "html_url": "https://github.com/drsamonline/Aethelgard-Engine",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
       "name": "conqueror-os",
-      "description": "A private, offline resilience workspace in a single HTML file \u2014 read, reflect, journal, track and review. No server, no account, no dependencies.",
+      "description": "A private, offline resilience workspace in a single HTML file — read, reflect, journal, track and review. No server, no account, no dependencies.",
       "pushed_at": "2026-10-22T11:03:24Z",
       "homepage": "https://drsamonline.github.io/conqueror-os/",
       "html_url": "https://github.com/drsamonline/conqueror-os",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
       "name": "skin-case-tracker",
-      "description": "Companion app to the book \"The Skin Is a Liar\" by Dr. Sohil Momin \u2014 a private, offline HHMS skin-case tracker (History, Habits, Mapping, Symptoms) with a 90-day pattern engine. Free to use; all rights reserved.",
+      "description": "Companion app to the book \"The Skin Is a Liar\" by Dr. Sohil Momin — a private, offline HHMS skin-case tracker (History, Habits, Mapping, Symptoms) with a 90-day pattern engine. Free to use; all rights reserved.",
       "pushed_at": "2026-10-22T11:02:57Z",
       "homepage": "https://drsamonline.github.io/skin-case-tracker/",
       "html_url": "https://github.com/drsamonline/skin-case-tracker",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
       "name": "aethelgard-games",
-      "description": "Two free browser games by Dr. Sohil Momin \u2014 Aethelgard: The Books (visual novel) and Aethelgard: Chronicles of Fate (RPG). Playable on GitHub Pages.",
+      "description": "Two free browser games by Dr. Sohil Momin — Aethelgard: The Books (visual novel) and Aethelgard: Chronicles of Fate (RPG). Playable on GitHub Pages.",
       "pushed_at": "2026-10-22T11:02:32Z",
       "homepage": "https://drsamonline.github.io/aethelgard-games/",
       "html_url": "https://github.com/drsamonline/aethelgard-games",
+      "download": "",
+      "status": "3/5",
+      "status_tone": "warn"
+    },
+    {
+      "name": "lexora",
+      "description": "LEXORA — Layered Exact-text Repository & Adaptive Compression Architecture",
+      "pushed_at": "2026-10-22T11:00:26Z",
+      "homepage": "https://drsamonline.github.io/lexora/",
+      "html_url": "https://github.com/drsamonline/lexora",
       "download": "",
       "status": "4/5",
       "status_tone": "ok"
     },
     {
       "name": "neon-engine",
-      "description": "A code-only open-world game engine for the browser. No assets, no build step, no dependencies \u2014 every texture, mesh and sound is generated at runtime. MIT licensed.",
+      "description": "A code-only open-world game engine for the browser. No assets, no build step, no dependencies — every texture, mesh and sound is generated at runtime. MIT licensed.",
       "pushed_at": "2026-10-22T11:00:26Z",
       "homepage": "https://drsamonline.github.io/neon-engine/",
       "html_url": "https://github.com/drsamonline/neon-engine",
       "download": "",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "lexora",
-      "description": "LEXORA \u2014 Layered Exact-text Repository & Adaptive Compression Architecture",
-      "pushed_at": "2026-10-22T11:00:26Z",
-      "homepage": "https://drsamonline.github.io/lexora/",
-      "html_url": "https://github.com/drsamonline/lexora",
-      "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
@@ -391,7 +336,7 @@
       "homepage": "https://drsamonline.github.io/ULTIMATE-WINDOWS-OPTIMIZER/",
       "html_url": "https://github.com/drsamonline/ULTIMATE-WINDOWS-OPTIMIZER",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
@@ -401,7 +346,7 @@
       "homepage": "https://drsamonline.github.io/CLDR/",
       "html_url": "https://github.com/drsamonline/CLDR",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
@@ -411,17 +356,27 @@
       "homepage": "https://drsamonline.github.io/SmartNotes/",
       "html_url": "https://github.com/drsamonline/SmartNotes",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "remedy-relationship-explorer",
+      "description": "Offline, single-file explorer for homeopathic remedy relationships — built from public-domain materia medicas (Boericke 1927, Clarke 1900, Hering 1879). No server, no backend.",
+      "pushed_at": "2026-10-22T10:58:26Z",
+      "homepage": "https://drsamonline.github.io/remedy-relationship-explorer/",
+      "html_url": "https://github.com/drsamonline/remedy-relationship-explorer",
+      "download": "",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
       "name": "mnemosyne-companion",
-      "description": "Companion study app for Mnemosyne Materia Medica \u2014 100 polycrest homoeopathic remedies as poetic pearls, keynotes and spaced-repetition drills. Single offline HTML file. Proprietary, all rights reserved.",
+      "description": "Companion study app for Mnemosyne Materia Medica — 100 polycrest homoeopathic remedies as poetic pearls, keynotes and spaced-repetition drills. Single offline HTML file. Proprietary, all rights reserved.",
       "pushed_at": "2026-10-22T09:04:52Z",
       "homepage": "https://drsamonline.github.io/mnemosyne-companion/",
       "html_url": "https://github.com/drsamonline/mnemosyne-companion",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
@@ -431,7 +386,7 @@
       "homepage": "https://drsamonline.github.io/unstoppable-mind-companion/",
       "html_url": "https://github.com/drsamonline/unstoppable-mind-companion",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
@@ -441,7 +396,7 @@
       "homepage": "https://drsamonline.github.io/smartbill-app/",
       "html_url": "https://github.com/drsamonline/smartbill-app",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
@@ -451,7 +406,7 @@
       "homepage": "https://drsamonline.github.io/MATERIA-MEDICA-BUILDER/",
       "html_url": "https://github.com/drsamonline/MATERIA-MEDICA-BUILDER",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
@@ -461,7 +416,7 @@
       "homepage": "https://drsamonline.github.io/dance-fight/",
       "html_url": "https://github.com/drsamonline/dance-fight",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
     },
     {
@@ -471,8 +426,18 @@
       "homepage": "https://drsamonline.github.io/AethelgardVN/",
       "html_url": "https://github.com/drsamonline/AethelgardVN",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
+    },
+    {
+      "name": "Matneo",
+      "description": "AI-powered digital products and automation platform.",
+      "pushed_at": "2026-10-22T06:17:01Z",
+      "homepage": "https://drsamonline.github.io/Matneo/",
+      "html_url": "https://github.com/drsamonline/Matneo",
+      "download": "",
+      "status": "3/5",
+      "status_tone": "warn"
     },
     {
       "name": "TTB",
@@ -481,8 +446,18 @@
       "homepage": "https://drsamonline.github.io/TTB/",
       "html_url": "https://github.com/drsamonline/TTB",
       "download": "",
-      "status": "5/5",
+      "status": "4/5",
       "status_tone": "ok"
+    },
+    {
+      "name": "OMM",
+      "description": "OPEN MATERIA MEDICA JSON FILES TO BE USED IN APPS MAKING IT EASY TO BUILD THME",
+      "pushed_at": "2026-10-10T17:20:18Z",
+      "homepage": "",
+      "html_url": "https://github.com/drsamonline/OMM",
+      "download": "",
+      "status": "2/5",
+      "status_tone": "bad"
     }
   ],
   "links": {
