@@ -1,6 +1,6 @@
 {
   "generated": "2026-10-23",
-  "generated_at": "2026-10-23T13:38:07Z",
+  "generated_at": "2026-10-23T13:59:10Z",
   "reckoning": "46 products · 14 kits · avg conformance 5.0/5 · updated automatically.",
   "health": "ok",
   "cards": [
@@ -239,122 +239,122 @@
   "changes": [
     {
       "type": "Push",
-      "repo": "app-builder",
-      "when": "2026-10-23T08:13:17Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Create",
       "repo": "aethelgard-rpg-engine",
-      "when": "2026-10-23T08:28:56Z",
-      "text": ""
-    },
-    {
-      "type": "Push",
-      "repo": "BLINKTRANSFER",
-      "when": "2026-10-23T08:26:24Z",
-      "text": "pushed to frame-kit-0.1.0"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "aethelgard-rpg-engine",
-      "when": "2026-10-23T13:06:33Z",
-      "text": "opened: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "aethelgard-rpg-engine",
-      "when": "2026-10-23T13:06:23Z",
-      "text": "closed: "
-    },
-    {
-      "type": "Push",
-      "repo": "Matneo",
-      "when": "2026-10-23T08:16:34Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "app-builder",
-      "when": "2026-10-23T05:32:57Z",
-      "text": "merged: "
-    },
-    {
-      "type": "Create",
-      "repo": "skin-case-tracker",
-      "when": "2026-10-23T08:14:17Z",
-      "text": ""
-    },
-    {
-      "type": "Push",
-      "repo": "skin-case-tracker",
-      "when": "2026-10-23T07:45:12Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Create",
-      "repo": "blinkcode-ai",
-      "when": "2026-10-23T08:14:23Z",
-      "text": ""
-    },
-    {
-      "type": "PullRequest",
-      "repo": "aethelgard-rpg-engine",
-      "when": "2026-10-23T12:54:37Z",
-      "text": "opened: "
-    },
-    {
-      "type": "Push",
-      "repo": "smartbill-app",
-      "when": "2026-10-23T08:07:41Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "conqueror-os",
-      "when": "2026-10-23T12:49:56Z",
-      "text": "opened: "
-    },
-    {
-      "type": "Push",
-      "repo": "dashboard",
-      "when": "2026-10-23T09:21:36Z",
+      "when": "2026-10-23T08:49:40Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "TTB",
-      "when": "2026-10-23T07:02:11Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "The_Browser",
-      "when": "2026-10-23T07:45:49Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "blinkcode-ai",
-      "when": "2026-10-23T07:45:09Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "The_Browser",
-      "when": "2026-10-23T07:45:19Z",
+      "repo": "helioprism",
+      "when": "2026-10-23T08:49:02Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "offline-pdf-toolkit",
-      "when": "2026-10-23T07:45:13Z",
+      "when": "2026-10-22T16:34:16Z",
       "text": "pushed to main"
     },
     {
-      "type": "Delete",
-      "repo": "mnemosyne-companion",
-      "when": "2026-10-23T07:45:11Z",
+      "type": "Create",
+      "repo": "offline-pdf-toolkit",
+      "when": "2026-10-22T16:32:55Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
+      "repo": "skills",
+      "when": "2026-10-23T08:49:49Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "BLINKTRANSFER",
+      "when": "2026-10-23T08:49:01Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Watch",
+      "repo": "srs-kit",
+      "when": "2026-10-23T13:40:57Z",
+      "text": ""
+    },
+    {
+      "type": "Watch",
+      "repo": "case-kit",
+      "when": "2026-10-23T13:40:59Z",
+      "text": ""
+    },
+    {
+      "type": "Watch",
+      "repo": "seance",
+      "when": "2026-10-23T13:41:02Z",
+      "text": ""
+    },
+    {
+      "type": "Watch",
+      "repo": "repertory-kit",
+      "when": "2026-10-23T13:41:00Z",
+      "text": ""
+    },
+    {
+      "type": "Watch",
+      "repo": "astro-kit",
+      "when": "2026-10-23T13:41:01Z",
+      "text": ""
+    },
+    {
+      "type": "Watch",
+      "repo": "compress-kit",
+      "when": "2026-10-23T13:41:07Z",
+      "text": ""
+    },
+    {
+      "type": "Watch",
+      "repo": "game-kit",
+      "when": "2026-10-23T13:41:05Z",
+      "text": ""
+    },
+    {
+      "type": "Watch",
+      "repo": "lan-kit",
+      "when": "2026-10-23T13:41:04Z",
+      "text": ""
+    },
+    {
+      "type": "Watch",
+      "repo": "app-panchang",
+      "when": "2026-10-23T13:41:03Z",
+      "text": ""
+    },
+    {
+      "type": "Watch",
+      "repo": "search-kit",
+      "when": "2026-10-23T13:40:58Z",
+      "text": ""
+    },
+    {
+      "type": "Watch",
+      "repo": "book-kit",
+      "when": "2026-10-23T13:40:56Z",
+      "text": ""
+    },
+    {
+      "type": "Watch",
+      "repo": "export-kit",
+      "when": "2026-10-23T13:40:47Z",
+      "text": ""
+    },
+    {
+      "type": "Watch",
+      "repo": "frame-kit",
+      "when": "2026-10-23T13:40:46Z",
+      "text": ""
+    },
+    {
+      "type": "Watch",
+      "repo": "app-companion-forge",
+      "when": "2026-10-23T13:40:42Z",
       "text": ""
     }
   ],
@@ -388,8 +388,8 @@
       "what": "this dashboard",
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/39962808992",
-      "last_run": "2026-10-23T13:37:57Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/39965733149",
+      "last_run": "2026-10-23T13:59:01Z",
       "conclusion": "in_progress"
     },
     {
@@ -513,9 +513,9 @@
   },
   "community": {
     "totals": {
-      "stars": 44,
+      "stars": 60,
       "forks": 1,
-      "watchers": 44
+      "watchers": 60
     },
     "repos": [
       {
@@ -666,11 +666,46 @@
         "html_url": "https://github.com/drsamonline/TTB"
       },
       {
+        "name": "chalk-lan",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/chalk-lan"
+      },
+      {
+        "name": "canteen-lan",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/canteen-lan"
+      },
+      {
+        "name": "app-companion-forge",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/app-companion-forge"
+      },
+      {
+        "name": "frame-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/frame-kit"
+      },
+      {
         "name": "optical-kit",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/optical-kit"
+      },
+      {
+        "name": "seance",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/seance"
       },
       {
         "name": "aethelgard-games",
@@ -694,11 +729,88 @@
         "html_url": "https://github.com/drsamonline/NEO"
       },
       {
+        "name": "case-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/case-kit"
+      },
+      {
+        "name": "book-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/book-kit"
+      },
+      {
+        "name": "srs-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/srs-kit"
+      },
+      {
+        "name": "search-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/search-kit"
+      },
+      {
+        "name": "repertory-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/repertory-kit"
+      },
+      {
+        "name": "astro-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/astro-kit"
+      },
+      {
+        "name": "game-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/game-kit"
+      },
+      {
+        "name": "lan-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/lan-kit"
+      },
+      {
+        "name": "compress-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/compress-kit"
+      },
+      {
         "name": "crypto-kit",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/crypto-kit"
+      },
+      {
+        "name": "export-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/export-kit"
+      },
+      {
+        "name": "app-panchang",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/app-panchang"
       },
       {
         "name": "today-card",
@@ -844,6 +956,12 @@
       "prs": 0,
       "items": []
     }
+  },
+  "traffic": {
+    "available": false,
+    "window": "14 days",
+    "note": "Needs a token with push access to the repos (the Actions-read token is not enough).",
+    "repos": {}
   },
   "repos": [
     {
@@ -1554,7 +1672,10 @@
         "crypto-kit": 1,
         "export-kit": 1,
         "app-panchang": 1
-      }
+      },
+      "stars": 60,
+      "forks": 1,
+      "watchers": 60
     }
   ]
 }
