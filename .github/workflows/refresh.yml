@@ -1,21 +1,23 @@
 name: Refresh dashboard data
 
 # Regenerates from the SHARED module drsoam.py (app-builder), so every output
-# uses one exclusion list and cannot drift.
+# uses one exclusion list and cannot drift. Also refreshes on a page change.
 
 on:
   schedule:
     - cron: "47 3 * * *"
   push:
     branches: [ main ]
-    paths: [ .github/workflows/data.yml ]
+    paths:
+      - .github/workflows/refresh.yml
+      - index.html
   workflow_dispatch: {}
 
 permissions:
   contents: write
 
 concurrency:
-  group: refresh-dashboard-data
+  group: refresh-dashboard
   cancel-in-progress: true
 
 jobs:
@@ -27,7 +29,7 @@ jobs:
         with:
           repository: drsamonline/app-builder
           path: .drsoam
-      - name: Regenerate
+      - name: Regenerate data.json
         env:
           GH_TOKEN: ${{ github.token }}
         run: python3 .drsoam/drsoam.py dashboard

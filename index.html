@@ -23,6 +23,10 @@
   a{color:#7dd3fc;text-decoration:none}
   .pill{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11px;border:1px solid var(--line)}
   .ok{color:var(--ok)} .warn{color:var(--warn)} .bad{color:var(--bad)}
+  .sec{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);margin:28px 0 4px;font-weight:600}
+  .mut{color:var(--mut);font-size:13px;margin:0 0 12px}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--mut);margin-right:6px;vertical-align:middle}
+  .dot.ok{background:var(--ok)} .dot.warn{background:var(--warn)} .dot.bad{background:var(--bad)}
   footer{max-width:1100px;margin:0 auto;padding:0 20px 40px;color:var(--mut);font-size:12px}
 </style>
 </head>
@@ -33,6 +37,15 @@
 </header>
 <main>
   <div class="grid" id="cards"></div>
+
+  <h2 class="sec">Self-updating</h2>
+  <p class="mut">Every row below refreshes itself on a schedule — no manual step. A green dot means the last run succeeded.</p>
+  <table>
+    <thead><tr><th>What updates</th><th>Workflow</th><th>Schedule</th><th>Last run</th></tr></thead>
+    <tbody id="automation"></tbody>
+  </table>
+
+  <h2 class="sec">Repositories</h2>
   <table>
     <thead><tr><th>Repo</th><th>What it is</th><th>Last push</th><th>Links</th></tr></thead>
     <tbody id="repos"></tbody>
@@ -53,6 +66,15 @@ fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(function(d){
   document.getElementById("cards").innerHTML = cards.map(function(c){
     return '<div class="card"><h3>'+esc(c.title)+'</h3><p class="'+esc(c.tone||"")+'">'+esc(c.value)+'</p></div>';
   }).join("");
+
+  var autos = d.automation || [];
+  function tone(c){ c=String(c||"").toLowerCase(); if(c==="success") return "ok"; if(c==="failure"||c==="cancelled"||c==="timed_out") return "bad"; if(c==="no runs yet"||c==="unknown") return "warn"; return ""; }
+  document.getElementById("automation").innerHTML = autos.map(function(a){
+    return '<tr><td><span class="dot '+tone(a.conclusion)+'"></span><strong>'+esc(a.what)+'</strong> <span class="pill">'+esc(a.repo)+'</span></td>'
+      + '<td><a href="'+esc(a.url)+'">'+esc(a.name)+'</a></td>'
+      + '<td>'+esc(a.schedule)+'</td>'
+      + '<td>'+esc(a.conclusion||"—")+' <span class="mut">'+fmt(a.last_run)+'</span></td></tr>';
+  }).join("") || '<tr><td colspan="4">No automation data yet.</td></tr>';
 
   var repos = d.repos || [];
   document.getElementById("repos").innerHTML = repos.map(function(r){
