@@ -1,7 +1,10 @@
 name: Refresh dashboard data
 
 # Regenerates from the SHARED module drsoam.py (app-builder): data.json, a daily
-# history snapshot, changes.json and feed.xml. One exclusion list, no drift.
+# history snapshot, changes.json and feed.xml.
+#
+# BILLING_TOKEN (optional): a classic PAT with the 'user' scope, so the Actions
+# budget panel can show live minutes. Without it the panel explains the rule.
 
 on:
   schedule:
@@ -33,6 +36,7 @@ jobs:
       - name: Regenerate
         env:
           GH_TOKEN: ${{ github.token }}
+          BILLING_TOKEN: ${{ secrets.BILLING_TOKEN }}
         run: python3 .drsoam/drsoam.py dashboard
       - name: Commit if changed
         run: |
