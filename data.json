@@ -36,9 +36,9 @@
       "4": 2
     },
     "categories": {
+      "HTML Apps": 14,
+      "Games": 6,
       "Utilities": 15,
-      "HTML Apps": 13,
-      "Games": 7,
       "Homeopathy": 11,
       "Health Tools": 1,
       "Data": 1
@@ -95,14 +95,42 @@
     },
     {
       "date": "2026-10-22",
-      "count": 36
+      "count": 34
     },
     {
       "date": "2026-10-23",
-      "count": 31
+      "count": 33
     }
   ],
   "attention": [
+    {
+      "title": "chore: update engine names in the category lists",
+      "repo": "app-builder",
+      "url": "https://github.com/drsamonline/app-builder/pull/2",
+      "kind": "PR",
+      "created": "2026-10-23T04:28:01Z"
+    },
+    {
+      "title": "Make the RPG engine engine-only (generic sample world, no game art)",
+      "repo": "aethelgard-rpg-engine",
+      "url": "https://github.com/drsamonline/aethelgard-rpg-engine/pull/3",
+      "kind": "PR",
+      "created": "2026-10-23T04:27:19Z"
+    },
+    {
+      "title": "docs(licence): free to play + free to mod; art & story ©; engines open source",
+      "repo": "aethelgard-games",
+      "url": "https://github.com/drsamonline/aethelgard-games/pull/2",
+      "kind": "PR",
+      "created": "2026-10-23T04:12:35Z"
+    },
+    {
+      "title": "Make the VN engine engine-only (drop demo, keep a one-chapter sample)",
+      "repo": "saga-vn-engine",
+      "url": "https://github.com/drsamonline/saga-vn-engine/pull/3",
+      "kind": "PR",
+      "created": "2026-10-23T04:08:36Z"
+    },
     {
       "title": "fix(web-kit): add the test-node.js the Test workflow expects",
       "repo": "web-kit",
@@ -214,34 +242,6 @@
       "url": "https://github.com/drsamonline/conqueror-os/pull/1",
       "kind": "PR",
       "created": "2026-10-20T05:44:29Z"
-    },
-    {
-      "title": "CI: Bump softprops/action-gh-release in /",
-      "repo": "The_Browser",
-      "url": "https://github.com/drsamonline/The_Browser/pull/22",
-      "kind": "PR",
-      "created": "2026-09-30T14:14:57Z"
-    },
-    {
-      "title": "CI: Bump actions/upload-artifact in /",
-      "repo": "The_Browser",
-      "url": "https://github.com/drsamonline/The_Browser/pull/21",
-      "kind": "PR",
-      "created": "2026-09-30T14:14:52Z"
-    },
-    {
-      "title": "CI: Bump actions/cache in /",
-      "repo": "The_Browser",
-      "url": "https://github.com/drsamonline/The_Browser/pull/20",
-      "kind": "PR",
-      "created": "2026-09-30T14:14:45Z"
-    },
-    {
-      "title": "CI: Bump microsoft/setup-msbuild in /",
-      "repo": "The_Browser",
-      "url": "https://github.com/drsamonline/The_Browser/pull/19",
-      "kind": "PR",
-      "created": "2026-09-30T14:14:31Z"
     }
   ],
   "controls": [
@@ -309,6 +309,114 @@
   },
   "changes": [
     {
+      "type": "PullRequest",
+      "repo": "app-builder",
+      "when": "2026-10-23T04:28:01Z",
+      "text": "opened: "
+    },
+    {
+      "type": "Push",
+      "repo": "The_Browser",
+      "when": "2026-10-22T05:58:58Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "PullRequest",
+      "repo": "aethelgard-rpg-engine",
+      "when": "2026-10-23T04:27:19Z",
+      "text": "opened: "
+    },
+    {
+      "type": "Push",
+      "repo": "remedy-relationship-explorer",
+      "when": "2026-10-22T05:28:12Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Push",
+      "repo": "app-companion-forge",
+      "when": "2026-10-22T21:31:10Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "PullRequest",
+      "repo": "aethelgard-games",
+      "when": "2026-10-23T04:12:35Z",
+      "text": "opened: "
+    },
+    {
+      "type": "PullRequest",
+      "repo": "saga-vn-engine",
+      "when": "2026-10-23T04:08:36Z",
+      "text": "opened: "
+    },
+    {
+      "type": "Push",
+      "repo": "app-panchang",
+      "when": "2026-10-22T19:25:46Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Push",
+      "repo": "app-panchang",
+      "when": "2026-10-22T19:25:42Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Push",
+      "repo": "game-kit",
+      "when": "2026-10-22T19:23:05Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Push",
+      "repo": "remedy-relationship-explorer",
+      "when": "2026-10-22T05:02:05Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Push",
+      "repo": "smartbill-app",
+      "when": "2026-10-22T06:17:03Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Push",
+      "repo": "skills",
+      "when": "2026-10-22T06:17:03Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Push",
+      "repo": "bmi-bmr-tdee-macros-fluid-calculator",
+      "when": "2026-10-22T06:16:59Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Push",
+      "repo": "mnemosyne-companion",
+      "when": "2026-10-22T06:16:54Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Push",
+      "repo": "the-symphony-companion",
+      "when": "2026-10-22T06:16:54Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Push",
+      "repo": "app-builder",
+      "when": "2026-10-22T04:56:54Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Push",
+      "repo": "conqueror-os",
+      "when": "2026-10-22T06:11:41Z",
+      "text": "0 commit(s) to main"
+    },
+    {
       "type": "Push",
       "repo": "remedy-relationship-explorer",
       "when": "2026-10-22T04:47:25Z",
@@ -318,114 +426,6 @@
       "type": "Push",
       "repo": "The_Browser",
       "when": "2026-10-22T06:02:42Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Push",
-      "repo": "All4ONE",
-      "when": "2026-10-22T06:02:07Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "neon-engine",
-      "when": "2026-10-23T03:49:03Z",
-      "text": "merged: "
-    },
-    {
-      "type": "Push",
-      "repo": "app-builder",
-      "when": "2026-10-22T04:56:57Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Create",
-      "repo": "offline-pdf-toolkit",
-      "when": "2026-10-22T19:03:42Z",
-      "text": ""
-    },
-    {
-      "type": "PullRequest",
-      "repo": "neon-engine",
-      "when": "2026-10-23T03:44:16Z",
-      "text": "opened: "
-    },
-    {
-      "type": "Push",
-      "repo": "drsamonline.github.io",
-      "when": "2026-10-22T04:50:22Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "app-builder",
-      "when": "2026-10-23T03:41:52Z",
-      "text": "merged: "
-    },
-    {
-      "type": "Push",
-      "repo": "skills",
-      "when": "2026-10-22T05:46:54Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Push",
-      "repo": "remedy-relationship-explorer",
-      "when": "2026-10-22T05:40:32Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Push",
-      "repo": "remedy-relationship-explorer",
-      "when": "2026-10-22T18:50:44Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Push",
-      "repo": "remedy-relationship-explorer",
-      "when": "2026-10-22T04:27:35Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "The_Browser",
-      "when": "2026-10-23T03:25:45Z",
-      "text": "opened: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "NEO",
-      "when": "2026-10-23T03:24:06Z",
-      "text": "opened: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "app-builder",
-      "when": "2026-10-23T03:21:27Z",
-      "text": "opened: "
-    },
-    {
-      "type": "Push",
-      "repo": "app-companion-forge",
-      "when": "2026-10-22T21:31:23Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Push",
-      "repo": "dashboard",
-      "when": "2026-10-22T18:30:17Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Push",
-      "repo": "app-builder",
-      "when": "2026-10-22T04:57:16Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Push",
-      "repo": "app-builder",
-      "when": "2026-10-22T04:56:47Z",
       "text": "0 commit(s) to main"
     }
   ],
@@ -459,8 +459,8 @@
       "what": "this dashboard",
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/39897429891",
-      "last_run": "2026-10-23T03:53:52Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/39900555717",
+      "last_run": "2026-10-23T04:29:06Z",
       "conclusion": "in_progress"
     },
     {
@@ -576,6 +576,39 @@
   ],
   "repos": [
     {
+      "name": "aethelgard-rpg-engine",
+      "description": "A dependency-free, vanilla-JavaScript engine for deep, single-player browser RPGs. Engine only — ships a small generic sample world; the games it powers live in drsamonline/aethelgard-games.",
+      "pushed_at": "2026-10-23T04:27:01Z",
+      "homepage": "https://drsamonline.github.io/aethelgard-rpg-engine/",
+      "html_url": "https://github.com/drsamonline/aethelgard-rpg-engine",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "aethelgard-games",
+      "description": "Two free browser games by Dr. Sohil Momin — Aethelgard: The Books (visual novel) and Aethelgard: Chronicles of Fate (RPG). Playable on GitHub Pages.",
+      "pushed_at": "2026-10-23T04:12:26Z",
+      "homepage": "https://drsamonline.github.io/aethelgard-games/",
+      "html_url": "https://github.com/drsamonline/aethelgard-games",
+      "download": "",
+      "category": "Games",
+      "status": "4/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "saga-vn-engine",
+      "description": "Saga — a small, dependency-free visual-novel engine for the browser. Plain JavaScript, one stylesheet, no build step. Engine only; the games it powers live in drsamonline/aethelgard-games.",
+      "pushed_at": "2026-10-23T04:07:53Z",
+      "homepage": "https://drsamonline.github.io/saga-vn-engine/",
+      "html_url": "https://github.com/drsamonline/saga-vn-engine",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
+    {
       "name": "The_Browser",
       "description": "Aetheris Browser — an experimental C++ browser engine with a dependency-free rendering foundation (Ladybird/SerenityOS-derived). Not production-ready.",
       "pushed_at": "2026-10-23T03:51:06Z",
@@ -606,17 +639,6 @@
       "download": "",
       "category": "HTML Apps",
       "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "aethelgard-games",
-      "description": "Two free browser games by Dr. Sohil Momin — Aethelgard: The Books (visual novel) and Aethelgard: Chronicles of Fate (RPG). Playable on GitHub Pages.",
-      "pushed_at": "2026-10-23T02:21:39Z",
-      "homepage": "https://drsamonline.github.io/aethelgard-games/",
-      "html_url": "https://github.com/drsamonline/aethelgard-games",
-      "download": "",
-      "category": "Games",
-      "status": "4/5",
       "status_tone": "ok"
     },
     {
@@ -983,17 +1005,6 @@
       "status_tone": "ok"
     },
     {
-      "name": "Aethelgard-Engine",
-      "description": "Aethelgard-Engine base Engine for Aethlgard RPG Game",
-      "pushed_at": "2026-10-22T11:03:25Z",
-      "homepage": "https://drsamonline.github.io/Aethelgard-Engine/",
-      "html_url": "https://github.com/drsamonline/Aethelgard-Engine",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
       "name": "conqueror-os",
       "description": "A private, offline resilience workspace in a single HTML file — read, reflect, journal, track and review. No server, no account, no dependencies.",
       "pushed_at": "2026-10-22T11:03:24Z",
@@ -1076,17 +1087,6 @@
       "pushed_at": "2026-10-22T09:04:27Z",
       "homepage": "https://drsamonline.github.io/dance-fight/",
       "html_url": "https://github.com/drsamonline/dance-fight",
-      "download": "",
-      "category": "Games",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "AethelgardVN",
-      "description": "Visual Novel based on Aethelgard: Chronicles of Fate RPG with Base Engine",
-      "pushed_at": "2026-10-22T09:04:15Z",
-      "homepage": "https://drsamonline.github.io/AethelgardVN/",
-      "html_url": "https://github.com/drsamonline/AethelgardVN",
       "download": "",
       "category": "Games",
       "status": "5/5",
