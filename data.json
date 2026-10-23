@@ -1,7 +1,7 @@
 {
   "generated": "2026-10-23",
-  "generated_at": "2026-10-23T06:14:04Z",
-  "reckoning": "46 products · 12 kits · avg conformance 5.0/5 · updated automatically.",
+  "generated_at": "2026-10-23T06:16:32Z",
+  "reckoning": "46 products · 15 kits · avg conformance 5.0/5 · updated automatically.",
   "health": "ok",
   "cards": [
     {
@@ -11,7 +11,7 @@
     },
     {
       "title": "Kits",
-      "value": "12",
+      "value": "15",
       "tone": "ok"
     },
     {
@@ -27,11 +27,13 @@
   ],
   "summary": {
     "products": 46,
-    "kits": 12,
+    "kits": 15,
     "avg": 5.0,
     "pushes": 67,
     "byrepo": {
       "app-builder": 1,
+      "dashboard": 1,
+      "Matneo": 1,
       "chalk-lan": 1,
       "canteen-lan": 1,
       "app-companion-forge": 1,
@@ -40,14 +42,12 @@
       "helioprism": 1,
       "frame-kit": 1,
       "optical-kit": 1,
-      "dashboard": 1,
       "seance": 1,
       "drsamonline": 1,
       "drsamonline.github.io": 1,
-      "Matneo": 1,
       "aethelgard-games": 1,
-      "saga-vn-engine": 1,
       "aethelgard-rpg-engine": 1,
+      "saga-vn-engine": 1,
       "NEO": 1,
       "The_Browser": 1,
       "neon-engine": 1,
@@ -348,6 +348,36 @@
   },
   "changes": [
     {
+      "type": "Create",
+      "repo": "BLINKTRANSFER",
+      "when": "2026-10-22T22:02:41Z",
+      "text": ""
+    },
+    {
+      "type": "Create",
+      "repo": "helioprism",
+      "when": "2026-10-22T22:02:40Z",
+      "text": ""
+    },
+    {
+      "type": "PullRequest",
+      "repo": "saga-vn-engine",
+      "when": "2026-10-23T04:39:07Z",
+      "text": "merged: "
+    },
+    {
+      "type": "Push",
+      "repo": "drsamonline",
+      "when": "2026-10-22T08:03:02Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "unstoppable-mind-companion",
+      "when": "2026-10-22T09:00:48Z",
+      "text": "pushed to main"
+    },
+    {
       "type": "Push",
       "repo": "astro-kit",
       "when": "2026-10-23T02:20:35Z",
@@ -436,36 +466,6 @@
       "repo": "neon-runner",
       "when": "2026-10-21T02:42:47Z",
       "text": "pushed to main"
-    },
-    {
-      "type": "Create",
-      "repo": "read-live-transform-app",
-      "when": "2026-10-23T02:07:44Z",
-      "text": ""
-    },
-    {
-      "type": "Push",
-      "repo": "The_Browser",
-      "when": "2026-10-22T07:35:27Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "app-companion-forge",
-      "when": "2026-10-22T21:31:13Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "app-companion-forge",
-      "when": "2026-10-22T21:31:06Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "profile-kit",
-      "when": "2026-10-22T08:34:24Z",
-      "text": "pushed to main"
     }
   ],
   "automation": [
@@ -498,8 +498,8 @@
       "what": "this dashboard",
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/39910228963",
-      "last_run": "2026-10-23T06:13:54Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/39910479713",
+      "last_run": "2026-10-23T06:16:22Z",
       "conclusion": "in_progress"
     },
     {
@@ -531,8 +531,8 @@
       "what": "the store",
       "schedule": "daily 04:22 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/runs/39910232332",
-      "last_run": "2026-10-23T06:13:57Z",
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/39910482867",
+      "last_run": "2026-10-23T06:16:24Z",
       "conclusion": "in_progress"
     },
     {
@@ -727,11 +727,11 @@
       ]
     },
     {
-      "name": "saga-vn-engine",
-      "description": "Saga — a small, dependency-free visual-novel engine for the browser. Plain JavaScript, one stylesheet, no build step. Engine only; the games it powers live in drsamonline/aethelgard-games.",
+      "name": "aethelgard-rpg-engine",
+      "description": "A dependency-free, vanilla-JavaScript engine for deep, single-player browser RPGs. Engine only — ships a small generic sample world; the games it powers live in drsamonline/aethelgard-games.",
       "pushed_at": "2026-10-23T04:39:07Z",
-      "homepage": "https://drsamonline.github.io/saga-vn-engine/",
-      "html_url": "https://github.com/drsamonline/saga-vn-engine",
+      "homepage": "https://drsamonline.github.io/aethelgard-rpg-engine/",
+      "html_url": "https://github.com/drsamonline/aethelgard-rpg-engine",
       "download": "",
       "category": "HTML Apps",
       "status": "5/5",
@@ -741,11 +741,11 @@
       ]
     },
     {
-      "name": "aethelgard-rpg-engine",
-      "description": "A dependency-free, vanilla-JavaScript engine for deep, single-player browser RPGs. Engine only — ships a small generic sample world; the games it powers live in drsamonline/aethelgard-games.",
+      "name": "saga-vn-engine",
+      "description": "Saga — a small, dependency-free visual-novel engine for the browser. Plain JavaScript, one stylesheet, no build step. Engine only; the games it powers live in drsamonline/aethelgard-games.",
       "pushed_at": "2026-10-23T04:39:07Z",
-      "homepage": "https://drsamonline.github.io/aethelgard-rpg-engine/",
-      "html_url": "https://github.com/drsamonline/aethelgard-rpg-engine",
+      "homepage": "https://drsamonline.github.io/saga-vn-engine/",
+      "html_url": "https://github.com/drsamonline/saga-vn-engine",
       "download": "",
       "category": "HTML Apps",
       "status": "5/5",
@@ -1271,11 +1271,13 @@
     {
       "date": "2026-10-23",
       "products": 46,
-      "kits": 12,
+      "kits": 15,
       "avg": 5.0,
       "pushes": 67,
       "byrepo": {
         "app-builder": 1,
+        "dashboard": 1,
+        "Matneo": 1,
         "chalk-lan": 1,
         "canteen-lan": 1,
         "app-companion-forge": 1,
@@ -1284,14 +1286,12 @@
         "helioprism": 1,
         "frame-kit": 1,
         "optical-kit": 1,
-        "dashboard": 1,
         "seance": 1,
         "drsamonline": 1,
         "drsamonline.github.io": 1,
-        "Matneo": 1,
         "aethelgard-games": 1,
-        "saga-vn-engine": 1,
         "aethelgard-rpg-engine": 1,
+        "saga-vn-engine": 1,
         "NEO": 1,
         "The_Browser": 1,
         "neon-engine": 1,
