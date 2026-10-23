@@ -1,11 +1,17 @@
 {
   "generated": "2026-10-23",
-  "reckoning": "48 projects · avg conformance 5.0/5 · updated automatically.",
+  "reckoning": "48 products · 12 kits · avg conformance 5.0/5 · updated automatically.",
+  "health": "ok",
   "cards": [
     {
-      "title": "Projects",
+      "title": "Products",
       "value": "48",
       "tone": ""
+    },
+    {
+      "title": "Kits",
+      "value": "12",
+      "tone": "ok"
     },
     {
       "title": "Avg conformance",
@@ -13,14 +19,226 @@
       "tone": "ok"
     },
     {
-      "title": "Store",
-      "value": "Matneo — live",
+      "title": "Automations",
+      "value": "11",
       "tone": "ok"
+    }
+  ],
+  "stats": {
+    "conformance": {
+      "4": 2,
+      "5": 46
+    },
+    "categories": {
+      "Games": 7,
+      "Utilities": 15,
+      "HTML Apps": 13,
+      "Homeopathy": 11,
+      "Health Tools": 1,
+      "Data": 1
+    }
+  },
+  "activity": [
+    {
+      "date": "2026-10-10",
+      "count": 0
     },
     {
-      "title": "Forge",
-      "value": "live",
-      "tone": "ok"
+      "date": "2026-10-11",
+      "count": 0
+    },
+    {
+      "date": "2026-10-12",
+      "count": 0
+    },
+    {
+      "date": "2026-10-13",
+      "count": 0
+    },
+    {
+      "date": "2026-10-14",
+      "count": 0
+    },
+    {
+      "date": "2026-10-15",
+      "count": 0
+    },
+    {
+      "date": "2026-10-16",
+      "count": 0
+    },
+    {
+      "date": "2026-10-17",
+      "count": 0
+    },
+    {
+      "date": "2026-10-18",
+      "count": 0
+    },
+    {
+      "date": "2026-10-19",
+      "count": 0
+    },
+    {
+      "date": "2026-10-20",
+      "count": 0
+    },
+    {
+      "date": "2026-10-21",
+      "count": 0
+    },
+    {
+      "date": "2026-10-22",
+      "count": 39
+    },
+    {
+      "date": "2026-10-23",
+      "count": 28
+    }
+  ],
+  "automation": [
+    {
+      "repo": "drsamonline.github.io",
+      "file": "refresh-hub.yml",
+      "name": "Refresh project hub",
+      "what": "the project hub",
+      "schedule": "daily 03:17 UTC",
+      "repo_url": "https://github.com/drsamonline/drsamonline.github.io",
+      "url": "https://github.com/drsamonline/drsamonline.github.io/actions/runs/39892570861",
+      "last_run": "2026-10-23T03:02:54Z",
+      "conclusion": "success"
+    },
+    {
+      "repo": "drsamonline",
+      "file": "update-profile.yml",
+      "name": "Update profile README",
+      "what": "the profile README",
+      "schedule": "daily 03:17 UTC",
+      "repo_url": "https://github.com/drsamonline/drsamonline",
+      "url": "https://github.com/drsamonline/drsamonline/actions/runs/39755576206",
+      "last_run": "2026-10-22T09:27:46Z",
+      "conclusion": "success"
+    },
+    {
+      "repo": "dashboard",
+      "file": "refresh.yml",
+      "name": "Refresh dashboard data",
+      "what": "this dashboard",
+      "schedule": "daily 03:47 UTC",
+      "repo_url": "https://github.com/drsamonline/dashboard",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/39894469975",
+      "last_run": "2026-10-23T03:20:23Z",
+      "conclusion": "in_progress"
+    },
+    {
+      "repo": "drsamonline",
+      "file": "metrics.yml",
+      "name": "Metrics",
+      "what": "the metric cards",
+      "schedule": "daily 04:00 UTC",
+      "repo_url": "https://github.com/drsamonline/drsamonline",
+      "url": "https://github.com/drsamonline/drsamonline/actions/runs/39753276405",
+      "last_run": "2026-10-22T09:11:21Z",
+      "conclusion": "success"
+    },
+    {
+      "repo": "Matneo",
+      "file": "blog.yml",
+      "name": "Refresh blog posts",
+      "what": "the blog",
+      "schedule": "daily 04:12 UTC",
+      "repo_url": "https://github.com/drsamonline/Matneo",
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/39887666231",
+      "last_run": "2026-10-23T02:05:40Z",
+      "conclusion": "success"
+    },
+    {
+      "repo": "Matneo",
+      "file": "store.yml",
+      "name": "Refresh store catalogue",
+      "what": "the store",
+      "schedule": "daily 04:22 UTC",
+      "repo_url": "https://github.com/drsamonline/Matneo",
+      "url": "https://github.com/drsamonline/Matneo/actions/workflows/store.yml",
+      "last_run": null,
+      "conclusion": "no runs yet"
+    },
+    {
+      "repo": "knowledge",
+      "file": "refresh.yml",
+      "name": "Refresh plan status",
+      "what": "the plan",
+      "schedule": "daily 04:32 UTC",
+      "repo_url": "https://github.com/drsamonline/knowledge",
+      "url": "https://github.com/drsamonline/knowledge/actions/workflows/refresh.yml",
+      "last_run": null,
+      "conclusion": "scheduled (private repo)"
+    },
+    {
+      "repo": "registry",
+      "file": "refresh.yml",
+      "name": "Refresh registry",
+      "what": "the registry",
+      "schedule": "daily 04:42 UTC",
+      "repo_url": "https://github.com/drsamonline/registry",
+      "url": "https://github.com/drsamonline/registry/actions/workflows/refresh.yml",
+      "last_run": null,
+      "conclusion": "scheduled (private repo)"
+    },
+    {
+      "repo": "app-builder",
+      "file": "kit-tests.yml",
+      "name": "All kit tests",
+      "what": "every kit's tests",
+      "schedule": "daily 05:00 UTC",
+      "repo_url": "https://github.com/drsamonline/app-builder",
+      "url": "https://github.com/drsamonline/app-builder/actions/workflows/kit-tests.yml",
+      "last_run": null,
+      "conclusion": "no runs yet"
+    },
+    {
+      "repo": "skills",
+      "file": "refresh.yml",
+      "name": "refresh",
+      "what": "the skills catalogue",
+      "schedule": "weekly (Mon)",
+      "repo_url": "https://github.com/drsamonline/skills",
+      "url": "https://github.com/drsamonline/skills/actions/workflows/refresh.yml",
+      "last_run": null,
+      "conclusion": "no runs yet"
+    },
+    {
+      "repo": "forge",
+      "file": "heartbeat.yml",
+      "name": "Heartbeat",
+      "what": "the control plane",
+      "schedule": "daily 06:00 UTC",
+      "repo_url": "https://github.com/drsamonline/forge",
+      "url": "https://github.com/drsamonline/forge/actions/workflows/heartbeat.yml",
+      "last_run": null,
+      "conclusion": "scheduled (private repo)"
+    }
+  ],
+  "roadmap": [
+    {
+      "what": "Retrofit — adopt the kits into the apps that duplicate them",
+      "state": "in progress",
+      "link": "https://github.com/drsamonline/forge"
+    },
+    {
+      "what": "Kits queued — audio, date, convert, image, chart, form, qr, markdown, pdf, table, template, cli, json",
+      "state": "queued",
+      "link": "https://github.com/drsamonline/knowledge"
+    },
+    {
+      "what": "Apps queued — Carrier/Beam (optical), Chalk, Canteen",
+      "state": "queued",
+      "link": "https://github.com/drsamonline/registry"
+    },
+    {
+      "what": "Forge as a licensed product — the commercial pack",
+      "state": "planned",
+      "link": "https://github.com/drsamonline/forge"
     }
   ],
   "repos": [
@@ -505,133 +723,12 @@
       "status_tone": "ok"
     }
   ],
-  "automation": [
-    {
-      "repo": "drsamonline.github.io",
-      "file": "refresh-hub.yml",
-      "name": "Refresh project hub",
-      "what": "the project hub",
-      "schedule": "daily 03:17 UTC",
-      "repo_url": "https://github.com/drsamonline/drsamonline.github.io",
-      "url": "https://github.com/drsamonline/drsamonline.github.io/actions/runs/39892570861",
-      "last_run": "2026-10-23T03:02:54Z",
-      "conclusion": "success"
-    },
-    {
-      "repo": "drsamonline",
-      "file": "update-profile.yml",
-      "name": "Update profile README",
-      "what": "the profile README",
-      "schedule": "daily 03:17 UTC",
-      "repo_url": "https://github.com/drsamonline/drsamonline",
-      "url": "https://github.com/drsamonline/drsamonline/actions/runs/39755576206",
-      "last_run": "2026-10-22T09:27:46Z",
-      "conclusion": "success"
-    },
-    {
-      "repo": "dashboard",
-      "file": "refresh.yml",
-      "name": "Refresh dashboard data",
-      "what": "this dashboard",
-      "schedule": "daily 03:47 UTC",
-      "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/39893828276",
-      "last_run": "2026-10-23T03:13:16Z",
-      "conclusion": "in_progress"
-    },
-    {
-      "repo": "drsamonline",
-      "file": "metrics.yml",
-      "name": "Metrics",
-      "what": "the metric cards",
-      "schedule": "daily 04:00 UTC",
-      "repo_url": "https://github.com/drsamonline/drsamonline",
-      "url": "https://github.com/drsamonline/drsamonline/actions/runs/39753276405",
-      "last_run": "2026-10-22T09:11:21Z",
-      "conclusion": "success"
-    },
-    {
-      "repo": "Matneo",
-      "file": "blog.yml",
-      "name": "Refresh blog posts",
-      "what": "the blog",
-      "schedule": "daily 04:12 UTC",
-      "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/runs/39887666231",
-      "last_run": "2026-10-23T02:05:40Z",
-      "conclusion": "success"
-    },
-    {
-      "repo": "Matneo",
-      "file": "store.yml",
-      "name": "Refresh store catalogue",
-      "what": "the store",
-      "schedule": "daily 04:22 UTC",
-      "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/workflows/store.yml",
-      "last_run": null,
-      "conclusion": "no runs yet"
-    },
-    {
-      "repo": "knowledge",
-      "file": "refresh.yml",
-      "name": "Refresh plan status",
-      "what": "the plan",
-      "schedule": "daily 04:32 UTC",
-      "repo_url": "https://github.com/drsamonline/knowledge",
-      "url": "https://github.com/drsamonline/knowledge/actions/workflows/refresh.yml",
-      "last_run": null,
-      "conclusion": "scheduled (private repo)"
-    },
-    {
-      "repo": "registry",
-      "file": "refresh.yml",
-      "name": "Refresh registry",
-      "what": "the registry",
-      "schedule": "daily 04:42 UTC",
-      "repo_url": "https://github.com/drsamonline/registry",
-      "url": "https://github.com/drsamonline/registry/actions/workflows/refresh.yml",
-      "last_run": null,
-      "conclusion": "scheduled (private repo)"
-    },
-    {
-      "repo": "app-builder",
-      "file": "kit-tests.yml",
-      "name": "All kit tests",
-      "what": "every kit's tests",
-      "schedule": "daily 05:00 UTC",
-      "repo_url": "https://github.com/drsamonline/app-builder",
-      "url": "https://github.com/drsamonline/app-builder/actions/workflows/kit-tests.yml",
-      "last_run": null,
-      "conclusion": "no runs yet"
-    },
-    {
-      "repo": "skills",
-      "file": "refresh.yml",
-      "name": "refresh",
-      "what": "the skills catalogue",
-      "schedule": "weekly (Mon)",
-      "repo_url": "https://github.com/drsamonline/skills",
-      "url": "https://github.com/drsamonline/skills/actions/workflows/refresh.yml",
-      "last_run": null,
-      "conclusion": "no runs yet"
-    },
-    {
-      "repo": "forge",
-      "file": "heartbeat.yml",
-      "name": "Heartbeat",
-      "what": "the control plane",
-      "schedule": "daily 06:00 UTC",
-      "repo_url": "https://github.com/drsamonline/forge",
-      "url": "https://github.com/drsamonline/forge/actions/workflows/heartbeat.yml",
-      "last_run": null,
-      "conclusion": "scheduled (private repo)"
-    }
-  ],
   "links": {
     "store": "https://drsamonline.github.io/Matneo/",
+    "hub": "https://drsamonline.github.io/",
     "forge": "https://github.com/drsamonline/forge",
     "registry": "https://github.com/drsamonline/registry",
-    "knowledge": "https://github.com/drsamonline/knowledge"
+    "knowledge": "https://github.com/drsamonline/knowledge",
+    "actions": "https://github.com/drsamonline?tab=repositories"
   }
 }
