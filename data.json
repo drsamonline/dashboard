@@ -1,8 +1,8 @@
 {
   "generated": "2026-10-23",
-  "generated_at": "2026-10-23T04:56:00Z",
+  "generated_at": "2026-10-23T05:00:08Z",
   "reckoning": "48 products · 12 kits · avg conformance 5.0/5 · updated automatically.",
-  "health": "ok",
+  "health": "bad",
   "cards": [
     {
       "title": "Products",
@@ -32,8 +32,8 @@
     "pushes": 67,
     "byrepo": {
       "dashboard": 1,
-      "app-builder": 1,
       "Matneo": 1,
+      "app-builder": 1,
       "aethelgard-games": 1,
       "saga-vn-engine": 1,
       "aethelgard-rpg-engine": 1,
@@ -139,13 +139,6 @@
     }
   ],
   "attention": [
-    {
-      "title": "feat(home): show the latest blog posts; harden the refresh push race",
-      "repo": "Matneo",
-      "url": "https://github.com/drsamonline/Matneo/pull/4",
-      "kind": "PR",
-      "created": "2026-10-23T04:55:45Z"
-    },
     {
       "title": "fix(web-kit): add the test-node.js the Test workflow expects",
       "repo": "web-kit",
@@ -278,6 +271,13 @@
       "url": "https://github.com/drsamonline/The_Browser/pull/20",
       "kind": "PR",
       "created": "2026-09-30T14:14:45Z"
+    },
+    {
+      "title": "CI: Bump microsoft/setup-msbuild in /",
+      "repo": "The_Browser",
+      "url": "https://github.com/drsamonline/The_Browser/pull/19",
+      "kind": "PR",
+      "created": "2026-09-30T14:14:31Z"
     }
   ],
   "controls": [
@@ -495,8 +495,8 @@
       "what": "this dashboard",
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/39902947281",
-      "last_run": "2026-10-23T04:55:50Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/39903310712",
+      "last_run": "2026-10-23T04:59:59Z",
       "conclusion": "in_progress"
     },
     {
@@ -517,9 +517,9 @@
       "what": "the blog",
       "schedule": "daily 04:12 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/runs/39902605442",
-      "last_run": "2026-10-23T04:52:12Z",
-      "conclusion": "success"
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/39902962483",
+      "last_run": "2026-10-23T04:56:09Z",
+      "conclusion": "failure"
     },
     {
       "repo": "Matneo",
@@ -528,8 +528,8 @@
       "what": "the store",
       "schedule": "daily 04:22 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/runs/39902605434",
-      "last_run": "2026-10-23T04:52:10Z",
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/39902962500",
+      "last_run": "2026-10-23T04:56:08Z",
       "conclusion": "success"
     },
     {
@@ -1301,8 +1301,8 @@
       "pushes": 67,
       "byrepo": {
         "dashboard": 1,
-        "app-builder": 1,
         "Matneo": 1,
+        "app-builder": 1,
         "aethelgard-games": 1,
         "saga-vn-engine": 1,
         "aethelgard-rpg-engine": 1,
