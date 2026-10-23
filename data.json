@@ -1,11 +1,12 @@
 {
   "generated": "2026-10-23",
-  "reckoning": "48 products · 12 kits · avg conformance 5.0/5 · updated automatically.",
+  "generated_at": "2026-10-23T06:14:04Z",
+  "reckoning": "46 products · 12 kits · avg conformance 5.0/5 · updated automatically.",
   "health": "ok",
   "cards": [
     {
       "title": "Products",
-      "value": "48",
+      "value": "46",
       "tone": ""
     },
     {
@@ -25,18 +26,56 @@
     }
   ],
   "summary": {
-    "products": 48,
+    "products": 46,
     "kits": 12,
     "avg": 5.0,
-    "pushes": 67
+    "pushes": 67,
+    "byrepo": {
+      "app-builder": 1,
+      "chalk-lan": 1,
+      "canteen-lan": 1,
+      "app-companion-forge": 1,
+      "BLINKTRANSFER": 1,
+      "blinkcode-ai": 1,
+      "helioprism": 1,
+      "frame-kit": 1,
+      "optical-kit": 1,
+      "dashboard": 1,
+      "seance": 1,
+      "drsamonline": 1,
+      "drsamonline.github.io": 1,
+      "Matneo": 1,
+      "aethelgard-games": 1,
+      "saga-vn-engine": 1,
+      "aethelgard-rpg-engine": 1,
+      "NEO": 1,
+      "The_Browser": 1,
+      "neon-engine": 1,
+      "case-kit": 1,
+      "book-kit": 1,
+      "srs-kit": 1,
+      "search-kit": 1,
+      "repertory-kit": 1,
+      "astro-kit": 1,
+      "game-kit": 1,
+      "lan-kit": 1,
+      "compress-kit": 1,
+      "crypto-kit": 1,
+      "web-kit": 1,
+      "read-live-transform-app": 1,
+      "export-kit": 1,
+      "app-panchang": 1,
+      "mnemosyne-companion": 1,
+      "skin-case-tracker": 1,
+      "unstoppable-mind-companion": 1
+    }
   },
   "stats": {
     "conformance": {
-      "5": 47,
-      "4": 1
+      "5": 46
     },
     "categories": {
-      "HTML Apps": 14,
+      "HTML Apps": 12,
       "Games": 6,
       "Utilities": 15,
       "Homeopathy": 11,
@@ -95,11 +134,11 @@
     },
     {
       "date": "2026-10-22",
-      "count": 32
+      "count": 30
     },
     {
       "date": "2026-10-23",
-      "count": 35
+      "count": 37
     }
   ],
   "attention": [
@@ -310,9 +349,21 @@
   "changes": [
     {
       "type": "Push",
+      "repo": "astro-kit",
+      "when": "2026-10-23T02:20:35Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "The_Browser",
+      "when": "2026-10-22T07:54:06Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
       "repo": "neon-runner",
       "when": "2026-10-21T02:42:51Z",
-      "text": "0 commit(s) to main"
+      "text": "pushed to main"
     },
     {
       "type": "Create",
@@ -324,7 +375,7 @@
       "type": "Push",
       "repo": "neon-runner",
       "when": "2026-10-21T02:42:44Z",
-      "text": "0 commit(s) to main"
+      "text": "pushed to main"
     },
     {
       "type": "Create",
@@ -336,55 +387,55 @@
       "type": "Push",
       "repo": "neon-runner",
       "when": "2026-10-21T02:42:16Z",
-      "text": "0 commit(s) to main"
+      "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "neon-runner",
       "when": "2026-10-21T02:42:10Z",
-      "text": "0 commit(s) to main"
+      "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "neon-runner",
       "when": "2026-10-21T02:42:02Z",
-      "text": "0 commit(s) to main"
+      "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "aethelgard-games",
       "when": "2026-10-23T02:08:44Z",
-      "text": "0 commit(s) to add-license"
+      "text": "pushed to add-license"
     },
     {
       "type": "Push",
       "repo": "read-live-transform-app",
       "when": "2026-10-23T02:08:00Z",
-      "text": "0 commit(s) to web-kit"
+      "text": "pushed to web-kit"
     },
     {
       "type": "Push",
       "repo": "neon-runner",
       "when": "2026-10-21T02:43:11Z",
-      "text": "0 commit(s) to main"
+      "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "neon-runner",
       "when": "2026-10-21T02:43:04Z",
-      "text": "0 commit(s) to main"
+      "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "neon-runner",
       "when": "2026-10-21T02:43:00Z",
-      "text": "0 commit(s) to main"
+      "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "neon-runner",
       "when": "2026-10-21T02:42:47Z",
-      "text": "0 commit(s) to main"
+      "text": "pushed to main"
     },
     {
       "type": "Create",
@@ -396,37 +447,25 @@
       "type": "Push",
       "repo": "The_Browser",
       "when": "2026-10-22T07:35:27Z",
-      "text": "0 commit(s) to main"
+      "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "app-companion-forge",
       "when": "2026-10-22T21:31:13Z",
-      "text": "0 commit(s) to main"
+      "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "app-companion-forge",
       "when": "2026-10-22T21:31:06Z",
-      "text": "0 commit(s) to main"
+      "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "profile-kit",
       "when": "2026-10-22T08:34:24Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Push",
-      "repo": "Matneo",
-      "when": "2026-10-23T02:05:24Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Push",
-      "repo": "The_Browser",
-      "when": "2026-10-22T07:32:57Z",
-      "text": "0 commit(s) to main"
+      "text": "pushed to main"
     }
   ],
   "automation": [
@@ -459,8 +498,8 @@
       "what": "this dashboard",
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/39908798417",
-      "last_run": "2026-10-23T05:59:16Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/39910228963",
+      "last_run": "2026-10-23T06:13:54Z",
       "conclusion": "in_progress"
     },
     {
@@ -492,9 +531,9 @@
       "what": "the store",
       "schedule": "daily 04:22 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/runs/39905960792",
-      "last_run": "2026-10-23T05:29:48Z",
-      "conclusion": "success"
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/39910232332",
+      "last_run": "2026-10-23T06:13:57Z",
+      "conclusion": "in_progress"
     },
     {
       "repo": "knowledge",
@@ -576,6 +615,90 @@
   ],
   "repos": [
     {
+      "name": "chalk-lan",
+      "description": "A shared whiteboard for the room: everyone on the same Wi-Fi draws on the same board, live. Offline, no accounts. Built with Forge on web-kit + lan-kit.",
+      "pushed_at": "2026-10-23T06:13:11Z",
+      "homepage": "https://drsamonline.github.io/chalk-lan/",
+      "html_url": "https://github.com/drsamonline/chalk-lan",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
+      "name": "canteen-lan",
+      "description": "Order from your table over the room's own Wi-Fi - a LAN canteen board for Forge",
+      "pushed_at": "2026-10-23T06:13:08Z",
+      "homepage": "https://drsamonline.github.io/canteen-lan/",
+      "html_url": "https://github.com/drsamonline/canteen-lan",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
+      "name": "app-companion-forge",
+      "description": "Forge tooling (not a product app): an offline pocket console for the Forge system.",
+      "pushed_at": "2026-10-23T06:12:58Z",
+      "homepage": "https://drsamonline.github.io/app-companion-forge/",
+      "html_url": "https://github.com/drsamonline/app-companion-forge",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
+      "name": "BLINKTRANSFER",
+      "description": "DATA TRANSFER IN BLINK OF EYE",
+      "pushed_at": "2026-10-23T06:12:56Z",
+      "homepage": "https://drsamonline.github.io/BLINKTRANSFER/",
+      "html_url": "https://github.com/drsamonline/BLINKTRANSFER",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
+      "name": "blinkcode-ai",
+      "description": "BlinkCode AI — single-shot optical file transfer PWA (compression -> SpectraCode -> camera -> restore)",
+      "pushed_at": "2026-10-23T06:12:42Z",
+      "homepage": "https://drsamonline.github.io/blinkcode-ai/",
+      "html_url": "https://github.com/drsamonline/blinkcode-ai",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
+      "name": "helioprism",
+      "description": "One app, two optical transports — send a file with light over QR or a colour matrix. Offline, no network.",
+      "pushed_at": "2026-10-23T06:12:36Z",
+      "homepage": "https://drsamonline.github.io/helioprism/",
+      "html_url": "https://github.com/drsamonline/helioprism",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
       "name": "seance",
       "description": "Strongbox (master-list app) - sealed notes, opened once: seal a note with a passphrase, it opens once. Offline, no accounts. Built with crypto-kit + web-kit. (Fold-in of the working name 'seance'.)",
       "pushed_at": "2026-10-23T05:51:52Z",
@@ -584,7 +707,10 @@
       "download": "",
       "category": "HTML Apps",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
       "name": "aethelgard-games",
@@ -595,18 +721,10 @@
       "download": "",
       "category": "Games",
       "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "aethelgard-rpg-engine",
-      "description": "A dependency-free, vanilla-JavaScript engine for deep, single-player browser RPGs. Engine only — ships a small generic sample world; the games it powers live in drsamonline/aethelgard-games.",
-      "pushed_at": "2026-10-23T04:39:07Z",
-      "homepage": "https://drsamonline.github.io/aethelgard-rpg-engine/",
-      "html_url": "https://github.com/drsamonline/aethelgard-rpg-engine",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
       "name": "saga-vn-engine",
@@ -617,18 +735,24 @@
       "download": "",
       "category": "HTML Apps",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
-      "name": "The_Browser",
-      "description": "Aetheris Browser — an experimental C++ browser engine with a dependency-free rendering foundation (Ladybird/SerenityOS-derived). Not production-ready.",
-      "pushed_at": "2026-10-23T03:51:06Z",
-      "homepage": "https://drsamonline.github.io/The_Browser/",
-      "html_url": "https://github.com/drsamonline/The_Browser",
+      "name": "aethelgard-rpg-engine",
+      "description": "A dependency-free, vanilla-JavaScript engine for deep, single-player browser RPGs. Engine only — ships a small generic sample world; the games it powers live in drsamonline/aethelgard-games.",
+      "pushed_at": "2026-10-23T04:39:07Z",
+      "homepage": "https://drsamonline.github.io/aethelgard-rpg-engine/",
+      "html_url": "https://github.com/drsamonline/aethelgard-rpg-engine",
       "download": "",
-      "category": "Utilities",
+      "category": "HTML Apps",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
       "name": "NEO",
@@ -639,7 +763,24 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
+      "name": "The_Browser",
+      "description": "Aetheris Browser — an experimental C++ browser engine with a dependency-free rendering foundation (Ladybird/SerenityOS-derived). Not production-ready.",
+      "pushed_at": "2026-10-23T03:51:06Z",
+      "homepage": "https://drsamonline.github.io/The_Browser/",
+      "html_url": "https://github.com/drsamonline/The_Browser",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
       "name": "neon-engine",
@@ -650,7 +791,10 @@
       "download": "",
       "category": "HTML Apps",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
       "name": "read-live-transform-app",
@@ -661,51 +805,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "export-kit",
-      "description": "Save text, JSON, CSV and binary to the user's device, and bundle files into a store-only ZIP. One file, no dependencies. Built with Forge.",
-      "pushed_at": "2026-10-23T02:04:48Z",
-      "homepage": "https://drsamonline.github.io/export-kit/",
-      "html_url": "https://github.com/drsamonline/export-kit",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "4/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "blinkcode-ai",
-      "description": "BlinkCode AI — single-shot optical file transfer PWA (compression -> SpectraCode -> camera -> restore)",
-      "pushed_at": "2026-10-23T02:00:15Z",
-      "homepage": "https://drsamonline.github.io/blinkcode-ai/",
-      "html_url": "https://github.com/drsamonline/blinkcode-ai",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "BLINKTRANSFER",
-      "description": "DATA TRANSFER IN BLINK OF EYE",
-      "pushed_at": "2026-10-23T02:00:07Z",
-      "homepage": "https://drsamonline.github.io/BLINKTRANSFER/",
-      "html_url": "https://github.com/drsamonline/BLINKTRANSFER",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "helioprism",
-      "description": "One app, two optical transports — send a file with light over QR or a colour matrix. Offline, no network.",
-      "pushed_at": "2026-10-23T02:00:01Z",
-      "homepage": "https://drsamonline.github.io/helioprism/",
-      "html_url": "https://github.com/drsamonline/helioprism",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
       "name": "app-panchang",
@@ -716,29 +819,10 @@
       "download": "",
       "category": "HTML Apps",
       "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "frame-kit",
-      "description": "The shared transfer-frame core for drsamonline apps: a self-describing frame, a rateless collector and byte/checksum utilities. One file, no dependencies. MIT.",
-      "pushed_at": "2026-10-23T01:57:59Z",
-      "homepage": "https://drsamonline.github.io/frame-kit/",
-      "html_url": "https://github.com/drsamonline/frame-kit",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "canteen-lan",
-      "description": "Order from your table over the room's own Wi-Fi - a LAN canteen board for Forge",
-      "pushed_at": "2026-10-23T01:30:00Z",
-      "homepage": "https://drsamonline.github.io/canteen-lan/",
-      "html_url": "https://github.com/drsamonline/canteen-lan",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
       "name": "mnemosyne-companion",
@@ -749,7 +833,10 @@
       "download": "",
       "category": "Homeopathy",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
       "name": "skin-case-tracker",
@@ -760,7 +847,10 @@
       "download": "",
       "category": "Homeopathy",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
       "name": "unstoppable-mind-companion",
@@ -771,29 +861,10 @@
       "download": "",
       "category": "Homeopathy",
       "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "chalk-lan",
-      "description": "A shared whiteboard for the room: everyone on the same Wi-Fi draws on the same board, live. Offline, no accounts. Built with Forge on web-kit + lan-kit.",
-      "pushed_at": "2026-10-22T23:30:02Z",
-      "homepage": "https://drsamonline.github.io/chalk-lan/",
-      "html_url": "https://github.com/drsamonline/chalk-lan",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "app-companion-forge",
-      "description": "Forge tooling (not a product app): an offline pocket console for the Forge system.",
-      "pushed_at": "2026-10-22T21:31:30Z",
-      "homepage": "https://drsamonline.github.io/app-companion-forge/",
-      "html_url": "https://github.com/drsamonline/app-companion-forge",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
       "name": "today-card",
@@ -804,7 +875,10 @@
       "download": "",
       "category": "HTML Apps",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "offline-pdf-toolkit",
@@ -815,7 +889,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "remedy-relationship-explorer",
@@ -826,7 +903,10 @@
       "download": "",
       "category": "Homeopathy",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "kent-repertory-explorer",
@@ -837,7 +917,10 @@
       "download": "",
       "category": "Homeopathy",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "whispering-body-first-aid",
@@ -848,7 +931,10 @@
       "download": "",
       "category": "Homeopathy",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "bmi-bmr-tdee-macros-fluid-calculator",
@@ -859,7 +945,10 @@
       "download": "",
       "category": "Health Tools",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "boericke-repertory",
@@ -870,7 +959,10 @@
       "download": "",
       "category": "Homeopathy",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "All4ONE",
@@ -881,7 +973,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "homoeopathic-materia-medica-repertory-json",
@@ -892,7 +987,10 @@
       "download": "",
       "category": "Data",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "HMS",
@@ -903,7 +1001,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "neon-games",
@@ -914,7 +1015,10 @@
       "download": "",
       "category": "Games",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "neon-runner",
@@ -925,7 +1029,10 @@
       "download": "",
       "category": "Games",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "open-materia-medica",
@@ -936,7 +1043,10 @@
       "download": "",
       "category": "Homeopathy",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "ambient-sound-studio",
@@ -947,7 +1057,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "retro-strike",
@@ -958,7 +1071,10 @@
       "download": "",
       "category": "Games",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "lockhtml",
@@ -969,7 +1085,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "gentle-pediatrics-companion",
@@ -980,7 +1099,10 @@
       "download": "",
       "category": "Homeopathy",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "the-symphony-companion",
@@ -991,7 +1113,10 @@
       "download": "",
       "category": "Homeopathy",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "idle-city-ages-of-growth",
@@ -1002,7 +1127,10 @@
       "download": "",
       "category": "Games",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "conqueror-os",
@@ -1013,7 +1141,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "lexora",
@@ -1024,7 +1155,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "ULTIMATE-WINDOWS-OPTIMIZER",
@@ -1035,7 +1169,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "CLDR",
@@ -1046,7 +1183,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "SmartNotes",
@@ -1057,7 +1197,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "smartbill-app",
@@ -1068,7 +1211,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "MATERIA-MEDICA-BUILDER",
@@ -1079,7 +1225,10 @@
       "download": "",
       "category": "Homeopathy",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "dance-fight",
@@ -1090,7 +1239,10 @@
       "download": "",
       "category": "Games",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "TTB",
@@ -1101,7 +1253,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     }
   ],
   "links": {
@@ -1115,10 +1270,49 @@
   "history": [
     {
       "date": "2026-10-23",
-      "products": 48,
+      "products": 46,
       "kits": 12,
       "avg": 5.0,
-      "pushes": 67
+      "pushes": 67,
+      "byrepo": {
+        "app-builder": 1,
+        "chalk-lan": 1,
+        "canteen-lan": 1,
+        "app-companion-forge": 1,
+        "BLINKTRANSFER": 1,
+        "blinkcode-ai": 1,
+        "helioprism": 1,
+        "frame-kit": 1,
+        "optical-kit": 1,
+        "dashboard": 1,
+        "seance": 1,
+        "drsamonline": 1,
+        "drsamonline.github.io": 1,
+        "Matneo": 1,
+        "aethelgard-games": 1,
+        "saga-vn-engine": 1,
+        "aethelgard-rpg-engine": 1,
+        "NEO": 1,
+        "The_Browser": 1,
+        "neon-engine": 1,
+        "case-kit": 1,
+        "book-kit": 1,
+        "srs-kit": 1,
+        "search-kit": 1,
+        "repertory-kit": 1,
+        "astro-kit": 1,
+        "game-kit": 1,
+        "lan-kit": 1,
+        "compress-kit": 1,
+        "crypto-kit": 1,
+        "web-kit": 1,
+        "read-live-transform-app": 1,
+        "export-kit": 1,
+        "app-panchang": 1,
+        "mnemosyne-companion": 1,
+        "skin-case-tracker": 1,
+        "unstoppable-mind-companion": 1
+      }
     }
   ]
 }
