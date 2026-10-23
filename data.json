@@ -1,6 +1,6 @@
 {
   "generated": "2026-10-23",
-  "generated_at": "2026-10-23T06:23:26Z",
+  "generated_at": "2026-10-23T06:43:14Z",
   "reckoning": "46 products · 14 kits · avg conformance 5.0/5 · updated automatically.",
   "health": "ok",
   "cards": [
@@ -349,6 +349,84 @@
   "changes": [
     {
       "type": "Push",
+      "repo": "profile-kit",
+      "when": "2026-10-22T08:34:26Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "mnemosyne-companion",
+      "when": "2026-10-23T01:06:02Z",
+      "text": "pushed to web-kit"
+    },
+    {
+      "type": "Push",
+      "repo": "unstoppable-mind-companion",
+      "when": "2026-10-23T01:02:41Z",
+      "text": "pushed to web-kit"
+    },
+    {
+      "type": "Push",
+      "repo": "search-kit",
+      "when": "2026-10-23T02:20:40Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "game-kit",
+      "when": "2026-10-23T02:20:32Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "app-builder",
+      "when": "2026-10-23T02:20:14Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "profile-kit",
+      "when": "2026-10-22T08:34:47Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "profile-kit",
+      "when": "2026-10-22T08:34:38Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "drsamonline",
+      "when": "2026-10-22T08:18:39Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "PullRequest",
+      "repo": "NEO",
+      "when": "2026-10-23T03:41:53Z",
+      "text": "merged: "
+    },
+    {
+      "type": "Push",
+      "repo": "read-live-transform-app",
+      "when": "2026-10-23T02:08:08Z",
+      "text": "pushed to web-kit"
+    },
+    {
+      "type": "Push",
+      "repo": "read-live-transform-app",
+      "when": "2026-10-23T02:08:05Z",
+      "text": "pushed to web-kit"
+    },
+    {
+      "type": "Push",
+      "repo": "read-live-transform-app",
+      "when": "2026-10-23T02:08:03Z",
+      "text": "pushed to web-kit"
+    },
+    {
+      "type": "Push",
       "repo": "Matneo",
       "when": "2026-10-23T02:05:29Z",
       "text": "pushed to main"
@@ -388,84 +466,6 @@
       "repo": "unstoppable-mind-companion",
       "when": "2026-10-22T09:00:48Z",
       "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "astro-kit",
-      "when": "2026-10-23T02:20:35Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "The_Browser",
-      "when": "2026-10-22T07:54:06Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "neon-runner",
-      "when": "2026-10-21T02:42:51Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Create",
-      "repo": "aethelgard-games",
-      "when": "2026-10-23T02:08:35Z",
-      "text": ""
-    },
-    {
-      "type": "Push",
-      "repo": "neon-runner",
-      "when": "2026-10-21T02:42:44Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Create",
-      "repo": "canteen-lan",
-      "when": "2026-10-23T01:29:28Z",
-      "text": ""
-    },
-    {
-      "type": "Push",
-      "repo": "neon-runner",
-      "when": "2026-10-21T02:42:16Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "neon-runner",
-      "when": "2026-10-21T02:42:10Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "neon-runner",
-      "when": "2026-10-21T02:42:02Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "aethelgard-games",
-      "when": "2026-10-23T02:08:44Z",
-      "text": "pushed to add-license"
-    },
-    {
-      "type": "Push",
-      "repo": "read-live-transform-app",
-      "when": "2026-10-23T02:08:00Z",
-      "text": "pushed to web-kit"
-    },
-    {
-      "type": "Push",
-      "repo": "neon-runner",
-      "when": "2026-10-21T02:43:11Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "neon-runner",
-      "when": "2026-10-21T02:43:04Z",
-      "text": "pushed to main"
     }
   ],
   "automation": [
@@ -499,8 +499,8 @@
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
       "url": "https://github.com/drsamonline/dashboard/actions/runs/39911159538",
-      "last_run": "2026-10-23T06:23:15Z",
-      "conclusion": "in_progress"
+      "last_run": "2026-10-23T06:23:33Z",
+      "conclusion": "success"
     },
     {
       "repo": "drsamonline",
