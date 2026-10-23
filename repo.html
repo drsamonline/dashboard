@@ -5,25 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>repo — drsamonline console</title>
 <style>
-  :root{--bg:#0f1115;--card:#171a21;--ink:#e7e9ee;--mut:#9aa3b2;--ok:#22c55e;--warn:#f59e0b;--bad:#ef4444;--line:#252a34;--acc:#7dd3fc}
+  :root{--bg0:#0b0d12;--bg1:#12151d;--card:rgba(255,255,255,.035);--card2:rgba(255,255,255,.06);
+    --ink:#eef1f6;--mut:#98a2b3;--line:rgba(255,255,255,.09);--violet:#8b5cf6;--cyan:#06b6d4;--green:#22c55e;--amber:#f59e0b;--red:#ef4444;--acc:#a78bfa;--radius:16px;--shadow:0 10px 30px rgba(0,0,0,.35)}
   *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-  header,main,footer{max-width:900px;margin:0 auto;padding:20px}
-  h1{margin:0 0 6px;font-size:22px}
+  body{margin:0;color:var(--ink);min-height:100vh;font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    background:radial-gradient(1000px 520px at 10% -10%,rgba(139,92,246,.20),transparent 60%),radial-gradient(820px 460px at 95% 0,rgba(6,182,212,.15),transparent 55%),linear-gradient(180deg,var(--bg1),var(--bg0) 42%)}
+  a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
+  header,main,footer{max-width:920px;margin:0 auto;padding:22px 18px}
+  h1{margin:8px 0 4px;font-size:clamp(1.3rem,2.6vw,1.8rem)}
   .mut{color:var(--mut);font-size:13px}
-  a{color:var(--acc);text-decoration:none}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin:12px 0}
-  .grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(170px,1fr))}
-  .grid .card h3{margin:0 0 4px;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut)}
-  .grid .card p{margin:0;font-size:18px;font-weight:700}
-  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
-  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);font-size:13px}
-  th{color:var(--mut);font-weight:600}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:15px;margin:12px 0;box-shadow:var(--shadow)}
+  .grid{display:grid;gap:13px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+  .grid .card .k{font-size:11.5px;text-transform:uppercase;letter-spacing:.09em;color:var(--mut);font-weight:700}
+  .grid .card .v{font-size:26px;font-weight:800;margin-top:4px}
+  .sec{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:#8ea0bd;margin:26px 0 8px;font-weight:700;display:flex;align-items:center;gap:8px}
+  .sec::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,var(--line),transparent)}
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line);font-size:13px}
+  th{color:#8ea0bd;font-weight:700;font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;background:rgba(255,255,255,.02)}
   tr:last-child td{border-bottom:0}
-  .pill{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11px;border:1px solid var(--line);color:var(--mut)}
+  .badge{display:inline-flex;align-items:center;gap:6px;padding:2px 9px;border-radius:999px;font-size:11px;font-weight:700;border:1px solid var(--line);background:rgba(255,255,255,.04);color:#cbd5e1}
+  .badge.ok{color:#bbf7d0;border-color:rgba(34,197,94,.45);background:rgba(34,197,94,.13)}
+  .badge.warn{color:#fde68a;border-color:rgba(245,158,11,.45);background:rgba(245,158,11,.13)}
+  .badge.bad{color:#fecaca;border-color:rgba(239,68,68,.45);background:rgba(239,68,68,.13)}
+  .badge.v{color:#ddd6fe;border-color:rgba(139,92,246,.45);background:rgba(139,92,246,.14)}
   .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--mut);margin-right:6px}
-  .dot.ok{background:var(--ok)} .dot.bad{background:var(--bad)} .dot.warn{background:var(--warn)}
-  .sec{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);margin:22px 0 6px;font-weight:600}
+  .dot.ok{background:var(--green)}.dot.bad{background:var(--red)}.dot.warn{background:var(--amber)}
 </style>
 </head>
 <body>
@@ -31,15 +38,15 @@
   <p class="mut"><a href="index.html">← console</a></p>
   <h1 id="name">repo</h1>
   <p class="mut" id="desc"></p>
+  <p id="links" class="mut" style="margin-top:8px"></p>
 </header>
 <main>
   <div class="grid" id="cards"></div>
-  <p id="links" class="mut"></p>
 
-  <h2 class="sec">Its automations</h2>
+  <div class="sec">Its automations</div>
   <table><thead><tr><th>Workflow</th><th>Schedule</th><th>Last run</th></tr></thead><tbody id="autos"></tbody></table>
 
-  <h2 class="sec">Open PRs / issues</h2>
+  <div class="sec">Open PRs / issues</div>
   <table><thead><tr><th>What</th><th>Kind</th><th>Opened</th></tr></thead><tbody id="open"></tbody></table>
 </main>
 <footer class="mut">© 2026 Dr Sohil Momin · Forge system</footer>
@@ -48,6 +55,8 @@
 function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
 function fmt(d){if(!d)return "—";try{return new Date(d).toISOString().slice(0,10);}catch(e){return d;}}
 function tone(c){c=String(c||"").toLowerCase();if(c==="success")return "ok";if(c==="failure"||c==="cancelled")return "bad";return "warn";}
+function confTone(t){var n=parseInt(t||"0",10);return n>=4?"ok":n>=3?"warn":"bad";}
+var CATCOL={"Homeopathy":"#a855f7","Health Tools":"#22c55e","Games":"#f59e0b","Utilities":"#06b6d4","HTML Apps":"#3b82f6","Data":"#ec4899"};
 var name = new URLSearchParams(location.search).get("name") || "";
 fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(function(d){
   var r = (d.repos||[]).find(x=>x.name===name);
@@ -56,19 +65,18 @@ fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(function(d){
   if(!r){ document.getElementById("desc").textContent = "Not found in the current data."; return; }
   document.getElementById("desc").textContent = r.description || "";
   document.getElementById("cards").innerHTML =
-    '<div class="card"><h3>Conformance</h3><p class="'+(r.status_tone||"")+'">'+esc(r.status||"—")+'</p></div>'+
-    '<div class="card"><h3>Last push</h3><p>'+fmt(r.pushed_at)+'</p></div>';
+    '<div class="card"><div class="k">Conformance</div><div class="v"><span class="badge '+confTone(r.status)+'">'+esc(r.status||"—")+'</span></div></div>'+
+    '<div class="card"><div class="k">Category</div><div class="v"><span class="badge" style="background:'+(CATCOL[r.category]||"#64748b")+';color:#0b0d12;border:0">'+esc(r.category||"—")+'</span></div></div>'+
+    '<div class="card"><div class="k">Last push</div><div class="v" style="font-size:18px">'+fmt(r.pushed_at)+'</div></div>';
   var links=[]; if(r.homepage)links.push('<a href="'+esc(r.homepage)+'">live page</a>');
-  if(r.html_url)links.push('<a href="'+esc(r.html_url)+'">source</a>');
-  if(r.html_url)links.push('<a href="'+esc(r.html_url)+'/releases">releases</a>');
-  links.push('<a href="'+esc(r.html_url)+'/actions">actions</a>');
+  if(r.html_url){links.push('<a href="'+esc(r.html_url)+'">source</a>');links.push('<a href="'+esc(r.html_url)+'/releases">releases</a>');links.push('<a href="'+esc(r.html_url)+'/actions">actions</a>');}
   document.getElementById("links").innerHTML = links.join(" · ");
 
   var autos = (d.automation||[]).filter(a=>a.repo===name);
-  document.getElementById("autos").innerHTML = autos.map(a=>'<tr><td><a href="'+esc(a.url)+'">'+esc(a.name)+'</a></td><td>'+esc(a.schedule)+'</td><td><span class="dot '+tone(a.conclusion)+'"></span>'+esc(a.conclusion)+' <span class="mut">'+fmt(a.last_run)+'</span></td></tr>').join("") || '<tr><td colspan="3" class="mut">No automations for this repo.</td></tr>';
+  document.getElementById("autos").innerHTML = autos.map(a=>'<tr><td><a href="'+esc(a.url)+'">'+esc(a.name)+'</a></td><td>'+esc(a.schedule)+'</td><td><span class="dot '+tone(a.conclusion)+'"></span><span class="badge '+tone(a.conclusion)+'">'+esc(a.conclusion)+'</span> <span class="mut">'+fmt(a.last_run)+'</span></td></tr>').join("") || '<tr><td colspan="3" class="mut">No automations for this repo.</td></tr>';
 
   var open = (d.attention||[]).filter(a=>a.repo===name);
-  document.getElementById("open").innerHTML = open.map(a=>'<tr><td><a href="'+esc(a.url)+'">'+esc(a.title)+'</a></td><td>'+esc(a.kind)+'</td><td class="mut">'+fmt(a.created)+'</td></tr>').join("") || '<tr><td colspan="3" class="mut">Nothing open.</td></tr>';
+  document.getElementById("open").innerHTML = open.map(a=>'<tr><td><a href="'+esc(a.url)+'">'+esc(a.title)+'</a></td><td><span class="badge v">'+esc(a.kind)+'</span></td><td class="mut">'+fmt(a.created)+'</td></tr>').join("") || '<tr><td colspan="3" class="mut">Nothing open.</td></tr>';
 }).catch(function(){ document.getElementById("desc").textContent = "Could not load data.json"; });
 </script>
 </body>
