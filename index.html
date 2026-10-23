@@ -68,6 +68,8 @@ h1{font-size:clamp(1.15rem,2vw,1.5rem);margin:12px 0 2px;letter-spacing:-.01em}
 .ideaform{display:grid;gap:7px;grid-template-columns:1fr 1fr;padding-top:4px}
 .ideaform input,.ideaform select{width:100%}
 .ideaform button{cursor:pointer}
+#i-prompt{width:100%;margin-top:8px;background:var(--card2);border:1px solid var(--line);color:var(--ink);border-radius:11px;padding:9px 11px;font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;resize:vertical}
+#i-prompt:focus{outline:none;border-color:var(--violet);box-shadow:0 0 0 3px rgba(139,92,246,.18)}
 @media (max-width:620px){.ideaform{grid-template-columns:1fr}}
 table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh)}
 th,td{text-align:left;padding:6px 9px;border-bottom:1px solid var(--line);font-size:12px;vertical-align:top}
@@ -131,7 +133,7 @@ footer{max-width:1320px;margin:0 auto;padding:14px 12px 30px;color:var(--mut);fo
   <div class="ctrls" id="controls"></div>
 
   <div class="sec">Submit an app idea</div>
-  <details class="box" id="ideaBox"><summary>New idea → the backlog</summary><div class="body">
+  <div class="panel" id="ideaBox">
     <div class="ideaform">
       <input id="i-name" placeholder="Name">
       <input id="i-pitch" placeholder="One-line pitch">
@@ -139,10 +141,13 @@ footer{max-width:1320px;margin:0 auto;padding:14px 12px 30px;color:var(--mut);fo
       <input id="i-kits" placeholder="Kits it needs (optional — e.g. lan-kit)">
       <input id="i-sat" placeholder="Why it is not saturated (required)">
       <select id="i-prio"><option>P2</option><option>P1</option><option>P0</option></select>
-      <button id="i-go" class="iconbtn">Submit idea ↗</button>
     </div>
-    <p class="mut" id="i-note" style="margin:8px 0 0">Submitting opens a prefilled GitHub issue — that's what the intake Action watches. It queues itself into the backlog. No account, no backend.</p>
-  </div></details>
+    <textarea id="i-prompt" rows="7" placeholder="Prompt / spec — describe the app the way you want it BUILT: the screens, the rules, the data, the edge cases, and what it must NOT do. This is the text the builder follows."></textarea>
+    <div style="display:flex;gap:10px;align-items:center;margin-top:9px;flex-wrap:wrap">
+      <button id="i-go" class="iconbtn">Submit idea ↗</button>
+      <span class="mut" id="i-note" style="margin:0">Opens a prefilled GitHub issue → the intake Action queues it into the backlog. No account, no backend.</span>
+    </div>
+  </div>
 
   <div class="sec">Visuals</div>
   <div class="charts">
@@ -193,9 +198,9 @@ $("theme").addEventListener("click",function(){var c=document.documentElement.ge
 
 // submit an app idea -> a prefilled GitHub issue the intake Action watches
 $("i-go").addEventListener("click",function(){
-  var n=$("i-name").value.trim(),p=$("i-pitch").value.trim(),m=$("i-mech").value.trim(),k=$("i-kits").value.trim(),s=$("i-sat").value.trim(),pr=$("i-prio").value;
+  var n=$("i-name").value.trim(),p=$("i-pitch").value.trim(),m=$("i-mech").value.trim(),k=$("i-kits").value.trim(),s=$("i-sat").value.trim(),pr=$("i-prio").value,spec=$("i-prompt").value.trim();
   if(!n||!s){$("i-note").textContent="A name and the 'why it is not saturated' line are required.";return}
-  var body="## Name\n"+n+"\n\n## One-line pitch\n"+(p||"(none given)")+"\n\n## The unique mechanic\n"+(m||"(none given)")+"\n\n## Kits it needs\n"+k+"\n\n## Why it is not saturated\n"+s+"\n\n## Priority\n"+pr+"\n";
+  var body="## Name\n"+n+"\n\n## One-line pitch\n"+(p||"(none given)")+"\n\n## The unique mechanic\n"+(m||"(none given)")+"\n\n## Kits it needs\n"+k+"\n\n## Why it is not saturated\n"+s+"\n\n## Priority\n"+pr+"\n\n## Prompt / spec\n"+(spec||"(none given)")+"\n";
   window.open("https://github.com/drsamonline/forge/issues/new?template=app-idea.md&labels=app-idea&title="+encodeURIComponent("App idea: "+n)+"&body="+encodeURIComponent(body),"_blank");
 });
 
