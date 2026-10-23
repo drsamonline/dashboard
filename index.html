@@ -210,17 +210,15 @@ fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(function(d){
 
   // 6. repos with search + filter, 5. drill-down links
   var repos = d.repos||[];
-  var cats = Array.from(new Set(repos.map(r=>r.name))).length; // noop to keep cats var
   var catSel = document.getElementById("cat");
-  var catSet = Array.from(new Set((d.stats&&d.stats.categories?Object.keys(d.stats.categories):[])));
+  var catSet = Array.from(new Set(repos.map(r=>r.category).filter(Boolean)));
   catSel.innerHTML = '<option value="">All categories</option>' + catSet.map(c=>'<option>'+esc(c)+'</option>').join("");
-  function catOf(name){
-    var st = d.stats&&d.stats.categories||{}; return "";
-  }
   function renderRepos(){
     var q = document.getElementById("q").value.toLowerCase();
+    var cat = catSel.value;
     var body = document.getElementById("repos");
     body.innerHTML = repos.filter(function(r){
+      if (cat && r.category !== cat) return false;
       return !q || r.name.toLowerCase().indexOf(q)>=0 || (r.description||"").toLowerCase().indexOf(q)>=0;
     }).map(function(r){
       var links=[]; if(r.homepage)links.push('<a href="'+esc(r.homepage)+'">page</a>');
@@ -231,6 +229,7 @@ fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(function(d){
   }
   renderRepos();
   document.getElementById("q").addEventListener("input", renderRepos);
+  catSel.addEventListener("change", renderRepos);
 
   // links
   var L = d.links||{};
