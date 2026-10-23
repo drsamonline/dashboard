@@ -1,6 +1,6 @@
 {
   "generated": "2026-10-23",
-  "generated_at": "2026-10-23T04:54:22Z",
+  "generated_at": "2026-10-23T04:56:00Z",
   "reckoning": "48 products · 12 kits · avg conformance 5.0/5 · updated automatically.",
   "health": "ok",
   "cards": [
@@ -140,6 +140,13 @@
   ],
   "attention": [
     {
+      "title": "feat(home): show the latest blog posts; harden the refresh push race",
+      "repo": "Matneo",
+      "url": "https://github.com/drsamonline/Matneo/pull/4",
+      "kind": "PR",
+      "created": "2026-10-23T04:55:45Z"
+    },
+    {
       "title": "fix(web-kit): add the test-node.js the Test workflow expects",
       "repo": "web-kit",
       "url": "https://github.com/drsamonline/web-kit/pull/1",
@@ -271,13 +278,6 @@
       "url": "https://github.com/drsamonline/The_Browser/pull/20",
       "kind": "PR",
       "created": "2026-09-30T14:14:45Z"
-    },
-    {
-      "title": "CI: Bump microsoft/setup-msbuild in /",
-      "repo": "The_Browser",
-      "url": "https://github.com/drsamonline/The_Browser/pull/19",
-      "kind": "PR",
-      "created": "2026-09-30T14:14:31Z"
     }
   ],
   "controls": [
@@ -345,16 +345,22 @@
   },
   "changes": [
     {
+      "type": "PullRequest",
+      "repo": "Matneo",
+      "when": "2026-10-23T04:55:45Z",
+      "text": "opened: "
+    },
+    {
       "type": "Push",
       "repo": "Matneo",
       "when": "2026-10-22T06:17:02Z",
-      "text": "0 commit(s) to main"
+      "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "ambient-sound-studio",
       "when": "2026-10-22T06:16:55Z",
-      "text": "0 commit(s) to main"
+      "text": "pushed to main"
     },
     {
       "type": "PullRequest",
@@ -366,7 +372,7 @@
       "type": "Push",
       "repo": "The_Browser",
       "when": "2026-10-22T06:14:40Z",
-      "text": "0 commit(s) to main"
+      "text": "pushed to main"
     },
     {
       "type": "PullRequest",
@@ -378,19 +384,19 @@
       "type": "Push",
       "repo": "open-materia-medica",
       "when": "2026-10-22T06:07:36Z",
-      "text": "0 commit(s) to main"
+      "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "book-kit",
       "when": "2026-10-22T20:10:40Z",
-      "text": "0 commit(s) to main"
+      "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "remedy-relationship-explorer",
       "when": "2026-10-22T06:05:49Z",
-      "text": "0 commit(s) to main"
+      "text": "pushed to main"
     },
     {
       "type": "Create",
@@ -402,7 +408,7 @@
       "type": "Push",
       "repo": "skin-case-tracker",
       "when": "2026-10-23T01:04:43Z",
-      "text": "0 commit(s) to web-kit"
+      "text": "pushed to web-kit"
     },
     {
       "type": "Create",
@@ -414,31 +420,31 @@
       "type": "Push",
       "repo": "unstoppable-mind-companion",
       "when": "2026-10-23T01:02:33Z",
-      "text": "0 commit(s) to web-kit"
+      "text": "pushed to web-kit"
     },
     {
       "type": "Push",
       "repo": "unstoppable-mind-companion",
       "when": "2026-10-23T01:02:31Z",
-      "text": "0 commit(s) to web-kit"
+      "text": "pushed to web-kit"
     },
     {
       "type": "Push",
       "repo": "mnemosyne-companion",
       "when": "2026-10-22T06:16:59Z",
-      "text": "0 commit(s) to main"
+      "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "SmartNotes",
       "when": "2026-10-22T06:16:55Z",
-      "text": "0 commit(s) to main"
+      "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "unstoppable-mind-companion",
       "when": "2026-10-23T01:02:28Z",
-      "text": "0 commit(s) to web-kit"
+      "text": "pushed to web-kit"
     },
     {
       "type": "PullRequest",
@@ -450,19 +456,13 @@
       "type": "Push",
       "repo": "chalk-lan",
       "when": "2026-10-22T23:25:55Z",
-      "text": "0 commit(s) to main"
+      "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "chalk-lan",
       "when": "2026-10-22T23:25:52Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Push",
-      "repo": "bmi-bmr-tdee-macros-fluid-calculator",
-      "when": "2026-10-22T06:11:41Z",
-      "text": "0 commit(s) to main"
+      "text": "pushed to main"
     }
   ],
   "automation": [
@@ -495,8 +495,8 @@
       "what": "this dashboard",
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/39902797086",
-      "last_run": "2026-10-23T04:54:10Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/39902947281",
+      "last_run": "2026-10-23T04:55:50Z",
       "conclusion": "in_progress"
     },
     {
