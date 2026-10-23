@@ -47,6 +47,12 @@
 <main>
   <div class="grid" id="cards"></div>
 
+  <div id="needs" hidden>
+    <h2 class="sec">Needs you</h2>
+    <p class="mut">Open pull requests and issues waiting on you — each with its link.</p>
+    <table><thead><tr><th>What</th><th>Repo</th><th>Kind</th><th>Opened</th></tr></thead><tbody id="needsBody"></tbody></table>
+  </div>
+
   <div class="charts">
     <div class="panel">
       <h2>Activity — pushes per day (14 days)</h2>
@@ -99,6 +105,15 @@ fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(function(d){
   document.getElementById("cards").innerHTML = (d.cards||[]).map(function(c){
     return '<div class="card"><h3>'+esc(c.title)+'</h3><p class="'+esc(c.tone||"")+'">'+esc(c.value)+'</p></div>';
   }).join("");
+
+  // needs you (open PRs / issues)
+  var needs = d.attention || [];
+  if (needs.length) {
+    document.getElementById("needs").hidden = false;
+    document.getElementById("needsBody").innerHTML = needs.map(function(a){
+      return '<tr><td><a href="'+esc(a.url)+'">'+esc(a.title)+'</a></td><td><span class="pill">'+esc(a.repo)+'</span></td><td>'+esc(a.kind)+'</td><td class="mut">'+fmt(a.created)+'</td></tr>';
+    }).join("");
+  }
 
   // activity bar chart
   var act = d.activity||[], max = Math.max(1, ...act.map(a=>a.count));
