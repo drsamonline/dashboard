@@ -36,8 +36,8 @@
       "4": 1
     },
     "categories": {
-      "Games": 6,
       "HTML Apps": 14,
+      "Games": 6,
       "Utilities": 15,
       "Homeopathy": 11,
       "Health Tools": 1,
@@ -95,11 +95,11 @@
     },
     {
       "date": "2026-10-22",
-      "count": 33
+      "count": 32
     },
     {
       "date": "2026-10-23",
-      "count": 34
+      "count": 35
     }
   ],
   "attention": [
@@ -310,123 +310,123 @@
   "changes": [
     {
       "type": "Push",
-      "repo": "The_Browser",
-      "when": "2026-10-22T07:32:57Z",
+      "repo": "neon-runner",
+      "when": "2026-10-21T02:42:51Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Create",
+      "repo": "aethelgard-games",
+      "when": "2026-10-23T02:08:35Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
+      "repo": "neon-runner",
+      "when": "2026-10-21T02:42:44Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Create",
+      "repo": "canteen-lan",
+      "when": "2026-10-23T01:29:28Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
+      "repo": "neon-runner",
+      "when": "2026-10-21T02:42:16Z",
       "text": "0 commit(s) to main"
     },
     {
       "type": "Push",
-      "repo": "export-kit",
-      "when": "2026-10-23T02:04:35Z",
+      "repo": "neon-runner",
+      "when": "2026-10-21T02:42:10Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Push",
+      "repo": "neon-runner",
+      "when": "2026-10-21T02:42:02Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Push",
+      "repo": "aethelgard-games",
+      "when": "2026-10-23T02:08:44Z",
+      "text": "0 commit(s) to add-license"
+    },
+    {
+      "type": "Push",
+      "repo": "read-live-transform-app",
+      "when": "2026-10-23T02:08:00Z",
+      "text": "0 commit(s) to web-kit"
+    },
+    {
+      "type": "Push",
+      "repo": "neon-runner",
+      "when": "2026-10-21T02:43:11Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Push",
+      "repo": "neon-runner",
+      "when": "2026-10-21T02:43:04Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Push",
+      "repo": "neon-runner",
+      "when": "2026-10-21T02:43:00Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Push",
+      "repo": "neon-runner",
+      "when": "2026-10-21T02:42:47Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Create",
+      "repo": "read-live-transform-app",
+      "when": "2026-10-23T02:07:44Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
+      "repo": "The_Browser",
+      "when": "2026-10-22T07:35:27Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Push",
+      "repo": "app-companion-forge",
+      "when": "2026-10-22T21:31:13Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Push",
+      "repo": "app-companion-forge",
+      "when": "2026-10-22T21:31:06Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Push",
+      "repo": "profile-kit",
+      "when": "2026-10-22T08:34:24Z",
       "text": "0 commit(s) to main"
     },
     {
       "type": "Push",
       "repo": "Matneo",
-      "when": "2026-10-23T02:05:27Z",
+      "when": "2026-10-23T02:05:24Z",
       "text": "0 commit(s) to main"
     },
     {
       "type": "Push",
       "repo": "The_Browser",
-      "when": "2026-10-22T08:31:04Z",
+      "when": "2026-10-22T07:32:57Z",
       "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Push",
-      "repo": "frame-kit",
-      "when": "2026-10-23T01:57:57Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Push",
-      "repo": "frame-kit",
-      "when": "2026-10-23T01:57:55Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Push",
-      "repo": "book-kit",
-      "when": "2026-10-23T01:57:39Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "drsamonline.github.io",
-      "when": "2026-10-23T05:40:39Z",
-      "text": "opened: "
-    },
-    {
-      "type": "Push",
-      "repo": "mnemosyne-companion",
-      "when": "2026-10-23T01:06:06Z",
-      "text": "0 commit(s) to web-kit"
-    },
-    {
-      "type": "Push",
-      "repo": "game-kit",
-      "when": "2026-10-23T01:57:26Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Push",
-      "repo": "lan-kit",
-      "when": "2026-10-23T01:57:23Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "drsamonline.github.io",
-      "when": "2026-10-23T05:40:42Z",
-      "text": "merged: "
-    },
-    {
-      "type": "Push",
-      "repo": "app-panchang",
-      "when": "2026-10-23T01:57:45Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Push",
-      "repo": "compress-kit",
-      "when": "2026-10-23T01:57:20Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Push",
-      "repo": "web-kit",
-      "when": "2026-10-23T01:57:11Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Push",
-      "repo": "unstoppable-mind-companion",
-      "when": "2026-10-23T01:02:36Z",
-      "text": "0 commit(s) to web-kit"
-    },
-    {
-      "type": "Push",
-      "repo": "chalk-lan",
-      "when": "2026-10-22T23:25:57Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "app-builder",
-      "when": "2026-10-23T05:32:54Z",
-      "text": "opened: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "app-builder",
-      "when": "2026-10-23T05:31:09Z",
-      "text": "merged: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "app-builder",
-      "when": "2026-10-23T05:31:06Z",
-      "text": "opened: "
     }
   ],
   "automation": [
@@ -459,8 +459,8 @@
       "what": "this dashboard",
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/39907917194",
-      "last_run": "2026-10-23T05:49:46Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/39908798417",
+      "last_run": "2026-10-23T05:59:16Z",
       "conclusion": "in_progress"
     },
     {
@@ -575,6 +575,17 @@
     }
   ],
   "repos": [
+    {
+      "name": "seance",
+      "description": "Strongbox (master-list app) - sealed notes, opened once: seal a note with a passphrase, it opens once. Offline, no accounts. Built with crypto-kit + web-kit. (Fold-in of the working name 'seance'.)",
+      "pushed_at": "2026-10-23T05:51:52Z",
+      "homepage": "https://drsamonline.github.io/seance/",
+      "html_url": "https://github.com/drsamonline/seance",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
     {
       "name": "aethelgard-games",
       "description": "Two free browser games by Dr. Sohil Momin — Aethelgard: The Books (visual novel) and Aethelgard: Chronicles of Fate (RPG). Playable on GitHub Pages.",
@@ -779,17 +790,6 @@
       "pushed_at": "2026-10-22T21:31:30Z",
       "homepage": "https://drsamonline.github.io/app-companion-forge/",
       "html_url": "https://github.com/drsamonline/app-companion-forge",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "seance",
-      "description": "Strongbox (master-list app) - sealed notes, opened once: seal a note with a passphrase, it opens once. Offline, no accounts. Built with crypto-kit + web-kit. (Fold-in of the working name 'seance'.)",
-      "pushed_at": "2026-10-22T19:24:57Z",
-      "homepage": "https://drsamonline.github.io/seance/",
-      "html_url": "https://github.com/drsamonline/seance",
       "download": "",
       "category": "HTML Apps",
       "status": "5/5",
