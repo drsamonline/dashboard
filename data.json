@@ -1,12 +1,12 @@
 {
   "generated": "2026-10-23",
-  "generated_at": "2026-10-23T04:40:00Z",
-  "reckoning": "46 products · 12 kits · avg conformance 5.0/5 · updated automatically.",
+  "generated_at": "2026-10-23T04:54:22Z",
+  "reckoning": "48 products · 12 kits · avg conformance 5.0/5 · updated automatically.",
   "health": "ok",
   "cards": [
     {
       "title": "Products",
-      "value": "46",
+      "value": "48",
       "tone": ""
     },
     {
@@ -26,20 +26,55 @@
     }
   ],
   "summary": {
-    "products": 46,
+    "products": 48,
     "kits": 12,
     "avg": 5.0,
-    "pushes": 67
+    "pushes": 67,
+    "byrepo": {
+      "dashboard": 1,
+      "app-builder": 1,
+      "Matneo": 1,
+      "aethelgard-games": 1,
+      "saga-vn-engine": 1,
+      "aethelgard-rpg-engine": 1,
+      "The_Browser": 1,
+      "NEO": 1,
+      "neon-engine": 1,
+      "drsamonline.github.io": 1,
+      "case-kit": 1,
+      "book-kit": 1,
+      "srs-kit": 1,
+      "search-kit": 1,
+      "repertory-kit": 1,
+      "astro-kit": 1,
+      "game-kit": 1,
+      "lan-kit": 1,
+      "compress-kit": 1,
+      "crypto-kit": 1,
+      "optical-kit": 1,
+      "web-kit": 1,
+      "read-live-transform-app": 1,
+      "export-kit": 1,
+      "blinkcode-ai": 1,
+      "BLINKTRANSFER": 1,
+      "helioprism": 1,
+      "app-panchang": 1,
+      "frame-kit": 1,
+      "canteen-lan": 1,
+      "mnemosyne-companion": 1,
+      "skin-case-tracker": 1,
+      "unstoppable-mind-companion": 1
+    }
   },
   "stats": {
     "conformance": {
-      "5": 45,
+      "5": 47,
       "4": 1
     },
     "categories": {
       "Games": 6,
+      "HTML Apps": 14,
       "Utilities": 15,
-      "HTML Apps": 12,
       "Homeopathy": 11,
       "Health Tools": 1,
       "Data": 1
@@ -311,6 +346,96 @@
   "changes": [
     {
       "type": "Push",
+      "repo": "Matneo",
+      "when": "2026-10-22T06:17:02Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Push",
+      "repo": "ambient-sound-studio",
+      "when": "2026-10-22T06:16:55Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "PullRequest",
+      "repo": "Matneo",
+      "when": "2026-10-23T04:51:59Z",
+      "text": "merged: "
+    },
+    {
+      "type": "Push",
+      "repo": "The_Browser",
+      "when": "2026-10-22T06:14:40Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "PullRequest",
+      "repo": "Matneo",
+      "when": "2026-10-23T04:48:08Z",
+      "text": "opened: "
+    },
+    {
+      "type": "Push",
+      "repo": "open-materia-medica",
+      "when": "2026-10-22T06:07:36Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Push",
+      "repo": "book-kit",
+      "when": "2026-10-22T20:10:40Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Push",
+      "repo": "remedy-relationship-explorer",
+      "when": "2026-10-22T06:05:49Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Create",
+      "repo": "skin-case-tracker",
+      "when": "2026-10-23T01:04:34Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
+      "repo": "skin-case-tracker",
+      "when": "2026-10-23T01:04:43Z",
+      "text": "0 commit(s) to web-kit"
+    },
+    {
+      "type": "Create",
+      "repo": "mnemosyne-companion",
+      "when": "2026-10-23T01:05:55Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
+      "repo": "unstoppable-mind-companion",
+      "when": "2026-10-23T01:02:33Z",
+      "text": "0 commit(s) to web-kit"
+    },
+    {
+      "type": "Push",
+      "repo": "unstoppable-mind-companion",
+      "when": "2026-10-23T01:02:31Z",
+      "text": "0 commit(s) to web-kit"
+    },
+    {
+      "type": "Push",
+      "repo": "mnemosyne-companion",
+      "when": "2026-10-22T06:16:59Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Push",
+      "repo": "SmartNotes",
+      "when": "2026-10-22T06:16:55Z",
+      "text": "0 commit(s) to main"
+    },
+    {
+      "type": "Push",
       "repo": "unstoppable-mind-companion",
       "when": "2026-10-23T01:02:28Z",
       "text": "0 commit(s) to web-kit"
@@ -337,96 +462,6 @@
       "type": "Push",
       "repo": "bmi-bmr-tdee-macros-fluid-calculator",
       "when": "2026-10-22T06:11:41Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Push",
-      "repo": "drsamonline.github.io",
-      "when": "2026-10-22T05:52:45Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Push",
-      "repo": "whispering-body-first-aid",
-      "when": "2026-10-22T06:07:55Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Push",
-      "repo": "neon-games",
-      "when": "2026-10-22T06:02:52Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "app-builder",
-      "when": "2026-10-23T04:28:01Z",
-      "text": "opened: "
-    },
-    {
-      "type": "Push",
-      "repo": "The_Browser",
-      "when": "2026-10-22T05:58:58Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "aethelgard-rpg-engine",
-      "when": "2026-10-23T04:27:19Z",
-      "text": "opened: "
-    },
-    {
-      "type": "Push",
-      "repo": "remedy-relationship-explorer",
-      "when": "2026-10-22T05:28:12Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Push",
-      "repo": "app-companion-forge",
-      "when": "2026-10-22T21:31:10Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "aethelgard-games",
-      "when": "2026-10-23T04:12:35Z",
-      "text": "opened: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "saga-vn-engine",
-      "when": "2026-10-23T04:08:36Z",
-      "text": "opened: "
-    },
-    {
-      "type": "Push",
-      "repo": "app-panchang",
-      "when": "2026-10-22T19:25:46Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Push",
-      "repo": "app-panchang",
-      "when": "2026-10-22T19:25:42Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Push",
-      "repo": "game-kit",
-      "when": "2026-10-22T19:23:05Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Push",
-      "repo": "remedy-relationship-explorer",
-      "when": "2026-10-22T05:02:05Z",
-      "text": "0 commit(s) to main"
-    },
-    {
-      "type": "Push",
-      "repo": "smartbill-app",
-      "when": "2026-10-22T06:17:03Z",
       "text": "0 commit(s) to main"
     }
   ],
@@ -460,8 +495,8 @@
       "what": "this dashboard",
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/39901513367",
-      "last_run": "2026-10-23T04:39:54Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/39902797086",
+      "last_run": "2026-10-23T04:54:10Z",
       "conclusion": "in_progress"
     },
     {
@@ -482,8 +517,8 @@
       "what": "the blog",
       "schedule": "daily 04:12 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/runs/39887666231",
-      "last_run": "2026-10-23T02:05:40Z",
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/39902605442",
+      "last_run": "2026-10-23T04:52:12Z",
       "conclusion": "success"
     },
     {
@@ -493,9 +528,9 @@
       "what": "the store",
       "schedule": "daily 04:22 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/workflows/store.yml",
-      "last_run": null,
-      "conclusion": "no runs yet"
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/39902605434",
+      "last_run": "2026-10-23T04:52:10Z",
+      "conclusion": "success"
     },
     {
       "repo": "knowledge",
@@ -579,13 +614,44 @@
     {
       "name": "aethelgard-games",
       "description": "Two free browser games by Dr. Sohil Momin — Aethelgard: The Books (visual novel) and Aethelgard: Chronicles of Fate (RPG). Playable on GitHub Pages.",
-      "pushed_at": "2026-10-23T04:39:07Z",
+      "pushed_at": "2026-10-23T04:40:16Z",
       "homepage": "https://drsamonline.github.io/aethelgard-games/",
       "html_url": "https://github.com/drsamonline/aethelgard-games",
       "download": "",
       "category": "Games",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
+      "name": "saga-vn-engine",
+      "description": "Saga — a small, dependency-free visual-novel engine for the browser. Plain JavaScript, one stylesheet, no build step. Engine only; the games it powers live in drsamonline/aethelgard-games.",
+      "pushed_at": "2026-10-23T04:39:07Z",
+      "homepage": "https://drsamonline.github.io/saga-vn-engine/",
+      "html_url": "https://github.com/drsamonline/saga-vn-engine",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
+      "name": "aethelgard-rpg-engine",
+      "description": "A dependency-free, vanilla-JavaScript engine for deep, single-player browser RPGs. Engine only — ships a small generic sample world; the games it powers live in drsamonline/aethelgard-games.",
+      "pushed_at": "2026-10-23T04:39:07Z",
+      "homepage": "https://drsamonline.github.io/aethelgard-rpg-engine/",
+      "html_url": "https://github.com/drsamonline/aethelgard-rpg-engine",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
       "name": "The_Browser",
@@ -596,7 +662,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
       "name": "NEO",
@@ -607,7 +676,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
       "name": "neon-engine",
@@ -618,7 +690,10 @@
       "download": "",
       "category": "HTML Apps",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
       "name": "read-live-transform-app",
@@ -629,7 +704,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
       "name": "export-kit",
@@ -640,7 +718,10 @@
       "download": "",
       "category": "HTML Apps",
       "status": "4/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
       "name": "blinkcode-ai",
@@ -651,7 +732,10 @@
       "download": "",
       "category": "HTML Apps",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
       "name": "BLINKTRANSFER",
@@ -662,7 +746,10 @@
       "download": "",
       "category": "HTML Apps",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
       "name": "helioprism",
@@ -673,7 +760,10 @@
       "download": "",
       "category": "HTML Apps",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
       "name": "app-panchang",
@@ -684,7 +774,10 @@
       "download": "",
       "category": "HTML Apps",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
       "name": "frame-kit",
@@ -695,7 +788,10 @@
       "download": "",
       "category": "HTML Apps",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
       "name": "canteen-lan",
@@ -706,7 +802,10 @@
       "download": "",
       "category": "HTML Apps",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
       "name": "mnemosyne-companion",
@@ -717,7 +816,10 @@
       "download": "",
       "category": "Homeopathy",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
       "name": "skin-case-tracker",
@@ -728,7 +830,10 @@
       "download": "",
       "category": "Homeopathy",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
       "name": "unstoppable-mind-companion",
@@ -739,7 +844,10 @@
       "download": "",
       "category": "Homeopathy",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
     },
     {
       "name": "chalk-lan",
@@ -750,7 +858,10 @@
       "download": "",
       "category": "HTML Apps",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "app-companion-forge",
@@ -761,7 +872,10 @@
       "download": "",
       "category": "HTML Apps",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "seance",
@@ -772,7 +886,10 @@
       "download": "",
       "category": "HTML Apps",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "today-card",
@@ -783,7 +900,10 @@
       "download": "",
       "category": "HTML Apps",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "offline-pdf-toolkit",
@@ -794,7 +914,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "remedy-relationship-explorer",
@@ -805,7 +928,10 @@
       "download": "",
       "category": "Homeopathy",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "kent-repertory-explorer",
@@ -816,7 +942,10 @@
       "download": "",
       "category": "Homeopathy",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "whispering-body-first-aid",
@@ -827,7 +956,10 @@
       "download": "",
       "category": "Homeopathy",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "bmi-bmr-tdee-macros-fluid-calculator",
@@ -838,7 +970,10 @@
       "download": "",
       "category": "Health Tools",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "boericke-repertory",
@@ -849,7 +984,10 @@
       "download": "",
       "category": "Homeopathy",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "All4ONE",
@@ -860,7 +998,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "homoeopathic-materia-medica-repertory-json",
@@ -871,7 +1012,10 @@
       "download": "",
       "category": "Data",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "HMS",
@@ -882,7 +1026,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "neon-games",
@@ -893,7 +1040,10 @@
       "download": "",
       "category": "Games",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "neon-runner",
@@ -904,7 +1054,10 @@
       "download": "",
       "category": "Games",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "open-materia-medica",
@@ -915,7 +1068,10 @@
       "download": "",
       "category": "Homeopathy",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "ambient-sound-studio",
@@ -926,7 +1082,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "retro-strike",
@@ -937,7 +1096,10 @@
       "download": "",
       "category": "Games",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "lockhtml",
@@ -948,7 +1110,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "gentle-pediatrics-companion",
@@ -959,7 +1124,10 @@
       "download": "",
       "category": "Homeopathy",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "the-symphony-companion",
@@ -970,7 +1138,10 @@
       "download": "",
       "category": "Homeopathy",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "idle-city-ages-of-growth",
@@ -981,7 +1152,10 @@
       "download": "",
       "category": "Games",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "conqueror-os",
@@ -992,7 +1166,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "lexora",
@@ -1003,7 +1180,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "ULTIMATE-WINDOWS-OPTIMIZER",
@@ -1014,7 +1194,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "CLDR",
@@ -1025,7 +1208,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "SmartNotes",
@@ -1036,7 +1222,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "smartbill-app",
@@ -1047,7 +1236,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "MATERIA-MEDICA-BUILDER",
@@ -1058,7 +1250,10 @@
       "download": "",
       "category": "Homeopathy",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "dance-fight",
@@ -1069,7 +1264,10 @@
       "download": "",
       "category": "Games",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     },
     {
       "name": "TTB",
@@ -1080,7 +1278,10 @@
       "download": "",
       "category": "Utilities",
       "status": "5/5",
-      "status_tone": "ok"
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
     }
   ],
   "links": {
@@ -1094,10 +1295,45 @@
   "history": [
     {
       "date": "2026-10-23",
-      "products": 46,
+      "products": 48,
       "kits": 12,
       "avg": 5.0,
-      "pushes": 67
+      "pushes": 67,
+      "byrepo": {
+        "dashboard": 1,
+        "app-builder": 1,
+        "Matneo": 1,
+        "aethelgard-games": 1,
+        "saga-vn-engine": 1,
+        "aethelgard-rpg-engine": 1,
+        "The_Browser": 1,
+        "NEO": 1,
+        "neon-engine": 1,
+        "drsamonline.github.io": 1,
+        "case-kit": 1,
+        "book-kit": 1,
+        "srs-kit": 1,
+        "search-kit": 1,
+        "repertory-kit": 1,
+        "astro-kit": 1,
+        "game-kit": 1,
+        "lan-kit": 1,
+        "compress-kit": 1,
+        "crypto-kit": 1,
+        "optical-kit": 1,
+        "web-kit": 1,
+        "read-live-transform-app": 1,
+        "export-kit": 1,
+        "blinkcode-ai": 1,
+        "BLINKTRANSFER": 1,
+        "helioprism": 1,
+        "app-panchang": 1,
+        "frame-kit": 1,
+        "canteen-lan": 1,
+        "mnemosyne-companion": 1,
+        "skin-case-tracker": 1,
+        "unstoppable-mind-companion": 1
+      }
     }
   ]
 }
