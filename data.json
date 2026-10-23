@@ -1,6 +1,6 @@
 {
   "generated": "2026-10-23",
-  "generated_at": "2026-10-23T08:08:03Z",
+  "generated_at": "2026-10-23T08:10:14Z",
   "reckoning": "46 products · 14 kits · avg conformance 5.0/5 · updated automatically.",
   "health": "ok",
   "cards": [
@@ -31,8 +31,10 @@
     "avg": 5.0,
     "pushes": 67,
     "byrepo": {
+      "app-builder": 1,
       "smartbill-app": 1,
       "the-symphony-companion": 1,
+      "dashboard": 1,
       "conqueror-os": 1,
       "kent-repertory-explorer": 1,
       "offline-pdf-toolkit": 1,
@@ -47,9 +49,7 @@
       "mnemosyne-companion": 1,
       "web-kit": 1,
       "TTB": 1,
-      "dashboard": 1,
       "Matneo": 1,
-      "app-builder": 1,
       "chalk-lan": 1,
       "canteen-lan": 1,
       "app-companion-forge": 1,
@@ -61,8 +61,8 @@
       "aethelgard-games": 1,
       "aethelgard-rpg-engine": 1,
       "saga-vn-engine": 1,
-      "neon-engine": 1,
       "NEO": 1,
+      "neon-engine": 1,
       "case-kit": 1,
       "book-kit": 1,
       "srs-kit": 1,
@@ -209,10 +209,16 @@
   "quota": {
     "available": false,
     "included_minutes": 2000,
-    "note": "Actions minutes are free on public repos; the private repos draw on the free 2,000 min/month. Add a classic PAT with the 'user' scope as the BILLING_TOKEN secret to read the live number.",
+    "note": "Actions minutes are free on public repos; the private repos draw on the free 2,000 min/month. The BILLING_TOKEN call failed (HTTP Error 410: Gone). It must be a CLASSIC PAT with the 'user' scope.",
     "private_runs": null
   },
   "changes": [
+    {
+      "type": "Create",
+      "repo": "aethelgard-games",
+      "when": "2026-10-23T04:12:27Z",
+      "text": ""
+    },
     {
       "type": "Create",
       "repo": "saga-vn-engine",
@@ -326,12 +332,6 @@
       "repo": "remedy-relationship-explorer",
       "when": "2026-10-22T10:29:13Z",
       "text": "pushed to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "Matneo",
-      "when": "2026-10-23T05:00:31Z",
-      "text": "merged: "
     }
   ],
   "automation": [
@@ -364,8 +364,8 @@
       "what": "this dashboard",
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/39922483449",
-      "last_run": "2026-10-23T08:07:55Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/39922734042",
+      "last_run": "2026-10-23T08:10:05Z",
       "conclusion": "in_progress"
     },
     {
@@ -483,7 +483,7 @@
     {
       "name": "smartbill-app",
       "description": "A fast, serverless, single-page billing and invoicing application built with Vue.js, tailored for Indian businesses. Features local IndexedDB storage and GST support.",
-      "pushed_at": "2026-10-23T08:07:40Z",
+      "pushed_at": "2026-10-23T08:09:26Z",
       "homepage": "https://drsamonline.github.io/smartbill-app/",
       "html_url": "https://github.com/drsamonline/smartbill-app",
       "download": "",
@@ -497,7 +497,7 @@
     {
       "name": "the-symphony-companion",
       "description": "A pocket companion web app to The Symphony of the Present by Dr. Sohil Momin. Installable PWA, works offline. Copyrighted; free for personal, non-commercial use.",
-      "pushed_at": "2026-10-23T08:07:32Z",
+      "pushed_at": "2026-10-23T08:08:42Z",
       "homepage": "https://drsamonline.github.io/the-symphony-companion/",
       "html_url": "https://github.com/drsamonline/the-symphony-companion",
       "download": "",
@@ -789,20 +789,6 @@
       ]
     },
     {
-      "name": "neon-engine",
-      "description": "A code-only open-world game engine for the browser. No assets, no build step, no dependencies — every texture, mesh and sound is generated at runtime. MIT licensed.",
-      "pushed_at": "2026-10-23T03:51:06Z",
-      "homepage": "https://drsamonline.github.io/neon-engine/",
-      "html_url": "https://github.com/drsamonline/neon-engine",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1
-      ]
-    },
-    {
       "name": "NEO",
       "description": "NOVA — a statically-typed, compiled systems programming language: C, JavaScript, Rust and WebAssembly backends, with a runtime, package manager, language server and debugger.",
       "pushed_at": "2026-10-23T03:51:06Z",
@@ -810,6 +796,20 @@
       "html_url": "https://github.com/drsamonline/NEO",
       "download": "",
       "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
+      "name": "neon-engine",
+      "description": "A code-only open-world game engine for the browser. No assets, no build step, no dependencies — every texture, mesh and sound is generated at runtime. MIT licensed.",
+      "pushed_at": "2026-10-23T03:51:06Z",
+      "homepage": "https://drsamonline.github.io/neon-engine/",
+      "html_url": "https://github.com/drsamonline/neon-engine",
+      "download": "",
+      "category": "HTML Apps",
       "status": "5/5",
       "status_tone": "ok",
       "spark": [
@@ -1141,8 +1141,10 @@
       "avg": 5.0,
       "pushes": 67,
       "byrepo": {
+        "app-builder": 1,
         "smartbill-app": 1,
         "the-symphony-companion": 1,
+        "dashboard": 1,
         "conqueror-os": 1,
         "kent-repertory-explorer": 1,
         "offline-pdf-toolkit": 1,
@@ -1157,9 +1159,7 @@
         "mnemosyne-companion": 1,
         "web-kit": 1,
         "TTB": 1,
-        "dashboard": 1,
         "Matneo": 1,
-        "app-builder": 1,
         "chalk-lan": 1,
         "canteen-lan": 1,
         "app-companion-forge": 1,
@@ -1171,8 +1171,8 @@
         "aethelgard-games": 1,
         "aethelgard-rpg-engine": 1,
         "saga-vn-engine": 1,
-        "neon-engine": 1,
         "NEO": 1,
+        "neon-engine": 1,
         "case-kit": 1,
         "book-kit": 1,
         "srs-kit": 1,
