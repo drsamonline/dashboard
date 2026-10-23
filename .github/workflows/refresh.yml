@@ -1,24 +1,21 @@
-# Refresh the dashboard data on a schedule.
-#
-# The dashboard is a static page; this regenerates data.json from the public
-# repo list and commits it, so the page stays current with no server and no PAT.
-# Commits carry [skip ci] so this workflow never re-triggers itself.
-
 name: Refresh dashboard data
+
+# Regenerates from the SHARED module drsoam.py (app-builder), so every output
+# uses one exclusion list and cannot drift.
 
 on:
   schedule:
-    - cron: "47 3 * * *"   # daily, 03:47 UTC (offset from hub 03:17 and metrics 04:00)
+    - cron: "47 3 * * *"
   push:
     branches: [ main ]
-    paths: [ refresh.py ]
+    paths: [ .github/workflows/data.yml ]
   workflow_dispatch: {}
 
 permissions:
   contents: write
 
 concurrency:
-  group: refresh-dashboard
+  group: refresh-dashboard-data
   cancel-in-progress: true
 
 jobs:
@@ -26,10 +23,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Regenerate data.json
+      - uses: actions/checkout@v4
+        with:
+          repository: drsamonline/app-builder
+          path: .drsoam
+      - name: Regenerate
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python3 refresh.py
+        run: python3 .drsoam/drsoam.py dashboard
       - name: Commit if changed
         run: |
           if git diff --quiet; then echo "no change"; exit 0; fi
