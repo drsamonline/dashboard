@@ -46,10 +46,10 @@ h1{font-size:clamp(1.15rem,2vw,1.5rem);margin:12px 0 2px;letter-spacing:-.01em}
 .kpi .k{font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);font-weight:700}
 .kpi .v{font-size:22px;font-weight:800;margin-top:2px;line-height:1.05;font-variant-numeric:tabular-nums}
 @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-.charts{display:grid;gap:9px;grid-template-columns:repeat(auto-fit,minmax(238px,1fr))}
+.charts{display:grid;gap:9px;grid-template-columns:repeat(auto-fit,minmax(284px,1fr))}
 .panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:11px;box-shadow:var(--sh);animation:rise .5s ease both}
 .panel h2{margin:0 0 7px;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--head);font-weight:700}
-.chart{width:100%;display:block;overflow:visible}
+.chart{width:100%;height:auto;display:block;overflow:visible}
 .anim-line{stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 1.2s ease forwards}
 @keyframes draw{to{stroke-dashoffset:0}}
 .anim-area{animation:fade .8s ease both}@keyframes fade{from{opacity:0}to{opacity:1}}
@@ -90,7 +90,7 @@ details.box .body{padding:0 11px 8px}
 input,select{background:var(--card2);border:1px solid var(--line);color:var(--ink);border-radius:9px;padding:6px 9px;font-size:12px}
 input:focus,select:focus{outline:none;border-color:var(--violet);box-shadow:0 0 0 3px rgba(139,92,246,.18)}
 .spark{display:inline-block;vertical-align:middle}
-.grid2{display:grid;gap:9px;grid-template-columns:1fr 1fr}
+.grid2{display:grid;gap:9px;grid-template-columns:1fr 1fr;align-items:start}
 @media (max-width:760px){.grid2{grid-template-columns:1fr}}
 footer{max-width:1320px;margin:0 auto;padding:14px 12px 30px;color:var(--mut);font-size:11px;border-top:1px solid var(--line)}
 .links a{display:inline-block;margin:2px 10px 2px 0;font-weight:600}
@@ -115,20 +115,16 @@ footer{max-width:1320px;margin:0 auto;padding:14px 12px 30px;color:var(--mut);fo
   <p class="sub" id="reckoning">Loading…</p>
   <div id="banner" class="banner" hidden></div>
 
-  <div class="grid2">
-    <div>
-      <div id="needs" hidden>
-        <div class="sec">Needs you</div>
-        <table><thead><tr><th>What</th><th>Repo</th><th>Kind</th><th>Act</th></tr></thead><tbody id="needsBody"></tbody></table>
-      </div>
-      <div class="sec">Controls</div>
-      <div class="ctrls" id="controls"></div>
-    </div>
-    <div>
-      <div class="sec">At a glance</div>
-      <div class="kpis" id="cards"></div>
-    </div>
+  <div class="sec">At a glance</div>
+  <div class="kpis" id="cards"></div>
+
+  <div id="needs" hidden>
+    <div class="sec">Needs you</div>
+    <table><thead><tr><th>What</th><th>Repo</th><th>Kind</th><th>Act</th></tr></thead><tbody id="needsBody"></tbody></table>
   </div>
+
+  <div class="sec">Controls</div>
+  <div class="ctrls" id="controls"></div>
 
   <div class="sec">Visuals</div>
   <div class="charts">
@@ -177,8 +173,8 @@ var store={get:function(k,d){try{var v=localStorage.getItem("dc:"+k);return v==n
 
 $("theme").addEventListener("click",function(){var c=document.documentElement.getAttribute("data-theme")==="light"?"dark":"light";document.documentElement.setAttribute("data-theme",c);store.set("theme",c)});
 
-function areaChart(vals,colour,labels){var n=vals.length;if(!n)return "";var w=600,h=92,max=Math.max(1,Math.max.apply(null,vals)),pad=5;var X=function(i){return n===1?w/2:i*(w/(n-1))},Y=function(v){return h-pad-(v/max)*(h-2*pad)};var line=vals.map(function(v,i){return (i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1)}).join(" ");var area=line+" L "+w+" "+h+" L 0 "+h+" Z";var dots=vals.map(function(v,i){return '<circle class="anim-dot" style="animation-delay:'+(i*35)+'ms" cx="'+X(i).toFixed(1)+'" cy="'+Y(v).toFixed(1)+'" r="2.3" fill="'+colour+'"/>'}).join("");return '<svg class="chart" viewBox="0 0 '+w+' '+h+'" preserveAspectRatio="none"><defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+colour+'" stop-opacity=".5"/><stop offset="1" stop-color="'+colour+'" stop-opacity="0"/></linearGradient></defs><path class="anim-area" d="'+area+'" fill="url(#ag)"/><path class="anim-line" d="'+line+'" fill="none" stroke="'+colour+'" stroke-width="2" stroke-linejoin="round"/></svg><div class="legend"><span>'+esc(labels||"")+'</span></div>'}
-function lineChart(vals,colour){var n=vals.length;if(!n)return "";var w=600,h=84,max=Math.max(1,Math.max.apply(null,vals)),min=Math.min.apply(null,vals),pad=7,span=Math.max(1,max-min);var X=function(i){return n===1?w/2:i*(w/(n-1))},Y=function(v){return h-pad-((v-min)/span)*(h-2*pad)};var line=vals.map(function(v,i){return (i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1)}).join(" ");var dots=vals.map(function(v,i){return '<circle class="anim-dot" style="animation-delay:'+(i*55)+'ms" cx="'+X(i).toFixed(1)+'" cy="'+Y(v).toFixed(1)+'" r="3" fill="'+colour+'"/>'}).join("");return '<svg class="chart" viewBox="0 0 '+w+' '+h+'" preserveAspectRatio="none"><path class="anim-line" d="'+line+'" fill="none" stroke="'+colour+'" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/></svg>'+dots}
+function areaChart(vals,colour,labels){var n=vals.length;if(!n)return "";var w=600,h=150,max=Math.max(1,Math.max.apply(null,vals)),pad=12;var X=function(i){return n===1?w/2:i*(w/(n-1))},Y=function(v){return h-pad-(v/max)*(h-2*pad)};var line=vals.map(function(v,i){return (i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1)}).join(" ");var area=line+" L "+X(n-1).toFixed(1)+" "+h+" L "+X(0).toFixed(1)+" "+h+" Z";var dots=vals.map(function(v,i){return '<circle class="anim-dot" style="animation-delay:'+(i*35)+'ms" cx="'+X(i).toFixed(1)+'" cy="'+Y(v).toFixed(1)+'" r="3.2" fill="'+colour+'"/>'}).join("");return '<svg class="chart" viewBox="0 0 '+w+' '+h+'" role="img"><defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+colour+'" stop-opacity=".45"/><stop offset="1" stop-color="'+colour+'" stop-opacity="0"/></linearGradient></defs><line x1="0" y1="'+(h-pad)+'" x2="'+w+'" y2="'+(h-pad)+'" stroke="'+colour+'" stroke-opacity=".18"/><path class="anim-area" d="'+area+'" fill="url(#ag)"/><path class="anim-line" d="'+line+'" fill="none" stroke="'+colour+'" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>'+dots+'</svg><div class="legend"><span>'+esc(labels||"")+'</span></div>'}
+function lineChart(vals,colour){var n=vals.length;if(!n)return "";var w=600,h=150,mx=Math.max.apply(null,vals),mn=Math.min.apply(null,vals),pad=12,span=Math.max(1,mx-mn);var X=function(i){return n===1?w/2:i*(w/(n-1))},Y=function(v){return h-pad-((v-mn)/span)*(h-2*pad)};var line=vals.map(function(v,i){return (i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1)}).join(" ");var dots=vals.map(function(v,i){return '<circle class="anim-dot" style="animation-delay:'+(i*55)+'ms" cx="'+X(i).toFixed(1)+'" cy="'+Y(v).toFixed(1)+'" r="4" fill="'+colour+'"/>'}).join("");return '<svg class="chart" viewBox="0 0 '+w+' '+h+'" role="img"><line x1="0" y1="'+(h-pad)+'" x2="'+w+'" y2="'+(h-pad)+'" stroke="'+colour+'" stroke-opacity=".18"/><path class="anim-line" d="'+line+'" fill="none" stroke="'+colour+'" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>'+dots+'</svg>'}
 function donut(obj,colourOf){var keys=Object.keys(obj||{});if(!keys.length)return "";var total=keys.reduce(function(s,k){return s+obj[k]},0)||1,r=40,c=2*Math.PI*r,off=0;var segs=keys.sort(function(a,b){return obj[b]-obj[a]}).map(function(k,i){var dash=(obj[k]/total)*c;var s='<circle class="seg" style="animation-delay:'+(i*80)+'ms" r="'+r+'" cx="56" cy="56" fill="none" stroke="'+colourOf(k)+'" stroke-width="13" stroke-dasharray="'+dash.toFixed(1)+' '+(c-dash).toFixed(1)+'" stroke-dashoffset="'+(-off).toFixed(1)+'" transform="rotate(-90 56 56)"/>';off+=dash;return s}).join("");return '<div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap"><svg class="donut" viewBox="0 0 112 112" width="106" height="106">'+segs+'<text class="donut-total" x="56" y="61" text-anchor="middle">'+total+'</text></svg><div>'+keys.map(function(k){return '<div class="barrow" style="grid-template-columns:12px 1fr auto"><span class="swatch" style="background:'+colourOf(k)+'"></span><span>'+esc(k)+'</span><span class="num">'+obj[k]+'</span></div>'}).join("")+'</div></div>'}
 function hbars(obj,colourOf){var keys=Object.keys(obj||{});if(!keys.length)return "";var mx=Math.max(1,Math.max.apply(null,keys.map(function(k){return obj[k]})));return keys.sort(function(a,b){return obj[b]-obj[a]}).map(function(k){return '<div class="barrow"><span>'+esc(k)+'</span><span class="track"><span class="fill" data-w="'+Math.round(obj[k]/mx*100)+'" style="background:'+colourOf(k)+'"></span></span><span class="num">'+obj[k]+'</span></div>'}).join("")}
 function spark(vals,colour){var n=vals.length||1,mx=Math.max(1,Math.max.apply(null,vals.length?vals:[0]));var w=54,h=14;var bars=vals.map(function(v,i){var bw=w/n-1;return '<rect x="'+(i*(w/n)).toFixed(1)+'" y="'+(h-Math.max(1,v/mx*h)).toFixed(1)+'" width="'+bw.toFixed(1)+'" height="'+Math.max(1,v/mx*h).toFixed(1)+'" rx="1" fill="'+colour+'"/>'}).join("");return '<svg class="spark" width="'+w+'" height="'+h+'" viewBox="0 0 '+w+' '+h+'">'+bars+'</svg>'}
