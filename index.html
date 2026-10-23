@@ -134,18 +134,14 @@ footer{max-width:1320px;margin:0 auto;padding:14px 12px 30px;color:var(--mut);fo
 
   <div class="sec">Submit an app idea</div>
   <div class="panel" id="ideaBox">
-    <div class="ideaform">
-      <input id="i-name" placeholder="Name">
-      <input id="i-pitch" placeholder="One-line pitch">
-      <input id="i-mech" placeholder="The unique mechanic (the one new thing)">
-      <input id="i-kits" placeholder="Kits it needs (optional — e.g. lan-kit)">
-      <input id="i-sat" placeholder="Why it is not saturated (required)">
-      <select id="i-prio"><option>P2</option><option>P1</option><option>P0</option></select>
-    </div>
-    <textarea id="i-prompt" rows="7" placeholder="Prompt / spec — describe the app the way you want it BUILT: the screens, the rules, the data, the edge cases, and what it must NOT do. This is the text the builder follows."></textarea>
+    <textarea id="i-prompt" rows="8" placeholder="One box — paste your app idea, prompt or spec in your own words. A paragraph is plenty.
+
+The system works out the rest: the name, the kits it will need, the priority.
+
+Example: A one-off bell that ends a meeting on time, over the room's Wi-Fi. It rings once on every device and never again. Offline, no account, no server."></textarea>
     <div style="display:flex;gap:10px;align-items:center;margin-top:9px;flex-wrap:wrap">
       <button id="i-go" class="iconbtn">Submit idea ↗</button>
-      <span class="mut" id="i-note" style="margin:0">Opens a prefilled GitHub issue → the intake Action queues it into the backlog. No account, no backend.</span>
+      <span class="mut" id="i-note" style="margin:0">One box. It opens a prefilled issue; intake derives the name, kits and priority itself.</span>
     </div>
   </div>
 
@@ -198,10 +194,12 @@ $("theme").addEventListener("click",function(){var c=document.documentElement.ge
 
 // submit an app idea -> a prefilled GitHub issue the intake Action watches
 $("i-go").addEventListener("click",function(){
-  var n=$("i-name").value.trim(),p=$("i-pitch").value.trim(),m=$("i-mech").value.trim(),k=$("i-kits").value.trim(),s=$("i-sat").value.trim(),pr=$("i-prio").value,spec=$("i-prompt").value.trim();
-  if(!n||!s){$("i-note").textContent="A name and the 'why it is not saturated' line are required.";return}
-  var body="## Name\n"+n+"\n\n## One-line pitch\n"+(p||"(none given)")+"\n\n## The unique mechanic\n"+(m||"(none given)")+"\n\n## Kits it needs\n"+k+"\n\n## Why it is not saturated\n"+s+"\n\n## Priority\n"+pr+"\n\n## Prompt / spec\n"+(spec||"(none given)")+"\n";
-  window.open("https://github.com/drsamonline/forge/issues/new?template=app-idea.md&labels=app-idea&title="+encodeURIComponent("App idea: "+n)+"&body="+encodeURIComponent(body),"_blank");
+  var spec=$("i-prompt").value.trim();
+  if(!spec){$("i-note").textContent="Type the idea first — even one line is enough.";return}
+  var first=(spec.split("\n").map(function(l){return l.trim()}).filter(Boolean)[0])||"New idea";
+  var title=first.length>56?first.slice(0,56)+"…":first;
+  var body="## Idea / prompt / spec\n\n"+spec+"\n";
+  window.open("https://github.com/drsamonline/forge/issues/new?template=app-idea.md&labels=app-idea&title="+encodeURIComponent("App idea: "+title)+"&body="+encodeURIComponent(body),"_blank");
 });
 
 function areaChart(vals,colour,labels){var n=vals.length;if(!n)return "";var w=600,h=150,max=Math.max(1,Math.max.apply(null,vals)),pad=12;var X=function(i){return n===1?w/2:i*(w/(n-1))},Y=function(v){return h-pad-(v/max)*(h-2*pad)};var line=vals.map(function(v,i){return (i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1)}).join(" ");var area=line+" L "+X(n-1).toFixed(1)+" "+h+" L "+X(0).toFixed(1)+" "+h+" Z";var dots=vals.map(function(v,i){return '<circle class="anim-dot" style="animation-delay:'+(i*35)+'ms" cx="'+X(i).toFixed(1)+'" cy="'+Y(v).toFixed(1)+'" r="3.2" fill="'+colour+'"/>'}).join("");return '<svg class="chart" viewBox="0 0 '+w+' '+h+'" role="img"><defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+colour+'" stop-opacity=".45"/><stop offset="1" stop-color="'+colour+'" stop-opacity="0"/></linearGradient></defs><line x1="0" y1="'+(h-pad)+'" x2="'+w+'" y2="'+(h-pad)+'" stroke="'+colour+'" stroke-opacity=".18"/><path class="anim-area" d="'+area+'" fill="url(#ag)"/><path class="anim-line" d="'+line+'" fill="none" stroke="'+colour+'" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>'+dots+'</svg><div class="legend"><span>'+esc(labels||"")+'</span></div>'}
