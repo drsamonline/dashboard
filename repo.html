@@ -1,40 +1,43 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>repo — drsamonline console</title>
+<script>try{var t=localStorage.getItem('dc:theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 <style>
-  :root{--bg0:#0b0d12;--bg1:#12151d;--card:rgba(255,255,255,.035);--card2:rgba(255,255,255,.06);
-    --ink:#eef1f6;--mut:#98a2b3;--line:rgba(255,255,255,.09);--violet:#8b5cf6;--cyan:#06b6d4;--green:#22c55e;--amber:#f59e0b;--red:#ef4444;--acc:#a78bfa;--radius:16px;--shadow:0 10px 30px rgba(0,0,0,.35)}
-  *{box-sizing:border-box}
-  body{margin:0;color:var(--ink);min-height:100vh;font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-    background:radial-gradient(1000px 520px at 10% -10%,rgba(139,92,246,.20),transparent 60%),radial-gradient(820px 460px at 95% 0,rgba(6,182,212,.15),transparent 55%),linear-gradient(180deg,var(--bg1),var(--bg0) 42%)}
-  a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
-  header,main,footer{max-width:920px;margin:0 auto;padding:22px 18px}
-  h1{margin:8px 0 4px;font-size:clamp(1.3rem,2.6vw,1.8rem)}
-  .mut{color:var(--mut);font-size:13px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:15px;margin:12px 0;box-shadow:var(--shadow)}
-  .grid{display:grid;gap:13px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
-  .grid .card .k{font-size:11.5px;text-transform:uppercase;letter-spacing:.09em;color:var(--mut);font-weight:700}
-  .grid .card .v{font-size:26px;font-weight:800;margin-top:4px}
-  .sec{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:#8ea0bd;margin:26px 0 8px;font-weight:700;display:flex;align-items:center;gap:8px}
-  .sec::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,var(--line),transparent)}
-  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
-  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line);font-size:13px}
-  th{color:#8ea0bd;font-weight:700;font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;background:rgba(255,255,255,.02)}
-  tr:last-child td{border-bottom:0}
-  .badge{display:inline-flex;align-items:center;gap:6px;padding:2px 9px;border-radius:999px;font-size:11px;font-weight:700;border:1px solid var(--line);background:rgba(255,255,255,.04);color:#cbd5e1}
-  .badge.ok{color:#bbf7d0;border-color:rgba(34,197,94,.45);background:rgba(34,197,94,.13)}
-  .badge.warn{color:#fde68a;border-color:rgba(245,158,11,.45);background:rgba(245,158,11,.13)}
-  .badge.bad{color:#fecaca;border-color:rgba(239,68,68,.45);background:rgba(239,68,68,.13)}
-  .badge.v{color:#ddd6fe;border-color:rgba(139,92,246,.45);background:rgba(139,92,246,.14)}
-  .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--mut);margin-right:6px}
-  .dot.ok{background:var(--green)}.dot.bad{background:var(--red)}.dot.warn{background:var(--amber)}
+:root{--r:16px;--sh:0 10px 30px rgba(0,0,0,.35);--violet:#8b5cf6;--cyan:#06b6d4;--green:#22c55e;--amber:#f59e0b;--red:#ef4444;--acc:#a78bfa;--ok:#22c55e;--warn:#f59e0b;--bad:#ef4444}
+:root[data-theme="dark"]{--bg0:#0b0d12;--bg1:#12151d;--ink:#eef1f6;--mut:#98a2b3;--line:rgba(255,255,255,.09);--card:rgba(255,255,255,.035);--card2:rgba(255,255,255,.06);--head:#8ea0bd}
+:root[data-theme="light"]{--bg0:#eef1f7;--bg1:#f8fafc;--ink:#0f172a;--mut:#5b6b82;--line:rgba(15,23,42,.12);--card:#fff;--card2:#f3f5fa;--head:#5b6b82;--sh:0 8px 24px rgba(15,23,42,.10)}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);min-height:100vh;font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:radial-gradient(1000px 520px at 10% -10%,rgba(139,92,246,.20),transparent 60%),radial-gradient(820px 460px at 95% 0,rgba(6,182,212,.15),transparent 55%),linear-gradient(180deg,var(--bg1),var(--bg0) 42%);transition:background .3s,color .3s}
+a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
+header,main,footer{max-width:920px;margin:0 auto;padding:22px 18px}
+h1{margin:8px 0 4px;font-size:clamp(1.3rem,2.6vw,1.8rem)}.mut{color:var(--mut);font-size:13px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:15px;margin:12px 0;box-shadow:var(--sh);animation:rise .5s ease both}
+.grid{display:grid;gap:13px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.grid .card .k{font-size:11.5px;text-transform:uppercase;letter-spacing:.09em;color:var(--mut);font-weight:700}
+.grid .card .v{font-size:24px;font-weight:800;margin-top:5px}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.sec{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--head);margin:26px 0 8px;font-weight:700;display:flex;align-items:center;gap:8px}
+.sec::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,var(--line),transparent)}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh)}
+th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line);font-size:13px}
+th{color:var(--head);font-weight:700;font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;background:var(--card2)}
+tr:last-child td{border-bottom:0}tbody tr:hover{background:rgba(139,92,246,.06)}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:2px 9px;border-radius:999px;font-size:11px;font-weight:700;border:1px solid var(--line);background:var(--card2);color:var(--mut)}
+.badge.ok{color:#16a34a;border-color:rgba(34,197,94,.45);background:rgba(34,197,94,.13)}
+.badge.warn{color:#b45309;border-color:rgba(245,158,11,.45);background:rgba(245,158,11,.13)}
+.badge.bad{color:#dc2626;border-color:rgba(239,68,68,.45);background:rgba(239,68,68,.13)}
+.badge.v{color:#7c3aed;border-color:rgba(139,92,246,.45);background:rgba(139,92,246,.14)}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--mut);margin-right:6px}
+.dot.ok{background:var(--ok)}.dot.bad{background:var(--bad)}.dot.warn{background:var(--warn)}
+.iconbtn{background:var(--card2);border:1px solid var(--line);color:var(--ink);border-radius:10px;padding:5px 10px;font-size:13px;cursor:pointer;float:right}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
 <header>
+  <button id="theme" class="iconbtn" aria-label="Toggle theme">◐</button>
   <p class="mut"><a href="index.html">← console</a></p>
   <h1 id="name">repo</h1>
   <p class="mut" id="desc"></p>
@@ -42,42 +45,37 @@
 </header>
 <main>
   <div class="grid" id="cards"></div>
-
   <div class="sec">Its automations</div>
   <table><thead><tr><th>Workflow</th><th>Schedule</th><th>Last run</th></tr></thead><tbody id="autos"></tbody></table>
-
   <div class="sec">Open PRs / issues</div>
   <table><thead><tr><th>What</th><th>Kind</th><th>Opened</th></tr></thead><tbody id="open"></tbody></table>
 </main>
 <footer class="mut">© 2026 Dr Sohil Momin · Forge system</footer>
-
 <script>
-function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
-function fmt(d){if(!d)return "—";try{return new Date(d).toISOString().slice(0,10);}catch(e){return d;}}
-function tone(c){c=String(c||"").toLowerCase();if(c==="success")return "ok";if(c==="failure"||c==="cancelled")return "bad";return "warn";}
-function confTone(t){var n=parseInt(t||"0",10);return n>=4?"ok":n>=3?"warn":"bad";}
+var $=function(i){return document.getElementById(i)};
+var esc=function(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})};
+var fmt=function(d){if(!d)return "—";try{return new Date(d).toISOString().slice(0,10)}catch(e){return d}};
+var tone=function(c){c=String(c||"").toLowerCase();if(c==="success")return "ok";if(c==="failure"||c==="cancelled")return "bad";return "warn"};
+var confTone=function(t){var n=parseInt(t||"0",10);return n>=4?"ok":n>=3?"warn":"bad"};
 var CATCOL={"Homeopathy":"#a855f7","Health Tools":"#22c55e","Games":"#f59e0b","Utilities":"#06b6d4","HTML Apps":"#3b82f6","Data":"#ec4899"};
-var name = new URLSearchParams(location.search).get("name") || "";
-fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(function(d){
-  var r = (d.repos||[]).find(x=>x.name===name);
-  document.getElementById("name").textContent = name || "(no repo)";
-  document.title = name + " — drsamonline console";
-  if(!r){ document.getElementById("desc").textContent = "Not found in the current data."; return; }
-  document.getElementById("desc").textContent = r.description || "";
-  document.getElementById("cards").innerHTML =
-    '<div class="card"><div class="k">Conformance</div><div class="v"><span class="badge '+confTone(r.status)+'">'+esc(r.status||"—")+'</span></div></div>'+
-    '<div class="card"><div class="k">Category</div><div class="v"><span class="badge" style="background:'+(CATCOL[r.category]||"#64748b")+';color:#0b0d12;border:0">'+esc(r.category||"—")+'</span></div></div>'+
-    '<div class="card"><div class="k">Last push</div><div class="v" style="font-size:18px">'+fmt(r.pushed_at)+'</div></div>';
-  var links=[]; if(r.homepage)links.push('<a href="'+esc(r.homepage)+'">live page</a>');
-  if(r.html_url){links.push('<a href="'+esc(r.html_url)+'">source</a>');links.push('<a href="'+esc(r.html_url)+'/releases">releases</a>');links.push('<a href="'+esc(r.html_url)+'/actions">actions</a>');}
-  document.getElementById("links").innerHTML = links.join(" · ");
-
-  var autos = (d.automation||[]).filter(a=>a.repo===name);
-  document.getElementById("autos").innerHTML = autos.map(a=>'<tr><td><a href="'+esc(a.url)+'">'+esc(a.name)+'</a></td><td>'+esc(a.schedule)+'</td><td><span class="dot '+tone(a.conclusion)+'"></span><span class="badge '+tone(a.conclusion)+'">'+esc(a.conclusion)+'</span> <span class="mut">'+fmt(a.last_run)+'</span></td></tr>').join("") || '<tr><td colspan="3" class="mut">No automations for this repo.</td></tr>';
-
-  var open = (d.attention||[]).filter(a=>a.repo===name);
-  document.getElementById("open").innerHTML = open.map(a=>'<tr><td><a href="'+esc(a.url)+'">'+esc(a.title)+'</a></td><td><span class="badge v">'+esc(a.kind)+'</span></td><td class="mut">'+fmt(a.created)+'</td></tr>').join("") || '<tr><td colspan="3" class="mut">Nothing open.</td></tr>';
-}).catch(function(){ document.getElementById("desc").textContent = "Could not load data.json"; });
+$("theme").addEventListener("click",function(){var c=document.documentElement.getAttribute("data-theme")==="light"?"dark":"light";document.documentElement.setAttribute("data-theme",c);try{localStorage.setItem("dc:theme",c)}catch(e){}});
+var name=new URLSearchParams(location.search).get("name")||"";
+fetch("data.json",{cache:"no-store"}).then(function(r){return r.json()}).then(function(d){
+  var r=(d.repos||[]).find(function(x){return x.name===name});
+  $("name").textContent=name||"(no repo)";document.title=name+" — drsamonline console";
+  if(!r){$("desc").textContent="Not found in the current data.";return}
+  $("desc").textContent=r.description||"";
+  $("cards").innerHTML='<div class="card"><div class="k">Conformance</div><div class="v"><span class="badge '+confTone(r.status)+'">'+esc(r.status||"—")+'</span></div></div>'
+    +'<div class="card" style="animation-delay:.08s"><div class="k">Category</div><div class="v"><span class="cat badge" style="background:'+(CATCOL[r.category]||"#64748b")+';color:#0b0d12;border:0">'+esc(r.category||"—")+'</span></div></div>'
+    +'<div class="card" style="animation-delay:.16s"><div class="k">Last push</div><div class="v" style="font-size:18px">'+fmt(r.pushed_at)+'</div></div>';
+  var links=[];if(r.homepage)links.push('<a href="'+esc(r.homepage)+'">live page</a>');
+  if(r.html_url){links.push('<a href="'+esc(r.html_url)+'">source</a>');links.push('<a href="'+esc(r.html_url)+'/releases">releases</a>');links.push('<a href="'+esc(r.html_url)+'/actions">actions</a>')}
+  $("links").innerHTML=links.join(" · ");
+  var autos=(d.automation||[]).filter(function(a){return a.repo===name});
+  $("autos").innerHTML=autos.map(function(a){return '<tr><td><a href="'+esc(a.url)+'">'+esc(a.name)+'</a></td><td>'+esc(a.schedule)+'</td><td><span class="dot '+tone(a.conclusion)+'"></span><span class="badge '+tone(a.conclusion)+'">'+esc(a.conclusion)+'</span> <span class="mut">'+fmt(a.last_run)+'</span></td></tr>'}).join("")||'<tr><td colspan="3" class="mut">No automations for this repo.</td></tr>';
+  var open=(d.attention||[]).filter(function(a){return a.repo===name});
+  $("open").innerHTML=open.map(function(a){return '<tr><td><a href="'+esc(a.url)+'">'+esc(a.title)+'</a></td><td><span class="badge v">'+esc(a.kind)+'</span></td><td class="mut">'+fmt(a.created)+'</td></tr>'}).join("")||'<tr><td colspan="3" class="mut">Nothing open.</td></tr>';
+}).catch(function(){$("desc").textContent="Could not load data.json"});
 </script>
 </body>
 </html>
