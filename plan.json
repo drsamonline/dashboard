@@ -1,0 +1,1070 @@
+{
+ "generated": "2026-10-23",
+ "total": 133,
+ "apps": [
+  {
+   "n": 1,
+   "name": "Bureaucrat",
+   "slug": "bureaucrat",
+   "category": "AI-backed (BYO key)",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 2,
+   "name": "Codex",
+   "slug": "codex",
+   "category": "AI-backed (BYO key)",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 3,
+   "name": "Griot",
+   "slug": "griot",
+   "category": "AI-backed (BYO key)",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 4,
+   "name": "Mimic",
+   "slug": "mimic",
+   "category": "AI-backed (BYO key)",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 5,
+   "name": "Palate",
+   "slug": "palate",
+   "category": "AI-backed (BYO key)",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 6,
+   "name": "Rehearsal",
+   "slug": "rehearsal",
+   "category": "AI-backed (BYO key)",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 7,
+   "name": "Socratic",
+   "slug": "socratic",
+   "category": "AI-backed (BYO key)",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 8,
+   "name": "Steelman",
+   "slug": "steelman",
+   "category": "AI-backed (BYO key)",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 9,
+   "name": "Undertow",
+   "slug": "undertow",
+   "category": "AI-backed (BYO key)",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 10,
+   "name": "Clip Stack",
+   "slug": "clip-stack",
+   "category": "Apps that shorten work time",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 11,
+   "name": "Doc Diff",
+   "slug": "doc-diff",
+   "category": "Apps that shorten work time",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 12,
+   "name": "Form Filler",
+   "slug": "form-filler",
+   "category": "Apps that shorten work time",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 13,
+   "name": "Mailmerge",
+   "slug": "mailmerge",
+   "category": "Apps that shorten work time",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 14,
+   "name": "Report Assembler",
+   "slug": "report-assembler",
+   "category": "Apps that shorten work time",
+   "tier": "Epic",
+   "origin": "categorized"
+  },
+  {
+   "n": 15,
+   "name": "Kundli",
+   "slug": "kundli",
+   "category": "Astrology & occult apps",
+   "tier": "Epic",
+   "origin": "categorized"
+  },
+  {
+   "n": 16,
+   "name": "Moonphase",
+   "slug": "moonphase",
+   "category": "Astrology & occult apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 17,
+   "name": "Panchang",
+   "slug": "panchang",
+   "category": "Astrology & occult apps",
+   "tier": "Mythic",
+   "origin": "categorized"
+  },
+  {
+   "n": 18,
+   "name": "Runes",
+   "slug": "runes",
+   "category": "Astrology & occult apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 19,
+   "name": "Tarot Ledger",
+   "slug": "tarot-ledger",
+   "category": "Astrology & occult apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 20,
+   "name": "Ember",
+   "slug": "ember",
+   "category": "Calm / serene apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 21,
+   "name": "Horizon",
+   "slug": "horizon",
+   "category": "Calm / serene apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 22,
+   "name": "Rainroom",
+   "slug": "rainroom",
+   "category": "Calm / serene apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 23,
+   "name": "Zen Garden",
+   "slug": "zen-garden",
+   "category": "Calm / serene apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 24,
+   "name": "Belief Lab",
+   "slug": "belief-lab",
+   "category": "Conspiracy-theory & media-literacy apps (framed responsibly)",
+   "tier": "Legendary",
+   "origin": "categorized"
+  },
+  {
+   "n": 25,
+   "name": "Primary Source",
+   "slug": "primary-source",
+   "category": "Conspiracy-theory & media-literacy apps (framed responsibly)",
+   "tier": "Epic",
+   "origin": "categorized"
+  },
+  {
+   "n": 26,
+   "name": "Provenance",
+   "slug": "provenance",
+   "category": "Conspiracy-theory & media-literacy apps (framed responsibly)",
+   "tier": "Mythic",
+   "origin": "categorized"
+  },
+  {
+   "n": 27,
+   "name": "Red Flag",
+   "slug": "red-flag",
+   "category": "Conspiracy-theory & media-literacy apps (framed responsibly)",
+   "tier": "Epic",
+   "origin": "categorized"
+  },
+  {
+   "n": 28,
+   "name": "Rumor Map",
+   "slug": "rumor-map",
+   "category": "Conspiracy-theory & media-literacy apps (framed responsibly)",
+   "tier": "Epic",
+   "origin": "categorized"
+  },
+  {
+   "n": 29,
+   "name": "Fuel Log",
+   "slug": "fuel-log",
+   "category": "Daily-use apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 30,
+   "name": "Handoff",
+   "slug": "handoff",
+   "category": "Daily-use apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 31,
+   "name": "Larder",
+   "slug": "larder",
+   "category": "Daily-use apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 32,
+   "name": "Today Card",
+   "slug": "today-card",
+   "category": "Daily-use apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 33,
+   "name": "Where's My",
+   "slug": "where-s-my",
+   "category": "Daily-use apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 34,
+   "name": "Grimoire",
+   "slug": "grimoire",
+   "category": "Esoteric-knowledge apps",
+   "tier": "Legendary",
+   "origin": "categorized"
+  },
+  {
+   "n": 35,
+   "name": "Mantra",
+   "slug": "mantra",
+   "category": "Esoteric-knowledge apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 36,
+   "name": "Sacred Geometry",
+   "slug": "sacred-geometry",
+   "category": "Esoteric-knowledge apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 37,
+   "name": "Symbology",
+   "slug": "symbology",
+   "category": "Esoteric-knowledge apps",
+   "tier": "Epic",
+   "origin": "categorized"
+  },
+  {
+   "n": 38,
+   "name": "Tree of Life",
+   "slug": "tree-of-life",
+   "category": "Esoteric-knowledge apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 39,
+   "name": "Accent Oracle",
+   "slug": "accent-oracle",
+   "category": "Fun apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 40,
+   "name": "Compliment Machine",
+   "slug": "compliment-machine",
+   "category": "Fun apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 41,
+   "name": "Dice of Chaos",
+   "slug": "dice-of-chaos",
+   "category": "Fun apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 42,
+   "name": "Portrait Oracle",
+   "slug": "portrait-oracle",
+   "category": "Fun apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 43,
+   "name": "Time Machine",
+   "slug": "time-machine",
+   "category": "Fun apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 44,
+   "name": "Dungeon of One",
+   "slug": "dungeon-of-one",
+   "category": "Game ideas",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 45,
+   "name": "Hex",
+   "slug": "hex",
+   "category": "Game ideas",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 46,
+   "name": "Idle Empire",
+   "slug": "idle-empire",
+   "category": "Game ideas",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 47,
+   "name": "Memory Palace",
+   "slug": "memory-palace",
+   "category": "Game ideas",
+   "tier": "Legendary",
+   "origin": "categorized"
+  },
+  {
+   "n": 48,
+   "name": "Nightfall",
+   "slug": "nightfall",
+   "category": "Game ideas",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 49,
+   "name": "Thread",
+   "slug": "thread",
+   "category": "Game ideas",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 50,
+   "name": "Ambient Memory",
+   "slug": "ambient-memory",
+   "category": "Innovative apps (novel mechanics)",
+   "tier": "Mythic",
+   "origin": "categorized"
+  },
+  {
+   "n": 51,
+   "name": "Counterfactual",
+   "slug": "counterfactual",
+   "category": "Innovative apps (novel mechanics)",
+   "tier": "Epic",
+   "origin": "categorized"
+  },
+  {
+   "n": 52,
+   "name": "Decision Journal",
+   "slug": "decision-journal",
+   "category": "Innovative apps (novel mechanics)",
+   "tier": "Epic",
+   "origin": "categorized"
+  },
+  {
+   "n": 53,
+   "name": "Friction",
+   "slug": "friction",
+   "category": "Innovative apps (novel mechanics)",
+   "tier": "Epic",
+   "origin": "categorized"
+  },
+  {
+   "n": 54,
+   "name": "Peripheral Vision",
+   "slug": "peripheral-vision",
+   "category": "Innovative apps (novel mechanics)",
+   "tier": "Epic",
+   "origin": "categorized"
+  },
+  {
+   "n": 55,
+   "name": "Beacon",
+   "slug": "beacon",
+   "category": "LAN / local-network",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 56,
+   "name": "Blackboard",
+   "slug": "blackboard",
+   "category": "LAN / local-network",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 57,
+   "name": "Canteen",
+   "slug": "canteen",
+   "category": "LAN / local-network",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 58,
+   "name": "Chalk",
+   "slug": "chalk",
+   "category": "LAN / local-network",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 59,
+   "name": "Choir",
+   "slug": "choir",
+   "category": "LAN / local-network",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 60,
+   "name": "Dropzone",
+   "slug": "dropzone",
+   "category": "LAN / local-network",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 61,
+   "name": "Hearth",
+   "slug": "hearth",
+   "category": "LAN / local-network",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 62,
+   "name": "Lantern",
+   "slug": "lantern",
+   "category": "LAN / local-network",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 63,
+   "name": "Rally",
+   "slug": "rally",
+   "category": "LAN / local-network",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 64,
+   "name": "Semaphore",
+   "slug": "semaphore",
+   "category": "LAN / local-network",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 65,
+   "name": "Vault",
+   "slug": "vault",
+   "category": "LAN / local-network",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 66,
+   "name": "Family Medicine",
+   "slug": "family-medicine",
+   "category": "Life-management apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 67,
+   "name": "Nest",
+   "slug": "nest",
+   "category": "Life-management apps",
+   "tier": "Legendary",
+   "origin": "categorized"
+  },
+  {
+   "n": 68,
+   "name": "Paper Trail",
+   "slug": "paper-trail",
+   "category": "Life-management apps",
+   "tier": "Epic",
+   "origin": "categorized"
+  },
+  {
+   "n": 69,
+   "name": "Subscriptions",
+   "slug": "subscriptions",
+   "category": "Life-management apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 70,
+   "name": "Wardrobe",
+   "slug": "wardrobe",
+   "category": "Life-management apps",
+   "tier": "Epic",
+   "origin": "categorized"
+  },
+  {
+   "n": 71,
+   "name": "Nightwatch",
+   "slug": "nightwatch",
+   "category": "Mental-health apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 72,
+   "name": "Panic Harbor",
+   "slug": "panic-harbor",
+   "category": "Mental-health apps",
+   "tier": "Epic",
+   "origin": "categorized"
+  },
+  {
+   "n": 73,
+   "name": "Sleep Ledger",
+   "slug": "sleep-ledger",
+   "category": "Mental-health apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 74,
+   "name": "Tether",
+   "slug": "tether",
+   "category": "Mental-health apps",
+   "tier": "Epic",
+   "origin": "categorized"
+  },
+  {
+   "n": 75,
+   "name": "Worry Window",
+   "slug": "worry-window",
+   "category": "Mental-health apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 76,
+   "name": "Desk Booking",
+   "slug": "desk-booking",
+   "category": "Office apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 77,
+   "name": "Expense Snap",
+   "slug": "expense-snap",
+   "category": "Office apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 78,
+   "name": "Minutes",
+   "slug": "minutes",
+   "category": "Office apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 79,
+   "name": "Shift",
+   "slug": "shift",
+   "category": "Office apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 80,
+   "name": "Visitor",
+   "slug": "visitor",
+   "category": "Office apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 81,
+   "name": "Antiphon",
+   "slug": "antiphon",
+   "category": "Offline-first",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 82,
+   "name": "Aviary",
+   "slug": "aviary",
+   "category": "Offline-first",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 83,
+   "name": "Babel",
+   "slug": "babel",
+   "category": "Offline-first",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 84,
+   "name": "Cairn",
+   "slug": "cairn",
+   "category": "Offline-first",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 85,
+   "name": "Chronofuge",
+   "slug": "chronofuge",
+   "category": "Offline-first",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 86,
+   "name": "Fermata",
+   "slug": "fermata",
+   "category": "Offline-first",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 87,
+   "name": "Herbarium",
+   "slug": "herbarium",
+   "category": "Offline-first",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 88,
+   "name": "Jacquard",
+   "slug": "jacquard",
+   "category": "Offline-first",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 89,
+   "name": "Kiln",
+   "slug": "kiln",
+   "category": "Offline-first",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 90,
+   "name": "Ledger",
+   "slug": "ledger",
+   "category": "Offline-first",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 91,
+   "name": "Marginalia",
+   "slug": "marginalia",
+   "category": "Offline-first",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 92,
+   "name": "Mycelium",
+   "slug": "mycelium",
+   "category": "Offline-first",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 93,
+   "name": "Palimpsest",
+   "slug": "palimpsest",
+   "category": "Offline-first",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 94,
+   "name": "Quorum",
+   "slug": "quorum",
+   "category": "Offline-first",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 95,
+   "name": "Stethoscope",
+   "slug": "stethoscope",
+   "category": "Offline-first",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 96,
+   "name": "Sundial",
+   "slug": "sundial",
+   "category": "Offline-first",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 97,
+   "name": "Symbiote",
+   "slug": "symbiote",
+   "category": "Offline-first",
+   "tier": "\u2014",
+   "origin": "prompts"
+  },
+  {
+   "n": 98,
+   "name": "Barter",
+   "slug": "barter",
+   "category": "Other ideas worth keeping",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 99,
+   "name": "Beam",
+   "slug": "beam",
+   "category": "Other ideas worth keeping",
+   "tier": "Epic",
+   "origin": "categorized"
+  },
+  {
+   "n": 100,
+   "name": "Carrier",
+   "slug": "carrier",
+   "category": "Other ideas worth keeping",
+   "tier": "Epic",
+   "origin": "categorized"
+  },
+  {
+   "n": 101,
+   "name": "Chirp Key",
+   "slug": "chirp-key",
+   "category": "Other ideas worth keeping",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 102,
+   "name": "Constellation",
+   "slug": "constellation",
+   "category": "Other ideas worth keeping",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 103,
+   "name": "Hush",
+   "slug": "hush",
+   "category": "Other ideas worth keeping",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 104,
+   "name": "Last Letter",
+   "slug": "last-letter",
+   "category": "Other ideas worth keeping",
+   "tier": "Epic",
+   "origin": "categorized"
+  },
+  {
+   "n": 105,
+   "name": "Prism",
+   "slug": "prism",
+   "category": "Other ideas worth keeping",
+   "tier": "Epic",
+   "origin": "categorized"
+  },
+  {
+   "n": 106,
+   "name": "Repair",
+   "slug": "repair",
+   "category": "Other ideas worth keeping",
+   "tier": "Epic",
+   "origin": "categorized"
+  },
+  {
+   "n": 107,
+   "name": "Sonar Drop",
+   "slug": "sonar-drop",
+   "category": "Other ideas worth keeping",
+   "tier": "Epic",
+   "origin": "categorized"
+  },
+  {
+   "n": 108,
+   "name": "Sound Map",
+   "slug": "sound-map",
+   "category": "Other ideas worth keeping",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 109,
+   "name": "Tap",
+   "slug": "tap",
+   "category": "Other ideas worth keeping",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 110,
+   "name": "Time Capsule",
+   "slug": "time-capsule",
+   "category": "Other ideas worth keeping",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 111,
+   "name": "Batch",
+   "slug": "batch",
+   "category": "Productivity apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 112,
+   "name": "Context Switch Guard",
+   "slug": "context-switch-guard",
+   "category": "Productivity apps",
+   "tier": "Epic",
+   "origin": "categorized"
+  },
+  {
+   "n": 113,
+   "name": "Deadline Dial",
+   "slug": "deadline-dial",
+   "category": "Productivity apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 114,
+   "name": "Focus Ledger",
+   "slug": "focus-ledger",
+   "category": "Productivity apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 115,
+   "name": "Inbox Coach",
+   "slug": "inbox-coach",
+   "category": "Productivity apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 116,
+   "name": "Meeting Autopsy",
+   "slug": "meeting-autopsy",
+   "category": "Productivity apps",
+   "tier": "Legendary",
+   "origin": "categorized"
+  },
+  {
+   "n": 117,
+   "name": "Reading Digest",
+   "slug": "reading-digest",
+   "category": "Productivity apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 118,
+   "name": "Standup",
+   "slug": "standup",
+   "category": "Productivity apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 119,
+   "name": "Two-Minute",
+   "slug": "two-minute",
+   "category": "Productivity apps",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 120,
+   "name": "Blind Rank",
+   "slug": "blind-rank",
+   "category": "Viral apps (built to be shared)",
+   "tier": "Epic",
+   "origin": "categorized"
+  },
+  {
+   "n": 121,
+   "name": "Daily Doodle",
+   "slug": "daily-doodle",
+   "category": "Viral apps (built to be shared)",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 122,
+   "name": "Hotseat",
+   "slug": "hotseat",
+   "category": "Viral apps (built to be shared)",
+   "tier": "Epic",
+   "origin": "categorized"
+  },
+  {
+   "n": 123,
+   "name": "Same Picture",
+   "slug": "same-picture",
+   "category": "Viral apps (built to be shared)",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 124,
+   "name": "Screenshot Sleuth",
+   "slug": "screenshot-sleuth",
+   "category": "Viral apps (built to be shared)",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 125,
+   "name": "Beacon Watcher",
+   "slug": "beacon-watcher",
+   "category": "Web search & scrape (one defined job)",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 126,
+   "name": "Harvest",
+   "slug": "harvest",
+   "category": "Web search & scrape (one defined job)",
+   "tier": "Rare",
+   "origin": "categorized"
+  },
+  {
+   "n": 127,
+   "name": "Trawler",
+   "slug": "trawler",
+   "category": "Web search & scrape (one defined job)",
+   "tier": "Epic",
+   "origin": "categorized"
+  },
+  {
+   "n": 128,
+   "name": "Encrypted Case Log",
+   "slug": "encrypted-case-log",
+   "category": "Offline-first",
+   "tier": "Epic",
+   "origin": "prompts"
+  },
+  {
+   "n": 129,
+   "name": "Thermals",
+   "slug": "thermals",
+   "category": "Offline-first",
+   "tier": "Epic",
+   "origin": "prompts"
+  },
+  {
+   "n": 130,
+   "name": "Poet's Studio",
+   "slug": "poet-s-studio",
+   "category": "Offline-first",
+   "tier": "Rare",
+   "origin": "prompts"
+  },
+  {
+   "n": 131,
+   "name": "Image Toolkit",
+   "slug": "image-toolkit",
+   "category": "Offline-first",
+   "tier": "Epic",
+   "origin": "prompts"
+  },
+  {
+   "n": 132,
+   "name": "Organon Reader",
+   "slug": "organon-reader",
+   "category": "Offline-first",
+   "tier": "Rare",
+   "origin": "prompts"
+  },
+  {
+   "n": 133,
+   "name": "Indian Nutrition Tracker",
+   "slug": "indian-nutrition-tracker",
+   "category": "Offline-first",
+   "tier": "Epic",
+   "origin": "prompts"
+  }
+ ]
+}
