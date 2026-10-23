@@ -1,7 +1,7 @@
 name: Refresh dashboard data
 
-# Regenerates from the SHARED module drsoam.py (app-builder). Also records a daily
-# history snapshot, so the console can show change over time.
+# Regenerates from the SHARED module drsoam.py (app-builder): data.json, a daily
+# history snapshot, changes.json and feed.xml. One exclusion list, no drift.
 
 on:
   schedule:
@@ -30,7 +30,7 @@ jobs:
         with:
           repository: drsamonline/app-builder
           path: .drsoam
-      - name: Regenerate data.json + history.json
+      - name: Regenerate
         env:
           GH_TOKEN: ${{ github.token }}
         run: python3 .drsoam/drsoam.py dashboard
@@ -39,6 +39,6 @@ jobs:
           if git diff --quiet; then echo "no change"; exit 0; fi
           git config user.name  "forge-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add data.json history.json
+          git add data.json history.json changes.json feed.xml
           git commit -m "chore: refresh dashboard data [skip ci]"
           git push

@@ -1,0 +1,18 @@
+{
+  "name": "drsamonline — system console",
+  "short_name": "console",
+  "description": "The drsamonline system console: health, controls, charts, roadmap and every repo in one place.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b0d12",
+  "theme_color": "#0b0d12",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
