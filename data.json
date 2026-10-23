@@ -1,6 +1,6 @@
 {
   "generated": "2026-10-23",
-  "generated_at": "2026-10-23T06:43:14Z",
+  "generated_at": "2026-10-23T08:08:03Z",
   "reckoning": "46 products · 14 kits · avg conformance 5.0/5 · updated automatically.",
   "health": "ok",
   "cards": [
@@ -31,15 +31,28 @@
     "avg": 5.0,
     "pushes": 67,
     "byrepo": {
+      "smartbill-app": 1,
+      "the-symphony-companion": 1,
+      "conqueror-os": 1,
+      "kent-repertory-explorer": 1,
+      "offline-pdf-toolkit": 1,
+      "remedy-relationship-explorer": 1,
+      "The_Browser": 1,
+      "skin-case-tracker": 1,
+      "BLINKTRANSFER": 1,
+      "read-live-transform-app": 1,
+      "blinkcode-ai": 1,
+      "helioprism": 1,
+      "unstoppable-mind-companion": 1,
+      "mnemosyne-companion": 1,
+      "web-kit": 1,
+      "TTB": 1,
       "dashboard": 1,
-      "app-builder": 1,
       "Matneo": 1,
+      "app-builder": 1,
       "chalk-lan": 1,
       "canteen-lan": 1,
       "app-companion-forge": 1,
-      "BLINKTRANSFER": 1,
-      "blinkcode-ai": 1,
-      "helioprism": 1,
       "frame-kit": 1,
       "optical-kit": 1,
       "seance": 1,
@@ -48,9 +61,8 @@
       "aethelgard-games": 1,
       "aethelgard-rpg-engine": 1,
       "saga-vn-engine": 1,
-      "NEO": 1,
-      "The_Browser": 1,
       "neon-engine": 1,
+      "NEO": 1,
       "case-kit": 1,
       "book-kit": 1,
       "srs-kit": 1,
@@ -61,13 +73,8 @@
       "lan-kit": 1,
       "compress-kit": 1,
       "crypto-kit": 1,
-      "web-kit": 1,
-      "read-live-transform-app": 1,
       "export-kit": 1,
-      "app-panchang": 1,
-      "mnemosyne-companion": 1,
-      "skin-case-tracker": 1,
-      "unstoppable-mind-companion": 1
+      "app-panchang": 1
     }
   },
   "stats": {
@@ -75,10 +82,10 @@
       "5": 46
     },
     "categories": {
-      "HTML Apps": 12,
-      "Games": 6,
       "Utilities": 15,
       "Homeopathy": 11,
+      "HTML Apps": 12,
+      "Games": 6,
       "Health Tools": 1,
       "Data": 1
     }
@@ -134,155 +141,14 @@
     },
     {
       "date": "2026-10-22",
-      "count": 30
+      "count": 23
     },
     {
       "date": "2026-10-23",
-      "count": 37
+      "count": 44
     }
   ],
-  "attention": [
-    {
-      "title": "fix(web-kit): add the test-node.js the Test workflow expects",
-      "repo": "web-kit",
-      "url": "https://github.com/drsamonline/web-kit/pull/1",
-      "kind": "PR",
-      "created": "2026-10-23T02:10:14Z"
-    },
-    {
-      "title": "retrofit(web-kit): use the shared runtime for persistence",
-      "repo": "read-live-transform-app",
-      "url": "https://github.com/drsamonline/read-live-transform-app/pull/1",
-      "kind": "PR",
-      "created": "2026-10-23T02:08:13Z"
-    },
-    {
-      "title": "Adopt frame-kit for the shared transfer frame",
-      "repo": "blinkcode-ai",
-      "url": "https://github.com/drsamonline/blinkcode-ai/pull/5",
-      "kind": "PR",
-      "created": "2026-10-23T02:00:17Z"
-    },
-    {
-      "title": "Adopt frame-kit for the shared transfer frame",
-      "repo": "BLINKTRANSFER",
-      "url": "https://github.com/drsamonline/BLINKTRANSFER/pull/5",
-      "kind": "PR",
-      "created": "2026-10-23T02:00:10Z"
-    },
-    {
-      "title": "Adopt frame-kit for the shared transfer frame",
-      "repo": "helioprism",
-      "url": "https://github.com/drsamonline/helioprism/pull/2",
-      "kind": "PR",
-      "created": "2026-10-23T02:00:03Z"
-    },
-    {
-      "title": "retrofit(web-kit): use the shared storage runtime",
-      "repo": "mnemosyne-companion",
-      "url": "https://github.com/drsamonline/mnemosyne-companion/pull/1",
-      "kind": "PR",
-      "created": "2026-10-23T01:06:21Z"
-    },
-    {
-      "title": "retrofit(web-kit): use the shared CSV runtime",
-      "repo": "skin-case-tracker",
-      "url": "https://github.com/drsamonline/skin-case-tracker/pull/1",
-      "kind": "PR",
-      "created": "2026-10-23T01:04:53Z"
-    },
-    {
-      "title": "retrofit(web-kit): use the shared runtime for persistence",
-      "repo": "unstoppable-mind-companion",
-      "url": "https://github.com/drsamonline/unstoppable-mind-companion/pull/1",
-      "kind": "PR",
-      "created": "2026-10-23T01:02:46Z"
-    },
-    {
-      "title": "Adopt Forge shared kits (build workflow + web-kit + landing)",
-      "repo": "offline-pdf-toolkit",
-      "url": "https://github.com/drsamonline/offline-pdf-toolkit/pull/1",
-      "kind": "PR",
-      "created": "2026-10-22T19:03:43Z"
-    },
-    {
-      "title": "Adopt Forge shared kits (build workflow + web-kit + landing)",
-      "repo": "remedy-relationship-explorer",
-      "url": "https://github.com/drsamonline/remedy-relationship-explorer/pull/1",
-      "kind": "PR",
-      "created": "2026-10-22T19:03:31Z"
-    },
-    {
-      "title": "Adopt Forge shared kits (build workflow + web-kit + landing)",
-      "repo": "kent-repertory-explorer",
-      "url": "https://github.com/drsamonline/kent-repertory-explorer/pull/1",
-      "kind": "PR",
-      "created": "2026-10-22T19:03:11Z"
-    },
-    {
-      "title": "CI: Bump rust-toolchain from 1.96.1 to 1.99.1",
-      "repo": "The_Browser",
-      "url": "https://github.com/drsamonline/The_Browser/pull/24",
-      "kind": "PR",
-      "created": "2026-10-21T14:14:21Z"
-    },
-    {
-      "title": "chore(deps-dev): bump happy-dom from 15.11.7 to 21.0.3",
-      "repo": "conqueror-os",
-      "url": "https://github.com/drsamonline/conqueror-os/pull/4",
-      "kind": "PR",
-      "created": "2026-10-20T05:44:57Z"
-    },
-    {
-      "title": "chore(deps): Bump actions/checkout from 4 to 7",
-      "repo": "conqueror-os",
-      "url": "https://github.com/drsamonline/conqueror-os/pull/3",
-      "kind": "PR",
-      "created": "2026-10-20T05:44:34Z"
-    },
-    {
-      "title": "chore(deps): Bump actions/setup-node from 4 to 7",
-      "repo": "conqueror-os",
-      "url": "https://github.com/drsamonline/conqueror-os/pull/2",
-      "kind": "PR",
-      "created": "2026-10-20T05:44:32Z"
-    },
-    {
-      "title": "chore(deps): Bump actions/upload-artifact from 4 to 7",
-      "repo": "conqueror-os",
-      "url": "https://github.com/drsamonline/conqueror-os/pull/1",
-      "kind": "PR",
-      "created": "2026-10-20T05:44:29Z"
-    },
-    {
-      "title": "CI: Bump softprops/action-gh-release in /",
-      "repo": "The_Browser",
-      "url": "https://github.com/drsamonline/The_Browser/pull/22",
-      "kind": "PR",
-      "created": "2026-09-30T14:14:57Z"
-    },
-    {
-      "title": "CI: Bump actions/upload-artifact in /",
-      "repo": "The_Browser",
-      "url": "https://github.com/drsamonline/The_Browser/pull/21",
-      "kind": "PR",
-      "created": "2026-09-30T14:14:52Z"
-    },
-    {
-      "title": "CI: Bump actions/cache in /",
-      "repo": "The_Browser",
-      "url": "https://github.com/drsamonline/The_Browser/pull/20",
-      "kind": "PR",
-      "created": "2026-09-30T14:14:45Z"
-    },
-    {
-      "title": "CI: Bump microsoft/setup-msbuild in /",
-      "repo": "The_Browser",
-      "url": "https://github.com/drsamonline/The_Browser/pull/19",
-      "kind": "PR",
-      "created": "2026-09-30T14:14:31Z"
-    }
-  ],
+  "attention": [],
   "controls": [
     {
       "label": "Refresh project hub",
@@ -348,124 +214,124 @@
   },
   "changes": [
     {
-      "type": "Push",
-      "repo": "profile-kit",
-      "when": "2026-10-22T08:34:26Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "mnemosyne-companion",
-      "when": "2026-10-23T01:06:02Z",
-      "text": "pushed to web-kit"
-    },
-    {
-      "type": "Push",
-      "repo": "unstoppable-mind-companion",
-      "when": "2026-10-23T01:02:41Z",
-      "text": "pushed to web-kit"
-    },
-    {
-      "type": "Push",
-      "repo": "search-kit",
-      "when": "2026-10-23T02:20:40Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "game-kit",
-      "when": "2026-10-23T02:20:32Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "app-builder",
-      "when": "2026-10-23T02:20:14Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "profile-kit",
-      "when": "2026-10-22T08:34:47Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "profile-kit",
-      "when": "2026-10-22T08:34:38Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "drsamonline",
-      "when": "2026-10-22T08:18:39Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "NEO",
-      "when": "2026-10-23T03:41:53Z",
-      "text": "merged: "
-    },
-    {
-      "type": "Push",
-      "repo": "read-live-transform-app",
-      "when": "2026-10-23T02:08:08Z",
-      "text": "pushed to web-kit"
-    },
-    {
-      "type": "Push",
-      "repo": "read-live-transform-app",
-      "when": "2026-10-23T02:08:05Z",
-      "text": "pushed to web-kit"
-    },
-    {
-      "type": "Push",
-      "repo": "read-live-transform-app",
-      "when": "2026-10-23T02:08:03Z",
-      "text": "pushed to web-kit"
-    },
-    {
-      "type": "Push",
-      "repo": "Matneo",
-      "when": "2026-10-23T02:05:29Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "Matneo",
-      "when": "2026-10-23T02:05:22Z",
-      "text": "pushed to main"
-    },
-    {
       "type": "Create",
-      "repo": "BLINKTRANSFER",
-      "when": "2026-10-22T22:02:41Z",
-      "text": ""
-    },
-    {
-      "type": "Create",
-      "repo": "helioprism",
-      "when": "2026-10-22T22:02:40Z",
-      "text": ""
-    },
-    {
-      "type": "PullRequest",
       "repo": "saga-vn-engine",
-      "when": "2026-10-23T04:39:07Z",
+      "when": "2026-10-23T04:07:54Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
+      "repo": "neon-runner",
+      "when": "2026-10-21T04:16:14Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "neon-runner",
+      "when": "2026-10-21T04:16:04Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "neon-runner",
+      "when": "2026-10-21T04:16:15Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Create",
+      "repo": "saga-vn-engine",
+      "when": "2026-10-23T04:02:31Z",
+      "text": ""
+    },
+    {
+      "type": "Create",
+      "repo": "aethelgard-rpg-engine",
+      "when": "2026-10-23T04:26:35Z",
+      "text": ""
+    },
+    {
+      "type": "PullRequest",
+      "repo": "app-builder",
+      "when": "2026-10-23T05:26:42Z",
       "text": "merged: "
     },
     {
       "type": "Push",
-      "repo": "drsamonline",
-      "when": "2026-10-22T08:03:02Z",
+      "repo": "bmi-bmr-tdee-macros-fluid-calculator",
+      "when": "2026-10-22T11:00:23Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "unstoppable-mind-companion",
-      "when": "2026-10-22T09:00:48Z",
+      "repo": "drsamonline.github.io",
+      "when": "2026-10-21T04:06:34Z",
       "text": "pushed to main"
+    },
+    {
+      "type": "Delete",
+      "repo": "Matneo",
+      "when": "2026-10-23T03:04:32Z",
+      "text": ""
+    },
+    {
+      "type": "PullRequest",
+      "repo": "offline-pdf-toolkit",
+      "when": "2026-10-23T07:45:11Z",
+      "text": "merged: "
+    },
+    {
+      "type": "PullRequest",
+      "repo": "remedy-relationship-explorer",
+      "when": "2026-10-23T07:45:11Z",
+      "text": "merged: "
+    },
+    {
+      "type": "PullRequest",
+      "repo": "web-kit",
+      "when": "2026-10-23T07:45:07Z",
+      "text": "merged: "
+    },
+    {
+      "type": "Push",
+      "repo": "neon-runner",
+      "when": "2026-10-21T04:16:13Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "The_Browser",
+      "when": "2026-10-22T09:47:23Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "The_Browser",
+      "when": "2026-10-23T03:41:54Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "PullRequest",
+      "repo": "Matneo",
+      "when": "2026-10-23T05:09:45Z",
+      "text": "merged: "
+    },
+    {
+      "type": "Push",
+      "repo": "skills",
+      "when": "2026-10-22T09:38:54Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "remedy-relationship-explorer",
+      "when": "2026-10-22T10:29:13Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "PullRequest",
+      "repo": "Matneo",
+      "when": "2026-10-23T05:00:31Z",
+      "text": "merged: "
     }
   ],
   "automation": [
@@ -498,9 +364,9 @@
       "what": "this dashboard",
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/39911159538",
-      "last_run": "2026-10-23T06:23:33Z",
-      "conclusion": "success"
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/39922483449",
+      "last_run": "2026-10-23T08:07:55Z",
+      "conclusion": "in_progress"
     },
     {
       "repo": "drsamonline",
@@ -615,6 +481,216 @@
   ],
   "repos": [
     {
+      "name": "smartbill-app",
+      "description": "A fast, serverless, single-page billing and invoicing application built with Vue.js, tailored for Indian businesses. Features local IndexedDB storage and GST support.",
+      "pushed_at": "2026-10-23T08:07:40Z",
+      "homepage": "https://drsamonline.github.io/smartbill-app/",
+      "html_url": "https://github.com/drsamonline/smartbill-app",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
+      "name": "the-symphony-companion",
+      "description": "A pocket companion web app to The Symphony of the Present by Dr. Sohil Momin. Installable PWA, works offline. Copyrighted; free for personal, non-commercial use.",
+      "pushed_at": "2026-10-23T08:07:32Z",
+      "homepage": "https://drsamonline.github.io/the-symphony-companion/",
+      "html_url": "https://github.com/drsamonline/the-symphony-companion",
+      "download": "",
+      "category": "Homeopathy",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
+      "name": "conqueror-os",
+      "description": "A private, offline resilience workspace in a single HTML file — read, reflect, journal, track and review. No server, no account, no dependencies.",
+      "pushed_at": "2026-10-23T07:48:36Z",
+      "homepage": "https://drsamonline.github.io/conqueror-os/",
+      "html_url": "https://github.com/drsamonline/conqueror-os",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
+      "name": "kent-repertory-explorer",
+      "description": "Offline, single-file explorer for Kent's Repertory (1897) — 74,667 rubrics, 735,500 graded remedy links, case builder and grade-weighted repertorisation. No server, no backend.",
+      "pushed_at": "2026-10-23T07:48:35Z",
+      "homepage": "https://drsamonline.github.io/kent-repertory-explorer/",
+      "html_url": "https://github.com/drsamonline/kent-repertory-explorer",
+      "download": "",
+      "category": "Homeopathy",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
+      "name": "offline-pdf-toolkit",
+      "description": "Merge, split, rotate, reorder, watermark, number and compress PDFs entirely in your browser. No upload, no account, no server — works offline. Single self-contained HTML file.",
+      "pushed_at": "2026-10-23T07:48:30Z",
+      "homepage": "https://drsamonline.github.io/offline-pdf-toolkit/",
+      "html_url": "https://github.com/drsamonline/offline-pdf-toolkit",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
+      "name": "remedy-relationship-explorer",
+      "description": "Offline, single-file explorer for homeopathic remedy relationships — built from public-domain materia medicas (Boericke 1927, Clarke 1900, Hering 1879). No server, no backend.",
+      "pushed_at": "2026-10-23T07:47:49Z",
+      "homepage": "https://drsamonline.github.io/remedy-relationship-explorer/",
+      "html_url": "https://github.com/drsamonline/remedy-relationship-explorer",
+      "download": "",
+      "category": "Homeopathy",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
+      "name": "The_Browser",
+      "description": "Aetheris Browser — an experimental C++ browser engine with a dependency-free rendering foundation (Ladybird/SerenityOS-derived). Not production-ready.",
+      "pushed_at": "2026-10-23T07:47:46Z",
+      "homepage": "https://drsamonline.github.io/The_Browser/",
+      "html_url": "https://github.com/drsamonline/The_Browser",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
+      "name": "skin-case-tracker",
+      "description": "Companion app to the book \"The Skin Is a Liar\" by Dr. Sohil Momin — a private, offline HHMS skin-case tracker (History, Habits, Mapping, Symptoms) with a 90-day pattern engine. Free to use; all rights reserved.",
+      "pushed_at": "2026-10-23T07:47:31Z",
+      "homepage": "https://drsamonline.github.io/skin-case-tracker/",
+      "html_url": "https://github.com/drsamonline/skin-case-tracker",
+      "download": "",
+      "category": "Homeopathy",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
+      "name": "BLINKTRANSFER",
+      "description": "DATA TRANSFER IN BLINK OF EYE",
+      "pushed_at": "2026-10-23T07:47:24Z",
+      "homepage": "https://drsamonline.github.io/BLINKTRANSFER/",
+      "html_url": "https://github.com/drsamonline/BLINKTRANSFER",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
+      "name": "read-live-transform-app",
+      "description": "The companion app to the book \"Read. Live. Transform.: A Practical Reading of the Qur'an\" by Dr Sohil Momin. Read the verse, live the practice, keep the change. Offline PWA, no dependencies. © Dr Sohil Momin — all rights reserved; permission required to reuse.",
+      "pushed_at": "2026-10-23T07:47:17Z",
+      "homepage": "https://drsamonline.github.io/read-live-transform-app/",
+      "html_url": "https://github.com/drsamonline/read-live-transform-app",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
+      "name": "blinkcode-ai",
+      "description": "BlinkCode AI — single-shot optical file transfer PWA (compression -> SpectraCode -> camera -> restore)",
+      "pushed_at": "2026-10-23T07:47:05Z",
+      "homepage": "https://drsamonline.github.io/blinkcode-ai/",
+      "html_url": "https://github.com/drsamonline/blinkcode-ai",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
+      "name": "helioprism",
+      "description": "One app, two optical transports — send a file with light over QR or a colour matrix. Offline, no network.",
+      "pushed_at": "2026-10-23T07:46:51Z",
+      "homepage": "https://drsamonline.github.io/helioprism/",
+      "html_url": "https://github.com/drsamonline/helioprism",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
+      "name": "unstoppable-mind-companion",
+      "description": "Offline companion app to the book The Unstoppable Mind by Dr. Sohil Momin - key points, exercises, a 7-day challenge and flashcards. Free to use.",
+      "pushed_at": "2026-10-23T07:46:48Z",
+      "homepage": "https://drsamonline.github.io/unstoppable-mind-companion/",
+      "html_url": "https://github.com/drsamonline/unstoppable-mind-companion",
+      "download": "",
+      "category": "Homeopathy",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
+      "name": "mnemosyne-companion",
+      "description": "Companion study app for Mnemosyne Materia Medica — 100 polycrest homoeopathic remedies as poetic pearls, keynotes and spaced-repetition drills. Single offline HTML file. Proprietary, all rights reserved.",
+      "pushed_at": "2026-10-23T07:46:48Z",
+      "homepage": "https://drsamonline.github.io/mnemosyne-companion/",
+      "html_url": "https://github.com/drsamonline/mnemosyne-companion",
+      "download": "",
+      "category": "Homeopathy",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
+      "name": "TTB",
+      "description": "TinyToolBox with 590 functionalities in one small extension for chrome",
+      "pushed_at": "2026-10-23T07:02:23Z",
+      "homepage": "https://drsamonline.github.io/TTB/",
+      "html_url": "https://github.com/drsamonline/TTB",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
       "name": "chalk-lan",
       "description": "A shared whiteboard for the room: everyone on the same Wi-Fi draws on the same board, live. Offline, no accounts. Built with Forge on web-kit + lan-kit.",
       "pushed_at": "2026-10-23T06:13:11Z",
@@ -648,48 +724,6 @@
       "pushed_at": "2026-10-23T06:12:58Z",
       "homepage": "https://drsamonline.github.io/app-companion-forge/",
       "html_url": "https://github.com/drsamonline/app-companion-forge",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1
-      ]
-    },
-    {
-      "name": "BLINKTRANSFER",
-      "description": "DATA TRANSFER IN BLINK OF EYE",
-      "pushed_at": "2026-10-23T06:12:56Z",
-      "homepage": "https://drsamonline.github.io/BLINKTRANSFER/",
-      "html_url": "https://github.com/drsamonline/BLINKTRANSFER",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1
-      ]
-    },
-    {
-      "name": "blinkcode-ai",
-      "description": "BlinkCode AI — single-shot optical file transfer PWA (compression -> SpectraCode -> camera -> restore)",
-      "pushed_at": "2026-10-23T06:12:42Z",
-      "homepage": "https://drsamonline.github.io/blinkcode-ai/",
-      "html_url": "https://github.com/drsamonline/blinkcode-ai",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1
-      ]
-    },
-    {
-      "name": "helioprism",
-      "description": "One app, two optical transports — send a file with light over QR or a colour matrix. Offline, no network.",
-      "pushed_at": "2026-10-23T06:12:36Z",
-      "homepage": "https://drsamonline.github.io/helioprism/",
-      "html_url": "https://github.com/drsamonline/helioprism",
       "download": "",
       "category": "HTML Apps",
       "status": "5/5",
@@ -755,34 +789,6 @@
       ]
     },
     {
-      "name": "NEO",
-      "description": "NOVA — a statically-typed, compiled systems programming language: C, JavaScript, Rust and WebAssembly backends, with a runtime, package manager, language server and debugger.",
-      "pushed_at": "2026-10-23T03:51:06Z",
-      "homepage": "https://drsamonline.github.io/NEO/",
-      "html_url": "https://github.com/drsamonline/NEO",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1
-      ]
-    },
-    {
-      "name": "The_Browser",
-      "description": "Aetheris Browser — an experimental C++ browser engine with a dependency-free rendering foundation (Ladybird/SerenityOS-derived). Not production-ready.",
-      "pushed_at": "2026-10-23T03:51:06Z",
-      "homepage": "https://drsamonline.github.io/The_Browser/",
-      "html_url": "https://github.com/drsamonline/The_Browser",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1
-      ]
-    },
-    {
       "name": "neon-engine",
       "description": "A code-only open-world game engine for the browser. No assets, no build step, no dependencies — every texture, mesh and sound is generated at runtime. MIT licensed.",
       "pushed_at": "2026-10-23T03:51:06Z",
@@ -797,11 +803,11 @@
       ]
     },
     {
-      "name": "read-live-transform-app",
-      "description": "The companion app to the book \"Read. Live. Transform.: A Practical Reading of the Qur'an\" by Dr Sohil Momin. Read the verse, live the practice, keep the change. Offline PWA, no dependencies. © Dr Sohil Momin — all rights reserved; permission required to reuse.",
-      "pushed_at": "2026-10-23T02:08:07Z",
-      "homepage": "https://drsamonline.github.io/read-live-transform-app/",
-      "html_url": "https://github.com/drsamonline/read-live-transform-app",
+      "name": "NEO",
+      "description": "NOVA — a statically-typed, compiled systems programming language: C, JavaScript, Rust and WebAssembly backends, with a runtime, package manager, language server and debugger.",
+      "pushed_at": "2026-10-23T03:51:06Z",
+      "homepage": "https://drsamonline.github.io/NEO/",
+      "html_url": "https://github.com/drsamonline/NEO",
       "download": "",
       "category": "Utilities",
       "status": "5/5",
@@ -825,48 +831,6 @@
       ]
     },
     {
-      "name": "mnemosyne-companion",
-      "description": "Companion study app for Mnemosyne Materia Medica — 100 polycrest homoeopathic remedies as poetic pearls, keynotes and spaced-repetition drills. Single offline HTML file. Proprietary, all rights reserved.",
-      "pushed_at": "2026-10-23T01:06:16Z",
-      "homepage": "https://drsamonline.github.io/mnemosyne-companion/",
-      "html_url": "https://github.com/drsamonline/mnemosyne-companion",
-      "download": "",
-      "category": "Homeopathy",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1
-      ]
-    },
-    {
-      "name": "skin-case-tracker",
-      "description": "Companion app to the book \"The Skin Is a Liar\" by Dr. Sohil Momin — a private, offline HHMS skin-case tracker (History, Habits, Mapping, Symptoms) with a 90-day pattern engine. Free to use; all rights reserved.",
-      "pushed_at": "2026-10-23T01:04:48Z",
-      "homepage": "https://drsamonline.github.io/skin-case-tracker/",
-      "html_url": "https://github.com/drsamonline/skin-case-tracker",
-      "download": "",
-      "category": "Homeopathy",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1
-      ]
-    },
-    {
-      "name": "unstoppable-mind-companion",
-      "description": "Offline companion app to the book The Unstoppable Mind by Dr. Sohil Momin - key points, exercises, a 7-day challenge and flashcards. Free to use.",
-      "pushed_at": "2026-10-23T01:02:39Z",
-      "homepage": "https://drsamonline.github.io/unstoppable-mind-companion/",
-      "html_url": "https://github.com/drsamonline/unstoppable-mind-companion",
-      "download": "",
-      "category": "Homeopathy",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1
-      ]
-    },
-    {
       "name": "today-card",
       "description": "Today Card - one card for the day: your date, one intention, one task, and a streak. Offline, no accounts. Built with web-kit and Forge.",
       "pushed_at": "2026-10-22T19:07:29Z",
@@ -874,48 +838,6 @@
       "html_url": "https://github.com/drsamonline/today-card",
       "download": "",
       "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0
-      ]
-    },
-    {
-      "name": "offline-pdf-toolkit",
-      "description": "Merge, split, rotate, reorder, watermark, number and compress PDFs entirely in your browser. No upload, no account, no server — works offline. Single self-contained HTML file.",
-      "pushed_at": "2026-10-22T19:03:40Z",
-      "homepage": "https://drsamonline.github.io/offline-pdf-toolkit/",
-      "html_url": "https://github.com/drsamonline/offline-pdf-toolkit",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0
-      ]
-    },
-    {
-      "name": "remedy-relationship-explorer",
-      "description": "Offline, single-file explorer for homeopathic remedy relationships — built from public-domain materia medicas (Boericke 1927, Clarke 1900, Hering 1879). No server, no backend.",
-      "pushed_at": "2026-10-22T19:03:29Z",
-      "homepage": "https://drsamonline.github.io/remedy-relationship-explorer/",
-      "html_url": "https://github.com/drsamonline/remedy-relationship-explorer",
-      "download": "",
-      "category": "Homeopathy",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0
-      ]
-    },
-    {
-      "name": "kent-repertory-explorer",
-      "description": "Offline, single-file explorer for Kent's Repertory (1897) — 74,667 rubrics, 735,500 graded remedy links, case builder and grade-weighted repertorisation. No server, no backend.",
-      "pushed_at": "2026-10-22T19:03:10Z",
-      "homepage": "https://drsamonline.github.io/kent-repertory-explorer/",
-      "html_url": "https://github.com/drsamonline/kent-repertory-explorer",
-      "download": "",
-      "category": "Homeopathy",
       "status": "5/5",
       "status_tone": "ok",
       "spark": [
@@ -1105,20 +1027,6 @@
       ]
     },
     {
-      "name": "the-symphony-companion",
-      "description": "A pocket companion web app to The Symphony of the Present by Dr. Sohil Momin. Installable PWA, works offline. Copyrighted; free for personal, non-commercial use.",
-      "pushed_at": "2026-10-22T11:03:29Z",
-      "homepage": "https://drsamonline.github.io/the-symphony-companion/",
-      "html_url": "https://github.com/drsamonline/the-symphony-companion",
-      "download": "",
-      "category": "Homeopathy",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0
-      ]
-    },
-    {
       "name": "idle-city-ages-of-growth",
       "description": "A single-file idle city-builder that grows from a Stone Age village into a Fusion Age world-city. Zero dependencies, fully offline, mobile-ready. By Dr. Sohil Momin. Source-available: free for non-commercial use with attribution; commercial use requires a licence.",
       "pushed_at": "2026-10-22T11:03:28Z",
@@ -1126,20 +1034,6 @@
       "html_url": "https://github.com/drsamonline/idle-city-ages-of-growth",
       "download": "",
       "category": "Games",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0
-      ]
-    },
-    {
-      "name": "conqueror-os",
-      "description": "A private, offline resilience workspace in a single HTML file — read, reflect, journal, track and review. No server, no account, no dependencies.",
-      "pushed_at": "2026-10-22T11:03:24Z",
-      "homepage": "https://drsamonline.github.io/conqueror-os/",
-      "html_url": "https://github.com/drsamonline/conqueror-os",
-      "download": "",
-      "category": "Utilities",
       "status": "5/5",
       "status_tone": "ok",
       "spark": [
@@ -1203,20 +1097,6 @@
       ]
     },
     {
-      "name": "smartbill-app",
-      "description": "A fast, serverless, single-page billing and invoicing application built with Vue.js, tailored for Indian businesses. Features local IndexedDB storage and GST support.",
-      "pushed_at": "2026-10-22T09:04:44Z",
-      "homepage": "https://drsamonline.github.io/smartbill-app/",
-      "html_url": "https://github.com/drsamonline/smartbill-app",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0
-      ]
-    },
-    {
       "name": "MATERIA-MEDICA-BUILDER",
       "description": "Materia Medica Builder",
       "pushed_at": "2026-10-22T09:04:40Z",
@@ -1243,20 +1123,6 @@
       "spark": [
         0
       ]
-    },
-    {
-      "name": "TTB",
-      "description": "TinyToolBox with 590 functionalities in one small extension for chrome",
-      "pushed_at": "2026-10-22T06:02:21Z",
-      "homepage": "https://drsamonline.github.io/TTB/",
-      "html_url": "https://github.com/drsamonline/TTB",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0
-      ]
     }
   ],
   "links": {
@@ -1275,15 +1141,28 @@
       "avg": 5.0,
       "pushes": 67,
       "byrepo": {
+        "smartbill-app": 1,
+        "the-symphony-companion": 1,
+        "conqueror-os": 1,
+        "kent-repertory-explorer": 1,
+        "offline-pdf-toolkit": 1,
+        "remedy-relationship-explorer": 1,
+        "The_Browser": 1,
+        "skin-case-tracker": 1,
+        "BLINKTRANSFER": 1,
+        "read-live-transform-app": 1,
+        "blinkcode-ai": 1,
+        "helioprism": 1,
+        "unstoppable-mind-companion": 1,
+        "mnemosyne-companion": 1,
+        "web-kit": 1,
+        "TTB": 1,
         "dashboard": 1,
-        "app-builder": 1,
         "Matneo": 1,
+        "app-builder": 1,
         "chalk-lan": 1,
         "canteen-lan": 1,
         "app-companion-forge": 1,
-        "BLINKTRANSFER": 1,
-        "blinkcode-ai": 1,
-        "helioprism": 1,
         "frame-kit": 1,
         "optical-kit": 1,
         "seance": 1,
@@ -1292,9 +1171,8 @@
         "aethelgard-games": 1,
         "aethelgard-rpg-engine": 1,
         "saga-vn-engine": 1,
-        "NEO": 1,
-        "The_Browser": 1,
         "neon-engine": 1,
+        "NEO": 1,
         "case-kit": 1,
         "book-kit": 1,
         "srs-kit": 1,
@@ -1305,13 +1183,8 @@
         "lan-kit": 1,
         "compress-kit": 1,
         "crypto-kit": 1,
-        "web-kit": 1,
-        "read-live-transform-app": 1,
         "export-kit": 1,
-        "app-panchang": 1,
-        "mnemosyne-companion": 1,
-        "skin-case-tracker": 1,
-        "unstoppable-mind-companion": 1
+        "app-panchang": 1
       }
     }
   ]
