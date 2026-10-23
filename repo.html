@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>repo — drsamonline console</title>
+<style>
+  :root{--bg:#0f1115;--card:#171a21;--ink:#e7e9ee;--mut:#9aa3b2;--ok:#22c55e;--warn:#f59e0b;--bad:#ef4444;--line:#252a34;--acc:#7dd3fc}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+  header,main,footer{max-width:900px;margin:0 auto;padding:20px}
+  h1{margin:0 0 6px;font-size:22px}
+  .mut{color:var(--mut);font-size:13px}
+  a{color:var(--acc);text-decoration:none}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin:12px 0}
+  .grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(170px,1fr))}
+  .grid .card h3{margin:0 0 4px;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut)}
+  .grid .card p{margin:0;font-size:18px;font-weight:700}
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);font-size:13px}
+  th{color:var(--mut);font-weight:600}
+  tr:last-child td{border-bottom:0}
+  .pill{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11px;border:1px solid var(--line);color:var(--mut)}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--mut);margin-right:6px}
+  .dot.ok{background:var(--ok)} .dot.bad{background:var(--bad)} .dot.warn{background:var(--warn)}
+  .sec{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);margin:22px 0 6px;font-weight:600}
+</style>
+</head>
+<body>
+<header>
+  <p class="mut"><a href="index.html">← console</a></p>
+  <h1 id="name">repo</h1>
+  <p class="mut" id="desc"></p>
+</header>
+<main>
+  <div class="grid" id="cards"></div>
+  <p id="links" class="mut"></p>
+
+  <h2 class="sec">Its automations</h2>
+  <table><thead><tr><th>Workflow</th><th>Schedule</th><th>Last run</th></tr></thead><tbody id="autos"></tbody></table>
+
+  <h2 class="sec">Open PRs / issues</h2>
+  <table><thead><tr><th>What</th><th>Kind</th><th>Opened</th></tr></thead><tbody id="open"></tbody></table>
+</main>
+<footer class="mut">© 2026 Dr Sohil Momin · Forge system</footer>
+
+<script>
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+function fmt(d){if(!d)return "—";try{return new Date(d).toISOString().slice(0,10);}catch(e){return d;}}
+function tone(c){c=String(c||"").toLowerCase();if(c==="success")return "ok";if(c==="failure"||c==="cancelled")return "bad";return "warn";}
+var name = new URLSearchParams(location.search).get("name") || "";
+fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(function(d){
+  var r = (d.repos||[]).find(x=>x.name===name);
+  document.getElementById("name").textContent = name || "(no repo)";
+  document.title = name + " — drsamonline console";
+  if(!r){ document.getElementById("desc").textContent = "Not found in the current data."; return; }
+  document.getElementById("desc").textContent = r.description || "";
+  document.getElementById("cards").innerHTML =
+    '<div class="card"><h3>Conformance</h3><p class="'+(r.status_tone||"")+'">'+esc(r.status||"—")+'</p></div>'+
+    '<div class="card"><h3>Last push</h3><p>'+fmt(r.pushed_at)+'</p></div>';
+  var links=[]; if(r.homepage)links.push('<a href="'+esc(r.homepage)+'">live page</a>');
+  if(r.html_url)links.push('<a href="'+esc(r.html_url)+'">source</a>');
+  if(r.html_url)links.push('<a href="'+esc(r.html_url)+'/releases">releases</a>');
+  links.push('<a href="'+esc(r.html_url)+'/actions">actions</a>');
+  document.getElementById("links").innerHTML = links.join(" · ");
+
+  var autos = (d.automation||[]).filter(a=>a.repo===name);
+  document.getElementById("autos").innerHTML = autos.map(a=>'<tr><td><a href="'+esc(a.url)+'">'+esc(a.name)+'</a></td><td>'+esc(a.schedule)+'</td><td><span class="dot '+tone(a.conclusion)+'"></span>'+esc(a.conclusion)+' <span class="mut">'+fmt(a.last_run)+'</span></td></tr>').join("") || '<tr><td colspan="3" class="mut">No automations for this repo.</td></tr>';
+
+  var open = (d.attention||[]).filter(a=>a.repo===name);
+  document.getElementById("open").innerHTML = open.map(a=>'<tr><td><a href="'+esc(a.url)+'">'+esc(a.title)+'</a></td><td>'+esc(a.kind)+'</td><td class="mut">'+fmt(a.created)+'</td></tr>').join("") || '<tr><td colspan="3" class="mut">Nothing open.</td></tr>';
+}).catch(function(){ document.getElementById("desc").textContent = "Could not load data.json"; });
+</script>
+</body>
+</html>

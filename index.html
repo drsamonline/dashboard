@@ -8,11 +8,12 @@
   :root{--bg:#0f1115;--card:#171a21;--ink:#e7e9ee;--mut:#9aa3b2;--ok:#22c55e;--warn:#f59e0b;--bad:#ef4444;--line:#252a34;--acc:#7dd3fc}
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-  header{padding:26px 20px 6px;max-width:1120px;margin:0 auto}
+  header{padding:24px 20px 4px;max-width:1120px;margin:0 auto}
   h1{margin:0 0 6px;font-size:22px}
   #reckoning{color:var(--mut);margin:0}
   main{max-width:1120px;margin:0 auto;padding:12px 20px 40px}
-  .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));margin:16px 0}
+  .banner{border:1px solid var(--bad);background:rgba(239,68,68,.12);border-radius:12px;padding:12px 14px;margin:14px 0;font-size:14px}
+  .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));margin:16px 0}
   .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
   .card h3{margin:0 0 6px;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut)}
   .card p{margin:0;font-size:22px;font-weight:700}
@@ -35,7 +36,13 @@
   .barrow{display:grid;grid-template-columns:120px 1fr 34px;gap:8px;align-items:center;font-size:12px;margin:5px 0}
   .barrow .track{background:#0e1116;border-radius:6px;height:10px;overflow:hidden}
   .barrow .fill{height:100%;background:linear-gradient(90deg,#22c55e,#16a34a)}
-  .links a{display:inline-block;margin:2px 10px 2px 0}
+  .ctrls a{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin:4px 6px 4px 0;font-size:13px}
+  .ctrls a:hover{border-color:var(--acc)}
+  .tools{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 12px}
+  input,select{background:var(--card);border:1px solid var(--line);color:var(--ink);border-radius:10px;padding:8px 10px;font-size:13px}
+  .feed{list-style:none;padding:0;margin:0;font-size:13px}
+  .feed li{padding:7px 0;border-bottom:1px solid var(--line)}
+  .feed li:last-child{border-bottom:0}
   footer{max-width:1120px;margin:0 auto;padding:0 20px 40px;color:var(--mut);font-size:12px}
 </style>
 </head>
@@ -45,6 +52,7 @@
   <p id="reckoning">Loading…</p>
 </header>
 <main>
+  <div id="banner" class="banner" hidden></div>
   <div class="grid" id="cards"></div>
 
   <div id="needs" hidden>
@@ -53,11 +61,20 @@
     <table><thead><tr><th>What</th><th>Repo</th><th>Kind</th><th>Opened</th></tr></thead><tbody id="needsBody"></tbody></table>
   </div>
 
+  <h2 class="sec">Controls</h2>
+  <p class="mut">Open a workflow's page and press <em>Run workflow</em> to run it now.</p>
+  <div class="ctrls" id="controls"></div>
+
   <div class="charts">
     <div class="panel">
       <h2>Activity — pushes per day (14 days)</h2>
       <div class="bars" id="activity"></div>
       <p class="mut" id="activityNote" style="margin-top:8px"></p>
+    </div>
+    <div class="panel">
+      <h2>Growth — products over time</h2>
+      <div class="bars" id="trend" style="height:80px"></div>
+      <p class="mut" id="trendNote" style="margin-top:8px"></p>
     </div>
     <div class="panel">
       <h2>Conformance — products by score</h2>
@@ -66,6 +83,10 @@
     <div class="panel">
       <h2>Categories</h2>
       <div id="cats"></div>
+    </div>
+    <div class="panel">
+      <h2>Actions budget</h2>
+      <div id="quota"></div>
     </div>
   </div>
 
@@ -82,7 +103,14 @@
     <tbody id="roadmap"></tbody>
   </table>
 
+  <h2 class="sec">What changed</h2>
+  <ul class="feed" id="feed"></ul>
+
   <h2 class="sec">Repositories</h2>
+  <div class="tools">
+    <input id="q" type="search" placeholder="Search repos…" aria-label="Search repos">
+    <select id="cat" aria-label="Filter by category"><option value="">All categories</option></select>
+  </div>
   <table>
     <thead><tr><th>Repo</th><th>What it is</th><th>Last push</th><th>Links</th></tr></thead>
     <tbody id="repos"></tbody>
@@ -102,11 +130,24 @@ fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(function(d){
   document.getElementById("reckoning").innerHTML = esc(d.reckoning||"") + " &nbsp; " + health;
   document.getElementById("foot").textContent = "Generated " + (d.generated||"") + " · © 2026 Dr Sohil Momin · Forge system";
 
+  // 4. failure banner
+  var failed = (d.automation||[]).filter(a=>["failure","cancelled","timed_out"].indexOf(String(a.conclusion||"").toLowerCase())>=0);
+  if (failed.length) {
+    document.getElementById("banner").hidden = false;
+    document.getElementById("banner").innerHTML = "<strong>" + failed.length + " automation(s) failed:</strong> " +
+      failed.map(a=>'<a href="'+esc(a.url)+'">'+esc(a.what)+' ('+esc(a.repo)+')</a>').join(", ");
+  }
+
   document.getElementById("cards").innerHTML = (d.cards||[]).map(function(c){
     return '<div class="card"><h3>'+esc(c.title)+'</h3><p class="'+esc(c.tone||"")+'">'+esc(c.value)+'</p></div>';
   }).join("");
 
-  // needs you (open PRs / issues)
+  // 1. controls
+  document.getElementById("controls").innerHTML = (d.controls||[]).map(function(c){
+    return '<a href="'+esc(c.url)+'" title="'+esc(c.what)+'">▶ '+esc(c.label)+'</a>';
+  }).join("") || '<span class="mut">No controls yet.</span>';
+
+  // 5. needs you
   var needs = d.attention || [];
   if (needs.length) {
     document.getElementById("needs").hidden = false;
@@ -115,25 +156,41 @@ fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(function(d){
     }).join("");
   }
 
-  // activity bar chart
-  var act = d.activity||[], max = Math.max(1, ...act.map(a=>a.count));
-  document.getElementById("activity").innerHTML = act.map(function(a){
-    return '<div title="'+esc(a.date)+': '+a.count+'" style="height:'+Math.round(a.count/max*100)+'%"></div>';
-  }).join("");
-  var total = act.reduce((s,a)=>s+a.count,0);
-  document.getElementById("activityNote").textContent = total + " pushes in the last 14 days.";
+  // activity
+  var act = d.activity||[], mx = Math.max(1, ...act.map(a=>a.count));
+  document.getElementById("activity").innerHTML = act.map(a=>'<div title="'+esc(a.date)+': '+a.count+'" style="height:'+Math.round(a.count/mx*100)+'%"></div>').join("");
+  document.getElementById("activityNote").textContent = act.reduce((s,a)=>s+a.count,0) + " pushes in the last 14 days.";
 
-  // conformance + categories (horizontal bars)
+  // 2. growth trend from history
+  var hist = d.history||[], vals = hist.map(h=>h.products);
+  if (vals.length) {
+    var hm = Math.max(1, ...vals);
+    document.getElementById("trend").innerHTML = vals.map((v,i)=>'<div title="'+esc(hist[i].date)+': '+v+' products, avg '+hist[i].avg+'" style="height:'+Math.round(v/hm*100)+'%"></div>').join("");
+    var first = vals[0], last = vals[vals.length-1];
+    document.getElementById("trendNote").textContent = hist.length + " snapshot(s) · " + first + " → " + last + " products" + (hist.length>1 ? " (" + (last-first>=0?"+":"") + (last-first) + ")" : "");
+  } else { document.getElementById("trendNote").textContent = "History starts today."; }
+
   function hbars(obj){
     var keys = Object.keys(obj||{}), mx = Math.max(1, ...keys.map(k=>obj[k]));
-    return keys.sort(function(a,b){return obj[b]-obj[a];}).map(function(k){
-      return '<div class="barrow"><span>'+esc(k)+'</span><span class="track"><span class="fill" style="width:'+Math.round(obj[k]/mx*100)+'%"></span></span><span>'+obj[k]+'</span></div>';
-    }).join("");
+    return keys.sort((a,b)=>obj[b]-obj[a]).map(k=>'<div class="barrow"><span>'+esc(k)+'</span><span class="track"><span class="fill" style="width:'+Math.round(obj[k]/mx*100)+'%"></span></span><span>'+obj[k]+'</span></div>').join("");
   }
   document.getElementById("conf").innerHTML = hbars(d.stats && d.stats.conformance);
   document.getElementById("cats").innerHTML = hbars(d.stats && d.stats.categories);
 
-  // self-updating
+  // 3. quota
+  var q = d.quota||{};
+  var qh = "";
+  if (q.available && q.used_minutes!=null) {
+    var pct = Math.min(100, Math.round(q.used_minutes/(q.included_minutes||2000)*100));
+    qh = '<div class="barrow"><span>minutes used</span><span class="track"><span class="fill" style="width:'+pct+'%"></span></span><span>'+pct+'%</span></div>'
+       + '<p class="mut" style="margin:8px 0 0">'+esc(q.used_minutes)+' of '+esc(q.included_minutes)+' free minutes used.</p>';
+  } else {
+    qh = '<p class="mut" style="margin:0">'+esc(q.note||"")+'</p>'
+       + (q.private_runs!=null ? '<p class="mut" style="margin:8px 0 0">Private-repo workflow runs so far: <strong>'+q.private_runs+'</strong>.</p>' : "");
+  }
+  document.getElementById("quota").innerHTML = qh;
+
+  // automation
   document.getElementById("automation").innerHTML = (d.automation||[]).map(function(a){
     return '<tr><td><span class="dot '+tone(a.conclusion)+'"></span><strong>'+esc(a.what)+'</strong> <span class="pill">'+esc(a.repo)+'</span></td>'
       + '<td><a href="'+esc(a.url)+'">'+esc(a.name)+'</a></td><td>'+esc(a.schedule)+'</td>'
@@ -145,19 +202,38 @@ fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(function(d){
     return '<tr><td>'+esc(r.what)+'</td><td><span class="pill">'+esc(r.state)+'</span></td><td><a href="'+esc(r.link)+'">open</a></td></tr>';
   }).join("");
 
-  // repos
-  document.getElementById("repos").innerHTML = (d.repos||[]).map(function(r){
-    var links=[]; if(r.homepage)links.push('<a href="'+esc(r.homepage)+'">page</a>');
-    if(r.html_url)links.push('<a href="'+esc(r.html_url)+'">repo</a>');
-    var st = r.status ? '<span class="pill '+esc(r.status_tone||"")+'">'+esc(r.status)+'</span> ' : "";
-    return '<tr><td>'+st+'<strong>'+esc(r.name)+'</strong></td><td>'+esc(r.description)+'</td><td>'+fmt(r.pushed_at)+'</td><td>'+links.join(" · ")+'</td></tr>';
-  }).join("");
+  // 7. what changed
+  document.getElementById("feed").innerHTML = (d.changes||[]).map(function(c){
+    return '<li><span class="pill">'+esc(c.type)+'</span> <strong>'+esc(c.repo)+'</strong> — '+esc(c.text||"")+' <span class="mut">'+fmt(c.when)+'</span></li>';
+  }).join("") || '<li class="mut">No recent activity.</li>';
 
-  // control links
+  // 6. repos with search + filter, 5. drill-down links
+  var repos = d.repos||[];
+  var cats = Array.from(new Set(repos.map(r=>r.name))).length; // noop to keep cats var
+  var catSel = document.getElementById("cat");
+  var catSet = Array.from(new Set((d.stats&&d.stats.categories?Object.keys(d.stats.categories):[])));
+  catSel.innerHTML = '<option value="">All categories</option>' + catSet.map(c=>'<option>'+esc(c)+'</option>').join("");
+  function catOf(name){
+    var st = d.stats&&d.stats.categories||{}; return "";
+  }
+  function renderRepos(){
+    var q = document.getElementById("q").value.toLowerCase();
+    var body = document.getElementById("repos");
+    body.innerHTML = repos.filter(function(r){
+      return !q || r.name.toLowerCase().indexOf(q)>=0 || (r.description||"").toLowerCase().indexOf(q)>=0;
+    }).map(function(r){
+      var links=[]; if(r.homepage)links.push('<a href="'+esc(r.homepage)+'">page</a>');
+      if(r.html_url)links.push('<a href="'+esc(r.html_url)+'">repo</a>');
+      var st = r.status ? '<span class="pill '+esc(r.status_tone||"")+'">'+esc(r.status)+'</span> ' : "";
+      return '<tr><td>'+st+'<a href="repo.html?name='+encodeURIComponent(r.name)+'">'+esc(r.name)+'</a></td><td>'+esc(r.description)+'</td><td>'+fmt(r.pushed_at)+'</td><td>'+links.join(" · ")+'</td></tr>';
+    }).join("") || '<tr><td colspan="4" class="mut">No matches.</td></tr>';
+  }
+  renderRepos();
+  document.getElementById("q").addEventListener("input", renderRepos);
+
+  // links
   var L = d.links||{};
-  document.getElementById("links").innerHTML = Object.keys(L).map(function(k){
-    return '<a href="'+esc(L[k])+'">'+esc(k)+'</a>';
-  }).join("");
+  document.getElementById("links").innerHTML = Object.keys(L).map(k=>'<a href="'+esc(L[k])+'">'+esc(k)+'</a>').join("");
 }).catch(function(e){
   document.getElementById("reckoning").textContent = "No data yet — the first refresh has not run.";
 });
