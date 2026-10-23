@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Forks — drsamonline</title>
+<style>
+  :root{--bg:#0b0d12;--card:#141824;--card2:#1a1f2e;--line:#242b3d;--ink:#e7e9f0;--mut:#8b93a7;
+        --violet:#8b5cf6;--cyan:#22d3ee;--green:#22c55e;--amber:#f59e0b;--pink:#ec4899}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding:18px;max-width:1000px;margin:0 auto}
+  h1{font-size:19px;margin:0 0 2px}
+  .mut{color:var(--mut);font-size:12.5px}
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:12px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);font-size:13px}
+  th{color:var(--mut);text-transform:uppercase;letter-spacing:.07em;font-size:10.5px}
+  tr:last-child td{border-bottom:0}
+  a{color:var(--cyan);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .back{display:inline-block;margin-top:16px;color:var(--violet)}
+</style>
+</head>
+<body>
+  <h1 id="h">Forks</h1>
+  <p class="mut" id="sub">Loading…</p>
+  <table>
+    <thead><tr><th>Who</th><th>Fork</th><th>Stars</th><th>Created</th></tr></thead>
+    <tbody id="b"></tbody>
+  </table>
+  <a class="back" href="index.html">← back to the console</a>
+<script>
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+var repo=new URLSearchParams(location.search).get("repo")||"";
+document.getElementById("h").textContent = repo ? ("Forks of "+repo) : "Forks";
+fetch("forks.json",{cache:"no-store"}).then(function(r){return r.json()}).then(function(d){
+  var f=((d.forks||{})[repo])||[];
+  document.getElementById("sub").textContent = repo
+    ? (f.length ? (f.length+" fork(s) — people who copied this repo.") : "No forks yet — nobody has copied this repo.")
+    : "Add ?repo=<name> to see who forked a particular repository.";
+  document.getElementById("b").innerHTML = f.map(function(x){
+    return '<tr><td><a href="https://github.com/'+encodeURIComponent(x.who||"")+'" target="_blank" rel="noopener">'+esc(x.who||"?")+'</a></td>'
+      +'<td><a href="'+esc(x.url||"")+'" target="_blank" rel="noopener">'+esc(x.full_name||"")+'</a></td>'
+      +'<td>'+(x.stars||0)+'</td><td>'+esc(x.created||"")+'</td></tr>';
+  }).join("") || '<tr><td colspan="4" class="mut">No forks yet.</td></tr>';
+}).catch(function(){
+  document.getElementById("sub").textContent="Could not load forks.json.";
+});
+</script>
+</body>
+</html>

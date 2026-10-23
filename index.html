@@ -127,6 +127,9 @@ footer{max-width:1320px;margin:0 auto;padding:14px 12px 30px;color:var(--mut);fo
   <div class="sec">Built vs planned</div>
   <div class="panel" id="planPanel"><p class="mut" style="margin:0">Loading…</p></div>
 
+  <div class="sec">Community</div>
+  <div class="panel" id="communityPanel"><p class="mut" style="margin:0">Loading…</p></div>
+
   <div id="needs" hidden>
     <div class="sec">Needs you</div>
     <table><thead><tr><th>What</th><th>Repo</th><th>Kind</th><th>Act</th></tr></thead><tbody id="needsBody"></tbody></table>
@@ -265,6 +268,26 @@ fetch("data.json",{cache:"no-store"}).then(function(r){return r.json()}).then(fu
     animateFills();
   } else {
     $("planPanel").innerHTML='<p class="mut" style="margin:0">Needs BILLING_TOKEN — the plan lives in the private registry.</p>';
+  }
+
+  var cm=d.community||null;
+  if(cm){
+    var ct=cm.totals||{},cx=cm.external||{};
+    var crows=(cm.repos||[]).map(function(r){
+      var nm=r.forks?('<a href="forks.html?repo='+encodeURIComponent(r.name)+'">'+esc(r.name)+'</a>'):esc(r.name);
+      return '<tr><td>'+nm+'</td><td>'+(r.stars||0)+'</td><td>'+(r.forks||0)+'</td><td>'+(r.watchers||0)+'</td></tr>';
+    }).join("");
+    $("communityPanel").innerHTML='<div class="kpis">'
+      +'<div class="kpi g"><div class="k">Stars</div><div class="v">'+(ct.stars||0)+'</div></div>'
+      +'<div class="kpi b"><div class="k">Forks</div><div class="v">'+(ct.forks||0)+'</div></div>'
+      +'<div class="kpi"><div class="k">Watchers</div><div class="v">'+(ct.watchers||0)+'</div></div>'
+      +'<div class="kpi a"><div class="k">Opened by others</div><div class="v">'+((cx.issues||0)+(cx.prs||0))+'</div></div>'
+      +'</div>'
+      +'<p class="mut" style="margin:8px 0 6px">'+(cm.forked_repos?(cm.forked_repos+' repo(s) have been forked — click a name to see who.'):'Nobody has forked a repo yet — this fills in on its own when they do.')+'</p>'
+      +(crows?('<table><thead><tr><th>Repo</th><th>Stars</th><th>Forks</th><th>Watchers</th></tr></thead><tbody>'+crows+'</tbody></table>'):'')
+      +(((cx.items||[]).length)?('<p class="mut" style="margin:8px 0 0">Opened by others: '+cx.items.map(function(i){return '<a href="'+esc(i.url)+'" target="_blank" rel="noopener">'+esc(i.who)+' → '+esc(i.repo)+'</a>'}).join(' · ')+'</p>'):'');
+  } else {
+    $("communityPanel").innerHTML='<p class="mut" style="margin:0">No community data yet.</p>';
   }
 
   $("controls").innerHTML=(d.controls||[]).map(function(c){return '<a href="'+esc(c.url)+'" title="'+esc(c.what)+'"><span class="play">▶</span> '+esc(c.label)+'</a>'}).join("")||'<span class="mut">No controls yet.</span>';
