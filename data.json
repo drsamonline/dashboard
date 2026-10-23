@@ -1,6 +1,6 @@
 {
   "generated": "2026-10-23",
-  "generated_at": "2026-10-23T15:07:28Z",
+  "generated_at": "2026-10-23T16:33:24Z",
   "reckoning": "46 products · 14 kits · avg conformance 5.0/5 · updated automatically.",
   "health": "ok",
   "cards": [
@@ -36,14 +36,15 @@
     "avg": 5.0,
     "pushes": 67,
     "byrepo": {
-      "dashboard": 1,
       "app-builder": 1,
+      "dashboard": 1,
+      "skills": 1,
+      "web-kit": 1,
       "aethelgard-rpg-engine": 1,
       "Matneo": 1,
       "conqueror-os": 1,
       "neon-engine": 1,
       "drsamonline": 1,
-      "skills": 1,
       "helioprism": 1,
       "blinkcode-ai": 1,
       "BLINKTRANSFER": 1,
@@ -60,7 +61,6 @@
       "The_Browser": 1,
       "mnemosyne-companion": 1,
       "unstoppable-mind-companion": 1,
-      "web-kit": 1,
       "TTB": 1,
       "chalk-lan": 1,
       "canteen-lan": 1,
@@ -239,123 +239,123 @@
   "changes": [
     {
       "type": "Push",
-      "repo": "blinkcode-ai",
-      "when": "2026-10-22T18:26:16Z",
+      "repo": "astro-kit",
+      "when": "2026-10-22T19:42:08Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "dashboard",
-      "when": "2026-10-22T18:14:16Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "kent-repertory-explorer",
-      "when": "2026-10-23T07:45:12Z",
-      "text": "merged: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "unstoppable-mind-companion",
-      "when": "2026-10-23T07:45:11Z",
-      "text": "merged: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "helioprism",
-      "when": "2026-10-23T07:45:07Z",
-      "text": "merged: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "blinkcode-ai",
-      "when": "2026-10-23T08:49:00Z",
-      "text": "merged: "
-    },
-    {
-      "type": "Push",
-      "repo": "CLDR",
-      "when": "2026-10-21T08:07:07Z",
+      "when": "2026-10-22T19:12:05Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "aethelgard-rpg-engine",
-      "when": "2026-10-23T08:49:40Z",
+      "repo": "crypto-kit",
+      "when": "2026-10-22T19:07:26Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "helioprism",
-      "when": "2026-10-23T08:49:02Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "offline-pdf-toolkit",
-      "when": "2026-10-22T16:34:16Z",
+      "repo": "optical-kit",
+      "when": "2026-10-22T18:49:13Z",
       "text": "pushed to main"
     },
     {
       "type": "Create",
+      "repo": "optical-kit",
+      "when": "2026-10-22T18:48:57Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
       "repo": "offline-pdf-toolkit",
-      "when": "2026-10-22T16:32:55Z",
-      "text": ""
-    },
-    {
-      "type": "Push",
-      "repo": "skills",
-      "when": "2026-10-23T08:49:49Z",
+      "when": "2026-10-22T19:00:24Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "BLINKTRANSFER",
-      "when": "2026-10-23T08:49:01Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Watch",
-      "repo": "srs-kit",
-      "when": "2026-10-23T13:40:57Z",
-      "text": ""
-    },
-    {
-      "type": "Watch",
-      "repo": "case-kit",
-      "when": "2026-10-23T13:40:59Z",
-      "text": ""
-    },
-    {
-      "type": "Watch",
-      "repo": "seance",
-      "when": "2026-10-23T13:41:02Z",
-      "text": ""
-    },
-    {
-      "type": "Watch",
-      "repo": "repertory-kit",
-      "when": "2026-10-23T13:41:00Z",
-      "text": ""
-    },
-    {
-      "type": "Watch",
       "repo": "astro-kit",
-      "when": "2026-10-23T13:41:01Z",
+      "when": "2026-10-22T19:35:13Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Create",
+      "repo": "aethelgard-rpg-engine",
+      "when": "2026-10-23T13:06:29Z",
       "text": ""
     },
     {
-      "type": "Watch",
-      "repo": "compress-kit",
-      "when": "2026-10-23T13:41:07Z",
-      "text": ""
+      "type": "Push",
+      "repo": "blinkcode-ai",
+      "when": "2026-10-22T18:27:03Z",
+      "text": "pushed to main"
     },
     {
-      "type": "Watch",
-      "repo": "game-kit",
-      "when": "2026-10-23T13:41:05Z",
-      "text": ""
+      "type": "Push",
+      "repo": "Matneo",
+      "when": "2026-10-22T18:39:35Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "lan-kit",
+      "when": "2026-10-22T19:13:20Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "optical-kit",
+      "when": "2026-10-22T19:07:23Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "helioprism",
+      "when": "2026-10-22T18:26:22Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "neon-engine",
+      "when": "2026-10-23T12:46:23Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "neon-engine",
+      "when": "2026-10-23T12:46:16Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "PullRequest",
+      "repo": "read-live-transform-app",
+      "when": "2026-10-23T08:48:49Z",
+      "text": "merged: "
+    },
+    {
+      "type": "Push",
+      "repo": "dashboard",
+      "when": "2026-10-22T18:15:02Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "app-builder",
+      "when": "2026-10-22T18:42:49Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "PullRequest",
+      "repo": "smartbill-app",
+      "when": "2026-10-23T08:07:40Z",
+      "text": "merged: "
+    },
+    {
+      "type": "Push",
+      "repo": "blinkcode-ai",
+      "when": "2026-10-22T18:26:16Z",
+      "text": "pushed to main"
     }
   ],
   "automation": [
@@ -388,8 +388,8 @@
       "what": "this dashboard",
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/39975520367",
-      "last_run": "2026-10-23T15:07:20Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/39987706190",
+      "last_run": "2026-10-23T16:33:12Z",
       "conclusion": "in_progress"
     },
     {
@@ -511,6 +511,17 @@
     "live_not_planned": 45,
     "link": "https://github.com/drsamonline/dashboard/blob/main/plan.json"
   },
+  "paused": [
+    {
+      "id": "sys-sdak",
+      "name": "SDAK",
+      "what": "Serverless distributed knowledge base: scrape topics, shrink them to facts through a two-stage filter (regex then a rotating pool of free LLM keys), store the facts across chunk repositories with hash-level dedup, and search them from a static single-page app on Pages.",
+      "why": "Paused by the owner on 2026-10-23, before any code was written. The spec is sound and it fits the constraints (no server, free Actions minutes, our own free keys), but it needed four corrections first — chiefly that its 'direct web commit loop' stores a GitHub PAT in localStorage, which can write to our repos and must not ship. It is also a large multi-repo build that should not compete with the product line right now.",
+      "resume": "Say the word. Batch 1 is small and manual-trigger only: controller repo + global-index.json + the Stage 1 regex filter + one data repo. Nothing scheduled starts scraping until that first pass is seen working.",
+      "spec": "QUEUE/sys-sdak.md",
+      "since": "2026-10-23"
+    }
+  ],
   "community": {
     "totals": {
       "stars": 60,
@@ -524,6 +535,13 @@
         "forks": 1,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/neon-runner"
+      },
+      {
+        "name": "web-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/web-kit"
       },
       {
         "name": "aethelgard-rpg-engine",
@@ -650,13 +668,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/unstoppable-mind-companion"
-      },
-      {
-        "name": "web-kit",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/web-kit"
       },
       {
         "name": "TTB",
@@ -962,6 +973,14 @@
     "window": "14 days",
     "note": "Last 14 days — GitHub's retention window.",
     "repos": {
+      "web-kit": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 28,
+        "clone_uniques": 14,
+        "referrers": [],
+        "paths": []
+      },
       "aethelgard-rpg-engine": {
         "views": 10,
         "uniques": 2,
@@ -1171,14 +1190,6 @@
         "uniques": 0,
         "clones": 323,
         "clone_uniques": 100,
-        "referrers": [],
-        "paths": []
-      },
-      "web-kit": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 28,
-        "clone_uniques": 14,
         "referrers": [],
         "paths": []
       },
@@ -1506,6 +1517,14 @@
         "referrers": [],
         "paths": []
       },
+      "neon-runner": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 598,
+        "clone_uniques": 193,
+        "referrers": [],
+        "paths": []
+      },
       "open-materia-medica": {
         "views": 1,
         "uniques": 1,
@@ -1524,14 +1543,6 @@
             "title": "Overview"
           }
         ]
-      },
-      "neon-runner": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 598,
-        "clone_uniques": 193,
-        "referrers": [],
-        "paths": []
       },
       "ambient-sound-studio": {
         "views": 1,
@@ -2164,20 +2175,6 @@
       ]
     },
     {
-      "name": "open-materia-medica",
-      "description": "Open Materia Medica — the classical homeopathic materia medica in plain language: 344 remedy portraits. Free web edition and offline Android companion app to the book by Dr. Sohil Momin, BHMS. (c) 2026, all rights reserved.",
-      "pushed_at": "2026-10-22T11:04:07Z",
-      "homepage": "https://drsamonline.github.io/open-materia-medica/",
-      "html_url": "https://github.com/drsamonline/open-materia-medica",
-      "download": "",
-      "category": "Homeopathy",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0
-      ]
-    },
-    {
       "name": "neon-runner",
       "description": "Retro auto-fire side-scrolling shooter. Move, jump, duck — your gun fires itself. One self-contained HTML file, zero dependencies, fully offline.",
       "pushed_at": "2026-10-22T11:04:07Z",
@@ -2185,6 +2182,20 @@
       "html_url": "https://github.com/drsamonline/neon-runner",
       "download": "",
       "category": "Games",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
+    },
+    {
+      "name": "open-materia-medica",
+      "description": "Open Materia Medica — the classical homeopathic materia medica in plain language: 344 remedy portraits. Free web edition and offline Android companion app to the book by Dr. Sohil Momin, BHMS. (c) 2026, all rights reserved.",
+      "pushed_at": "2026-10-22T11:04:07Z",
+      "homepage": "https://drsamonline.github.io/open-materia-medica/",
+      "html_url": "https://github.com/drsamonline/open-materia-medica",
+      "download": "",
+      "category": "Homeopathy",
       "status": "5/5",
       "status_tone": "ok",
       "spark": [
@@ -2362,14 +2373,15 @@
       "avg": 5.0,
       "pushes": 67,
       "byrepo": {
-        "dashboard": 1,
         "app-builder": 1,
+        "dashboard": 1,
+        "skills": 1,
+        "web-kit": 1,
         "aethelgard-rpg-engine": 1,
         "Matneo": 1,
         "conqueror-os": 1,
         "neon-engine": 1,
         "drsamonline": 1,
-        "skills": 1,
         "helioprism": 1,
         "blinkcode-ai": 1,
         "BLINKTRANSFER": 1,
@@ -2386,7 +2398,6 @@
         "The_Browser": 1,
         "mnemosyne-companion": 1,
         "unstoppable-mind-companion": 1,
-        "web-kit": 1,
         "TTB": 1,
         "chalk-lan": 1,
         "canteen-lan": 1,
