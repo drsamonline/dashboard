@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Opened by others — drsamonline</title>
+<style>
+  :root{--bg:#0b0d12;--card:#141824;--line:#242b3d;--ink:#e7e9f0;--mut:#8b93a7;--cyan:#22d3ee;--violet:#8b5cf6}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding:18px;max-width:1000px;margin:0 auto}
+  h1{font-size:19px;margin:0 0 2px}
+  .mut{color:var(--mut);font-size:12.5px}
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:12px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);font-size:13px}
+  th{color:var(--mut);text-transform:uppercase;letter-spacing:.07em;font-size:10.5px}
+  tr:last-child td{border-bottom:0}
+  a{color:var(--cyan);text-decoration:none} a:hover{text-decoration:underline}
+  .back{display:inline-block;margin-top:16px;color:var(--violet)}
+  .kpis{display:grid;gap:9px;grid-template-columns:repeat(auto-fit,minmax(128px,1fr));margin-top:6px}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 11px}
+  .kpi .k{font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);font-weight:700}
+  .kpi .v{font-size:22px;font-weight:800;margin-top:2px}
+</style>
+</head>
+<body>
+  <h1>Opened by others</h1>
+  <p class="mut" id="sub">Loading…</p>
+  <div class="kpis" id="k"></div>
+  <table>
+    <thead><tr><th>Who</th><th>Repo</th><th>What</th><th>Open</th></tr></thead>
+    <tbody id="b"></tbody>
+  </table>
+  <a class="back" href="index.html">← back to the console</a>
+<script>
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+fetch("community.json",{cache:"no-store"}).then(function(r){return r.json()}).then(function(d){
+  var x=d.external||{}, items=x.items||[];
+  document.getElementById("sub").textContent = items.length
+    ? "Open issues and pull requests raised by people other than you."
+    : "Nothing open from anyone else yet — this fills in when someone raises an issue or a PR.";
+  document.getElementById("k").innerHTML =
+    '<div class="kpi"><div class="k">Issues</div><div class="v">'+(x.issues||0)+'</div></div>'
+    +'<div class="kpi"><div class="k">Pull requests</div><div class="v">'+(x.prs||0)+'</div></div>'
+    +'<div class="kpi"><div class="k">Total open</div><div class="v">'+items.length+'</div></div>';
+  document.getElementById("b").innerHTML = items.map(function(i){
+    return '<tr><td><a href="https://github.com/'+encodeURIComponent(i.who||"")+'" target="_blank" rel="noopener">'+esc(i.who||"?")+'</a></td>'
+      +'<td>'+esc(i.repo||"")+'</td>'
+      +'<td><a href="'+esc(i.url||"")+'" target="_blank" rel="noopener">'+esc(i.title||"")+'</a></td>'
+      +'<td>'+(i.pr?"PR":"issue")+'</td></tr>';
+  }).join("") || '<tr><td colspan="4" class="mut">Nothing open from others.</td></tr>';
+}).catch(function(){document.getElementById("sub").textContent="Could not load community.json."});
+</script>
+</body>
+</html>

@@ -130,6 +130,9 @@ footer{max-width:1320px;margin:0 auto;padding:14px 12px 30px;color:var(--mut);fo
   <div class="sec">Community</div>
   <div class="panel" id="communityPanel"><p class="mut" style="margin:0">Loading…</p></div>
 
+  <div class="sec">Traffic</div>
+  <div class="panel" id="trafficPanel"><p class="mut" style="margin:0">Loading…</p></div>
+
   <div id="needs" hidden>
     <div class="sec">Needs you</div>
     <table><thead><tr><th>What</th><th>Repo</th><th>Kind</th><th>Act</th></tr></thead><tbody id="needsBody"></tbody></table>
@@ -285,7 +288,17 @@ fetch("data.json",{cache:"no-store"}).then(function(r){return r.json()}).then(fu
       +'</div>'
       +'<p class="mut" style="margin:8px 0 6px">'+(cm.forked_repos?(cm.forked_repos+' repo(s) have been forked — click a name to see who.'):'Nobody has forked a repo yet — this fills in on its own when they do.')+'</p>'
       +(crows?('<table><thead><tr><th>Repo</th><th>Stars</th><th>Forks</th><th>Watchers</th></tr></thead><tbody>'+crows+'</tbody></table>'):'')
-      +(((cx.items||[]).length)?('<p class="mut" style="margin:8px 0 0">Opened by others: '+cx.items.map(function(i){return '<a href="'+esc(i.url)+'" target="_blank" rel="noopener">'+esc(i.who)+' → '+esc(i.repo)+'</a>'}).join(' · ')+'</p>'):'');
+      +(((cx.items||[]).length)?('<p class="mut" style="margin:8px 0 0">Opened by others: '+cx.items.map(function(i){return '<a href="'+esc(i.url)+'" target="_blank" rel="noopener">'+esc(i.who)+' → '+esc(i.repo)+'</a>'}).join(' · ')+'</p>'):'')
+      +(((d.history||[]).length>1)?('<div style="margin-top:10px">'+areaChart(d.history.map(function(h){return h.stars||0}),"#8b5cf6","stars over time")+'</div>'):'')
+      +'<p class="mut" style="margin:8px 0 0"><a href="network.html">Fork network ↗</a> · <a href="people.html">Opened by others ↗</a></p>';
+
+    var tr=d.traffic||null;
+    if(tr&&tr.available){
+      var trows=Object.keys(tr.repos||{}).map(function(n){return {n:n,t:tr.repos[n]||{}}}).filter(function(x){return (x.t.views||0)||(x.t.clones||0)}).sort(function(a,b){return (b.t.views||0)-(a.t.views||0)}).map(function(x){return '<tr><td>'+esc(x.n)+'</td><td>'+(x.t.views||0)+'</td><td>'+(x.t.uniques||0)+'</td><td>'+(x.t.clones||0)+'</td></tr>'}).join("");
+      $("trafficPanel").innerHTML=(trows?('<table><thead><tr><th>Repo</th><th>Views</th><th>Unique</th><th>Clones</th></tr></thead><tbody>'+trows+'</tbody></table>'):'<p class="mut" style="margin:0">No traffic recorded in the last 14 days.</p>')+'<p class="mut" style="margin:8px 0 0">'+esc(tr.note||"")+'</p>';
+    } else {
+      $("trafficPanel").innerHTML='<p class="mut" style="margin:0">'+esc((tr&&tr.note)||"Traffic is not available.")+'</p>';
+    }
   } else {
     $("communityPanel").innerHTML='<p class="mut" style="margin:0">No community data yet.</p>';
   }

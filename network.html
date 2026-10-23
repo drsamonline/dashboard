@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fork network — drsamonline</title>
+<style>
+  :root{--bg:#0b0d12;--card:#141824;--line:#242b3d;--ink:#e7e9f0;--mut:#8b93a7;--cyan:#22d3ee;--violet:#8b5cf6;--green:#22c55e}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding:18px;max-width:1000px;margin:0 auto}
+  h1{font-size:19px;margin:0 0 2px}
+  h2{font-size:14px;margin:18px 0 4px}
+  .mut{color:var(--mut);font-size:12.5px}
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:8px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);font-size:13px}
+  th{color:var(--mut);text-transform:uppercase;letter-spacing:.07em;font-size:10.5px}
+  tr:last-child td{border-bottom:0}
+  a{color:var(--cyan);text-decoration:none} a:hover{text-decoration:underline}
+  .back{display:inline-block;margin-top:16px;color:var(--violet)}
+  .edge{color:var(--green)}
+</style>
+</head>
+<body>
+  <h1>Fork network</h1>
+  <p class="mut" id="sub">Loading…</p>
+  <div id="out"></div>
+  <a class="back" href="index.html">← back to the console</a>
+<script>
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+fetch("community.json",{cache:"no-store"}).then(function(r){return r.json()}).then(function(d){
+  var forks=d.forks||{}, keys=Object.keys(forks).filter(function(k){return (forks[k]||[]).length});
+  var total=keys.reduce(function(a,k){return a+forks[k].length},0);
+  document.getElementById("sub").textContent = total
+    ? (total+" fork(s) across "+keys.length+" repo(s) — everyone who copied the work, and when.")
+    : "Nobody has forked anything yet. When they do, every fork shows up here.";
+  document.getElementById("out").innerHTML = keys.map(function(k){
+    var rows=(forks[k]||[]).map(function(x){
+      return '<tr><td><a href="https://github.com/'+encodeURIComponent(x.who||"")+'" target="_blank" rel="noopener">'+esc(x.who||"?")+'</a></td>'
+        +'<td><a href="'+esc(x.url||"")+'" target="_blank" rel="noopener">'+esc(x.full_name||"")+'</a></td>'
+        +'<td>'+(x.stars||0)+'</td><td>'+esc(x.created||"")+'</td></tr>';
+    }).join("");
+    return '<h2><span class="edge">⑂</span> '+esc(k)+' <span class="mut">— '+(forks[k]||[]).length+' fork(s) · <a href="forks.html?repo='+encodeURIComponent(k)+'">details</a></span></h2>'
+      +'<table><thead><tr><th>Who</th><th>Fork</th><th>Stars</th><th>Created</th></tr></thead><tbody>'+rows+'</tbody></table>';
+  }).join("") || '<p class="mut">No forks yet.</p>';
+}).catch(function(){document.getElementById("sub").textContent="Could not load community.json."});
+</script>
+</body>
+</html>
