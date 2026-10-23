@@ -37,6 +37,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           BILLING_TOKEN: ${{ secrets.BILLING_TOKEN }}
+          TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
         run: python3 .drsoam/drsoam.py dashboard
       - name: Commit if changed
         run: |
