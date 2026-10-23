@@ -177,6 +177,12 @@ Example: A one-off bell that ends a meeting on time, over the room's Wi-Fi. It r
     </div>
   </div>
 
+  <div class="sec">Paused <span class="chip" id="pausedCount"></span></div>
+  <details class="box" id="pausedBox"><summary>Parked, not forgotten</summary><div class="body">
+    <table><thead><tr><th>Project</th><th>What it is</th><th>Why it stopped</th><th>Resumes with</th></tr></thead><tbody id="paused"></tbody></table>
+    <p class="mut" style="margin:8px 0 0">Parked projects keep their spec and study doc. Nothing is deleted — this is the list of things waiting for a word from you.</p>
+  </div></details>
+
   <div class="sec">Repositories <span class="chip" id="repoCount"></span></div>
   <details class="box" id="reposBox" open><summary>All repositories</summary><div class="body">
     <div class="tools"><input id="q" type="search" placeholder="Search repos…  ( / )" aria-label="Search repos"><select id="cat" aria-label="Filter by category"><option value="">All categories</option></select><button id="more" class="iconbtn" hidden></button></div>
@@ -328,6 +334,11 @@ fetch("data.json",{cache:"no-store"}).then(function(r){return r.json()}).then(fu
   $("automation").innerHTML=(d.automation||[]).map(function(a){return '<tr><td><span class="dot '+tone(a.conclusion)+'"></span><strong>'+esc(a.what)+'</strong> <span class="badge v">'+esc(a.repo)+'</span></td><td><a href="'+esc(a.url)+'">'+esc(a.name)+'</a></td><td>'+esc(a.schedule)+'</td><td><span class="badge '+tone(a.conclusion)+'">'+esc(a.conclusion||"—")+'</span> <span class="mut">'+fmt(a.last_run)+'</span></td></tr>'}).join("")||'<tr><td colspan="4">No automation data yet.</td></tr>';
 
   $("roadmap").innerHTML=(d.roadmap||[]).map(function(r){var st=r.state||"",cls=st.indexOf("progress")>=0?"warn":st.indexOf("planned")>=0?"v":"";return '<tr><td><a href="'+esc(r.link)+'">'+esc(r.what)+'</a></td><td><span class="badge '+cls+'">'+esc(st)+'</span></td></tr>'}).join("");
+
+  var pz=d.paused||[];
+  if($("pausedCount"))$("pausedCount").textContent=pz.length?(pz.length+" parked"):"";
+  if($("pausedBox"))$("pausedBox").hidden=!pz.length;
+  $("paused").innerHTML=pz.map(function(p){return '<tr><td><strong>'+esc(p.name)+'</strong> <span class="badge v">'+esc(p.id)+'</span><br><span class="mut">since '+esc(p.since)+'</span></td><td>'+esc(p.what)+'</td><td>'+esc(p.why)+'</td><td>'+esc(p.resume)+'</td></tr>'}).join("")||'<tr><td colspan="4" class="mut">Nothing parked.</td></tr>';
 
   var ch=d.changes||[];$("feedCount").textContent=ch.length;
   $("feed").innerHTML=ch.map(function(c,i){return '<li style="animation-delay:'+(i*25)+'ms"><span class="badge">'+esc(c.type)+'</span> <strong>'+esc(c.repo)+'</strong> — '+esc(c.text||"")+' <span class="mut">'+fmt(c.when)+'</span></li>'}).join("")||'<li class="mut">No recent activity.</li>';

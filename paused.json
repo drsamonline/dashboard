@@ -1,0 +1,16 @@
+{
+  "updated": "2026-10-23",
+  "note": "Projects deliberately parked. Not deleted \u2014 each keeps its spec and study doc. This is the list of things waiting for a word from the owner.",
+  "items": [
+    {
+      "id": "sys-sdak",
+      "name": "SDAK",
+      "what": "Serverless distributed knowledge base: scrape topics, shrink them to facts through a two-stage filter (regex then a rotating pool of free LLM keys), store the facts across chunk repositories with hash-level dedup, and search them from a static single-page app on Pages.",
+      "why": "Paused by the owner on 2026-10-23, before any code was written. The spec is sound and it fits the constraints (no server, free Actions minutes, our own free keys), but it needed four corrections first \u2014 chiefly that its 'direct web commit loop' stores a GitHub PAT in localStorage, which can write to our repos and must not ship. It is also a large multi-repo build that should not compete with the product line right now.",
+      "resume": "Say the word. Batch 1 is small and manual-trigger only: controller repo + global-index.json + the Stage 1 regex filter + one data repo. Nothing scheduled starts scraping until that first pass is seen working.",
+      "spec": "QUEUE/sys-sdak.md",
+      "study": "sdak_build_spec.md",
+      "since": "2026-10-23"
+    }
+  ]
+}
