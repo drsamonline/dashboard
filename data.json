@@ -1,6 +1,6 @@
 {
   "generated": "2026-10-23",
-  "generated_at": "2026-10-23T12:39:29Z",
+  "generated_at": "2026-10-23T13:35:57Z",
   "reckoning": "46 products · 14 kits · avg conformance 5.0/5 · updated automatically.",
   "health": "ok",
   "cards": [
@@ -38,10 +38,12 @@
     "byrepo": {
       "dashboard": 1,
       "app-builder": 1,
+      "aethelgard-rpg-engine": 1,
       "Matneo": 1,
+      "conqueror-os": 1,
+      "neon-engine": 1,
       "drsamonline": 1,
       "skills": 1,
-      "conqueror-os": 1,
       "helioprism": 1,
       "blinkcode-ai": 1,
       "BLINKTRANSFER": 1,
@@ -49,7 +51,6 @@
       "read-live-transform-app": 1,
       "whispering-body-first-aid": 1,
       "bmi-bmr-tdee-macros-fluid-calculator": 1,
-      "aethelgard-rpg-engine": 1,
       "drsamonline.github.io": 1,
       "smartbill-app": 1,
       "the-symphony-companion": 1,
@@ -70,7 +71,6 @@
       "aethelgard-games": 1,
       "saga-vn-engine": 1,
       "NEO": 1,
-      "neon-engine": 1,
       "case-kit": 1,
       "book-kit": 1,
       "srs-kit": 1,
@@ -90,8 +90,8 @@
       "5": 46
     },
     "categories": {
-      "Utilities": 15,
       "HTML Apps": 12,
+      "Utilities": 15,
       "Homeopathy": 11,
       "Health Tools": 1,
       "Games": 6,
@@ -156,7 +156,22 @@
       "count": 47
     }
   ],
-  "attention": [],
+  "attention": [
+    {
+      "title": "ci: drop the Build EXE/APK workflow (engine ships scripts + HTML, not binaries)",
+      "repo": "aethelgard-rpg-engine",
+      "url": "https://github.com/drsamonline/aethelgard-rpg-engine/pull/6",
+      "kind": "PR",
+      "created": "2026-10-23T13:06:33Z"
+    },
+    {
+      "title": "retrofit: adopt export-kit for file saves (drop the local Blob+anchor duplicate)",
+      "repo": "conqueror-os",
+      "url": "https://github.com/drsamonline/conqueror-os/pull/7",
+      "kind": "PR",
+      "created": "2026-10-23T12:49:56Z"
+    }
+  ],
   "controls": [
     {
       "label": "Refresh project hub",
@@ -224,6 +239,84 @@
   "changes": [
     {
       "type": "Push",
+      "repo": "app-builder",
+      "when": "2026-10-23T08:13:17Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Create",
+      "repo": "aethelgard-rpg-engine",
+      "when": "2026-10-23T08:28:56Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
+      "repo": "BLINKTRANSFER",
+      "when": "2026-10-23T08:26:24Z",
+      "text": "pushed to frame-kit-0.1.0"
+    },
+    {
+      "type": "PullRequest",
+      "repo": "aethelgard-rpg-engine",
+      "when": "2026-10-23T13:06:33Z",
+      "text": "opened: "
+    },
+    {
+      "type": "PullRequest",
+      "repo": "aethelgard-rpg-engine",
+      "when": "2026-10-23T13:06:23Z",
+      "text": "closed: "
+    },
+    {
+      "type": "Push",
+      "repo": "Matneo",
+      "when": "2026-10-23T08:16:34Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "PullRequest",
+      "repo": "app-builder",
+      "when": "2026-10-23T05:32:57Z",
+      "text": "merged: "
+    },
+    {
+      "type": "Create",
+      "repo": "skin-case-tracker",
+      "when": "2026-10-23T08:14:17Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
+      "repo": "skin-case-tracker",
+      "when": "2026-10-23T07:45:12Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Create",
+      "repo": "blinkcode-ai",
+      "when": "2026-10-23T08:14:23Z",
+      "text": ""
+    },
+    {
+      "type": "PullRequest",
+      "repo": "aethelgard-rpg-engine",
+      "when": "2026-10-23T12:54:37Z",
+      "text": "opened: "
+    },
+    {
+      "type": "Push",
+      "repo": "smartbill-app",
+      "when": "2026-10-23T08:07:41Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "PullRequest",
+      "repo": "conqueror-os",
+      "when": "2026-10-23T12:49:56Z",
+      "text": "opened: "
+    },
+    {
+      "type": "Push",
       "repo": "dashboard",
       "when": "2026-10-23T09:21:36Z",
       "text": "pushed to main"
@@ -263,84 +356,6 @@
       "repo": "mnemosyne-companion",
       "when": "2026-10-23T07:45:11Z",
       "text": ""
-    },
-    {
-      "type": "Push",
-      "repo": "BLINKTRANSFER",
-      "when": "2026-10-23T07:45:09Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "bmi-bmr-tdee-macros-fluid-calculator",
-      "when": "2026-10-23T08:48:48Z",
-      "text": "merged: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "whispering-body-first-aid",
-      "when": "2026-10-23T08:48:48Z",
-      "text": "merged: "
-    },
-    {
-      "type": "Push",
-      "repo": "dashboard",
-      "when": "2026-10-23T09:24:16Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "BLINKTRANSFER",
-      "when": "2026-10-23T07:30:19Z",
-      "text": "pushed to adopt-frame-kit"
-    },
-    {
-      "type": "Push",
-      "repo": "app-builder",
-      "when": "2026-10-23T06:23:08Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "app-builder",
-      "when": "2026-10-23T06:13:36Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "blinkcode-ai",
-      "when": "2026-10-23T06:11:23Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "conqueror-os",
-      "when": "2026-10-23T08:23:21Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "BLINKTRANSFER",
-      "when": "2026-10-23T07:45:07Z",
-      "text": "merged: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "Matneo",
-      "when": "2026-10-23T05:10:10Z",
-      "text": "merged: "
-    },
-    {
-      "type": "Push",
-      "repo": "TTB",
-      "when": "2026-10-23T07:02:23Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "TTB",
-      "when": "2026-10-23T07:02:06Z",
-      "text": "pushed to main"
     }
   ],
   "automation": [
@@ -373,8 +388,8 @@
       "what": "this dashboard",
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/39954938376",
-      "last_run": "2026-10-23T12:39:18Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/39962507115",
+      "last_run": "2026-10-23T13:35:44Z",
       "conclusion": "in_progress"
     },
     {
@@ -496,15 +511,377 @@
     "live_not_planned": 45,
     "link": "https://github.com/drsamonline/dashboard/blob/main/plan.json"
   },
+  "community": {
+    "totals": {
+      "stars": 44,
+      "forks": 1,
+      "watchers": 44
+    },
+    "repos": [
+      {
+        "name": "neon-runner",
+        "stars": 1,
+        "forks": 1,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/neon-runner"
+      },
+      {
+        "name": "aethelgard-rpg-engine",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/aethelgard-rpg-engine"
+      },
+      {
+        "name": "conqueror-os",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/conqueror-os"
+      },
+      {
+        "name": "neon-engine",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/neon-engine"
+      },
+      {
+        "name": "helioprism",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/helioprism"
+      },
+      {
+        "name": "blinkcode-ai",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/blinkcode-ai"
+      },
+      {
+        "name": "BLINKTRANSFER",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/BLINKTRANSFER"
+      },
+      {
+        "name": "skin-case-tracker",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/skin-case-tracker"
+      },
+      {
+        "name": "read-live-transform-app",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/read-live-transform-app"
+      },
+      {
+        "name": "whispering-body-first-aid",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/whispering-body-first-aid"
+      },
+      {
+        "name": "bmi-bmr-tdee-macros-fluid-calculator",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/bmi-bmr-tdee-macros-fluid-calculator"
+      },
+      {
+        "name": "smartbill-app",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/smartbill-app"
+      },
+      {
+        "name": "the-symphony-companion",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/the-symphony-companion"
+      },
+      {
+        "name": "kent-repertory-explorer",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/kent-repertory-explorer"
+      },
+      {
+        "name": "offline-pdf-toolkit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/offline-pdf-toolkit"
+      },
+      {
+        "name": "remedy-relationship-explorer",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/remedy-relationship-explorer"
+      },
+      {
+        "name": "The_Browser",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/The_Browser"
+      },
+      {
+        "name": "mnemosyne-companion",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/mnemosyne-companion"
+      },
+      {
+        "name": "unstoppable-mind-companion",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/unstoppable-mind-companion"
+      },
+      {
+        "name": "web-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/web-kit"
+      },
+      {
+        "name": "TTB",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/TTB"
+      },
+      {
+        "name": "optical-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/optical-kit"
+      },
+      {
+        "name": "aethelgard-games",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/aethelgard-games"
+      },
+      {
+        "name": "saga-vn-engine",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/saga-vn-engine"
+      },
+      {
+        "name": "NEO",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/NEO"
+      },
+      {
+        "name": "crypto-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/crypto-kit"
+      },
+      {
+        "name": "today-card",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/today-card"
+      },
+      {
+        "name": "boericke-repertory",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/boericke-repertory"
+      },
+      {
+        "name": "All4ONE",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/All4ONE"
+      },
+      {
+        "name": "homoeopathic-materia-medica-repertory-json",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/homoeopathic-materia-medica-repertory-json"
+      },
+      {
+        "name": "HMS",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/HMS"
+      },
+      {
+        "name": "neon-games",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/neon-games"
+      },
+      {
+        "name": "open-materia-medica",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/open-materia-medica"
+      },
+      {
+        "name": "ambient-sound-studio",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/ambient-sound-studio"
+      },
+      {
+        "name": "retro-strike",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/retro-strike"
+      },
+      {
+        "name": "lockhtml",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/lockhtml"
+      },
+      {
+        "name": "gentle-pediatrics-companion",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/gentle-pediatrics-companion"
+      },
+      {
+        "name": "idle-city-ages-of-growth",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/idle-city-ages-of-growth"
+      },
+      {
+        "name": "lexora",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/lexora"
+      },
+      {
+        "name": "ULTIMATE-WINDOWS-OPTIMIZER",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/ULTIMATE-WINDOWS-OPTIMIZER"
+      },
+      {
+        "name": "CLDR",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/CLDR"
+      },
+      {
+        "name": "SmartNotes",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/SmartNotes"
+      },
+      {
+        "name": "MATERIA-MEDICA-BUILDER",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/MATERIA-MEDICA-BUILDER"
+      },
+      {
+        "name": "dance-fight",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/dance-fight"
+      }
+    ],
+    "forks": {
+      "neon-runner": [
+        {
+          "who": "stateloop-connected",
+          "full_name": "stateloop-connected/source-neon-runner",
+          "url": "https://github.com/stateloop-connected/source-neon-runner",
+          "stars": 0,
+          "created": "2026-10-23"
+        }
+      ]
+    },
+    "forked_repos": 1,
+    "external": {
+      "issues": 0,
+      "prs": 0,
+      "items": []
+    }
+  },
   "repos": [
+    {
+      "name": "aethelgard-rpg-engine",
+      "description": "A dependency-free, vanilla-JavaScript engine for deep, single-player browser RPGs. Engine only — ships a small generic sample world; the games it powers live in drsamonline/aethelgard-games.",
+      "pushed_at": "2026-10-23T13:06:31Z",
+      "homepage": "https://drsamonline.github.io/aethelgard-rpg-engine/",
+      "html_url": "https://github.com/drsamonline/aethelgard-rpg-engine",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
     {
       "name": "conqueror-os",
       "description": "A private, offline resilience workspace in a single HTML file — read, reflect, journal, track and review. No server, no account, no dependencies.",
-      "pushed_at": "2026-10-23T08:51:35Z",
+      "pushed_at": "2026-10-23T12:49:54Z",
       "homepage": "https://drsamonline.github.io/conqueror-os/",
       "html_url": "https://github.com/drsamonline/conqueror-os",
       "download": "",
       "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1
+      ]
+    },
+    {
+      "name": "neon-engine",
+      "description": "A code-only open-world game engine for the browser. No assets, no build step, no dependencies — every texture, mesh and sound is generated at runtime. MIT licensed.",
+      "pushed_at": "2026-10-23T12:46:22Z",
+      "homepage": "https://drsamonline.github.io/neon-engine/",
+      "html_url": "https://github.com/drsamonline/neon-engine",
+      "download": "",
+      "category": "HTML Apps",
       "status": "5/5",
       "status_tone": "ok",
       "spark": [
@@ -603,20 +980,6 @@
       "html_url": "https://github.com/drsamonline/bmi-bmr-tdee-macros-fluid-calculator",
       "download": "",
       "category": "Health Tools",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1
-      ]
-    },
-    {
-      "name": "aethelgard-rpg-engine",
-      "description": "A dependency-free, vanilla-JavaScript engine for deep, single-player browser RPGs. Engine only — ships a small generic sample world; the games it powers live in drsamonline/aethelgard-games.",
-      "pushed_at": "2026-10-23T08:49:39Z",
-      "homepage": "https://drsamonline.github.io/aethelgard-rpg-engine/",
-      "html_url": "https://github.com/drsamonline/aethelgard-rpg-engine",
-      "download": "",
-      "category": "HTML Apps",
       "status": "5/5",
       "status_tone": "ok",
       "spark": [
@@ -848,20 +1211,6 @@
       ]
     },
     {
-      "name": "neon-engine",
-      "description": "A code-only open-world game engine for the browser. No assets, no build step, no dependencies — every texture, mesh and sound is generated at runtime. MIT licensed.",
-      "pushed_at": "2026-10-23T03:51:06Z",
-      "homepage": "https://drsamonline.github.io/neon-engine/",
-      "html_url": "https://github.com/drsamonline/neon-engine",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1
-      ]
-    },
-    {
       "name": "app-panchang",
       "description": "A daily Indian almanac — tithi, nakshatra, yoga, karana, rahu-kaal and muhurat, computed offline. Built with Forge.",
       "pushed_at": "2026-10-23T01:58:51Z",
@@ -960,20 +1309,6 @@
       ]
     },
     {
-      "name": "neon-runner",
-      "description": "Retro auto-fire side-scrolling shooter. Move, jump, duck — your gun fires itself. One self-contained HTML file, zero dependencies, fully offline.",
-      "pushed_at": "2026-10-22T11:04:07Z",
-      "homepage": "https://drsamonline.github.io/neon-runner/",
-      "html_url": "https://github.com/drsamonline/neon-runner",
-      "download": "",
-      "category": "Games",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0
-      ]
-    },
-    {
       "name": "open-materia-medica",
       "description": "Open Materia Medica — the classical homeopathic materia medica in plain language: 344 remedy portraits. Free web edition and offline Android companion app to the book by Dr. Sohil Momin, BHMS. (c) 2026, all rights reserved.",
       "pushed_at": "2026-10-22T11:04:07Z",
@@ -981,6 +1316,20 @@
       "html_url": "https://github.com/drsamonline/open-materia-medica",
       "download": "",
       "category": "Homeopathy",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0
+      ]
+    },
+    {
+      "name": "neon-runner",
+      "description": "Retro auto-fire side-scrolling shooter. Move, jump, duck — your gun fires itself. One self-contained HTML file, zero dependencies, fully offline.",
+      "pushed_at": "2026-10-22T11:04:07Z",
+      "homepage": "https://drsamonline.github.io/neon-runner/",
+      "html_url": "https://github.com/drsamonline/neon-runner",
+      "download": "",
+      "category": "Games",
       "status": "5/5",
       "status_tone": "ok",
       "spark": [
@@ -1160,10 +1509,12 @@
       "byrepo": {
         "dashboard": 1,
         "app-builder": 1,
+        "aethelgard-rpg-engine": 1,
         "Matneo": 1,
+        "conqueror-os": 1,
+        "neon-engine": 1,
         "drsamonline": 1,
         "skills": 1,
-        "conqueror-os": 1,
         "helioprism": 1,
         "blinkcode-ai": 1,
         "BLINKTRANSFER": 1,
@@ -1171,7 +1522,6 @@
         "read-live-transform-app": 1,
         "whispering-body-first-aid": 1,
         "bmi-bmr-tdee-macros-fluid-calculator": 1,
-        "aethelgard-rpg-engine": 1,
         "drsamonline.github.io": 1,
         "smartbill-app": 1,
         "the-symphony-companion": 1,
@@ -1192,7 +1542,6 @@
         "aethelgard-games": 1,
         "saga-vn-engine": 1,
         "NEO": 1,
-        "neon-engine": 1,
         "case-kit": 1,
         "book-kit": 1,
         "srs-kit": 1,
