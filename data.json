@@ -1,10 +1,10 @@
 {
   "generated": "2026-10-23",
-  "reckoning": "57 projects \u00b7 avg conformance 4.9/5 \u00b7 updated automatically.",
+  "reckoning": "60 projects \u00b7 avg conformance 4.9/5 \u00b7 updated automatically.",
   "cards": [
     {
       "title": "Projects",
-      "value": "57",
+      "value": "60",
       "tone": ""
     },
     {
@@ -25,19 +25,9 @@
   ],
   "repos": [
     {
-      "name": "helioprism",
-      "description": "One app, two optical transports \u2014 send a file with light over QR or a colour matrix. Offline, no network.",
-      "pushed_at": "2026-10-22T22:02:40Z",
-      "homepage": "https://drsamonline.github.io/helioprism/",
-      "html_url": "https://github.com/drsamonline/helioprism",
-      "download": "",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
       "name": "blinkcode-ai",
       "description": "BlinkCode AI \u2014 single-shot optical file transfer PWA (compression -> SpectraCode -> camera -> restore)",
-      "pushed_at": "2026-10-22T22:02:40Z",
+      "pushed_at": "2026-10-23T02:00:15Z",
       "homepage": "https://drsamonline.github.io/blinkcode-ai/",
       "html_url": "https://github.com/drsamonline/blinkcode-ai",
       "download": "",
@@ -47,7 +37,7 @@
     {
       "name": "BLINKTRANSFER",
       "description": "DATA TRANSFER IN BLINK OF EYE",
-      "pushed_at": "2026-10-22T22:02:40Z",
+      "pushed_at": "2026-10-23T02:00:07Z",
       "homepage": "https://drsamonline.github.io/BLINKTRANSFER/",
       "html_url": "https://github.com/drsamonline/BLINKTRANSFER",
       "download": "",
@@ -55,11 +45,31 @@
       "status_tone": "ok"
     },
     {
-      "name": "app-companion-forge",
-      "description": "Companion Forge - an offline pocket console for the drsamonline Forge system: the build queue, state, kit graph and repo fleet. Built with Forge on web-kit.",
-      "pushed_at": "2026-10-22T21:31:30Z",
-      "homepage": "https://drsamonline.github.io/app-companion-forge/",
-      "html_url": "https://github.com/drsamonline/app-companion-forge",
+      "name": "helioprism",
+      "description": "One app, two optical transports \u2014 send a file with light over QR or a colour matrix. Offline, no network.",
+      "pushed_at": "2026-10-23T02:00:01Z",
+      "homepage": "https://drsamonline.github.io/helioprism/",
+      "html_url": "https://github.com/drsamonline/helioprism",
+      "download": "",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "app-panchang",
+      "description": "A daily Indian almanac \u2014 tithi, nakshatra, yoga, karana, rahu-kaal and muhurat, computed offline. Built with Forge.",
+      "pushed_at": "2026-10-23T01:58:51Z",
+      "homepage": "https://drsamonline.github.io/app-panchang/",
+      "html_url": "https://github.com/drsamonline/app-panchang",
+      "download": "",
+      "status": "4/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "frame-kit",
+      "description": "The shared transfer-frame core for drsamonline apps: a self-describing frame, a rateless collector and byte/checksum utilities. One file, no dependencies. MIT.",
+      "pushed_at": "2026-10-23T01:57:59Z",
+      "homepage": "https://drsamonline.github.io/frame-kit/",
+      "html_url": "https://github.com/drsamonline/frame-kit",
       "download": "",
       "status": "5/5",
       "status_tone": "ok"
@@ -67,7 +77,7 @@
     {
       "name": "case-kit",
       "description": "Clinical case tracking: sections, dated symptoms, follow-ups, a timeline and a summary. Zero dependencies, MIT.",
-      "pushed_at": "2026-10-22T20:10:43Z",
+      "pushed_at": "2026-10-23T01:57:41Z",
       "homepage": "https://drsamonline.github.io/case-kit/",
       "html_url": "https://github.com/drsamonline/case-kit",
       "download": "",
@@ -77,7 +87,7 @@
     {
       "name": "book-kit",
       "description": "The companion-app-from-a-book pattern: chapters, key points, practices, flashcards, search and reading progress. Zero dependencies, MIT.",
-      "pushed_at": "2026-10-22T20:10:38Z",
+      "pushed_at": "2026-10-23T01:57:39Z",
       "homepage": "https://drsamonline.github.io/book-kit/",
       "html_url": "https://github.com/drsamonline/book-kit",
       "download": "",
@@ -87,7 +97,7 @@
     {
       "name": "srs-kit",
       "description": "Spaced repetition (SM-2) for flashcards: scheduling, lapses, due cards and stats. Zero dependencies, MIT.",
-      "pushed_at": "2026-10-22T20:10:34Z",
+      "pushed_at": "2026-10-23T01:57:36Z",
       "homepage": "https://drsamonline.github.io/srs-kit/",
       "html_url": "https://github.com/drsamonline/srs-kit",
       "download": "",
@@ -97,7 +107,7 @@
     {
       "name": "search-kit",
       "description": "Ranked search over big corpora: an inverted index with prefix and fuzzy matching. Zero dependencies, MIT.",
-      "pushed_at": "2026-10-22T20:10:28Z",
+      "pushed_at": "2026-10-23T01:57:33Z",
       "homepage": "https://drsamonline.github.io/search-kit/",
       "html_url": "https://github.com/drsamonline/search-kit",
       "download": "",
@@ -107,7 +117,7 @@
     {
       "name": "repertory-kit",
       "description": "The homeopathic repertorisation core: rubric grading and grade-weighted remedy scoring. Zero dependencies, MIT.",
-      "pushed_at": "2026-10-22T20:10:23Z",
+      "pushed_at": "2026-10-23T01:57:31Z",
       "homepage": "https://drsamonline.github.io/repertory-kit/",
       "html_url": "https://github.com/drsamonline/repertory-kit",
       "download": "",
@@ -115,21 +125,141 @@
       "status_tone": "ok"
     },
     {
-      "name": "app-panchang",
-      "description": "A daily Indian almanac \u2014 tithi, nakshatra, yoga, karana, rahu-kaal and muhurat, computed offline. Built with Forge.",
-      "pushed_at": "2026-10-22T19:43:39Z",
-      "homepage": "https://drsamonline.github.io/app-panchang/",
-      "html_url": "https://github.com/drsamonline/app-panchang",
+      "name": "astro-kit",
+      "description": "The shared astronomy core for drsamonline apps: sun and moon longitude (Meeus), ayanamsa, sunrise/sunset, and tithi/nakshatra/yoga/karana. Zero dependencies. MIT.",
+      "pushed_at": "2026-10-23T01:57:28Z",
+      "homepage": "https://drsamonline.github.io/astro-kit/",
+      "html_url": "https://github.com/drsamonline/astro-kit",
+      "download": "",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "game-kit",
+      "description": "The shared game core for drsamonline apps: a fixed-timestep loop, input, scenes, save/load and maths. Zero dependencies. MIT.",
+      "pushed_at": "2026-10-23T01:57:25Z",
+      "homepage": "https://drsamonline.github.io/game-kit/",
+      "html_url": "https://github.com/drsamonline/game-kit",
+      "download": "",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "lan-kit",
+      "description": "The shared LAN core for drsamonline apps: a local room with a real-time channel over Server-Sent Events + POST. Zero dependencies. MIT.",
+      "pushed_at": "2026-10-23T01:57:22Z",
+      "homepage": "https://drsamonline.github.io/lan-kit/",
+      "html_url": "https://github.com/drsamonline/lan-kit",
+      "download": "",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "compress-kit",
+      "description": "The shared compression core for drsamonline apps: gzip, deflate and deflate-raw via the platform's Compression Streams. One file, no dependencies. MIT.",
+      "pushed_at": "2026-10-23T01:57:19Z",
+      "homepage": "https://drsamonline.github.io/compress-kit/",
+      "html_url": "https://github.com/drsamonline/compress-kit",
+      "download": "",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "crypto-kit",
+      "description": "The shared crypto core for drsamonline apps: AES-256-GCM, PBKDF2 passphrase keys, sealed envelopes, one-time view. One file, Web Crypto. MIT.",
+      "pushed_at": "2026-10-23T01:57:16Z",
+      "homepage": "https://drsamonline.github.io/crypto-kit/",
+      "html_url": "https://github.com/drsamonline/crypto-kit",
+      "download": "",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "optical-kit",
+      "description": "The shared optical-transfer core: a systematic LT fountain code, self-describing frames, and a pluggable codec. One file, no dependencies. MIT.",
+      "pushed_at": "2026-10-23T01:57:14Z",
+      "homepage": "https://drsamonline.github.io/optical-kit/",
+      "html_url": "https://github.com/drsamonline/optical-kit",
+      "download": "",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "web-kit",
+      "description": "The shared offline-first runtime for drsamonline apps: storage, i18n (EN/HI/GU), CSV, PWA, theme, SEO, a11y. One file, no build step. MIT.",
+      "pushed_at": "2026-10-23T01:57:11Z",
+      "homepage": "https://drsamonline.github.io/web-kit/",
+      "html_url": "https://github.com/drsamonline/web-kit",
+      "download": "",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "canteen-lan",
+      "description": "Order from your table over the room's own Wi-Fi - a LAN canteen board for Forge",
+      "pushed_at": "2026-10-23T01:30:00Z",
+      "homepage": "https://drsamonline.github.io/canteen-lan/",
+      "html_url": "https://github.com/drsamonline/canteen-lan",
+      "download": "",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "mnemosyne-companion",
+      "description": "Companion study app for Mnemosyne Materia Medica \u2014 100 polycrest homoeopathic remedies as poetic pearls, keynotes and spaced-repetition drills. Single offline HTML file. Proprietary, all rights reserved.",
+      "pushed_at": "2026-10-23T01:06:16Z",
+      "homepage": "https://drsamonline.github.io/mnemosyne-companion/",
+      "html_url": "https://github.com/drsamonline/mnemosyne-companion",
+      "download": "",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "skin-case-tracker",
+      "description": "Companion app to the book \"The Skin Is a Liar\" by Dr. Sohil Momin \u2014 a private, offline HHMS skin-case tracker (History, Habits, Mapping, Symptoms) with a 90-day pattern engine. Free to use; all rights reserved.",
+      "pushed_at": "2026-10-23T01:04:48Z",
+      "homepage": "https://drsamonline.github.io/skin-case-tracker/",
+      "html_url": "https://github.com/drsamonline/skin-case-tracker",
+      "download": "",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "unstoppable-mind-companion",
+      "description": "Offline companion app to the book The Unstoppable Mind by Dr. Sohil Momin - key points, exercises, a 7-day challenge and flashcards. Free to use.",
+      "pushed_at": "2026-10-23T01:02:39Z",
+      "homepage": "https://drsamonline.github.io/unstoppable-mind-companion/",
+      "html_url": "https://github.com/drsamonline/unstoppable-mind-companion",
+      "download": "",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "chalk-lan",
+      "description": "A shared whiteboard for the room: everyone on the same Wi-Fi draws on the same board, live. Offline, no accounts. Built with Forge on web-kit + lan-kit.",
+      "pushed_at": "2026-10-22T23:30:02Z",
+      "homepage": "https://drsamonline.github.io/chalk-lan/",
+      "html_url": "https://github.com/drsamonline/chalk-lan",
+      "download": "",
+      "status": "5/5",
+      "status_tone": "ok"
+    },
+    {
+      "name": "Matneo",
+      "description": "AI-powered digital products and automation platform.",
+      "pushed_at": "2026-10-22T23:13:26Z",
+      "homepage": "https://drsamonline.github.io/Matneo/",
+      "html_url": "https://github.com/drsamonline/Matneo",
       "download": "",
       "status": "4/5",
       "status_tone": "ok"
     },
     {
-      "name": "astro-kit",
-      "description": "The shared astronomy core for drsamonline apps: sun and moon longitude (Meeus), ayanamsa, sunrise/sunset, and tithi/nakshatra/yoga/karana. Zero dependencies. MIT.",
-      "pushed_at": "2026-10-22T19:42:08Z",
-      "homepage": "https://drsamonline.github.io/astro-kit/",
-      "html_url": "https://github.com/drsamonline/astro-kit",
+      "name": "app-companion-forge",
+      "description": "Companion Forge - an offline pocket console for the drsamonline Forge system: the build queue, state, kit graph and repo fleet. Built with Forge on web-kit.",
+      "pushed_at": "2026-10-22T21:31:30Z",
+      "homepage": "https://drsamonline.github.io/app-companion-forge/",
+      "html_url": "https://github.com/drsamonline/app-companion-forge",
       "download": "",
       "status": "5/5",
       "status_tone": "ok"
@@ -145,71 +275,11 @@
       "status_tone": "ok"
     },
     {
-      "name": "game-kit",
-      "description": "The shared game core for drsamonline apps: a fixed-timestep loop, input, scenes, save/load and maths. Zero dependencies. MIT.",
-      "pushed_at": "2026-10-22T19:23:04Z",
-      "homepage": "https://drsamonline.github.io/game-kit/",
-      "html_url": "https://github.com/drsamonline/game-kit",
-      "download": "",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "lan-kit",
-      "description": "The shared LAN core for drsamonline apps: a local room with a real-time channel over Server-Sent Events + POST. Zero dependencies. MIT.",
-      "pushed_at": "2026-10-22T19:13:20Z",
-      "homepage": "https://drsamonline.github.io/lan-kit/",
-      "html_url": "https://github.com/drsamonline/lan-kit",
-      "download": "",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "compress-kit",
-      "description": "The shared compression core for drsamonline apps: gzip, deflate and deflate-raw via the platform's Compression Streams. One file, no dependencies. MIT.",
-      "pushed_at": "2026-10-22T19:08:37Z",
-      "homepage": "https://drsamonline.github.io/compress-kit/",
-      "html_url": "https://github.com/drsamonline/compress-kit",
-      "download": "",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
       "name": "today-card",
       "description": "Today Card - one card for the day: your date, one intention, one task, and a streak. Offline, no accounts. Built with web-kit and Forge.",
       "pushed_at": "2026-10-22T19:07:29Z",
       "homepage": "https://drsamonline.github.io/today-card/",
       "html_url": "https://github.com/drsamonline/today-card",
-      "download": "",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "crypto-kit",
-      "description": "The shared crypto core for drsamonline apps: AES-256-GCM, PBKDF2 passphrase keys, sealed envelopes, one-time view. One file, Web Crypto. MIT.",
-      "pushed_at": "2026-10-22T19:07:25Z",
-      "homepage": "https://drsamonline.github.io/crypto-kit/",
-      "html_url": "https://github.com/drsamonline/crypto-kit",
-      "download": "",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "optical-kit",
-      "description": "The shared optical-transfer core: a systematic LT fountain code, self-describing frames, and a pluggable codec. One file, no dependencies. MIT.",
-      "pushed_at": "2026-10-22T19:07:22Z",
-      "homepage": "https://drsamonline.github.io/optical-kit/",
-      "html_url": "https://github.com/drsamonline/optical-kit",
-      "download": "",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "web-kit",
-      "description": "The shared offline-first runtime for drsamonline apps: storage, i18n (EN/HI/GU), CSV, PWA, theme, SEO, a11y. One file, no build step. MIT.",
-      "pushed_at": "2026-10-22T19:07:17Z",
-      "homepage": "https://drsamonline.github.io/web-kit/",
-      "html_url": "https://github.com/drsamonline/web-kit",
       "download": "",
       "status": "5/5",
       "status_tone": "ok"
@@ -445,16 +515,6 @@
       "status_tone": "ok"
     },
     {
-      "name": "skin-case-tracker",
-      "description": "Companion app to the book \"The Skin Is a Liar\" by Dr. Sohil Momin \u2014 a private, offline HHMS skin-case tracker (History, Habits, Mapping, Symptoms) with a 90-day pattern engine. Free to use; all rights reserved.",
-      "pushed_at": "2026-10-22T11:02:57Z",
-      "homepage": "https://drsamonline.github.io/skin-case-tracker/",
-      "html_url": "https://github.com/drsamonline/skin-case-tracker",
-      "download": "",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
       "name": "aethelgard-games",
       "description": "Two free browser games by Dr. Sohil Momin \u2014 Aethelgard: The Books (visual novel) and Aethelgard: Chronicles of Fate (RPG). Playable on GitHub Pages.",
       "pushed_at": "2026-10-22T11:02:32Z",
@@ -515,26 +575,6 @@
       "status_tone": "ok"
     },
     {
-      "name": "mnemosyne-companion",
-      "description": "Companion study app for Mnemosyne Materia Medica \u2014 100 polycrest homoeopathic remedies as poetic pearls, keynotes and spaced-repetition drills. Single offline HTML file. Proprietary, all rights reserved.",
-      "pushed_at": "2026-10-22T09:04:52Z",
-      "homepage": "https://drsamonline.github.io/mnemosyne-companion/",
-      "html_url": "https://github.com/drsamonline/mnemosyne-companion",
-      "download": "",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
-      "name": "unstoppable-mind-companion",
-      "description": "Offline companion app to the book The Unstoppable Mind by Dr. Sohil Momin - key points, exercises, a 7-day challenge and flashcards. Free to use.",
-      "pushed_at": "2026-10-22T09:04:51Z",
-      "homepage": "https://drsamonline.github.io/unstoppable-mind-companion/",
-      "html_url": "https://github.com/drsamonline/unstoppable-mind-companion",
-      "download": "",
-      "status": "5/5",
-      "status_tone": "ok"
-    },
-    {
       "name": "smartbill-app",
       "description": "A fast, serverless, single-page billing and invoicing application built with Vue.js, tailored for Indian businesses. Features local IndexedDB storage and GST support.",
       "pushed_at": "2026-10-22T09:04:44Z",
@@ -583,16 +623,6 @@
       "download": "",
       "status": "5/5",
       "status_tone": "ok"
-    },
-    {
-      "name": "OMM",
-      "description": "OPEN MATERIA MEDICA JSON FILES TO BE USED IN APPS MAKING IT EASY TO BUILD THME",
-      "pushed_at": "2026-10-10T17:20:18Z",
-      "homepage": "",
-      "html_url": "https://github.com/drsamonline/OMM",
-      "download": "",
-      "status": "2/5",
-      "status_tone": "bad"
     }
   ],
   "links": {
