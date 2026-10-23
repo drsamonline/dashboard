@@ -124,6 +124,9 @@ footer{max-width:1320px;margin:0 auto;padding:14px 12px 30px;color:var(--mut);fo
   <div class="sec">At a glance</div>
   <div class="kpis" id="cards"></div>
 
+  <div class="sec">Built vs planned</div>
+  <div class="panel" id="planPanel"><p class="mut" style="margin:0">Loading…</p></div>
+
   <div id="needs" hidden>
     <div class="sec">Needs you</div>
     <table><thead><tr><th>What</th><th>Repo</th><th>Kind</th><th>Act</th></tr></thead><tbody id="needsBody"></tbody></table>
@@ -246,6 +249,23 @@ fetch("data.json",{cache:"no-store"}).then(function(r){return r.json()}).then(fu
 
   $("cards").innerHTML=(d.cards||[]).map(function(c,i){return '<div class="kpi '+kpiClass(i)+'" style="animation-delay:'+(i*60)+'ms"><div class="k">'+esc(c.title)+'</div><div class="v" data-count="'+parseInt(String(c.value).replace(/\D/g,"")||"0",10)+'">'+esc(c.value)+'</div></div>'}).join("");
   [].forEach.call(document.querySelectorAll(".kpi .v[data-count]"),function(el){var n=parseInt(el.getAttribute("data-count"),10);if(n&&/^\d+$/.test(el.textContent.trim()))countUp(el,n)});
+
+  var pl=d.plan||null;
+  if(pl&&pl.planned){
+    var pp=Math.max(2,Math.round((pl.built||0)/(pl.planned||1)*100));
+    $("planPanel").innerHTML='<div class="barrow"><span>of the plan built</span><span class="track"><span class="fill" data-w="'+pp+'" style="background:linear-gradient(90deg,#8b5cf6,#22d3ee)"></span></span><span class="num">'+(pl.built||0)+'/'+pl.planned+'</span></div>'
+      +'<div class="kpis" style="margin-top:9px">'
+      +'<div class="kpi"><div class="k">Planned ideas</div><div class="v">'+pl.planned+'</div></div>'
+      +'<div class="kpi g"><div class="k">Built (matched)</div><div class="v">'+(pl.built||0)+'</div></div>'
+      +'<div class="kpi a"><div class="k">Unbuilt</div><div class="v">'+(pl.unbuilt||0)+'</div></div>'
+      +'<div class="kpi b"><div class="k">Live products</div><div class="v">'+(pl.live_products||0)+'</div></div>'
+      +'<div class="kpi"><div class="k">Live, not on the plan</div><div class="v">'+(pl.live_not_planned||0)+'</div></div>'
+      +'</div>'
+      +'<p class="mut" style="margin:8px 0 0">The idea list is a <strong>forward plan</strong>; the live products are what exists. They are different populations, so the overlap is shown honestly. <a href="'+esc(pl.link||"")+'" target="_blank" rel="noopener">plan.json ↗</a></p>';
+    animateFills();
+  } else {
+    $("planPanel").innerHTML='<p class="mut" style="margin:0">Needs BILLING_TOKEN — the plan lives in the private registry.</p>';
+  }
 
   $("controls").innerHTML=(d.controls||[]).map(function(c){return '<a href="'+esc(c.url)+'" title="'+esc(c.what)+'"><span class="play">▶</span> '+esc(c.label)+'</a>'}).join("")||'<span class="mut">No controls yet.</span>';
 
