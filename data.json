@@ -535,8 +535,8 @@
       "what": "this dashboard",
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/39893269530",
-      "last_run": "2026-10-23T03:07:05Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/39893828276",
+      "last_run": "2026-10-23T03:13:16Z",
       "conclusion": "in_progress"
     },
     {
@@ -581,7 +581,7 @@
       "repo_url": "https://github.com/drsamonline/knowledge",
       "url": "https://github.com/drsamonline/knowledge/actions/workflows/refresh.yml",
       "last_run": null,
-      "conclusion": "unknown"
+      "conclusion": "scheduled (private repo)"
     },
     {
       "repo": "registry",
@@ -592,7 +592,7 @@
       "repo_url": "https://github.com/drsamonline/registry",
       "url": "https://github.com/drsamonline/registry/actions/workflows/refresh.yml",
       "last_run": null,
-      "conclusion": "unknown"
+      "conclusion": "scheduled (private repo)"
     },
     {
       "repo": "app-builder",
@@ -625,7 +625,7 @@
       "repo_url": "https://github.com/drsamonline/forge",
       "url": "https://github.com/drsamonline/forge/actions/workflows/heartbeat.yml",
       "last_run": null,
-      "conclusion": "unknown"
+      "conclusion": "scheduled (private repo)"
     }
   ],
   "links": {
