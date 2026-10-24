@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0005",
-      "at": "2026-10-23T00:55:00Z",
-      "workflow": "docs",
-      "outcome": "logged",
-      "note": "docs=warn  registry=stale  repos.json=51  missing-public=web-kit,optical-kit,crypto-kit,compress-kit,lan-kit,today-card  includes-private=OMM  action=refresh-registry-then-rerun-dashboard",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0006",
       "at": "2026-10-23T00:48:00Z",
       "workflow": "build",
@@ -386,6 +377,17 @@
       "workflow": "update-bmi-calculator",
       "outcome": "ok",
       "note": "update: bmi-calculator (P2), part 1 — 'Show the working' panel (every result shows its formula + substituted values; retrofitted onto the existing calculators) + creatinine clearance (Cockcroft-Gault) with a serum-creatinine input, formula/units/limits. Extended the app's own known-value self-tests (CrCl 97.2 M / 82.6 F mL/min + a units-consistency check) and added a headless jsdom runner + test.yml. Edited src/, re-minified to index.html + docs/play/index.html; verified headlessly on the MINIFIED build. PR bmi#2. Deferred: weight/BSA dosing + risk scores (risk scores need their own inputs).",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "95cf4b45f41f",
+      "at": "2026-10-24T07:47:13Z",
+      "workflow": "update-bmi-calculator",
+      "outcome": "ok",
+      "note": "update: bmi-calculator (P2), part 2 — weight-based and BSA-based dosing (rate x weight / rate x BSA, unit shown at every step), both in the Show-the-working panel, with a not-a-prescribing-decision caution. Self-tests extended (350 mg, 184.5 mg). Verified on the minified build; CrCl unchanged. PR bmi#3, merged. Remaining in the item: sourced risk scores.",
       "files": {},
       "advanced": [],
       "errors": [],
