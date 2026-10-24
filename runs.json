@@ -2,17 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "49ab8dbff987",
-      "at": "2026-10-24T07:07:36Z",
-      "workflow": "sys-ci-verify",
-      "outcome": "ok",
-      "note": "sys-ci-verify (P2), paths-filter part — app-builder examples/build-apps.yml and README still taught the OLD hand-copied pattern (if: always() on release = it DELETED the published release before recreating it); rewrote both to the caller form (uses: .../build.yml@main) and added paths-ignore so a docs-only (root *.md/LICENSE) commit skips the pipeline. Verified: both valid YAML, jobs:[app]. PR app-builder#7. Remaining: nektos/act (needs Docker, owner-side); changed-file->run-log wiring (small follow-up).",
-      "files": {},
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "001c2a594db2",
       "at": "2026-10-24T07:21:08Z",
       "workflow": "update-bmi-calculator",
@@ -545,6 +534,20 @@
       "outcome": "ok",
       "note": "pipeline-enables-pages (owner: 'add enabling pages in the workflow too so the pipeline works properly'). Right: I had enabled Pages by HAND for one app, which does not scale and is exactly the kind of manual step that gets forgotten. The deploy job in app-builder's build.yml now checks for a Pages site and CREATES one (build_type=workflow) when it is missing - treating 'already on' as success, and warning with the exact setting to change if the token cannot do it, instead of failing silently. So a repo the pipeline has just been given can now finish green: build the EXE, the APK and the Linux binary, publish the release, enable Pages, deploy the demo, and screenshot it.",
       "files": [
+        "app-builder/.github/workflows/build.yml"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "de41027bcf91",
+      "at": "2026-10-24T22:20:00Z",
+      "workflow": "launcher-flush",
+      "outcome": "ok",
+      "note": "launcher-flush. The Linux smoke test failed with 'the binary never printed a URL' and the BINARY WAS FINE: Python block-buffers stdout when it is not a terminal, so with the output redirected (`> run.log &`) the banner and the URL stayed in the buffer and never appeared. Anything supervising the binary - a smoke test, a wrapper, a log - was blind to it. The launcher now line-buffers stdout (reconfigure(line_buffering=True)), and the smoke test sets PYTHONUNBUFFERED and prints what it actually saw plus whether the process was still alive, instead of only that it saw nothing. Worth noting: the smoke test found a REAL defect in the shipped launcher on its first run - which is the argument for testing that it SERVES, not just that it compiles.",
+      "files": [
+        "app-builder/exe/launcher.py",
         "app-builder/.github/workflows/build.yml"
       ],
       "advanced": [],
