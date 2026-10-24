@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0014",
-      "at": "2026-10-23T03:30:00Z",
-      "workflow": "retrofit",
-      "outcome": "open",
-      "note": "retrofit=item  repo=BLINKTRANSFER  pr=#4  status=open  kit=optical-kit  dup=LT-fountain-codec  tests=20/20",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0015",
       "at": "2026-10-23T03:30:00Z",
       "workflow": "kit",
@@ -413,6 +404,21 @@
       "advanced": [],
       "errors": [],
       "retries": 0
+    },
+    {
+      "id": "60869fdbfdc1",
+      "at": "2026-10-24T09:15:00Z",
+      "workflow": "retrofit",
+      "outcome": "ok",
+      "note": "retrofit (P2) part 1 — created the missing input forge/registry/deps.json (kit -> capability map + a measured duplication audit) and the false-completion register. Retrofitted ONE repo: the bmi app delegates its hand-rolled download() to the already-vendored export-kit (PR #5, then fix PR #6 after PR #5 silently dropped the src + test files). 3 assertions prove the delegation and FAIL on the un-retrofitted build. Measured +3768 B (+4.8%), recorded. Audit found 3 repos carrying web-kit.js with zero references and 2 partially-wired.",
+      "files": [
+        "registry/deps.json",
+        "registry/false-completions.md",
+        "bmi-bmr-tdee-macros-fluid-calculator/src/clinical-health-calculator.html"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 1
     }
   ],
   "lost_lines": []
