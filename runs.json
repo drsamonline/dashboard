@@ -2,17 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "ea73d802723a",
-      "at": "2026-10-24T06:37:55Z",
-      "workflow": "idea-offline-demo",
-      "outcome": "ok",
-      "note": "idea-offline-demo (P2) — added a 'pull the plug' overlay to the hub (fetch/XHR fail on toggle, visible 'network: OFF · demo' indicator, off by default). Also fixed the P2 review finding on the merged recency strip: a page-less repo linked to the site/<name>/ fallback (404) — fixed at source (build_hub.py emits a landing only when it exists; JSON-LD falls back to source; sitemap drops page-less entries) and at runtime (each project gets a valid dest = page else source). Verified: build_hub 65/71, export-kit landing empty, 64/65 with a landing; jsdom 0 empty/404 card links + demo toggle works. PR drsamonline.github.io#3 (PR#2 was merged by the owner).",
-      "files": {},
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "36f3f131f599",
       "at": "2026-10-24T06:51:22Z",
       "workflow": "sys-ci-verify",
@@ -539,6 +528,22 @@
         "forge/tools/app-deliver.py",
         "app-encrypted-case-log/docs/index.html",
         "app-encrypted-case-log/.github/workflows/build-apps.yml"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "6441d2331ae6",
+      "at": "2026-10-24T21:40:00Z",
+      "workflow": "app-delivery-linux-shot",
+      "outcome": "ok",
+      "note": "app-delivery-linux-shot (owner: 'why did the above build not go through forge workflow? or it's missing, then add the whole workflow in forge and app-builder; app-builder should build a Linux version when applicable for all app repos; wire screenshots into the READMEs'). THREE ANSWERS. (1) WHY NOT FORGE: a PUBLIC repository can only call a reusable workflow that is ALSO public, and forge is private - so the pipeline CANNOT live in forge. It lives in app-builder (public) on purpose, and its header says so. (2) WHY THE BUILD FAILED: from the run log - the EXE, the APK and the release all SUCCEEDED; only 'Deploy the demo' died with 'Get Pages site failed ... Not Found', because a BRAND-NEW repo has no Pages site. The pipeline was not wrong; the site was never switched on. Pages is now enabled, and app-deliver.py turns it on as part of delivering. (3) LINUX: build.py already produced a native POSIX binary (it picks the --add-data separator from os.name) but nothing wired it in, so Linux users had nothing to download. A linux job now builds it and SMOKE-TESTS it - starts the binary, reads the loopback URL it prints, fetches the page, checks it is HTML - because compiling is not serving; the release waits on all three builds and ships all three assets. (4) SCREENSHOTS: a real one, captured by DRIVING the app (set a passphrase, acknowledge the recovery code, add a patient, save a note) rather than a blank first screen; it is in the README between markers and on the landing page, and a new `shot` job re-captures the LIVE demo after each deploy so the picture cannot show an older build than the one you can download.",
+      "files": [
+        "app-builder/.github/workflows/build.yml",
+        "app-builder/tools/shot.js",
+        "forge/tools/app-deliver.py",
+        "app-encrypted-case-log/docs/shot.png"
       ],
       "advanced": [],
       "errors": [],
