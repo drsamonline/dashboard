@@ -2,17 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "ad5cd0b384e3",
-      "at": "2026-10-24T05:33:22Z",
-      "workflow": "hub",
-      "outcome": "ok",
-      "note": "update: hub (P2) — added a recently-updated strip + a cross-link bar to drsamonline.github.io and made the count a DEFINITION (build_hub.py classify(): public, source, non-empty, not self). Verified locally: build_hub.py counted 65/71; jsdom render pass (6 recent cards, 65 grid cards). Opened PR drsamonline.github.io#2; no live change until merged.",
-      "files": {},
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "03bb4165c73a",
       "at": "2026-10-24T05:40:33Z",
       "workflow": "case-kit",
@@ -534,6 +523,19 @@
       "note": "hub-exclude-tooling (owner: 'sure'). The hub's EXCLUDE covered only the profile and the site, so the console, app-builder, the backup store, the skills catalogue and the profile kit appeared as PROJECTS on a showcase - visible in the recently-updated strip. All five are now excluded: they are how the products are made, not products. The kits are deliberately NOT excluded - they are a real part of the range the hub shows. Refresh dispatched.",
       "files": [
         "drsamonline.github.io/tools/build_hub.py"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "99f253463c91",
+      "at": "2026-10-24T19:00:00Z",
+      "workflow": "self-diagnose-failures",
+      "outcome": "ok",
+      "note": "self-diagnose-failures. Extended tools/self-diagnose.py: it now checks whether a workflow SUCCEEDS, not only whether it fires. THREE workflows failed silently today - kit-tests (an empty matrix), the dashboard refresh (losing a push race with the health commits) and backlog-status (its own write guard refusing the generated block) - and every one of them ran on time, so 'did it fire' said nothing was wrong. The rule: two consecutive failed runs is not bad luck, it is broken; one failure after a success is left to self-heal. 17 self-tests pass.",
+      "files": [
+        "tools/self-diagnose.py"
       ],
       "advanced": [],
       "errors": [],
