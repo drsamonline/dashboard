@@ -1,12 +1,12 @@
 {
   "generated": "2026-10-24",
-  "generated_at": "2026-10-24T11:50:57Z",
-  "reckoning": "47 products · 18 kits · avg conformance 5.0/5 · updated automatically.",
+  "generated_at": "2026-10-24T14:37:39Z",
+  "reckoning": "49 products · 18 kits · avg conformance 4.9/5 · updated automatically.",
   "health": "bad",
   "cards": [
     {
       "title": "Products",
-      "value": "47",
+      "value": "49",
       "tone": ""
     },
     {
@@ -16,7 +16,7 @@
     },
     {
       "title": "Avg conformance",
-      "value": "5.0/5",
+      "value": "4.9/5",
       "tone": "ok"
     },
     {
@@ -31,15 +31,18 @@
     }
   ],
   "summary": {
-    "products": 47,
+    "products": 49,
     "kits": 18,
-    "avg": 5.0,
-    "pushes": 72,
+    "avg": 4.9,
+    "pushes": 74,
     "byrepo": {
       "dashboard": 1,
-      "drsamonline.github.io": 1,
-      "Matneo": 1,
+      "control-panel": 1,
+      "app-encrypted-case-log": 1,
       "app-builder": 1,
+      "drsamonline.github.io": 1,
+      "retro-strike": 1,
+      "Matneo": 1,
       "backup": 1,
       "skin-case-tracker": 1,
       "srs-kit": 1,
@@ -77,7 +80,6 @@
       "unstoppable-mind-companion": 1,
       "the-symphony-companion": 1,
       "smartbill-app": 1,
-      "retro-strike": 1,
       "remedy-relationship-explorer": 1,
       "read-live-transform-app": 1,
       "open-materia-medica": 1,
@@ -96,15 +98,16 @@
   },
   "stats": {
     "conformance": {
-      "3": 1,
-      "5": 46
+      "4": 2,
+      "5": 46,
+      "3": 1
     },
     "categories": {
-      "HTML Apps": 13,
+      "HTML Apps": 15,
+      "Games": 6,
       "Homeopathy": 11,
       "Utilities": 15,
       "Health Tools": 1,
-      "Games": 6,
       "Data": 1
     }
   },
@@ -163,7 +166,7 @@
     },
     {
       "date": "2026-10-24",
-      "count": 56
+      "count": 58
     }
   ],
   "attention": [],
@@ -227,130 +230,130 @@
   "quota": {
     "available": false,
     "included_minutes": 2000,
-    "note": "Actions minutes are free on public repos; the private repos draw on the free 2,000 min/month. The billing API is retired (410 Gone), so this is an ESTIMATE from 181 private-repo run(s) this month.",
-    "private_runs": 181,
-    "estimated_minutes": 18.4
+    "note": "Actions minutes are free on public repos; the private repos draw on the free 2,000 min/month. The billing API is retired (410 Gone), so this is an ESTIMATE from 205 private-repo run(s) this month.",
+    "private_runs": 205,
+    "estimated_minutes": 22.8
   },
   "changes": [
     {
       "type": "Push",
-      "repo": "skills",
-      "when": "2026-10-24T07:42:26Z",
+      "repo": "backup",
+      "when": "2026-10-24T10:02:33Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "CLDR",
-      "when": "2026-10-24T04:03:45Z",
+      "repo": "app-builder",
+      "when": "2026-10-24T04:42:22Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "backup",
+      "when": "2026-10-24T09:58:01Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "dashboard",
+      "when": "2026-10-24T08:13:08Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "All4ONE",
-      "when": "2026-10-24T04:02:36Z",
+      "when": "2026-10-24T04:04:59Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Create",
+      "repo": "skills",
+      "when": "2026-10-24T08:12:16Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
+      "repo": "app-builder",
+      "when": "2026-10-24T11:18:06Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
+      "repo": "All4ONE",
+      "when": "2026-10-24T04:03:42Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "Matneo",
+      "when": "2026-10-24T04:36:11Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "dashboard",
+      "when": "2026-10-24T09:49:50Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "dashboard",
+      "when": "2026-10-24T09:49:30Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "drsamonline.github.io",
+      "when": "2026-10-24T13:46:13Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "dashboard",
+      "when": "2026-10-24T08:01:09Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "BLINKTRANSFER",
+      "when": "2026-10-24T03:52:08Z",
+      "text": "pushed to changelog"
+    },
+    {
+      "type": "Push",
+      "repo": "app-builder",
+      "when": "2026-10-24T11:00:44Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Create",
+      "repo": "srs-kit",
+      "when": "2026-10-24T09:37:42Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
       "repo": "web-kit",
-      "when": "2026-10-24T03:42:47Z",
+      "when": "2026-10-24T03:41:13Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "bmi-bmr-tdee-macros-fluid-calculator",
+      "when": "2026-10-24T07:42:42Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "export-kit",
-      "when": "2026-10-24T05:09:29Z",
+      "when": "2026-10-24T09:24:30Z",
       "text": "pushed to main"
     },
     {
       "type": "Create",
-      "repo": "Matneo",
-      "when": "2026-10-24T03:30:45Z",
+      "repo": "aethelgard-rpg-engine",
+      "when": "2026-10-23T12:54:33Z",
       "text": ""
-    },
-    {
-      "type": "Push",
-      "repo": "dashboard",
-      "when": "2026-10-24T10:16:50Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "app-builder",
-      "when": "2026-10-24T11:00:42Z",
-      "text": "merged: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "app-builder",
-      "when": "2026-10-24T11:00:37Z",
-      "text": "opened: "
-    },
-    {
-      "type": "Push",
-      "repo": "app-builder",
-      "when": "2026-10-24T04:42:02Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "Matneo",
-      "when": "2026-10-24T06:44:43Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "app-builder",
-      "when": "2026-10-24T04:42:28Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "app-builder",
-      "when": "2026-10-24T04:42:08Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "app-builder",
-      "when": "2026-10-24T04:41:24Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "Matneo",
-      "when": "2026-10-24T04:36:41Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "Matneo",
-      "when": "2026-10-24T04:36:36Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "Matneo",
-      "when": "2026-10-24T04:26:37Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "app-panchang",
-      "when": "2026-10-24T02:21:35Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "app-builder",
-      "when": "2026-10-24T02:17:43Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "retro-strike",
-      "when": "2026-10-24T02:15:23Z",
-      "text": "pushed to main"
     }
   ],
   "automation": [
@@ -361,9 +364,9 @@
       "what": "the project hub",
       "schedule": "daily 03:17 UTC",
       "repo_url": "https://github.com/drsamonline/drsamonline.github.io",
-      "url": "https://github.com/drsamonline/drsamonline.github.io/actions/runs/40091017463",
-      "last_run": "2026-10-24T11:44:41Z",
-      "conclusion": "success"
+      "url": "https://github.com/drsamonline/drsamonline.github.io/actions/runs/40099569485",
+      "last_run": "2026-10-24T13:46:17Z",
+      "conclusion": "cancelled"
     },
     {
       "repo": "drsamonline",
@@ -383,8 +386,8 @@
       "what": "this dashboard",
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/40091520385",
-      "last_run": "2026-10-24T11:50:45Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/40103325921",
+      "last_run": "2026-10-24T14:37:32Z",
       "conclusion": "in_progress"
     },
     {
@@ -491,7 +494,7 @@
       "link": "https://github.com/drsamonline/forge"
     },
     {
-      "what": "Apps live — 65 products, 65 of them pushed in the last 30 days",
+      "what": "Apps live — 67 products, 67 of them pushed in the last 30 days",
       "state": "done",
       "link": "https://drsamonline.github.io/"
     },
@@ -510,8 +513,8 @@
     "planned": 133,
     "built": 1,
     "unbuilt": 132,
-    "live_products": 47,
-    "live_not_planned": 46,
+    "live_products": 49,
+    "live_not_planned": 48,
     "link": "https://github.com/drsamonline/dashboard/blob/main/plan.json"
   },
   "paused": [
@@ -530,9 +533,9 @@
   },
   "community": {
     "totals": {
-      "stars": 60,
+      "stars": 66,
       "forks": 1,
-      "watchers": 60
+      "watchers": 66
     },
     "repos": [
       {
@@ -541,6 +544,27 @@
         "forks": 1,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/neon-runner"
+      },
+      {
+        "name": "app-encrypted-case-log",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/app-encrypted-case-log"
+      },
+      {
+        "name": "retro-strike",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/retro-strike"
+      },
+      {
+        "name": "backup",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/backup"
       },
       {
         "name": "skin-case-tracker",
@@ -606,6 +630,27 @@
         "html_url": "https://github.com/drsamonline/BLINKTRANSFER"
       },
       {
+        "name": "ui-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/ui-kit"
+      },
+      {
+        "name": "audio-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/audio-kit"
+      },
+      {
+        "name": "art-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/art-kit"
+      },
+      {
         "name": "game-kit",
         "stars": 1,
         "forks": 0,
@@ -618,6 +663,13 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/search-kit"
+      },
+      {
+        "name": "ml-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/ml-kit"
       },
       {
         "name": "case-kit",
@@ -751,13 +803,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/smartbill-app"
-      },
-      {
-        "name": "retro-strike",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/retro-strike"
       },
       {
         "name": "remedy-relationship-explorer",
@@ -979,6 +1024,30 @@
     "window": "14 days",
     "note": "Last 14 days — GitHub's retention window.",
     "repos": {
+      "control-panel": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
+      "app-encrypted-case-log": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
+      "retro-strike": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 133,
+        "clone_uniques": 52,
+        "referrers": [],
+        "paths": []
+      },
       "backup": {
         "views": 0,
         "uniques": 0,
@@ -1041,8 +1110,8 @@
       "bmi-bmr-tdee-macros-fluid-calculator": {
         "views": 0,
         "uniques": 0,
-        "clones": 268,
-        "clone_uniques": 104,
+        "clones": 296,
+        "clone_uniques": 114,
         "referrers": [],
         "paths": []
       },
@@ -1113,8 +1182,8 @@
       "game-kit": {
         "views": 0,
         "uniques": 0,
-        "clones": 26,
-        "clone_uniques": 13,
+        "clones": 71,
+        "clone_uniques": 36,
         "referrers": [],
         "paths": []
       },
@@ -1156,8 +1225,8 @@
       "SmartNotes": {
         "views": 0,
         "uniques": 0,
-        "clones": 43,
-        "clone_uniques": 28,
+        "clones": 59,
+        "clone_uniques": 34,
         "referrers": [],
         "paths": []
       },
@@ -1178,8 +1247,8 @@
       "MATERIA-MEDICA-BUILDER": {
         "views": 7,
         "uniques": 1,
-        "clones": 365,
-        "clone_uniques": 136,
+        "clones": 440,
+        "clone_uniques": 162,
         "referrers": [
           {
             "from": "github.com",
@@ -1258,8 +1327,8 @@
       "neon-games": {
         "views": 0,
         "uniques": 0,
-        "clones": 248,
-        "clone_uniques": 99,
+        "clones": 280,
+        "clone_uniques": 113,
         "referrers": [],
         "paths": []
       },
@@ -1298,8 +1367,8 @@
       "whispering-body-first-aid": {
         "views": 0,
         "uniques": 0,
-        "clones": 164,
-        "clone_uniques": 67,
+        "clones": 185,
+        "clone_uniques": 73,
         "referrers": [],
         "paths": []
       },
@@ -1330,8 +1399,8 @@
       "app-companion-forge": {
         "views": 0,
         "uniques": 0,
-        "clones": 35,
-        "clone_uniques": 14,
+        "clones": 90,
+        "clone_uniques": 43,
         "referrers": [],
         "paths": []
       },
@@ -1365,14 +1434,6 @@
           }
         ]
       },
-      "retro-strike": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 133,
-        "clone_uniques": 52,
-        "referrers": [],
-        "paths": []
-      },
       "remedy-relationship-explorer": {
         "views": 3,
         "uniques": 1,
@@ -1400,16 +1461,16 @@
       "read-live-transform-app": {
         "views": 0,
         "uniques": 0,
-        "clones": 218,
-        "clone_uniques": 92,
+        "clones": 301,
+        "clone_uniques": 118,
         "referrers": [],
         "paths": []
       },
       "open-materia-medica": {
         "views": 1,
         "uniques": 1,
-        "clones": 256,
-        "clone_uniques": 99,
+        "clones": 260,
+        "clone_uniques": 103,
         "referrers": [
           {
             "from": "Bing",
@@ -1465,18 +1526,29 @@
         "paths": []
       },
       "idle-city-ages-of-growth": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 221,
-        "clone_uniques": 92,
-        "referrers": [],
-        "paths": []
+        "views": 1,
+        "uniques": 1,
+        "clones": 237,
+        "clone_uniques": 98,
+        "referrers": [
+          {
+            "from": "search.brave.com",
+            "count": 1
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/idle-city-ages-of-growth",
+            "count": 1,
+            "title": "Overview"
+          }
+        ]
       },
       "gentle-pediatrics-companion": {
         "views": 0,
         "uniques": 0,
-        "clones": 271,
-        "clone_uniques": 111,
+        "clones": 293,
+        "clone_uniques": 120,
         "referrers": [],
         "paths": []
       },
@@ -1580,8 +1652,8 @@
       "optical-kit": {
         "views": 0,
         "uniques": 0,
-        "clones": 27,
-        "clone_uniques": 14,
+        "clones": 72,
+        "clone_uniques": 35,
         "referrers": [],
         "paths": []
       },
@@ -1772,6 +1844,51 @@
     }
   },
   "repos": [
+    {
+      "name": "control-panel",
+      "description": "Every workflow in every repo: what runs, when, what calls what, and what is connected to nothing. The four stages from scratch to repair, the routes that need one input, and a Run button for each workflow. MIT.",
+      "pushed_at": "2026-10-24T14:37:21Z",
+      "homepage": "https://drsamonline.github.io/control-panel/",
+      "html_url": "https://github.com/drsamonline/control-panel",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "4/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "app-encrypted-case-log",
+      "description": "Per-patient clinical notes, encrypted on the device with AES-256-GCM. Offline, no account, no server. Built with Forge on crypto-kit, case-kit, search-kit, export-kit and web-kit. MIT.",
+      "pushed_at": "2026-10-24T14:28:52Z",
+      "homepage": "https://drsamonline.github.io/app-encrypted-case-log/",
+      "html_url": "https://github.com/drsamonline/app-encrypted-case-log",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "4/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "retro-strike",
+      "description": "🎮 A complete retro 3rd-person shooter in a single HTML file — custom software 3D renderer, chiptune audio, zero dependencies.",
+      "pushed_at": "2026-10-24T12:42:18Z",
+      "homepage": "https://drsamonline.github.io/retro-strike/",
+      "html_url": "https://github.com/drsamonline/retro-strike",
+      "download": "",
+      "category": "Games",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        1
+      ]
+    },
     {
       "name": "backup",
       "description": "Snapshot a repository BEFORE a merge replaces it: a reusable GitHub workflow + a zero-dependency script. Compressed, timestamped, rotated to keep the newest 100, and it rolls over to a new dumps repo when one fills up. MIT.",
@@ -2144,21 +2261,6 @@
       "status_tone": "ok",
       "spark": [
         1,
-        1
-      ]
-    },
-    {
-      "name": "retro-strike",
-      "description": "🎮 A complete retro 3rd-person shooter in a single HTML file — custom software 3D renderer, chiptune audio, zero dependencies.",
-      "pushed_at": "2026-10-24T02:15:23Z",
-      "homepage": "https://drsamonline.github.io/retro-strike/",
-      "html_url": "https://github.com/drsamonline/retro-strike",
-      "download": "",
-      "category": "Games",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
         1
       ]
     },
@@ -2548,15 +2650,18 @@
     },
     {
       "date": "2026-10-24",
-      "products": 47,
+      "products": 49,
       "kits": 18,
-      "avg": 5.0,
-      "pushes": 72,
+      "avg": 4.9,
+      "pushes": 74,
       "byrepo": {
         "dashboard": 1,
-        "drsamonline.github.io": 1,
-        "Matneo": 1,
+        "control-panel": 1,
+        "app-encrypted-case-log": 1,
         "app-builder": 1,
+        "drsamonline.github.io": 1,
+        "retro-strike": 1,
+        "Matneo": 1,
         "backup": 1,
         "skin-case-tracker": 1,
         "srs-kit": 1,
@@ -2594,7 +2699,6 @@
         "unstoppable-mind-companion": 1,
         "the-symphony-companion": 1,
         "smartbill-app": 1,
-        "retro-strike": 1,
         "remedy-relationship-explorer": 1,
         "read-live-transform-app": 1,
         "open-materia-medica": 1,
@@ -2610,9 +2714,9 @@
         "ambient-sound-studio": 1,
         "frame-kit": 1
       },
-      "stars": 60,
+      "stars": 66,
       "forks": 1,
-      "watchers": 60
+      "watchers": 66
     }
   ]
 }
