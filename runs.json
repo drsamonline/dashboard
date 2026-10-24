@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0007",
-      "at": "2026-10-23T00:48:00Z",
-      "workflow": "build",
-      "outcome": "done",
-      "note": "build=item   item=app-panchang  status=done  repo=app-panchang  note=engine+app+24tests-pass  deps=web-kit(live)",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0008",
       "at": "2026-10-23T00:48:00Z",
       "workflow": "build",
@@ -390,6 +381,17 @@
       "workflow": "update-bmi-calculator",
       "outcome": "ok",
       "note": "update: bmi-calculator (P2) COMPLETE — part 3: CHA2DS2-VASc risk score (non-valvular AF, Lip 2010), five flags + age/sex, every component in the Show-the-working panel, intended population + source stated. Self-tests extended; verified on the minified build (6/8). PR bmi#4, merged. The item's three parts (show-the-working + CrCl, dosing, risk score) are all on main.",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "44c86793678c",
+      "at": "2026-10-24T08:00:46Z",
+      "workflow": "kit-ml-kit",
+      "outcome": "ok",
+      "note": "kit-ml-kit (P3) COMPLETE — created the new repo drsamonline/ml-kit: one zero-dep single-file kit with tf-idf+cosine, Naive Bayes, k-NN, k-means, PCA, ID3, linear regression, Markov chains (char/word, order, seedable) and a grammar expander (rules, slots, weighted, seedable). THE BOUNDARY stated in the README + landing page (ranking/similarity/clustering/trend only; no clinical/medical claim). 22 tests pass; CI runs them; topics set. Also: ml-kit skill added to the skills catalogue (55->56, data-and-schema; skills#2 merged) and search-kit adopted the tf-idf ranking (search-kit#1 merged, 12 tests pass).",
       "files": {},
       "advanced": [],
       "errors": [],
