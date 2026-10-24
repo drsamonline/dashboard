@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0010",
-      "at": "2026-10-23T02:58:00Z",
-      "workflow": "build",
-      "outcome": "done",
-      "note": "build=item   item=app-companion-forge  status=done  repo=app-companion-forge  note=engine+app+30tests-pass  deps=web-kit(live)  pages=on  pr=none",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0011",
       "at": "2026-10-23T02:59:00Z",
       "workflow": "build",
@@ -396,6 +387,17 @@
       "workflow": "kit-art-kit",
       "outcome": "ok",
       "note": "kit-art-kit (P3) COMPLETE — created drsamonline/art-kit: indexed palette (Lospec-style, swap/cycle/nearest), pixel canvas with NEAREST-NEIGHBOUR scaling, draw ops (pixel/line/rect/ellipse/flood fill/mirror), a bounded DELTA undo stack, dithering (ordered Bayer + Floyd-Steinberg), median-cut quantisation, sprite-sheet + JSON atlas with a slice round-trip, the cartesian<->isometric mapping, and a sketch loop (the live half). 31 tests incl. the four the spec requires (nearest-neighbour scaling, dithering pattern, median-cut known input, sprite-sheet round-trip); CI runs them; topics set. Skill added to the catalogue (56->57, game-engine; skills#3 merged). All additions reimplemented from published technique; the licence position is stated in the README.",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "b2268ca7b322",
+      "at": "2026-10-24T08:18:08Z",
+      "workflow": "kit-audio-kit",
+      "outcome": "ok",
+      "note": "kit-audio-kit (P3) COMPLETE — created drsamonline/audio-kit: P1 synthesis (a PURE ADSR envelope, oscillator voices w/ filter, noise, mixer) + music theory (notes, intervals, transposition, 12 scales, 11 chords); plus the pieces the required tests need — a pattern sequencer and a notation layout — and byte sonification + honest mastering helpers (rms/match/limit). THE RULE in the README: game music is PATTERNS, NOT FILES. No audio assets; no autoplay; everything reimplemented (references named in comments only). 42 tests incl. the four the spec requires (ADSR shape, scale/chord, sequencer beats, notation layout); CI runs them; topics set. Skill added (57->58, game-engine; skills#4 merged).",
       "files": {},
       "advanced": [],
       "errors": [],
