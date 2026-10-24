@@ -2,21 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "03bb4165c73a",
-      "at": "2026-10-24T05:40:33Z",
-      "workflow": "case-kit",
-      "outcome": "ok",
-      "note": "update: case-kit (P2) — added a plain-JSON patient-record interchange format (Case.exportRecord/importRecord, format case-kit/record, versioned; patient = opaque id + short label, never a name). Tests 13->26 (round-trip + version-compat + foreign-record refused); new tests bite (fail on the old kit; disabling the version guard fails the version test). Opened PR case-kit#1; added the Encrypted Case Log spec note to use it (encrypted archive, not plaintext).",
-      "files": {
-        "QUEUE/app-encrypted-case-log.md": {
-          "lines": 79
-        }
-      },
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "643230dedd8b",
       "at": "2026-10-24T06:06:25Z",
       "workflow": "commercial",
@@ -536,6 +521,20 @@
       "note": "self-diagnose-failures. Extended tools/self-diagnose.py: it now checks whether a workflow SUCCEEDS, not only whether it fires. THREE workflows failed silently today - kit-tests (an empty matrix), the dashboard refresh (losing a push race with the health commits) and backlog-status (its own write guard refusing the generated block) - and every one of them ran on time, so 'did it fire' said nothing was wrong. The rule: two consecutive failed runs is not bad luck, it is broken; one failure after a success is left to self-heal. 17 self-tests pass.",
       "files": [
         "tools/self-diagnose.py"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "5a78f5c017ad",
+      "at": "2026-10-24T20:00:00Z",
+      "workflow": "app-encrypted-case-log",
+      "outcome": "ok",
+      "note": "app-encrypted-case-log (P4, the first of the eight apps; master-list #128). Built to its spec, composing crypto-kit + case-kit + search-kit + export-kit + web-kit and re-implementing none of them. THE VAULT: a random DEK encrypts the records and the passphrase only WRAPS it (PBKDF2-SHA256, 600k, a random 16-byte salt), so changing the passphrase never re-encrypts a record; a 24-word recovery code wraps the SAME DEK; a verifier makes a wrong passphrase fail cleanly. THE RECORDS: one per blob, a FRESH 96-bit IV each time, and the record id as AAD so a record cannot be swapped or replayed. The page carries connect-src 'none' - stricter than the spec's default-src 'self' - so an outbound request is impossible. 15 SELF-TESTS, no browser needed (Node 20's WebCrypto + the app's in-memory store fallback): the vault, the AAD binding, the recovery path, a wrong passphrase failing cleanly, no IV reuse, the ciphertext never containing the plaintext, the search, case-kit's interchange, and export -> wipe -> import -> identical data. TWO REAL BUGS MY OWN TESTS CAUGHT: I called Case.exportRecord({patient, cases}) when it takes (cases, patient), and Search.query() returns an ARRAY not {results}; and the record shape had to BE case-kit's, because Case.create() keeps only its own fields and dropped my custom label.",
+      "files": [
+        "app-encrypted-case-log/index.html",
+        "app-encrypted-case-log/tests/self-tests.js"
       ],
       "advanced": [],
       "errors": [],
