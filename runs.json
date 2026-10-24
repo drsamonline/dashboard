@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0003",
-      "at": "2026-10-23T00:28:00Z",
-      "workflow": "retrofit",
-      "outcome": "logged",
-      "note": "retrofit=stop  reason=budget  next=SmartNotes,CLDR,TTB,Matneo (non-static; need their own build path)",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0004",
       "at": "2026-10-23T00:42:00Z",
       "workflow": "docs",
@@ -382,6 +373,17 @@
       "workflow": "sys-ci-verify",
       "outcome": "ok",
       "note": "sys-ci-verify (P2), part 1 of 3 — verify the EXE we ship. Added app-builder tools/verify_exe.py (pefile: valid PE, executable-not-DLL, size budget, opt-in REQUIRED/FORBIDDEN_IMPORTS + SIGNED_REQUIRED; prints machine/subsystem/size/imports) and wired it into build.yml's exe job before upload. Tested against a real PE (distlib w64.exe) + a non-PE: all 6 cases behave. NOT done: run-workflows-locally with nektos/act (needs Docker, absent in-sandbox -> owner-side); paths-filter to skip jobs (separate follow-up). PR app-builder#6.",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "49ab8dbff987",
+      "at": "2026-10-24T07:07:36Z",
+      "workflow": "sys-ci-verify",
+      "outcome": "ok",
+      "note": "sys-ci-verify (P2), paths-filter part — app-builder examples/build-apps.yml and README still taught the OLD hand-copied pattern (if: always() on release = it DELETED the published release before recreating it); rewrote both to the caller form (uses: .../build.yml@main) and added paths-ignore so a docs-only (root *.md/LICENSE) commit skips the pipeline. Verified: both valid YAML, jobs:[app]. PR app-builder#7. Remaining: nektos/act (needs Docker, owner-side); changed-file->run-log wiring (small follow-up).",
       "files": {},
       "advanced": [],
       "errors": [],
