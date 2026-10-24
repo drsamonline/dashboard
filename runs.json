@@ -2,17 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "95cf4b45f41f",
-      "at": "2026-10-24T07:47:13Z",
-      "workflow": "update-bmi-calculator",
-      "outcome": "ok",
-      "note": "update: bmi-calculator (P2), part 2 — weight-based and BSA-based dosing (rate x weight / rate x BSA, unit shown at every step), both in the Show-the-working panel, with a not-a-prescribing-decision caution. Self-tests extended (350 mg, 184.5 mg). Verified on the minified build; CrCl unchanged. PR bmi#3, merged. Remaining in the item: sourced risk scores.",
-      "files": {},
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "047b908ba38b",
       "at": "2026-10-24T07:52:23Z",
       "workflow": "update-bmi-calculator",
@@ -555,6 +544,22 @@
         "control-panel/tools/fetch.py",
         "control-panel/docs/index.html",
         "dashboard/index.html"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "6ba6581da881",
+      "at": "2026-10-23T23:30:00Z",
+      "workflow": "control-panel-gaps-routes",
+      "outcome": "ok",
+      "note": "control-panel-gaps-routes (owner: find missing suggestive elements; how does Forge embed in this; this should go for the final commercial project; tweak, optimize, update, recreate the workflow in different simulations and choose the best routes). BUILT tools/gaps.py + tools/simulate.py + the panel sections + the Forge/commercial framing. GAPS: 109 no-timeout, 51 no-concurrency (the exact race that broke the dashboard refresh), 31 no-permissions, 16 un-runnable, 8 orphans, 5 DRIFTED FAMILIES ('Build + deploy' x33 with a 393B spread - the file whose drift once deleted a release). SIMULATION: my first weights picked 'fully automatic' and the simulation caught that they did not price a guessed spec; a risk term fixed it (guided 14 beats no-input 60). EMBEDDING: Forge=private brain, panel=public map, dashboard=public vitals, one-way and checkable.",
+      "files": [
+        "control-panel/tools/gaps.py",
+        "control-panel/tools/simulate.py",
+        "control-panel/docs/index.html",
+        "control-panel/README.md"
       ],
       "advanced": [],
       "errors": [],
