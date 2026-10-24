@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0013",
-      "at": "2026-10-23T03:30:00Z",
-      "workflow": "retrofit",
-      "outcome": "open",
-      "note": "retrofit=item  repo=blinkcode-ai   pr=#4  status=open  kit=optical-kit  dup=LT-fountain-codec  tests=29/29",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0014",
       "at": "2026-10-23T03:30:00Z",
       "workflow": "retrofit",
@@ -403,6 +394,22 @@
       "outcome": "ok",
       "note": "lib-van-ui (P3) COMPLETE — verified the size claim by measurement: van (vanjs-org/van 1.6.1) is 3,250 B minified / 1,335 B gzipped, so the README's 'about 1 kB' is true only gzipped (3x the claim raw). Inlined the layer into ONE app: forge/templates/master-list/index.html, a single-file interactive master-list app (add/toggle/edit/delete/filter/persist) — 9,027 B total, layer 3,250 B (36%), app+shell 5,777 B — verified headlessly (14 jsdom assertions). DECISION: adopt our own ui-kit, not van — it measures within ~8% (3,517 vs 3,250 B minified), is reimplemented (standing rule), and is already tested (31 cases + TodoMVC); van verified as the fallback. Recorded in forge/docs/lib-van-ui-decision.md.",
       "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "dfc167cbb19c",
+      "at": "2026-10-24T08:46:00Z",
+      "workflow": "rule-rule-shape",
+      "outcome": "ok",
+      "note": "rule-rule-shape (P1) COMPLETE — defined what a rule IS. New: PROMPTS/rules.md (the shape: match/fix/scope/enabled/test, taken from nvbn/thefuck's SHAPE not its code), tools/rules.py (the shared helper: Context, Rule, @rule, scope guard, run, audit, selftest) and tools/forge_rules.py (the 8 rules expressed in the shape, each with a test that fires where it should and NOT where it should not). python3 tools/rules.py: all 8 rules complete, every rule's test passes; a mutated rule is caught by its own test. HANDOFF.md corrected — its P1 list was missing this item.",
+      "files": [
+        "PROMPTS/rules.md",
+        "tools/rules.py",
+        "tools/forge_rules.py",
+        "HANDOFF.md"
+      ],
       "advanced": [],
       "errors": [],
       "retries": 0
