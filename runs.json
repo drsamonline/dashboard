@@ -2,17 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "047b908ba38b",
-      "at": "2026-10-24T07:52:23Z",
-      "workflow": "update-bmi-calculator",
-      "outcome": "ok",
-      "note": "update: bmi-calculator (P2) COMPLETE — part 3: CHA2DS2-VASc risk score (non-valvular AF, Lip 2010), five flags + age/sex, every component in the Show-the-working panel, intended population + source stated. Self-tests extended; verified on the minified build (6/8). PR bmi#4, merged. The item's three parts (show-the-working + CrCl, dosing, risk score) are all on main.",
-      "files": {},
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "44c86793678c",
       "at": "2026-10-24T08:00:46Z",
       "workflow": "kit-ml-kit",
@@ -560,6 +549,21 @@
         "control-panel/tools/simulate.py",
         "control-panel/docs/index.html",
         "control-panel/README.md"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "6fc8849c0e9e",
+      "at": "2026-10-23T23:55:00Z",
+      "workflow": "control-panel-interactions",
+      "outcome": "ok",
+      "note": "control-panel-interactions (owner: what about those 8 reusable workflows, deduplication, and cross-action leading to failure). BUILT tools/interactions.py + tools/migrate.py. ORPHANS: verdicts, not labels - forge/pages.yml + forge/test.yml have public twins (a private reusable is unreachable from a public app) so they are duplicates to delete; app-builder/test.yml is public, callable, and uncalled. DEDUPE: 5 families with a canonical + a safe migration that only rewrites copies matching the caller shape. CROSS-ACTION: 3 races (forge has 11 writers), 3 permission gaps, 1 pile-up. THE REAL BUG: forge/new-app.yml granted contents:read while calling a pipeline that needs contents:write + pages:write + id-token:write, so a scaffolded app's first build would fail at run time - FIXED. AND MY OWN CHECKS WERE WRONG THREE TIMES, all corrected: drift measured in BYTES flagged 33 identical callers as drifted (it now compares STRUCTURE - the 2 odd copies carry a deliberate extra job); `gh release` is not a push, so the 6 'loops' were false (now 0); and a shared concurrency group with cancel-in-progress:false is deliberate serialisation, not a collision (3 -> 0). I also truncated tools/scan.py with a write-while-reading patch and had to restore it from the repo.",
+      "files": [
+        "control-panel/tools/interactions.py",
+        "control-panel/tools/migrate.py",
+        "forge/.github/workflows/new-app.yml"
       ],
       "advanced": [],
       "errors": [],
