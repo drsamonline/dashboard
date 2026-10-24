@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0023",
-      "at": "2026-10-23T06:25:00Z",
-      "workflow": "retrofit",
-      "outcome": "open",
-      "note": "retrofit=item  repo=mnemosyne-companion       pr=#1  status=open  kit=web-kit  dup=localStorage+theme           tests=8/8",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0024",
       "at": "2026-10-23T06:25:00Z",
       "workflow": "kit",
@@ -465,6 +456,22 @@
         ".github/workflows/kit-audit.yml",
         "registry/audit.json",
         "registry/deps.json"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "090aa1507306",
+      "at": "2026-10-24T12:40:00Z",
+      "workflow": "sys-backlog-status",
+      "outcome": "ok",
+      "note": "sys-backlog-status (self-fix) — the backlog now derives its OWN status from evidence. tools/backlog-status.py reads RUNS.jsonl + registry/backlog-done.json (seeded once, with the evidence written down) and rewrites BACKLOG.md's checkboxes + a generated status block; .github/workflows/backlog-status.yml runs it daily and on every RUNS.jsonl push, committing only when the status changes. Result: BACKLOG.md went from a false 0/42 to a true 30/42 (P0 4/4, P1 6/6, P2 14/16, P3 6/6, P4 0/8, P5 0/2). It never un-ticks a box, it REFUSES to write if a non-item line would be lost, and it reports any tick with no evidence. Two items stay open on purpose: retrofit (in progress) and submit: listings (blocked).",
+      "files": [
+        "tools/backlog-status.py",
+        "registry/backlog-done.json",
+        "BACKLOG.md",
+        ".github/workflows/backlog-status.yml"
       ],
       "advanced": [],
       "errors": [],
