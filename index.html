@@ -158,6 +158,7 @@ Example: A one-off bell that ends a meeting on time, over the room's Wi-Fi. It r
   <div class="charts">
     <div class="panel"><h2>Activity — pushes / day</h2><div id="activity"></div><p class="mut" id="activityNote" style="margin:6px 0 0"></p></div>
     <div class="panel"><h2>Growth — products over time</h2><div id="trend"></div><p class="mut" id="trendNote" style="margin:6px 0 0"></p></div>
+    <div class="panel"><h2>System health</h2><div id="specgap"></div><div id="runlog"></div></div>
     <div class="panel"><h2>Conformance</h2><div id="conf"></div><div class="legend" id="confLegend"></div></div>
     <div class="panel"><h2>Categories</h2><div id="cats"></div></div>
     <div class="panel"><h2>Actions budget</h2><div id="quota"></div></div>
@@ -374,6 +375,47 @@ fetch("data.json",{cache:"no-store"}).then(function(r){return r.json()}).then(fu
 
 // PWA
 if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}
+</script>
+<script>
+// System health - two metrics that were one-off answers in a session until they became
+// files: how many apps are DECIDED BUT UNSPECCED (an app can sit decided for months and
+// never be built because nobody wrote its spec), and the run record, which flags any run
+// that touched a file which LOST lines - the WORKLIST bug, caught when it happens.
+(function () {
+  function bar(label, value, note) {
+    return '<div class="barrow"><span>' + esc(label) + '</span><b>' + esc(String(value)) + '</b></div>'
+         + (note ? '<p class="mut" style="margin:2px 0 8px">' + esc(note) + '</p>' : '');
+  }
+  fetch("SPEC-GAP.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) {
+    var el = document.getElementById("specgap"); if (!el) return;
+    el.innerHTML = bar("Decided but unspecced", d.unspecced + " of " + d.total,
+      d.unspecced_pct + "% of the master list has no spec. An app can sit decided for months and never be built because nobody wrote its spec.");
+  }).catch(function () {
+    var el = document.getElementById("specgap");
+    if (el) el.innerHTML = '<p class="mut">SPEC-GAP.json not published yet.</p>';
+  });
+  fetch("runs.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) {
+    var el = document.getElementById("runlog"); if (!el) return;
+    var h = bar("Runs on record", d.count, "The last " + d.count + " runs, newest last.");
+    if (d.lost_lines && d.lost_lines.length) {
+      h += '<p class="mut"><b>' + d.lost_lines.length + ' run(s) touched a file that LOST lines:</b> '
+         + esc(d.lost_lines.join(", ")) + '</p>';
+    }
+    var last = (d.runs || []).slice(-5).reverse();
+    if (last.length) {
+      h += '<table><thead><tr><th>When</th><th>Workflow</th><th>Outcome</th><th>Note</th></tr></thead><tbody>'
+         + last.map(function (r) {
+             return '<tr><td>' + esc((r.at || "").slice(0, 16).replace("T", " ")) + '</td><td>'
+                  + esc(r.workflow || "") + '</td><td>' + esc(r.outcome || "") + '</td><td>'
+                  + esc((r.note || "").slice(0, 70)) + '</td></tr>';
+           }).join("") + '</tbody></table>';
+    }
+    el.innerHTML = h;
+  }).catch(function () {
+    var el = document.getElementById("runlog");
+    if (el) el.innerHTML = '<p class="mut">runs.json not published yet.</p>';
+  });
+})();
 </script>
 </body>
 </html>
