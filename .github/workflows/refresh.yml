@@ -28,7 +28,9 @@ permissions:
 
 concurrency:
   group: refresh-dashboard
-  cancel-in-progress: true
+  # false: a refresh takes ~80s and was being cancelled by its own next trigger,
+  # on top of losing the push race. It should finish.
+  cancel-in-progress: false
 
 jobs:
   refresh:
@@ -58,4 +60,24 @@ jobs:
           if git diff --staged --quiet; then echo "nothing staged"; exit 0; fi
           echo "staged $added tracked path(s)"
           git commit -m "chore: refresh dashboard data [skip ci]"
-          git push
+          # ANOTHER WORKFLOW COMMITS TO THIS BRANCH TOO, and it is fast. The health
+          # workflow writes SPEC-GAP.json and runs.json every few minutes, so a plain
+          # `git push` here always lost the race and failed with "failed to push some
+          # refs" - which is why the dashboard's data.json sat at 11:00 while the
+          # refresh reported nothing wrong. Rebase onto whatever landed, then retry.
+          BR="${GITHUB_REF_NAME:-main}"
+          for attempt in 1 2 3 4; do
+            git fetch origin "$BR" --quiet
+            if ! git rebase "origin/$BR" --quiet; then
+              echo "::warning::rebase onto origin/$BR failed on attempt $attempt"
+              git rebase --abort || true
+              sleep 4; continue
+            fi
+            if git push --quiet origin "HEAD:$BR"; then
+              echo "pushed on attempt $attempt"; exit 0
+            fi
+            echo "::warning::push rejected on attempt $attempt - the branch moved again"
+            sleep 4
+          done
+          echo "::error::could not push after 4 attempts - another workflow keeps moving the branch"
+          exit 1
