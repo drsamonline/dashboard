@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0029",
-      "at": "2026-10-23T07:42:00Z",
-      "workflow": "build",
-      "outcome": "done",
-      "note": "build=item   item=kit-export-kit  status=done  repo=export-kit  note=save text/JSON/CSV/blob + store-only ZIP writer; MIT; zero-dependency; 22 node tests + unzip -t pass; live  registry=deps.json+prop",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0030",
       "at": "2026-10-23T07:42:00Z",
       "workflow": "retrofit",
@@ -502,6 +493,21 @@
       "files": [
         "dashboard/index.html",
         "app-builder/drsoam.py"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "5d6ece049da7",
+      "at": "2026-10-24T15:00:00Z",
+      "workflow": "sys-adopt-new-repos",
+      "outcome": "ok",
+      "note": "sys-adopt-new-repos (owner: 'THE WHOLE WORKFLOW SHOULD AUTO ADD AND APPLY TO ANY NEW REPO THAT IS PUSHED WITHOUT WORKFLOW'). tools/adopt.py + .github/workflows/adopt.yml (daily): lists the repos, finds the ones MISSING a standard workflow that APPLIES, and adds it. A page gets pages.yml; a repo with a test gets test.yml. TWO SAFETY RULES: it NEVER overwrites an existing file (even if it differs from the template, so a customised workflow is kept), and a repo with NO workflows is committed to directly while a repo that already has some gets a PR instead. Nothing it adds needs a per-repo secret - the backup is deliberately NOT included, because it runs centrally from dumps precisely so no token is copied into every repo. 11 self-tests on the decisions; runs them in CI before applying.",
+      "files": [
+        "tools/adopt.py",
+        ".github/workflows/adopt.yml",
+        "registry/backlog-done.json"
       ],
       "advanced": [],
       "errors": [],
