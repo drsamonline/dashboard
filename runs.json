@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0000",
-      "at": "2026-10-23T00:28:00Z",
-      "workflow": "retrofit",
-      "outcome": "open",
-      "note": "retrofit=item  repo=kent-repertory-explorer     pr=#1  status=open  gap=build-workflow+web-kit+landing",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0001",
       "at": "2026-10-23T00:28:00Z",
       "workflow": "retrofit",
@@ -377,6 +368,17 @@
           "lines": 79
         }
       },
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "643230dedd8b",
+      "at": "2026-10-24T06:06:25Z",
+      "workflow": "commercial",
+      "outcome": "ok",
+      "note": "update: commercial (P2) — reviewed the MIT coreyhaines31/marketingskills pack (~60 skills); adopted 3 that fit (product-copywriting, directory-submissions, free-tool-marketing) into a new marketing category in the skills repo (catalog 52->55, 8->9 categories), rewritten to our rules, passing scripts/validate.py; rejected the rest (ads, cold outbound, influencer/PR/events, third-party analytics, programmatic SEO, email/SMS) with reasons written into knowledge/docs/forge_commercial_plan.md §11. PRs: skills#1, knowledge#1.",
+      "files": {},
       "advanced": [],
       "errors": [],
       "retries": 0
