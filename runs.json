@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0004",
-      "at": "2026-10-23T00:42:00Z",
-      "workflow": "docs",
-      "outcome": "done",
-      "note": "docs=refresh  scope=dashboard+readmes+skills  dashboard=data.json(repos=42)  readmes=missing:0  skills=proposed:7  status=done",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0005",
       "at": "2026-10-23T00:55:00Z",
       "workflow": "docs",
@@ -384,6 +375,17 @@
       "workflow": "sys-ci-verify",
       "outcome": "ok",
       "note": "sys-ci-verify (P2), paths-filter part — app-builder examples/build-apps.yml and README still taught the OLD hand-copied pattern (if: always() on release = it DELETED the published release before recreating it); rewrote both to the caller form (uses: .../build.yml@main) and added paths-ignore so a docs-only (root *.md/LICENSE) commit skips the pipeline. Verified: both valid YAML, jobs:[app]. PR app-builder#7. Remaining: nektos/act (needs Docker, owner-side); changed-file->run-log wiring (small follow-up).",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "001c2a594db2",
+      "at": "2026-10-24T07:21:08Z",
+      "workflow": "update-bmi-calculator",
+      "outcome": "ok",
+      "note": "update: bmi-calculator (P2), part 1 — 'Show the working' panel (every result shows its formula + substituted values; retrofitted onto the existing calculators) + creatinine clearance (Cockcroft-Gault) with a serum-creatinine input, formula/units/limits. Extended the app's own known-value self-tests (CrCl 97.2 M / 82.6 F mL/min + a units-consistency check) and added a headless jsdom runner + test.yml. Edited src/, re-minified to index.html + docs/play/index.html; verified headlessly on the MINIFIED build. PR bmi#2. Deferred: weight/BSA dosing + risk scores (risk scores need their own inputs).",
       "files": {},
       "advanced": [],
       "errors": [],
