@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0015",
-      "at": "2026-10-23T03:30:00Z",
-      "workflow": "kit",
-      "outcome": "logged",
-      "note": "kit=propose     id=frame-kit  issue=registry#1  repos=helioprism,blinkcode-ai,BLINKTRANSFER  note=frame+collector+byte-utils gap (no kit)",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0016",
       "at": "2026-10-23T03:30:00Z",
       "workflow": "retrofit",
@@ -419,6 +410,21 @@
       "advanced": [],
       "errors": [],
       "retries": 1
+    },
+    {
+      "id": "d797ca9276d3",
+      "at": "2026-10-24T09:20:00Z",
+      "workflow": "retrofit",
+      "outcome": "ok",
+      "note": "retrofit (P2) part 2 — retrofitted conqueror-os onto the ALREADY-INLINED export-kit (PR #8, merged): the storage meter no longer allocates a Blob just to read .size, and the canvas progress-card save reuses the app's delegating helper instead of a second anchor dance. ZERO byte cost (pure win). Tests 24 -> 27; 2 of the 3 new assertions FAIL on the un-retrofitted source. Registry updated.",
+      "files": [
+        "conqueror-os/src/index.html",
+        "conqueror-os/tests/smoke.test.js",
+        "registry/deps.json"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
     }
   ],
   "lost_lines": []
