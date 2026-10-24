@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0025",
-      "at": "2026-10-23T06:25:00Z",
-      "workflow": "retrofit",
-      "outcome": "logged",
-      "note": "retrofit=stop    reason=batch-complete(3)  next=web-kit retrofit batch 2 (companion apps: the-symphony-companion,read-live-transform-app,whispering-body-first-aid); export-kit adoption after owner go-",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0026",
       "at": "2026-10-23T06:55:00Z",
       "workflow": "build",
@@ -477,6 +468,22 @@
       "files": [
         "app-builder/tools/leaderboard.py",
         "registry/false-completions.md"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "7bb8bb68c117",
+      "at": "2026-10-24T13:20:00Z",
+      "workflow": "repo-learning",
+      "outcome": "ok",
+      "note": "repo-learning (self-fix) — the system now records WHAT IT LEARNED, not just what ran. tools/repo-learning.py reads RUNS.jsonl + registry/false-completions.md + registry/audit.json and writes LESSONS.md + registry/lessons.json; .github/workflows/repo-learning.yml runs it weekly. Three derivations, all from evidence: (1) WHICH DETECTORS CATCH MISTAKES - of 6 recorded false completions, the commit list caught 2, and read-back / a test / the automated audit / the owner caught 1 each; (2) THE RETROFIT QUEUE, derived not guessed: web-kit hand-rolled in 4 repos (bmi, conqueror-os, idle-city, neon-runner), export-kit in 2 (neon-runner, smartbill), crypto-kit 1, srs-kit 1; (3) THE RUN PROFILE - 65 runs, 1 retry, and build/docs/retrofit/update-bmi-calculator each run 3+ times, i.e. work that should be a workflow.",
+      "files": [
+        "tools/repo-learning.py",
+        ".github/workflows/repo-learning.yml",
+        "LESSONS.md",
+        "registry/lessons.json"
       ],
       "advanced": [],
       "errors": [],
