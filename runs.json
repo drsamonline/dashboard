@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0002",
-      "at": "2026-10-23T00:28:00Z",
-      "workflow": "retrofit",
-      "outcome": "open",
-      "note": "retrofit=item  repo=offline-pdf-toolkit         pr=#1  status=open  gap=build-workflow+web-kit+landing",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0003",
       "at": "2026-10-23T00:28:00Z",
       "workflow": "retrofit",
@@ -380,6 +371,17 @@
       "workflow": "idea-offline-demo",
       "outcome": "ok",
       "note": "idea-offline-demo (P2) — added a 'pull the plug' overlay to the hub (fetch/XHR fail on toggle, visible 'network: OFF · demo' indicator, off by default). Also fixed the P2 review finding on the merged recency strip: a page-less repo linked to the site/<name>/ fallback (404) — fixed at source (build_hub.py emits a landing only when it exists; JSON-LD falls back to source; sitemap drops page-less entries) and at runtime (each project gets a valid dest = page else source). Verified: build_hub 65/71, export-kit landing empty, 64/65 with a landing; jsdom 0 empty/404 card links + demo toggle works. PR drsamonline.github.io#3 (PR#2 was merged by the owner).",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "36f3f131f599",
+      "at": "2026-10-24T06:51:22Z",
+      "workflow": "sys-ci-verify",
+      "outcome": "ok",
+      "note": "sys-ci-verify (P2), part 1 of 3 — verify the EXE we ship. Added app-builder tools/verify_exe.py (pefile: valid PE, executable-not-DLL, size budget, opt-in REQUIRED/FORBIDDEN_IMPORTS + SIGNED_REQUIRED; prints machine/subsystem/size/imports) and wired it into build.yml's exe job before upload. Tested against a real PE (distlib w64.exe) + a non-PE: all 6 cases behave. NOT done: run-workflows-locally with nektos/act (needs Docker, absent in-sandbox -> owner-side); paths-filter to skip jobs (separate follow-up). PR app-builder#6.",
       "files": {},
       "advanced": [],
       "errors": [],
