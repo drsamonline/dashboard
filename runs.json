@@ -2,6 +2,28 @@
   "count": 40,
   "runs": [
     {
+      "id": "73c17ecd9013",
+      "at": "2026-10-24T08:06:41Z",
+      "workflow": "kit-game-kit-v2",
+      "outcome": "ok",
+      "note": "kit-game-kit-v2 (P3) part 1 — game-kit v2: ECS (entities = id + component bag; systems run in registration order; headless sim), seeded RNG (mulberry32), a state machine with ALLOWED transitions, collision (circle, circle-vs-box), and a minimal 2-D physics step (separate + restitution + friction). Every addition reimplemented, not copied. version 0.1.0->0.2.0. Tests 14->38 (RNG reproducibility, ECS update order, machine refused transition, collision per primitive, physics resolution). PR game-kit#1, merged. Remaining: the larger P2/P3 items (scene graph, sprite batching, tilemap/procgen, typing/puzzle engines, opt-in voxel layer).",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "2d47dbe412b6",
+      "at": "2026-10-24T08:12:49Z",
+      "workflow": "kit-art-kit",
+      "outcome": "ok",
+      "note": "kit-art-kit (P3) COMPLETE — created drsamonline/art-kit: indexed palette (Lospec-style, swap/cycle/nearest), pixel canvas with NEAREST-NEIGHBOUR scaling, draw ops (pixel/line/rect/ellipse/flood fill/mirror), a bounded DELTA undo stack, dithering (ordered Bayer + Floyd-Steinberg), median-cut quantisation, sprite-sheet + JSON atlas with a slice round-trip, the cartesian<->isometric mapping, and a sketch loop (the live half). 31 tests incl. the four the spec requires (nearest-neighbour scaling, dithering pattern, median-cut known input, sprite-sheet round-trip); CI runs them; topics set. Skill added to the catalogue (56->57, game-engine; skills#3 merged). All additions reimplemented from published technique; the licence position is stated in the README.",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
       "id": "b2268ca7b322",
       "at": "2026-10-24T08:18:08Z",
       "workflow": "kit-audio-kit",
@@ -545,38 +567,6 @@
       "files": [
         "control-panel/tools/sweep.py",
         "control-panel/docs/index.html"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
-      "id": "980af20d32e1",
-      "at": "2026-10-24T01:30:00Z",
-      "workflow": "queue-ideas-autobuild-killswitch",
-      "outcome": "ok",
-      "note": "queue-ideas-autobuild-killswitch (owner: there is ALREADY an app list queued on the dashboard - add app ideas to THAT queue, 133 are already queued; do not create new files when files already exist; add a scheduled workflow that checks every repo and applies what is missing; add a backlog of app ideas so they build automatically; a killswitch that stops a project midway and reverses it; and make the queued ideas build automatically if it is not already doing that). USED THE EXISTING FILES THROUGHOUT. The machinery already existed: forge/APP_MASTER_LIST.md (133 rows), forge/QUEUE/ (43 spec files), registry/plan.json + dashboard/plan.json (the machine-readable copy the console reads), new-app.yml, and scripts/new-app.py. ADDED 20 IDEAS to the EXISTING master list (133 -> 153, header count updated) and mirrored them into BOTH plan.json files: the three the QUEUE already held but the list never carried (Endpoints, Pull the Plug, Story Engine) plus 17 new ones in the categories the list already uses, every one offline, single-file and buildable from the kits that exist. THE AUTO-BUILD WAS MISSING and is now wired: new-app.yml said \"workflow_dispatch only, so it never runs by itself\" - it now also runs on a weekday schedule and picks the first idea that HAS A SPEC and no repo, reading the QUEUE files that already exist (no new list). Rule 0 from scripts/new-app.py still holds: an app comes from the list, by name, with a spec - so an idea without one is SKIPPED, never guessed. THE KILLSWITCH is a new job in the EXISTING self-heal.yml: a repo, a mode, and a TYPED confirmation for the destructive modes. STOP cancels every in-progress run; REVERSE either deletes a repo the pipeline scaffolded, or - for revert - does NOT rewrite a live branch from CI, because that is not a killswitch but a second accident; it opens an issue naming the base commit and leaves the decision where it belongs.",
-      "files": [
-        "forge/APP_MASTER_LIST.md",
-        "forge/.github/workflows/new-app.yml",
-        "forge/.github/workflows/self-heal.yml",
-        "registry/plan.json",
-        "dashboard/plan.json"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
-      "id": "a4c46bbdffe4",
-      "at": "2026-10-24T02:15:00Z",
-      "workflow": "delivery-sweep",
-      "outcome": "ok",
-      "note": "delivery-sweep (owner: the dashboard's idea box adds ideas to the app master list - use it properly and plan the workflow accordingly; the list is APP IDEAS ONLY; for workflow updates the remaining work is phase 3, apply it first). PHASE 3 APPLIED: tools/app-deliver.py generated what was missing but never CHECKED - 'delivered' is SEVEN things (landing page, live demo, pipeline caller, Pages enabled, README badges, screenshot, release) and any one missing is a repo that looks finished and is not. It now reports all seven for every repo into registry/delivery.json, applies only what is absent, and DISPATCHES the pipeline where a release or a screenshot is missing - one dispatch closes three of the seven, because the pipeline builds three platforms, publishes the release, deploys the demo and captures the screenshot. The state goes in the job summary, worst first. THE IDEA BOX: the dashboard box opens a prefilled issue and promises 'intake derives the name, kits and priority itself' - and intake wrote a QUEUE spec but never touched APP_MASTER_LIST.md, so the console could not see the idea and the auto-build could not pick it up. intake.py now appends to the master list too, numbered and counted, refusing duplicates. The list stays APP IDEAS ONLY - a workflow update still goes to QUEUE.",
-      "files": [
-        "forge/tools/app-deliver.py",
-        "forge/.github/workflows/app-deliver.yml",
-        "forge/scripts/intake.py"
       ],
       "advanced": [],
       "errors": [],
