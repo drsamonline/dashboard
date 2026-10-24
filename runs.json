@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0024",
-      "at": "2026-10-23T06:25:00Z",
-      "workflow": "kit",
-      "outcome": "logged",
-      "note": "kit=propose     id=export-kit  issue=registry#2  repos=skin-case-tracker,conqueror-os,bmi-bmr-tdee-macros-fluid-calculator,read-live-transform-app  note=generic file save (text/JSON/CSV/blob)+ZIP gap ",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0025",
       "at": "2026-10-23T06:25:00Z",
       "workflow": "retrofit",
@@ -472,6 +463,20 @@
         "registry/backlog-done.json",
         "BACKLOG.md",
         ".github/workflows/backlog-status.yml"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "b65fa29abb31",
+      "at": "2026-10-24T13:00:00Z",
+      "workflow": "fix-leaderboard",
+      "outcome": "ok",
+      "note": "fix-leaderboard (owner-reported) — the console's leaderboard had NEVER rendered. leaderboard.py did (r.get('license') or '').lower(), but the GitHub API returns `license` as an OBJECT ({'key','spdx_id','name'}), so every run raised AttributeError: 'dict' object has no attribute 'lower' and data.json stored it as leaderboard.error - which is exactly what the panel displayed. The self-test PASSED throughout because it used the STRING shape ('mit'): it tested a shape that never arrives. Fix: licence() accepts both shapes, and the self-test now asserts a dict licence scores IDENTICALLY to a string one (so the tested shape and the real shape cannot drift again). drsoam.py already handled the object; only this file did not. PR app-builder#8 merged; the dashboard refresh re-triggered. Recorded in the false-completion register: shipped as done, never worked, and the test could not have caught it.",
+      "files": [
+        "app-builder/tools/leaderboard.py",
+        "registry/false-completions.md"
       ],
       "advanced": [],
       "errors": [],
