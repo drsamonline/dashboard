@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0006",
-      "at": "2026-10-23T00:48:00Z",
-      "workflow": "build",
-      "outcome": "done",
-      "note": "build=item   item=kit-game-kit  status=done  note=already-live(repo+deps.json);queue-reconciled  pr=none",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0007",
       "at": "2026-10-23T00:48:00Z",
       "workflow": "build",
@@ -388,6 +379,17 @@
       "workflow": "update-bmi-calculator",
       "outcome": "ok",
       "note": "update: bmi-calculator (P2), part 2 — weight-based and BSA-based dosing (rate x weight / rate x BSA, unit shown at every step), both in the Show-the-working panel, with a not-a-prescribing-decision caution. Self-tests extended (350 mg, 184.5 mg). Verified on the minified build; CrCl unchanged. PR bmi#3, merged. Remaining in the item: sourced risk scores.",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "047b908ba38b",
+      "at": "2026-10-24T07:52:23Z",
+      "workflow": "update-bmi-calculator",
+      "outcome": "ok",
+      "note": "update: bmi-calculator (P2) COMPLETE — part 3: CHA2DS2-VASc risk score (non-valvular AF, Lip 2010), five flags + age/sex, every component in the Show-the-working panel, intended population + source stated. Self-tests extended; verified on the minified build (6/8). PR bmi#4, merged. The item's three parts (show-the-working + CrCl, dosing, risk score) are all on main.",
       "files": {},
       "advanced": [],
       "errors": [],
