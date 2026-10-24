@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0026",
-      "at": "2026-10-23T06:55:00Z",
-      "workflow": "build",
-      "outcome": "done",
-      "note": "build=item   item=app-canteen-lan   status=done  repo=canteen-lan  note=engine+app+host+78tests-pass  deps=web-kit(live),lan-kit(live)  pages=on  registry=repos.json+deps.json  pr=none",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0027",
       "at": "2026-10-23T06:55:00Z",
       "workflow": "build",
@@ -484,6 +475,22 @@
         ".github/workflows/repo-learning.yml",
         "LESSONS.md",
         "registry/lessons.json"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "4",
+      "at": "2026-10-24T13:40:00Z",
+      "workflow": "code-compression",
+      "outcome": "ok",
+      "note": "code-compression (self-fix) — every app here is ONE FILE a visitor downloads whole, and nothing watched the shipped bytes. tools/code-compression.py measures raw + gzip per page, flags anything over a 250 KB budget, and carries the other half of compression: the capabilities duplicated across repos (from the audit) are duplicated SOURCE. .github/workflows/code-compression.yml runs it weekly (no secret). First report: 10 pages, 1318 KB raw / 393 KB gzip; ONE over budget - mnemosyne-companion at 415 KB raw (gzip 128 KB), ~2x the next largest; transport already saves ~70% everywhere.",
+      "files": [
+        "tools/code-compression.py",
+        ".github/workflows/code-compression.yml",
+        "SIZE.md",
+        "registry/size.json"
       ],
       "advanced": [],
       "errors": [],
