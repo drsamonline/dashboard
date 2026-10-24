@@ -1,5 +1,5 @@
 {
-  "count": 39,
+  "count": 40,
   "runs": [
     {
       "id": "backfill-0000",
@@ -362,6 +362,21 @@
       "outcome": "ok",
       "note": "update: hub (P2) — added a recently-updated strip + a cross-link bar to drsamonline.github.io and made the count a DEFINITION (build_hub.py classify(): public, source, non-empty, not self). Verified locally: build_hub.py counted 65/71; jsdom render pass (6 recent cards, 65 grid cards). Opened PR drsamonline.github.io#2; no live change until merged.",
       "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "03bb4165c73a",
+      "at": "2026-10-24T05:40:33Z",
+      "workflow": "case-kit",
+      "outcome": "ok",
+      "note": "update: case-kit (P2) — added a plain-JSON patient-record interchange format (Case.exportRecord/importRecord, format case-kit/record, versioned; patient = opaque id + short label, never a name). Tests 13->26 (round-trip + version-compat + foreign-record refused); new tests bite (fail on the old kit; disabling the version guard fails the version test). Opened PR case-kit#1; added the Encrypted Case Log spec note to use it (encrypted archive, not plaintext).",
+      "files": {
+        "QUEUE/app-encrypted-case-log.md": {
+          "lines": 79
+        }
+      },
       "advanced": [],
       "errors": [],
       "retries": 0
