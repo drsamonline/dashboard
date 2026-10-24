@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0022",
-      "at": "2026-10-23T06:25:00Z",
-      "workflow": "retrofit",
-      "outcome": "open",
-      "note": "retrofit=item  repo=skin-case-tracker          pr=#1  status=open  kit=web-kit  dup=csv-export(x3)+csv-download  tests=21/21->23/23",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0023",
       "at": "2026-10-23T06:25:00Z",
       "workflow": "retrofit",
@@ -458,6 +449,22 @@
       "files": [
         "dashboard/index.html",
         "dashboard/tests/structure.test.js"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "5c6b055aa690",
+      "at": "2026-10-24T12:15:00Z",
+      "workflow": "kit-audit",
+      "outcome": "ok",
+      "note": "kit-audit (P2 retrofit) — the audit, AS A WORKFLOW so it repeats by itself. tools/kit-audit.py scans every repo's built page for code duplicating a kit and writes registry/audit.json; .github/workflows/kit-audit.yml runs it weekly and commits the findings. It needs NO secret (the built-in GITHUB_TOKEN reads this repo + all public ones). Findings on 10 repos: 1 FACT (kent-repertory-explorer vendors web-kit and never uses it) and 6 SIGNALS (bmi + conqueror-os + idle-city: raw storage; conqueror-os: private crypto; mnemosyne: a private SM-2 scheduler; neon-runner + smartbill: private save/zip paths). IT ALSO CORRECTED A FALSE FINDING OF MINE: the earlier '3 repos with a dead vendored web-kit' counted `WebKit.` when web-kit's global is `Loom` - only 1 is dead. Recorded in the false-completion register.",
+      "files": [
+        "tools/kit-audit.py",
+        ".github/workflows/kit-audit.yml",
+        "registry/audit.json",
+        "registry/deps.json"
       ],
       "advanced": [],
       "errors": [],
