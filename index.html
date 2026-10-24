@@ -46,8 +46,10 @@ h1{font-size:clamp(1.15rem,2vw,1.5rem);margin:12px 0 2px;letter-spacing:-.01em}
 .kpi .k{font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);font-weight:700}
 .kpi .v{font-size:22px;font-weight:800;margin-top:2px;line-height:1.05;font-variant-numeric:tabular-nums}
 @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-.charts{display:grid;gap:9px;grid-template-columns:repeat(auto-fit,minmax(284px,1fr))}
+.charts{display:grid;gap:9px;grid-template-columns:repeat(auto-fit,minmax(284px,1fr));align-items:start}
 .panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:11px;box-shadow:var(--sh);animation:rise .5s ease both}
+.panel.capped{max-height:272px;overflow:auto}
+.panel.capped::-webkit-scrollbar{width:8px}
 .panel h2{margin:0 0 7px;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--head);font-weight:700}
 .chart{width:100%;height:auto;display:block;overflow:visible}
 .anim-line{stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 1.2s ease forwards}
@@ -129,7 +131,7 @@ footer{max-width:1320px;margin:0 auto;padding:14px 12px 30px;color:var(--mut);fo
     <div class="panel"><h2>Activity — pushes / day</h2><div id="activity"></div><p class="mut" id="activityNote" style="margin:6px 0 0"></p></div>
     <div class="panel"><h2>Growth — products over time</h2><div id="trend"></div><p class="mut" id="trendNote" style="margin:6px 0 0"></p></div>
     <div class="panel"><h2>Leaderboard</h2><p class="mut" style="margin:0 0 8px">Two axes, because one is not enough: <b>quality</b> is the heuristic score, <b>activity</b> is how much changed recently. A big quiet repo and a small thriving one are not comparable on either alone.</p><div id="lb"></div><p class="mut" id="lbNote" style="margin:6px 0 0"></p></div>
-    <div class="panel"><h2>System health</h2><div id="specgap"></div><div id="runlog"></div></div>
+    <div class="panel capped"><h2>System health</h2><div id="specgap"></div><div id="runlog"></div></div>
     <div class="panel"><h2>Conformance</h2><div id="conf"></div><div class="legend" id="confLegend"></div></div>
     <div class="panel"><h2>Categories</h2><div id="cats"></div></div>
     <div class="panel"><h2>Actions budget</h2><div id="quota"></div></div>
@@ -409,7 +411,7 @@ if("serviceWorker" in navigator){window.addEventListener("load",function(){navig
       h += '<p class="mut"><b>' + d.lost_lines.length + ' run(s) touched a file that LOST lines:</b> '
          + esc(d.lost_lines.join(", ")) + '</p>';
     }
-    var last = (d.runs || []).slice(-5).reverse();
+    var last = (d.runs || []).slice(-3).reverse();   // a glance, not a wall
     if (last.length) {
       h += '<table><thead><tr><th>When</th><th>Workflow</th><th>Outcome</th><th>Note</th></tr></thead><tbody>'
          + last.map(function (r) {

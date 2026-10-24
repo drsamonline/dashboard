@@ -46,6 +46,13 @@ listIds.forEach((id) => {
  "activity","trend","lb","specgap","runlog","conf","cats","quota","automation","roadmap",
  "feed","paused","repos","q","cat"].forEach((id) => ok("hook #" + id + " still exists", !!doc.getElementById(id)));
 
+// 3b. a long panel must not stretch the row it shares (the Visuals grid bug:
+//     no align-items meant the tallest panel - System health - set the height of
+//     every panel beside it).
+const css = html.match(/<style>([\s\S]*?)<\/style>/)[1];
+ok("the charts grid does NOT stretch its panels (align-items:start)", /\.charts\{[^}]*align-items:\s*start/.test(css));
+ok("the System health panel is capped so it cannot own the row", /\.panel\.capped\{[^}]*max-height/.test(css) && /class="panel capped"/.test(html));
+
 // 4. the summary is what you click to collapse
 ok("every <details> has a <summary>", [...doc.querySelectorAll("details")].every((d) => d.querySelector("summary")));
 
