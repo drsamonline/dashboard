@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0032",
-      "at": "2026-10-23T07:42:00Z",
-      "workflow": "docs",
-      "outcome": "done",
-      "note": "docs=refresh  scope=dashboard+store+plan  dashboard=data.json(60,avg4.9)  store=products.json(47,new=canteen-lan,chalk-lan)  posts=24  plan=updated  status=done",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0033",
       "at": "2026-10-23T07:42:00Z",
       "workflow": "docs",
@@ -519,6 +510,22 @@
         "tools/self-update.py",
         ".github/workflows/self-update.yml",
         "registry/updates.json"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "6be3b97c049c",
+      "at": "2026-10-24T16:20:00Z",
+      "workflow": "matneo-selling-only",
+      "outcome": "ok",
+      "note": "matneo-selling-only (owner: 'make Matneo selling-only with its own product blog and a free-product button routing to the hub'). THE BUG: store() hard-coded type=open-source, price=Free for EVERY repo, so the shop was selling NOTHING while listing 46 free apps as a catalogue; posts() emitted one post per repo - 24 free-app announcements, not a product blog. Per the commercial plan you sell FORGE and 'the apps remain your free, open brand'. NOW: the catalogue is the licence (Personal / Commercial / Reseller - tier names from the plan, NO invented prices, the numbers are in TERMS.md); the blog posts only about what is for sale, so Matneo carries NO free-repo posts; the nav, the hero and /free/ all route to the hub, which is the only place the free collection is listed (two lists can disagree, one cannot).",
+      "files": [
+        "app-builder/drsoam.py",
+        "Matneo/docs/index.html",
+        "Matneo/docs/products/index.html",
+        "Matneo/docs/free/index.html"
       ],
       "advanced": [],
       "errors": [],
