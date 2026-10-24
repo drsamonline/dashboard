@@ -2,27 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "ccad6ab63149",
-      "at": "2026-10-24T04:15:07Z",
-      "workflow": "sys-run-log",
-      "outcome": "ok",
-      "note": "RUNS.jsonl created; backfilled from PROGRESS.log",
-      "files": {
-        "BACKLOG.md": {
-          "lines": null
-        },
-        "WORKLIST.md": {
-          "lines": null
-        },
-        "RUNS.jsonl": {
-          "lines": 37
-        }
-      },
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "ad5cd0b384e3",
       "at": "2026-10-24T05:33:22Z",
       "workflow": "hub",
@@ -542,6 +521,19 @@
       "note": "hub-eight-flagships (owner: 'let it show 8 flagship best projects that are completed; currently it shows 5'). WHY IT SHOWED FIVE: FEATURED listed four keys and the renderer ALSO appends any project with feat:true that is not already in FEATURED - which added neon-runner, so five. FEATURED now names EIGHT: the original four, neon-runner explicitly, plus a clinical calculator (bmi-bmr-tdee-macros-fluid-calculator), a synthesised ambient-sound mixer (ambient-sound-studio) and AES-256-GCM file protection (lockhtml) - all three completed and with a live demo, and each adding a flavour the section did not have. The line under the heading now names all eight. Note the renderer's concat is idempotent: a key in FEATURED is never appended twice.",
       "files": [
         "drsamonline.github.io/index.html"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "2ab20e00325c",
+      "at": "2026-10-24T18:30:00Z",
+      "workflow": "hub-exclude-tooling",
+      "outcome": "ok",
+      "note": "hub-exclude-tooling (owner: 'sure'). The hub's EXCLUDE covered only the profile and the site, so the console, app-builder, the backup store, the skills catalogue and the profile kit appeared as PROJECTS on a showcase - visible in the recently-updated strip. All five are now excluded: they are how the products are made, not products. The kits are deliberately NOT excluded - they are a real part of the range the hub shows. Refresh dispatched.",
+      "files": [
+        "drsamonline.github.io/tools/build_hub.py"
       ],
       "advanced": [],
       "errors": [],
