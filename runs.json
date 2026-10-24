@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0031",
-      "at": "2026-10-23T07:42:00Z",
-      "workflow": "retrofit",
-      "outcome": "logged",
-      "note": "retrofit=stop  reason=batch-complete(1)  next=the-symphony-companion,whispering-body-first-aid,export-kit adoption (skin-case-tracker,conqueror-os,bmi-bmr-tdee-macros-fluid-calculator,read-live-transf",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0032",
       "at": "2026-10-23T07:42:00Z",
       "workflow": "docs",
@@ -513,6 +504,21 @@
       "files": [
         "tools/self-diagnose.py",
         ".github/workflows/self-diagnose.yml"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "6adcc3c13a66",
+      "at": "2026-10-24T15:50:00Z",
+      "workflow": "sys-self-update",
+      "outcome": "ok",
+      "note": "sys-self-update (self-fix, #26 complete). tools/self-update.py + .github/workflows/self-update.yml (weekly). The workflows pin their actions and NOTHING watched the pins - the cost was in every run's log: 'Node.js 20 is deprecated... actions/checkout@v4', a warning on every job in every repo. The tool reads every pin, asks the latest major, and reports. REAL FINDINGS on the first run: actions/checkout@v4 -> v7.0.1 and actions/setup-python@v5 -> v7.1.0, so the whole system is two majors behind. It REPORTS and does not bump: a major bump can be breaking, so a human sees the diff. 8 self-tests. #26 IS NOW COMPLETE: self-heal (existed), self-diagnose (built), self-update (built).",
+      "files": [
+        "tools/self-update.py",
+        ".github/workflows/self-update.yml",
+        "registry/updates.json"
       ],
       "advanced": [],
       "errors": [],
