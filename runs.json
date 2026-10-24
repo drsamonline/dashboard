@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0019",
-      "at": "2026-10-23T04:56:00Z",
-      "workflow": "build",
-      "outcome": "done",
-      "note": "build=item   item=app-chalk-lan  status=done  repo=chalk-lan  note=engine+app+host+38tests-pass  deps=web-kit(live),lan-kit(live)  pages=on  pr=none",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0020",
       "at": "2026-10-23T04:56:00Z",
       "workflow": "build",
@@ -440,6 +431,21 @@
       "files": [
         "skin-case-tracker/index.html",
         "registry/deps.json"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "20b99998d777",
+      "at": "2026-10-24T10:55:00Z",
+      "workflow": "dashboard-layout",
+      "outcome": "ok",
+      "note": "dashboard layout fix (the owner's report: 'lists dont collapse, features changed places, visuals should go above lists should go below'). The Visuals block sat below three data tables and most lists were plain non-collapsible tables. Moved Visuals to just under the KPI cards; wrapped Needs you / Built vs planned / Community / Traffic / Self-updating / Next to come in <details> (Paused + Repositories already were). Added tests/structure.test.js + a test workflow: it asserts the order, the collapsibility and that all 22 JS hooks survived - FAILS 4 on the old layout, passes 30/30 on the new. PR dashboard#2 merged. Sub-pages (forks/network/people/repo .html) NOT reordered yet.",
+      "files": [
+        "dashboard/index.html",
+        "dashboard/tests/structure.test.js",
+        "dashboard/.github/workflows/test.yml"
       ],
       "advanced": [],
       "errors": [],
