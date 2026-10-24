@@ -24,7 +24,7 @@
 </main>
 <footer class="mut">© 2026 Dr Sohil Momin · Forge system</footer>
 <script>var $=function(i){return document.getElementById(i)};
-var esc=function(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})};
+var esc=function(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})};
 var fmt=function(d){if(!d)return "—";try{return new Date(d).toISOString().slice(0,10)}catch(e){return d}};
 var tone=function(c){c=String(c||"").toLowerCase();if(c==="success")return "ok";if(c==="failure"||c==="cancelled")return "bad";return "warn"};
 var confTone=function(t){var n=parseInt(t||"0",10);return n>=4?"ok":n>=3?"warn":"bad"};
