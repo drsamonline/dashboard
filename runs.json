@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0036",
-      "at": "2026-10-23T07:42:00Z",
-      "workflow": "health",
-      "outcome": "logged",
-      "note": "health=warn  note=unresolved: forge fanout.yml fails on every push (run has no jobs); Build EXE/APK fails on seance,chalk-lan,canteen-lan,app-companion-forge  action=owner-review",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "ccad6ab63149",
       "at": "2026-10-24T04:15:07Z",
       "workflow": "sys-run-log",
@@ -538,6 +529,19 @@
       "note": "fix-refresh-push (found by RENDERING the console in headless Chromium and noticing the leaderboard still showed its fallback). ROOT CAUSE, from the run log: the dashboard's refresh regenerated and committed data.json correctly, then died at `git push` - 'error: failed to push some refs to https://github.com/drsamonline/dashboard'. The HEALTH workflow commits SPEC-GAP.json + runs.json to the same branch every few minutes and is fast, so the refresh (about 80 seconds) ALWAYS lost the race. That is why data.json sat at 11:00:33 while the leaderboard still carried the dict-licence error and the roadmap still showed the hard-coded list - both fixed in app-builder hours earlier. Fix: fetch, rebase onto origin/<branch>, retry the push up to 4 times; and cancel-in-progress: false so a refresh is not killed by its own next trigger. LESSON: 'the code is fixed on main' is not 'the page shows it' - the refresh had been failing for four runs and nothing surfaced it.",
       "files": [
         "dashboard/.github/workflows/refresh.yml"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "40903281488d",
+      "at": "2026-10-24T18:10:00Z",
+      "workflow": "hub-eight-flagships",
+      "outcome": "ok",
+      "note": "hub-eight-flagships (owner: 'let it show 8 flagship best projects that are completed; currently it shows 5'). WHY IT SHOWED FIVE: FEATURED listed four keys and the renderer ALSO appends any project with feat:true that is not already in FEATURED - which added neon-runner, so five. FEATURED now names EIGHT: the original four, neon-runner explicitly, plus a clinical calculator (bmi-bmr-tdee-macros-fluid-calculator), a synthesised ambient-sound mixer (ambient-sound-studio) and AES-256-GCM file protection (lockhtml) - all three completed and with a live demo, and each adding a flavour the section did not have. The line under the heading now names all eight. Note the renderer's concat is idempotent: a key in FEATURED is never appended twice.",
+      "files": [
+        "drsamonline.github.io/index.html"
       ],
       "advanced": [],
       "errors": [],
