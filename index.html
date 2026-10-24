@@ -158,6 +158,13 @@ footer{max-width:1320px;margin:0 auto;padding:14px 12px 30px;color:var(--mut);fo
     <table><thead><tr><th>What</th><th>Repo</th><th>Kind</th><th>Act</th></tr></thead><tbody id="needsBody"></tbody></table>
 </div></details>  </div>
 
+  <div class="sec">Control panel</div>
+  <div class="panel" id="cpPanel">
+    <h2>Every workflow, and how little you have to do</h2>
+    <p class="mut" style="margin:0 0 8px">Read live from the control panel: the four stages the work moves through, and the routes that ask for one input or none.</p>
+    <div id="cpBody" class="mut">loading…</div>
+    <p style="margin:8px 0 0"><a href="https://drsamonline.github.io/control-panel/" target="_blank" rel="noopener">Open the control panel — a Run button for every workflow →</a></p>
+  </div>
   <div class="sec">Controls</div>
   <div class="ctrls" id="controls"></div>
 
@@ -472,6 +479,27 @@ if("serviceWorker" in navigator){window.addEventListener("load",function(){navig
     });
   }
   lb();
+})();
+</script>
+
+<script>
+// The control panel publishes plan.json; this reads it. Cross-origin, but GitHub
+// Pages sends access-control-allow-origin:*, and nothing here is secret - it is the
+// shape of the pipeline, which is the point of publishing it.
+(function(){
+  var b=document.getElementById('cpBody'); if(!b) return;
+  fetch('https://drsamonline.github.io/control-panel/plan.json',{cache:'no-store'})
+    .then(function(r){return r.json();})
+    .then(function(p){
+      var rows=p.stages.map(function(s){
+        return '<div class="barrow"><span>'+esc(s.n+'. '+s.name)+' <span class="mut">— '+esc(s.verb)+'</span></span><b>'+s.count+'</b></div>';
+      }).join('');
+      var routes=p.routes.map(function(r){
+        return '<p class="mut" style="margin:4px 0"><b>'+esc(r.name)+'</b> — '+(r.inputs===0?'no input':'one input')+'</p>';
+      }).join('');
+      b.innerHTML = rows + '<p style="margin:10px 0 0"><b>The routes</b></p>' + routes;
+    })
+    .catch(function(){ b.textContent='could not read the control panel (it may not have published yet)'; });
 })();
 </script>
 </body>
