@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0027",
-      "at": "2026-10-23T06:55:00Z",
-      "workflow": "build",
-      "outcome": "logged",
-      "note": "build=stop   reason=budget(1 medium used)  next=retrofit-web-kit-batch-2,app-aerial(spec-pending),export-kit+frame-kit(awaiting owner)",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0028",
       "at": "2026-10-23T07:20:00Z",
       "workflow": "registry",
@@ -491,6 +482,21 @@
         ".github/workflows/code-compression.yml",
         "SIZE.md",
         "registry/size.json"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "f4fcf7a91f10",
+      "at": "2026-10-24T14:10:00Z",
+      "workflow": "fix-kit-tests-and-lint",
+      "outcome": "ok",
+      "note": "fix-kit-tests-and-lint (owner-reported: 'every kit's test is failing in run'). ROOT CAUSE 1: app-builder's 'All kit tests' failed on EVERY run, but not on the kits - discovery called `gh api user/repos`, which the repo-scoped GITHUB_TOKEN cannot call, so the `|| echo '[]'` swallowed the error and fromJSON('[]') made an EMPTY MATRIX, which fails the job. It now reads the public list (`users/drsamonline/repos`) and REFUSES an empty matrix with an error that says why. ROOT CAUSE 2 (found while there): forge's lint reported 13 findings, ALL of them artifacts of the linter itself - it never de-indented a run: block, so a here-document terminator looked indented (SC1039/SC1072/SC1073), and it substituted ${{ }} with the CONSTANT 'PLACEHOLDER', so `[ -n \"$x\" ]` read as always-true (SC2157). Fixed both (de-indent like YAML does; substitute a VARIABLE), PROVED with `bash -n` that the de-indented block is valid shell and the indented one is not, and confirmed the old linter still reports 13 while the fixed one is clean. Added a P6 owner-reported tier to BACKLOG.md with all of these.",
+      "files": [
+        "app-builder/.github/workflows/kit-tests.yml",
+        "forge/tools/shellcheck-runs.py",
+        "forge/BACKLOG.md"
       ],
       "advanced": [],
       "errors": [],
