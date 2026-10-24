@@ -124,19 +124,34 @@ footer{max-width:1320px;margin:0 auto;padding:14px 12px 30px;color:var(--mut);fo
   <div class="sec">At a glance</div>
   <div class="kpis" id="cards"></div>
 
+  <div class="sec">Visuals</div>
+  <div class="charts">
+    <div class="panel"><h2>Activity — pushes / day</h2><div id="activity"></div><p class="mut" id="activityNote" style="margin:6px 0 0"></p></div>
+    <div class="panel"><h2>Growth — products over time</h2><div id="trend"></div><p class="mut" id="trendNote" style="margin:6px 0 0"></p></div>
+    <div class="panel"><h2>Leaderboard</h2><p class="mut" style="margin:0 0 8px">Two axes, because one is not enough: <b>quality</b> is the heuristic score, <b>activity</b> is how much changed recently. A big quiet repo and a small thriving one are not comparable on either alone.</p><div id="lb"></div><p class="mut" id="lbNote" style="margin:6px 0 0"></p></div>
+    <div class="panel"><h2>System health</h2><div id="specgap"></div><div id="runlog"></div></div>
+    <div class="panel"><h2>Conformance</h2><div id="conf"></div><div class="legend" id="confLegend"></div></div>
+    <div class="panel"><h2>Categories</h2><div id="cats"></div></div>
+    <div class="panel"><h2>Actions budget</h2><div id="quota"></div></div>
+  </div>
+
   <div class="sec">Built vs planned</div>
+<details class="box"><summary>Built vs planned</summary><div class="body">
   <div class="panel" id="planPanel"><p class="mut" style="margin:0">Loading…</p></div>
-
+</div></details>
   <div class="sec">Community</div>
+<details class="box"><summary>Community</summary><div class="body">
   <div class="panel" id="communityPanel"><p class="mut" style="margin:0">Loading…</p></div>
-
+</div></details>
   <div class="sec">Traffic</div>
+<details class="box"><summary>Traffic</summary><div class="body">
   <div class="panel" id="trafficPanel"><p class="mut" style="margin:0">Loading…</p></div>
-
+</div></details>
   <div id="needs" hidden>
     <div class="sec">Needs you</div>
+<details class="box"><summary>What needs you <span class="chip" id="needsCount"></span></summary><div class="body">
     <table><thead><tr><th>What</th><th>Repo</th><th>Kind</th><th>Act</th></tr></thead><tbody id="needsBody"></tbody></table>
-  </div>
+</div></details>  </div>
 
   <div class="sec">Controls</div>
   <div class="ctrls" id="controls"></div>
@@ -154,25 +169,17 @@ Example: A one-off bell that ends a meeting on time, over the room's Wi-Fi. It r
     </div>
   </div>
 
-  <div class="sec">Visuals</div>
-  <div class="charts">
-    <div class="panel"><h2>Activity — pushes / day</h2><div id="activity"></div><p class="mut" id="activityNote" style="margin:6px 0 0"></p></div>
-    <div class="panel"><h2>Growth — products over time</h2><div id="trend"></div><p class="mut" id="trendNote" style="margin:6px 0 0"></p></div>
-    <div class="panel"><h2>Leaderboard</h2><p class="mut" style="margin:0 0 8px">Two axes, because one is not enough: <b>quality</b> is the heuristic score, <b>activity</b> is how much changed recently. A big quiet repo and a small thriving one are not comparable on either alone.</p><div id="lb"></div><p class="mut" id="lbNote" style="margin:6px 0 0"></p></div>
-    <div class="panel"><h2>System health</h2><div id="specgap"></div><div id="runlog"></div></div>
-    <div class="panel"><h2>Conformance</h2><div id="conf"></div><div class="legend" id="confLegend"></div></div>
-    <div class="panel"><h2>Categories</h2><div id="cats"></div></div>
-    <div class="panel"><h2>Actions budget</h2><div id="quota"></div></div>
-  </div>
 
   <div class="sec">Self-updating</div>
+<details class="box"><summary>What updates itself</summary><div class="body">
   <table><thead><tr><th>What updates</th><th>Workflow</th><th>Schedule</th><th>Last run</th></tr></thead><tbody id="automation"></tbody></table>
-
+</div></details>
   <div class="grid2" style="margin-top:9px">
     <div>
       <div class="sec">Next to come</div>
+<details class="box"><summary>Next to come</summary><div class="body">
       <table><thead><tr><th>Work</th><th>State</th></tr></thead><tbody id="roadmap"></tbody></table>
-    </div>
+</div></details>    </div>
     <div>
       <div class="sec">What changed</div>
       <details class="box" id="changesBox"><summary>Recent activity <span class="chip" id="feedCount"></span></summary><div class="body"><ul class="feed" id="feed"></ul></div></details>
