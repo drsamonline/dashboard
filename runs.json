@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0016",
-      "at": "2026-10-23T03:30:00Z",
-      "workflow": "retrofit",
-      "outcome": "logged",
-      "note": "retrofit=stop    reason=batch-complete(3)  next=frame-kit adoption after owner go-ahead; web-kit app batch still pending",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0017",
       "at": "2026-10-23T04:37:00Z",
       "workflow": "docs",
@@ -421,6 +412,22 @@
         "conqueror-os/src/index.html",
         "conqueror-os/tests/smoke.test.js",
         "registry/deps.json"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "708cb272e45a",
+      "at": "2026-10-24T09:45:00Z",
+      "workflow": "reverse-import",
+      "outcome": "ok",
+      "note": "REVERSE-IMPORT (the retrofit's other direction): an app's code improved the kits. The apps guarded CSV cells against FORMULA INJECTION before either kit did, so export-kit's cell() and web-kit's csv.esc() wrote =cmd|'/c calc'!A0 through unescaped - an executable cell in Excel/Sheets. Folded back into both kits AND refined (the apps' guard mangled negative numbers; the kit version is number-aware). PRs export-kit#1 + web-kit#2, merged; 10 new assertions, disabling the guard makes them fail. Also fixed export-kit's test file: a process.exit before the dataframe section meant it never ran, and the section referenced an undefined K. Next reverse-import candidate: srs-kit lacks conqueror-os's daily cap + configurable first interval.",
+      "files": [
+        "export-kit/export-kit.js",
+        "web-kit/web-kit.js",
+        "registry/deps.json",
+        "registry/false-completions.md"
       ],
       "advanced": [],
       "errors": [],
