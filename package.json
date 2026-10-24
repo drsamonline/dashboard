@@ -1,0 +1,12 @@
+{
+  "name": "drsamonline-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Structure tests for the drsamonline system console.",
+  "scripts": {
+    "test": "node tests/structure.test.js"
+  },
+  "devDependencies": {
+    "jsdom": "^29.1.1"
+  }
+}
