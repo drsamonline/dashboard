@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0018",
-      "at": "2026-10-23T04:37:00Z",
-      "workflow": "docs",
-      "outcome": "logged",
-      "note": "docs=warn  registry=stale  repos.json=52  missing-public=15  action=refresh-registry  note=dashboard+store built from the live repo list instead",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0019",
       "at": "2026-10-23T04:56:00Z",
       "workflow": "build",
@@ -434,6 +425,20 @@
         "srs-kit/srs-kit.js",
         "srs-kit/test-node.js",
         "srs-kit/README.md",
+        "registry/deps.json"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "f7aea8ead511",
+      "at": "2026-10-24T10:30:00Z",
+      "workflow": "retrofit",
+      "outcome": "ok",
+      "note": "retrofit (P2) part 3 - skin-case-tracker. Already well retrofitted (download->Export.save, crc32->Export.crc32, csv->Loom.csv); removed the last duplicate: makeZip+downloadBlob = export-kit's saveZip, vendored and never called. The in-page self-test bit first (22/23) then passed (23/23). PR skin-case-tracker#4. TWO FINDINGS recorded: docs/play/index.html is a STALE build still carrying a hand-written zip writer (the live demo serves pre-retrofit code), and saveNow/load use raw localStorage where Loom.storage would orphan data without a migration.",
+      "files": [
+        "skin-case-tracker/index.html",
         "registry/deps.json"
       ],
       "advanced": [],
