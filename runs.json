@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0028",
-      "at": "2026-10-23T07:20:00Z",
-      "workflow": "registry",
-      "outcome": "done",
-      "note": "registry=refresh  repos.json=69  added=16  note=rebuilt repo list from live API; roles preserved/assigned; scores recomputed  status=done",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0029",
       "at": "2026-10-23T07:42:00Z",
       "workflow": "build",
@@ -497,6 +488,20 @@
         "app-builder/.github/workflows/kit-tests.yml",
         "forge/tools/shellcheck-runs.py",
         "forge/BACKLOG.md"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "052f20b46793",
+      "at": "2026-10-24T14:40:00Z",
+      "workflow": "console-clarity",
+      "outcome": "ok",
+      "note": "console-clarity (owner-reported: 'there are multiple things on the dashboard that I don't understand'). (1) LEGENDS added to Traffic (what a clone IS), Conformance, Categories, Actions budget and System health. THE CLONE ANSWER: a clone is a git checkout - CI, mirrors, bots and scrapers included - so it is NOT a person; skin-case-tracker showed 335 clones against 0 views, i.e. no human visitors at all. (2) 'NEXT TO COME' WAS STALE because ROADMAP was a hard-coded list that still queued audio-kit after audio-kit was built. It is now DERIVED from the repos; the unbuilt queue is in a private master list the console cannot read, and it says so rather than showing a stale guess. (3) 'SELF-UPDATING' showed a private repo's schedule as NEVER RUN - it runs, the token just cannot read a private repo's history; it now says 'not visible (private repo)' with a note. Also fixed the stale skills entry (it named a workflow 'refresh' that does not exist; it is 'validate skills').",
+      "files": [
+        "dashboard/index.html",
+        "app-builder/drsoam.py"
       ],
       "advanced": [],
       "errors": [],
