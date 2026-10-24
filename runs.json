@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0017",
-      "at": "2026-10-23T04:37:00Z",
-      "workflow": "docs",
-      "outcome": "done",
-      "note": "docs=refresh  scope=dashboard+store+plan+skills  dashboard=data.json(repos=57)  store=products.json(45,new=5)  posts=24  readmes=missing:0  plan=updated  skills=proposed:9  status=done",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0018",
       "at": "2026-10-23T04:37:00Z",
       "workflow": "docs",
@@ -428,6 +419,22 @@
         "web-kit/web-kit.js",
         "registry/deps.json",
         "registry/false-completions.md"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "f0feb70dd88d",
+      "at": "2026-10-24T10:05:00Z",
+      "workflow": "reverse-import",
+      "outcome": "ok",
+      "note": "REVERSE-IMPORT 2: srs-kit absorbed conqueror-os's review scheduler. The app could configure the first / second / lapse intervals and cap the day's due queue; the kit hardcoded 1 and 6 and had no cap. Folded in as OPT-IN options (S.DEFAULTS + review(cards,quality,now,opts) + dueCards(cards,now,{cap})), so the 14 original assertions still pass unchanged. Tests 14 -> 23; forcing the features off makes 3 fail. PR srs-kit#1 merged.",
+      "files": [
+        "srs-kit/srs-kit.js",
+        "srs-kit/test-node.js",
+        "srs-kit/README.md",
+        "registry/deps.json"
       ],
       "advanced": [],
       "errors": [],
