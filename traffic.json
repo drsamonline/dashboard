@@ -4,19 +4,19 @@
   "window": "14 days",
   "note": "Last 14 days — GitHub's retention window.",
   "repos": {
-    "read-live-transform-app": {
+    "app-panchang": {
       "views": 0,
       "uniques": 0,
-      "clones": 218,
-      "clone_uniques": 92,
+      "clones": 51,
+      "clone_uniques": 16,
       "referrers": [],
       "paths": []
     },
-    "frame-kit": {
+    "skin-case-tracker": {
       "views": 0,
       "uniques": 0,
-      "clones": 0,
-      "clone_uniques": 0,
+      "clones": 247,
+      "clone_uniques": 103,
       "referrers": [],
       "paths": []
     },
@@ -31,6 +31,22 @@
           "count": 1
         }
       ],
+      "paths": []
+    },
+    "frame-kit": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 0,
+      "clone_uniques": 0,
+      "referrers": [],
+      "paths": []
+    },
+    "read-live-transform-app": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 218,
+      "clone_uniques": 92,
+      "referrers": [],
       "paths": []
     },
     "open-materia-medica": {
@@ -94,14 +110,6 @@
           "title": "/pull/1"
         }
       ]
-    },
-    "skin-case-tracker": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 247,
-      "clone_uniques": 103,
-      "referrers": [],
-      "paths": []
     },
     "conqueror-os": {
       "views": 0,
@@ -235,19 +243,19 @@
         }
       ]
     },
-    "unstoppable-mind-companion": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 323,
-      "clone_uniques": 100,
-      "referrers": [],
-      "paths": []
-    },
     "mnemosyne-companion": {
       "views": 0,
       "uniques": 0,
       "clones": 146,
       "clone_uniques": 60,
+      "referrers": [],
+      "paths": []
+    },
+    "unstoppable-mind-companion": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 323,
+      "clone_uniques": 100,
       "referrers": [],
       "paths": []
     },
@@ -467,14 +475,6 @@
       "uniques": 0,
       "clones": 0,
       "clone_uniques": 0,
-      "referrers": [],
-      "paths": []
-    },
-    "app-panchang": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 51,
-      "clone_uniques": 16,
       "referrers": [],
       "paths": []
     },

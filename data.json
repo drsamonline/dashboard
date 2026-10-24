@@ -1,6 +1,6 @@
 {
   "generated": "2026-10-24",
-  "generated_at": "2026-10-24T01:45:26Z",
+  "generated_at": "2026-10-24T01:57:33Z",
   "reckoning": "46 products · 14 kits · avg conformance 5.0/5 · updated automatically.",
   "health": "ok",
   "cards": [
@@ -36,9 +36,13 @@
     "avg": 5.0,
     "pushes": 67,
     "byrepo": {
-      "read-live-transform-app": 1,
-      "frame-kit": 1,
+      "dashboard": 1,
+      "app-builder": 1,
+      "app-panchang": 1,
+      "skin-case-tracker": 1,
       "BLINKTRANSFER": 1,
+      "frame-kit": 1,
+      "read-live-transform-app": 1,
       "open-materia-medica": 1,
       "Matneo": 1
     }
@@ -48,9 +52,9 @@
       "5": 46
     },
     "categories": {
-      "Utilities": 15,
       "HTML Apps": 12,
       "Homeopathy": 11,
+      "Utilities": 15,
       "Health Tools": 1,
       "Games": 6,
       "Data": 1
@@ -107,36 +111,14 @@
     },
     {
       "date": "2026-10-23",
-      "count": 43
+      "count": 39
     },
     {
       "date": "2026-10-24",
-      "count": 5
+      "count": 9
     }
   ],
-  "attention": [
-    {
-      "title": "fix: drop stale btoa/atob globals from the file comment",
-      "repo": "frame-kit",
-      "url": "https://github.com/drsamonline/frame-kit/pull/1",
-      "kind": "PR",
-      "created": "2026-10-24T00:44:51Z"
-    },
-    {
-      "title": "fix(lint): drop stale btoa/atob globals from frame-kit.js",
-      "repo": "BLINKTRANSFER",
-      "url": "https://github.com/drsamonline/BLINKTRANSFER/pull/7",
-      "kind": "PR",
-      "created": "2026-10-24T00:44:45Z"
-    },
-    {
-      "title": "retrofit(export-kit): delegate file save + ZIP to export-kit",
-      "repo": "skin-case-tracker",
-      "url": "https://github.com/drsamonline/skin-case-tracker/pull/3",
-      "kind": "PR",
-      "created": "2026-10-23T18:39:27Z"
-    }
-  ],
+  "attention": [],
   "controls": [
     {
       "label": "Refresh project hub",
@@ -202,6 +184,36 @@
     "estimated_minutes": 4.6
   },
   "changes": [
+    {
+      "type": "Delete",
+      "repo": "app-builder",
+      "when": "2026-10-23T03:51:07Z",
+      "text": ""
+    },
+    {
+      "type": "Delete",
+      "repo": "dashboard",
+      "when": "2026-10-23T03:04:32Z",
+      "text": ""
+    },
+    {
+      "type": "PullRequest",
+      "repo": "skin-case-tracker",
+      "when": "2026-10-24T01:48:31Z",
+      "text": "merged: "
+    },
+    {
+      "type": "PullRequest",
+      "repo": "BLINKTRANSFER",
+      "when": "2026-10-24T01:47:22Z",
+      "text": "merged: "
+    },
+    {
+      "type": "PullRequest",
+      "repo": "frame-kit",
+      "when": "2026-10-24T01:47:07Z",
+      "text": "merged: "
+    },
     {
       "type": "Push",
       "repo": "case-kit",
@@ -291,36 +303,6 @@
       "repo": "dashboard",
       "when": "2026-10-23T02:08:43Z",
       "text": "pushed to add-license"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "frame-kit",
-      "when": "2026-10-24T00:44:51Z",
-      "text": "opened: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "BLINKTRANSFER",
-      "when": "2026-10-24T00:44:45Z",
-      "text": "opened: "
-    },
-    {
-      "type": "Create",
-      "repo": "blinkcode-ai",
-      "when": "2026-10-23T02:00:16Z",
-      "text": ""
-    },
-    {
-      "type": "Create",
-      "repo": "helioprism",
-      "when": "2026-10-23T02:00:01Z",
-      "text": ""
-    },
-    {
-      "type": "IssueComment",
-      "repo": "helioprism",
-      "when": "2026-10-23T01:21:52Z",
-      "text": ""
     }
   ],
   "automation": [
@@ -353,8 +335,8 @@
       "what": "this dashboard",
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/40051209285",
-      "last_run": "2026-10-24T01:45:18Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/40052101998",
+      "last_run": "2026-10-24T01:57:24Z",
       "conclusion": "in_progress"
     },
     {
@@ -502,11 +484,25 @@
         "html_url": "https://github.com/drsamonline/neon-runner"
       },
       {
-        "name": "read-live-transform-app",
+        "name": "app-panchang",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
-        "html_url": "https://github.com/drsamonline/read-live-transform-app"
+        "html_url": "https://github.com/drsamonline/app-panchang"
+      },
+      {
+        "name": "skin-case-tracker",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/skin-case-tracker"
+      },
+      {
+        "name": "BLINKTRANSFER",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/BLINKTRANSFER"
       },
       {
         "name": "frame-kit",
@@ -516,11 +512,11 @@
         "html_url": "https://github.com/drsamonline/frame-kit"
       },
       {
-        "name": "BLINKTRANSFER",
+        "name": "read-live-transform-app",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
-        "html_url": "https://github.com/drsamonline/BLINKTRANSFER"
+        "html_url": "https://github.com/drsamonline/read-live-transform-app"
       },
       {
         "name": "open-materia-medica",
@@ -535,13 +531,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/aethelgard-rpg-engine"
-      },
-      {
-        "name": "skin-case-tracker",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/skin-case-tracker"
       },
       {
         "name": "conqueror-os",
@@ -635,18 +624,18 @@
         "html_url": "https://github.com/drsamonline/The_Browser"
       },
       {
-        "name": "unstoppable-mind-companion",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/unstoppable-mind-companion"
-      },
-      {
         "name": "mnemosyne-companion",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/mnemosyne-companion"
+      },
+      {
+        "name": "unstoppable-mind-companion",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/unstoppable-mind-companion"
       },
       {
         "name": "TTB",
@@ -787,13 +776,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/export-kit"
-      },
-      {
-        "name": "app-panchang",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/app-panchang"
       },
       {
         "name": "today-card",
@@ -938,19 +920,19 @@
     "window": "14 days",
     "note": "Last 14 days — GitHub's retention window.",
     "repos": {
-      "read-live-transform-app": {
+      "app-panchang": {
         "views": 0,
         "uniques": 0,
-        "clones": 218,
-        "clone_uniques": 92,
+        "clones": 51,
+        "clone_uniques": 16,
         "referrers": [],
         "paths": []
       },
-      "frame-kit": {
+      "skin-case-tracker": {
         "views": 0,
         "uniques": 0,
-        "clones": 0,
-        "clone_uniques": 0,
+        "clones": 247,
+        "clone_uniques": 103,
         "referrers": [],
         "paths": []
       },
@@ -965,6 +947,22 @@
             "count": 1
           }
         ],
+        "paths": []
+      },
+      "frame-kit": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
+      "read-live-transform-app": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 218,
+        "clone_uniques": 92,
+        "referrers": [],
         "paths": []
       },
       "open-materia-medica": {
@@ -1028,14 +1026,6 @@
             "title": "/pull/1"
           }
         ]
-      },
-      "skin-case-tracker": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 247,
-        "clone_uniques": 103,
-        "referrers": [],
-        "paths": []
       },
       "conqueror-os": {
         "views": 0,
@@ -1169,19 +1159,19 @@
           }
         ]
       },
-      "unstoppable-mind-companion": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 323,
-        "clone_uniques": 100,
-        "referrers": [],
-        "paths": []
-      },
       "mnemosyne-companion": {
         "views": 0,
         "uniques": 0,
         "clones": 146,
         "clone_uniques": 60,
+        "referrers": [],
+        "paths": []
+      },
+      "unstoppable-mind-companion": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 323,
+        "clone_uniques": 100,
         "referrers": [],
         "paths": []
       },
@@ -1401,14 +1391,6 @@
         "uniques": 0,
         "clones": 0,
         "clone_uniques": 0,
-        "referrers": [],
-        "paths": []
-      },
-      "app-panchang": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 51,
-        "clone_uniques": 16,
         "referrers": [],
         "paths": []
       },
@@ -1678,13 +1660,28 @@
   },
   "repos": [
     {
-      "name": "read-live-transform-app",
-      "description": "The companion app to the book \"Read. Live. Transform.: A Practical Reading of the Qur'an\" by Dr Sohil Momin. Read the verse, live the practice, keep the change. Offline PWA, no dependencies. © Dr Sohil Momin — all rights reserved; permission required to reuse.",
-      "pushed_at": "2026-10-24T00:46:08Z",
-      "homepage": "https://drsamonline.github.io/read-live-transform-app/",
-      "html_url": "https://github.com/drsamonline/read-live-transform-app",
+      "name": "app-panchang",
+      "description": "A daily Indian almanac — tithi, nakshatra, yoga, karana, rahu-kaal and muhurat, computed offline. Built with Forge.",
+      "pushed_at": "2026-10-24T01:56:16Z",
+      "homepage": "https://drsamonline.github.io/app-panchang/",
+      "html_url": "https://github.com/drsamonline/app-panchang",
       "download": "",
-      "category": "Utilities",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "skin-case-tracker",
+      "description": "Companion app to the book \"The Skin Is a Liar\" by Dr. Sohil Momin — a private, offline HHMS skin-case tracker (History, Habits, Mapping, Symptoms) with a 90-day pattern engine. Free to use; all rights reserved.",
+      "pushed_at": "2026-10-24T01:49:41Z",
+      "homepage": "https://drsamonline.github.io/skin-case-tracker/",
+      "html_url": "https://github.com/drsamonline/skin-case-tracker",
+      "download": "",
+      "category": "Homeopathy",
       "status": "5/5",
       "status_tone": "ok",
       "spark": [
@@ -1695,11 +1692,26 @@
     {
       "name": "BLINKTRANSFER",
       "description": "DATA TRANSFER IN BLINK OF EYE",
-      "pushed_at": "2026-10-24T00:44:43Z",
+      "pushed_at": "2026-10-24T01:48:41Z",
       "homepage": "https://drsamonline.github.io/BLINKTRANSFER/",
       "html_url": "https://github.com/drsamonline/BLINKTRANSFER",
       "download": "",
       "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "read-live-transform-app",
+      "description": "The companion app to the book \"Read. Live. Transform.: A Practical Reading of the Qur'an\" by Dr Sohil Momin. Read the verse, live the practice, keep the change. Offline PWA, no dependencies. © Dr Sohil Momin — all rights reserved; permission required to reuse.",
+      "pushed_at": "2026-10-24T00:46:08Z",
+      "homepage": "https://drsamonline.github.io/read-live-transform-app/",
+      "html_url": "https://github.com/drsamonline/read-live-transform-app",
+      "download": "",
+      "category": "Utilities",
       "status": "5/5",
       "status_tone": "ok",
       "spark": [
@@ -1730,21 +1742,6 @@
       "html_url": "https://github.com/drsamonline/aethelgard-rpg-engine",
       "download": "",
       "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1,
-        0
-      ]
-    },
-    {
-      "name": "skin-case-tracker",
-      "description": "Companion app to the book \"The Skin Is a Liar\" by Dr. Sohil Momin — a private, offline HHMS skin-case tracker (History, Habits, Mapping, Symptoms) with a 90-day pattern engine. Free to use; all rights reserved.",
-      "pushed_at": "2026-10-23T18:39:25Z",
-      "homepage": "https://drsamonline.github.io/skin-case-tracker/",
-      "html_url": "https://github.com/drsamonline/skin-case-tracker",
-      "download": "",
-      "category": "Homeopathy",
       "status": "5/5",
       "status_tone": "ok",
       "spark": [
@@ -1933,11 +1930,11 @@
       ]
     },
     {
-      "name": "unstoppable-mind-companion",
-      "description": "Offline companion app to the book The Unstoppable Mind by Dr. Sohil Momin - key points, exercises, a 7-day challenge and flashcards. Free to use.",
+      "name": "mnemosyne-companion",
+      "description": "Companion study app for Mnemosyne Materia Medica — 100 polycrest homoeopathic remedies as poetic pearls, keynotes and spaced-repetition drills. Single offline HTML file. Proprietary, all rights reserved.",
       "pushed_at": "2026-10-23T07:46:48Z",
-      "homepage": "https://drsamonline.github.io/unstoppable-mind-companion/",
-      "html_url": "https://github.com/drsamonline/unstoppable-mind-companion",
+      "homepage": "https://drsamonline.github.io/mnemosyne-companion/",
+      "html_url": "https://github.com/drsamonline/mnemosyne-companion",
       "download": "",
       "category": "Homeopathy",
       "status": "5/5",
@@ -1948,11 +1945,11 @@
       ]
     },
     {
-      "name": "mnemosyne-companion",
-      "description": "Companion study app for Mnemosyne Materia Medica — 100 polycrest homoeopathic remedies as poetic pearls, keynotes and spaced-repetition drills. Single offline HTML file. Proprietary, all rights reserved.",
+      "name": "unstoppable-mind-companion",
+      "description": "Offline companion app to the book The Unstoppable Mind by Dr. Sohil Momin - key points, exercises, a 7-day challenge and flashcards. Free to use.",
       "pushed_at": "2026-10-23T07:46:48Z",
-      "homepage": "https://drsamonline.github.io/mnemosyne-companion/",
-      "html_url": "https://github.com/drsamonline/mnemosyne-companion",
+      "homepage": "https://drsamonline.github.io/unstoppable-mind-companion/",
+      "html_url": "https://github.com/drsamonline/unstoppable-mind-companion",
       "download": "",
       "category": "Homeopathy",
       "status": "5/5",
@@ -2075,21 +2072,6 @@
       "html_url": "https://github.com/drsamonline/NEO",
       "download": "",
       "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1,
-        0
-      ]
-    },
-    {
-      "name": "app-panchang",
-      "description": "A daily Indian almanac — tithi, nakshatra, yoga, karana, rahu-kaal and muhurat, computed offline. Built with Forge.",
-      "pushed_at": "2026-10-23T01:58:51Z",
-      "homepage": "https://drsamonline.github.io/app-panchang/",
-      "html_url": "https://github.com/drsamonline/app-panchang",
-      "download": "",
-      "category": "HTML Apps",
       "status": "5/5",
       "status_tone": "ok",
       "spark": [
@@ -2443,9 +2425,13 @@
       "avg": 5.0,
       "pushes": 67,
       "byrepo": {
-        "read-live-transform-app": 1,
-        "frame-kit": 1,
+        "dashboard": 1,
+        "app-builder": 1,
+        "app-panchang": 1,
+        "skin-case-tracker": 1,
         "BLINKTRANSFER": 1,
+        "frame-kit": 1,
+        "read-live-transform-app": 1,
         "open-materia-medica": 1,
         "Matneo": 1
       },
