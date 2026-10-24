@@ -2,17 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "36f3f131f599",
-      "at": "2026-10-24T06:51:22Z",
-      "workflow": "sys-ci-verify",
-      "outcome": "ok",
-      "note": "sys-ci-verify (P2), part 1 of 3 — verify the EXE we ship. Added app-builder tools/verify_exe.py (pefile: valid PE, executable-not-DLL, size budget, opt-in REQUIRED/FORBIDDEN_IMPORTS + SIGNED_REQUIRED; prints machine/subsystem/size/imports) and wired it into build.yml's exe job before upload. Tested against a real PE (distlib w64.exe) + a non-PE: all 6 cases behave. NOT done: run-workflows-locally with nektos/act (needs Docker, absent in-sandbox -> owner-side); paths-filter to skip jobs (separate follow-up). PR app-builder#6.",
-      "files": {},
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "49ab8dbff987",
       "at": "2026-10-24T07:07:36Z",
       "workflow": "sys-ci-verify",
@@ -544,6 +533,19 @@
         "app-builder/tools/shot.js",
         "forge/tools/app-deliver.py",
         "app-encrypted-case-log/docs/shot.png"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "e53300ffbc92",
+      "at": "2026-10-24T22:00:00Z",
+      "workflow": "pipeline-enables-pages",
+      "outcome": "ok",
+      "note": "pipeline-enables-pages (owner: 'add enabling pages in the workflow too so the pipeline works properly'). Right: I had enabled Pages by HAND for one app, which does not scale and is exactly the kind of manual step that gets forgotten. The deploy job in app-builder's build.yml now checks for a Pages site and CREATES one (build_type=workflow) when it is missing - treating 'already on' as success, and warning with the exact setting to change if the token cannot do it, instead of failing silently. So a repo the pipeline has just been given can now finish green: build the EXE, the APK and the Linux binary, publish the release, enable Pages, deploy the demo, and screenshot it.",
+      "files": [
+        "app-builder/.github/workflows/build.yml"
       ],
       "advanced": [],
       "errors": [],
