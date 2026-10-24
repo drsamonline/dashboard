@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0001",
-      "at": "2026-10-23T00:28:00Z",
-      "workflow": "retrofit",
-      "outcome": "open",
-      "note": "retrofit=item  repo=remedy-relationship-explorer pr=#1  status=open  gap=build-workflow+web-kit+landing",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0002",
       "at": "2026-10-23T00:28:00Z",
       "workflow": "retrofit",
@@ -378,6 +369,17 @@
       "workflow": "commercial",
       "outcome": "ok",
       "note": "update: commercial (P2) — reviewed the MIT coreyhaines31/marketingskills pack (~60 skills); adopted 3 that fit (product-copywriting, directory-submissions, free-tool-marketing) into a new marketing category in the skills repo (catalog 52->55, 8->9 categories), rewritten to our rules, passing scripts/validate.py; rejected the rest (ads, cold outbound, influencer/PR/events, third-party analytics, programmatic SEO, email/SMS) with reasons written into knowledge/docs/forge_commercial_plan.md §11. PRs: skills#1, knowledge#1.",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "ea73d802723a",
+      "at": "2026-10-24T06:37:55Z",
+      "workflow": "idea-offline-demo",
+      "outcome": "ok",
+      "note": "idea-offline-demo (P2) — added a 'pull the plug' overlay to the hub (fetch/XHR fail on toggle, visible 'network: OFF · demo' indicator, off by default). Also fixed the P2 review finding on the merged recency strip: a page-less repo linked to the site/<name>/ fallback (404) — fixed at source (build_hub.py emits a landing only when it exists; JSON-LD falls back to source; sitemap drops page-less entries) and at runtime (each project gets a valid dest = page else source). Verified: build_hub 65/71, export-kit landing empty, 64/65 with a landing; jsdom 0 empty/404 card links + demo toggle works. PR drsamonline.github.io#3 (PR#2 was merged by the owner).",
       "files": {},
       "advanced": [],
       "errors": [],
