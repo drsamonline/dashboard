@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0011",
-      "at": "2026-10-23T02:59:00Z",
-      "workflow": "build",
-      "outcome": "logged",
-      "note": "build=stop   reason=budget(1 item used)  next=app-aerial,app-chalk-lan,app-canteen-lan,retrofit-web-kit",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0012",
       "at": "2026-10-23T03:30:00Z",
       "workflow": "retrofit",
@@ -398,6 +389,17 @@
       "workflow": "kit-audio-kit",
       "outcome": "ok",
       "note": "kit-audio-kit (P3) COMPLETE — created drsamonline/audio-kit: P1 synthesis (a PURE ADSR envelope, oscillator voices w/ filter, noise, mixer) + music theory (notes, intervals, transposition, 12 scales, 11 chords); plus the pieces the required tests need — a pattern sequencer and a notation layout — and byte sonification + honest mastering helpers (rms/match/limit). THE RULE in the README: game music is PATTERNS, NOT FILES. No audio assets; no autoplay; everything reimplemented (references named in comments only). 42 tests incl. the four the spec requires (ADSR shape, scale/chord, sequencer beats, notation layout); CI runs them; topics set. Skill added (57->58, game-engine; skills#4 merged).",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "43d3a9215ac7",
+      "at": "2026-10-24T08:25:23Z",
+      "workflow": "kit-ui-kit",
+      "outcome": "ok",
+      "note": "kit-ui-kit (P3) COMPLETE — created drsamonline/ui-kit: P1 reactive core (signals, lazy/cached computed with a chain, reactive effects with dependency tracking, hyperscript, a KEYED list that reuses a node across reorders) + P2 furniture (events/bus, a hash router whose route is a signal, two-way form binding). No build step, zero runtime deps. PROOF: examples/todomvc.js is TodoMVC built on the kit (add/toggle/edit/destroy/toggle-all/filters/clear-completed/count, hash-driven filter) and runs headless in CI. 31 core tests incl. the spec's signal-notification, computed-chain and keyed-list-reorder cases + 22 TodoMVC acceptance assertions; jsdom is the only dev dep; CI runs both. Skill added (58->59, web-app-patterns; skills#5 merged).",
       "files": {},
       "advanced": [],
       "errors": [],
