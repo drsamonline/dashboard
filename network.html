@@ -26,7 +26,7 @@
   <div id="out"></div>
   <a class="back" href="index.html">← back to the console</a>
 <script>
-function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
 fetch("community.json",{cache:"no-store"}).then(function(r){return r.json()}).then(function(d){
   var forks=d.forks||{}, keys=Object.keys(forks).filter(function(k){return (forks[k]||[]).length});
   var total=keys.reduce(function(a,k){return a+forks[k].length},0);

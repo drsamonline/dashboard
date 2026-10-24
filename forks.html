@@ -29,7 +29,7 @@
   </table>
   <a class="back" href="index.html">← back to the console</a>
 <script>
-function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
 var repo=new URLSearchParams(location.search).get("repo")||"";
 document.getElementById("h").textContent = repo ? ("Forks of "+repo) : "Forks";
 fetch("forks.json",{cache:"no-store"}).then(function(r){return r.json()}).then(function(d){
