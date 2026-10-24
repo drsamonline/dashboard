@@ -1,0 +1,360 @@
+{
+  "count": 38,
+  "runs": [
+    {
+      "id": "backfill-0000",
+      "at": "2026-10-23T00:28:00Z",
+      "workflow": "retrofit",
+      "outcome": "open",
+      "note": "retrofit=item  repo=kent-repertory-explorer     pr=#1  status=open  gap=build-workflow+web-kit+landing",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0001",
+      "at": "2026-10-23T00:28:00Z",
+      "workflow": "retrofit",
+      "outcome": "open",
+      "note": "retrofit=item  repo=remedy-relationship-explorer pr=#1  status=open  gap=build-workflow+web-kit+landing",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0002",
+      "at": "2026-10-23T00:28:00Z",
+      "workflow": "retrofit",
+      "outcome": "open",
+      "note": "retrofit=item  repo=offline-pdf-toolkit         pr=#1  status=open  gap=build-workflow+web-kit+landing",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0003",
+      "at": "2026-10-23T00:28:00Z",
+      "workflow": "retrofit",
+      "outcome": "logged",
+      "note": "retrofit=stop  reason=budget  next=SmartNotes,CLDR,TTB,Matneo (non-static; need their own build path)",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0004",
+      "at": "2026-10-23T00:42:00Z",
+      "workflow": "docs",
+      "outcome": "done",
+      "note": "docs=refresh  scope=dashboard+readmes+skills  dashboard=data.json(repos=42)  readmes=missing:0  skills=proposed:7  status=done",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0005",
+      "at": "2026-10-23T00:55:00Z",
+      "workflow": "docs",
+      "outcome": "logged",
+      "note": "docs=warn  registry=stale  repos.json=51  missing-public=web-kit,optical-kit,crypto-kit,compress-kit,lan-kit,today-card  includes-private=OMM  action=refresh-registry-then-rerun-dashboard",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0006",
+      "at": "2026-10-23T00:48:00Z",
+      "workflow": "build",
+      "outcome": "done",
+      "note": "build=item   item=kit-game-kit  status=done  note=already-live(repo+deps.json);queue-reconciled  pr=none",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0007",
+      "at": "2026-10-23T00:48:00Z",
+      "workflow": "build",
+      "outcome": "done",
+      "note": "build=item   item=app-panchang  status=done  repo=app-panchang  note=engine+app+24tests-pass  deps=web-kit(live)",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0008",
+      "at": "2026-10-23T00:48:00Z",
+      "workflow": "build",
+      "outcome": "logged",
+      "note": "build=stop   reason=budget(1 medium used)  next=app-companion-forge,app-aerial,app-seance,app-chalk-lan,app-canteen-lan",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0009",
+      "at": "2026-10-23T02:56:00Z",
+      "workflow": "build",
+      "outcome": "done",
+      "note": "build=item   item=app-seance          status=done  repo=seance  note=already-live(repo+web-kit+crypto-kit);queue-reconciled  pr=none",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0010",
+      "at": "2026-10-23T02:58:00Z",
+      "workflow": "build",
+      "outcome": "done",
+      "note": "build=item   item=app-companion-forge  status=done  repo=app-companion-forge  note=engine+app+30tests-pass  deps=web-kit(live)  pages=on  pr=none",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0011",
+      "at": "2026-10-23T02:59:00Z",
+      "workflow": "build",
+      "outcome": "logged",
+      "note": "build=stop   reason=budget(1 item used)  next=app-aerial,app-chalk-lan,app-canteen-lan,retrofit-web-kit",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0012",
+      "at": "2026-10-23T03:30:00Z",
+      "workflow": "retrofit",
+      "outcome": "open",
+      "note": "retrofit=item  repo=helioprism     pr=#1  status=open  kit=optical-kit  dup=LT-fountain-codec  tests=21/21",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0013",
+      "at": "2026-10-23T03:30:00Z",
+      "workflow": "retrofit",
+      "outcome": "open",
+      "note": "retrofit=item  repo=blinkcode-ai   pr=#4  status=open  kit=optical-kit  dup=LT-fountain-codec  tests=29/29",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0014",
+      "at": "2026-10-23T03:30:00Z",
+      "workflow": "retrofit",
+      "outcome": "open",
+      "note": "retrofit=item  repo=BLINKTRANSFER  pr=#4  status=open  kit=optical-kit  dup=LT-fountain-codec  tests=20/20",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0015",
+      "at": "2026-10-23T03:30:00Z",
+      "workflow": "kit",
+      "outcome": "logged",
+      "note": "kit=propose     id=frame-kit  issue=registry#1  repos=helioprism,blinkcode-ai,BLINKTRANSFER  note=frame+collector+byte-utils gap (no kit)",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0016",
+      "at": "2026-10-23T03:30:00Z",
+      "workflow": "retrofit",
+      "outcome": "logged",
+      "note": "retrofit=stop    reason=batch-complete(3)  next=frame-kit adoption after owner go-ahead; web-kit app batch still pending",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0017",
+      "at": "2026-10-23T04:37:00Z",
+      "workflow": "docs",
+      "outcome": "done",
+      "note": "docs=refresh  scope=dashboard+store+plan+skills  dashboard=data.json(repos=57)  store=products.json(45,new=5)  posts=24  readmes=missing:0  plan=updated  skills=proposed:9  status=done",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0018",
+      "at": "2026-10-23T04:37:00Z",
+      "workflow": "docs",
+      "outcome": "logged",
+      "note": "docs=warn  registry=stale  repos.json=52  missing-public=15  action=refresh-registry  note=dashboard+store built from the live repo list instead",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0019",
+      "at": "2026-10-23T04:56:00Z",
+      "workflow": "build",
+      "outcome": "done",
+      "note": "build=item   item=app-chalk-lan  status=done  repo=chalk-lan  note=engine+app+host+38tests-pass  deps=web-kit(live),lan-kit(live)  pages=on  pr=none",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0020",
+      "at": "2026-10-23T04:56:00Z",
+      "workflow": "build",
+      "outcome": "logged",
+      "note": "build=stop   reason=budget(1 medium used)  next=app-canteen-lan,retrofit-web-kit,app-aerial(spec-pending)",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0021",
+      "at": "2026-10-23T06:25:00Z",
+      "workflow": "retrofit",
+      "outcome": "open",
+      "note": "retrofit=item  repo=unstoppable-mind-companion pr=#1  status=open  kit=web-kit  dup=localStorage-store            tests=8/8",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0022",
+      "at": "2026-10-23T06:25:00Z",
+      "workflow": "retrofit",
+      "outcome": "open",
+      "note": "retrofit=item  repo=skin-case-tracker          pr=#1  status=open  kit=web-kit  dup=csv-export(x3)+csv-download  tests=21/21->23/23",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0023",
+      "at": "2026-10-23T06:25:00Z",
+      "workflow": "retrofit",
+      "outcome": "open",
+      "note": "retrofit=item  repo=mnemosyne-companion       pr=#1  status=open  kit=web-kit  dup=localStorage+theme           tests=8/8",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0024",
+      "at": "2026-10-23T06:25:00Z",
+      "workflow": "kit",
+      "outcome": "logged",
+      "note": "kit=propose     id=export-kit  issue=registry#2  repos=skin-case-tracker,conqueror-os,bmi-bmr-tdee-macros-fluid-calculator,read-live-transform-app  note=generic file save (text/JSON/CSV/blob)+ZIP gap ",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0025",
+      "at": "2026-10-23T06:25:00Z",
+      "workflow": "retrofit",
+      "outcome": "logged",
+      "note": "retrofit=stop    reason=batch-complete(3)  next=web-kit retrofit batch 2 (companion apps: the-symphony-companion,read-live-transform-app,whispering-body-first-aid); export-kit adoption after owner go-",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0026",
+      "at": "2026-10-23T06:55:00Z",
+      "workflow": "build",
+      "outcome": "done",
+      "note": "build=item   item=app-canteen-lan   status=done  repo=canteen-lan  note=engine+app+host+78tests-pass  deps=web-kit(live),lan-kit(live)  pages=on  registry=repos.json+deps.json  pr=none",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0027",
+      "at": "2026-10-23T06:55:00Z",
+      "workflow": "build",
+      "outcome": "logged",
+      "note": "build=stop   reason=budget(1 medium used)  next=retrofit-web-kit-batch-2,app-aerial(spec-pending),export-kit+frame-kit(awaiting owner)",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0028",
+      "at": "2026-10-23T07:20:00Z",
+      "workflow": "registry",
+      "outcome": "done",
+      "note": "registry=refresh  repos.json=69  added=16  note=rebuilt repo list from live API; roles preserved/assigned; scores recomputed  status=done",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0029",
+      "at": "2026-10-23T07:42:00Z",
+      "workflow": "build",
+      "outcome": "done",
+      "note": "build=item   item=kit-export-kit  status=done  repo=export-kit  note=save text/JSON/CSV/blob + store-only ZIP writer; MIT; zero-dependency; 22 node tests + unzip -t pass; live  registry=deps.json+prop",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0030",
+      "at": "2026-10-23T07:42:00Z",
+      "workflow": "retrofit",
+      "outcome": "open",
+      "note": "retrofit=item  repo=read-live-transform-app  pr=#1  status=open  kit=web-kit  dup=localStorage-store  tests=12/12",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0031",
+      "at": "2026-10-23T07:42:00Z",
+      "workflow": "retrofit",
+      "outcome": "logged",
+      "note": "retrofit=stop  reason=batch-complete(1)  next=the-symphony-companion,whispering-body-first-aid,export-kit adoption (skin-case-tracker,conqueror-os,bmi-bmr-tdee-macros-fluid-calculator,read-live-transf",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0032",
+      "at": "2026-10-23T07:42:00Z",
+      "workflow": "docs",
+      "outcome": "done",
+      "note": "docs=refresh  scope=dashboard+store+plan  dashboard=data.json(60,avg4.9)  store=products.json(47,new=canteen-lan,chalk-lan)  posts=24  plan=updated  status=done",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0033",
+      "at": "2026-10-23T07:42:00Z",
+      "workflow": "docs",
+      "outcome": "logged",
+      "note": "docs=fix  blog=build_posts.py now excludes all 14 kits  plan=build_plan_status.py now counts every kit as a kit  note=frame-kit/export-kit were leaking into products/posts",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0034",
+      "at": "2026-10-23T07:42:00Z",
+      "workflow": "registry",
+      "outcome": "logged",
+      "note": "registry=update  kits=17  note=frame-kit+export-kit marked live in deps.json+proposals.json (both were still 'proposed')",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0035",
+      "at": "2026-10-23T07:42:00Z",
+      "workflow": "health",
+      "outcome": "open",
+      "note": "health=fix  repo=web-kit  pr=#1  status=open  note=Test workflow ran 'node test-node.js' which did not exist; added the suite (12/12)",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "backfill-0036",
+      "at": "2026-10-23T07:42:00Z",
+      "workflow": "health",
+      "outcome": "logged",
+      "note": "health=warn  note=unresolved: forge fanout.yml fails on every push (run has no jobs); Build EXE/APK fails on seance,chalk-lan,canteen-lan,app-companion-forge  action=owner-review",
+      "files": {},
+      "source": "PROGRESS.log"
+    },
+    {
+      "id": "ccad6ab63149",
+      "at": "2026-10-24T04:15:07Z",
+      "workflow": "sys-run-log",
+      "outcome": "ok",
+      "note": "RUNS.jsonl created; backfilled from PROGRESS.log",
+      "files": {
+        "BACKLOG.md": {
+          "lines": null
+        },
+        "WORKLIST.md": {
+          "lines": null
+        },
+        "RUNS.jsonl": {
+          "lines": 37
+        }
+      },
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    }
+  ],
+  "lost_lines": []
+}
