@@ -158,6 +158,7 @@ Example: A one-off bell that ends a meeting on time, over the room's Wi-Fi. It r
   <div class="charts">
     <div class="panel"><h2>Activity — pushes / day</h2><div id="activity"></div><p class="mut" id="activityNote" style="margin:6px 0 0"></p></div>
     <div class="panel"><h2>Growth — products over time</h2><div id="trend"></div><p class="mut" id="trendNote" style="margin:6px 0 0"></p></div>
+    <div class="panel"><h2>Leaderboard</h2><p class="mut" style="margin:0 0 8px">Two axes, because one is not enough: <b>quality</b> is the heuristic score, <b>activity</b> is how much changed recently. A big quiet repo and a small thriving one are not comparable on either alone.</p><div id="lb"></div><p class="mut" id="lbNote" style="margin:6px 0 0"></p></div>
     <div class="panel"><h2>System health</h2><div id="specgap"></div><div id="runlog"></div></div>
     <div class="panel"><h2>Conformance</h2><div id="conf"></div><div class="legend" id="confLegend"></div></div>
     <div class="panel"><h2>Categories</h2><div id="cats"></div></div>
@@ -415,6 +416,47 @@ if("serviceWorker" in navigator){window.addEventListener("load",function(){navig
     var el = document.getElementById("runlog");
     if (el) el.innerHTML = '<p class="mut">runs.json not published yet.</p>';
   });
+})();
+</script>
+<script>
+// The leaderboard. TWO AXES, and the reason is not decoration: quality alone keeps a
+// 500k-star repo that has been dead since 2023 at the top, so a one-axis table would
+// rank a dead project first and call it the best. Activity is what separates them.
+//
+// The score is a HEURISTIC and is shown only relative to our own repositories, never as
+// an absolute - the formula is chosen by experience and there is no proof it reflects
+// quality. That caveat is in the panel, not in a comment nobody reads.
+(function () {
+  function lb() {
+    fetch("data.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) {
+      var el = document.getElementById("lb"); if (!el) return;
+      var L = d.leaderboard || {};
+      if (L.error) { el.innerHTML = '<p class="mut">' + esc(L.error) + '</p>'; return; }
+      var rows = (L.rows || []);
+      if (!rows.length) { el.innerHTML = '<p class="mut">No leaderboard yet.</p>'; return; }
+      var top = rows.slice(0, 10);
+      var h = '<table><thead><tr><th>#</th><th>Repo</th><th>Quality</th><th>Activity</th><th>Stars</th>'
+            + '<th>' + esc(String(L.window_days || 7)) + 'd</th></tr></thead><tbody>';
+      top.forEach(function (x) {
+        var m = x.movement || {}, delta = m.delta;
+        var move = delta === null ? '<span class="mut">added</span>'
+                 : (delta > 0 ? '+' + delta : (delta < 0 ? String(delta) : '0'));
+        h += '<tr><td>' + x.rank + '</td><td>' + esc(x.name) + '</td>'
+           + '<td>' + x.quality + '</td><td>' + x.activity + '</td>'
+           + '<td>' + x.stars + '</td><td>' + move + '</td></tr>';
+      });
+      h += '</tbody></table>';
+      el.innerHTML = h;
+      var note = document.getElementById("lbNote");
+      if (note) note.textContent = (L.caveat || '')
+        + ' Movement: up ' + (L.up || []).length + ', down ' + (L.down || []).length
+        + ', added ' + (L.added || []).length + ' over the last ' + (L.window_days || 7) + ' days.';
+    }).catch(function () {
+      var el = document.getElementById("lb");
+      if (el) el.innerHTML = '<p class="mut">The leaderboard needs one console refresh to appear.</p>';
+    });
+  }
+  lb();
 })();
 </script>
 </body>
