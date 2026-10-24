@@ -131,10 +131,10 @@ footer{max-width:1320px;margin:0 auto;padding:14px 12px 30px;color:var(--mut);fo
     <div class="panel"><h2>Activity — pushes / day</h2><div id="activity"></div><p class="mut" id="activityNote" style="margin:6px 0 0"></p></div>
     <div class="panel"><h2>Growth — products over time</h2><div id="trend"></div><p class="mut" id="trendNote" style="margin:6px 0 0"></p></div>
     <div class="panel"><h2>Leaderboard</h2><p class="mut" style="margin:0 0 8px">Two axes, because one is not enough: <b>quality</b> is the heuristic score, <b>activity</b> is how much changed recently. A big quiet repo and a small thriving one are not comparable on either alone.</p><div id="lb"></div><p class="mut" id="lbNote" style="margin:6px 0 0"></p></div>
-    <div class="panel capped"><h2>System health</h2><div id="specgap"></div><div id="runlog"></div></div>
-    <div class="panel"><h2>Conformance</h2><div id="conf"></div><div class="legend" id="confLegend"></div></div>
-    <div class="panel"><h2>Categories</h2><div id="cats"></div></div>
-    <div class="panel"><h2>Actions budget</h2><div id="quota"></div></div>
+    <div class="panel capped"><h2>System health</h2><p class="mut" style="margin:0 0 8px">Two numbers that used to be one-off answers in a session: how many apps are DECIDED BUT UNSPECCED, and the run record (which flags any run that touched a file which lost lines).</p><div id="specgap"></div><div id="runlog"></div></div>
+    <div class="panel"><h2>Conformance</h2><p class="mut" style="margin:0 0 8px">How many repos satisfy each system rule — topics, a licence, a changelog, a test, a description. A bar at 100% means every repo passes that rule; a short bar is the work list.</p><div id="conf"></div><div class="legend" id="confLegend"></div></div>
+    <div class="panel"><h2>Categories</h2><p class="mut" style="margin:0 0 8px">Repos grouped by what they are — kit, app, system, meta — with the count in each. It answers "how much is tooling versus product".</p><div id="cats"></div></div>
+    <div class="panel"><h2>Actions budget</h2><p class="mut" style="margin:0 0 8px">GitHub Actions minutes used this month against the free allowance. Everything here is built to run inside it — no paid runners.</p><div id="quota"></div></div>
   </div>
 
   <div class="sec">Built vs planned</div>
@@ -312,7 +312,10 @@ fetch("data.json",{cache:"no-store"}).then(function(r){return r.json()}).then(fu
     var tr=d.traffic||null;
     if(tr&&tr.available){
       var trows=Object.keys(tr.repos||{}).map(function(n){return {n:n,t:tr.repos[n]||{}}}).filter(function(x){return (x.t.views||0)||(x.t.clones||0)}).sort(function(a,b){return (b.t.views||0)-(a.t.views||0)}).map(function(x){return '<tr><td>'+esc(x.n)+'</td><td>'+(x.t.views||0)+'</td><td>'+(x.t.uniques||0)+'</td><td>'+(x.t.clones||0)+'</td></tr>'}).join("");
-      $("trafficPanel").innerHTML=(trows?('<table><thead><tr><th>Repo</th><th>Views</th><th>Unique</th><th>Clones</th></tr></thead><tbody>'+trows+'</tbody></table>'):'<p class="mut" style="margin:0">No traffic recorded in the last 14 days.</p>')+'<p class="mut" style="margin:8px 0 0">'+esc(tr.note||"")+'</p>';
+      $("trafficPanel").innerHTML=(trows?('<table><thead><tr><th>Repo</th><th>Views</th><th>Unique</th><th title="git clones, including CI and scrapers - NOT people">Clones*</th></tr></thead><tbody>'+trows+'</tbody></table>'):'<p class="mut" style="margin:0">No traffic recorded in the last 14 days.</p>')+'<p class="mut" style="margin:8px 0 0"><b>* Clones</b> is a <b>git clone</b> count — every checkout of the repository, '
+          +'including CI, mirrors, bots and scrapers. It is <b>not</b> the number of people. A repo showing views 0 and clones 300 '
+          +'has had no human visitors at all: the clones are automation. Read it against <b>Views</b>, which is humans opening the page.</p>'
+          +'<p class="mut" style="margin:8px 0 0">'+esc(tr.note||"")+'</p>';
     } else {
       $("trafficPanel").innerHTML='<p class="mut" style="margin:0">'+esc((tr&&tr.note)||"Traffic is not available.")+'</p>';
     }
