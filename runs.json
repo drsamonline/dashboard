@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0035",
-      "at": "2026-10-23T07:42:00Z",
-      "workflow": "health",
-      "outcome": "open",
-      "note": "health=fix  repo=web-kit  pr=#1  status=open  note=Test workflow ran 'node test-node.js' which did not exist; added the suite (12/12)",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0036",
       "at": "2026-10-23T07:42:00Z",
       "workflow": "health",
@@ -534,6 +525,19 @@
       "note": "console-panel-height (owner: 'the boxes are messed up again'). THE REGRESSION WAS MINE: adding a legend to each Visuals panel gave them six different heights - Activity 166, Growth 143, Leaderboard 167, System health 272, Conformance 253, Categories 230, Actions budget 164 - so the row was ragged. Fixed: every .charts>.panel is 272px with its own scrollbar; measured after, all seven read 272px. ALSO FOUND while looking, by RENDERING the page in headless Chromium and reading the real data: the dashboard's refresh has NOT run since 11:00, so its data.json predates BOTH fixes - the leaderboard still carries the dict-licence error and the roadmap is still the hard-coded one. Re-dispatched. LESSON: I had verified those fixes on main and assumed they were live; verifying the CODE is not verifying the PAGE.",
       "files": [
         "dashboard/index.html"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "ea9414ea27e1",
+      "at": "2026-10-24T17:45:00Z",
+      "workflow": "fix-refresh-push",
+      "outcome": "ok",
+      "note": "fix-refresh-push (found by RENDERING the console in headless Chromium and noticing the leaderboard still showed its fallback). ROOT CAUSE, from the run log: the dashboard's refresh regenerated and committed data.json correctly, then died at `git push` - 'error: failed to push some refs to https://github.com/drsamonline/dashboard'. The HEALTH workflow commits SPEC-GAP.json + runs.json to the same branch every few minutes and is fast, so the refresh (about 80 seconds) ALWAYS lost the race. That is why data.json sat at 11:00:33 while the leaderboard still carried the dict-licence error and the roadmap still showed the hard-coded list - both fixed in app-builder hours earlier. Fix: fetch, rebase onto origin/<branch>, retry the push up to 4 times; and cancel-in-progress: false so a refresh is not killed by its own next trigger. LESSON: 'the code is fixed on main' is not 'the page shows it' - the refresh had been failing for four runs and nothing surfaced it.",
+      "files": [
+        "dashboard/.github/workflows/refresh.yml"
       ],
       "advanced": [],
       "errors": [],
