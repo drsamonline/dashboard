@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0020",
-      "at": "2026-10-23T04:56:00Z",
-      "workflow": "build",
-      "outcome": "logged",
-      "note": "build=stop   reason=budget(1 medium used)  next=app-canteen-lan,retrofit-web-kit,app-aerial(spec-pending)",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0021",
       "at": "2026-10-23T06:25:00Z",
       "workflow": "retrofit",
@@ -446,6 +437,22 @@
         "dashboard/index.html",
         "dashboard/tests/structure.test.js",
         "dashboard/.github/workflows/test.yml"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "3faf45fed0ac",
+      "at": "2026-10-24T11:20:00Z",
+      "workflow": "sys-backup",
+      "outcome": "ok",
+      "note": "sys-backup (NEW SYSTEM) — a pre-merge backup so a merge can never lose the code it replaced. Built drsamonline/backup (PUBLIC: backup.py + a reusable workflow + README + 17 tests) and drsamonline/dumps (the store). It snapshots a repo's tarball at the ref about to be replaced into <owner>__<repo>/<date-time>/<repo>.tar.gz, keeps the newest 100 per repo (deleting the oldest beyond), and creates dumps-2, dumps-3 ... when a dumps repo passes its size cap, so a full repo cannot block a backup. PROVEN: the first real dump is in drsamonline/dumps (ml-kit @ fbeb57d, 8947 B, read back byte-for-byte), and 17 unit tests pass; disabling rotation fails 4. Wired into forge via .github/workflows/backup.yml (on pull_request -> snapshots the BASE commit). TWO THINGS FOR THE OWNER: (1) add the BACKUP_TOKEN secret (contents:write on dumps, contents:read on the source) - without it the job SKIPS with a warning, it does not fail the PR and does not pretend it ran; (2) drsamonline/dumps is PRIVATE on purpose, because it will hold forge's private code - making it public would publish it.",
+      "files": [
+        "backup/backup.py",
+        "backup/.github/workflows/backup.yml",
+        "dumps/drsamonline__ml-kit/2026-10-24T095823Z/ml-kit.tar.gz",
+        "forge/.github/workflows/backup.yml"
       ],
       "advanced": [],
       "errors": [],
