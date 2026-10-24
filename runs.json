@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0021",
-      "at": "2026-10-23T06:25:00Z",
-      "workflow": "retrofit",
-      "outcome": "open",
-      "note": "retrofit=item  repo=unstoppable-mind-companion pr=#1  status=open  kit=web-kit  dup=localStorage-store            tests=8/8",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0022",
       "at": "2026-10-23T06:25:00Z",
       "workflow": "retrofit",
@@ -453,6 +444,20 @@
         "backup/.github/workflows/backup.yml",
         "dumps/drsamonline__ml-kit/2026-10-24T095823Z/ml-kit.tar.gz",
         "forge/.github/workflows/backup.yml"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "ea886ce0ab90",
+      "at": "2026-10-24T11:50:00Z",
+      "workflow": "dashboard-layout",
+      "outcome": "ok",
+      "note": "dashboard follow-up (owner: 'the visuals panels are elongated due to system health box and take too much space'). ROOT CAUSE: .charts had no align-items, so it defaulted to stretch and every panel in a row grew to the tallest - System health. Fixed: align-items:start on .charts; the System health panel is capped (max-height + overflow:auto); the runs table shows 3 not 5. The structure test guards both and fails 2 on the old layout (32/32 on the new). PR dashboard#3 merged.",
+      "files": [
+        "dashboard/index.html",
+        "dashboard/tests/structure.test.js"
       ],
       "advanced": [],
       "errors": [],
