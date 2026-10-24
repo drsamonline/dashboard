@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0033",
-      "at": "2026-10-23T07:42:00Z",
-      "workflow": "docs",
-      "outcome": "logged",
-      "note": "docs=fix  blog=build_posts.py now excludes all 14 kits  plan=build_plan_status.py now counts every kit as a kit  note=frame-kit/export-kit were leaking into products/posts",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0034",
       "at": "2026-10-23T07:42:00Z",
       "workflow": "registry",
@@ -526,6 +517,19 @@
         "Matneo/docs/index.html",
         "Matneo/docs/products/index.html",
         "Matneo/docs/free/index.html"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "dfa5123bea5d",
+      "at": "2026-10-24T16:50:00Z",
+      "workflow": "hub-repo-blog",
+      "outcome": "ok",
+      "note": "hub-repo-blog (#25, the last item). The hub now carries a REPO BLOG on its main page: a dated feed of every project, newest first, with its category, language and whether it has a live demo. It matters more now than when it was asked for, because after the Matneo change the hub is the ONLY list of the free and open-source work - the shop sells a licence and lists no apps. Rendered from the data the page already carries (the embedded snapshot / repos.json), so nothing new is fetched and the feed cannot disagree with the grid beside it; the section sits OUTSIDE the blocks build_hub.py regenerates, so a refresh cannot erase it. Still open, as the owner just reported: the dashboard boxes.",
+      "files": [
+        "drsamonline.github.io/index.html"
       ],
       "advanced": [],
       "errors": [],
