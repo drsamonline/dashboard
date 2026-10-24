@@ -2,17 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "001c2a594db2",
-      "at": "2026-10-24T07:21:08Z",
-      "workflow": "update-bmi-calculator",
-      "outcome": "ok",
-      "note": "update: bmi-calculator (P2), part 1 — 'Show the working' panel (every result shows its formula + substituted values; retrofitted onto the existing calculators) + creatinine clearance (Cockcroft-Gault) with a serum-creatinine input, formula/units/limits. Extended the app's own known-value self-tests (CrCl 97.2 M / 82.6 F mL/min + a units-consistency check) and added a headless jsdom runner + test.yml. Edited src/, re-minified to index.html + docs/play/index.html; verified headlessly on the MINIFIED build. PR bmi#2. Deferred: weight/BSA dosing + risk scores (risk scores need their own inputs).",
-      "files": {},
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "95cf4b45f41f",
       "at": "2026-10-24T07:47:13Z",
       "workflow": "update-bmi-calculator",
@@ -549,6 +538,23 @@
       "files": [
         "app-builder/exe/launcher.py",
         "app-builder/.github/workflows/build.yml"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "1ef2d6192992",
+      "at": "2026-10-24T23:00:00Z",
+      "workflow": "control-panel",
+      "outcome": "ok",
+      "note": "control-panel (owner: check every repo, find all the workflows, see what is connected and what is not, each function each step each stage, save it all to a new repo called control panel that controls the workflows and connects to the dashboard, then plan the best routes that cut user input to 1-2, with buttons to run each phase separately but connected as a grand pipeline from scratch to production to delivery to self-improvement and repair). BUILT. tools/fetch.py pulls every repo's workflows; tools/scan.py parses them and works out the graph; tools/plan.py derives the stages and the routes; docs/index.html is the panel. FIRST SCAN: 64 repos, 112 workflows, 134 jobs, 462 steps, 12 reusable, 24 scheduled, 96 runnable by hand, 42 connections - 0 BROKEN (no call to a workflow that does not exist), 0 PARSE ERRORS, and 8 REUSABLE WORKFLOWS NOTHING CALLS (forge's audit/docs/fanout/pages/release/self-heal/test + app-builder's test) - which is the public-caller-cannot-reach-a-private-repo constraint showing up as dead weight. THE GRAND PIPELINE: SCRATCH (3) -> BUILD (77) -> DELIVER (18) -> REPAIR (14), with every workflow placed and none unplaced. THE ROUTES: a new app = ONE input (describe it); change an app = ZERO; repair = ZERO; ship on demand = ONE press. 96 Run buttons, each linking to the real dispatch so no token lives in a browser. Verified by rendering the panel: 96 buttons, the four stages, the routes, the findings. Connected to the dashboard, which now reads the panel's plan.json live.",
+      "files": [
+        "control-panel/tools/scan.py",
+        "control-panel/tools/plan.py",
+        "control-panel/tools/fetch.py",
+        "control-panel/docs/index.html",
+        "dashboard/index.html"
       ],
       "advanced": [],
       "errors": [],
