@@ -2,15 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "backfill-0030",
-      "at": "2026-10-23T07:42:00Z",
-      "workflow": "retrofit",
-      "outcome": "open",
-      "note": "retrofit=item  repo=read-live-transform-app  pr=#1  status=open  kit=web-kit  dup=localStorage-store  tests=12/12",
-      "files": {},
-      "source": "PROGRESS.log"
-    },
-    {
       "id": "backfill-0031",
       "at": "2026-10-23T07:42:00Z",
       "workflow": "retrofit",
@@ -508,6 +499,20 @@
         "tools/adopt.py",
         ".github/workflows/adopt.yml",
         "registry/backlog-done.json"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "727ff39326bc",
+      "at": "2026-10-24T15:30:00Z",
+      "workflow": "sys-self-diagnose",
+      "outcome": "ok",
+      "note": "sys-self-diagnose (self-fix, part of #26). Built tools/self-diagnose.py + .github/workflows/self-diagnose.yml (daily) - the check that was MISSING: every other check looked at a repo's contents, none at the machinery doing the checking, which is why a schedule could sit dead and a workflow could reference a script that does not exist with no report saying so. FOUR CHECKS: (1) every workflow parses; (2) the cron is a real five-field schedule with a computable period; (3) IT ACTUALLY FIRES - a scheduled workflow whose last SCHEDULED run is older than twice its period is reported as not-firing, or never-fired if there is none (this is the check that would have caught the owner's 'scheduled but never ran'); (4) every local file a run: block names (a script under tools/, a test file) really exists in the repo. Read-only - it repairs nothing; self-heal.yml does the repairing. 14 self-tests run in CI first. Writes registry/diagnose.json + DIAGNOSE.md. STILL OPEN: self-update (self-heal already exists).",
+      "files": [
+        "tools/self-diagnose.py",
+        ".github/workflows/self-diagnose.yml"
       ],
       "advanced": [],
       "errors": [],
