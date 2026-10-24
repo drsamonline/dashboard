@@ -5,6 +5,12 @@ name: Refresh dashboard data
 #
 # BILLING_TOKEN (optional): a classic PAT with the 'user' scope, so the Actions
 # budget panel can show live minutes. Without it the panel explains the rule.
+#
+# FIXED: the commit step named all seven generated files on one `git add` line.
+# `git add` exits non-zero when ANY named path does not exist, and Actions runs
+# bash with -e, so a single missing or renamed output file failed the whole
+# refresh - silently, from the dashboard's point of view. It now adds only the
+# files that are actually there, and reports what it is committing.
 
 on:
   schedule:
@@ -44,6 +50,12 @@ jobs:
           if git diff --quiet; then echo "no change"; exit 0; fi
           git config user.name  "forge-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add data.json history.json changes.json feed.xml forks.json community.json traffic.json
+          # add only what exists: a missing path must not fail the run
+          added=0
+          for f in data.json history.json changes.json feed.xml forks.json community.json traffic.json; do
+            if [ -e "$f" ]; then git add -- "$f"; added=$((added+1)); else echo "::warning::$f was not generated"; fi
+          done
+          if git diff --staged --quiet; then echo "nothing staged"; exit 0; fi
+          echo "staged $added tracked path(s)"
           git commit -m "chore: refresh dashboard data [skip ci]"
           git push
