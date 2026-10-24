@@ -1,6 +1,6 @@
 {
   "generated": "2026-10-24",
-  "generated_at": "2026-10-24T04:50:56Z",
+  "generated_at": "2026-10-24T07:09:13Z",
   "reckoning": "46 products · 14 kits · avg conformance 5.0/5 · updated automatically.",
   "health": "ok",
   "cards": [
@@ -36,15 +36,20 @@
     "avg": 5.0,
     "pushes": 67,
     "byrepo": {
-      "app-builder": 1,
       "dashboard": 1,
+      "app-builder": 1,
       "Matneo": 1,
+      "SmartNotes": 1,
+      "drsamonline.github.io": 1,
       "skills": 1,
+      "case-kit": 1,
+      "search-kit": 1,
+      "export-kit": 1,
+      "web-kit": 1,
       "All4ONE": 1,
       "The_Browser": 1,
       "CLDR": 1,
       "BLINKTRANSFER": 1,
-      "web-kit": 1,
       "MATERIA-MEDICA-BUILDER": 1,
       "HMS": 1,
       "app-panchang": 1,
@@ -141,18 +146,53 @@
     },
     {
       "date": "2026-10-22",
-      "count": 5
+      "count": 4
     },
     {
       "date": "2026-10-23",
-      "count": 19
+      "count": 15
     },
     {
       "date": "2026-10-24",
-      "count": 43
+      "count": 48
     }
   ],
   "attention": [
+    {
+      "title": "app-builder: fix the stale caller template + skip docs-only pushes (sys-ci-verify)",
+      "repo": "app-builder",
+      "url": "https://github.com/drsamonline/app-builder/pull/7",
+      "kind": "PR",
+      "created": "2026-10-24T07:07:10Z"
+    },
+    {
+      "title": "app-builder: verify the EXE we ship (sys-ci-verify)",
+      "repo": "app-builder",
+      "url": "https://github.com/drsamonline/app-builder/pull/6",
+      "kind": "PR",
+      "created": "2026-10-24T06:51:04Z"
+    },
+    {
+      "title": "hub: offline-demo overlay + fix card links that 404 (idea-offline-demo; review fix)",
+      "repo": "drsamonline.github.io",
+      "url": "https://github.com/drsamonline/drsamonline.github.io/pull/3",
+      "kind": "PR",
+      "created": "2026-10-24T06:37:37Z"
+    },
+    {
+      "title": "marketing: adopt the marketing skills (update: commercial)",
+      "repo": "skills",
+      "url": "https://github.com/drsamonline/skills/pull/1",
+      "kind": "PR",
+      "created": "2026-10-24T06:05:15Z"
+    },
+    {
+      "title": "case-kit: patient-record interchange format (update: case-kit)",
+      "repo": "case-kit",
+      "url": "https://github.com/drsamonline/case-kit/pull/1",
+      "kind": "PR",
+      "created": "2026-10-24T05:40:05Z"
+    },
     {
       "title": "chore(sweep): add changes/ (the changelog mechanism)",
       "repo": "CLDR",
@@ -235,130 +275,130 @@
   "quota": {
     "available": false,
     "included_minutes": 2000,
-    "note": "Actions minutes are free on public repos; the private repos draw on the free 2,000 min/month. The billing API is retired (410 Gone), so this is an ESTIMATE from 116 private-repo run(s) this month.",
-    "private_runs": 116,
-    "estimated_minutes": 6.4
+    "note": "Actions minutes are free on public repos; the private repos draw on the free 2,000 min/month. The billing API is retired (410 Gone), so this is an ESTIMATE from 122 private-repo run(s) this month.",
+    "private_runs": 122,
+    "estimated_minutes": 7.6
   },
   "changes": [
     {
-      "type": "Push",
-      "repo": "neon-games",
-      "when": "2026-10-24T02:19:26Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "dashboard",
-      "when": "2026-10-24T04:19:28Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Create",
-      "repo": "MATERIA-MEDICA-BUILDER",
-      "when": "2026-10-24T03:30:42Z",
-      "text": ""
-    },
-    {
-      "type": "Create",
-      "repo": "BLINKTRANSFER",
-      "when": "2026-10-24T03:30:33Z",
-      "text": ""
-    },
-    {
-      "type": "Push",
-      "repo": "dashboard",
-      "when": "2026-10-23T05:59:12Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "lockhtml",
-      "when": "2026-10-24T02:12:26Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Create",
-      "repo": "skin-case-tracker",
-      "when": "2026-10-23T18:39:26Z",
-      "text": ""
-    },
-    {
-      "type": "Push",
-      "repo": "Matneo",
-      "when": "2026-10-23T05:18:43Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Create",
-      "repo": "Matneo",
-      "when": "2026-10-23T05:16:58Z",
-      "text": ""
-    },
-    {
-      "type": "Push",
-      "repo": "CLDR",
-      "when": "2026-10-24T03:48:38Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
+      "type": "PullRequest",
       "repo": "app-builder",
-      "when": "2026-10-23T06:16:14Z",
-      "text": "pushed to main"
+      "when": "2026-10-24T07:07:10Z",
+      "text": "opened: "
     },
     {
       "type": "Push",
-      "repo": "web-kit",
-      "when": "2026-10-24T03:42:15Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "Matneo",
-      "when": "2026-10-23T05:00:32Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "dashboard",
-      "when": "2026-10-24T02:50:19Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Create",
-      "repo": "app-builder",
-      "when": "2026-10-23T05:32:54Z",
-      "text": ""
-    },
-    {
-      "type": "Create",
-      "repo": "All4ONE",
-      "when": "2026-10-24T03:30:30Z",
-      "text": ""
-    },
-    {
-      "type": "Push",
-      "repo": "dashboard",
-      "when": "2026-10-23T04:54:06Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "saga-vn-engine",
-      "when": "2026-10-23T04:39:09Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "aethelgard-rpg-engine",
-      "when": "2026-10-23T04:39:08Z",
+      "repo": "SmartNotes",
+      "when": "2026-10-24T06:39:58Z",
       "text": "pushed to main"
     },
     {
       "type": "PullRequest",
-      "repo": "CLDR",
-      "when": "2026-10-24T03:52:15Z",
+      "repo": "app-builder",
+      "when": "2026-10-24T06:51:04Z",
       "text": "opened: "
+    },
+    {
+      "type": "Push",
+      "repo": "app-builder",
+      "when": "2026-10-24T04:50:21Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "dashboard",
+      "when": "2026-10-24T04:47:52Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "kent-repertory-explorer",
+      "when": "2026-10-23T07:45:13Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "app-builder",
+      "when": "2026-10-24T04:41:26Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "PullRequest",
+      "repo": "drsamonline.github.io",
+      "when": "2026-10-24T06:37:36Z",
+      "text": "opened: "
+    },
+    {
+      "type": "Push",
+      "repo": "TTB",
+      "when": "2026-10-23T07:02:10Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "All4ONE",
+      "when": "2026-10-24T04:06:06Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "The_Browser",
+      "when": "2026-10-23T07:45:53Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "mnemosyne-companion",
+      "when": "2026-10-23T07:45:09Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "PullRequest",
+      "repo": "skills",
+      "when": "2026-10-24T06:05:15Z",
+      "text": "opened: "
+    },
+    {
+      "type": "Push",
+      "repo": "app-builder",
+      "when": "2026-10-24T03:54:29Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "PullRequest",
+      "repo": "drsamonline.github.io",
+      "when": "2026-10-24T06:00:47Z",
+      "text": "merged: "
+    },
+    {
+      "type": "Push",
+      "repo": "TTB",
+      "when": "2026-10-23T07:02:12Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "TTB",
+      "when": "2026-10-23T07:02:11Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "app-builder",
+      "when": "2026-10-24T04:50:27Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Create",
+      "repo": "case-kit",
+      "when": "2026-10-24T05:39:57Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
+      "repo": "the-symphony-companion",
+      "when": "2026-10-23T06:50:51Z",
+      "text": "pushed to web-kit-storage"
     }
   ],
   "automation": [
@@ -369,8 +409,8 @@
       "what": "the project hub",
       "schedule": "daily 03:17 UTC",
       "repo_url": "https://github.com/drsamonline/drsamonline.github.io",
-      "url": "https://github.com/drsamonline/drsamonline.github.io/actions/runs/39926222177",
-      "last_run": "2026-10-23T08:41:32Z",
+      "url": "https://github.com/drsamonline/drsamonline.github.io/actions/runs/40068501305",
+      "last_run": "2026-10-24T06:03:20Z",
       "conclusion": "success"
     },
     {
@@ -391,8 +431,8 @@
       "what": "this dashboard",
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/40063939926",
-      "last_run": "2026-10-24T04:50:46Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/40072993448",
+      "last_run": "2026-10-24T07:09:02Z",
       "conclusion": "in_progress"
     },
     {
@@ -543,6 +583,41 @@
         "html_url": "https://github.com/drsamonline/neon-runner"
       },
       {
+        "name": "SmartNotes",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/SmartNotes"
+      },
+      {
+        "name": "case-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/case-kit"
+      },
+      {
+        "name": "search-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/search-kit"
+      },
+      {
+        "name": "export-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/export-kit"
+      },
+      {
+        "name": "web-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/web-kit"
+      },
+      {
         "name": "All4ONE",
         "stars": 1,
         "forks": 0,
@@ -569,13 +644,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/BLINKTRANSFER"
-      },
-      {
-        "name": "web-kit",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/web-kit"
       },
       {
         "name": "MATERIA-MEDICA-BUILDER",
@@ -851,13 +919,6 @@
         "html_url": "https://github.com/drsamonline/NEO"
       },
       {
-        "name": "case-kit",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/case-kit"
-      },
-      {
         "name": "book-kit",
         "stars": 1,
         "forks": 0,
@@ -870,13 +931,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/srs-kit"
-      },
-      {
-        "name": "search-kit",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/search-kit"
       },
       {
         "name": "repertory-kit",
@@ -921,13 +975,6 @@
         "html_url": "https://github.com/drsamonline/crypto-kit"
       },
       {
-        "name": "export-kit",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/export-kit"
-      },
-      {
         "name": "homoeopathic-materia-medica-repertory-json",
         "stars": 1,
         "forks": 0,
@@ -947,13 +994,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/ULTIMATE-WINDOWS-OPTIMIZER"
-      },
-      {
-        "name": "SmartNotes",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/SmartNotes"
       }
     ],
     "forks": {
@@ -979,6 +1019,57 @@
     "window": "14 days",
     "note": "Last 14 days — GitHub's retention window.",
     "repos": {
+      "SmartNotes": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 43,
+        "clone_uniques": 28,
+        "referrers": [],
+        "paths": []
+      },
+      "case-kit": {
+        "views": 2,
+        "uniques": 2,
+        "clones": 18,
+        "clone_uniques": 11,
+        "referrers": [
+          {
+            "from": "drsamonline.github.io",
+            "count": 2
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/case-kit",
+            "count": 2,
+            "title": "Overview"
+          }
+        ]
+      },
+      "search-kit": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 20,
+        "clone_uniques": 11,
+        "referrers": [],
+        "paths": []
+      },
+      "export-kit": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
+      "web-kit": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 28,
+        "clone_uniques": 14,
+        "referrers": [],
+        "paths": []
+      },
       "All4ONE": {
         "views": 1,
         "uniques": 1,
@@ -1026,14 +1117,6 @@
             "count": 1
           }
         ],
-        "paths": []
-      },
-      "web-kit": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 28,
-        "clone_uniques": 14,
-        "referrers": [],
         "paths": []
       },
       "MATERIA-MEDICA-BUILDER": {
@@ -1512,25 +1595,6 @@
         ],
         "paths": []
       },
-      "case-kit": {
-        "views": 2,
-        "uniques": 2,
-        "clones": 18,
-        "clone_uniques": 11,
-        "referrers": [
-          {
-            "from": "drsamonline.github.io",
-            "count": 2
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/case-kit",
-            "count": 2,
-            "title": "Overview"
-          }
-        ]
-      },
       "book-kit": {
         "views": 0,
         "uniques": 0,
@@ -1557,14 +1621,6 @@
             "title": "Overview"
           }
         ]
-      },
-      "search-kit": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 20,
-        "clone_uniques": 11,
-        "referrers": [],
-        "paths": []
       },
       "repertory-kit": {
         "views": 2,
@@ -1622,14 +1678,6 @@
         "uniques": 0,
         "clones": 37,
         "clone_uniques": 17,
-        "referrers": [],
-        "paths": []
-      },
-      "export-kit": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 0,
-        "clone_uniques": 0,
         "referrers": [],
         "paths": []
       },
@@ -1706,18 +1754,25 @@
             "title": "Overview"
           }
         ]
-      },
-      "SmartNotes": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 43,
-        "clone_uniques": 28,
-        "referrers": [],
-        "paths": []
       }
     }
   },
   "repos": [
+    {
+      "name": "SmartNotes",
+      "description": "Turn raw thoughts into organized action.",
+      "pushed_at": "2026-10-24T06:39:57Z",
+      "homepage": "https://drsamonline.github.io/SmartNotes/",
+      "html_url": "https://github.com/drsamonline/SmartNotes",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        1
+      ]
+    },
     {
       "name": "All4ONE",
       "description": "🧰 551 portable Windows tools in ONE free .exe — file ops, hashing, PDF/Office batch, image/video/audio, network diagnostics, registry helpers, disk cleaner, security audits. Zero installs, zero telemetry, MIT licensed. CLI + GUI.",
@@ -2392,21 +2447,6 @@
         0,
         0
       ]
-    },
-    {
-      "name": "SmartNotes",
-      "description": "Turn raw thoughts into organized action.",
-      "pushed_at": "2026-10-22T11:00:19Z",
-      "homepage": "https://drsamonline.github.io/SmartNotes/",
-      "html_url": "https://github.com/drsamonline/SmartNotes",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0
-      ]
     }
   ],
   "links": {
@@ -2484,15 +2524,20 @@
       "avg": 5.0,
       "pushes": 67,
       "byrepo": {
-        "app-builder": 1,
         "dashboard": 1,
+        "app-builder": 1,
         "Matneo": 1,
+        "SmartNotes": 1,
+        "drsamonline.github.io": 1,
         "skills": 1,
+        "case-kit": 1,
+        "search-kit": 1,
+        "export-kit": 1,
+        "web-kit": 1,
         "All4ONE": 1,
         "The_Browser": 1,
         "CLDR": 1,
         "BLINKTRANSFER": 1,
-        "web-kit": 1,
         "MATERIA-MEDICA-BUILDER": 1,
         "HMS": 1,
         "app-panchang": 1,

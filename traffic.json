@@ -4,6 +4,57 @@
   "window": "14 days",
   "note": "Last 14 days — GitHub's retention window.",
   "repos": {
+    "SmartNotes": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 43,
+      "clone_uniques": 28,
+      "referrers": [],
+      "paths": []
+    },
+    "case-kit": {
+      "views": 2,
+      "uniques": 2,
+      "clones": 18,
+      "clone_uniques": 11,
+      "referrers": [
+        {
+          "from": "drsamonline.github.io",
+          "count": 2
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/case-kit",
+          "count": 2,
+          "title": "Overview"
+        }
+      ]
+    },
+    "search-kit": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 20,
+      "clone_uniques": 11,
+      "referrers": [],
+      "paths": []
+    },
+    "export-kit": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 0,
+      "clone_uniques": 0,
+      "referrers": [],
+      "paths": []
+    },
+    "web-kit": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 28,
+      "clone_uniques": 14,
+      "referrers": [],
+      "paths": []
+    },
     "All4ONE": {
       "views": 1,
       "uniques": 1,
@@ -51,14 +102,6 @@
           "count": 1
         }
       ],
-      "paths": []
-    },
-    "web-kit": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 28,
-      "clone_uniques": 14,
-      "referrers": [],
       "paths": []
     },
     "MATERIA-MEDICA-BUILDER": {
@@ -537,25 +580,6 @@
       ],
       "paths": []
     },
-    "case-kit": {
-      "views": 2,
-      "uniques": 2,
-      "clones": 18,
-      "clone_uniques": 11,
-      "referrers": [
-        {
-          "from": "drsamonline.github.io",
-          "count": 2
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/case-kit",
-          "count": 2,
-          "title": "Overview"
-        }
-      ]
-    },
     "book-kit": {
       "views": 0,
       "uniques": 0,
@@ -582,14 +606,6 @@
           "title": "Overview"
         }
       ]
-    },
-    "search-kit": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 20,
-      "clone_uniques": 11,
-      "referrers": [],
-      "paths": []
     },
     "repertory-kit": {
       "views": 2,
@@ -647,14 +663,6 @@
       "uniques": 0,
       "clones": 37,
       "clone_uniques": 17,
-      "referrers": [],
-      "paths": []
-    },
-    "export-kit": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 0,
-      "clone_uniques": 0,
       "referrers": [],
       "paths": []
     },
@@ -731,14 +739,6 @@
           "title": "Overview"
         }
       ]
-    },
-    "SmartNotes": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 43,
-      "clone_uniques": 28,
-      "referrers": [],
-      "paths": []
     }
   }
 }
