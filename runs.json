@@ -2,21 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "97405d100187",
-      "at": "2026-10-25T06:30:00Z",
-      "workflow": "licence-polyform",
-      "outcome": "ok",
-      "note": "licence-polyform (owner: convert ALL repos to the PolyForm Noncommercial License, add it to the workflow so all projects go through it and not MIT, version-bump + enhance the apps so they all get converted, update the workflow accordingly). DONE, with the canonical text. I fetched the licence VERBATIM from polyformproject.org rather than writing it from memory, because a licence you get wrong is worse than none, and stored it as tools/LICENCE.md with the Required Notice line the licence asks the licensor to provide. CONVERTED 71 OF 73 REPOS, 119 FILES: the LICENSE, the README badge and sentence, package.json's license field, and the SPDX headers - forge 12, app-builder 3 - which carried `LicenseRef-Forge-Proprietary`, an identifier nobody can look up. The tool changes all FOUR places because a repo states its licence in four places, and a repo that disagrees with itself about its licence is worse than one that is merely out of date. TWO FAILED and are retryable (HMS, NEO - both returned an HTML error page from the API, not a refusal). THE ENFORCER IS IN THE WORKFLOW: .github/workflows/licence.yml runs daily and on demand, checks all four places on every repo, converts the ones that disagree, and runs the tool's own tests first - so a new repo is licensed the day it is created and an edited one cannot drift back. STILL TO DO in this phase: the version bump + 1-2 enhancements per app so each gets a release carrying the new licence.",
-      "files": [
-        "forge/tools/licence.py",
-        "forge/tools/LICENCE.md",
-        "forge/.github/workflows/licence.yml"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "2c432520757b",
       "at": "2026-10-25T07:45:00Z",
       "workflow": "licence-policy",
@@ -552,6 +537,20 @@
       "files": [
         "app-builder/.github/workflows/kit-tests.yml",
         "forge/LEARNINGS.md"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "4627f4cb2614",
+      "at": "2026-10-26T20:00:00Z",
+      "workflow": "handoff",
+      "outcome": "ok",
+      "note": "handoff (owner: what to do now, and how do I get the same work to a new session). THE ANSWER TO THE SECOND QUESTION IS THE IMPORTANT ONE: a new session starts with NO memory, and everything learned here lives in the repos but scattered across LEARNINGS.md, BACKLOG.md, QUEUE/, RUNS.jsonl and registry/ - so it had no way to know where to begin. HANDOFF.md is now that single entry point, and the README points at it. It carries: what the estate is and that forge is the brain; the state as MEASURED not claimed (47 apps, 43 of 43 real apps with the four features, 0 invalid workflows, the kit tests fixed, the idea-box chain proved); the FOUR RULES and why each exists (the parity gate, the demo is the app, one licence everywhere, a spec before a scaffold); the FIVE TRAPS that cost real time (the read-back lies ten times; apps are multi-file so enumerate rather than define; defined is not called; a comment saying FIXED is not evidence; one failure hides another); the next work in order; and how to work here. TO CONTINUE IN A NEW SESSION: say 'read forge/HANDOFF.md and forge/LEARNINGS.md, then continue' - that is the whole onboarding.",
+      "files": [
+        "forge/HANDOFF.md",
+        "forge/README.md"
       ],
       "advanced": [],
       "errors": [],
