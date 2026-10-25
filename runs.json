@@ -2,21 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "60869fdbfdc1",
-      "at": "2026-10-24T09:15:00Z",
-      "workflow": "retrofit",
-      "outcome": "ok",
-      "note": "retrofit (P2) part 1 — created the missing input forge/registry/deps.json (kit -> capability map + a measured duplication audit) and the false-completion register. Retrofitted ONE repo: the bmi app delegates its hand-rolled download() to the already-vendored export-kit (PR #5, then fix PR #6 after PR #5 silently dropped the src + test files). 3 assertions prove the delegation and FAIL on the un-retrofitted build. Measured +3768 B (+4.8%), recorded. Audit found 3 repos carrying web-kit.js with zero references and 2 partially-wired.",
-      "files": [
-        "registry/deps.json",
-        "registry/false-completions.md",
-        "bmi-bmr-tdee-macros-fluid-calculator/src/clinical-health-calculator.html"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 1
-    },
-    {
       "id": "d797ca9276d3",
       "at": "2026-10-24T09:20:00Z",
       "workflow": "retrofit",
@@ -582,6 +567,21 @@
       "note": "parity-in-workflow. The parity gate now RUNS in kit-audit.yml (weekly + on demand), so the policy is enforced rather than promised: for every repo that LOADS a kit, does that kit expose every method the repo CALLS? PARITY permits a retrofit, HARVEST sends the app's better code INTO the kit, BROKEN means restore or add. It also runs on every project the owner uploads, so new code is checked against the kits and anything better is harvested into them. Verified the flag reaches the function and the normal audit still runs.",
       "files": [
         "forge/.github/workflows/kit-audit.yml"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "97405d100187",
+      "at": "2026-10-25T06:30:00Z",
+      "workflow": "licence-polyform",
+      "outcome": "ok",
+      "note": "licence-polyform (owner: convert ALL repos to the PolyForm Noncommercial License, add it to the workflow so all projects go through it and not MIT, version-bump + enhance the apps so they all get converted, update the workflow accordingly). DONE, with the canonical text. I fetched the licence VERBATIM from polyformproject.org rather than writing it from memory, because a licence you get wrong is worse than none, and stored it as tools/LICENCE.md with the Required Notice line the licence asks the licensor to provide. CONVERTED 71 OF 73 REPOS, 119 FILES: the LICENSE, the README badge and sentence, package.json's license field, and the SPDX headers - forge 12, app-builder 3 - which carried `LicenseRef-Forge-Proprietary`, an identifier nobody can look up. The tool changes all FOUR places because a repo states its licence in four places, and a repo that disagrees with itself about its licence is worse than one that is merely out of date. TWO FAILED and are retryable (HMS, NEO - both returned an HTML error page from the API, not a refusal). THE ENFORCER IS IN THE WORKFLOW: .github/workflows/licence.yml runs daily and on demand, checks all four places on every repo, converts the ones that disagree, and runs the tool's own tests first - so a new repo is licensed the day it is created and an edited one cannot drift back. STILL TO DO in this phase: the version bump + 1-2 enhancements per app so each gets a release carrying the new licence.",
+      "files": [
+        "forge/tools/licence.py",
+        "forge/tools/LICENCE.md",
+        "forge/.github/workflows/licence.yml"
       ],
       "advanced": [],
       "errors": [],
