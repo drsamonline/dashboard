@@ -2,21 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "a4c46bbdffe4",
-      "at": "2026-10-24T02:15:00Z",
-      "workflow": "delivery-sweep",
-      "outcome": "ok",
-      "note": "delivery-sweep (owner: the dashboard's idea box adds ideas to the app master list - use it properly and plan the workflow accordingly; the list is APP IDEAS ONLY; for workflow updates the remaining work is phase 3, apply it first). PHASE 3 APPLIED: tools/app-deliver.py generated what was missing but never CHECKED - 'delivered' is SEVEN things (landing page, live demo, pipeline caller, Pages enabled, README badges, screenshot, release) and any one missing is a repo that looks finished and is not. It now reports all seven for every repo into registry/delivery.json, applies only what is absent, and DISPATCHES the pipeline where a release or a screenshot is missing - one dispatch closes three of the seven, because the pipeline builds three platforms, publishes the release, deploys the demo and captures the screenshot. The state goes in the job summary, worst first. THE IDEA BOX: the dashboard box opens a prefilled issue and promises 'intake derives the name, kits and priority itself' - and intake wrote a QUEUE spec but never touched APP_MASTER_LIST.md, so the console could not see the idea and the auto-build could not pick it up. intake.py now appends to the master list too, numbered and counted, refusing duplicates. The list stays APP IDEAS ONLY - a workflow update still goes to QUEUE.",
-      "files": [
-        "forge/tools/app-deliver.py",
-        "forge/.github/workflows/app-deliver.yml",
-        "forge/scripts/intake.py"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "36fea7b0d92f",
       "at": "2026-10-25T03:00:00Z",
       "workflow": "idea-specs",
@@ -552,6 +537,19 @@
         "forge/QUEUE/app-prism.md",
         "forge/QUEUE/app-canteen.md",
         "forge/QUEUE/app-chalk.md",
+        "forge/LEARNINGS.md"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "f2ed1446bbe9",
+      "at": "2026-10-26T15:00:00Z",
+      "workflow": "queue-spec-audit",
+      "outcome": "ok",
+      "note": "queue-spec-audit (owner: go). I AUDITED ALL 154 APP SPECS BY THE THREE SHAPES FOUND TODAY, AND THE ANSWER IS THE QUEUE ITSELF. Only 35 (23%) name an outcome a stranger can check. 41 (27%) are CIRCULAR - 'the self-test in the page passes'. 77 (50%) are TAGLINES with no number and nothing checkable. One has no done-means at all. So 77% of the queue cannot fail for the wrong reason, which means building the 147 as they stand would produce 147 apps that cannot demonstrate they work - the same defect I spent today finding in six apps, waiting in 147 more. THE HONEST CONCLUSION: fixing the done-means is a PREREQUISITE for the queue, not polish after it. The pattern is consistent enough to be mechanical for the taglines - each spec already states its job, so the done-means can be derived from it as an outcome with a number or a named condition - but the circular ones need the app's own domain to say what the test should prove.",
+      "files": [
         "forge/LEARNINGS.md"
       ],
       "advanced": [],
