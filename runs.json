@@ -2,22 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "4",
-      "at": "2026-10-24T13:40:00Z",
-      "workflow": "code-compression",
-      "outcome": "ok",
-      "note": "code-compression (self-fix) — every app here is ONE FILE a visitor downloads whole, and nothing watched the shipped bytes. tools/code-compression.py measures raw + gzip per page, flags anything over a 250 KB budget, and carries the other half of compression: the capabilities duplicated across repos (from the audit) are duplicated SOURCE. .github/workflows/code-compression.yml runs it weekly (no secret). First report: 10 pages, 1318 KB raw / 393 KB gzip; ONE over budget - mnemosyne-companion at 415 KB raw (gzip 128 KB), ~2x the next largest; transport already saves ~70% everywhere.",
-      "files": [
-        "tools/code-compression.py",
-        ".github/workflows/code-compression.yml",
-        "SIZE.md",
-        "registry/size.json"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "f4fcf7a91f10",
       "at": "2026-10-24T14:10:00Z",
       "workflow": "fix-kit-tests-and-lint",
@@ -571,6 +555,23 @@
       "files": [
         "app-builder/.github/workflows/build.yml",
         "forge/tools/app-deliver.py",
+        "smartbill-app/docs/play/index.html"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "d890d469dc17",
+      "at": "2026-10-25T17:00:00Z",
+      "workflow": "lessons-smartbill-guards",
+      "outcome": "ok",
+      "note": "lessons-smartbill-guards (owner: the pipeline of the total workflow related to forge needs this correction too; smartbill can be improved by adding a person's GSTIN in settings that prints on the bill; from now on write down everything learnt to a repo; also implement in the giant workflow for the forge dashboard and control panel). (1) LEARNINGS.md WRITTEN: LESSONS.md is generated and says 'do not edit by hand', so the hand-written counterpart now exists - eight lessons, each with the evidence that produced it, led by the one that covers most of today: A THING THAT ISN'T WIRED LOOKS EXACTLY LIKE A THING THAT IS. (2) THE FORGE FAMILY CHECKED, NOT ASSUMED: dashboard, control-panel, the hub, Matneo, forge and app-builder have NO source/docs pairs - the demo-drift class CANNOT occur there, so there was nothing to 'fix'. (3) THE GIANT WORKFLOW: the plan now carries four GUARDS as part of the pipeline rather than as habits - the workflow schema, the demo is the app, one licence everywhere, and a spec before a scaffold - each with what it catches and WHY it exists, and the panel shows them. (4) SMARTBILL: the Customer GSTIN already existed, validated and printing on the bill; the gap was retyping it every invoice, so it now has a SAVED-CUSTOMER MASTER - save once, pick from a dropdown, and the name, GSTIN, address and place of supply fill themselves. Matching is by name, so a repeat customer is updated rather than duplicated. The demo was regenerated in the same commit, because the guard added today would rightly have failed the build.",
+      "files": [
+        "forge/LEARNINGS.md",
+        "control-panel/docs/plan.json",
+        "control-panel/docs/index.html",
+        "smartbill-app/index.html",
         "smartbill-app/docs/play/index.html"
       ],
       "advanced": [],
