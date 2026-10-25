@@ -2,21 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "36fea7b0d92f",
-      "at": "2026-10-25T03:00:00Z",
-      "workflow": "idea-specs",
-      "outcome": "ok",
-      "note": "idea-specs (owner: app ideas in the backlog generate their specs and add them to the app master list; the list is for APP IDEAS ONLY). The auto-build refuses to scaffold an idea without a spec (Rule 0), so an idea that is only a row in the list can never be picked up - that was the real gap. intake.py gains --from-master-list, which writes a QUEUE spec for every row that has none: a real skeleton (what it must do, what it must NOT do, the mechanic, the kits, the data, what done means, the open questions). The spec is marked STATUS: DRAFT and new-app.yml SKIPS drafts - because a one-line idea is not a specification and pretending otherwise is how you ship the wrong app. The 133 rows from app_ideas_prompts.md already carry their full prompts (the list's own header points at them), so only the newly added ideas are generated. ALSO FIXED: add_to_master_list() had been defined AFTER `if __name__ == \"__main__\": sys.exit(main())`, so it was never defined when main ran - it is moved before main and now actually called.",
-      "files": [
-        "forge/scripts/intake.py",
-        "forge/.github/workflows/new-app.yml",
-        "forge/QUEUE/"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "71b528528ab8",
       "at": "2026-10-25T03:45:00Z",
       "workflow": "unique-designs-seo-404",
@@ -550,6 +535,20 @@
       "outcome": "ok",
       "note": "queue-spec-audit (owner: go). I AUDITED ALL 154 APP SPECS BY THE THREE SHAPES FOUND TODAY, AND THE ANSWER IS THE QUEUE ITSELF. Only 35 (23%) name an outcome a stranger can check. 41 (27%) are CIRCULAR - 'the self-test in the page passes'. 77 (50%) are TAGLINES with no number and nothing checkable. One has no done-means at all. So 77% of the queue cannot fail for the wrong reason, which means building the 147 as they stand would produce 147 apps that cannot demonstrate they work - the same defect I spent today finding in six apps, waiting in 147 more. THE HONEST CONCLUSION: fixing the done-means is a PREREQUISITE for the queue, not polish after it. The pattern is consistent enough to be mechanical for the taglines - each spec already states its job, so the done-means can be derived from it as an outcome with a number or a named condition - but the circular ones need the app's own domain to say what the test should prove.",
       "files": [
+        "forge/LEARNINGS.md"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "03c186999ba8",
+      "at": "2026-10-26T16:00:00Z",
+      "workflow": "done-means-batch",
+      "outcome": "ok",
+      "note": "done-means-batch (owner: go). I STARTED THE FIX FOR THE 77% AND NEARLY COMMITTED THE BUG AS ITS REMEDY: a programmatic rewrite of the 77 taglines would have produced 'the app does what its job says' - the same circular shape in new words. So 19 were rewritten BY HAND from their own jobs, and only the ones I authored, because I know what they are meant to do: six points on a chart; a contrast ratio to two decimals matching the WCAG formula by hand; one changed word producing ONE highlighted run, not two; ten cron times each at 05:00; FF and 11111111 in the same view; a dose card that REFUSES to compute when the units disagree; an expiry marked Expired before today; a receipt whose amount in words matches the figures; a clash that cannot be saved; a wrong passphrase that fails rather than showing partial data. THE REMAINING 99 NEED THEIR APP'S DOMAIN, and guessing would be worse than leaving them - a fabricated done-means is more dangerous than an honest tagline, because it looks checkable.",
+      "files": [
+        "(19 specs) falsifiable done-means",
         "forge/LEARNINGS.md"
       ],
       "advanced": [],
