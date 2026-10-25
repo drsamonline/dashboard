@@ -2,19 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "40903281488d",
-      "at": "2026-10-24T18:10:00Z",
-      "workflow": "hub-eight-flagships",
-      "outcome": "ok",
-      "note": "hub-eight-flagships (owner: 'let it show 8 flagship best projects that are completed; currently it shows 5'). WHY IT SHOWED FIVE: FEATURED listed four keys and the renderer ALSO appends any project with feat:true that is not already in FEATURED - which added neon-runner, so five. FEATURED now names EIGHT: the original four, neon-runner explicitly, plus a clinical calculator (bmi-bmr-tdee-macros-fluid-calculator), a synthesised ambient-sound mixer (ambient-sound-studio) and AES-256-GCM file protection (lockhtml) - all three completed and with a live demo, and each adding a flavour the section did not have. The line under the heading now names all eight. Note the renderer's concat is idempotent: a key in FEATURED is never appended twice.",
-      "files": [
-        "drsamonline.github.io/index.html"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "2ab20e00325c",
       "at": "2026-10-24T18:30:00Z",
       "workflow": "hub-exclude-tooling",
@@ -569,6 +556,19 @@
       "note": "deadcode-guard-rejected (owner: the 147 go last, do the remaining first). THE BIGGEST REMAINING ITEM WAS LESSON 1 AT x8 WITH A PARTIAL GUARD, so I built the check for it: a dead-code scan across the estate. IT REPORTED 273 UNREFERENCED FUNCTIONS AND ALMOST ALL WERE WRONG - HMS's buildClinicalBatch is called from another file, frame-kit's `next` is called by the kits' CONSUMERS rather than inside the kit. The scan read one file at a time; these apps are multi-file, so it found the boundary of my method rather than a defect. I DID NOT SHIP IT. A guard that reports 273 false findings is one someone switches off in a week, which is lesson 5 exactly - and I was about to repeat that mistake while writing the lesson about it. LEARNINGS UPDATED: lesson 5 goes to x3 with this as the third occurrence, and lesson 1 records what was tried and rejected and why the honest guard is still the habit plus the tests. The remaining items now: lesson 8 (a fix sharing the bug's blind spot, x2), lesson 9 (absence, x1), the panel's rendering (needs the owner's eyes, not mine), and the specs-vs-implementations quality audit - the coverage audit is done, the 'does each built app do what its spec says' one is not.",
       "files": [
         "forge/LEARNINGS.md"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "f1be55840dcd",
+      "at": "2026-10-26T03:00:00Z",
+      "workflow": "batch-import",
+      "outcome": "ok",
+      "note": "batch-import (owner: we were working on enhancements and I wanted them in batches). BACK ON THE ENHANCEMENTS, IN A BATCH. The previous batch gave 15 apps a data export and left an obvious hole: THE FILE IT WRITES COULD NEVER BE READ BACK. A backup you cannot restore is not a backup - it is a souvenir. So 14 apps now have the other half: pick a backup, SEE WHAT IS IN IT BEFORE ANYTHING IS WRITTEN (it lists the keys and the count), confirm, restore, reload. It refuses a file that is not JSON, one with no stored data, and an empty backup, and it asks before replacing what is there now - an import that silently overwrites is worse than no import. Reachable from the button, ?import, or window.__importAll(). THE BATCHES SO FAR: mobile (6 apps), smoke test (19), data export (15), restore (14) - four classes, four passes, instead of fifty single-app visits.",
+      "files": [
+        "(14 apps) restore-from-backup"
       ],
       "advanced": [],
       "errors": [],
