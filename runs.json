@@ -2,22 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "7bb8bb68c117",
-      "at": "2026-10-24T13:20:00Z",
-      "workflow": "repo-learning",
-      "outcome": "ok",
-      "note": "repo-learning (self-fix) — the system now records WHAT IT LEARNED, not just what ran. tools/repo-learning.py reads RUNS.jsonl + registry/false-completions.md + registry/audit.json and writes LESSONS.md + registry/lessons.json; .github/workflows/repo-learning.yml runs it weekly. Three derivations, all from evidence: (1) WHICH DETECTORS CATCH MISTAKES - of 6 recorded false completions, the commit list caught 2, and read-back / a test / the automated audit / the owner caught 1 each; (2) THE RETROFIT QUEUE, derived not guessed: web-kit hand-rolled in 4 repos (bmi, conqueror-os, idle-city, neon-runner), export-kit in 2 (neon-runner, smartbill), crypto-kit 1, srs-kit 1; (3) THE RUN PROFILE - 65 runs, 1 retry, and build/docs/retrofit/update-bmi-calculator each run 3+ times, i.e. work that should be a workflow.",
-      "files": [
-        "tools/repo-learning.py",
-        ".github/workflows/repo-learning.yml",
-        "LESSONS.md",
-        "registry/lessons.json"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "4",
       "at": "2026-10-24T13:40:00Z",
       "workflow": "code-compression",
@@ -573,6 +557,21 @@
         "forge/tools/app-deliver.py",
         "forge/.github/workflows/app-deliver.yml",
         "conqueror-os/docs/play/index.html"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "8441d954fe0f",
+      "at": "2026-10-25T16:00:00Z",
+      "workflow": "demo-guard-and-smartbill",
+      "outcome": "ok",
+      "note": "demo-guard-and-smartbill (owner: also the workflow that CAUSES it needs correcting, so start any app). I started with smartbill-app - the one thing the sweep could not explain - AND IT WAS THE RIGHT PICK, because it exposed a flaw in my own fix. THE DRIFT WAS NOT COSMETIC: smartbill's demo was 6,871 bytes smaller and missing SEVENTEEN functions, including `isGstinInvalid` (GSTIN validation), `sanitizeNumber` (input sanitisation) and the place-of-supply check. Real features the public demo did not have. MY FIX WAS TOO COARSE: --sync-demos and the build guard both compared the KIT METHODS each file calls, and these are the app's OWN functions, so BOTH WOULD HAVE PASSED IT. Corrected to compare EXACTLY: the demo IS the app plus an SEO block, so strip the block and compare the rest. Bytes cry wolf on every app; kit calls miss real drift; this is neither. FIXED smartbill (verified at the commit: demo == app, no functions missing). THE WORKFLOW THAT CAUSES IT, CORRECTED: app-builder's build.yml - which EVERY app calls - now has a demo job that FAILS when the demo is not the app, so the change that causes the drift is the change that fixes it. RE-SWEPT THE ESTATE with the exact check: 20 demos match their app, 1 had drifted (smartbill), so the class was small but my first sweep had under-counted it.",
+      "files": [
+        "app-builder/.github/workflows/build.yml",
+        "forge/tools/app-deliver.py",
+        "smartbill-app/docs/play/index.html"
       ],
       "advanced": [],
       "errors": [],
