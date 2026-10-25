@@ -2,20 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "ea886ce0ab90",
-      "at": "2026-10-24T11:50:00Z",
-      "workflow": "dashboard-layout",
-      "outcome": "ok",
-      "note": "dashboard follow-up (owner: 'the visuals panels are elongated due to system health box and take too much space'). ROOT CAUSE: .charts had no align-items, so it defaulted to stretch and every panel in a row grew to the tallest - System health. Fixed: align-items:start on .charts; the System health panel is capped (max-height + overflow:auto); the runs table shows 3 not 5. The structure test guards both and fails 2 on the old layout (32/32 on the new). PR dashboard#3 merged.",
-      "files": [
-        "dashboard/index.html",
-        "dashboard/tests/structure.test.js"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "5c6b055aa690",
       "at": "2026-10-24T12:15:00Z",
       "workflow": "kit-audit",
@@ -579,6 +565,19 @@
       "note": "master-list-specs (owner: the app master list has apps without specs or with weak specs - check and update them so the auto workflow never hits a wall). THE WALL WAS REAL AND SILENT: of 153 apps, 129 had NO spec and 17 had only a draft - the auto-build refuses to scaffold an idea without a spec (Rule 0), so it could build SEVEN. Nothing reported a problem; the workflow simply never picked anything up. FIXED: 146 specs written, so all 153 now have one. 35 were built from the idea's OWN build prompt (the offline/AI/LAN prompt file and the categorized brainstorm) and are marked READY, so they are buildable rather than placeholders; the rest are honest DRAFTs, because a one-line idea is not a specification and pretending otherwise is how you ship the wrong app. Buildable went from 7 to 42. HONEST LIMITATION: only 35 of the 61 prompt sources matched a master-list name, so 111 specs are skeletons - those need their specs written, and the auto-build correctly skips them until they are.",
       "files": [
         "forge/QUEUE/ (146 specs)"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "177f07153c46",
+      "at": "2026-10-25T12:30:00Z",
+      "workflow": "specs-all-153",
+      "outcome": "ok",
+      "note": "specs-all-153 (owner: can you write specs for those 111 remaining apps). YES - all of them. 153 of 153 apps now carry a READY spec, so the auto-build has no wall left in the master list. WORK: a fuzzy name pass recovered 16 prompt matches the exact pass missed (51 from the ideas' own build prompts), and 102 were AUTHORED from scratch in three batches: the job in one sentence, the MECHANIC that makes it worth existing rather than a form, the thing it must NOT do so it cannot bloat, the kits, what it stores, and what done means. The mechanic is the part that matters - 'keep everything you copy' is a feature, 'a paste-STACK so the last three items paste in order with one key' is why the app exists. THE SAFETY-CRITICAL ONES CARRY THEIR OWN CONSTRAINT: Dose Card shows the unit at every step and REFUSES to compute when the units disagree; Repair asks whether the fault is one you should not touch BEFORE it diagnoses; Time Capsule states exactly what protects the content instead of promising secrecy; and the mental-health apps are coping tools, not treatment - Nightwatch is built for 3AM with nothing to fail, Panic Harbor shows ONE instruction at a time because a list is useless in that moment.",
+      "files": [
+        "forge/QUEUE/ (153 app specs)"
       ],
       "advanced": [],
       "errors": [],
