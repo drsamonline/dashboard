@@ -2,20 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "727ff39326bc",
-      "at": "2026-10-24T15:30:00Z",
-      "workflow": "sys-self-diagnose",
-      "outcome": "ok",
-      "note": "sys-self-diagnose (self-fix, part of #26). Built tools/self-diagnose.py + .github/workflows/self-diagnose.yml (daily) - the check that was MISSING: every other check looked at a repo's contents, none at the machinery doing the checking, which is why a schedule could sit dead and a workflow could reference a script that does not exist with no report saying so. FOUR CHECKS: (1) every workflow parses; (2) the cron is a real five-field schedule with a computable period; (3) IT ACTUALLY FIRES - a scheduled workflow whose last SCHEDULED run is older than twice its period is reported as not-firing, or never-fired if there is none (this is the check that would have caught the owner's 'scheduled but never ran'); (4) every local file a run: block names (a script under tools/, a test file) really exists in the repo. Read-only - it repairs nothing; self-heal.yml does the repairing. 14 self-tests run in CI first. Writes registry/diagnose.json + DIAGNOSE.md. STILL OPEN: self-update (self-heal already exists).",
-      "files": [
-        "tools/self-diagnose.py",
-        ".github/workflows/self-diagnose.yml"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "6adcc3c13a66",
       "at": "2026-10-24T15:50:00Z",
       "workflow": "sys-self-update",
@@ -578,6 +564,20 @@
       "advanced": [],
       "errors": [],
       "retries": 0
+    },
+    {
+      "id": "65b2fbea4ac9",
+      "at": "2026-10-25T21:00:00Z",
+      "workflow": "readback-guard-hms",
+      "outcome": "ok",
+      "note": "readback-guard-hms (owner: go - the read-back guard, then HMS). (1) THE READ-BACK LESSON IS CLOSED, and honestly: the count is SIX and it went up TWICE AFTER I wrote the entry, which is why it says six and not four. The guard is now named rather than implied - EVERY WRITE IS VERIFIED AT THE COMMIT SHA, never by re-reading main: list the commits for the path, then read the content at that sha. That is the habit that proved every fix today, including the ones the read-back said had failed. (2) HMS: the cause was found and it was NOT the repo. My commit tried to rewrite CHANGELOG.md, which is 114 KB, and the API answered with an HTML error page twice. Writing the VERSION alone - the part the release actually needs - SUCCEEDED first try, which isolates the cause to the payload size. So the VERSION is in (0.0.2) and the changelog needs a different route: a CI commit, or a new dated file rather than a rewrite of a 114 KB one. That is a real API limit, not a repo fault, and it is worth recording because 'the write failed' looked like a permission problem for two attempts.",
+      "files": [
+        "forge/LEARNINGS.md",
+        "HMS/VERSION"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 1
     }
   ],
   "lost_lines": []
