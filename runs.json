@@ -2,21 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "5d6ece049da7",
-      "at": "2026-10-24T15:00:00Z",
-      "workflow": "sys-adopt-new-repos",
-      "outcome": "ok",
-      "note": "sys-adopt-new-repos (owner: 'THE WHOLE WORKFLOW SHOULD AUTO ADD AND APPLY TO ANY NEW REPO THAT IS PUSHED WITHOUT WORKFLOW'). tools/adopt.py + .github/workflows/adopt.yml (daily): lists the repos, finds the ones MISSING a standard workflow that APPLIES, and adds it. A page gets pages.yml; a repo with a test gets test.yml. TWO SAFETY RULES: it NEVER overwrites an existing file (even if it differs from the template, so a customised workflow is kept), and a repo with NO workflows is committed to directly while a repo that already has some gets a PR instead. Nothing it adds needs a per-repo secret - the backup is deliberately NOT included, because it runs centrally from dumps precisely so no token is copied into every repo. 11 self-tests on the decisions; runs them in CI before applying.",
-      "files": [
-        "tools/adopt.py",
-        ".github/workflows/adopt.yml",
-        "registry/backlog-done.json"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "727ff39326bc",
       "at": "2026-10-24T15:30:00Z",
       "workflow": "sys-self-diagnose",
@@ -580,6 +565,19 @@
       "advanced": [],
       "errors": [],
       "retries": 1
+    },
+    {
+      "id": "6f8b9161b8a9",
+      "at": "2026-10-25T20:00:00Z",
+      "workflow": "panel-css",
+      "outcome": "ok",
+      "note": "panel-css (owner: improve the control panel). THE FINDING WAS NOT WHAT I EXPECTED. I went in to do a responsive pass and found the page had NO CSS FOR ITS LAYOUT CLASSES AT ALL: grid2, ctrls, box, panel, iconbtn, mut and chip are all used in the markup and were defined nowhere. So the panel was rendering as an unstyled column of blocks at EVERY width - not a mobile bug but a missing stylesheet, which is why it looked worst on a phone (where an unstyled column is most obvious) and why a responsive pass alone would have fixed nothing. This is lesson 1 again: the classes EXISTED and did nothing, and 'the class is there' read as 'the class is styled'. ADDED: the real grid2, the Run buttons as a wrapping row, the collapsible boxes with a marker, the finding cards with their ok/bad edge, tables that read narrow, overflow-wrap on the repo names and workflow keys so a long identifier cannot widen the page - and the responsive rules it never had (760px collapses the two columns, 520px tightens the tables). VERIFIED: the classes now have rules and two media queries exist; the visual cannot be checked here, so that is the honest limit.",
+      "files": [
+        "control-panel/docs/index.html"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
     }
   ],
   "lost_lines": []
