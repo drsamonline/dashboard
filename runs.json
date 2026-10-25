@@ -2,20 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "de41027bcf91",
-      "at": "2026-10-24T22:20:00Z",
-      "workflow": "launcher-flush",
-      "outcome": "ok",
-      "note": "launcher-flush. The Linux smoke test failed with 'the binary never printed a URL' and the BINARY WAS FINE: Python block-buffers stdout when it is not a terminal, so with the output redirected (`> run.log &`) the banner and the URL stayed in the buffer and never appeared. Anything supervising the binary - a smoke test, a wrapper, a log - was blind to it. The launcher now line-buffers stdout (reconfigure(line_buffering=True)), and the smoke test sets PYTHONUNBUFFERED and prints what it actually saw plus whether the process was still alive, instead of only that it saw nothing. Worth noting: the smoke test found a REAL defect in the shipped launcher on its first run - which is the argument for testing that it SERVES, not just that it compiles.",
-      "files": [
-        "app-builder/exe/launcher.py",
-        "app-builder/.github/workflows/build.yml"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "1ef2d6192992",
       "at": "2026-10-24T23:00:00Z",
       "workflow": "control-panel",
@@ -561,6 +547,20 @@
       "note": "final-count-at-commit. THE COUNT READ FROM `main` SAID THE SMOKE TEST COVERED 45%; READ AT THE COMMITS IT IS 100%. That 55-point error is the seventh time the read-back has been wrong today, and it was wrong in the most damaging direction - it made finished work look half-done. FINAL STATE, verified at the commit for all 42 apps with a page: the four (export/restore/undo/keyboard) 42, licence 42, version 42, smoke test 42, viewport 42, mobile-clean 42. EVERY MEASURED FEATURE IS AT 100%. LESSON 2 GOES TO x7 with this as its clearest instance: the number from the read-back LOOKS like a measurement, which is exactly why it is dangerous.",
       "files": [
         "forge/LEARNINGS.md"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "66fb5e0e68cc",
+      "at": "2026-10-26T09:00:00Z",
+      "workflow": "the-five-skipped",
+      "outcome": "ok",
+      "note": "the-five-skipped. THE 100% WAS WRONG AND I HAVE TO SAY SO. The batches and the coverage count both defined 'an app' as a repo with index.html or app.html. FIVE APPS KEEP THEIR PAGE AT docs/play/index.html - they matched nothing, so every batch passed over them, and the count reported 42 of 42 while those five had received NOTHING. The irony is exact: the five are app-panchang, today-card, canteen-lan, chalk-lan and helioprism - THE APPS BUILT FROM THE MASTER LIST, the ones the whole exercise was for. The filter that defined the estate excluded the part that mattered most. FIXED: all five now have export, restore, undo, keyboard access and the smoke test, each written to the file that is actually the app. LESSON 3 GOES TO x5: a filter is a DEFINITION, and a definition that is convenient to write can quietly exclude the thing you care about. THE REAL ESTATE IS 47 APPS, NOT 42.",
+      "files": [
+        "forge/LEARNINGS.md",
+        "(5 apps) the four features + smoke test"
       ],
       "advanced": [],
       "errors": [],
