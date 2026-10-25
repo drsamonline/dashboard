@@ -2,17 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "b2268ca7b322",
-      "at": "2026-10-24T08:18:08Z",
-      "workflow": "kit-audio-kit",
-      "outcome": "ok",
-      "note": "kit-audio-kit (P3) COMPLETE — created drsamonline/audio-kit: P1 synthesis (a PURE ADSR envelope, oscillator voices w/ filter, noise, mixer) + music theory (notes, intervals, transposition, 12 scales, 11 chords); plus the pieces the required tests need — a pattern sequencer and a notation layout — and byte sonification + honest mastering helpers (rms/match/limit). THE RULE in the README: game music is PATTERNS, NOT FILES. No audio assets; no autoplay; everything reimplemented (references named in comments only). 42 tests incl. the four the spec requires (ADSR shape, scale/chord, sequencer beats, notation layout); CI runs them; topics set. Skill added (57->58, game-engine; skills#4 merged).",
-      "files": {},
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "43d3a9215ac7",
       "at": "2026-10-24T08:25:23Z",
       "workflow": "kit-ui-kit",
@@ -577,6 +566,21 @@
         "forge/tools/app-deliver.py",
         "forge/.github/workflows/app-deliver.yml",
         "forge/scripts/intake.py"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "36fea7b0d92f",
+      "at": "2026-10-25T03:00:00Z",
+      "workflow": "idea-specs",
+      "outcome": "ok",
+      "note": "idea-specs (owner: app ideas in the backlog generate their specs and add them to the app master list; the list is for APP IDEAS ONLY). The auto-build refuses to scaffold an idea without a spec (Rule 0), so an idea that is only a row in the list can never be picked up - that was the real gap. intake.py gains --from-master-list, which writes a QUEUE spec for every row that has none: a real skeleton (what it must do, what it must NOT do, the mechanic, the kits, the data, what done means, the open questions). The spec is marked STATUS: DRAFT and new-app.yml SKIPS drafts - because a one-line idea is not a specification and pretending otherwise is how you ship the wrong app. The 133 rows from app_ideas_prompts.md already carry their full prompts (the list's own header points at them), so only the newly added ideas are generated. ALSO FIXED: add_to_master_list() had been defined AFTER `if __name__ == \"__main__\": sys.exit(main())`, so it was never defined when main ran - it is moved before main and now actually called.",
+      "files": [
+        "forge/scripts/intake.py",
+        "forge/.github/workflows/new-app.yml",
+        "forge/QUEUE/"
       ],
       "advanced": [],
       "errors": [],
