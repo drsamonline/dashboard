@@ -2,32 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "dfa5123bea5d",
-      "at": "2026-10-24T16:50:00Z",
-      "workflow": "hub-repo-blog",
-      "outcome": "ok",
-      "note": "hub-repo-blog (#25, the last item). The hub now carries a REPO BLOG on its main page: a dated feed of every project, newest first, with its category, language and whether it has a live demo. It matters more now than when it was asked for, because after the Matneo change the hub is the ONLY list of the free and open-source work - the shop sells a licence and lists no apps. Rendered from the data the page already carries (the embedded snapshot / repos.json), so nothing new is fetched and the feed cannot disagree with the grid beside it; the section sits OUTSIDE the blocks build_hub.py regenerates, so a refresh cannot erase it. Still open, as the owner just reported: the dashboard boxes.",
-      "files": [
-        "drsamonline.github.io/index.html"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
-      "id": "fb035eaaad27",
-      "at": "2026-10-24T17:20:00Z",
-      "workflow": "console-panel-height",
-      "outcome": "ok",
-      "note": "console-panel-height (owner: 'the boxes are messed up again'). THE REGRESSION WAS MINE: adding a legend to each Visuals panel gave them six different heights - Activity 166, Growth 143, Leaderboard 167, System health 272, Conformance 253, Categories 230, Actions budget 164 - so the row was ragged. Fixed: every .charts>.panel is 272px with its own scrollbar; measured after, all seven read 272px. ALSO FOUND while looking, by RENDERING the page in headless Chromium and reading the real data: the dashboard's refresh has NOT run since 11:00, so its data.json predates BOTH fixes - the leaderboard still carries the dict-licence error and the roadmap is still the hard-coded one. Re-dispatched. LESSON: I had verified those fixes on main and assumed they were live; verifying the CODE is not verifying the PAGE.",
-      "files": [
-        "dashboard/index.html"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "ea9414ea27e1",
       "at": "2026-10-24T17:45:00Z",
       "workflow": "fix-refresh-push",
@@ -575,6 +549,30 @@
       "advanced": [],
       "errors": [],
       "retries": 0
+    },
+    {
+      "id": "933071f59414",
+      "at": "2026-10-26T00:00:00Z",
+      "workflow": "batch-export",
+      "outcome": "ok",
+      "note": "batch-export (owner: continue). THE LAST BIG ABSENCE FROM THE AUDIT: 15 of 22 apps had NO WAY TO GET YOUR DATA OUT. For an offline app that promises the data stays on your device, being unable to leave with it is the sharpest contradiction in the estate - 'your data stays yours' is a claim you cannot act on. FIXED IN ONE PASS: 15 apps (plus the kit demo pages) now have one button and one function that exports the RAW STORE as JSON. IT IS CALLED A BACKUP, NOT A REPORT, because that is what it is - a formatted CSV needs the app's own model, and this is the honest thing that can be identical in every app. Where export-kit is present it uses Export.save; otherwise a plain blob download. It is reachable three ways: the button, ?export in the URL, or window.__exportAll(). THE AUDIT'S CLASSES ARE NOW ALL ADDRESSED: self-test 19 -> 0, export 15 -> 0, mobile widths 8 -> fixed, viewport 3 -> 0. That is what the batch method was for - the same four defects would have taken 45 single-app passes.",
+      "files": [
+        "(15 apps) universal data export"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "9336952e4f96",
+      "at": "2026-10-26T01:00:00Z",
+      "workflow": "coverage-audit",
+      "outcome": "ok",
+      "note": "coverage-audit (owner: continue). I AUDITED SPECS AGAINST WHAT IS BUILT, AND THE FIRST RUN WAS WRONG - 'BUILT: 2' of 153, which cannot be true. The cause was an ABSENT INPUT: my repo list was a cached file that the recycled sandbox had removed, so the match ran against almost nothing and returned a confident answer. That is lesson 9 exactly - an absence produced a number instead of an error. RE-RAN against the control panel's inventory (69 repos, read from the repo itself) and the real answer is 6 of 153 built from the list: panchang, today-card, canteen-lan, chalk-lan, helioprism, app-encrypted-case-log. THE HONEST FRAMING: the master list is a FORWARD PLAN, and the built estate predates it - bmi, conqueror-os, skin-case-tracker, neon-runner and the rest are apps that were built BEFORE the list existed, so a small overlap is the expected shape, not a failure. What matters is that all 153 now have READY specs, so the auto-build has 147 buildable ideas queued rather than a wall.",
+      "files": [],
+      "advanced": [],
+      "errors": [],
+      "retries": 1
     }
   ],
   "lost_lines": []
