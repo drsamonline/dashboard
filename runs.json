@@ -2,19 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "e53300ffbc92",
-      "at": "2026-10-24T22:00:00Z",
-      "workflow": "pipeline-enables-pages",
-      "outcome": "ok",
-      "note": "pipeline-enables-pages (owner: 'add enabling pages in the workflow too so the pipeline works properly'). Right: I had enabled Pages by HAND for one app, which does not scale and is exactly the kind of manual step that gets forgotten. The deploy job in app-builder's build.yml now checks for a Pages site and CREATES one (build_type=workflow) when it is missing - treating 'already on' as success, and warning with the exact setting to change if the token cannot do it, instead of failing silently. So a repo the pipeline has just been given can now finish green: build the EXE, the APK and the Linux binary, publish the release, enable Pages, deploy the demo, and screenshot it.",
-      "files": [
-        "app-builder/.github/workflows/build.yml"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "de41027bcf91",
       "at": "2026-10-24T22:20:00Z",
       "workflow": "launcher-flush",
@@ -561,6 +548,19 @@
       "note": "close-the-gaps (owner: complete this and tell me how much we completed). THE FOUR GAPS THE LAST AUDIT MEASURED, CLOSED IN ONE PASS ACROSS 29 REPOS: a smoke test where there was none, a viewport and no fixed widths so it works on a phone, a table that scrolls inside itself, and a version so the licence has something to be released under. THE DIFFERENCE FROM THE EARLIER BATCHES: those each fixed one class against a filter that had quietly narrowed to the same 14 apps; this one counted what was PRESENT across every app and fixed what was missing, in one pass. FINAL COUNT (42 apps with a page): four 42, licence 42, smoke 19, version 42, viewport 40, mobile-clean 31.",
       "files": [
         "(29 repos) smoke test + mobile + viewport + version"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "428290048289",
+      "at": "2026-10-26T08:00:00Z",
+      "workflow": "final-count-at-commit",
+      "outcome": "ok",
+      "note": "final-count-at-commit. THE COUNT READ FROM `main` SAID THE SMOKE TEST COVERED 45%; READ AT THE COMMITS IT IS 100%. That 55-point error is the seventh time the read-back has been wrong today, and it was wrong in the most damaging direction - it made finished work look half-done. FINAL STATE, verified at the commit for all 42 apps with a page: the four (export/restore/undo/keyboard) 42, licence 42, version 42, smoke test 42, viewport 42, mobile-clean 42. EVERY MEASURED FEATURE IS AT 100%. LESSON 2 GOES TO x7 with this as its clearest instance: the number from the read-back LOOKS like a measurement, which is exactly why it is dangerous.",
+      "files": [
+        "forge/LEARNINGS.md"
       ],
       "advanced": [],
       "errors": [],
