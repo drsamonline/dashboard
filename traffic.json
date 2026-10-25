@@ -4,6 +4,14 @@
   "window": "14 days",
   "note": "Last 14 days — GitHub's retention window.",
   "repos": {
+    "gentle-pediatrics-companion": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 323,
+      "clone_uniques": 129,
+      "referrers": [],
+      "paths": []
+    },
     "game-kit": {
       "views": 0,
       "uniques": 0,
@@ -71,6 +79,14 @@
       "referrers": [],
       "paths": []
     },
+    "aethelgard-games": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 612,
+      "clone_uniques": 204,
+      "referrers": [],
+      "paths": []
+    },
     "aethelgard-rpg-engine": {
       "views": 10,
       "uniques": 2,
@@ -114,22 +130,6 @@
         }
       ]
     },
-    "aethelgard-games": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 612,
-      "clone_uniques": 204,
-      "referrers": [],
-      "paths": []
-    },
-    "app-poets-studio": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 0,
-      "clone_uniques": 0,
-      "referrers": [],
-      "paths": []
-    },
     "idle-city-ages-of-growth": {
       "views": 1,
       "uniques": 1,
@@ -148,14 +148,6 @@
           "title": "Overview"
         }
       ]
-    },
-    "bmi-bmr-tdee-macros-fluid-calculator": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 440,
-      "clone_uniques": 152,
-      "referrers": [],
-      "paths": []
     },
     "mnemosyne-companion": {
       "views": 3,
@@ -176,19 +168,27 @@
         }
       ]
     },
-    "gentle-pediatrics-companion": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 323,
-      "clone_uniques": 129,
-      "referrers": [],
-      "paths": []
-    },
     "lan-kit": {
       "views": 0,
       "uniques": 0,
       "clones": 102,
       "clone_uniques": 53,
+      "referrers": [],
+      "paths": []
+    },
+    "app-poets-studio": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 0,
+      "clone_uniques": 0,
+      "referrers": [],
+      "paths": []
+    },
+    "bmi-bmr-tdee-macros-fluid-calculator": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 440,
+      "clone_uniques": 152,
       "referrers": [],
       "paths": []
     },
@@ -393,25 +393,6 @@
       "referrers": [],
       "paths": []
     },
-    "SmartNotes": {
-      "views": 1,
-      "uniques": 1,
-      "clones": 77,
-      "clone_uniques": 41,
-      "referrers": [
-        {
-          "from": "drsamonline.github.io",
-          "count": 1
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/SmartNotes",
-          "count": 1,
-          "title": "Overview"
-        }
-      ]
-    },
     "ULTIMATE-WINDOWS-OPTIMIZER": {
       "views": 10,
       "uniques": 7,
@@ -450,6 +431,25 @@
           "path": "/drsamonline/ULTIMATE-WINDOWS-OPTIMIZER/tree/main/scripts",
           "count": 1,
           "title": "/tree/main/scripts"
+        }
+      ]
+    },
+    "SmartNotes": {
+      "views": 1,
+      "uniques": 1,
+      "clones": 77,
+      "clone_uniques": 41,
+      "referrers": [
+        {
+          "from": "drsamonline.github.io",
+          "count": 1
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/SmartNotes",
+          "count": 1,
+          "title": "Overview"
         }
       ]
     },
@@ -656,14 +656,6 @@
       "referrers": [],
       "paths": []
     },
-    "the-symphony-companion": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 345,
-      "clone_uniques": 135,
-      "referrers": [],
-      "paths": []
-    },
     "whispering-body-first-aid": {
       "views": 5,
       "uniques": 1,
@@ -683,11 +675,11 @@
         }
       ]
     },
-    "today-card": {
+    "the-symphony-companion": {
       "views": 0,
       "uniques": 0,
-      "clones": 101,
-      "clone_uniques": 45,
+      "clones": 345,
+      "clone_uniques": 135,
       "referrers": [],
       "paths": []
     },
@@ -695,6 +687,14 @@
       "views": 0,
       "uniques": 0,
       "clones": 99,
+      "clone_uniques": 45,
+      "referrers": [],
+      "paths": []
+    },
+    "today-card": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 101,
       "clone_uniques": 45,
       "referrers": [],
       "paths": []
