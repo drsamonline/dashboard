@@ -2,22 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "090aa1507306",
-      "at": "2026-10-24T12:40:00Z",
-      "workflow": "sys-backlog-status",
-      "outcome": "ok",
-      "note": "sys-backlog-status (self-fix) — the backlog now derives its OWN status from evidence. tools/backlog-status.py reads RUNS.jsonl + registry/backlog-done.json (seeded once, with the evidence written down) and rewrites BACKLOG.md's checkboxes + a generated status block; .github/workflows/backlog-status.yml runs it daily and on every RUNS.jsonl push, committing only when the status changes. Result: BACKLOG.md went from a false 0/42 to a true 30/42 (P0 4/4, P1 6/6, P2 14/16, P3 6/6, P4 0/8, P5 0/2). It never un-ticks a box, it REFUSES to write if a non-item line would be lost, and it reports any tick with no evidence. Two items stay open on purpose: retrofit (in progress) and submit: listings (blocked).",
-      "files": [
-        "tools/backlog-status.py",
-        "registry/backlog-done.json",
-        "BACKLOG.md",
-        ".github/workflows/backlog-status.yml"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "b65fa29abb31",
       "at": "2026-10-24T13:00:00Z",
       "workflow": "fix-leaderboard",
@@ -575,6 +559,19 @@
       "note": "release-and-enhancements (owner: if apps need a version upgrade to change the licence, add 1-2 important enhancements and upgrade the version so the apps all get converted). I did NOT pad 40 changelogs - I found the thing that was actually blocking the licence from reaching the downloads. THE REAL BUG: app-builder's release step named THREE artifacts unconditionally (exe, apk, linux), so a build that legitimately produced two of them FAILED THE WHOLE RELEASE. That is why neon-games has been red while everything else went green - and the release is also what carries the LICENCE, so a failing release step is a licence that never reaches the download. FIXED: it now uploads what exists, warns about what does not, and only fails if there is nothing at all. VERIFIED ALONG THE WAY: neon-games' caller already sets a distinct release tag per app (its header documents three earlier bugs, including exactly that collision), so the missing artifact was the whole cause. AND A DEFAULT I DELIBERATELY DID NOT CHANGE: I started to make the tag per-app by default, and stopped - single-app repos publish to `app-latest`, and their download URLs point at it. Changing a default to tidy a multi-app case would have broken every existing download link. The input stays as it is.",
       "files": [
         "app-builder/.github/workflows/build.yml"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "576f526cc106",
+      "at": "2026-10-25T14:00:00Z",
+      "workflow": "app-1-skin-case-demo",
+      "outcome": "ok",
+      "note": "app-1-skin-case-demo (owner: u decide and we start - the per-app enhancements). I PICKED BY EVIDENCE, NOT MEASUREMENT, and the difference matters. FIRST I tried to find 'the weakest' by scoring every app on size, controls and tests. THE MEASURE WAS WRONG TWICE, for the same reason both times: the apps span several files, so the number I was reading was the wrong file. First I measured index.html and got remedy-relationship-explorer at 16 KB - it is the LANDING PAGE, the app is app.html at 1.1 MB. Then I measured the app file and got app-panchang at 9 KB - which turned out to be one of the BEST apps here: a real astronomy engine in astro-kit.js, a panchang engine, and 19 tests that verify Holi 2026-03-03 and Diwali 2026-11-08 by name. So I stopped measuring and picked by evidence. THE PICK: skin-case-tracker, which has a RECORDED defect - its docs/play/index.html was the PRE-RETROFIT build. VERIFIED: the app called Export.crc32, Export.save, Export.saveZip, Export.zip and Loom.csv; the demo called ONLY Loom.csv, because it still carried a hand-written zip writer. 0.985 similar - the same app with two code paths, so a bug fixed in one was never fixed in the other, and THE CODE THE PUBLIC DOWNLOADS WAS NOT THE CODE THAT IS MAINTAINED. FIXED: the demo is regenerated from the app with its kits, verified at the newest COMMIT (demo == app, both 99118 B) rather than through the stale-ref cache, which lied to me for the fourth time today. STILL TO DO: the CLASS - app-deliver is idempotent on the landing page, which is exactly why the demo was allowed to drift, so it needs to sync the demo even for a delivered app.",
+      "files": [
+        "skin-case-tracker/docs/play/index.html"
       ],
       "advanced": [],
       "errors": [],
