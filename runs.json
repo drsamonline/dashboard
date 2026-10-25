@@ -2,22 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "3faf45fed0ac",
-      "at": "2026-10-24T11:20:00Z",
-      "workflow": "sys-backup",
-      "outcome": "ok",
-      "note": "sys-backup (NEW SYSTEM) — a pre-merge backup so a merge can never lose the code it replaced. Built drsamonline/backup (PUBLIC: backup.py + a reusable workflow + README + 17 tests) and drsamonline/dumps (the store). It snapshots a repo's tarball at the ref about to be replaced into <owner>__<repo>/<date-time>/<repo>.tar.gz, keeps the newest 100 per repo (deleting the oldest beyond), and creates dumps-2, dumps-3 ... when a dumps repo passes its size cap, so a full repo cannot block a backup. PROVEN: the first real dump is in drsamonline/dumps (ml-kit @ fbeb57d, 8947 B, read back byte-for-byte), and 17 unit tests pass; disabling rotation fails 4. Wired into forge via .github/workflows/backup.yml (on pull_request -> snapshots the BASE commit). TWO THINGS FOR THE OWNER: (1) add the BACKUP_TOKEN secret (contents:write on dumps, contents:read on the source) - without it the job SKIPS with a warning, it does not fail the PR and does not pretend it ran; (2) drsamonline/dumps is PRIVATE on purpose, because it will hold forge's private code - making it public would publish it.",
-      "files": [
-        "backup/backup.py",
-        "backup/.github/workflows/backup.yml",
-        "dumps/drsamonline__ml-kit/2026-10-24T095823Z/ml-kit.tar.gz",
-        "forge/.github/workflows/backup.yml"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "ea886ce0ab90",
       "at": "2026-10-24T11:50:00Z",
       "workflow": "dashboard-layout",
@@ -582,6 +566,19 @@
       "note": "final-audit. LED WITH THE QUESTION THAT MATTERED: how many repos still carry an invalid workflow, not just the 36 I patched. ANSWER: 74 repos, 116 workflow files, 0 invalid - the fix was complete, and every workflow in the estate would now be accepted by GitHub. THE BUILD FIX IS PROVEN, not assumed: the newest 'Build + deploy' run is SUCCESS on skin-case-tracker, bmi, conqueror-os, app-encrypted-case-log, canteen-lan, MATERIA-MEDICA-BUILDER, chalk-lan and All4ONE - every one of them failing this morning. MY NEW SCHEMA JOB PASSES in the lint (success), so the failsafe works. THE LAST FAILING RUN was the lint's ShellCheck step, and it was RIGHT: SC2034, `i appears unused`, in the killswitch's revert branch - a loop that ran exactly once, used no loop variable, and called `merge-upstream`, which syncs a FORK and has nothing to do with reverting a branch. Leftover drafting that read as though the killswitch did something it never did. Removed. Found by reading the one failing step's log rather than guessing at the code. STILL OPEN: neon-games fails its BUILD (a valid workflow failing on the app, a different class from this morning's) - noted, not fixed.",
       "files": [
         "forge/.github/workflows/self-heal.yml"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "b4bd5f79cb98",
+      "at": "2026-10-25T11:45:00Z",
+      "workflow": "master-list-specs",
+      "outcome": "ok",
+      "note": "master-list-specs (owner: the app master list has apps without specs or with weak specs - check and update them so the auto workflow never hits a wall). THE WALL WAS REAL AND SILENT: of 153 apps, 129 had NO spec and 17 had only a draft - the auto-build refuses to scaffold an idea without a spec (Rule 0), so it could build SEVEN. Nothing reported a problem; the workflow simply never picked anything up. FIXED: 146 specs written, so all 153 now have one. 35 were built from the idea's OWN build prompt (the offline/AI/LAN prompt file and the categorized brainstorm) and are marked READY, so they are buildable rather than placeholders; the rest are honest DRAFTs, because a one-line idea is not a specification and pretending otherwise is how you ship the wrong app. Buildable went from 7 to 42. HONEST LIMITATION: only 35 of the 61 prompt sources matched a master-list name, so 111 specs are skeletons - those need their specs written, and the auto-build correctly skips them until they are.",
+      "files": [
+        "forge/QUEUE/ (146 specs)"
       ],
       "advanced": [],
       "errors": [],
