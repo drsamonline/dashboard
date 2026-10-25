@@ -2,22 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "708cb272e45a",
-      "at": "2026-10-24T09:45:00Z",
-      "workflow": "reverse-import",
-      "outcome": "ok",
-      "note": "REVERSE-IMPORT (the retrofit's other direction): an app's code improved the kits. The apps guarded CSV cells against FORMULA INJECTION before either kit did, so export-kit's cell() and web-kit's csv.esc() wrote =cmd|'/c calc'!A0 through unescaped - an executable cell in Excel/Sheets. Folded back into both kits AND refined (the apps' guard mangled negative numbers; the kit version is number-aware). PRs export-kit#1 + web-kit#2, merged; 10 new assertions, disabling the guard makes them fail. Also fixed export-kit's test file: a process.exit before the dataframe section meant it never ran, and the section referenced an undefined K. Next reverse-import candidate: srs-kit lacks conqueror-os's daily cap + configurable first interval.",
-      "files": [
-        "export-kit/export-kit.js",
-        "web-kit/web-kit.js",
-        "registry/deps.json",
-        "registry/false-completions.md"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "f0feb70dd88d",
       "at": "2026-10-24T10:05:00Z",
       "workflow": "reverse-import",
@@ -582,6 +566,21 @@
         "forge/tools/licence.py",
         "forge/registry/licence-policy.json",
         "forge/.github/workflows/licence.yml"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "e2bb4646155a",
+      "at": "2026-10-25T09:00:00Z",
+      "workflow": "re-audit-failures",
+      "outcome": "ok",
+      "note": "re-audit-failures (owner: in the re-audit ALSO check the workflows and their FAILURES and FAILSAFES). I asked what is actually FAILING rather than what the files say, and found 61 failed runs. THE BIG ONE: the control panel's SWEEP broke ~35 workflows. It added timeout-minutes to every job missing one, including jobs whose only key is `uses:` - and a job that CALLS a reusable workflow accepts name, uses, with, secrets, permissions, needs, if, strategy and concurrency, and NOTHING else. So the workflow became invalid and every run was rejected at STARTUP with no log and no job, which is why build-apps.yml failed across the apps and backup.yml failed 15 times (it is a caller too). FIXED: 36 repos, 38 timeout lines removed; the sweep tool now matches `runs-on:` only and checks results against the workflow SCHEMA, not just YAML. THE FAILSAFE GAP: the repo's own lint validates the YAML, and every broken workflow parsed fine, so the lint PASSED - the exact failure it was written to catch, missed. New tools/wf-check.py checks the rules a parser cannot know and is wired into the lint as a schema job with its own tests. Verified by reading the files at their newest COMMIT: CLEAN (my first read-back said the bug was still live - the stale-ref cache, third time today).",
+      "files": [
+        "control-panel/tools/sweep.py",
+        "forge/tools/wf-check.py",
+        "forge/.github/workflows/lint.yml"
       ],
       "advanced": [],
       "errors": [],
