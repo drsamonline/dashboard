@@ -2,21 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "6fc8849c0e9e",
-      "at": "2026-10-23T23:55:00Z",
-      "workflow": "control-panel-interactions",
-      "outcome": "ok",
-      "note": "control-panel-interactions (owner: what about those 8 reusable workflows, deduplication, and cross-action leading to failure). BUILT tools/interactions.py + tools/migrate.py. ORPHANS: verdicts, not labels - forge/pages.yml + forge/test.yml have public twins (a private reusable is unreachable from a public app) so they are duplicates to delete; app-builder/test.yml is public, callable, and uncalled. DEDUPE: 5 families with a canonical + a safe migration that only rewrites copies matching the caller shape. CROSS-ACTION: 3 races (forge has 11 writers), 3 permission gaps, 1 pile-up. THE REAL BUG: forge/new-app.yml granted contents:read while calling a pipeline that needs contents:write + pages:write + id-token:write, so a scaffolded app's first build would fail at run time - FIXED. AND MY OWN CHECKS WERE WRONG THREE TIMES, all corrected: drift measured in BYTES flagged 33 identical callers as drifted (it now compares STRUCTURE - the 2 odd copies carry a deliberate extra job); `gh release` is not a push, so the 6 'loops' were false (now 0); and a shared concurrency group with cancel-in-progress:false is deliberate serialisation, not a collision (3 -> 0). I also truncated tools/scan.py with a write-while-reading patch and had to restore it from the repo.",
-      "files": [
-        "control-panel/tools/interactions.py",
-        "control-panel/tools/migrate.py",
-        "forge/.github/workflows/new-app.yml"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "9e2492d2da71",
       "at": "2026-10-24T00:30:00Z",
       "workflow": "mass-sweep",
@@ -554,6 +539,19 @@
       "note": "kit-test-failure (owner: the dashboard has one failed task regarding kit test, what is that). ANSWER: THE FAILURE IS IN DISCOVERY, NOT IN ANY KIT. `All kit tests` has failed on every run since 2026-10-24 because the discover job runs `gh api --paginate --slurp --jq ...`, and gh rejects that pairing outright: 'the `--slurp` option is not supported with `--jq` or `--template`'. The job exits 1, the matrix is never built, and the test job is SKIPPED - so the dashboard reads 'All kit tests - failure' while NOT ONE KIT TEST EVER RAN. THE WORST PART: that workflow's header says 'FIXED (2026-10-24)' with three lines explaining the repair, and it was MY fix that introduced this while fixing a real bug in the same step. A comment claiming FIXED sat above a command that cannot run. FIXED: ask for the names with --paginate --jq (supported together), then build the JSON array with jq; the empty-matrix guard stays so a discovery failure says so instead of looking like a broken kit. Dispatched the workflow to prove it. LESSON 1 GOES TO x9.",
       "files": [
         "app-builder/.github/workflows/kit-tests.yml",
+        "forge/LEARNINGS.md"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "612b2ca27cea",
+      "at": "2026-10-26T12:00:00Z",
+      "workflow": "specs-vs-implementation",
+      "outcome": "ok",
+      "note": "specs-vs-implementation (owner: go). THE AUDIT I HAVE BEEN PUTTING OFF, AND IT FOUND THE REAL GAP: for the six apps built from the master list, does the app's own test verify what its spec says DONE MEANS? ONE OF SIX. app-panchang is the good one - its test-node.js names Holi 2026-03-03 and Diwali 2026-11-08 exactly as the spec says. app-encrypted-case-log has a real self-test but not that fact. helioprism tests something else. canteen-lan and chalk-lan have done-means reading 'the self-test in the page passes', which is CIRCULAR - true the moment any test exists. today-card has NO TEST AT ALL. AND THE WORSE FINDING IS IN THE SPECS: a done-means that describes the ACT of testing instead of the FACT being tested cannot fail for the wrong reason, so it certifies nothing. The fix is not more tests - it is a done-means naming an outcome a stranger could check: a date, a count, a value. LESSON 10.",
+      "files": [
         "forge/LEARNINGS.md"
       ],
       "advanced": [],
