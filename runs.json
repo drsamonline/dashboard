@@ -2,17 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "1dad57036ad6",
-      "at": "2026-10-24T08:34:22Z",
-      "workflow": "lib-van-ui",
-      "outcome": "ok",
-      "note": "lib-van-ui (P3) COMPLETE — verified the size claim by measurement: van (vanjs-org/van 1.6.1) is 3,250 B minified / 1,335 B gzipped, so the README's 'about 1 kB' is true only gzipped (3x the claim raw). Inlined the layer into ONE app: forge/templates/master-list/index.html, a single-file interactive master-list app (add/toggle/edit/delete/filter/persist) — 9,027 B total, layer 3,250 B (36%), app+shell 5,777 B — verified headlessly (14 jsdom assertions). DECISION: adopt our own ui-kit, not van — it measures within ~8% (3,517 vs 3,250 B minified), is reimplemented (standing rule), and is already tested (31 cases + TodoMVC); van verified as the fallback. Recorded in forge/docs/lib-van-ui-decision.md.",
-      "files": {},
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "dfc167cbb19c",
       "at": "2026-10-24T08:46:00Z",
       "workflow": "rule-rule-shape",
@@ -583,6 +572,19 @@
       "note": "unique-designs-seo-404 (owner: uniquely designed landing pages for all repos - some repos and newly created repos have the same design; many repos show 404 for the landing and deployed pages; all repos, demo pages and landing pages must be SEO optimised; add it to the workflow). ALL THREE, in tools/app-deliver.py, which the daily app-deliver workflow already runs - so it is in the workflow by construction. (1) UNIQUE DESIGNS: the pages really were the same - one template, one fixed teal accent, 40 repos. Each repo now derives its own layout AND colour from its own name. The colour is a CONTINUOUS hue, not a palette list, because a list collides and mine did: 3 repos shared an accent and 2 of those a layout. The bg/card/ink tones derive FROM the hue, so the page is tinted as a whole. 6 layouts x 3 radii x 3 densities, deterministic. Verified: 16 of 16 repos distinct, no collisions. (2) SEO: the landing page gains robots, author, keywords, og:image, a twitter card and JSON-LD SoftwareApplication; the DEMO gains a description, a canonical, the OG tags and robots - injected into the COPY at docs/play, never the app's own source, and idempotent. (3) 404s: every check said the files existed and none said the page ANSWERS, so the check now fetches both public URLs and records the status, flagging landing-404 and demo-404 as delivery gaps.",
       "files": [
         "forge/tools/app-deliver.py"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "1aa3bebf1217",
+      "at": "2026-10-25T05:00:00Z",
+      "workflow": "parity-gate",
+      "outcome": "ok",
+      "note": "parity-gate (owner: honestly - do we need to retrofit old repos onto the kits? if a kit does LESS than the app, the app breaks; do not retrofit onto weaker kits; harvest the app's better code INTO the kit instead; all of this in the workflow). THE ANSWER, WITH EVIDENCE: no app is broken. Every method the three retrofitted apps call exists - export-kit exposes save, saveZip, crc32, toBytes, zip. My first two attempts to check this were WRONG and reported 18 'broken calls' that were false positives: the kits export a factory object so the methods are object-literal keys, and aethelgard-rpg-engine has its OWN object named `Game` (reported against game-kit) while lan-kit calls its own name. THE POLICY IS NOW A GATE in the existing tools/kit-audit.py, not a promise: PARITY (the kit exposes every method the app CALLS -> the app may delegate, nothing can be lost), HARVEST (the app does MORE -> the KIT gets the app's approach; the kit strengthens, the app keeps working; NEVER the reverse), BROKEN (a method that does not exist -> restore or add). The default for anything unclear is HARVEST, never retrofit. exposed_names() reads three sources, loaded_kits() only counts kits the page actually LOADS, and an unreadable kit says NOTHING rather than guessing - because a gate that cries wolf sends you to 'fix' apps that were never broken, which is what happened twice today. ALSO: run_parity() was committed before the --parity flag existed, so it was unreachable; the flag is now wired and verified.",
+      "files": [
+        "forge/tools/kit-audit.py"
       ],
       "advanced": [],
       "errors": [],
