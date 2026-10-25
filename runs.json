@@ -2,33 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "99f253463c91",
-      "at": "2026-10-24T19:00:00Z",
-      "workflow": "self-diagnose-failures",
-      "outcome": "ok",
-      "note": "self-diagnose-failures. Extended tools/self-diagnose.py: it now checks whether a workflow SUCCEEDS, not only whether it fires. THREE workflows failed silently today - kit-tests (an empty matrix), the dashboard refresh (losing a push race with the health commits) and backlog-status (its own write guard refusing the generated block) - and every one of them ran on time, so 'did it fire' said nothing was wrong. The rule: two consecutive failed runs is not bad luck, it is broken; one failure after a success is left to self-heal. 17 self-tests pass.",
-      "files": [
-        "tools/self-diagnose.py"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
-      "id": "5a78f5c017ad",
-      "at": "2026-10-24T20:00:00Z",
-      "workflow": "app-encrypted-case-log",
-      "outcome": "ok",
-      "note": "app-encrypted-case-log (P4, the first of the eight apps; master-list #128). Built to its spec, composing crypto-kit + case-kit + search-kit + export-kit + web-kit and re-implementing none of them. THE VAULT: a random DEK encrypts the records and the passphrase only WRAPS it (PBKDF2-SHA256, 600k, a random 16-byte salt), so changing the passphrase never re-encrypts a record; a 24-word recovery code wraps the SAME DEK; a verifier makes a wrong passphrase fail cleanly. THE RECORDS: one per blob, a FRESH 96-bit IV each time, and the record id as AAD so a record cannot be swapped or replayed. The page carries connect-src 'none' - stricter than the spec's default-src 'self' - so an outbound request is impossible. 15 SELF-TESTS, no browser needed (Node 20's WebCrypto + the app's in-memory store fallback): the vault, the AAD binding, the recovery path, a wrong passphrase failing cleanly, no IV reuse, the ciphertext never containing the plaintext, the search, case-kit's interchange, and export -> wipe -> import -> identical data. TWO REAL BUGS MY OWN TESTS CAUGHT: I called Case.exportRecord({patient, cases}) when it takes (cases, patient), and Search.query() returns an ARRAY not {results}; and the record shape had to BE case-kit's, because Case.create() keeps only its own fields and dropped my custom label.",
-      "files": [
-        "app-encrypted-case-log/index.html",
-        "app-encrypted-case-log/tests/self-tests.js"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "e74d61c370e0",
       "at": "2026-10-24T21:00:00Z",
       "workflow": "app-delivery-pipeline",
@@ -569,6 +542,30 @@
       "note": "batch-undo (owner: enhancements, in batches). I AUDITED FIRST, AS I SAID I WOULD: 23 of 42 apps looked undo-safe by the test (one write path, a save function). BUT THE TEST WAS A SIGNAL, NOT A PROOF, and a per-app undo needs the app to funnel its writes through one function - where it does not, the undo would QUIETLY DO NOTHING, which is the exact failure this estate keeps producing. SO I CHANGED THE APPROACH RATHER THAN THE APPS: the undo hooks the ONE thing every app shares, localStorage.setItem. It wraps that single function, remembers the previous value of whatever is written, and Ctrl+Z (or the button) restores it and reloads. IT CANNOT SILENTLY DO NOTHING - if the app saves, this sees it. That is lesson 1 applied as a design constraint rather than a warning. Detail worth keeping: Ctrl+Z is ignored while a text field has focus, so the field's own text undo still works. ADDED TO 14 APPS, the ones already carrying the export/import instrumentation. FIVE BATCHES NOW: mobile (6), smoke test (19), export (15), restore (14), undo (14).",
       "files": [
         "(14 apps) undo at the store"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "0f9c1ef6cb5f",
+      "at": "2026-10-25T13:05:59Z",
+      "workflow": "self-diagnose",
+      "outcome": "ok",
+      "note": "machinery check: 39 workflows, 2 scheduled, 15 errors, 0 not firing",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "36b7b50a2ee6",
+      "at": "2026-10-26T05:00:00Z",
+      "workflow": "batch-keyboard",
+      "outcome": "ok",
+      "note": "batch-keyboard (owner: go). KEYBOARD ACCESS, BATCHED THE SAME WAY: hooked at DOCUMENT, not at each app's internals - the same reasoning as the undo hooking the store. `/` focuses search, `?` shows the shortcuts, Esc leaves a field, and it NEVER STEALS A KEY WHILE A FIELD HAS FOCUS, because a shortcut that eats your typing is a bug wearing a feature's clothes. Also a real :focus-visible ring - most of these apps removed the default outline and never replaced it, so a keyboard user had no idea where they were; a keyboard you cannot see is not access. ADDED TO 14 APPS. THE HONEST GAP THIS EXPOSES: every batch since the export has been gated on the app already carrying the export instrumentation, so the SAME 14 apps now have export, restore, undo AND keyboard - and the other ~28 have none of the four. The batches converged on a subset instead of covering the estate, which is the opposite of what batching was for. NEXT: run all four snippets against the repos that were skipped, which is one pass rather than four.",
+      "files": [
+        "(14 apps) keyboard access"
       ],
       "advanced": [],
       "errors": [],
