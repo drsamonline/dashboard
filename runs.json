@@ -2,22 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "dfc167cbb19c",
-      "at": "2026-10-24T08:46:00Z",
-      "workflow": "rule-rule-shape",
-      "outcome": "ok",
-      "note": "rule-rule-shape (P1) COMPLETE — defined what a rule IS. New: PROMPTS/rules.md (the shape: match/fix/scope/enabled/test, taken from nvbn/thefuck's SHAPE not its code), tools/rules.py (the shared helper: Context, Rule, @rule, scope guard, run, audit, selftest) and tools/forge_rules.py (the 8 rules expressed in the shape, each with a test that fires where it should and NOT where it should not). python3 tools/rules.py: all 8 rules complete, every rule's test passes; a mutated rule is caught by its own test. HANDOFF.md corrected — its P1 list was missing this item.",
-      "files": [
-        "PROMPTS/rules.md",
-        "tools/rules.py",
-        "tools/forge_rules.py",
-        "HANDOFF.md"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "60869fdbfdc1",
       "at": "2026-10-24T09:15:00Z",
       "workflow": "retrofit",
@@ -585,6 +569,19 @@
       "note": "parity-gate (owner: honestly - do we need to retrofit old repos onto the kits? if a kit does LESS than the app, the app breaks; do not retrofit onto weaker kits; harvest the app's better code INTO the kit instead; all of this in the workflow). THE ANSWER, WITH EVIDENCE: no app is broken. Every method the three retrofitted apps call exists - export-kit exposes save, saveZip, crc32, toBytes, zip. My first two attempts to check this were WRONG and reported 18 'broken calls' that were false positives: the kits export a factory object so the methods are object-literal keys, and aethelgard-rpg-engine has its OWN object named `Game` (reported against game-kit) while lan-kit calls its own name. THE POLICY IS NOW A GATE in the existing tools/kit-audit.py, not a promise: PARITY (the kit exposes every method the app CALLS -> the app may delegate, nothing can be lost), HARVEST (the app does MORE -> the KIT gets the app's approach; the kit strengthens, the app keeps working; NEVER the reverse), BROKEN (a method that does not exist -> restore or add). The default for anything unclear is HARVEST, never retrofit. exposed_names() reads three sources, loaded_kits() only counts kits the page actually LOADS, and an unreadable kit says NOTHING rather than guessing - because a gate that cries wolf sends you to 'fix' apps that were never broken, which is what happened twice today. ALSO: run_parity() was committed before the --parity flag existed, so it was unreachable; the flag is now wired and verified.",
       "files": [
         "forge/tools/kit-audit.py"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "8a770bcc1586",
+      "at": "2026-10-25T05:20:00Z",
+      "workflow": "parity-in-workflow",
+      "outcome": "ok",
+      "note": "parity-in-workflow. The parity gate now RUNS in kit-audit.yml (weekly + on demand), so the policy is enforced rather than promised: for every repo that LOADS a kit, does that kit expose every method the repo CALLS? PARITY permits a retrofit, HARVEST sends the app's better code INTO the kit, BROKEN means restore or add. It also runs on every project the owner uploads, so new code is checked against the kits and anything better is harvested into them. Verified the flag reaches the function and the normal audit still runs.",
+      "files": [
+        "forge/.github/workflows/kit-audit.yml"
       ],
       "advanced": [],
       "errors": [],
