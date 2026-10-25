@@ -2,20 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "9e2492d2da71",
-      "at": "2026-10-24T00:30:00Z",
-      "workflow": "mass-sweep",
-      "outcome": "ok",
-      "note": "mass-sweep (owner: 'do all and updated mass sweep and panel work'). BUILT tools/sweep.py and RAN IT: 63 repos, 109 workflow files, 0 failures. The four rules - permissions, concurrency, timeout-minutes, workflow_dispatch - applied only where absent, with three safety properties: every result is parsed as YAML BEFORE writing and a rule whose result would not parse is dropped for that file; comments are preserved because the edits are line insertions, not a re-dump; and it NEVER DOWNGRADES a workflow that writes, because inferring `contents: read` for something that comments on a PR would break it - a broken workflow is worse than a broad token. THE PANEL now carries the orphan verdicts, the cross-action findings and the duplication families. Verified by reading five of the swept files back from GitHub.",
-      "files": [
-        "control-panel/tools/sweep.py",
-        "control-panel/docs/index.html"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "980af20d32e1",
       "at": "2026-10-24T01:30:00Z",
       "workflow": "queue-ideas-autobuild-killswitch",
@@ -552,6 +538,21 @@
       "outcome": "ok",
       "note": "specs-vs-implementation (owner: go). THE AUDIT I HAVE BEEN PUTTING OFF, AND IT FOUND THE REAL GAP: for the six apps built from the master list, does the app's own test verify what its spec says DONE MEANS? ONE OF SIX. app-panchang is the good one - its test-node.js names Holi 2026-03-03 and Diwali 2026-11-08 exactly as the spec says. app-encrypted-case-log has a real self-test but not that fact. helioprism tests something else. canteen-lan and chalk-lan have done-means reading 'the self-test in the page passes', which is CIRCULAR - true the moment any test exists. today-card has NO TEST AT ALL. AND THE WORSE FINDING IS IN THE SPECS: a done-means that describes the ACT of testing instead of the FACT being tested cannot fail for the wrong reason, so it certifies nothing. The fix is not more tests - it is a done-means naming an outcome a stranger could check: a date, a count, a value. LESSON 10.",
       "files": [
+        "forge/LEARNINGS.md"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "f98e55cb45f3",
+      "at": "2026-10-26T13:00:00Z",
+      "workflow": "falsifiable-done-means",
+      "outcome": "ok",
+      "note": "falsifiable-done-means (owner: go). THE FIVE DONE-MEANS ARE REWRITTEN to outcomes a stranger can check: exactly four slots and zero for an empty day; an item reaching a second device on the LAN within five seconds with the internet off; a stroke surviving a reload; exactly three alternatives no two identical; a case absent from the raw store and failing on a wrong passphrase. AND TODAY-CARD TURNED UP SOMETHING BETTER THAN A MISSING TEST: ITS SPEC AND ITS APP WERE DIFFERENT APPS. The spec said weather, the first event, one task, one intention. The app has the date, one intention, one task and a streak. Nothing noticed because nothing had ever compared them - which is what a done-means that cannot fail also hides. The spec now describes the app that exists, and the app has its first real test: the four things by id, today's record agreeing with the fields, and the streak shown equalling the consecutive count computed independently. LESSON 10 TO x2.",
+      "files": [
+        "forge/QUEUE/app-today-card.md",
+        "today-card/docs/index.html",
         "forge/LEARNINGS.md"
       ],
       "advanced": [],
