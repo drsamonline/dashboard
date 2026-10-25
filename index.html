@@ -12,7 +12,7 @@
 :root{--r:13px;--sh:0 6px 20px rgba(0,0,0,.32);--violet:#8b5cf6;--cyan:#06b6d4;--green:#22c55e;--lime:#84cc16;--amber:#f59e0b;--pink:#ec4899;--red:#ef4444;--acc:#a78bfa;--ok:#22c55e;--warn:#f59e0b;--bad:#ef4444}
 :root[data-theme="dark"]{--bg0:#0b0d12;--bg1:#12151d;--ink:#eef1f6;--mut:#98a2b3;--line:rgba(255,255,255,.09);--card:rgba(255,255,255,.035);--card2:rgba(255,255,255,.06);--head:#8ea0bd;--track:rgba(255,255,255,.06)}
 :root[data-theme="light"]{--bg0:#eef1f7;--bg1:#f8fafc;--ink:#0f172a;--mut:#5b6b82;--line:rgba(15,23,42,.12);--card:#fff;--card2:#f3f5fa;--head:#5b6b82;--track:rgba(15,23,42,.08);--sh:0 6px 18px rgba(15,23,42,.10)}
-*{box-sizing:border-box}html,body{margin:0}
+*{box-sizing:border-box}html,body{overflow-wrap:anywhere;margin:0}
 body{color:var(--ink);min-height:100vh;font:14px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased;background:radial-gradient(1100px 600px at 12% -8%,rgba(139,92,246,.20),transparent 60%),radial-gradient(900px 500px at 92% 0,rgba(6,182,212,.16),transparent 55%),linear-gradient(180deg,var(--bg1),var(--bg0) 40%);transition:background .3s,color .3s}
 a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
 .wrap{max-width:1320px;margin:0 auto;padding:0 12px 40px}
@@ -76,6 +76,13 @@ h1{font-size:clamp(1.15rem,2vw,1.5rem);margin:12px 0 2px;letter-spacing:-.01em}
 #i-prompt{width:100%;margin-top:8px;background:var(--card2);border:1px solid var(--line);color:var(--ink);border-radius:11px;padding:9px 11px;font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;resize:vertical}
 #i-prompt:focus{outline:none;border-color:var(--violet);box-shadow:0 0 0 3px rgba(139,92,246,.18)}
 @media (max-width:620px){.ideaform{grid-template-columns:1fr}}
+/* A TABLE SCROLLS INSIDE ITSELF, NEVER THE PAGE.
+   Nine tables and no overflow handling meant any wide one pushed the whole page
+   sideways on a phone - the classic mobile break. The wrapper is the fix, because a
+   table element cannot scroll on its own without losing its columns. */
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+.tw table{min-width:520px}
+@media (max-width:620px){.tw table{min-width:0}}
 table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh)}
 th,td{text-align:left;padding:6px 9px;border-bottom:1px solid var(--line);font-size:12px;vertical-align:top}
 th{color:var(--head);font-weight:700;font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;background:var(--card2)}
@@ -155,7 +162,7 @@ footer{max-width:1320px;margin:0 auto;padding:14px 12px 30px;color:var(--mut);fo
   <div id="needs" hidden>
     <div class="sec">Needs you</div>
 <details class="box"><summary>What needs you <span class="chip" id="needsCount"></span></summary><div class="body">
-    <table><thead><tr><th>What</th><th>Repo</th><th>Kind</th><th>Act</th></tr></thead><tbody id="needsBody"></tbody></table>
+    <div class="tw"><table><thead><tr><th>What</th><th>Repo</th><th>Kind</th><th>Act</th></tr></thead><tbody id="needsBody"></tbody></table></div>
 </div></details>  </div>
 
   <div class="sec">Control panel</div>
@@ -184,13 +191,13 @@ Example: A one-off bell that ends a meeting on time, over the room's Wi-Fi. It r
 
   <div class="sec">Self-updating</div>
 <details class="box"><summary>What updates itself</summary><div class="body">
-  <table><thead><tr><th>What updates</th><th>Workflow</th><th>Schedule</th><th>Last run</th></tr></thead><tbody id="automation"></tbody></table>
+  <div class="tw"><table><thead><tr><th>What updates</th><th>Workflow</th><th>Schedule</th><th>Last run</th></tr></thead><tbody id="automation"></tbody></table></div>
 </div></details>
   <div class="grid2" style="margin-top:9px">
     <div>
       <div class="sec">Next to come</div>
 <details class="box"><summary>Next to come</summary><div class="body">
-      <table><thead><tr><th>Work</th><th>State</th></tr></thead><tbody id="roadmap"></tbody></table>
+      <div class="tw"><table><thead><tr><th>Work</th><th>State</th></tr></thead><tbody id="roadmap"></tbody></table></div>
 </div></details>    </div>
     <div>
       <div class="sec">What changed</div>
@@ -200,14 +207,14 @@ Example: A one-off bell that ends a meeting on time, over the room's Wi-Fi. It r
 
   <div class="sec">Paused <span class="chip" id="pausedCount"></span></div>
   <details class="box" id="pausedBox"><summary>Parked, not forgotten</summary><div class="body">
-    <table><thead><tr><th>Project</th><th>What it is</th><th>Why it stopped</th><th>Resumes with</th></tr></thead><tbody id="paused"></tbody></table>
+    <div class="tw"><table><thead><tr><th>Project</th><th>What it is</th><th>Why it stopped</th><th>Resumes with</th></tr></thead><tbody id="paused"></tbody></table></div>
     <p class="mut" style="margin:8px 0 0">Parked projects keep their spec and study doc. Nothing is deleted — this is the list of things waiting for a word from you.</p>
   </div></details>
 
   <div class="sec">Repositories <span class="chip" id="repoCount"></span></div>
   <details class="box" id="reposBox" open><summary>All repositories</summary><div class="body">
     <div class="tools"><input id="q" type="search" placeholder="Search repos…  ( / )" aria-label="Search repos"><select id="cat" aria-label="Filter by category"><option value="">All categories</option></select><button id="more" class="iconbtn" hidden></button></div>
-    <table><thead><tr><th>Repo</th><th>What it is</th><th>Cat</th><th>14d</th><th>Push</th><th>Links</th></tr></thead><tbody id="repos"></tbody></table>
+    <div class="tw"><table><thead><tr><th>Repo</th><th>What it is</th><th>Cat</th><th>14d</th><th>Push</th><th>Links</th></tr></thead><tbody id="repos"></tbody></table></div>
   </div></details>
 
   <p class="links mut" id="links" style="margin-top:14px"></p>
@@ -314,7 +321,7 @@ fetch("data.json",{cache:"no-store"}).then(function(r){return r.json()}).then(fu
       +'<div class="kpi a"><div class="k">Opened by others</div><div class="v">'+((cx.issues||0)+(cx.prs||0))+'</div></div>'
       +'</div>'
       +'<p class="mut" style="margin:8px 0 6px">'+(cm.forked_repos?(cm.forked_repos+' repo(s) have been forked — click a name to see who.'):'Nobody has forked a repo yet — this fills in on its own when they do.')+'</p>'
-      +(crows?('<table><thead><tr><th>Repo</th><th>Stars</th><th>Forks</th><th>Watchers</th></tr></thead><tbody>'+crows+'</tbody></table>'):'')
+      +(crows?('<div class="tw"><table><thead><tr><th>Repo</th><th>Stars</th><th>Forks</th><th>Watchers</th></tr></thead><tbody>'+crows+'</tbody></table></div>'):'')
       +(((cx.items||[]).length)?('<p class="mut" style="margin:8px 0 0">Opened by others: '+cx.items.map(function(i){return '<a href="'+esc(i.url)+'" target="_blank" rel="noopener">'+esc(i.who)+' → '+esc(i.repo)+'</a>'}).join(' · ')+'</p>'):'')
       +(((d.history||[]).length>1)?('<div style="margin-top:10px">'+areaChart(d.history.map(function(h){return h.stars||0}),"#8b5cf6","stars over time")+'</div>'):'')
       +'<p class="mut" style="margin:8px 0 0"><a href="network.html">Fork network ↗</a> · <a href="people.html">Opened by others ↗</a></p>';
@@ -322,7 +329,7 @@ fetch("data.json",{cache:"no-store"}).then(function(r){return r.json()}).then(fu
     var tr=d.traffic||null;
     if(tr&&tr.available){
       var trows=Object.keys(tr.repos||{}).map(function(n){return {n:n,t:tr.repos[n]||{}}}).filter(function(x){return (x.t.views||0)||(x.t.clones||0)}).sort(function(a,b){return (b.t.views||0)-(a.t.views||0)}).map(function(x){return '<tr><td>'+esc(x.n)+'</td><td>'+(x.t.views||0)+'</td><td>'+(x.t.uniques||0)+'</td><td>'+(x.t.clones||0)+'</td></tr>'}).join("");
-      $("trafficPanel").innerHTML=(trows?('<table><thead><tr><th>Repo</th><th>Views</th><th>Unique</th><th title="git clones, including CI and scrapers - NOT people">Clones*</th></tr></thead><tbody>'+trows+'</tbody></table>'):'<p class="mut" style="margin:0">No traffic recorded in the last 14 days.</p>')+'<p class="mut" style="margin:8px 0 0"><b>* Clones</b> is a <b>git clone</b> count — every checkout of the repository, '
+      $("trafficPanel").innerHTML=(trows?('<div class="tw"><table><thead><tr><th>Repo</th><th>Views</th><th>Unique</th><th title="git clones, including CI and scrapers - NOT people">Clones*</th></tr></thead><tbody>'+trows+'</tbody></table></div>'):'<p class="mut" style="margin:0">No traffic recorded in the last 14 days.</p>')+'<p class="mut" style="margin:8px 0 0"><b>* Clones</b> is a <b>git clone</b> count — every checkout of the repository, '
           +'including CI, mirrors, bots and scrapers. It is <b>not</b> the number of people. A repo showing views 0 and clones 300 '
           +'has had no human visitors at all: the clones are automation. Read it against <b>Views</b>, which is humans opening the page.</p>'
           +'<p class="mut" style="margin:8px 0 0">'+esc(tr.note||"")+'</p>';
@@ -426,12 +433,12 @@ if("serviceWorker" in navigator){window.addEventListener("load",function(){navig
     }
     var last = (d.runs || []).slice(-3).reverse();   // a glance, not a wall
     if (last.length) {
-      h += '<table><thead><tr><th>When</th><th>Workflow</th><th>Outcome</th><th>Note</th></tr></thead><tbody>'
+      h += '<div class="tw"><table><thead><tr><th>When</th><th>Workflow</th><th>Outcome</th><th>Note</th></tr></thead><tbody>'
          + last.map(function (r) {
              return '<tr><td>' + esc((r.at || "").slice(0, 16).replace("T", " ")) + '</td><td>'
                   + esc(r.workflow || "") + '</td><td>' + esc(r.outcome || "") + '</td><td>'
                   + esc((r.note || "").slice(0, 70)) + '</td></tr>';
-           }).join("") + '</tbody></table>';
+           }).join("") + '</tbody></table></div>';
     }
     el.innerHTML = h;
   }).catch(function () {
@@ -457,7 +464,7 @@ if("serviceWorker" in navigator){window.addEventListener("load",function(){navig
       var rows = (L.rows || []);
       if (!rows.length) { el.innerHTML = '<p class="mut">No leaderboard yet.</p>'; return; }
       var top = rows.slice(0, 10);
-      var h = '<table><thead><tr><th>#</th><th>Repo</th><th>Quality</th><th>Activity</th><th>Stars</th>'
+      var h = '<div class="tw"><table><thead><tr><th>#</th><th>Repo</th><th>Quality</th><th>Activity</th><th>Stars</th>'
             + '<th>' + esc(String(L.window_days || 7)) + 'd</th></tr></thead><tbody>';
       top.forEach(function (x) {
         var m = x.movement || {}, delta = m.delta;
@@ -467,7 +474,7 @@ if("serviceWorker" in navigator){window.addEventListener("load",function(){navig
            + '<td>' + x.quality + '</td><td>' + x.activity + '</td>'
            + '<td>' + x.stars + '</td><td>' + move + '</td></tr>';
       });
-      h += '</tbody></table>';
+      h += '</tbody></table></div>';
       el.innerHTML = h;
       var note = document.getElementById("lbNote");
       if (note) note.textContent = (L.caveat || '')
