@@ -2,21 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "f4fcf7a91f10",
-      "at": "2026-10-24T14:10:00Z",
-      "workflow": "fix-kit-tests-and-lint",
-      "outcome": "ok",
-      "note": "fix-kit-tests-and-lint (owner-reported: 'every kit's test is failing in run'). ROOT CAUSE 1: app-builder's 'All kit tests' failed on EVERY run, but not on the kits - discovery called `gh api user/repos`, which the repo-scoped GITHUB_TOKEN cannot call, so the `|| echo '[]'` swallowed the error and fromJSON('[]') made an EMPTY MATRIX, which fails the job. It now reads the public list (`users/drsamonline/repos`) and REFUSES an empty matrix with an error that says why. ROOT CAUSE 2 (found while there): forge's lint reported 13 findings, ALL of them artifacts of the linter itself - it never de-indented a run: block, so a here-document terminator looked indented (SC1039/SC1072/SC1073), and it substituted ${{ }} with the CONSTANT 'PLACEHOLDER', so `[ -n \"$x\" ]` read as always-true (SC2157). Fixed both (de-indent like YAML does; substitute a VARIABLE), PROVED with `bash -n` that the de-indented block is valid shell and the indented one is not, and confirmed the old linter still reports 13 while the fixed one is clean. Added a P6 owner-reported tier to BACKLOG.md with all of these.",
-      "files": [
-        "app-builder/.github/workflows/kit-tests.yml",
-        "forge/tools/shellcheck-runs.py",
-        "forge/BACKLOG.md"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "052f20b46793",
       "at": "2026-10-24T14:40:00Z",
       "workflow": "console-clarity",
@@ -573,6 +558,23 @@
         "control-panel/docs/index.html",
         "smartbill-app/index.html",
         "smartbill-app/docs/play/index.html"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "dd489abc5f08",
+      "at": "2026-10-25T18:00:00Z",
+      "workflow": "learnings-and-next-app",
+      "outcome": "ok",
+      "note": "learnings-and-next-app (owner: keep lessons at ONE place, updated with everything found, repeat mistakes / errors / corrections, ADDED WITH COUNT, and solved in the workflow too; then move to the next app). LEARNINGS.md IS NOW THE ONE PLACE: the decision record, distinct from the generated LESSONS.md profile, with each lesson carrying its evidence, an OCCURRENCE COUNT, the guard that closes it and where that guard lives. Four are closed with a named check; the honest state is visible at a glance - THE READ-BACK HAS LIED SIX TIMES with no guard beyond a habit, and 'a thing that isn't wired looks exactly like a thing that is' has happened SEVEN times and is only partially guarded. registry/learnings.json holds the same machine-readably so a count is never retyped by hand. NEXT APP - app-panchang - AND IT FOUND LESSON 1 AGAIN: its spec was marked 'READY - from the idea's own build prompt' and its entire body was the tagline 'daily Indian almanac; enormous, underserved, culturally central.' The APP is far better than that spec (tithi, nakshatra, yoga, karana, vaara, rahu-kaal, sun times, muhurat, with 19 tests verifying Holi 2026-03-03 and Diwali 2026-11-08). An audit of all 154 specs found EIGHT such taglines; all eight now have real specs, and new-app.yml refuses to scaffold a spec under 400 bytes - the guard, so the count stops rising.",
+      "files": [
+        "forge/LEARNINGS.md",
+        "forge/registry/learnings.json",
+        "forge/QUEUE/app-panchang.md",
+        "forge/QUEUE/app-memory-palace.md",
+        "forge/.github/workflows/new-app.yml"
       ],
       "advanced": [],
       "errors": [],
