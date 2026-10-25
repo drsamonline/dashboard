@@ -2,21 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "d797ca9276d3",
-      "at": "2026-10-24T09:20:00Z",
-      "workflow": "retrofit",
-      "outcome": "ok",
-      "note": "retrofit (P2) part 2 — retrofitted conqueror-os onto the ALREADY-INLINED export-kit (PR #8, merged): the storage meter no longer allocates a Blob just to read .size, and the canvas progress-card save reuses the app's delegating helper instead of a second anchor dance. ZERO byte cost (pure win). Tests 24 -> 27; 2 of the 3 new assertions FAIL on the un-retrofitted source. Registry updated.",
-      "files": [
-        "conqueror-os/src/index.html",
-        "conqueror-os/tests/smoke.test.js",
-        "registry/deps.json"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "708cb272e45a",
       "at": "2026-10-24T09:45:00Z",
       "workflow": "reverse-import",
@@ -581,6 +566,21 @@
       "files": [
         "forge/tools/licence.py",
         "forge/tools/LICENCE.md",
+        "forge/.github/workflows/licence.yml"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "2c432520757b",
+      "at": "2026-10-25T07:45:00Z",
+      "workflow": "licence-policy",
+      "outcome": "ok",
+      "note": "licence-policy (owner: some products are sellable private code - make them proprietary; some had custom licences and if they were proper keep them; convert the NON-PROPRIETARY or MIT products to this licence). I OVER-REACHED and the owner caught it: the blanket conversion changed EVERY repo, relicensing sellable private code as a public noncommercial licence and normalising bespoke licences written on purpose. I read each repo's ORIGINAL licence out of git history (via the commits for LICENSE, taking the commit before mine) and classified it: 13 PROPRIETARY, 6 deliberate CUSTOM, 3 standard, 4 with no licence file. RESTORED THE 19 (29 files) and made the README and the SPDX headers agree with what was restored, because a repo that contradicts itself about its licence is the exact thing the tool exists to prevent. registry/licence-policy.json records them and the tool reads it BEFORE it touches anything. THE LINE IS THE DEFAULT: MIT, BSD, GPL, Apache and no-licence convert; a licence that was CHOSEN is left alone - normalising a deliberate licence is not tidying, it is overwriting a decision. ALSO FOUND: the tool itself had never been committed, so the workflow that runs `python3 tools/licence.py --self-test` would have failed on its first run against a file that did not exist. Committed, read back, self-test 9/9.",
+      "files": [
+        "forge/tools/licence.py",
+        "forge/registry/licence-policy.json",
         "forge/.github/workflows/licence.yml"
       ],
       "advanced": [],
