@@ -2,23 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "1ef2d6192992",
-      "at": "2026-10-24T23:00:00Z",
-      "workflow": "control-panel",
-      "outcome": "ok",
-      "note": "control-panel (owner: check every repo, find all the workflows, see what is connected and what is not, each function each step each stage, save it all to a new repo called control panel that controls the workflows and connects to the dashboard, then plan the best routes that cut user input to 1-2, with buttons to run each phase separately but connected as a grand pipeline from scratch to production to delivery to self-improvement and repair). BUILT. tools/fetch.py pulls every repo's workflows; tools/scan.py parses them and works out the graph; tools/plan.py derives the stages and the routes; docs/index.html is the panel. FIRST SCAN: 64 repos, 112 workflows, 134 jobs, 462 steps, 12 reusable, 24 scheduled, 96 runnable by hand, 42 connections - 0 BROKEN (no call to a workflow that does not exist), 0 PARSE ERRORS, and 8 REUSABLE WORKFLOWS NOTHING CALLS (forge's audit/docs/fanout/pages/release/self-heal/test + app-builder's test) - which is the public-caller-cannot-reach-a-private-repo constraint showing up as dead weight. THE GRAND PIPELINE: SCRATCH (3) -> BUILD (77) -> DELIVER (18) -> REPAIR (14), with every workflow placed and none unplaced. THE ROUTES: a new app = ONE input (describe it); change an app = ZERO; repair = ZERO; ship on demand = ONE press. 96 Run buttons, each linking to the real dispatch so no token lives in a browser. Verified by rendering the panel: 96 buttons, the four stages, the routes, the findings. Connected to the dashboard, which now reads the panel's plan.json live.",
-      "files": [
-        "control-panel/tools/scan.py",
-        "control-panel/tools/plan.py",
-        "control-panel/tools/fetch.py",
-        "control-panel/docs/index.html",
-        "dashboard/index.html"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "6ba6581da881",
       "at": "2026-10-23T23:30:00Z",
       "workflow": "control-panel-gaps-routes",
@@ -561,6 +544,19 @@
       "files": [
         "forge/LEARNINGS.md",
         "(5 apps) the four features + smoke test"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "08f8acafa8f6",
+      "at": "2026-10-26T10:00:00Z",
+      "workflow": "enumerate-not-define",
+      "outcome": "ok",
+      "note": "enumerate-not-define. I STOPPED DEFINING 'AN APP' AND STARTED ENUMERATING THE REPOS. The old filter looked for index.html or app.html; enumerating 69 repos and asking each page WHAT IT IS found 47 apps - and 22 keep their page at src/index.html, frontend/index.html, demo/index.html, chronicles/index.html, sidebar.html or dead-zone/index.html, none of which any batch had ever opened. SO THE '100%' WAS 25 OF 47. Fixed 18 that are genuinely apps; 4 were pages or tools where a 'save my data' button does not belong. VERIFIED AT THE COMMIT (not the read-back, which said 25 again): 43 of 47 now have the four. LESSON 3 WAS THE PATTERN AND THIS IS THE CORRECTION: a filter is a definition, and a definition written in advance can exclude the thing you care about. Enumerate first, ask what each thing IS, then measure.",
+      "files": [
+        "(18 apps) the four on their real pages"
       ],
       "advanced": [],
       "errors": [],
