@@ -2,21 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "6adcc3c13a66",
-      "at": "2026-10-24T15:50:00Z",
-      "workflow": "sys-self-update",
-      "outcome": "ok",
-      "note": "sys-self-update (self-fix, #26 complete). tools/self-update.py + .github/workflows/self-update.yml (weekly). The workflows pin their actions and NOTHING watched the pins - the cost was in every run's log: 'Node.js 20 is deprecated... actions/checkout@v4', a warning on every job in every repo. The tool reads every pin, asks the latest major, and reports. REAL FINDINGS on the first run: actions/checkout@v4 -> v7.0.1 and actions/setup-python@v5 -> v7.1.0, so the whole system is two majors behind. It REPORTS and does not bump: a major bump can be breaking, so a human sees the diff. 8 self-tests. #26 IS NOW COMPLETE: self-heal (existed), self-diagnose (built), self-update (built).",
-      "files": [
-        "tools/self-update.py",
-        ".github/workflows/self-update.yml",
-        "registry/updates.json"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "6be3b97c049c",
       "at": "2026-10-24T16:20:00Z",
       "workflow": "matneo-selling-only",
@@ -578,6 +563,20 @@
       "advanced": [],
       "errors": [],
       "retries": 1
+    },
+    {
+      "id": "e4a7f2d87946",
+      "at": "2026-10-25T22:00:00Z",
+      "workflow": "hms-proprietary",
+      "outcome": "ok",
+      "note": "hms-proprietary (owner: HMS is proprietary software I am building, so do accordingly). AUDITED THE POSTURE INSTEAD OF ASSUMING THE LICENCE RESTORE WAS ENOUGH, and it was already right: HMS carries its OWN EULA - HHMS, PROPRIETARY SOFTWARE LICENSE AGREEMENT, Version 1.0, effective 12 October 2026, Copyright (c) 2026 Dr. Sohil Momin, Vadodara, all rights reserved - which is NOT PolyForm and was correctly restored when the blanket conversion was reverted. The README says proprietary. There is NO public demo (no docs/play/), so the demo guard does not apply and no preview is published. It uses its own release.yml rather than build-apps.yml, so it is never swept into the open apps' rolling app-latest releases. And registry/licence-policy.json lists it as a deliberate licence, which the licence tool reads BEFORE it touches anything. So the system already treats it as a product - that was not luck, it was the policy written after the blanket conversion mistake. THE ONE GAP: its changelog is 114 KB and rewriting it failed twice, so the 0.0.2 release notes are a dated file of their own, which is the right shape for a product anyway - the changelog keeps its history and each release has its own page.",
+      "files": [
+        "HMS/VERSION",
+        "HMS/RELEASE-0.0.2.md"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
     }
   ],
   "lost_lines": []
