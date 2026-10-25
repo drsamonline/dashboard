@@ -2,20 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "b65fa29abb31",
-      "at": "2026-10-24T13:00:00Z",
-      "workflow": "fix-leaderboard",
-      "outcome": "ok",
-      "note": "fix-leaderboard (owner-reported) — the console's leaderboard had NEVER rendered. leaderboard.py did (r.get('license') or '').lower(), but the GitHub API returns `license` as an OBJECT ({'key','spdx_id','name'}), so every run raised AttributeError: 'dict' object has no attribute 'lower' and data.json stored it as leaderboard.error - which is exactly what the panel displayed. The self-test PASSED throughout because it used the STRING shape ('mit'): it tested a shape that never arrives. Fix: licence() accepts both shapes, and the self-test now asserts a dict licence scores IDENTICALLY to a string one (so the tested shape and the real shape cannot drift again). drsoam.py already handled the object; only this file did not. PR app-builder#8 merged; the dashboard refresh re-triggered. Recorded in the false-completion register: shipped as done, never worked, and the test could not have caught it.",
-      "files": [
-        "app-builder/tools/leaderboard.py",
-        "registry/false-completions.md"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "7bb8bb68c117",
       "at": "2026-10-24T13:20:00Z",
       "workflow": "repo-learning",
@@ -572,6 +558,21 @@
       "note": "app-1-skin-case-demo (owner: u decide and we start - the per-app enhancements). I PICKED BY EVIDENCE, NOT MEASUREMENT, and the difference matters. FIRST I tried to find 'the weakest' by scoring every app on size, controls and tests. THE MEASURE WAS WRONG TWICE, for the same reason both times: the apps span several files, so the number I was reading was the wrong file. First I measured index.html and got remedy-relationship-explorer at 16 KB - it is the LANDING PAGE, the app is app.html at 1.1 MB. Then I measured the app file and got app-panchang at 9 KB - which turned out to be one of the BEST apps here: a real astronomy engine in astro-kit.js, a panchang engine, and 19 tests that verify Holi 2026-03-03 and Diwali 2026-11-08 by name. So I stopped measuring and picked by evidence. THE PICK: skin-case-tracker, which has a RECORDED defect - its docs/play/index.html was the PRE-RETROFIT build. VERIFIED: the app called Export.crc32, Export.save, Export.saveZip, Export.zip and Loom.csv; the demo called ONLY Loom.csv, because it still carried a hand-written zip writer. 0.985 similar - the same app with two code paths, so a bug fixed in one was never fixed in the other, and THE CODE THE PUBLIC DOWNLOADS WAS NOT THE CODE THAT IS MAINTAINED. FIXED: the demo is regenerated from the app with its kits, verified at the newest COMMIT (demo == app, both 99118 B) rather than through the stale-ref cache, which lied to me for the fourth time today. STILL TO DO: the CLASS - app-deliver is idempotent on the landing page, which is exactly why the demo was allowed to drift, so it needs to sync the demo even for a delivered app.",
       "files": [
         "skin-case-tracker/docs/play/index.html"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "e3164b18cd24",
+      "at": "2026-10-25T15:00:00Z",
+      "workflow": "demo-drift-class",
+      "outcome": "ok",
+      "note": "demo-drift-class (owner: go - fix the class, then sweep the estate). SWEPT THE ESTATE FIRST, so I would know the size of the problem before fixing it: 30 repos have a demo, 19 already match their app, and ONLY 2 HAD DRIFTED. Both are the same defect as skin-case-tracker - conqueror-os (missing Export.save and Export.toBytes) and smartbill-app (same calls, SEO tags only, benign). So the class is REAL but CONTAINED, and both real cases came from the same cause: a retrofit that reached the app and not the demo. FIXED THE INSTANCE: conqueror-os's demo regenerated from index.html with its kits, verified at the newest COMMIT. FIXED THE CLASS: app-deliver gains --sync-demos, which compares each demo to the app's own source and regenerates it when the CODE differs (cosmetic drift is left alone), and the daily workflow now runs it - so a demo cannot freeze at delivery time again. THE ROOT CAUSE WAS THE IDEMPOTENCE RULE: 'a landing page means it is done' is right for the landing page and wrong for the demo, and nobody had noticed the second half of that sentence.",
+      "files": [
+        "forge/tools/app-deliver.py",
+        "forge/.github/workflows/app-deliver.yml",
+        "conqueror-os/docs/play/index.html"
       ],
       "advanced": [],
       "errors": [],
