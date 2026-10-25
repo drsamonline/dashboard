@@ -2,19 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "1aa3bebf1217",
-      "at": "2026-10-25T05:00:00Z",
-      "workflow": "parity-gate",
-      "outcome": "ok",
-      "note": "parity-gate (owner: honestly - do we need to retrofit old repos onto the kits? if a kit does LESS than the app, the app breaks; do not retrofit onto weaker kits; harvest the app's better code INTO the kit instead; all of this in the workflow). THE ANSWER, WITH EVIDENCE: no app is broken. Every method the three retrofitted apps call exists - export-kit exposes save, saveZip, crc32, toBytes, zip. My first two attempts to check this were WRONG and reported 18 'broken calls' that were false positives: the kits export a factory object so the methods are object-literal keys, and aethelgard-rpg-engine has its OWN object named `Game` (reported against game-kit) while lan-kit calls its own name. THE POLICY IS NOW A GATE in the existing tools/kit-audit.py, not a promise: PARITY (the kit exposes every method the app CALLS -> the app may delegate, nothing can be lost), HARVEST (the app does MORE -> the KIT gets the app's approach; the kit strengthens, the app keeps working; NEVER the reverse), BROKEN (a method that does not exist -> restore or add). The default for anything unclear is HARVEST, never retrofit. exposed_names() reads three sources, loaded_kits() only counts kits the page actually LOADS, and an unreadable kit says NOTHING rather than guessing - because a gate that cries wolf sends you to 'fix' apps that were never broken, which is what happened twice today. ALSO: run_parity() was committed before the --parity flag existed, so it was unreachable; the flag is now wired and verified.",
-      "files": [
-        "forge/tools/kit-audit.py"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "8a770bcc1586",
       "at": "2026-10-25T05:20:00Z",
       "workflow": "parity-in-workflow",
@@ -551,6 +538,19 @@
       "files": [
         "forge/scripts/intake.py",
         "forge/LEARNINGS.md"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "be18f5c96f2d",
+      "at": "2026-10-26T18:00:00Z",
+      "workflow": "update-kit-and-prs",
+      "outcome": "ok",
+      "note": "update-kit-and-prs (owner: fix the update kit task failing on the dashboard, and merge any open PR). (1) THE OPEN PRS: exactly ONE in the whole estate - bmi #7, 'Retrofit: let export-kit build the CSV'. I DID NOT MERGE IT, because it CANNOT BE MERGED: mergeable=False, mergeable_state=dirty. Main moved under it (the licence conversion, the mobile fixes, the smoke test all landed after it), so it conflicts. Merging blind would have been worse than leaving it - and its premise is now OBSOLETE anyway: the parity work established that the app's own CSV guard was the better code and folded it INTO export-kit, which is the HARVEST direction. The honest next move is to close it, not merge it. It is also the dashboard's ONLY attention item, so that card is about this PR, not about a failure. (2) THE 'UPDATE KIT' TASK: there is NO workflow by that name in forge. The dashboard's controls are: Refresh project hub, Update profile README, Refresh dashboard data, Metrics, Refresh blog, Refresh store, Refresh plan, Refresh registry, All kit tests, validate skills, Heartbeat. The likely candidates are 'All kit tests' - WHICH I FIXED EARLIER TODAY, it had never run because gh rejects --slurp with --jq - or 'Update profile README'. I could not identify it with certainty from the data, and guessing at which one to change would be worse than asking. (3) A REAL BUG FOUND WHILE LOOKING: the dashboard's data carried 'leaderboard failed: TypeError: can't compare offset-naive and offset-aware datetimes'. FIXED and PROVED: fromisoformat on a bare timestamp returns naive, then compared against an aware NOW; guarded at BOTH parse sites because this leaderboard has already crashed once for a different reason.",
+      "files": [
+        "app-builder/tools/leaderboard.py"
       ],
       "advanced": [],
       "errors": [],
