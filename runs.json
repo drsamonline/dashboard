@@ -2,19 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "ea9414ea27e1",
-      "at": "2026-10-24T17:45:00Z",
-      "workflow": "fix-refresh-push",
-      "outcome": "ok",
-      "note": "fix-refresh-push (found by RENDERING the console in headless Chromium and noticing the leaderboard still showed its fallback). ROOT CAUSE, from the run log: the dashboard's refresh regenerated and committed data.json correctly, then died at `git push` - 'error: failed to push some refs to https://github.com/drsamonline/dashboard'. The HEALTH workflow commits SPEC-GAP.json + runs.json to the same branch every few minutes and is fast, so the refresh (about 80 seconds) ALWAYS lost the race. That is why data.json sat at 11:00:33 while the leaderboard still carried the dict-licence error and the roadmap still showed the hard-coded list - both fixed in app-builder hours earlier. Fix: fetch, rebase onto origin/<branch>, retry the push up to 4 times; and cancel-in-progress: false so a refresh is not killed by its own next trigger. LESSON: 'the code is fixed on main' is not 'the page shows it' - the refresh had been failing for four runs and nothing surfaced it.",
-      "files": [
-        "dashboard/.github/workflows/refresh.yml"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "40903281488d",
       "at": "2026-10-24T18:10:00Z",
       "workflow": "hub-eight-flagships",
@@ -573,6 +560,19 @@
       "advanced": [],
       "errors": [],
       "retries": 1
+    },
+    {
+      "id": "8fbd622420dd",
+      "at": "2026-10-26T02:00:00Z",
+      "workflow": "deadcode-guard-rejected",
+      "outcome": "ok",
+      "note": "deadcode-guard-rejected (owner: the 147 go last, do the remaining first). THE BIGGEST REMAINING ITEM WAS LESSON 1 AT x8 WITH A PARTIAL GUARD, so I built the check for it: a dead-code scan across the estate. IT REPORTED 273 UNREFERENCED FUNCTIONS AND ALMOST ALL WERE WRONG - HMS's buildClinicalBatch is called from another file, frame-kit's `next` is called by the kits' CONSUMERS rather than inside the kit. The scan read one file at a time; these apps are multi-file, so it found the boundary of my method rather than a defect. I DID NOT SHIP IT. A guard that reports 273 false findings is one someone switches off in a week, which is lesson 5 exactly - and I was about to repeat that mistake while writing the lesson about it. LEARNINGS UPDATED: lesson 5 goes to x3 with this as the third occurrence, and lesson 1 records what was tried and rejected and why the honest guard is still the habit plus the tests. The remaining items now: lesson 8 (a fix sharing the bug's blind spot, x2), lesson 9 (absence, x1), the panel's rendering (needs the owner's eyes, not mine), and the specs-vs-implementations quality audit - the coverage audit is done, the 'does each built app do what its spec says' one is not.",
+      "files": [
+        "forge/LEARNINGS.md"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
     }
   ],
   "lost_lines": []
