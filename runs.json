@@ -2,21 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "e74d61c370e0",
-      "at": "2026-10-24T21:00:00Z",
-      "workflow": "app-delivery-pipeline",
-      "outcome": "ok",
-      "note": "app-delivery-pipeline (owner: 'when an app is developed its build pipeline should also activate - full app, beautified README with badges, unique landing page with download links and screenshots, live demo where applicable, app release. i see u did nothing in the above app'). TRUE, and the criticism was fair: app-encrypted-case-log had a README and a test workflow and NOTHING ELSE - no landing page, no demo, no release, no build pipeline, so nothing was downloadable and nothing was published. Built tools/app-deliver.py: from an app's OWN metadata (its <title>, its <h1>, its meta description, the kits it vendors) it generates docs/index.html (a landing page with the .exe/.apk download links, the features, the demo and the source), docs/play/ (the LIVE DEMO - the app itself plus the kits it loads), robots.txt, sitemap.xml, .github/workflows/build-apps.yml (the tiny caller into app-builder's build.yml, which builds the EXE + APK, publishes the rolling app-latest release and deploys the demo - all from ONE commit) and the README badge block. Applied to app-encrypted-case-log: 14 files committed, which also ran the pipeline for the first time. NOT per-app hard-coded - two apps get two different pages - so it is the automation the owner asked for, and it is committed to forge to be wired into adopt.",
-      "files": [
-        "forge/tools/app-deliver.py",
-        "app-encrypted-case-log/docs/index.html",
-        "app-encrypted-case-log/.github/workflows/build-apps.yml"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "6441d2331ae6",
       "at": "2026-10-24T21:40:00Z",
       "workflow": "app-delivery-linux-shot",
@@ -566,6 +551,19 @@
       "note": "batch-keyboard (owner: go). KEYBOARD ACCESS, BATCHED THE SAME WAY: hooked at DOCUMENT, not at each app's internals - the same reasoning as the undo hooking the store. `/` focuses search, `?` shows the shortcuts, Esc leaves a field, and it NEVER STEALS A KEY WHILE A FIELD HAS FOCUS, because a shortcut that eats your typing is a bug wearing a feature's clothes. Also a real :focus-visible ring - most of these apps removed the default outline and never replaced it, so a keyboard user had no idea where they were; a keyboard you cannot see is not access. ADDED TO 14 APPS. THE HONEST GAP THIS EXPOSES: every batch since the export has been gated on the app already carrying the export instrumentation, so the SAME 14 apps now have export, restore, undo AND keyboard - and the other ~28 have none of the four. The batches converged on a subset instead of covering the estate, which is the opposite of what batching was for. NEXT: run all four snippets against the repos that were skipped, which is one pass rather than four.",
       "files": [
         "(14 apps) keyboard access"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "0cdda47be644",
+      "at": "2026-10-26T06:00:00Z",
+      "workflow": "batch-coverage",
+      "outcome": "ok",
+      "note": "batch-coverage (owner: go). THE GAP I FLAGGED LAST TIME, CLOSED: every batch since the export had been gated on the app already carrying the export instrumentation, so the SAME 14 apps got export, restore, undo and keyboard while ~28 got nothing. This was the coverage pass - all four in ONE insertion, against the repos that had been skipped: 28 MORE APPS. THE COUNT THAT MATTERS (not what I added, what is THERE): 42 apps have a page, export 40, restore 40, undo 40, keyboard 41. THAT IS THE DIFFERENCE between the batches that looked successful and a batch that actually covered the estate - the first counts additions, the second counts presence. Worth recording as its own lesson: A BATCH THAT REPORTS SUCCESS AGAINST ITS OWN FILTER HAS PROVED NOTHING ABOUT THE ESTATE.",
+      "files": [
+        "(28 apps) export + restore + undo + keyboard"
       ],
       "advanced": [],
       "errors": [],
