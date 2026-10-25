@@ -2,19 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "2ab20e00325c",
-      "at": "2026-10-24T18:30:00Z",
-      "workflow": "hub-exclude-tooling",
-      "outcome": "ok",
-      "note": "hub-exclude-tooling (owner: 'sure'). The hub's EXCLUDE covered only the profile and the site, so the console, app-builder, the backup store, the skills catalogue and the profile kit appeared as PROJECTS on a showcase - visible in the recently-updated strip. All five are now excluded: they are how the products are made, not products. The kits are deliberately NOT excluded - they are a real part of the range the hub shows. Refresh dispatched.",
-      "files": [
-        "drsamonline.github.io/tools/build_hub.py"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "99f253463c91",
       "at": "2026-10-24T19:00:00Z",
       "workflow": "self-diagnose-failures",
@@ -569,6 +556,19 @@
       "note": "batch-import (owner: we were working on enhancements and I wanted them in batches). BACK ON THE ENHANCEMENTS, IN A BATCH. The previous batch gave 15 apps a data export and left an obvious hole: THE FILE IT WRITES COULD NEVER BE READ BACK. A backup you cannot restore is not a backup - it is a souvenir. So 14 apps now have the other half: pick a backup, SEE WHAT IS IN IT BEFORE ANYTHING IS WRITTEN (it lists the keys and the count), confirm, restore, reload. It refuses a file that is not JSON, one with no stored data, and an empty backup, and it asks before replacing what is there now - an import that silently overwrites is worse than no import. Reachable from the button, ?import, or window.__importAll(). THE BATCHES SO FAR: mobile (6 apps), smoke test (19), data export (15), restore (14) - four classes, four passes, instead of fifty single-app visits.",
       "files": [
         "(14 apps) restore-from-backup"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "7c2dfd560c5a",
+      "at": "2026-10-26T04:00:00Z",
+      "workflow": "batch-undo",
+      "outcome": "ok",
+      "note": "batch-undo (owner: enhancements, in batches). I AUDITED FIRST, AS I SAID I WOULD: 23 of 42 apps looked undo-safe by the test (one write path, a save function). BUT THE TEST WAS A SIGNAL, NOT A PROOF, and a per-app undo needs the app to funnel its writes through one function - where it does not, the undo would QUIETLY DO NOTHING, which is the exact failure this estate keeps producing. SO I CHANGED THE APPROACH RATHER THAN THE APPS: the undo hooks the ONE thing every app shares, localStorage.setItem. It wraps that single function, remembers the previous value of whatever is written, and Ctrl+Z (or the button) restores it and reloads. IT CANNOT SILENTLY DO NOTHING - if the app saves, this sees it. That is lesson 1 applied as a design constraint rather than a warning. Detail worth keeping: Ctrl+Z is ignored while a text field has focus, so the field's own text undo still works. ADDED TO 14 APPS, the ones already carrying the export/import instrumentation. FIVE BATCHES NOW: mobile (6), smoke test (19), export (15), restore (14), undo (14).",
+      "files": [
+        "(14 apps) undo at the store"
       ],
       "advanced": [],
       "errors": [],
