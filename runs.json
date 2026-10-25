@@ -2,22 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "f0feb70dd88d",
-      "at": "2026-10-24T10:05:00Z",
-      "workflow": "reverse-import",
-      "outcome": "ok",
-      "note": "REVERSE-IMPORT 2: srs-kit absorbed conqueror-os's review scheduler. The app could configure the first / second / lapse intervals and cap the day's due queue; the kit hardcoded 1 and 6 and had no cap. Folded in as OPT-IN options (S.DEFAULTS + review(cards,quality,now,opts) + dueCards(cards,now,{cap})), so the 14 original assertions still pass unchanged. Tests 14 -> 23; forcing the features off makes 3 fail. PR srs-kit#1 merged.",
-      "files": [
-        "srs-kit/srs-kit.js",
-        "srs-kit/test-node.js",
-        "srs-kit/README.md",
-        "registry/deps.json"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "f7aea8ead511",
       "at": "2026-10-24T10:30:00Z",
       "workflow": "retrofit",
@@ -581,6 +565,23 @@
         "control-panel/tools/sweep.py",
         "forge/tools/wf-check.py",
         "forge/.github/workflows/lint.yml"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "02ff2c3cd73a",
+      "at": "2026-10-25T09:30:00Z",
+      "workflow": "re-audit-failsafes",
+      "outcome": "ok",
+      "note": "re-audit-failsafes (owner: in the re-audit ALSO check the workflows and their FAILURES and FAILSAFES). 61 failed runs across 20 repos. THE BIG ONE WAS MINE: the control panel's SWEEP added timeout-minutes to every job missing one, including jobs whose only key is `uses:` - and a job that CALLS a reusable workflow accepts name, uses, with, secrets, permissions, needs, if, strategy and concurrency, and NOTHING else. So ~35 workflows became INVALID and every run was rejected at STARTUP with no log, no job, and a failure named after the file path. That is build-apps.yml failing across the apps and backup.yml failing 15 times (forge/backup.yml is a caller too). FIXED 36 repos, 38 lines removed, and the tool now matches `runs-on:` only AND checks each rule's result against the workflow SCHEMA. THE FAILSAFE GAP IS THE REAL LESSON: the repo's own lint validates the workflow YAML, every broken workflow parsed fine, so the lint PASSED - it missed the exact failure it was written to catch. YAML validity is not workflow validity; a parser answers 'is this well-formed?' when the question is 'will GitHub accept it?'. New tools/wf-check.py checks the rules a parser cannot know (a uses: job's allowed keys, a step's allowed keys, a missing runs-on, a reusable with no @ref) and runs in the lint as a schema job with its own tests first. Also fixed: the lint's ShellCheck step (9 failures) flags two DELIBERATE word-splits in shell I wrote - `for id in $ids` over a newline-separated list, and a glob that must fall through to its guard - now marked with a reason. AND the stale-ref cache caught me a THIRD time: my read-back said the bug was still live, and reading the files at their newest COMMIT proved the fix had landed.",
+      "files": [
+        "control-panel/tools/sweep.py",
+        "forge/tools/wf-check.py",
+        "forge/.github/workflows/lint.yml",
+        "forge/.github/workflows/self-heal.yml",
+        "forge/.github/workflows/new-app.yml"
       ],
       "advanced": [],
       "errors": [],
