@@ -2,19 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "8a770bcc1586",
-      "at": "2026-10-25T05:20:00Z",
-      "workflow": "parity-in-workflow",
-      "outcome": "ok",
-      "note": "parity-in-workflow. The parity gate now RUNS in kit-audit.yml (weekly + on demand), so the policy is enforced rather than promised: for every repo that LOADS a kit, does that kit expose every method the repo CALLS? PARITY permits a retrofit, HARVEST sends the app's better code INTO the kit, BROKEN means restore or add. It also runs on every project the owner uploads, so new code is checked against the kits and anything better is harvested into them. Verified the flag reaches the function and the normal audit still runs.",
-      "files": [
-        "forge/.github/workflows/kit-audit.yml"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "97405d100187",
       "at": "2026-10-25T06:30:00Z",
       "workflow": "licence-polyform",
@@ -551,6 +538,20 @@
       "note": "update-kit-and-prs (owner: fix the update kit task failing on the dashboard, and merge any open PR). (1) THE OPEN PRS: exactly ONE in the whole estate - bmi #7, 'Retrofit: let export-kit build the CSV'. I DID NOT MERGE IT, because it CANNOT BE MERGED: mergeable=False, mergeable_state=dirty. Main moved under it (the licence conversion, the mobile fixes, the smoke test all landed after it), so it conflicts. Merging blind would have been worse than leaving it - and its premise is now OBSOLETE anyway: the parity work established that the app's own CSV guard was the better code and folded it INTO export-kit, which is the HARVEST direction. The honest next move is to close it, not merge it. It is also the dashboard's ONLY attention item, so that card is about this PR, not about a failure. (2) THE 'UPDATE KIT' TASK: there is NO workflow by that name in forge. The dashboard's controls are: Refresh project hub, Update profile README, Refresh dashboard data, Metrics, Refresh blog, Refresh store, Refresh plan, Refresh registry, All kit tests, validate skills, Heartbeat. The likely candidates are 'All kit tests' - WHICH I FIXED EARLIER TODAY, it had never run because gh rejects --slurp with --jq - or 'Update profile README'. I could not identify it with certainty from the data, and guessing at which one to change would be worse than asking. (3) A REAL BUG FOUND WHILE LOOKING: the dashboard's data carried 'leaderboard failed: TypeError: can't compare offset-naive and offset-aware datetimes'. FIXED and PROVED: fromisoformat on a bare timestamp returns naive, then compared against an aware NOW; guarded at BOTH parse sites because this leaderboard has already crashed once for a different reason.",
       "files": [
         "app-builder/tools/leaderboard.py"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "8bdd435f171f",
+      "at": "2026-10-26T19:00:00Z",
+      "workflow": "kit-tests-two-bugs",
+      "outcome": "ok",
+      "note": "kit-tests-two-bugs (owner sent the run URL 40181375393). THAT RUN CONFIRMS THE FAILING TASK IS 'All kit tests', AND THERE WERE TWO BUGS, ONE HIDING THE OTHER. (1) DISCOVERY: gh rejects --slurp with --jq, so the matrix was never built and NO KIT TEST EVER RAN. Fixed earlier today; the dispatched run proves it - discover succeeded and 19 kits actually executed. (2) THE REAL FAILURE THAT WAS HIDDEN: 18 kits passed and ui-kit failed with 'Cannot find module jsdom', because the job runs `node test-node.js` and NEVER RUNS `npm install`. A kit with a dependency could never pass; the other 18 need nothing, which is why it went unseen. Fixed with an install step that warns rather than hard-fails if the install itself breaks. THE DASHBOARD SAID THE SAME THING BOTH TIMES - 'All kit tests - failure' was true for the wrong reason and then for a right one, and the label could not tell you which. LESSON 11: one failure can hide another; a red job is a claim, not a diagnosis.",
+      "files": [
+        "app-builder/.github/workflows/kit-tests.yml",
+        "forge/LEARNINGS.md"
       ],
       "advanced": [],
       "errors": [],
