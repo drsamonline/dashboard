@@ -2,20 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "052f20b46793",
-      "at": "2026-10-24T14:40:00Z",
-      "workflow": "console-clarity",
-      "outcome": "ok",
-      "note": "console-clarity (owner-reported: 'there are multiple things on the dashboard that I don't understand'). (1) LEGENDS added to Traffic (what a clone IS), Conformance, Categories, Actions budget and System health. THE CLONE ANSWER: a clone is a git checkout - CI, mirrors, bots and scrapers included - so it is NOT a person; skin-case-tracker showed 335 clones against 0 views, i.e. no human visitors at all. (2) 'NEXT TO COME' WAS STALE because ROADMAP was a hard-coded list that still queued audio-kit after audio-kit was built. It is now DERIVED from the repos; the unbuilt queue is in a private master list the console cannot read, and it says so rather than showing a stale guess. (3) 'SELF-UPDATING' showed a private repo's schedule as NEVER RUN - it runs, the token just cannot read a private repo's history; it now says 'not visible (private repo)' with a note. Also fixed the stale skills entry (it named a workflow 'refresh' that does not exist; it is 'validate skills').",
-      "files": [
-        "dashboard/index.html",
-        "app-builder/drsoam.py"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "5d6ece049da7",
       "at": "2026-10-24T15:00:00Z",
       "workflow": "sys-adopt-new-repos",
@@ -579,6 +565,21 @@
       "advanced": [],
       "errors": [],
       "retries": 0
+    },
+    {
+      "id": "ff97980a119f",
+      "at": "2026-10-25T19:00:00Z",
+      "workflow": "mobile-versions-hub",
+      "outcome": "ok",
+      "note": "mobile-versions-hub (owner: the dashboard still has errors on mobile; improve the control panel; refresh drsamonline.github.io; then back to apps - consolidate in batches, more apps at once if smaller, to improve version and licence). (1) THE DASHBOARD ON MOBILE: the cause was NINE TABLES AND NO OVERFLOW HANDLING - any wide table pushed the WHOLE PAGE sideways, which reads as 'errors' because the layout falls apart rather than because anything throws. Every table is now wrapped in a scroller that scrolls inside itself, and body text wraps anywhere so a long URL cannot widen the page either. (2) THE CONTROL PANEL had the same problem - same hand, same day - and got the same fix. (3) THE HUB: refresh-hub.yml dispatched (my first attempt used the wrong workflow name; the repo has exactly one). (4) THE APPS IN BATCHES: 35 of 36 versioned and changelogged in one pass - 26 had NO VERSION AT ALL, so the licence change had nothing to be released under and was never downloadable. Each now carries a version and a changelog entry naming the licence and the demo rule. HMS returned an HTML error and was retried separately.",
+      "files": [
+        "dashboard/index.html",
+        "control-panel/docs/index.html",
+        "(35 app repos) VERSION + CHANGELOG.md"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 1
     }
   ],
   "lost_lines": []
