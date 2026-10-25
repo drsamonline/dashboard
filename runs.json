@@ -2,22 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "6ba6581da881",
-      "at": "2026-10-23T23:30:00Z",
-      "workflow": "control-panel-gaps-routes",
-      "outcome": "ok",
-      "note": "control-panel-gaps-routes (owner: find missing suggestive elements; how does Forge embed in this; this should go for the final commercial project; tweak, optimize, update, recreate the workflow in different simulations and choose the best routes). BUILT tools/gaps.py + tools/simulate.py + the panel sections + the Forge/commercial framing. GAPS: 109 no-timeout, 51 no-concurrency (the exact race that broke the dashboard refresh), 31 no-permissions, 16 un-runnable, 8 orphans, 5 DRIFTED FAMILIES ('Build + deploy' x33 with a 393B spread - the file whose drift once deleted a release). SIMULATION: my first weights picked 'fully automatic' and the simulation caught that they did not price a guessed spec; a risk term fixed it (guided 14 beats no-input 60). EMBEDDING: Forge=private brain, panel=public map, dashboard=public vitals, one-way and checkable.",
-      "files": [
-        "control-panel/tools/gaps.py",
-        "control-panel/tools/simulate.py",
-        "control-panel/docs/index.html",
-        "control-panel/README.md"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "6fc8849c0e9e",
       "at": "2026-10-23T23:55:00Z",
       "workflow": "control-panel-interactions",
@@ -557,6 +541,20 @@
       "note": "enumerate-not-define. I STOPPED DEFINING 'AN APP' AND STARTED ENUMERATING THE REPOS. The old filter looked for index.html or app.html; enumerating 69 repos and asking each page WHAT IT IS found 47 apps - and 22 keep their page at src/index.html, frontend/index.html, demo/index.html, chronicles/index.html, sidebar.html or dead-zone/index.html, none of which any batch had ever opened. SO THE '100%' WAS 25 OF 47. Fixed 18 that are genuinely apps; 4 were pages or tools where a 'save my data' button does not belong. VERIFIED AT THE COMMIT (not the read-back, which said 25 again): 43 of 47 now have the four. LESSON 3 WAS THE PATTERN AND THIS IS THE CORRECTION: a filter is a definition, and a definition written in advance can exclude the thing you care about. Enumerate first, ask what each thing IS, then measure.",
       "files": [
         "(18 apps) the four on their real pages"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "5c6f2adb6522",
+      "at": "2026-10-26T11:00:00Z",
+      "workflow": "kit-test-failure",
+      "outcome": "ok",
+      "note": "kit-test-failure (owner: the dashboard has one failed task regarding kit test, what is that). ANSWER: THE FAILURE IS IN DISCOVERY, NOT IN ANY KIT. `All kit tests` has failed on every run since 2026-10-24 because the discover job runs `gh api --paginate --slurp --jq ...`, and gh rejects that pairing outright: 'the `--slurp` option is not supported with `--jq` or `--template`'. The job exits 1, the matrix is never built, and the test job is SKIPPED - so the dashboard reads 'All kit tests - failure' while NOT ONE KIT TEST EVER RAN. THE WORST PART: that workflow's header says 'FIXED (2026-10-24)' with three lines explaining the repair, and it was MY fix that introduced this while fixing a real bug in the same step. A comment claiming FIXED sat above a command that cannot run. FIXED: ask for the names with --paginate --jq (supported together), then build the JSON array with jq; the empty-matrix guard stays so a discovery failure says so instead of looking like a broken kit. Dispatched the workflow to prove it. LESSON 1 GOES TO x9.",
+      "files": [
+        "app-builder/.github/workflows/kit-tests.yml",
+        "forge/LEARNINGS.md"
       ],
       "advanced": [],
       "errors": [],
