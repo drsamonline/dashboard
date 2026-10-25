@@ -2,17 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "43d3a9215ac7",
-      "at": "2026-10-24T08:25:23Z",
-      "workflow": "kit-ui-kit",
-      "outcome": "ok",
-      "note": "kit-ui-kit (P3) COMPLETE — created drsamonline/ui-kit: P1 reactive core (signals, lazy/cached computed with a chain, reactive effects with dependency tracking, hyperscript, a KEYED list that reuses a node across reorders) + P2 furniture (events/bus, a hash router whose route is a signal, two-way form binding). No build step, zero runtime deps. PROOF: examples/todomvc.js is TodoMVC built on the kit (add/toggle/edit/destroy/toggle-all/filters/clear-completed/count, hash-driven filter) and runs headless in CI. 31 core tests incl. the spec's signal-notification, computed-chain and keyed-list-reorder cases + 22 TodoMVC acceptance assertions; jsdom is the only dev dep; CI runs both. Skill added (58->59, web-app-patterns; skills#5 merged).",
-      "files": {},
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "1dad57036ad6",
       "at": "2026-10-24T08:34:22Z",
       "workflow": "lib-van-ui",
@@ -581,6 +570,19 @@
         "forge/scripts/intake.py",
         "forge/.github/workflows/new-app.yml",
         "forge/QUEUE/"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "71b528528ab8",
+      "at": "2026-10-25T03:45:00Z",
+      "workflow": "unique-designs-seo-404",
+      "outcome": "ok",
+      "note": "unique-designs-seo-404 (owner: uniquely designed landing pages for all repos - some repos and newly created repos have the same design; many repos show 404 for the landing and deployed pages; all repos, demo pages and landing pages must be SEO optimised; add it to the workflow). ALL THREE, in tools/app-deliver.py, which the daily app-deliver workflow already runs - so it is in the workflow by construction. (1) UNIQUE DESIGNS: the pages really were the same - one template, one fixed teal accent, 40 repos. Each repo now derives its own layout AND colour from its own name. The colour is a CONTINUOUS hue, not a palette list, because a list collides and mine did: 3 repos shared an accent and 2 of those a layout. The bg/card/ink tones derive FROM the hue, so the page is tinted as a whole. 6 layouts x 3 radii x 3 densities, deterministic. Verified: 16 of 16 repos distinct, no collisions. (2) SEO: the landing page gains robots, author, keywords, og:image, a twitter card and JSON-LD SoftwareApplication; the DEMO gains a description, a canonical, the OG tags and robots - injected into the COPY at docs/play, never the app's own source, and idempotent. (3) 404s: every check said the files existed and none said the page ANSWERS, so the check now fetches both public URLs and records the status, flagging landing-404 and demo-404 as delivery gaps.",
+      "files": [
+        "forge/tools/app-deliver.py"
       ],
       "advanced": [],
       "errors": [],
