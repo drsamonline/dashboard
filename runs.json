@@ -2,20 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "f7aea8ead511",
-      "at": "2026-10-24T10:30:00Z",
-      "workflow": "retrofit",
-      "outcome": "ok",
-      "note": "retrofit (P2) part 3 - skin-case-tracker. Already well retrofitted (download->Export.save, crc32->Export.crc32, csv->Loom.csv); removed the last duplicate: makeZip+downloadBlob = export-kit's saveZip, vendored and never called. The in-page self-test bit first (22/23) then passed (23/23). PR skin-case-tracker#4. TWO FINDINGS recorded: docs/play/index.html is a STALE build still carrying a hand-written zip writer (the live demo serves pre-retrofit code), and saveNow/load use raw localStorage where Loom.storage would orphan data without a migration.",
-      "files": [
-        "skin-case-tracker/index.html",
-        "registry/deps.json"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "20b99998d777",
       "at": "2026-10-24T10:55:00Z",
       "workflow": "dashboard-layout",
@@ -582,6 +568,22 @@
         "forge/.github/workflows/lint.yml",
         "forge/.github/workflows/self-heal.yml",
         "forge/.github/workflows/new-app.yml"
+      ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "d516b44bb69d",
+      "at": "2026-10-25T10:30:00Z",
+      "workflow": "replan",
+      "outcome": "ok",
+      "note": "replan (owner: then replan, after the re-audit). THE FIRST STEP WAS THE RIGHT ONE, because the re-audit proved the sweep is the most dangerous tool in the set - it edits live workflows at scale and it just invalidated ~35 of them. (1) THE GATE: tools/sweep.py now checks every rule's result against the workflow SCHEMA before writing, and DROPS a rule that would produce a workflow GitHub refuses; tools/wf_check.py sits beside it, and the one rule that actually bit is enforced inline even if the sibling is missing. Verified on the exact failure: valid YAML, a uses: job carrying timeout-minutes - the gate finds it and the fixed version passes. (2) THE REPLAN ITSELF: the control panel's daily scan now asks 'will it run?' instead of 'does it parse?', recording invalid_workflow and the exact problems with the same checker the lint and the sweep share - so the next instance is found by the daily run, not by another audit. (3) A CORRECTION: I twice reported the committed scan.py as having a SyntaxError. It did not - it parses fine. The error was in MY edit, and I was reading my own broken version as if it were the live one, which is the same class of mistake as the stale-ref cache. Checked before claiming, both times, eventually.",
+      "files": [
+        "control-panel/tools/sweep.py",
+        "control-panel/tools/scan.py",
+        "control-panel/tools/wf_check.py",
+        "forge/tools/wf-check.py"
       ],
       "advanced": [],
       "errors": [],
