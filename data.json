@@ -1,6 +1,6 @@
 {
   "generated": "2026-10-26",
-  "generated_at": "2026-10-26T11:31:45Z",
+  "generated_at": "2026-10-26T17:42:55Z",
   "reckoning": "53 products · 18 kits · avg conformance 4.9/5 · updated automatically.",
   "health": "ok",
   "cards": [
@@ -36,19 +36,27 @@
     "avg": 4.9,
     "pushes": 78,
     "byrepo": {
-      "control-panel": 1,
       "dashboard": 1,
-      "Matneo": 1,
+      "control-panel": 1,
+      "app-encrypted-case-log": 1,
+      "HMS": 1,
+      "blinkcode-ai": 1,
       "app-builder": 1,
+      "helioprism": 1,
+      "NEO": 1,
+      "neon-velocity": 1,
+      "TTB": 1,
+      "Matneo": 1,
+      "skills": 1,
+      "drsamonline.github.io": 1,
+      "drsamonline": 1,
       "retro-strike": 1,
       "idle-city-ages-of-growth": 1,
       "dance-fight": 1,
       "web-kit": 1,
       "ui-kit": 1,
-      "skills": 1,
       "saga-vn-engine": 1,
       "offline-pdf-toolkit": 1,
-      "neon-velocity": 1,
       "neon-runner": 1,
       "neon-engine": 1,
       "ml-kit": 1,
@@ -62,18 +70,14 @@
       "bmi-bmr-tdee-macros-fluid-calculator": 1,
       "audio-kit": 1,
       "art-kit": 1,
-      "app-encrypted-case-log": 1,
       "app-companion-forge": 1,
       "aethelgard-rpg-engine": 1,
       "aethelgard-games": 1,
-      "TTB": 1,
       "SmartNotes": 1,
       "Scrap-and-Gun": 1,
       "CLDR": 1,
       "All4ONE": 1,
-      "drsamonline": 1,
       "backup": 1,
-      "drsamonline.github.io": 1,
       "skin-case-tracker": 1,
       "read-live-transform-app": 1
     }
@@ -86,8 +90,8 @@
     },
     "categories": {
       "HTML Apps": 19,
-      "Games": 6,
       "Utilities": 15,
+      "Games": 6,
       "Health Tools": 1,
       "Homeopathy": 11,
       "Data": 1
@@ -136,7 +140,7 @@
     },
     {
       "date": "2026-10-23",
-      "count": 1
+      "count": 0
     },
     {
       "date": "2026-10-24",
@@ -144,14 +148,21 @@
     },
     {
       "date": "2026-10-25",
-      "count": 37
+      "count": 34
     },
     {
       "date": "2026-10-26",
-      "count": 40
+      "count": 44
     }
   ],
   "attention": [
+    {
+      "title": "health: the damage check was a coin-flip — make it state-independent",
+      "repo": "neon-velocity",
+      "url": "https://github.com/drsamonline/neon-velocity/pull/1",
+      "kind": "PR",
+      "created": "2026-10-26T12:53:04Z"
+    },
     {
       "title": "web-kit v1.1: the biggest duplicate in the estate is a capability the kit does not have",
       "repo": "web-kit",
@@ -221,127 +232,128 @@
     "available": false,
     "included_minutes": 2000,
     "note": "Actions minutes are free on public repos; the private repos draw on the free 2,000 min/month. Set BILLING_TOKEN to a CLASSIC PAT with the 'repo' scope so usage can be estimated from the private repos' run durations.",
+    "billing_api_error": "HTTPError: HTTP Error 403: Forbidden",
     "private_runs": null
   },
   "changes": [
     {
       "type": "Push",
-      "repo": "lan-kit",
-      "when": "2026-10-25T12:27:29Z",
-      "text": "pushed to main"
+      "repo": "read-live-transform-app",
+      "when": "2026-10-25T19:06:24Z",
+      "text": "pushed to export-kit"
     },
     {
       "type": "Push",
-      "repo": "compress-kit",
-      "when": "2026-10-25T12:27:14Z",
+      "repo": "base-bench",
+      "when": "2026-10-25T18:39:34Z",
       "text": "pushed to main"
     },
     {
-      "type": "Push",
-      "repo": "web-kit",
-      "when": "2026-10-25T14:03:24Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "conqueror-os",
-      "when": "2026-10-25T14:03:14Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "aethelgard-games",
-      "when": "2026-10-25T14:03:01Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "conqueror-os",
-      "when": "2026-10-25T12:23:31Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "ambient-sound-studio",
-      "when": "2026-10-25T12:23:18Z",
-      "text": "pushed to main"
+      "type": "Create",
+      "repo": "base-bench",
+      "when": "2026-10-25T18:39:12Z",
+      "text": ""
     },
     {
       "type": "Push",
       "repo": "app-builder",
-      "when": "2026-10-26T06:14:00Z",
+      "when": "2026-10-26T13:38:54Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "homoeopathic-materia-medica-repertory-json",
-      "when": "2026-10-25T12:11:44Z",
+      "repo": "dashboard",
+      "when": "2026-10-25T16:47:26Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "chalk-lan",
-      "when": "2026-10-25T12:11:26Z",
+      "repo": "offline-pdf-toolkit",
+      "when": "2026-10-26T09:43:46Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "Matneo",
-      "when": "2026-10-25T12:10:55Z",
+      "repo": "lexora",
+      "when": "2026-10-26T09:43:15Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "web-kit",
-      "when": "2026-10-26T09:44:20Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "saga-vn-engine",
-      "when": "2026-10-26T09:43:51Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "neon-velocity",
-      "when": "2026-10-26T09:43:42Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "conqueror-os",
-      "when": "2026-10-26T09:42:59Z",
+      "repo": "dance-fight",
+      "when": "2026-10-26T09:43:02Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "bmi-bmr-tdee-macros-fluid-calculator",
-      "when": "2026-10-26T09:42:49Z",
+      "when": "2026-10-26T09:42:47Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "app-builder",
-      "when": "2026-10-26T09:42:31Z",
+      "repo": "TTB",
+      "when": "2026-10-26T09:42:23Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "SmartNotes",
-      "when": "2026-10-26T09:42:12Z",
+      "when": "2026-10-26T09:42:09Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "CLDR",
-      "when": "2026-10-26T09:42:00Z",
+      "when": "2026-10-26T09:41:55Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "CLDR",
-      "when": "2026-10-26T09:41:59Z",
+      "repo": "backup",
+      "when": "2026-10-26T09:12:29Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Create",
+      "repo": "neon-velocity",
+      "when": "2026-10-26T12:52:57Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
+      "repo": "drsamonline",
+      "when": "2026-10-26T12:12:28Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "skills",
+      "when": "2026-10-26T09:44:03Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "skills",
+      "when": "2026-10-26T09:44:02Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "retro-strike",
+      "when": "2026-10-26T09:43:50Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "neon-velocity",
+      "when": "2026-10-26T09:43:40Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "neon-runner",
+      "when": "2026-10-26T09:43:39Z",
       "text": "pushed to main"
     }
   ],
@@ -375,8 +387,8 @@
       "what": "this dashboard",
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/40315703936",
-      "last_run": "2026-10-26T11:31:32Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/40371161097",
+      "last_run": "2026-10-26T17:42:44Z",
       "conclusion": "in_progress"
     },
     {
@@ -542,6 +554,48 @@
         "html_url": "https://github.com/drsamonline/control-panel"
       },
       {
+        "name": "app-encrypted-case-log",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/app-encrypted-case-log"
+      },
+      {
+        "name": "HMS",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/HMS"
+      },
+      {
+        "name": "blinkcode-ai",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/blinkcode-ai"
+      },
+      {
+        "name": "helioprism",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/helioprism"
+      },
+      {
+        "name": "NEO",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/NEO"
+      },
+      {
+        "name": "TTB",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/TTB"
+      },
+      {
         "name": "retro-strike",
         "stars": 1,
         "forks": 0,
@@ -675,13 +729,6 @@
         "html_url": "https://github.com/drsamonline/art-kit"
       },
       {
-        "name": "app-encrypted-case-log",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/app-encrypted-case-log"
-      },
-      {
         "name": "app-companion-forge",
         "stars": 1,
         "forks": 0,
@@ -701,13 +748,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/aethelgard-games"
-      },
-      {
-        "name": "TTB",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/TTB"
       },
       {
         "name": "SmartNotes",
@@ -787,13 +827,6 @@
         "html_url": "https://github.com/drsamonline/export-kit"
       },
       {
-        "name": "blinkcode-ai",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/blinkcode-ai"
-      },
-      {
         "name": "astro-kit",
         "stars": 1,
         "forks": 0,
@@ -813,20 +846,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/BLINKTRANSFER"
-      },
-      {
-        "name": "HMS",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/HMS"
-      },
-      {
-        "name": "helioprism",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/helioprism"
       },
       {
         "name": "app-panchang",
@@ -995,13 +1014,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/The_Browser"
-      },
-      {
-        "name": "NEO",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/NEO"
       }
     ],
     "forks": {
@@ -1040,6 +1052,113 @@
             "title": "Overview"
           }
         ]
+      },
+      "app-encrypted-case-log": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 117,
+        "clone_uniques": 48,
+        "referrers": [],
+        "paths": []
+      },
+      "HMS": {
+        "views": 97,
+        "uniques": 1,
+        "clones": 197,
+        "clone_uniques": 65,
+        "referrers": [
+          {
+            "from": "coder.qwen.ai",
+            "count": 5
+          },
+          {
+            "from": "github.com",
+            "count": 2
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/HMS",
+            "count": 38,
+            "title": "Overview"
+          },
+          {
+            "path": "/drsamonline/HMS/pulls",
+            "count": 9,
+            "title": "/pulls"
+          },
+          {
+            "path": "/drsamonline/HMS/actions",
+            "count": 8,
+            "title": "/actions"
+          },
+          {
+            "path": "/drsamonline/HMS/compare/rebuild/scratch-rebuild",
+            "count": 4,
+            "title": "/compare/rebuild/scratch-rebuild"
+          },
+          {
+            "path": "/drsamonline/HMS/tags",
+            "count": 4,
+            "title": "/tags"
+          }
+        ]
+      },
+      "blinkcode-ai": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 392,
+        "clone_uniques": 121,
+        "referrers": [],
+        "paths": []
+      },
+      "helioprism": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 274,
+        "clone_uniques": 98,
+        "referrers": [],
+        "paths": []
+      },
+      "NEO": {
+        "views": 2,
+        "uniques": 1,
+        "clones": 73,
+        "clone_uniques": 32,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 1
+          }
+        ],
+        "paths": []
+      },
+      "neon-velocity": {
+        "views": 1,
+        "uniques": 1,
+        "clones": 94,
+        "clone_uniques": 27,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 1
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/neon-velocity",
+            "count": 1,
+            "title": "Overview"
+          }
+        ]
+      },
+      "TTB": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 208,
+        "clone_uniques": 82,
+        "referrers": [],
+        "paths": []
       },
       "retro-strike": {
         "views": 0,
@@ -1143,25 +1262,6 @@
         "clone_uniques": 74,
         "referrers": [],
         "paths": []
-      },
-      "neon-velocity": {
-        "views": 1,
-        "uniques": 1,
-        "clones": 94,
-        "clone_uniques": 27,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 1
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/neon-velocity",
-            "count": 1,
-            "title": "Overview"
-          }
-        ]
       },
       "neon-runner": {
         "views": 2,
@@ -1304,14 +1404,6 @@
         "referrers": [],
         "paths": []
       },
-      "app-encrypted-case-log": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 117,
-        "clone_uniques": 48,
-        "referrers": [],
-        "paths": []
-      },
       "app-companion-forge": {
         "views": 0,
         "uniques": 0,
@@ -1368,14 +1460,6 @@
         "uniques": 0,
         "clones": 776,
         "clone_uniques": 228,
-        "referrers": [],
-        "paths": []
-      },
-      "TTB": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 208,
-        "clone_uniques": 82,
         "referrers": [],
         "paths": []
       },
@@ -1553,14 +1637,6 @@
           }
         ]
       },
-      "blinkcode-ai": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 392,
-        "clone_uniques": 121,
-        "referrers": [],
-        "paths": []
-      },
       "astro-kit": {
         "views": 0,
         "uniques": 0,
@@ -1610,57 +1686,6 @@
             "title": "/pull/8"
           }
         ]
-      },
-      "HMS": {
-        "views": 97,
-        "uniques": 1,
-        "clones": 197,
-        "clone_uniques": 65,
-        "referrers": [
-          {
-            "from": "coder.qwen.ai",
-            "count": 5
-          },
-          {
-            "from": "github.com",
-            "count": 2
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/HMS",
-            "count": 38,
-            "title": "Overview"
-          },
-          {
-            "path": "/drsamonline/HMS/pulls",
-            "count": 9,
-            "title": "/pulls"
-          },
-          {
-            "path": "/drsamonline/HMS/actions",
-            "count": 8,
-            "title": "/actions"
-          },
-          {
-            "path": "/drsamonline/HMS/compare/rebuild/scratch-rebuild",
-            "count": 4,
-            "title": "/compare/rebuild/scratch-rebuild"
-          },
-          {
-            "path": "/drsamonline/HMS/tags",
-            "count": 4,
-            "title": "/tags"
-          }
-        ]
-      },
-      "helioprism": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 274,
-        "clone_uniques": 98,
-        "referrers": [],
-        "paths": []
       },
       "app-panchang": {
         "views": 1,
@@ -2105,19 +2130,6 @@
             "title": "Overview"
           }
         ]
-      },
-      "NEO": {
-        "views": 2,
-        "uniques": 1,
-        "clones": 73,
-        "clone_uniques": 32,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 1
-          }
-        ],
-        "paths": []
       }
     }
   },
@@ -2125,7 +2137,7 @@
     {
       "name": "control-panel",
       "description": "Every workflow in every repo: what runs, when, what calls what, and what is connected to nothing. The four stages from scratch to repair, the routes that need one input, and a Run button for each workflow. MIT.",
-      "pushed_at": "2026-10-26T10:22:14Z",
+      "pushed_at": "2026-10-26T17:41:01Z",
       "homepage": "https://drsamonline.github.io/control-panel/",
       "html_url": "https://github.com/drsamonline/control-panel",
       "download": "",
@@ -2134,6 +2146,125 @@
       "status_tone": "ok",
       "spark": [
         0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "app-encrypted-case-log",
+      "description": "Per-patient clinical notes, encrypted on the device with AES-256-GCM. Offline, no account, no server. Built with Forge on crypto-kit, case-kit, search-kit, export-kit and web-kit. MIT.",
+      "pushed_at": "2026-10-26T17:16:59Z",
+      "homepage": "https://drsamonline.github.io/app-encrypted-case-log/",
+      "html_url": "https://github.com/drsamonline/app-encrypted-case-log",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "4/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "HMS",
+      "description": "HHMS — Homeopathic Hospital Management System A LAN-based hospital management system purpose-built for homeopathic hospitals and clinics.  Runs entirely on the local network with a server-owned database — no internet dependency, no cloud lock-in.",
+      "pushed_at": "2026-10-26T17:11:20Z",
+      "homepage": "https://drsamonline.github.io/HMS/",
+      "html_url": "https://github.com/drsamonline/HMS",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "blinkcode-ai",
+      "description": "BlinkCode AI — single-shot optical file transfer PWA (compression -> SpectraCode -> camera -> restore)",
+      "pushed_at": "2026-10-26T16:41:53Z",
+      "homepage": "https://drsamonline.github.io/blinkcode-ai/",
+      "html_url": "https://github.com/drsamonline/blinkcode-ai",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "helioprism",
+      "description": "One app, two optical transports — send a file with light over QR or a colour matrix. Offline, no network.",
+      "pushed_at": "2026-10-26T16:37:32Z",
+      "homepage": "https://drsamonline.github.io/helioprism/",
+      "html_url": "https://github.com/drsamonline/helioprism",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "NEO",
+      "description": "NOVA — a statically-typed, compiled systems programming language: C, JavaScript, Rust and WebAssembly backends, with a runtime, package manager, language server and debugger.",
+      "pushed_at": "2026-10-26T15:07:22Z",
+      "homepage": "https://drsamonline.github.io/NEO/",
+      "html_url": "https://github.com/drsamonline/NEO",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "neon-velocity",
+      "description": "Procedural retro side-scrolling shooter for Godot 4.3 — zero binary assets, all sprites and audio generated at runtime.",
+      "pushed_at": "2026-10-26T12:52:56Z",
+      "homepage": "https://drsamonline.github.io/neon-velocity/",
+      "html_url": "https://github.com/drsamonline/neon-velocity",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "4/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "TTB",
+      "description": "TinyToolBox with 590 functionalities in one small extension for chrome",
+      "pushed_at": "2026-10-26T12:44:07Z",
+      "homepage": "https://drsamonline.github.io/TTB/",
+      "html_url": "https://github.com/drsamonline/TTB",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
         1,
         1,
         1
@@ -2221,23 +2352,6 @@
         1,
         1,
         1,
-        1
-      ]
-    },
-    {
-      "name": "neon-velocity",
-      "description": "Procedural retro side-scrolling shooter for Godot 4.3 — zero binary assets, all sprites and audio generated at runtime.",
-      "pushed_at": "2026-10-26T09:43:43Z",
-      "homepage": "https://drsamonline.github.io/neon-velocity/",
-      "html_url": "https://github.com/drsamonline/neon-velocity",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "4/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
         1
       ]
     },
@@ -2378,23 +2492,6 @@
       ]
     },
     {
-      "name": "app-encrypted-case-log",
-      "description": "Per-patient clinical notes, encrypted on the device with AES-256-GCM. Offline, no account, no server. Built with Forge on crypto-kit, case-kit, search-kit, export-kit and web-kit. MIT.",
-      "pushed_at": "2026-10-26T09:42:36Z",
-      "homepage": "https://drsamonline.github.io/app-encrypted-case-log/",
-      "html_url": "https://github.com/drsamonline/app-encrypted-case-log",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "4/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        1,
-        1,
-        1
-      ]
-    },
-    {
       "name": "app-companion-forge",
       "description": "Forge tooling (not a product app): an offline pocket console for the Forge system.",
       "pushed_at": "2026-10-26T09:42:32Z",
@@ -2436,23 +2533,6 @@
       "html_url": "https://github.com/drsamonline/aethelgard-games",
       "download": "",
       "category": "Games",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "TTB",
-      "description": "TinyToolBox with 590 functionalities in one small extension for chrome",
-      "pushed_at": "2026-10-26T09:42:23Z",
-      "homepage": "https://drsamonline.github.io/TTB/",
-      "html_url": "https://github.com/drsamonline/TTB",
-      "download": "",
-      "category": "Utilities",
       "status": "5/5",
       "status_tone": "ok",
       "spark": [
@@ -2650,23 +2730,6 @@
       ]
     },
     {
-      "name": "blinkcode-ai",
-      "description": "BlinkCode AI — single-shot optical file transfer PWA (compression -> SpectraCode -> camera -> restore)",
-      "pushed_at": "2026-10-25T14:03:07Z",
-      "homepage": "https://drsamonline.github.io/blinkcode-ai/",
-      "html_url": "https://github.com/drsamonline/blinkcode-ai",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1,
-        1,
-        1,
-        0
-      ]
-    },
-    {
       "name": "ambient-sound-studio",
       "description": "A private, offline ambient sound mixer that lives in a single HTML file. 25 synthesised layers, 36 presets, English/Hindi/Gujarati, WAV & Opus export, installable PWA. Free for personal use.",
       "pushed_at": "2026-10-25T14:03:06Z",
@@ -2689,40 +2752,6 @@
       "pushed_at": "2026-10-25T14:03:00Z",
       "homepage": "https://drsamonline.github.io/BLINKTRANSFER/",
       "html_url": "https://github.com/drsamonline/BLINKTRANSFER",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1,
-        1,
-        1,
-        0
-      ]
-    },
-    {
-      "name": "HMS",
-      "description": "HHMS — Homeopathic Hospital Management System A LAN-based hospital management system purpose-built for homeopathic hospitals and clinics.  Runs entirely on the local network with a server-owned database — no internet dependency, no cloud lock-in.",
-      "pushed_at": "2026-10-25T14:03:00Z",
-      "homepage": "https://drsamonline.github.io/HMS/",
-      "html_url": "https://github.com/drsamonline/HMS",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        1,
-        1,
-        0
-      ]
-    },
-    {
-      "name": "helioprism",
-      "description": "One app, two optical transports — send a file with light over QR or a colour matrix. Offline, no network.",
-      "pushed_at": "2026-10-25T13:44:16Z",
-      "homepage": "https://drsamonline.github.io/helioprism/",
-      "html_url": "https://github.com/drsamonline/helioprism",
       "download": "",
       "category": "HTML Apps",
       "status": "5/5",
@@ -3005,23 +3034,6 @@
         1,
         0
       ]
-    },
-    {
-      "name": "NEO",
-      "description": "NOVA — a statically-typed, compiled systems programming language: C, JavaScript, Rust and WebAssembly backends, with a runtime, package manager, language server and debugger.",
-      "pushed_at": "2026-10-23T03:51:06Z",
-      "homepage": "https://drsamonline.github.io/NEO/",
-      "html_url": "https://github.com/drsamonline/NEO",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1,
-        0,
-        0,
-        0
-      ]
     }
   ],
   "links": {
@@ -3268,19 +3280,27 @@
       "avg": 4.9,
       "pushes": 78,
       "byrepo": {
-        "control-panel": 1,
         "dashboard": 1,
-        "Matneo": 1,
+        "control-panel": 1,
+        "app-encrypted-case-log": 1,
+        "HMS": 1,
+        "blinkcode-ai": 1,
         "app-builder": 1,
+        "helioprism": 1,
+        "NEO": 1,
+        "neon-velocity": 1,
+        "TTB": 1,
+        "Matneo": 1,
+        "skills": 1,
+        "drsamonline.github.io": 1,
+        "drsamonline": 1,
         "retro-strike": 1,
         "idle-city-ages-of-growth": 1,
         "dance-fight": 1,
         "web-kit": 1,
         "ui-kit": 1,
-        "skills": 1,
         "saga-vn-engine": 1,
         "offline-pdf-toolkit": 1,
-        "neon-velocity": 1,
         "neon-runner": 1,
         "neon-engine": 1,
         "ml-kit": 1,
@@ -3294,18 +3314,14 @@
         "bmi-bmr-tdee-macros-fluid-calculator": 1,
         "audio-kit": 1,
         "art-kit": 1,
-        "app-encrypted-case-log": 1,
         "app-companion-forge": 1,
         "aethelgard-rpg-engine": 1,
         "aethelgard-games": 1,
-        "TTB": 1,
         "SmartNotes": 1,
         "Scrap-and-Gun": 1,
         "CLDR": 1,
         "All4ONE": 1,
-        "drsamonline": 1,
         "backup": 1,
-        "drsamonline.github.io": 1,
         "skin-case-tracker": 1,
         "read-live-transform-app": 1
       },
@@ -3314,5 +3330,7 @@
       "watchers": 68
     }
   ],
-  "degraded": []
+  "degraded": [
+    "kit list: registry/deps.json could not be read (FetchError: HTTPError: HTTP Error 404: Not Found) - kits declared only there are missing from this run"
+  ]
 }
