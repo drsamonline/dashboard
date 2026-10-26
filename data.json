@@ -1,6 +1,6 @@
 {
   "generated": "2026-10-26",
-  "generated_at": "2026-10-26T20:02:20Z",
+  "generated_at": "2026-10-26T20:07:31Z",
   "reckoning": "55 products · 18 kits · avg conformance 4.8/5 · updated automatically.",
   "health": "ok",
   "health_detail": {
@@ -44,8 +44,9 @@
     "avg": 4.8,
     "pushes": 83,
     "byrepo": {
-      "app-builder": 1,
+      "dashboard": 1,
       "forge": 1,
+      "app-builder": 1,
       "conqueror-os": 1,
       "control-panel": 1,
       "lockhtml": 1,
@@ -58,7 +59,6 @@
       "ULTIMATE-WINDOWS-OPTIMIZER": 1,
       "BLINKTRANSFER": 1,
       "helioprism": 1,
-      "dashboard": 1,
       "registry": 1,
       "HMS": 1,
       "blinkcode-ai": 1,
@@ -387,8 +387,8 @@
       "what": "this dashboard",
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/40392032031",
-      "last_run": "2026-10-26T20:02:10Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/40392787259",
+      "last_run": "2026-10-26T20:07:18Z",
       "conclusion": "in_progress"
     },
     {
@@ -1394,14 +1394,7 @@
           }
         ]
       },
-      "offline-pdf-toolkit": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 174,
-        "clone_uniques": 74,
-        "referrers": [],
-        "paths": []
-      },
+      "offline-pdf-toolkit": {},
       "neon-runner": {
         "views": 2,
         "uniques": 1,
@@ -3354,8 +3347,9 @@
       "avg": 4.8,
       "pushes": 83,
       "byrepo": {
-        "app-builder": 1,
+        "dashboard": 1,
         "forge": 1,
+        "app-builder": 1,
         "conqueror-os": 1,
         "control-panel": 1,
         "lockhtml": 1,
@@ -3368,7 +3362,6 @@
         "ULTIMATE-WINDOWS-OPTIMIZER": 1,
         "BLINKTRANSFER": 1,
         "helioprism": 1,
-        "dashboard": 1,
         "registry": 1,
         "HMS": 1,
         "blinkcode-ai": 1,
