@@ -143,7 +143,7 @@ footer{max-width:1320px;margin:0 auto;padding:14px 12px 30px;color:var(--mut);fo
     <div class="panel"><h2>Growth — products over time</h2><div id="trend"></div><p class="mut" id="trendNote" style="margin:6px 0 0"></p></div>
     <div class="panel"><h2>Leaderboard</h2><p class="mut" style="margin:0 0 8px">Two axes, because one is not enough: <b>quality</b> is the heuristic score, <b>activity</b> is how much changed recently. A big quiet repo and a small thriving one are not comparable on either alone.</p><div id="lb"></div><p class="mut" id="lbNote" style="margin:6px 0 0"></p></div>
     <div class="panel capped"><h2>System health</h2><p class="mut" style="margin:0 0 8px">Two numbers that used to be one-off answers in a session: how many apps are DECIDED BUT UNSPECCED, and the run record (which flags any run that touched a file which lost lines).</p><div id="specgap"></div><div id="runlog"></div></div>
-    <div class="panel"><h2>Conformance</h2><p class="mut" style="margin:0 0 8px">How many repos satisfy each system rule — topics, a licence, a changelog, a test, a description. A bar at 100% means every repo passes that rule; a short bar is the work list.</p><div id="conf"></div><div class="legend" id="confLegend"></div></div>
+    <div class="panel"><h2>Metadata completeness</h2><p class="mut" style="margin:0 0 8px">Five metadata booleans per repository — a description, a licence, a homepage, Pages, and not archived — not build quality: a repo whose build failed on its latest run still scores 5/5. How many repos satisfy each system rule — topics, a licence, a changelog, a test, a description. A bar at 100% means every repo passes that rule; a short bar is the work list.</p><div id="conf"></div><div class="legend" id="confLegend"></div></div>
     <div class="panel"><h2>Categories</h2><p class="mut" style="margin:0 0 8px">Repos grouped by what they are — kit, app, system, meta — with the count in each. It answers "how much is tooling versus product".</p><div id="cats"></div></div>
     <div class="panel"><h2>Actions budget</h2><p class="mut" style="margin:0 0 8px">GitHub Actions minutes used this month against the free allowance. Everything here is built to run inside it — no paid runners.</p><div id="quota"></div></div>
   </div>
@@ -361,7 +361,7 @@ fetch("data.json",{cache:"no-store"}).then(function(r){return r.json()}).then(fu
   var hist=d.history||[],vals=hist.map(function(h){return h.products});
   if(vals.length){$("trend").innerHTML=lineChart(vals,"#34d399");var f=vals[0],l=vals[vals.length-1];$("trendNote").textContent=hist.length+" snapshot(s) · "+f+" → "+l+(hist.length>1?" ("+(l-f>=0?"+":"")+(l-f)+")":"")}else{$("trendNote").textContent="History starts today."}
 
-  $("conf").innerHTML=donut(d.stats&&d.stats.conformance,function(k){var n=parseInt(k,10);return n>=5?"#22c55e":n>=4?"#84cc16":n>=3?"#f59e0b":"#ef4444"});
+  $("conf").innerHTML=donut(d.stats&&(d.stats.metadata_completeness||d.stats.conformance),function(k){var n=parseInt(k,10);return n>=5?"#22c55e":n>=4?"#84cc16":n>=3?"#f59e0b":"#ef4444"});
   $("confLegend").innerHTML=["5/5","4/5","3/5","≤2"].map(function(t,i){return '<span><span class="swatch" style="background:'+["#22c55e","#84cc16","#f59e0b","#ef4444"][i]+'"></span>'+t+'</span>'}).join("");
   $("cats").innerHTML=hbars(d.stats&&d.stats.categories,catColour);
 
