@@ -1,6 +1,6 @@
 {
   "generated": "2026-10-27",
-  "generated_at": "2026-10-27T08:32:31Z",
+  "generated_at": "2026-10-27T09:21:20Z",
   "reckoning": "55 products · 13 kits (role) · avg metadata completeness 4.8/5 · updated automatically.",
   "health": "ok",
   "health_detail": {
@@ -46,9 +46,11 @@
     "avg": 4.8,
     "pushes": 83,
     "byrepo": {
-      "app-builder": 1,
+      "drsamonline.github.io": 1,
+      "control-panel": 1,
       "forge": 1,
       "dashboard": 1,
+      "app-builder": 1,
       "smartbill-app": 1,
       "Matneo": 1,
       "base-bench": 1,
@@ -82,7 +84,6 @@
       "blinkcode-ai": 1,
       "case-kit": 1,
       "idle-city-ages-of-growth": 1,
-      "control-panel": 1,
       "game-kit": 1,
       "ml-kit": 1,
       "offline-pdf-toolkit": 1,
@@ -102,7 +103,6 @@
       "audio-kit": 1,
       "drsamonline": 1,
       "compress-kit": 1,
-      "drsamonline.github.io": 1,
       "crypto-kit": 1,
       "art-kit": 1,
       "app-encrypted-case-log": 1,
@@ -126,13 +126,13 @@
   },
   "stats": {
     "conformance": {
+      "4": 3,
       "5": 49,
-      "3": 3,
-      "4": 3
+      "3": 3
     },
     "categories": {
-      "Utilities": 15,
       "HTML Apps": 20,
+      "Utilities": 15,
       "Games": 6,
       "Homeopathy": 11,
       "Health Tools": 1,
@@ -265,6 +265,24 @@
   "changes": [
     {
       "type": "Push",
+      "repo": "CLDR",
+      "when": "2026-10-26T09:42:04Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "CLDR",
+      "when": "2026-10-26T09:41:57Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "dashboard",
+      "when": "2026-10-26T10:16:39Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
       "repo": "ui-kit",
       "when": "2026-10-26T09:44:05Z",
       "text": "pushed to main"
@@ -364,24 +382,6 @@
       "repo": "idle-city-ages-of-growth",
       "when": "2026-10-26T09:43:10Z",
       "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "dashboard",
-      "when": "2026-10-26T09:43:04Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "TTB",
-      "when": "2026-10-26T20:08:50Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "backup",
-      "when": "2026-10-26T09:17:13Z",
-      "text": "pushed to main"
     }
   ],
   "automation": [
@@ -392,8 +392,8 @@
       "what": "the project hub",
       "schedule": "daily 03:17 UTC",
       "repo_url": "https://github.com/drsamonline/drsamonline.github.io",
-      "url": "https://github.com/drsamonline/drsamonline.github.io/actions/runs/40296987079",
-      "last_run": "2026-10-26T09:09:24Z",
+      "url": "https://github.com/drsamonline/drsamonline.github.io/actions/runs/40478512194",
+      "last_run": "2026-10-27T09:11:41Z",
       "conclusion": "success"
     },
     {
@@ -403,8 +403,8 @@
       "what": "the profile README",
       "schedule": "daily 03:17 UTC",
       "repo_url": "https://github.com/drsamonline/drsamonline",
-      "url": "https://github.com/drsamonline/drsamonline/actions/runs/40296088154",
-      "last_run": "2026-10-26T08:59:06Z",
+      "url": "https://github.com/drsamonline/drsamonline/actions/runs/40477812198",
+      "last_run": "2026-10-27T09:02:49Z",
       "conclusion": "success"
     },
     {
@@ -414,8 +414,8 @@
       "what": "this dashboard",
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/40474187994",
-      "last_run": "2026-10-27T08:32:17Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/40480105309",
+      "last_run": "2026-10-27T09:21:08Z",
       "conclusion": "in_progress"
     },
     {
@@ -569,6 +569,13 @@
         "forks": 1,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/neon-runner"
+      },
+      {
+        "name": "control-panel",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/control-panel"
       },
       {
         "name": "smartbill-app",
@@ -758,13 +765,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/idle-city-ages-of-growth"
-      },
-      {
-        "name": "control-panel",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/control-panel"
       },
       {
         "name": "game-kit",
@@ -1079,6 +1079,20 @@
     "window": "14 days",
     "note": "Last 14 days — GitHub's retention window.",
     "repos": {
+      "control-panel": {
+        "views": 1,
+        "uniques": 1,
+        "clones": 306,
+        "clone_uniques": 122,
+        "referrers": [],
+        "paths": [
+          {
+            "path": "/drsamonline/control-panel",
+            "count": 1,
+            "title": "Overview"
+          }
+        ]
+      },
       "smartbill-app": {
         "views": 3,
         "uniques": 3,
@@ -1503,20 +1517,6 @@
           {
             "path": "/drsamonline/idle-city-ages-of-growth",
             "count": 3,
-            "title": "Overview"
-          }
-        ]
-      },
-      "control-panel": {
-        "views": 1,
-        "uniques": 1,
-        "clones": 306,
-        "clone_uniques": 122,
-        "referrers": [],
-        "paths": [
-          {
-            "path": "/drsamonline/control-panel",
-            "count": 1,
             "title": "Overview"
           }
         ]
@@ -2202,6 +2202,24 @@
   },
   "repos": [
     {
+      "name": "control-panel",
+      "description": "Every workflow in every repo: what runs, when, what calls what, and what is connected to nothing. The four stages from scratch to repair, the routes that need one input, and a Run button for each workflow. MIT.",
+      "pushed_at": "2026-10-27T09:01:36Z",
+      "homepage": "https://drsamonline.github.io/control-panel/",
+      "html_url": "https://github.com/drsamonline/control-panel",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "4/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
       "name": "smartbill-app",
       "description": "A fast, serverless, single-page billing and invoicing application built with Vue.js, tailored for Indian businesses. Features local IndexedDB storage and GST support.",
       "pushed_at": "2026-10-27T08:12:18Z",
@@ -2570,24 +2588,6 @@
       "download": "",
       "category": "Games",
       "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "control-panel",
-      "description": "Every workflow in every repo: what runs, when, what calls what, and what is connected to nothing. The four stages from scratch to repair, the routes that need one input, and a Run button for each workflow. MIT.",
-      "pushed_at": "2026-10-27T03:38:37Z",
-      "homepage": "https://drsamonline.github.io/control-panel/",
-      "html_url": "https://github.com/drsamonline/control-panel",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "4/5",
       "status_tone": "ok",
       "spark": [
         0,
@@ -3499,9 +3499,11 @@
       "avg": 4.8,
       "pushes": 83,
       "byrepo": {
-        "app-builder": 1,
+        "drsamonline.github.io": 1,
+        "control-panel": 1,
         "forge": 1,
         "dashboard": 1,
+        "app-builder": 1,
         "smartbill-app": 1,
         "Matneo": 1,
         "base-bench": 1,
@@ -3535,7 +3537,6 @@
         "blinkcode-ai": 1,
         "case-kit": 1,
         "idle-city-ages-of-growth": 1,
-        "control-panel": 1,
         "game-kit": 1,
         "ml-kit": 1,
         "offline-pdf-toolkit": 1,
@@ -3555,7 +3556,6 @@
         "audio-kit": 1,
         "drsamonline": 1,
         "compress-kit": 1,
-        "drsamonline.github.io": 1,
         "crypto-kit": 1,
         "art-kit": 1,
         "app-encrypted-case-log": 1,

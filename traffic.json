@@ -4,6 +4,20 @@
   "window": "14 days",
   "note": "Last 14 days — GitHub's retention window.",
   "repos": {
+    "control-panel": {
+      "views": 1,
+      "uniques": 1,
+      "clones": 306,
+      "clone_uniques": 122,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/drsamonline/control-panel",
+          "count": 1,
+          "title": "Overview"
+        }
+      ]
+    },
     "smartbill-app": {
       "views": 3,
       "uniques": 3,
@@ -428,20 +442,6 @@
         {
           "path": "/drsamonline/idle-city-ages-of-growth",
           "count": 3,
-          "title": "Overview"
-        }
-      ]
-    },
-    "control-panel": {
-      "views": 1,
-      "uniques": 1,
-      "clones": 306,
-      "clone_uniques": 122,
-      "referrers": [],
-      "paths": [
-        {
-          "path": "/drsamonline/control-panel",
-          "count": 1,
           "title": "Overview"
         }
       ]
