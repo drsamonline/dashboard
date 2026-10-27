@@ -2,181 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "2c432520757b",
-      "at": "2026-10-25T07:45:00Z",
-      "workflow": "licence-policy",
-      "outcome": "ok",
-      "note": "licence-policy (owner: some products are sellable private code - make them proprietary; some had custom licences and if they were proper keep them; convert the NON-PROPRIETARY or MIT products to this licence). I OVER-REACHED and the owner caught it: the blanket conversion changed EVERY repo, relicensing sellable private code as a public noncommercial licence and normalising bespoke licences written on purpose. I read each repo's ORIGINAL licence out of git history (via the commits for LICENSE, taking the commit before mine) and classified it: 13 PROPRIETARY, 6 deliberate CUSTOM, 3 standard, 4 with no licence file. RESTORED THE 19 (29 files) and made the README and the SPDX headers agree with what was restored, because a repo that contradicts itself about its licence is the exact thing the tool exists to prevent. registry/licence-policy.json records them and the tool reads it BEFORE it touches anything. THE LINE IS THE DEFAULT: MIT, BSD, GPL, Apache and no-licence convert; a licence that was CHOSEN is left alone - normalising a deliberate licence is not tidying, it is overwriting a decision. ALSO FOUND: the tool itself had never been committed, so the workflow that runs `python3 tools/licence.py --self-test` would have failed on its first run against a file that did not exist. Committed, read back, self-test 9/9.",
-      "files": [
-        "forge/tools/licence.py",
-        "forge/registry/licence-policy.json",
-        "forge/.github/workflows/licence.yml"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
-      "id": "e2bb4646155a",
-      "at": "2026-10-25T09:00:00Z",
-      "workflow": "re-audit-failures",
-      "outcome": "ok",
-      "note": "re-audit-failures (owner: in the re-audit ALSO check the workflows and their FAILURES and FAILSAFES). I asked what is actually FAILING rather than what the files say, and found 61 failed runs. THE BIG ONE: the control panel's SWEEP broke ~35 workflows. It added timeout-minutes to every job missing one, including jobs whose only key is `uses:` - and a job that CALLS a reusable workflow accepts name, uses, with, secrets, permissions, needs, if, strategy and concurrency, and NOTHING else. So the workflow became invalid and every run was rejected at STARTUP with no log and no job, which is why build-apps.yml failed across the apps and backup.yml failed 15 times (it is a caller too). FIXED: 36 repos, 38 timeout lines removed; the sweep tool now matches `runs-on:` only and checks results against the workflow SCHEMA, not just YAML. THE FAILSAFE GAP: the repo's own lint validates the YAML, and every broken workflow parsed fine, so the lint PASSED - the exact failure it was written to catch, missed. New tools/wf-check.py checks the rules a parser cannot know and is wired into the lint as a schema job with its own tests. Verified by reading the files at their newest COMMIT: CLEAN (my first read-back said the bug was still live - the stale-ref cache, third time today).",
-      "files": [
-        "control-panel/tools/sweep.py",
-        "forge/tools/wf-check.py",
-        "forge/.github/workflows/lint.yml"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
-      "id": "02ff2c3cd73a",
-      "at": "2026-10-25T09:30:00Z",
-      "workflow": "re-audit-failsafes",
-      "outcome": "ok",
-      "note": "re-audit-failsafes (owner: in the re-audit ALSO check the workflows and their FAILURES and FAILSAFES). 61 failed runs across 20 repos. THE BIG ONE WAS MINE: the control panel's SWEEP added timeout-minutes to every job missing one, including jobs whose only key is `uses:` - and a job that CALLS a reusable workflow accepts name, uses, with, secrets, permissions, needs, if, strategy and concurrency, and NOTHING else. So ~35 workflows became INVALID and every run was rejected at STARTUP with no log, no job, and a failure named after the file path. That is build-apps.yml failing across the apps and backup.yml failing 15 times (forge/backup.yml is a caller too). FIXED 36 repos, 38 lines removed, and the tool now matches `runs-on:` only AND checks each rule's result against the workflow SCHEMA. THE FAILSAFE GAP IS THE REAL LESSON: the repo's own lint validates the workflow YAML, every broken workflow parsed fine, so the lint PASSED - it missed the exact failure it was written to catch. YAML validity is not workflow validity; a parser answers 'is this well-formed?' when the question is 'will GitHub accept it?'. New tools/wf-check.py checks the rules a parser cannot know (a uses: job's allowed keys, a step's allowed keys, a missing runs-on, a reusable with no @ref) and runs in the lint as a schema job with its own tests first. Also fixed: the lint's ShellCheck step (9 failures) flags two DELIBERATE word-splits in shell I wrote - `for id in $ids` over a newline-separated list, and a glob that must fall through to its guard - now marked with a reason. AND the stale-ref cache caught me a THIRD time: my read-back said the bug was still live, and reading the files at their newest COMMIT proved the fix had landed.",
-      "files": [
-        "control-panel/tools/sweep.py",
-        "forge/tools/wf-check.py",
-        "forge/.github/workflows/lint.yml",
-        "forge/.github/workflows/self-heal.yml",
-        "forge/.github/workflows/new-app.yml"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
-      "id": "d516b44bb69d",
-      "at": "2026-10-25T10:30:00Z",
-      "workflow": "replan",
-      "outcome": "ok",
-      "note": "replan (owner: then replan, after the re-audit). THE FIRST STEP WAS THE RIGHT ONE, because the re-audit proved the sweep is the most dangerous tool in the set - it edits live workflows at scale and it just invalidated ~35 of them. (1) THE GATE: tools/sweep.py now checks every rule's result against the workflow SCHEMA before writing, and DROPS a rule that would produce a workflow GitHub refuses; tools/wf_check.py sits beside it, and the one rule that actually bit is enforced inline even if the sibling is missing. Verified on the exact failure: valid YAML, a uses: job carrying timeout-minutes - the gate finds it and the fixed version passes. (2) THE REPLAN ITSELF: the control panel's daily scan now asks 'will it run?' instead of 'does it parse?', recording invalid_workflow and the exact problems with the same checker the lint and the sweep share - so the next instance is found by the daily run, not by another audit. (3) A CORRECTION: I twice reported the committed scan.py as having a SyntaxError. It did not - it parses fine. The error was in MY edit, and I was reading my own broken version as if it were the live one, which is the same class of mistake as the stale-ref cache. Checked before claiming, both times, eventually.",
-      "files": [
-        "control-panel/tools/sweep.py",
-        "control-panel/tools/scan.py",
-        "control-panel/tools/wf_check.py",
-        "forge/tools/wf-check.py"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
-      "id": "4b0c763556fa",
-      "at": "2026-10-25T11:00:00Z",
-      "workflow": "final-audit",
-      "outcome": "ok",
-      "note": "final-audit. LED WITH THE QUESTION THAT MATTERED: how many repos still carry an invalid workflow, not just the 36 I patched. ANSWER: 74 repos, 116 workflow files, 0 invalid - the fix was complete, and every workflow in the estate would now be accepted by GitHub. THE BUILD FIX IS PROVEN, not assumed: the newest 'Build + deploy' run is SUCCESS on skin-case-tracker, bmi, conqueror-os, app-encrypted-case-log, canteen-lan, MATERIA-MEDICA-BUILDER, chalk-lan and All4ONE - every one of them failing this morning. MY NEW SCHEMA JOB PASSES in the lint (success), so the failsafe works. THE LAST FAILING RUN was the lint's ShellCheck step, and it was RIGHT: SC2034, `i appears unused`, in the killswitch's revert branch - a loop that ran exactly once, used no loop variable, and called `merge-upstream`, which syncs a FORK and has nothing to do with reverting a branch. Leftover drafting that read as though the killswitch did something it never did. Removed. Found by reading the one failing step's log rather than guessing at the code. STILL OPEN: neon-games fails its BUILD (a valid workflow failing on the app, a different class from this morning's) - noted, not fixed.",
-      "files": [
-        "forge/.github/workflows/self-heal.yml"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
-      "id": "b4bd5f79cb98",
-      "at": "2026-10-25T11:45:00Z",
-      "workflow": "master-list-specs",
-      "outcome": "ok",
-      "note": "master-list-specs (owner: the app master list has apps without specs or with weak specs - check and update them so the auto workflow never hits a wall). THE WALL WAS REAL AND SILENT: of 153 apps, 129 had NO spec and 17 had only a draft - the auto-build refuses to scaffold an idea without a spec (Rule 0), so it could build SEVEN. Nothing reported a problem; the workflow simply never picked anything up. FIXED: 146 specs written, so all 153 now have one. 35 were built from the idea's OWN build prompt (the offline/AI/LAN prompt file and the categorized brainstorm) and are marked READY, so they are buildable rather than placeholders; the rest are honest DRAFTs, because a one-line idea is not a specification and pretending otherwise is how you ship the wrong app. Buildable went from 7 to 42. HONEST LIMITATION: only 35 of the 61 prompt sources matched a master-list name, so 111 specs are skeletons - those need their specs written, and the auto-build correctly skips them until they are.",
-      "files": [
-        "forge/QUEUE/ (146 specs)"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
-      "id": "177f07153c46",
-      "at": "2026-10-25T12:30:00Z",
-      "workflow": "specs-all-153",
-      "outcome": "ok",
-      "note": "specs-all-153 (owner: can you write specs for those 111 remaining apps). YES - all of them. 153 of 153 apps now carry a READY spec, so the auto-build has no wall left in the master list. WORK: a fuzzy name pass recovered 16 prompt matches the exact pass missed (51 from the ideas' own build prompts), and 102 were AUTHORED from scratch in three batches: the job in one sentence, the MECHANIC that makes it worth existing rather than a form, the thing it must NOT do so it cannot bloat, the kits, what it stores, and what done means. The mechanic is the part that matters - 'keep everything you copy' is a feature, 'a paste-STACK so the last three items paste in order with one key' is why the app exists. THE SAFETY-CRITICAL ONES CARRY THEIR OWN CONSTRAINT: Dose Card shows the unit at every step and REFUSES to compute when the units disagree; Repair asks whether the fault is one you should not touch BEFORE it diagnoses; Time Capsule states exactly what protects the content instead of promising secrecy; and the mental-health apps are coping tools, not treatment - Nightwatch is built for 3AM with nothing to fail, Panic Harbor shows ONE instruction at a time because a list is useless in that moment.",
-      "files": [
-        "forge/QUEUE/ (153 app specs)"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
-      "id": "54ca5fccfb81",
-      "at": "2026-10-25T13:15:00Z",
-      "workflow": "release-and-enhancements",
-      "outcome": "ok",
-      "note": "release-and-enhancements (owner: if apps need a version upgrade to change the licence, add 1-2 important enhancements and upgrade the version so the apps all get converted). I did NOT pad 40 changelogs - I found the thing that was actually blocking the licence from reaching the downloads. THE REAL BUG: app-builder's release step named THREE artifacts unconditionally (exe, apk, linux), so a build that legitimately produced two of them FAILED THE WHOLE RELEASE. That is why neon-games has been red while everything else went green - and the release is also what carries the LICENCE, so a failing release step is a licence that never reaches the download. FIXED: it now uploads what exists, warns about what does not, and only fails if there is nothing at all. VERIFIED ALONG THE WAY: neon-games' caller already sets a distinct release tag per app (its header documents three earlier bugs, including exactly that collision), so the missing artifact was the whole cause. AND A DEFAULT I DELIBERATELY DID NOT CHANGE: I started to make the tag per-app by default, and stopped - single-app repos publish to `app-latest`, and their download URLs point at it. Changing a default to tidy a multi-app case would have broken every existing download link. The input stays as it is.",
-      "files": [
-        "app-builder/.github/workflows/build.yml"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
-      "id": "576f526cc106",
-      "at": "2026-10-25T14:00:00Z",
-      "workflow": "app-1-skin-case-demo",
-      "outcome": "ok",
-      "note": "app-1-skin-case-demo (owner: u decide and we start - the per-app enhancements). I PICKED BY EVIDENCE, NOT MEASUREMENT, and the difference matters. FIRST I tried to find 'the weakest' by scoring every app on size, controls and tests. THE MEASURE WAS WRONG TWICE, for the same reason both times: the apps span several files, so the number I was reading was the wrong file. First I measured index.html and got remedy-relationship-explorer at 16 KB - it is the LANDING PAGE, the app is app.html at 1.1 MB. Then I measured the app file and got app-panchang at 9 KB - which turned out to be one of the BEST apps here: a real astronomy engine in astro-kit.js, a panchang engine, and 19 tests that verify Holi 2026-03-03 and Diwali 2026-11-08 by name. So I stopped measuring and picked by evidence. THE PICK: skin-case-tracker, which has a RECORDED defect - its docs/play/index.html was the PRE-RETROFIT build. VERIFIED: the app called Export.crc32, Export.save, Export.saveZip, Export.zip and Loom.csv; the demo called ONLY Loom.csv, because it still carried a hand-written zip writer. 0.985 similar - the same app with two code paths, so a bug fixed in one was never fixed in the other, and THE CODE THE PUBLIC DOWNLOADS WAS NOT THE CODE THAT IS MAINTAINED. FIXED: the demo is regenerated from the app with its kits, verified at the newest COMMIT (demo == app, both 99118 B) rather than through the stale-ref cache, which lied to me for the fourth time today. STILL TO DO: the CLASS - app-deliver is idempotent on the landing page, which is exactly why the demo was allowed to drift, so it needs to sync the demo even for a delivered app.",
-      "files": [
-        "skin-case-tracker/docs/play/index.html"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
-      "id": "e3164b18cd24",
-      "at": "2026-10-25T15:00:00Z",
-      "workflow": "demo-drift-class",
-      "outcome": "ok",
-      "note": "demo-drift-class (owner: go - fix the class, then sweep the estate). SWEPT THE ESTATE FIRST, so I would know the size of the problem before fixing it: 30 repos have a demo, 19 already match their app, and ONLY 2 HAD DRIFTED. Both are the same defect as skin-case-tracker - conqueror-os (missing Export.save and Export.toBytes) and smartbill-app (same calls, SEO tags only, benign). So the class is REAL but CONTAINED, and both real cases came from the same cause: a retrofit that reached the app and not the demo. FIXED THE INSTANCE: conqueror-os's demo regenerated from index.html with its kits, verified at the newest COMMIT. FIXED THE CLASS: app-deliver gains --sync-demos, which compares each demo to the app's own source and regenerates it when the CODE differs (cosmetic drift is left alone), and the daily workflow now runs it - so a demo cannot freeze at delivery time again. THE ROOT CAUSE WAS THE IDEMPOTENCE RULE: 'a landing page means it is done' is right for the landing page and wrong for the demo, and nobody had noticed the second half of that sentence.",
-      "files": [
-        "forge/tools/app-deliver.py",
-        "forge/.github/workflows/app-deliver.yml",
-        "conqueror-os/docs/play/index.html"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
-      "id": "8441d954fe0f",
-      "at": "2026-10-25T16:00:00Z",
-      "workflow": "demo-guard-and-smartbill",
-      "outcome": "ok",
-      "note": "demo-guard-and-smartbill (owner: also the workflow that CAUSES it needs correcting, so start any app). I started with smartbill-app - the one thing the sweep could not explain - AND IT WAS THE RIGHT PICK, because it exposed a flaw in my own fix. THE DRIFT WAS NOT COSMETIC: smartbill's demo was 6,871 bytes smaller and missing SEVENTEEN functions, including `isGstinInvalid` (GSTIN validation), `sanitizeNumber` (input sanitisation) and the place-of-supply check. Real features the public demo did not have. MY FIX WAS TOO COARSE: --sync-demos and the build guard both compared the KIT METHODS each file calls, and these are the app's OWN functions, so BOTH WOULD HAVE PASSED IT. Corrected to compare EXACTLY: the demo IS the app plus an SEO block, so strip the block and compare the rest. Bytes cry wolf on every app; kit calls miss real drift; this is neither. FIXED smartbill (verified at the commit: demo == app, no functions missing). THE WORKFLOW THAT CAUSES IT, CORRECTED: app-builder's build.yml - which EVERY app calls - now has a demo job that FAILS when the demo is not the app, so the change that causes the drift is the change that fixes it. RE-SWEPT THE ESTATE with the exact check: 20 demos match their app, 1 had drifted (smartbill), so the class was small but my first sweep had under-counted it.",
-      "files": [
-        "app-builder/.github/workflows/build.yml",
-        "forge/tools/app-deliver.py",
-        "smartbill-app/docs/play/index.html"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
-      "id": "d890d469dc17",
-      "at": "2026-10-25T17:00:00Z",
-      "workflow": "lessons-smartbill-guards",
-      "outcome": "ok",
-      "note": "lessons-smartbill-guards (owner: the pipeline of the total workflow related to forge needs this correction too; smartbill can be improved by adding a person's GSTIN in settings that prints on the bill; from now on write down everything learnt to a repo; also implement in the giant workflow for the forge dashboard and control panel). (1) LEARNINGS.md WRITTEN: LESSONS.md is generated and says 'do not edit by hand', so the hand-written counterpart now exists - eight lessons, each with the evidence that produced it, led by the one that covers most of today: A THING THAT ISN'T WIRED LOOKS EXACTLY LIKE A THING THAT IS. (2) THE FORGE FAMILY CHECKED, NOT ASSUMED: dashboard, control-panel, the hub, Matneo, forge and app-builder have NO source/docs pairs - the demo-drift class CANNOT occur there, so there was nothing to 'fix'. (3) THE GIANT WORKFLOW: the plan now carries four GUARDS as part of the pipeline rather than as habits - the workflow schema, the demo is the app, one licence everywhere, and a spec before a scaffold - each with what it catches and WHY it exists, and the panel shows them. (4) SMARTBILL: the Customer GSTIN already existed, validated and printing on the bill; the gap was retyping it every invoice, so it now has a SAVED-CUSTOMER MASTER - save once, pick from a dropdown, and the name, GSTIN, address and place of supply fill themselves. Matching is by name, so a repeat customer is updated rather than duplicated. The demo was regenerated in the same commit, because the guard added today would rightly have failed the build.",
-      "files": [
-        "forge/LEARNINGS.md",
-        "control-panel/docs/plan.json",
-        "control-panel/docs/index.html",
-        "smartbill-app/index.html",
-        "smartbill-app/docs/play/index.html"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "dd489abc5f08",
       "at": "2026-10-25T18:00:00Z",
       "workflow": "learnings-and-next-app",
@@ -552,6 +377,138 @@
         "forge/HANDOFF.md",
         "forge/README.md"
       ],
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "d607abd48099",
+      "at": "2026-10-26T10:51:18Z",
+      "workflow": "self-diagnose",
+      "outcome": "ok",
+      "note": "machinery check: 41 workflows, 2 scheduled, 5 errors, 0 not firing",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "bc06e70e011c",
+      "at": "2026-10-26T10:54:00Z",
+      "workflow": "self-diagnose",
+      "outcome": "ok",
+      "note": "machinery check: 46 workflows, 5 scheduled, 6 errors, 0 not firing",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "62848fe5cb56",
+      "at": "2026-10-26T10:56:04Z",
+      "workflow": "self-diagnose",
+      "outcome": "ok",
+      "note": "machinery check: 27 workflows, 1 scheduled, 4 errors, 0 not firing",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "59e3fa965fe5",
+      "at": "2026-10-26T14:01:56Z",
+      "workflow": "repo-learning",
+      "outcome": "ok",
+      "note": "weekly lessons from the record: 138 runs, 8 in the retrofit queue; detectors, the retrofit queue, and work that repeats",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "0fd575aa8861",
+      "at": "2026-10-26T14:33:28Z",
+      "workflow": "self-diagnose",
+      "outcome": "ok",
+      "note": "machinery check: 10 workflows, 2 scheduled, 2 errors, 0 not firing",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "430f4f111002",
+      "at": "2026-10-26T14:34:58Z",
+      "workflow": "self-diagnose",
+      "outcome": "ok",
+      "note": "machinery check: 10 workflows, 2 scheduled, 2 errors, 0 not firing",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "d078a92e3911",
+      "at": "2026-10-26T14:48:21Z",
+      "workflow": "self-diagnose",
+      "outcome": "ok",
+      "note": "machinery check: 10 workflows, 2 scheduled, 2 errors, 0 not firing",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "4068324b86b4",
+      "at": "2026-10-26T14:49:36Z",
+      "workflow": "self-diagnose",
+      "outcome": "ok",
+      "note": "machinery check: 32 workflows, 0 scheduled, 1 errors, 0 not firing",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "4871e45b86ad",
+      "at": "2026-10-26T14:54:35Z",
+      "workflow": "self-diagnose",
+      "outcome": "ok",
+      "note": "machinery check: 132 workflows, 11 scheduled, 11 errors, 0 not firing",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "6ffc3cb8e67f",
+      "at": "2026-10-26T15:16:31Z",
+      "workflow": "self-diagnose",
+      "outcome": "ok",
+      "note": "machinery check: 132 workflows, 11 scheduled, 9 errors, 0 not firing",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "c16cdbdb2af5",
+      "at": "2026-10-26T19:35:27Z",
+      "workflow": "self-diagnose",
+      "outcome": "ok",
+      "note": "machinery check: 134 workflows, 11 scheduled, 2 errors, 0 not firing",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "5127209b0ea0",
+      "at": "2026-10-26T19:53:12Z",
+      "workflow": "self-diagnose",
+      "outcome": "ok",
+      "note": "machinery check: 134 workflows, 11 scheduled, 2 errors, 0 not firing",
+      "files": {},
       "advanced": [],
       "errors": [],
       "retries": 0
