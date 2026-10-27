@@ -56,48 +56,17 @@ jobs:
         run: python3 .drsoam/drsoam.py dashboard
       - name: Commit if changed
         run: |
-          if git diff --quiet; then echo "no change"; exit 0; fi
-          git config user.name  "forge-bot"
-          git config user.email "bot@users.noreply.github.com"
-          # add only what exists: a missing path must not fail the run
-          added=0
-          for f in data.json history.json changes.json feed.xml forks.json community.json traffic.json; do
-            if [ -e "$f" ]; then git add -- "$f"; added=$((added+1)); else echo "::warning::$f was not generated"; fi
-          done
-          if git diff --staged --quiet; then echo "nothing staged"; exit 0; fi
-          echo "staged $added tracked path(s)"
-          git commit -m "chore: refresh dashboard data [skip ci]"
-          # A PLAIN `git push` HERE LOSES THE RACE and fails with "failed to push some
-          # refs" - which is why data.json once sat at 11:00 while the refresh reported
-          # nothing wrong. Rebase onto whatever landed, then retry.
+          # F-97: the verdict is "did data.json land on the branch", not "did git exit 0".
+          # This step used to fail after the data had already landed, twice - the push
+          # race - and the run read as a failure while the estate was correctly updated.
+          # tools/commit-and-verify.sh records each file's blob sha, commits, pushes with
+          # backoff, then fetches the branch and compares. Equality is success.
           #
-          # The comment that used to be here blamed "the health workflow ... every few
-          # minutes". That workflow is NOT in this repository - its only workflows are
-          # refresh.yml and test.yml - so the blamed party does not exist and the note
-          # sent the next reader looking for it. The race is real; the culprit named was
-          # not. Two triggers landing together is enough: this workflow fires on push to
-          # main AND on dispatch, and `cancel-in-progress: false` means the second one
-          # queues rather than being cancelled, so both can reach this step together.
-          #
-          # Four attempts with a flat 4s sleep did not survive that. Six attempts with a
-          # growing backoff do, and the failure message now says what to look at.
-          BR="${GITHUB_REF_NAME:-main}"
-          attempt=0
-          for wait in 0 4 8 16 30 30; do
-            attempt=$((attempt+1))
-            [ "$wait" = "0" ] || sleep "$wait"
-            git fetch origin "$BR" --quiet
-            if ! git rebase "origin/$BR" --quiet; then
-              echo "::warning::rebase onto origin/$BR failed on attempt $attempt"
-              git rebase --abort || true
-              continue
-            fi
-            if git push --quiet origin "HEAD:$BR"; then
-              echo "pushed on attempt $attempt"; exit 0
-            fi
-            echo "::warning::push rejected on attempt $attempt - the branch moved again"
-          done
-          echo "::error::could not push after $attempt attempts (~88s of backoff). Read this run's"
-          echo "::error::concurrent refresh runs before blaming another workflow - the one this"
-          echo "::error::file used to name does not exist in this repository."
-          exit 1
+          # The old note here blamed a "health workflow ... every few minutes". That
+          # workflow does not exist in this repository - its only workflows are
+          # refresh.yml and test.yml - so the blamed party was fiction and sent readers
+          # looking for it. The race is real: this workflow fires on push to main AND on
+          # dispatch, and cancel-in-progress: false queues rather than cancels, so two
+          # runs can reach this step together.
+          tools/commit-and-verify.sh "chore: refresh dashboard data [skip ci]" main -- \
+            data.json history.json changes.json feed.xml forks.json community.json traffic.json
