@@ -30,7 +30,7 @@ which is F-04, and why the timestamp is the most important field in the file.
 | Card | Field | What it counts | What it does **not** count |
 |---|---|---|---|
 | **Products** | `summary.products` | repositories that are products (a working app, not a kit or a tool) | planned apps; anything in `QUEUE/` |
-| **Kits** | `summary.kits` | repositories whose `*-kit` **name** matches — **see the disagreement below** | what the registry now calls a kit (`role: kit`) |
+| **Kits** | `summary.kits` | repositories with `role: kit`, excluding META — the owner's definition, decided 2026-10-27 (F-18) | repositories whose *name* ends `-kit`; that older rule is published beside it as `summary.kits_name_matched`, and five of those are `kit-source` repos, not kits |
 | **Avg conformance** | `summary.avg` | the mean of five metadata booleans per repository: has a description, a licence, a homepage, Pages, is not archived | **build status, test results, deployment** — a repository whose build failed on its latest run still scores 5/5 (F-15) |
 | **Pushes** | `summary.pushes` | push events in the window, from `summary.byrepo` | commits; a push of three commits counts once |
 
@@ -100,14 +100,27 @@ when they differ.
 
 ## Known disagreements, recorded rather than hidden
 
-These are live, and they are the reason this file exists. **Each is a definition difference, not a bug in
-one of the two numbers.**
+**Each is a definition difference, not a bug in one of the two numbers.**
 
 | Question | Dashboard says | Registry says | Why they differ |
 |---|---|---|---|
-| How many kits? | **18** (`summary.kits`) | **13** (`catalog.json → counts.kits`) | the dashboard counts repositories whose **name** ends `-kit`; the registry counts `role: kit`, the owner's definition decided 2026-10-27 (F-18). **The registry is authoritative**; the dashboard has not been moved onto the definition |
 | How many apps are built? | **2** (`plan.built`) | **1** (`plan.json → reconciled.built`) | same definition, measured at different instants against a live estate. `plan.json` publishes `agreement: {agrees: false}` and names both |
 | How good is the estate? | **4.8/5** | — | five metadata booleans (F-15). It is not a quality score and no other field should be read as one |
+
+### Resolved 2026-10-27: the kit count
+
+The dashboard used to publish **18** kits by the *name* rule while the registry published **13** by `role`.
+Both were true and neither said which question it answered. The dashboard now uses `role: kit` excluding
+META — the owner's definition — which reproduces the registry's thirteen exactly, and publishes the old
+number beside it as `summary.kits_name_matched`, with `summary.kits_definition` naming which rule produced
+`kits`. The `reckoning` line says it in words: *"13 kits (role)"*.
+
+**The five repositories the name rule added and the role rule does not are `kit-source`** — the apps a kit
+was extracted from. They look like kits, they are not, and that is the finding in one line.
+
+If `registry/repos.json` cannot be read, the count falls back to the name rule **and the fallback is
+recorded in `degraded`** — never silently, because a silent fallback would publish the old definition under
+the new label.
 
 **If you are quoting a number and this table has a row for it, say which definition you are using.**
 That sentence is the whole point of the file.
