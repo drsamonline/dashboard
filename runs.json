@@ -2,33 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "6f8b9161b8a9",
-      "at": "2026-10-25T20:00:00Z",
-      "workflow": "panel-css",
-      "outcome": "ok",
-      "note": "panel-css (owner: improve the control panel). THE FINDING WAS NOT WHAT I EXPECTED. I went in to do a responsive pass and found the page had NO CSS FOR ITS LAYOUT CLASSES AT ALL: grid2, ctrls, box, panel, iconbtn, mut and chip are all used in the markup and were defined nowhere. So the panel was rendering as an unstyled column of blocks at EVERY width - not a mobile bug but a missing stylesheet, which is why it looked worst on a phone (where an unstyled column is most obvious) and why a responsive pass alone would have fixed nothing. This is lesson 1 again: the classes EXISTED and did nothing, and 'the class is there' read as 'the class is styled'. ADDED: the real grid2, the Run buttons as a wrapping row, the collapsible boxes with a marker, the finding cards with their ok/bad edge, tables that read narrow, overflow-wrap on the repo names and workflow keys so a long identifier cannot widen the page - and the responsive rules it never had (760px collapses the two columns, 520px tightens the tables). VERIFIED: the classes now have rules and two media queries exist; the visual cannot be checked here, so that is the honest limit.",
-      "files": [
-        "control-panel/docs/index.html"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
-      "id": "65b2fbea4ac9",
-      "at": "2026-10-25T21:00:00Z",
-      "workflow": "readback-guard-hms",
-      "outcome": "ok",
-      "note": "readback-guard-hms (owner: go - the read-back guard, then HMS). (1) THE READ-BACK LESSON IS CLOSED, and honestly: the count is SIX and it went up TWICE AFTER I wrote the entry, which is why it says six and not four. The guard is now named rather than implied - EVERY WRITE IS VERIFIED AT THE COMMIT SHA, never by re-reading main: list the commits for the path, then read the content at that sha. That is the habit that proved every fix today, including the ones the read-back said had failed. (2) HMS: the cause was found and it was NOT the repo. My commit tried to rewrite CHANGELOG.md, which is 114 KB, and the API answered with an HTML error page twice. Writing the VERSION alone - the part the release actually needs - SUCCEEDED first try, which isolates the cause to the payload size. So the VERSION is in (0.0.2) and the changelog needs a different route: a CI commit, or a new dated file rather than a rewrite of a 114 KB one. That is a real API limit, not a repo fault, and it is worth recording because 'the write failed' looked like a permission problem for two attempts.",
-      "files": [
-        "forge/LEARNINGS.md",
-        "HMS/VERSION"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 1
-    },
-    {
       "id": "e4a7f2d87946",
       "at": "2026-10-25T22:00:00Z",
       "workflow": "hms-proprietary",
@@ -502,6 +475,28 @@
       "advanced": [
         "retrofit-web-kit-remedy-relationship-explorer"
       ],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "5ced3fe74eb1",
+      "at": "2026-10-27T12:52:43Z",
+      "workflow": "code-compression",
+      "outcome": "ok",
+      "note": "size report: 45 pages, 4317 KB raw, 1577 KB gzip, 4 over budget",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "874cff856627",
+      "at": "2026-10-27T14:18:01Z",
+      "workflow": "self-diagnose",
+      "outcome": "ok",
+      "note": "machinery check: 134 workflows, 11 scheduled, 3 errors, 0 not firing",
+      "files": {},
+      "advanced": [],
       "errors": [],
       "retries": 0
     }
