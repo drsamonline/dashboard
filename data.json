@@ -1,6 +1,6 @@
 {
   "generated": "2026-10-27",
-  "generated_at": "2026-10-27T11:26:37Z",
+  "generated_at": "2026-10-27T11:36:57Z",
   "reckoning": "55 products · 13 kits (role) · avg metadata completeness 4.8/5 · updated automatically.",
   "health": "ok",
   "health_detail": {
@@ -47,8 +47,8 @@
     "pushes": 83,
     "byrepo": {
       "dashboard": 1,
-      "app-builder": 1,
       "forge": 1,
+      "app-builder": 1,
       "conqueror-os": 1,
       "remedy-relationship-explorer": 1,
       "base-bench": 1,
@@ -420,9 +420,9 @@
       "what": "this dashboard",
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/40496157196",
-      "last_run": "2026-10-27T11:26:29Z",
-      "conclusion": "pending"
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/40497444628",
+      "last_run": "2026-10-27T11:36:46Z",
+      "conclusion": "in_progress"
     },
     {
       "repo": "drsamonline",
@@ -3530,8 +3530,8 @@
       "pushes": 83,
       "byrepo": {
         "dashboard": 1,
-        "app-builder": 1,
         "forge": 1,
+        "app-builder": 1,
         "conqueror-os": 1,
         "remedy-relationship-explorer": 1,
         "base-bench": 1,
