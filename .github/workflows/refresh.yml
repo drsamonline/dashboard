@@ -14,7 +14,7 @@ name: Refresh dashboard data
 
 on:
   schedule:
-    - cron: "47 3 * * 2"
+    - cron: "47 3 * * 2"   # weekly, Tuesday 03:47 UTC
   push:
     branches: [ main ]
     paths:
