@@ -283,7 +283,11 @@ function writeHash(q,cat){var p=new URLSearchParams();if(q)p.set("q",q);if(cat)p
 
 fetch("data.json",{cache:"no-store"}).then(function(r){return r.json()}).then(function(d){
   generatedAt=d.generated_at||null;
-  var bad=d.health==="bad",hp=$("health");hp.className="healthpill "+(bad?"bad":"ok");hp.innerHTML='<span class="live'+(bad?" bad":"")+'"></span> '+(bad?"attention":"healthy");
+    var staleNow=!generatedAt||(Date.now()-new Date(generatedAt).getTime())/1000>STALE_AFTER;
+  var bad=d.health==="bad"||staleNow;
+  var label=!bad?"healthy":(d.health==="bad"?"attention":"stale data");
+  var hp=$("health");hp.className="healthpill "+(bad?"bad":"ok");
+  hp.innerHTML='<span class="live'+(bad?" bad":"")+'"></span> '+label;
   $("reckoning").textContent=d.reckoning||"";
   $("foot").textContent="Generated "+(d.generated||"")+" · © 2026 Dr Sohil Momin · Forge system · self-updating";
   ago();
