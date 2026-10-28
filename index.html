@@ -137,7 +137,16 @@ footer{max-width:1320px;margin:0 auto;padding:14px 12px 30px;color:var(--mut);fo
   <div class="sec">At a glance</div>
   <div class="kpis" id="cards"></div>
 
-  <div class="sec">Visuals</div>
+  <div id="needs" hidden>
+    <div class="sec">Needs you</div>
+<details class="box"><summary>What needs you <span class="chip" id="needsCount"></span></summary><div class="body">
+    <div class="tw"><table><thead><tr><th>What</th><th>Repo</th><th>Kind</th><th>Act</th></tr></thead><tbody id="needsBody"></tbody></table></div>
+</div></details>  </div>
+
+  <div class="sec">Press</div>
+  <div class="ctrls" id="controls"></div>
+
+  <details class="box" id="statsBox"><summary>Statistics — activity, growth, leaderboard, health, metadata, categories, budget</summary><div class="body">
   <div class="charts">
     <div class="panel"><h2>Activity — pushes / day</h2><div id="activity"></div><p class="mut" id="activityNote" style="margin:6px 0 0"></p></div>
     <div class="panel"><h2>Growth — products over time</h2><div id="trend"></div><p class="mut" id="trendNote" style="margin:6px 0 0"></p></div>
@@ -147,6 +156,7 @@ footer{max-width:1320px;margin:0 auto;padding:14px 12px 30px;color:var(--mut);fo
     <div class="panel"><h2>Categories</h2><p class="mut" style="margin:0 0 8px">Repos grouped by what they are — kit, app, system, meta — with the count in each. It answers "how much is tooling versus product".</p><div id="cats"></div></div>
     <div class="panel"><h2>Actions budget</h2><p class="mut" style="margin:0 0 8px">GitHub Actions minutes used this month against the free allowance. Everything here is built to run inside it — no paid runners.</p><div id="quota"></div></div>
   </div>
+  </div></details>
 
   <div class="sec">Built vs planned</div>
 <details class="box"><summary>Built vs planned</summary><div class="body">
@@ -160,22 +170,13 @@ footer{max-width:1320px;margin:0 auto;padding:14px 12px 30px;color:var(--mut);fo
 <details class="box"><summary>Traffic</summary><div class="body">
   <div class="panel" id="trafficPanel"><p class="mut" style="margin:0">Loading…</p></div>
 </div></details>
-  <div id="needs" hidden>
-    <div class="sec">Needs you</div>
-<details class="box"><summary>What needs you <span class="chip" id="needsCount"></span></summary><div class="body">
-    <div class="tw"><table><thead><tr><th>What</th><th>Repo</th><th>Kind</th><th>Act</th></tr></thead><tbody id="needsBody"></tbody></table></div>
-</div></details>  </div>
-
-  <div class="sec">Control panel</div>
+    <div class="sec">Control panel</div>
   <div class="panel" id="cpPanel">
     <h2>Every workflow, and how little you have to do</h2>
     <p class="mut" style="margin:0 0 8px">Read live from the control panel: the four stages the work moves through, and the routes that ask for one input or none.</p>
     <div id="cpBody" class="mut">loading…</div>
     <p style="margin:8px 0 0"><a href="https://drsamonline.github.io/control-panel/" target="_blank" rel="noopener">Open the control panel — a Run button for every workflow →</a></p>
   </div>
-  <div class="sec">Controls</div>
-  <div class="ctrls" id="controls"></div>
-
   <div class="sec">Submit an app idea</div>
   <div class="panel" id="ideaBox">
     <textarea id="i-prompt" rows="8" placeholder="One box — paste your app idea, prompt or spec in your own words. A paragraph is plenty.
@@ -356,7 +357,7 @@ fetch("data.json",{cache:"no-store"}).then(function(r){return r.json()}).then(fu
   $("controls").innerHTML=(d.controls||[]).map(function(c){return '<a href="'+esc(c.url)+'" title="'+esc(c.what)+'"><span class="play">▶</span> '+esc(c.label)+'</a>'}).join("")||'<span class="mut">No controls yet.</span>';
 
   var needs=d.attention||[];
-  if(needs.length){$("needs").hidden=false;$("needsBody").innerHTML=needs.map(function(a){return '<tr><td><a href="'+esc(a.url)+'">'+esc(a.title)+'</a></td><td><span class="badge v">'+esc(a.repo)+'</span></td><td><span class="badge">'+esc(a.kind)+'</span></td><td><a href="'+esc(a.url)+'">open ↗</a></td></tr>'}).join("")}
+  $("needs").hidden=false;$("needsBody").innerHTML=needs.length?needs.map(function(a){return '<tr><td><a href="'+esc(a.url)+'">'+esc(a.title)+'</a></td><td><span class="badge v">'+esc(a.repo)+'</span></td><td><span class="badge">'+esc(a.kind)+'</span></td><td><a href="'+esc(a.url)+'">open ↗</a></td></tr>'}).join(""):'<tr><td colspan="4" class="mut">Nothing needs you — every workflow is green and no repo is missing metadata.</td></tr>';
 
   var act=d.activity||[];
   $("activity").innerHTML=areaChart(act.map(function(a){return a.count}),"#22d3ee",act.length?act[0].date.slice(5)+" → "+act[act.length-1].date.slice(5):"");
