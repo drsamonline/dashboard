@@ -71,5 +71,5 @@ jobs:
           # looking for it. The race is real: this workflow fires on push to main AND on
           # dispatch, and cancel-in-progress: false queues rather than cancels, so two
           # runs can reach this step together.
-          tools/commit-and-verify.sh "chore: refresh dashboard data [skip ci]" main -- \
+          bash tools/commit-and-verify.sh "chore: refresh dashboard data [skip ci]" main -- \
             data.json history.json changes.json feed.xml forks.json community.json traffic.json
