@@ -1,6 +1,6 @@
 {
   "generated": "2026-10-28",
-  "generated_at": "2026-10-28T13:14:23Z",
+  "generated_at": "2026-10-28T13:21:51Z",
   "reckoning": "55 products · 13 kits (role) · avg metadata completeness 4.9/5 · updated automatically.",
   "health": "ok",
   "health_detail": {
@@ -271,6 +271,12 @@
   },
   "changes": [
     {
+      "type": "IssueComment",
+      "repo": "dashboard",
+      "when": "2026-10-28T13:20:15Z",
+      "text": ""
+    },
+    {
       "type": "PullRequest",
       "repo": "dashboard",
       "when": "2026-10-28T12:43:17Z",
@@ -326,14 +332,14 @@
     },
     {
       "type": "Push",
-      "repo": "Matneo",
-      "when": "2026-10-27T16:04:59Z",
+      "repo": "unstoppable-mind-companion",
+      "when": "2026-10-27T03:32:58Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "unstoppable-mind-companion",
-      "when": "2026-10-27T03:32:58Z",
+      "repo": "Matneo",
+      "when": "2026-10-27T16:04:59Z",
       "text": "pushed to main"
     },
     {
@@ -383,12 +389,6 @@
       "repo": "lan-kit",
       "when": "2026-10-27T03:32:53Z",
       "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "astro-kit",
-      "when": "2026-10-27T03:32:06Z",
-      "text": "pushed to main"
     }
   ],
   "automation": [
@@ -421,8 +421,8 @@
       "what": "this dashboard",
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/40694567147",
-      "last_run": "2026-10-28T13:14:09Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/40695697082",
+      "last_run": "2026-10-28T13:21:39Z",
       "conclusion": "in_progress"
     },
     {
