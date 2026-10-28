@@ -71,5 +71,9 @@ jobs:
           # looking for it. The race is real: this workflow fires on push to main AND on
           # dispatch, and cancel-in-progress: false queues rather than cancels, so two
           # runs can reach this step together.
-          tools/commit-and-verify.sh "chore: refresh dashboard data [skip ci]" main -- \
+          # 2026-10-28: the script is committed with mode 100644, so invoking it directly
+          # is `Permission denied` (exit 126) - the refresh run has been red since 10:06Z
+          # for that reason alone, after the data had already been written. Run it with
+          # bash so the file mode cannot break the step; the mode is fixed separately.
+          bash tools/commit-and-verify.sh "chore: refresh dashboard data [skip ci]" main -- \
             data.json history.json changes.json feed.xml forks.json community.json traffic.json
