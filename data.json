@@ -1,6 +1,6 @@
 {
   "generated": "2026-10-28",
-  "generated_at": "2026-10-28T12:50:42Z",
+  "generated_at": "2026-10-28T12:59:04Z",
   "reckoning": "55 products · 13 kits (role) · avg metadata completeness 4.9/5 · updated automatically.",
   "health": "ok",
   "health_detail": {
@@ -47,8 +47,8 @@
     "pushes": 83,
     "byrepo": {
       "dashboard": 1,
-      "app-image-toolkit": 1,
       "forge": 1,
+      "app-image-toolkit": 1,
       "app-builder": 1,
       "drsamonline": 1,
       "homoeopathic-materia-medica-repertory-json": 1,
@@ -326,14 +326,14 @@
     },
     {
       "type": "Push",
-      "repo": "Matneo",
-      "when": "2026-10-27T16:04:59Z",
+      "repo": "unstoppable-mind-companion",
+      "when": "2026-10-27T03:32:58Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "unstoppable-mind-companion",
-      "when": "2026-10-27T03:32:58Z",
+      "repo": "Matneo",
+      "when": "2026-10-27T16:04:59Z",
       "text": "pushed to main"
     },
     {
@@ -421,8 +421,8 @@
       "what": "this dashboard",
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/40691148750",
-      "last_run": "2026-10-28T12:50:28Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/40692319493",
+      "last_run": "2026-10-28T12:58:52Z",
       "conclusion": "in_progress"
     },
     {
@@ -2273,7 +2273,7 @@
     {
       "name": "app-image-toolkit",
       "description": "Compress, resize, convert and strip the GPS from photos on your device — nothing uploaded, no account, works offline. Built with web-kit + export-kit.",
-      "pushed_at": "2026-10-28T12:49:41Z",
+      "pushed_at": "2026-10-28T12:52:42Z",
       "homepage": "https://drsamonline.github.io/app-image-toolkit/",
       "html_url": "https://github.com/drsamonline/app-image-toolkit",
       "download": "",
@@ -3713,8 +3713,8 @@
       "pushes": 83,
       "byrepo": {
         "dashboard": 1,
-        "app-image-toolkit": 1,
         "forge": 1,
+        "app-image-toolkit": 1,
         "app-builder": 1,
         "drsamonline": 1,
         "homoeopathic-materia-medica-repertory-json": 1,
