@@ -1,22 +1,339 @@
 {
-  "generated": "2026-10-28",
+  "generated": "2026-10-29",
   "available": true,
   "window": "14 days",
   "note": "Last 14 days — GitHub's retention window.",
   "repos": {
+    "lexora": {
+      "views": 25,
+      "uniques": 1,
+      "clones": 660,
+      "clone_uniques": 238,
+      "referrers": [
+        {
+          "from": "coder.qwen.ai",
+          "count": 15
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/lexora/pulls",
+          "count": 6,
+          "title": "/pulls"
+        },
+        {
+          "path": "/drsamonline/lexora/pull/1",
+          "count": 3,
+          "title": "/pull/1"
+        },
+        {
+          "path": "/drsamonline/lexora/pull/10",
+          "count": 2,
+          "title": "/pull/10"
+        },
+        {
+          "path": "/drsamonline/lexora/pull/5",
+          "count": 2,
+          "title": "/pull/5"
+        },
+        {
+          "path": "/drsamonline/lexora/upload",
+          "count": 2,
+          "title": "/upload"
+        }
+      ]
+    },
+    "dumps": {
+      "views": 1,
+      "uniques": 1,
+      "clones": 6,
+      "clone_uniques": 3,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/drsamonline/dumps/pull/1",
+          "count": 1,
+          "title": "/pull/1"
+        }
+      ]
+    },
+    "All4ONE": {
+      "views": 11,
+      "uniques": 4,
+      "clones": 687,
+      "clone_uniques": 194,
+      "referrers": [
+        {
+          "from": "drsamonline.github.io",
+          "count": 3
+        },
+        {
+          "from": "github.com",
+          "count": 1
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/All4ONE",
+          "count": 5,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/All4ONE/releases/tag/v3.0.5.1",
+          "count": 2,
+          "title": "/releases/tag/v3.0.5.1"
+        },
+        {
+          "path": "/drsamonline/All4ONE/pull/19",
+          "count": 2,
+          "title": "/pull/19"
+        },
+        {
+          "path": "/drsamonline/All4ONE/issues",
+          "count": 1,
+          "title": "/issues"
+        },
+        {
+          "path": "/drsamonline/All4ONE/pulls",
+          "count": 1,
+          "title": "/pulls"
+        }
+      ]
+    },
+    "today-card": {
+      "views": 8,
+      "uniques": 1,
+      "clones": 293,
+      "clone_uniques": 98,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/drsamonline/today-card",
+          "count": 5,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/today-card/actions",
+          "count": 3,
+          "title": "/actions"
+        }
+      ]
+    },
+    "seance": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 246,
+      "clone_uniques": 81,
+      "referrers": [],
+      "paths": []
+    },
+    "offline-pdf-toolkit": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 333,
+      "clone_uniques": 122,
+      "referrers": [],
+      "paths": []
+    },
+    "kent-repertory-explorer": {
+      "views": 11,
+      "uniques": 1,
+      "clones": 629,
+      "clone_uniques": 221,
+      "referrers": [
+        {
+          "from": "drsamonline.github.io",
+          "count": 2
+        },
+        {
+          "from": "github.com",
+          "count": 1
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/kent-repertory-explorer/tree/main/pipeline",
+          "count": 4,
+          "title": "/tree/main/pipeline"
+        },
+        {
+          "path": "/drsamonline/kent-repertory-explorer",
+          "count": 3,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/kent-repertory-explorer/blob/main/pipeline/app_template.html",
+          "count": 1,
+          "title": "/blob/main/pipeline/app_template.html"
+        },
+        {
+          "path": "/drsamonline/kent-repertory-explorer/blob/main/pipeline/extract.py",
+          "count": 1,
+          "title": "/blob/main/pipeline/extract.py"
+        },
+        {
+          "path": "/drsamonline/kent-repertory-explorer/tree/main/docs",
+          "count": 1,
+          "title": "/tree/main/docs"
+        }
+      ]
+    },
+    "helioprism": {
+      "views": 1,
+      "uniques": 1,
+      "clones": 441,
+      "clone_uniques": 150,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/drsamonline/helioprism",
+          "count": 1,
+          "title": "Overview"
+        }
+      ]
+    },
+    "chalk-lan": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 351,
+      "clone_uniques": 126,
+      "referrers": [],
+      "paths": []
+    },
+    "canteen-lan": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 403,
+      "clone_uniques": 133,
+      "referrers": [],
+      "paths": []
+    },
+    "blinkcode-ai": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 536,
+      "clone_uniques": 154,
+      "referrers": [],
+      "paths": []
+    },
+    "base-bench": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 353,
+      "clone_uniques": 128,
+      "referrers": [],
+      "paths": []
+    },
+    "app-poets-studio": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 397,
+      "clone_uniques": 134,
+      "referrers": [],
+      "paths": []
+    },
+    "app-companion-forge": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 300,
+      "clone_uniques": 107,
+      "referrers": [],
+      "paths": []
+    },
+    "TTB": {
+      "views": 1,
+      "uniques": 1,
+      "clones": 310,
+      "clone_uniques": 116,
+      "referrers": [
+        {
+          "from": "github.com",
+          "count": 1
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/TTB",
+          "count": 1,
+          "title": "Overview"
+        }
+      ]
+    },
+    "CLDR": {
+      "views": 7,
+      "uniques": 1,
+      "clones": 417,
+      "clone_uniques": 128,
+      "referrers": [
+        {
+          "from": "drsamonline.github.io",
+          "count": 3
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/CLDR/pull/10",
+          "count": 3,
+          "title": "/pull/10"
+        },
+        {
+          "path": "/drsamonline/CLDR",
+          "count": 2,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/CLDR/pull/10/changes",
+          "count": 1,
+          "title": "/pull/10/changes"
+        },
+        {
+          "path": "/drsamonline/CLDR/releases/tag/v1.3.0",
+          "count": 1,
+          "title": "/releases/tag/v1.3.0"
+        }
+      ]
+    },
+    "BLINKTRANSFER": {
+      "views": 4,
+      "uniques": 1,
+      "clones": 618,
+      "clone_uniques": 181,
+      "referrers": [
+        {
+          "from": "drsamonline.github.io",
+          "count": 1
+        },
+        {
+          "from": "github.com",
+          "count": 1
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/BLINKTRANSFER",
+          "count": 1,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/BLINKTRANSFER/pull/8",
+          "count": 1,
+          "title": "/pull/8"
+        }
+      ]
+    },
     "app-image-toolkit": {
       "views": 0,
       "uniques": 0,
-      "clones": 0,
-      "clone_uniques": 0,
+      "clones": 72,
+      "clone_uniques": 20,
       "referrers": [],
       "paths": []
     },
     "homoeopathic-materia-medica-repertory-json": {
       "views": 1,
       "uniques": 1,
-      "clones": 646,
-      "clone_uniques": 256,
+      "clones": 650,
+      "clone_uniques": 259,
       "referrers": [],
       "paths": [
         {
@@ -29,8 +346,8 @@
     "skin-case-tracker": {
       "views": 0,
       "uniques": 0,
-      "clones": 620,
-      "clone_uniques": 213,
+      "clones": 656,
+      "clone_uniques": 218,
       "referrers": [],
       "paths": []
     },
@@ -99,86 +416,30 @@
     "dance-fight": {
       "views": 0,
       "uniques": 0,
-      "clones": 447,
-      "clone_uniques": 147,
+      "clones": 513,
+      "clone_uniques": 162,
       "referrers": [],
       "paths": []
-    },
-    "TTB": {
-      "views": 1,
-      "uniques": 1,
-      "clones": 310,
-      "clone_uniques": 116,
-      "referrers": [
-        {
-          "from": "github.com",
-          "count": 1
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/TTB",
-          "count": 1,
-          "title": "Overview"
-        }
-      ]
     },
     "retro-strike": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 326,
-      "clone_uniques": 126,
-      "referrers": [],
-      "paths": []
-    },
-    "kent-repertory-explorer": {
-      "views": 11,
+      "views": 1,
       "uniques": 1,
-      "clones": 563,
-      "clone_uniques": 202,
-      "referrers": [
-        {
-          "from": "drsamonline.github.io",
-          "count": 2
-        },
-        {
-          "from": "github.com",
-          "count": 1
-        }
-      ],
+      "clones": 341,
+      "clone_uniques": 129,
+      "referrers": [],
       "paths": [
         {
-          "path": "/drsamonline/kent-repertory-explorer/tree/main/pipeline",
-          "count": 4,
-          "title": "/tree/main/pipeline"
-        },
-        {
-          "path": "/drsamonline/kent-repertory-explorer",
-          "count": 3,
+          "path": "/drsamonline/retro-strike",
+          "count": 1,
           "title": "Overview"
-        },
-        {
-          "path": "/drsamonline/kent-repertory-explorer/blob/main/pipeline/app_template.html",
-          "count": 1,
-          "title": "/blob/main/pipeline/app_template.html"
-        },
-        {
-          "path": "/drsamonline/kent-repertory-explorer/blob/main/pipeline/extract.py",
-          "count": 1,
-          "title": "/blob/main/pipeline/extract.py"
-        },
-        {
-          "path": "/drsamonline/kent-repertory-explorer/tree/main/docs",
-          "count": 1,
-          "title": "/tree/main/docs"
         }
       ]
     },
     "conqueror-os": {
       "views": 1,
       "uniques": 1,
-      "clones": 954,
-      "clone_uniques": 206,
+      "clones": 1026,
+      "clone_uniques": 219,
       "referrers": [
         {
           "from": "github.com",
@@ -196,8 +457,8 @@
     "web-kit": {
       "views": 4,
       "uniques": 2,
-      "clones": 355,
-      "clone_uniques": 139,
+      "clones": 384,
+      "clone_uniques": 149,
       "referrers": [],
       "paths": [
         {
@@ -210,16 +471,16 @@
     "ui-kit": {
       "views": 0,
       "uniques": 0,
-      "clones": 149,
-      "clone_uniques": 63,
+      "clones": 182,
+      "clone_uniques": 74,
       "referrers": [],
       "paths": []
     },
     "saga-vn-engine": {
       "views": 4,
       "uniques": 1,
-      "clones": 265,
-      "clone_uniques": 126,
+      "clones": 271,
+      "clone_uniques": 128,
       "referrers": [
         {
           "from": "coder.qwen.ai",
@@ -267,14 +528,6 @@
         }
       ]
     },
-    "offline-pdf-toolkit": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 278,
-      "clone_uniques": 113,
-      "referrers": [],
-      "paths": []
-    },
     "neon-runner": {
       "views": 5,
       "uniques": 2,
@@ -297,65 +550,26 @@
     "neon-engine": {
       "views": 0,
       "uniques": 0,
-      "clones": 271,
-      "clone_uniques": 103,
+      "clones": 283,
+      "clone_uniques": 108,
       "referrers": [],
       "paths": []
     },
     "ml-kit": {
       "views": 0,
       "uniques": 0,
-      "clones": 145,
-      "clone_uniques": 66,
+      "clones": 171,
+      "clone_uniques": 72,
       "referrers": [],
       "paths": []
     },
     "lockhtml": {
       "views": 0,
       "uniques": 0,
-      "clones": 979,
-      "clone_uniques": 143,
+      "clones": 1112,
+      "clone_uniques": 170,
       "referrers": [],
       "paths": []
-    },
-    "lexora": {
-      "views": 25,
-      "uniques": 1,
-      "clones": 660,
-      "clone_uniques": 238,
-      "referrers": [
-        {
-          "from": "coder.qwen.ai",
-          "count": 15
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/lexora/pulls",
-          "count": 6,
-          "title": "/pulls"
-        },
-        {
-          "path": "/drsamonline/lexora/pull/1",
-          "count": 3,
-          "title": "/pull/1"
-        },
-        {
-          "path": "/drsamonline/lexora/pull/10",
-          "count": 2,
-          "title": "/pull/10"
-        },
-        {
-          "path": "/drsamonline/lexora/pull/5",
-          "count": 2,
-          "title": "/pull/5"
-        },
-        {
-          "path": "/drsamonline/lexora/upload",
-          "count": 2,
-          "title": "/upload"
-        }
-      ]
     },
     "crypto-kit": {
       "views": 1,
@@ -404,8 +618,8 @@
     "art-kit": {
       "views": 1,
       "uniques": 1,
-      "clones": 109,
-      "clone_uniques": 56,
+      "clones": 122,
+      "clone_uniques": 62,
       "referrers": [
         {
           "from": "drsamonline.github.io",
@@ -423,16 +637,16 @@
     "aethelgard-games": {
       "views": 0,
       "uniques": 0,
-      "clones": 884,
-      "clone_uniques": 254,
+      "clones": 960,
+      "clone_uniques": 267,
       "referrers": [],
       "paths": []
     },
     "The_Browser": {
       "views": 2,
       "uniques": 2,
-      "clones": 582,
-      "clone_uniques": 171,
+      "clones": 600,
+      "clone_uniques": 179,
       "referrers": [],
       "paths": [
         {
@@ -450,8 +664,8 @@
     "SmartNotes": {
       "views": 1,
       "uniques": 1,
-      "clones": 146,
-      "clone_uniques": 64,
+      "clones": 152,
+      "clone_uniques": 66,
       "referrers": [
         {
           "from": "drsamonline.github.io",
@@ -469,8 +683,8 @@
     "NEO": {
       "views": 2,
       "uniques": 1,
-      "clones": 138,
-      "clone_uniques": 56,
+      "clones": 144,
+      "clone_uniques": 59,
       "referrers": [
         {
           "from": "github.com",
@@ -479,19 +693,11 @@
       ],
       "paths": []
     },
-    "today-card": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 248,
-      "clone_uniques": 91,
-      "referrers": [],
-      "paths": []
-    },
     "srs-kit": {
       "views": 1,
       "uniques": 1,
-      "clones": 162,
-      "clone_uniques": 69,
+      "clones": 175,
+      "clone_uniques": 72,
       "referrers": [
         {
           "from": "drsamonline.github.io",
@@ -509,16 +715,8 @@
     "search-kit": {
       "views": 0,
       "uniques": 0,
-      "clones": 168,
-      "clone_uniques": 66,
-      "referrers": [],
-      "paths": []
-    },
-    "seance": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 189,
-      "clone_uniques": 69,
+      "clones": 205,
+      "clone_uniques": 82,
       "referrers": [],
       "paths": []
     },
@@ -544,8 +742,8 @@
     "remedy-relationship-explorer": {
       "views": 3,
       "uniques": 1,
-      "clones": 1055,
-      "clone_uniques": 317,
+      "clones": 1179,
+      "clone_uniques": 347,
       "referrers": [
         {
           "from": "drsamonline.github.io",
@@ -595,16 +793,16 @@
     "game-kit": {
       "views": 0,
       "uniques": 0,
-      "clones": 242,
-      "clone_uniques": 93,
+      "clones": 256,
+      "clone_uniques": 98,
       "referrers": [],
       "paths": []
     },
     "frame-kit": {
       "views": 0,
       "uniques": 0,
-      "clones": 186,
-      "clone_uniques": 98,
+      "clones": 197,
+      "clone_uniques": 102,
       "referrers": [],
       "paths": []
     },
@@ -625,24 +823,16 @@
     "compress-kit": {
       "views": 0,
       "uniques": 0,
-      "clones": 165,
-      "clone_uniques": 69,
-      "referrers": [],
-      "paths": []
-    },
-    "chalk-lan": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 351,
-      "clone_uniques": 126,
+      "clones": 181,
+      "clone_uniques": 75,
       "referrers": [],
       "paths": []
     },
     "case-kit": {
       "views": 2,
       "uniques": 2,
-      "clones": 257,
-      "clone_uniques": 112,
+      "clones": 284,
+      "clone_uniques": 122,
       "referrers": [
         {
           "from": "drsamonline.github.io",
@@ -657,19 +847,11 @@
         }
       ]
     },
-    "canteen-lan": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 308,
-      "clone_uniques": 113,
-      "referrers": [],
-      "paths": []
-    },
     "book-kit": {
       "views": 1,
       "uniques": 1,
-      "clones": 197,
-      "clone_uniques": 67,
+      "clones": 230,
+      "clone_uniques": 75,
       "referrers": [
         {
           "from": "drsamonline.github.io",
@@ -684,14 +866,6 @@
         }
       ]
     },
-    "base-bench": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 279,
-      "clone_uniques": 110,
-      "referrers": [],
-      "paths": []
-    },
     "astro-kit": {
       "views": 0,
       "uniques": 0,
@@ -700,19 +874,11 @@
       "referrers": [],
       "paths": []
     },
-    "app-poets-studio": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 317,
-      "clone_uniques": 121,
-      "referrers": [],
-      "paths": []
-    },
     "app-panchang": {
       "views": 1,
       "uniques": 1,
-      "clones": 322,
-      "clone_uniques": 119,
+      "clones": 373,
+      "clone_uniques": 132,
       "referrers": [],
       "paths": [
         {
@@ -722,19 +888,11 @@
         }
       ]
     },
-    "app-companion-forge": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 246,
-      "clone_uniques": 98,
-      "referrers": [],
-      "paths": []
-    },
     "aethelgard-rpg-engine": {
-      "views": 10,
-      "uniques": 2,
-      "clones": 615,
-      "clone_uniques": 233,
+      "views": 11,
+      "uniques": 3,
+      "clones": 632,
+      "clone_uniques": 238,
       "referrers": [
         {
           "from": "coder.qwen.ai",
@@ -776,38 +934,24 @@
     "Scrap-and-Gun": {
       "views": 0,
       "uniques": 0,
-      "clones": 92,
-      "clone_uniques": 57,
+      "clones": 98,
+      "clone_uniques": 59,
       "referrers": [],
       "paths": []
     },
     "read-live-transform-app": {
       "views": 0,
       "uniques": 0,
-      "clones": 645,
-      "clone_uniques": 208,
+      "clones": 700,
+      "clone_uniques": 220,
       "referrers": [],
       "paths": []
-    },
-    "dumps": {
-      "views": 1,
-      "uniques": 1,
-      "clones": 6,
-      "clone_uniques": 3,
-      "referrers": [],
-      "paths": [
-        {
-          "path": "/drsamonline/dumps/pull/1",
-          "count": 1,
-          "title": "/pull/1"
-        }
-      ]
     },
     "unstoppable-mind-companion": {
       "views": 0,
       "uniques": 0,
-      "clones": 599,
-      "clone_uniques": 173,
+      "clones": 691,
+      "clone_uniques": 194,
       "referrers": [],
       "paths": []
     },
@@ -833,8 +977,8 @@
     "idle-city-ages-of-growth": {
       "views": 5,
       "uniques": 3,
-      "clones": 666,
-      "clone_uniques": 209,
+      "clones": 715,
+      "clone_uniques": 221,
       "referrers": [
         {
           "from": "search.brave.com",
@@ -854,47 +998,11 @@
         }
       ]
     },
-    "BLINKTRANSFER": {
-      "views": 4,
-      "uniques": 1,
-      "clones": 546,
-      "clone_uniques": 167,
-      "referrers": [
-        {
-          "from": "drsamonline.github.io",
-          "count": 1
-        },
-        {
-          "from": "github.com",
-          "count": 1
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/BLINKTRANSFER",
-          "count": 1,
-          "title": "Overview"
-        },
-        {
-          "path": "/drsamonline/BLINKTRANSFER/pull/8",
-          "count": 1,
-          "title": "/pull/8"
-        }
-      ]
-    },
-    "helioprism": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 379,
-      "clone_uniques": 135,
-      "referrers": [],
-      "paths": []
-    },
     "open-materia-medica": {
       "views": 34,
       "uniques": 23,
-      "clones": 429,
-      "clone_uniques": 151,
+      "clones": 464,
+      "clone_uniques": 159,
       "referrers": [
         {
           "from": "drsamonline.github.io",
@@ -940,32 +1048,32 @@
     "the-symphony-companion": {
       "views": 0,
       "uniques": 0,
-      "clones": 465,
-      "clone_uniques": 164,
+      "clones": 504,
+      "clone_uniques": 172,
       "referrers": [],
       "paths": []
     },
     "app-encrypted-case-log": {
       "views": 0,
       "uniques": 0,
-      "clones": 261,
-      "clone_uniques": 95,
+      "clones": 299,
+      "clone_uniques": 103,
       "referrers": [],
       "paths": []
     },
     "boericke-repertory": {
       "views": 0,
       "uniques": 0,
-      "clones": 418,
-      "clone_uniques": 150,
+      "clones": 444,
+      "clone_uniques": 156,
       "referrers": [],
       "paths": []
     },
     "ambient-sound-studio": {
       "views": 1,
       "uniques": 1,
-      "clones": 452,
-      "clone_uniques": 151,
+      "clones": 486,
+      "clone_uniques": 163,
       "referrers": [],
       "paths": [
         {
@@ -974,14 +1082,6 @@
           "title": "/deployments/github-pages"
         }
       ]
-    },
-    "blinkcode-ai": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 462,
-      "clone_uniques": 135,
-      "referrers": [],
-      "paths": []
     },
     "bmi-bmr-tdee-macros-fluid-calculator": {
       "views": 0,
@@ -994,8 +1094,8 @@
     "MATERIA-MEDICA-BUILDER": {
       "views": 6,
       "uniques": 1,
-      "clones": 578,
-      "clone_uniques": 198,
+      "clones": 601,
+      "clone_uniques": 202,
       "referrers": [
         {
           "from": "github.com",
@@ -1016,15 +1116,15 @@
       ]
     },
     "smartbill-app": {
-      "views": 6,
-      "uniques": 5,
-      "clones": 369,
-      "clone_uniques": 114,
+      "views": 7,
+      "uniques": 6,
+      "clones": 426,
+      "clone_uniques": 131,
       "referrers": [],
       "paths": [
         {
           "path": "/drsamonline/smartbill-app",
-          "count": 4,
+          "count": 5,
           "title": "Overview"
         },
         {
@@ -1039,54 +1139,11 @@
         }
       ]
     },
-    "All4ONE": {
-      "views": 11,
-      "uniques": 4,
-      "clones": 687,
-      "clone_uniques": 194,
-      "referrers": [
-        {
-          "from": "drsamonline.github.io",
-          "count": 3
-        },
-        {
-          "from": "github.com",
-          "count": 1
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/All4ONE",
-          "count": 5,
-          "title": "Overview"
-        },
-        {
-          "path": "/drsamonline/All4ONE/releases/tag/v3.0.5.1",
-          "count": 2,
-          "title": "/releases/tag/v3.0.5.1"
-        },
-        {
-          "path": "/drsamonline/All4ONE/pull/19",
-          "count": 2,
-          "title": "/pull/19"
-        },
-        {
-          "path": "/drsamonline/All4ONE/issues",
-          "count": 1,
-          "title": "/issues"
-        },
-        {
-          "path": "/drsamonline/All4ONE/pulls",
-          "count": 1,
-          "title": "/pulls"
-        }
-      ]
-    },
     "HMS": {
       "views": 2,
       "uniques": 1,
-      "clones": 238,
-      "clone_uniques": 83,
+      "clones": 240,
+      "clone_uniques": 86,
       "referrers": [
         {
           "from": "github.com",
@@ -1094,40 +1151,6 @@
         }
       ],
       "paths": []
-    },
-    "CLDR": {
-      "views": 7,
-      "uniques": 1,
-      "clones": 392,
-      "clone_uniques": 118,
-      "referrers": [
-        {
-          "from": "drsamonline.github.io",
-          "count": 3
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/CLDR/pull/10",
-          "count": 3,
-          "title": "/pull/10"
-        },
-        {
-          "path": "/drsamonline/CLDR",
-          "count": 2,
-          "title": "Overview"
-        },
-        {
-          "path": "/drsamonline/CLDR/pull/10/changes",
-          "count": 1,
-          "title": "/pull/10/changes"
-        },
-        {
-          "path": "/drsamonline/CLDR/releases/tag/v1.3.0",
-          "count": 1,
-          "title": "/releases/tag/v1.3.0"
-        }
-      ]
     },
     "ULTIMATE-WINDOWS-OPTIMIZER": {
       "views": 18,
