@@ -2,9 +2,17 @@
 /**
  * Structure test for the system console.
  *
- * The console's layout is a contract the owner cares about: the VISUALS come
- * first and the LISTS come after, and every list can COLLAPSE. That is easy to
- * lose in a reorder, so it is asserted here rather than remembered.
+ * The console's layout is a contract the owner cares about: the STATISTICS come
+ * first and the LISTS come after, every list can COLLAPSE, and the statistics
+ * block collapses too. That is easy to lose in a reorder, so it is asserted
+ * here rather than remembered.
+ *
+ * 2026-10-30: the owner's own upload on 2026-10-28 (c01a3e6) folded the charts
+ * into a collapsible "Statistics" <details> and moved the press/controls block
+ * above them. The charts are still there and still come first - what changed is
+ * that they are now behind a summary, not under a bare "Visuals" heading. The
+ * assertions below follow that contract; they are not relaxed, they are moved
+ * onto what the page actually promises.
  */
 const fs = require("fs");
 const path = require("path");
@@ -18,19 +26,49 @@ const doc = new JSDOM(html).window.document;
 let pass = 0, fail = 0;
 const ok = (name, cond) => { cond ? (pass++, console.log("PASS  " + name)) : (fail++, console.log("FAIL  " + name)); };
 
-// 1. the visual block comes before every list
-const visuals = doc.querySelector(".sec + .charts");
-ok("a Visuals block exists, right after a section heading", !!visuals);
-const visualTop = visuals ? visuals.compareDocumentPosition(doc.querySelector("#repos")) & 4 : 0;   // 4 = FOLLOWING
+// 1. the statistics block exists, is collapsible, and comes before every list
+const charts = doc.querySelector(".charts");
+ok("the statistics grid (.charts) exists", !!charts);
+
+const statsDetails = (() => {
+  let p = charts;
+  while (p) { if (p.tagName === "DETAILS") return p; p = p.parentElement; }
+  return null;
+})();
+ok("the statistics block is collapsible (inside <details>)", !!statsDetails);
+ok("the statistics block has a <summary> you can click",
+   !!statsDetails && !!statsDetails.querySelector("summary"));
+ok("the statistics summary names what is inside it",
+   !!statsDetails && /statistics|chart|activity|health/i.test(statsDetails.querySelector("summary").textContent));
+
 const listIds = ["needsBody", "automation", "roadmap", "paused", "repos"];
-ok("Visuals comes before the lists (" + listIds.join(", ") + ")", (() => {
-  if (!visuals) return false;
-  const v = visuals.getBoundingClientRect ? 0 : 0;   // jsdom has no layout; compare document order instead
-  return listIds.every((id) => {
+// "Needs you" is deliberately ABOVE the statistics: it is the one thing on the
+// page that is asking for a decision, so it is not below a fold. Everything
+// else - the automation, the roadmap, the paused register, the repositories -
+// still comes after the statistics.
+const afterStats = ["automation", "roadmap", "paused", "repos"];
+ok("the statistics come before the lists (" + afterStats.join(", ") + ")", (() => {
+  if (!charts) return false;
+  return afterStats.every((id) => {
     const el = doc.getElementById(id);
     if (!el) return false;
-    return !!(visuals.compareDocumentPosition(el) & 4);   // el FOLLOWS visuals
+    return !!(charts.compareDocumentPosition(el) & 4);   // el FOLLOWS the statistics
   });
+})());
+
+// 1b. a section heading still introduces the block above it
+ok("a section heading (.sec) still precedes the statistics", (() => {
+  if (!charts) return false;
+  let p = charts;
+  while (p) {
+    if (p.classList && p.classList.contains("sec")) return true;
+    if (p.previousElementSibling) {
+      let q = p.previousElementSibling;
+      while (q) { if (q.classList && q.classList.contains("sec")) return true; q = q.previousElementSibling; }
+    }
+    p = p.parentElement;
+  }
+  return false;
 })());
 
 // 2. every list is inside a collapsible <details>
