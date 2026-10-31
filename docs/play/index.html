@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>drsamonline — system console</title>
+<!-- dense console: PWA, URL state, remembered panels, shortcuts, sparklines, feeds -->
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0b0d12">
+<script>try{var t=localStorage.getItem('dc:theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<style>
+:root{--r:13px;--sh:0 6px 20px rgba(0,0,0,.32);--violet:#8b5cf6;--cyan:#06b6d4;--green:#22c55e;--lime:#84cc16;--amber:#f59e0b;--pink:#ec4899;--red:#ef4444;--acc:#a78bfa;--ok:#22c55e;--warn:#f59e0b;--bad:#ef4444}
+:root[data-theme="dark"]{--bg0:#0b0d12;--bg1:#12151d;--ink:#eef1f6;--mut:#98a2b3;--line:rgba(255,255,255,.09);--card:rgba(255,255,255,.035);--card2:rgba(255,255,255,.06);--head:#8ea0bd;--track:rgba(255,255,255,.06)}
+:root[data-theme="light"]{--bg0:#eef1f7;--bg1:#f8fafc;--ink:#0f172a;--mut:#5b6b82;--line:rgba(15,23,42,.12);--card:#fff;--card2:#f3f5fa;--head:#5b6b82;--track:rgba(15,23,42,.08);--sh:0 6px 18px rgba(15,23,42,.10)}
+*{box-sizing:border-box}html,body{overflow-wrap:anywhere;margin:0}
+body{color:var(--ink);min-height:100vh;font:14px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased;background:radial-gradient(1100px 600px at 12% -8%,rgba(139,92,246,.20),transparent 60%),radial-gradient(900px 500px at 92% 0,rgba(6,182,212,.16),transparent 55%),linear-gradient(180deg,var(--bg1),var(--bg0) 40%);transition:background .3s,color .3s}
+a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1320px;margin:0 auto;padding:0 12px 40px}
+.topbar{position:sticky;top:0;z-index:20;backdrop-filter:blur(12px);background:linear-gradient(180deg,color-mix(in srgb,var(--bg0) 88%,transparent),color-mix(in srgb,var(--bg0) 55%,transparent));border-bottom:1px solid var(--line)}
+.topbar .in{max-width:1320px;margin:0 auto;padding:8px 12px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.brand{font-weight:800;font-size:15px;display:flex;align-items:center;gap:8px}
+.glyph{width:22px;height:22px;border-radius:7px;background:conic-gradient(from 210deg,var(--violet),var(--cyan),var(--green),var(--violet));animation:spin 14s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.tag{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--head);border:1px solid var(--line);border-radius:999px;padding:1px 7px;background:var(--card)}
+.topmeta{margin-left:auto;display:flex;align-items:center;gap:7px;color:var(--mut);font-size:12px;flex-wrap:wrap}
+.healthpill{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:999px;padding:3px 9px;font-weight:600;font-size:12px}
+.healthpill.ok{color:#16a34a;border-color:rgba(34,197,94,.5);background:rgba(34,197,94,.12)}
+.healthpill.bad{color:#dc2626;border-color:rgba(239,68,68,.55);background:rgba(239,68,68,.14)}
+#ago.stale{color:#dc2626;font-weight:600}
+.live{width:7px;height:7px;border-radius:50%;background:var(--ok);animation:pulse 2.4s infinite}
+.live.bad{background:var(--bad)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(34,197,94,.5)}70%{box-shadow:0 0 0 8px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}
+.iconbtn{background:var(--card2);border:1px solid var(--line);color:var(--ink);border-radius:9px;padding:3px 9px;font-size:12px;cursor:pointer}
+.iconbtn:hover{border-color:var(--violet)}
+h1{font-size:clamp(1.15rem,2vw,1.5rem);margin:12px 0 2px;letter-spacing:-.01em}
+.sub{color:var(--mut);margin:0;font-size:13px}
+.sec{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--head);margin:16px 0 7px;font-weight:700;display:flex;align-items:center;gap:8px}
+.sec::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,var(--line),transparent)}
+.mut{color:var(--mut);font-size:12px;margin:0 0 8px}
+.banner{border:1px solid rgba(239,68,68,.5);background:linear-gradient(180deg,rgba(239,68,68,.16),rgba(239,68,68,.07));border-radius:var(--r);padding:9px 12px;margin:10px 0;font-size:13px}
+.kpis{display:grid;gap:9px;grid-template-columns:repeat(auto-fit,minmax(128px,1fr))}
+.kpi{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:10px 11px;overflow:hidden;box-shadow:var(--sh);animation:rise .45s ease both}
+.kpi::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,var(--violet),var(--cyan))}
+.kpi.g::before{background:linear-gradient(90deg,var(--green),var(--lime))}
+.kpi.a::before{background:linear-gradient(90deg,var(--amber),var(--pink))}
+.kpi.b::before{background:linear-gradient(90deg,#3b82f6,var(--violet))}
+.kpi .k{font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);font-weight:700}
+.kpi .v{font-size:22px;font-weight:800;margin-top:2px;line-height:1.05;font-variant-numeric:tabular-nums}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.charts{display:grid;gap:9px;grid-template-columns:repeat(auto-fit,minmax(284px,1fr));align-items:start}
+/* one height for every panel: the legends made them 164-272px, so the row was ragged */
+.charts>.panel{height:272px;overflow:auto}
+.charts>.panel::-webkit-scrollbar{width:8px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:11px;box-shadow:var(--sh);animation:rise .5s ease both}
+.panel.capped{max-height:272px;overflow:auto}
+.panel.capped::-webkit-scrollbar{width:8px}
+.panel h2{margin:0 0 7px;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--head);font-weight:700}
+.chart{width:100%;height:auto;display:block;overflow:visible}
+.anim-line{stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 1.2s ease forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.anim-area{animation:fade .8s ease both}@keyframes fade{from{opacity:0}to{opacity:1}}
+.anim-dot{animation:pop .35s ease both}@keyframes pop{from{opacity:0;transform:scale(.3)}to{opacity:1;transform:none}}
+.donut .seg{animation:pop .5s ease both}.donut-total{font:700 18px system-ui;fill:var(--ink)}
+.barrow{display:grid;grid-template-columns:96px 1fr 34px;gap:7px;align-items:center;font-size:11.5px;margin:4px 0}
+.track{background:var(--track);border-radius:7px;height:9px;overflow:hidden}
+.fill{height:100%;border-radius:7px;width:0;transition:width .8s cubic-bezier(.2,.8,.2,1)}
+.barrow .num{text-align:right;color:var(--mut);font-variant-numeric:tabular-nums}
+.legend{display:flex;gap:8px;flex-wrap:wrap;margin-top:7px;color:var(--mut);font-size:11px}
+.legend span{display:inline-flex;align-items:center;gap:5px}.swatch{width:9px;height:9px;border-radius:3px}
+.ctrls{display:flex;flex-wrap:wrap;gap:6px}
+.ctrls a{display:inline-flex;align-items:center;gap:6px;background:var(--card2);border:1px solid var(--line);border-radius:9px;padding:6px 10px;font-size:12px;font-weight:600;color:var(--ink);transition:.15s}
+.ctrls a:hover{border-color:var(--violet);background:rgba(139,92,246,.14);text-decoration:none;transform:translateY(-1px)}
+.ctrls .play{color:var(--acc);font-size:10px}
+.ideaform{display:grid;gap:7px;grid-template-columns:1fr 1fr;padding-top:4px}
+.ideaform input,.ideaform select{width:100%}
+.ideaform button{cursor:pointer}
+#i-prompt{width:100%;margin-top:8px;background:var(--card2);border:1px solid var(--line);color:var(--ink);border-radius:11px;padding:9px 11px;font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;resize:vertical}
+#i-prompt:focus{outline:none;border-color:var(--violet);box-shadow:0 0 0 3px rgba(139,92,246,.18)}
+@media (max-width:620px){.ideaform{grid-template-columns:1fr}}
+/* A TABLE SCROLLS INSIDE ITSELF, NEVER THE PAGE.
+   Nine tables and no overflow handling meant any wide one pushed the whole page
+   sideways on a phone - the classic mobile break. The wrapper is the fix, because a
+   table element cannot scroll on its own without losing its columns. */
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+.tw table{min-width:520px}
+@media (max-width:620px){.tw table{min-width:0}}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh)}
+th,td{text-align:left;padding:6px 9px;border-bottom:1px solid var(--line);font-size:12px;vertical-align:top}
+th{color:var(--head);font-weight:700;font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;background:var(--card2)}
+tr:last-child td{border-bottom:0}tbody tr:hover{background:rgba(139,92,246,.06)}
+.badge{display:inline-flex;align-items:center;gap:5px;padding:1px 7px;border-radius:999px;font-size:10.5px;font-weight:700;border:1px solid var(--line);background:var(--card2);color:var(--mut)}
+.badge.ok{color:#16a34a;border-color:rgba(34,197,94,.45);background:rgba(34,197,94,.13)}
+.badge.warn{color:#b45309;border-color:rgba(245,158,11,.45);background:rgba(245,158,11,.13)}
+.badge.bad{color:#dc2626;border-color:rgba(239,68,68,.45);background:rgba(239,68,68,.13)}
+.badge.v{color:#7c3aed;border-color:rgba(139,92,246,.45);background:rgba(139,92,246,.14)}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--mut);margin-right:5px}
+.dot.ok{background:var(--ok)}.dot.warn{background:var(--warn)}.dot.bad{background:var(--bad)}
+.cat{display:inline-block;padding:1px 7px;border-radius:999px;font-size:10.5px;font-weight:700;color:#0b0d12}
+.feed{list-style:none;padding:0;margin:0}
+.feed li{padding:6px 0;border-bottom:1px solid var(--line);font-size:12px;animation:rise .35s ease both}
+.feed li:last-child{border-bottom:0}
+details.box{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden}
+details.box>summary{cursor:pointer;padding:8px 11px;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--head);font-weight:700;list-style:none;display:flex;align-items:center;gap:8px}
+details.box>summary::-webkit-details-marker{display:none}
+details.box>summary::after{content:"▸";margin-left:auto;transition:transform .2s}
+details.box[open]>summary::after{transform:rotate(90deg)}
+details.box .body{padding:0 11px 8px}
+.tools{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 8px}
+input,select{background:var(--card2);border:1px solid var(--line);color:var(--ink);border-radius:9px;padding:6px 9px;font-size:12px}
+input:focus,select:focus{outline:none;border-color:var(--violet);box-shadow:0 0 0 3px rgba(139,92,246,.18)}
+.spark{display:inline-block;vertical-align:middle}
+.grid2{display:grid;gap:9px;grid-template-columns:1fr 1fr;align-items:start}
+@media (max-width:760px){.grid2{grid-template-columns:1fr}}
+footer{max-width:1320px;margin:0 auto;padding:14px 12px 30px;color:var(--mut);font-size:11px;border-top:1px solid var(--line)}
+.links a{display:inline-block;margin:2px 10px 2px 0;font-weight:600}
+.chip{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--line);border-radius:999px;padding:2px 8px;font-size:11px;background:var(--card);color:var(--mut)}
+.kbd{border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;padding:0 5px;font-size:10.5px;color:var(--mut);background:var(--card2)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+<meta name="description" content="">
+<link rel="canonical" href="https://drsamonline.github.io/dashboard/play/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="System console — live demo">
+<meta property="og:description" content="">
+<meta property="og:url" content="https://drsamonline.github.io/dashboard/play/">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow">
+</head>
+<body>
+<div class="topbar"><div class="in">
+  <div class="brand"><span class="glyph"></span> drsamonline <span class="tag">console</span></div>
+  <div class="topmeta">
+    <span id="health" class="healthpill ok"><span class="live"></span> loading…</span>
+    <span id="since" class="chip" hidden></span>
+    <span id="ago" title=""></span>
+    <button id="theme" class="iconbtn" aria-label="Toggle theme">◐</button>
+  </div>
+</div></div>
+
+<div class="wrap">
+  <h1>System console</h1>
+  <p class="sub" id="reckoning">Loading…</p>
+  <div id="banner" class="banner" hidden></div>
+
+  <div class="sec">At a glance</div>
+  <div class="kpis" id="cards"></div>
+
+  <div id="needs" hidden>
+    <div class="sec">Needs you</div>
+<details class="box"><summary>What needs you <span class="chip" id="needsCount"></span></summary><div class="body">
+    <div class="tw"><table><thead><tr><th>What</th><th>Repo</th><th>Kind</th><th>Act</th></tr></thead><tbody id="needsBody"></tbody></table></div>
+</div></details>  </div>
+
+  <div class="sec">Press</div>
+  <div class="ctrls" id="controls"></div>
+
+  <details class="box" id="statsBox"><summary>Statistics — activity, growth, leaderboard, health, metadata, categories, budget</summary><div class="body">
+  <div class="charts">
+    <div class="panel"><h2>Activity — pushes / day</h2><div id="activity"></div><p class="mut" id="activityNote" style="margin:6px 0 0"></p></div>
+    <div class="panel"><h2>Growth — products over time</h2><div id="trend"></div><p class="mut" id="trendNote" style="margin:6px 0 0"></p></div>
+    <div class="panel"><h2>Leaderboard</h2><p class="mut" style="margin:0 0 8px">Two axes, because one is not enough: <b>quality</b> is the heuristic score, <b>activity</b> is how much changed recently. A big quiet repo and a small thriving one are not comparable on either alone.</p><div id="lb"></div><p class="mut" id="lbNote" style="margin:6px 0 0"></p></div>
+    <div class="panel capped"><h2>System health</h2><p class="mut" style="margin:0 0 8px">Two numbers that used to be one-off answers in a session: how many apps are DECIDED BUT UNSPECCED, and the run record (which flags any run that touched a file which lost lines).</p><div id="specgap"></div><div id="runlog"></div></div>
+    <div class="panel"><h2>Metadata completeness</h2><p class="mut" style="margin:0 0 8px">Five metadata booleans per repository — a description, a licence, a homepage, Pages, and not archived — not build quality: a repo whose build failed on its latest run still scores 5/5. How many repos satisfy each system rule — topics, a licence, a changelog, a test, a description. A bar at 100% means every repo passes that rule; a short bar is the work list.</p><div id="conf"></div><div class="legend" id="confLegend"></div></div>
+    <div class="panel"><h2>Categories</h2><p class="mut" style="margin:0 0 8px">Repos grouped by what they are — kit, app, system, meta — with the count in each. It answers "how much is tooling versus product".</p><div id="cats"></div></div>
+    <div class="panel"><h2>Actions budget</h2><p class="mut" style="margin:0 0 8px">GitHub Actions minutes used this month against the free allowance. Everything here is built to run inside it — no paid runners.</p><div id="quota"></div></div>
+  </div>
+  </div></details>
+
+  <div class="sec">Built vs planned</div>
+<details class="box"><summary>Built vs planned</summary><div class="body">
+  <div class="panel" id="planPanel"><p class="mut" style="margin:0">Loading…</p></div>
+</div></details>
+  <div class="sec">Community</div>
+<details class="box"><summary>Community</summary><div class="body">
+  <div class="panel" id="communityPanel"><p class="mut" style="margin:0">Loading…</p></div>
+</div></details>
+  <div class="sec">Traffic</div>
+<details class="box"><summary>Traffic</summary><div class="body">
+  <div class="panel" id="trafficPanel"><p class="mut" style="margin:0">Loading…</p></div>
+</div></details>
+    <div class="sec">Control panel</div>
+  <div class="panel" id="cpPanel">
+    <h2>Every workflow, and how little you have to do</h2>
+    <p class="mut" style="margin:0 0 8px">Read live from the control panel: the four stages the work moves through, and the routes that ask for one input or none.</p>
+    <div id="cpBody" class="mut">loading…</div>
+    <p style="margin:8px 0 0"><a href="https://drsamonline.github.io/control-panel/" target="_blank" rel="noopener">Open the control panel — a Run button for every workflow →</a></p>
+  </div>
+  <div class="sec">Submit an app idea</div>
+  <div class="panel" id="ideaBox">
+    <textarea id="i-prompt" rows="8" placeholder="One box — paste your app idea, prompt or spec in your own words. A paragraph is plenty.
+
+The system works out the rest: the name, the kits it will need, the priority.
+
+Example: A one-off bell that ends a meeting on time, over the room's Wi-Fi. It rings once on every device and never again. Offline, no account, no server."></textarea>
+    <div style="display:flex;gap:10px;align-items:center;margin-top:9px;flex-wrap:wrap">
+      <button id="i-go" class="iconbtn">Submit idea ↗</button>
+      <span class="mut" id="i-note" style="margin:0">One box. It opens a prefilled issue; intake derives the name, kits and priority itself.</span>
+    </div>
+  </div>
+
+
+  <div class="sec">Self-updating</div>
+<details class="box"><summary>What updates itself</summary><div class="body">
+  <div class="tw"><table><thead><tr><th>What updates</th><th>Workflow</th><th>Schedule</th><th>Last run</th></tr></thead><tbody id="automation"></tbody></table></div>
+</div></details>
+  <div class="grid2" style="margin-top:9px">
+    <div>
+      <div class="sec">Next to come</div>
+<details class="box"><summary>Next to come</summary><div class="body">
+      <div class="tw"><table><thead><tr><th>Work</th><th>State</th></tr></thead><tbody id="roadmap"></tbody></table></div>
+</div></details>    </div>
+    <div>
+      <div class="sec">What changed</div>
+      <details class="box" id="changesBox"><summary>Recent activity <span class="chip" id="feedCount"></span></summary><div class="body"><ul class="feed" id="feed"></ul></div></details>
+    </div>
+  </div>
+
+  <div class="sec">Paused <span class="chip" id="pausedCount"></span></div>
+  <details class="box" id="pausedBox"><summary>Parked, not forgotten</summary><div class="body">
+    <div class="tw"><table><thead><tr><th>Project</th><th>What it is</th><th>Why it stopped</th><th>Resumes with</th></tr></thead><tbody id="paused"></tbody></table></div>
+    <p class="mut" style="margin:8px 0 0">Parked projects keep their spec and study doc. Nothing is deleted — this is the list of things waiting for a word from you.</p>
+  </div></details>
+
+  <div class="sec">Repositories <span class="chip" id="repoCount"></span></div>
+  <details class="box" id="reposBox" open><summary>All repositories</summary><div class="body">
+    <div class="tools"><input id="q" type="search" placeholder="Search repos…  ( / )" aria-label="Search repos"><select id="cat" aria-label="Filter by category"><option value="">All categories</option></select><button id="more" class="iconbtn" hidden></button></div>
+    <div class="tw"><table><thead><tr><th>Repo</th><th>What it is</th><th>Cat</th><th>14d</th><th>Push</th><th>Links</th></tr></thead><tbody id="repos"></tbody></table></div>
+  </div></details>
+
+  <p class="links mut" id="links" style="margin-top:14px"></p>
+  <p class="mut" style="margin-top:6px">Feeds: <a href="changes.json">changes.json</a> · <a href="feed.xml">RSS</a> · shortcuts <span class="kbd">/</span> search · <span class="kbd">g</span><span class="kbd">r</span> repos · <span class="kbd">g</span><span class="kbd">c</span> changes · <span class="kbd">t</span> theme</p>
+</div>
+<footer id="foot"><button type="button" id="save-data" title="Download everything this app has saved on this device" style="font:inherit;color:inherit;background:transparent;border:1px solid currentColor;border-radius:6px;padding:.25em .6em;margin:.5em 0;cursor:pointer;opacity:.85">Save my data</button></footer>
+
+<script>
+var $=function(i){return document.getElementById(i)};
+var esc=function(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})};
+var fmt=function(d){if(!d)return "—";try{return new Date(d).toISOString().slice(0,10)}catch(e){return d}};
+var tone=function(c){c=String(c||"").toLowerCase();if(c==="success")return "ok";if(c==="failure"||c==="cancelled"||c==="timed_out")return "bad";if(c==="no runs yet"||c==="unknown"||c.indexOf("private")>=0)return "warn";return ""};
+var confTone=function(t){var n=parseInt(t||"0",10);return n>=4?"ok":n>=3?"warn":"bad"};
+var CATCOL={"Homeopathy":"#a855f7","Health Tools":"#22c55e","Games":"#f59e0b","Utilities":"#06b6d4","HTML Apps":"#3b82f6","Data":"#ec4899"};
+var catColour=function(c){return CATCOL[c]||"#64748b"};
+var kpiClass=function(i){return ["","g","a","b"][i%4]};
+var store={get:function(k,d){try{var v=localStorage.getItem("dc:"+k);return v==null?d:JSON.parse(v)}catch(e){return d}},set:function(k,v){try{localStorage.setItem("dc:"+k,JSON.stringify(v))}catch(e){}}};
+
+$("theme").addEventListener("click",function(){var c=document.documentElement.getAttribute("data-theme")==="light"?"dark":"light";document.documentElement.setAttribute("data-theme",c);store.set("theme",c)});
+
+// submit an app idea -> a prefilled GitHub issue the intake Action watches
+$("i-go").addEventListener("click",function(){
+  var spec=$("i-prompt").value.trim();
+  if(!spec){$("i-note").textContent="Type the idea first — even one line is enough.";return}
+  var first=(spec.split("\n").map(function(l){return l.trim()}).filter(Boolean)[0])||"New idea";
+  var title=first.length>56?first.slice(0,56)+"…":first;
+  var body="## Idea / prompt / spec\n\n"+spec+"\n";
+  window.open("https://github.com/drsamonline/forge/issues/new?template=app-idea.md&labels=app-idea&title="+encodeURIComponent("App idea: "+title)+"&body="+encodeURIComponent(body),"_blank");
+});
+
+function areaChart(vals,colour,labels){var n=vals.length;if(!n)return "";var w=600,h=150,max=Math.max(1,Math.max.apply(null,vals)),pad=12;var X=function(i){return n===1?w/2:i*(w/(n-1))},Y=function(v){return h-pad-(v/max)*(h-2*pad)};var line=vals.map(function(v,i){return (i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1)}).join(" ");var area=line+" L "+X(n-1).toFixed(1)+" "+h+" L "+X(0).toFixed(1)+" "+h+" Z";var dots=vals.map(function(v,i){return '<circle class="anim-dot" style="animation-delay:'+(i*35)+'ms" cx="'+X(i).toFixed(1)+'" cy="'+Y(v).toFixed(1)+'" r="3.2" fill="'+colour+'"/>'}).join("");return '<svg class="chart" viewBox="0 0 '+w+' '+h+'" role="img"><defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+colour+'" stop-opacity=".45"/><stop offset="1" stop-color="'+colour+'" stop-opacity="0"/></linearGradient></defs><line x1="0" y1="'+(h-pad)+'" x2="'+w+'" y2="'+(h-pad)+'" stroke="'+colour+'" stroke-opacity=".18"/><path class="anim-area" d="'+area+'" fill="url(#ag)"/><path class="anim-line" d="'+line+'" fill="none" stroke="'+colour+'" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>'+dots+'</svg><div class="legend"><span>'+esc(labels||"")+'</span></div>'}
+function lineChart(vals,colour){var n=vals.length;if(!n)return "";var w=600,h=150,mx=Math.max.apply(null,vals),mn=Math.min.apply(null,vals),pad=12,span=Math.max(1,mx-mn);var X=function(i){return n===1?w/2:i*(w/(n-1))},Y=function(v){return h-pad-((v-mn)/span)*(h-2*pad)};var line=vals.map(function(v,i){return (i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1)}).join(" ");var dots=vals.map(function(v,i){return '<circle class="anim-dot" style="animation-delay:'+(i*55)+'ms" cx="'+X(i).toFixed(1)+'" cy="'+Y(v).toFixed(1)+'" r="4" fill="'+colour+'"/>'}).join("");return '<svg class="chart" viewBox="0 0 '+w+' '+h+'" role="img"><line x1="0" y1="'+(h-pad)+'" x2="'+w+'" y2="'+(h-pad)+'" stroke="'+colour+'" stroke-opacity=".18"/><path class="anim-line" d="'+line+'" fill="none" stroke="'+colour+'" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>'+dots+'</svg>'}
+function donut(obj,colourOf){var keys=Object.keys(obj||{});if(!keys.length)return "";var total=keys.reduce(function(s,k){return s+obj[k]},0)||1,r=40,c=2*Math.PI*r,off=0;var segs=keys.sort(function(a,b){return obj[b]-obj[a]}).map(function(k,i){var dash=(obj[k]/total)*c;var s='<circle class="seg" style="animation-delay:'+(i*80)+'ms" r="'+r+'" cx="56" cy="56" fill="none" stroke="'+colourOf(k)+'" stroke-width="13" stroke-dasharray="'+dash.toFixed(1)+' '+(c-dash).toFixed(1)+'" stroke-dashoffset="'+(-off).toFixed(1)+'" transform="rotate(-90 56 56)"/>';off+=dash;return s}).join("");return '<div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap"><svg class="donut" viewBox="0 0 112 112" width="106" height="106">'+segs+'<text class="donut-total" x="56" y="61" text-anchor="middle">'+total+'</text></svg><div>'+keys.map(function(k){return '<div class="barrow" style="grid-template-columns:12px 1fr auto"><span class="swatch" style="background:'+colourOf(k)+'"></span><span>'+esc(k)+'</span><span class="num">'+obj[k]+'</span></div>'}).join("")+'</div></div>'}
+function hbars(obj,colourOf){var keys=Object.keys(obj||{});if(!keys.length)return "";var mx=Math.max(1,Math.max.apply(null,keys.map(function(k){return obj[k]})));return keys.sort(function(a,b){return obj[b]-obj[a]}).map(function(k){return '<div class="barrow"><span>'+esc(k)+'</span><span class="track"><span class="fill" data-w="'+Math.round(obj[k]/mx*100)+'" style="background:'+colourOf(k)+'"></span></span><span class="num">'+obj[k]+'</span></div>'}).join("")}
+function spark(vals,colour){var n=vals.length||1,mx=Math.max(1,Math.max.apply(null,vals.length?vals:[0]));var w=54,h=14;var bars=vals.map(function(v,i){var bw=w/n-1;return '<rect x="'+(i*(w/n)).toFixed(1)+'" y="'+(h-Math.max(1,v/mx*h)).toFixed(1)+'" width="'+bw.toFixed(1)+'" height="'+Math.max(1,v/mx*h).toFixed(1)+'" rx="1" fill="'+colour+'"/>'}).join("");return '<svg class="spark" width="'+w+'" height="'+h+'" viewBox="0 0 '+w+' '+h+'">'+bars+'</svg>'}
+function animateFills(){requestAnimationFrame(function(){[].forEach.call(document.querySelectorAll(".fill[data-w]"),function(f){f.style.width=f.getAttribute("data-w")+"%"})})}
+function countUp(el,to){var start=null,dur=650;function step(t){if(!start)start=t;var p=Math.min(1,(t-start)/dur);el.textContent=Math.round(to*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(step)}requestAnimationFrame(step)}
+
+var generatedAt=null;
+var STALE_AFTER=93600; // 26h. The refresh runs daily; a day plus slack means it did not run.
+function ago(){
+  if(!generatedAt){$("ago").textContent="";return}
+  var s=Math.max(0,Math.floor((Date.now()-new Date(generatedAt).getTime())/1000));
+  var el=$("ago"), stale=s>STALE_AFTER;
+  el.className=stale?"stale":"";
+  el.title=stale?"The data is older than one refresh interval. Everything below describes a past state.":"";
+  el.textContent=(stale?"STALE - data is ":"updated ")+(s<60?s+"s ago":s<3600?Math.floor(s/60)+"m ago":Math.floor(s/3600)+"h ago");
+}
+setInterval(ago,30000);
+
+// keyboard shortcuts
+var gkey=false;
+document.addEventListener("keydown",function(e){
+  if(e.target.tagName==="INPUT"||e.target.tagName==="SELECT")return;
+  if(e.key==="/"){e.preventDefault();$("reposBox").open=true;$("q").focus();return}
+  if(e.key==="t"){$("theme").click();return}
+  if(e.key==="g"){gkey=true;setTimeout(function(){gkey=false},900);return}
+  if(gkey&&e.key==="r"){$("reposBox").open=true;$("reposBox").scrollIntoView({behavior:"smooth"});gkey=false;return}
+  if(gkey&&e.key==="c"){$("changesBox").open=true;$("changesBox").scrollIntoView({behavior:"smooth"});gkey=false;return}
+});
+
+// URL state
+function readHash(){var p=new URLSearchParams((location.hash||"").replace(/^#/,""));return {q:p.get("q")||"",cat:p.get("cat")||""}}
+function writeHash(q,cat){var p=new URLSearchParams();if(q)p.set("q",q);if(cat)p.set("cat",cat);var h=p.toString();history.replaceState(null,"",h?"#"+h:location.pathname)}
+
+fetch("data.json",{cache:"no-store"}).then(function(r){return r.json()}).then(function(d){
+  generatedAt=d.generated_at||null;
+    var staleNow=!generatedAt||(Date.now()-new Date(generatedAt).getTime())/1000>STALE_AFTER;
+  var bad=d.health==="bad"||staleNow;
+  var label=!bad?"healthy":(d.health==="bad"?"attention":"stale data");
+  var hp=$("health");hp.className="healthpill "+(bad?"bad":"ok");
+  hp.innerHTML='<span class="live'+(bad?" bad":"")+'"></span> '+label;
+  $("reckoning").textContent=d.reckoning||"";
+  $("foot").textContent="Generated "+(d.generated||"")+" · © 2026 Dr Sohil Momin · Forge system · self-updating";
+  ago();
+
+  // since last visit
+  var sum=d.summary||{},prev=store.get("last",null);
+  if(prev&&prev.date!==d.generated){var dp=(sum.products||0)-(prev.products||0);var el=$("since");el.hidden=false;el.textContent=(dp>=0?"▲ +":"▼ ")+dp+" products since your last visit"}
+  store.set("last",{date:d.generated,products:sum.products||0,kits:sum.kits||0});
+
+  var failed=(d.automation||[]).filter(function(a){return ["failure","cancelled","timed_out"].indexOf(String(a.conclusion||"").toLowerCase())>=0});
+  if(failed.length){$("banner").hidden=false;$("banner").innerHTML="<b>"+failed.length+" automation(s) failed:</b> "+failed.map(function(a){return '<a href="'+esc(a.url)+'">'+esc(a.what)+' ('+esc(a.repo)+')</a>'}).join(", ")}
+
+  $("cards").innerHTML=(d.cards||[]).map(function(c,i){return '<div class="kpi '+kpiClass(i)+'" style="animation-delay:'+(i*60)+'ms"><div class="k">'+esc(c.title)+'</div><div class="v" data-count="'+parseInt(String(c.value).replace(/\D/g,"")||"0",10)+'">'+esc(c.value)+'</div></div>'}).join("");
+  [].forEach.call(document.querySelectorAll(".kpi .v[data-count]"),function(el){var n=parseInt(el.getAttribute("data-count"),10);if(n&&/^\d+$/.test(el.textContent.trim()))countUp(el,n)});
+
+  var pl=d.plan||null;
+  if(pl&&pl.planned){
+    var pp=Math.max(2,Math.round((pl.built||0)/(pl.planned||1)*100));
+    $("planPanel").innerHTML='<div class="barrow"><span>of the plan built</span><span class="track"><span class="fill" data-w="'+pp+'" style="background:linear-gradient(90deg,#8b5cf6,#22d3ee)"></span></span><span class="num">'+(pl.built||0)+'/'+pl.planned+'</span></div>'
+      +'<div class="kpis" style="margin-top:9px">'
+      +'<div class="kpi"><div class="k">Planned ideas</div><div class="v">'+pl.planned+'</div></div>'
+      +'<div class="kpi g"><div class="k">Built (matched)</div><div class="v">'+(pl.built||0)+'</div></div>'
+      +'<div class="kpi a"><div class="k">Unbuilt</div><div class="v">'+(pl.unbuilt||0)+'</div></div>'
+      +'<div class="kpi b"><div class="k">Live products</div><div class="v">'+(pl.live_products||0)+'</div></div>'
+      +'<div class="kpi"><div class="k">Live, not on the plan</div><div class="v">'+(pl.live_not_planned||0)+'</div></div>'
+      +'</div>'
+      +'<p class="mut" style="margin:8px 0 0">The idea list is a <strong>forward plan</strong>; the live products are what exists. They are different populations, so the overlap is shown honestly. <a href="'+esc(pl.link||"")+'" target="_blank" rel="noopener">plan.json ↗</a></p>';
+    animateFills();
+  } else {
+    $("planPanel").innerHTML='<p class="mut" style="margin:0">Needs BILLING_TOKEN — the plan lives in the private registry.</p>';
+  }
+
+  var cm=d.community||null;
+  if(cm){
+    var ct=cm.totals||{},cx=cm.external||{};
+    var crows=(cm.repos||[]).map(function(r){
+      var nm=r.forks?('<a href="forks.html?repo='+encodeURIComponent(r.name)+'">'+esc(r.name)+'</a>'):esc(r.name);
+      return '<tr><td>'+nm+'</td><td>'+(r.stars||0)+'</td><td>'+(r.forks||0)+'</td><td>'+(r.watchers||0)+'</td></tr>';
+    }).join("");
+    $("communityPanel").innerHTML='<div class="kpis">'
+      +'<div class="kpi g"><div class="k">Stars</div><div class="v">'+(ct.stars||0)+'</div></div>'
+      +'<div class="kpi b"><div class="k">Forks</div><div class="v">'+(ct.forks||0)+'</div></div>'
+      +'<div class="kpi"><div class="k">Watchers</div><div class="v">'+(ct.watchers||0)+'</div></div>'
+      +'<div class="kpi a"><div class="k">Opened by others</div><div class="v">'+((cx.issues||0)+(cx.prs||0))+'</div></div>'
+      +'</div>'
+      +'<p class="mut" style="margin:8px 0 6px">'+(cm.forked_repos?(cm.forked_repos+' repo(s) have been forked — click a name to see who.'):'Nobody has forked a repo yet — this fills in on its own when they do.')+'</p>'
+      +(crows?('<div class="tw"><table><thead><tr><th>Repo</th><th>Stars</th><th>Forks</th><th>Watchers</th></tr></thead><tbody>'+crows+'</tbody></table></div>'):'')
+      +(((cx.items||[]).length)?('<p class="mut" style="margin:8px 0 0">Opened by others: '+cx.items.map(function(i){return '<a href="'+esc(i.url)+'" target="_blank" rel="noopener">'+esc(i.who)+' → '+esc(i.repo)+'</a>'}).join(' · ')+'</p>'):'')
+      +(((d.history||[]).length>1)?('<div style="margin-top:10px">'+areaChart(d.history.map(function(h){return h.stars||0}),"#8b5cf6","stars over time")+'</div>'):'')
+      +'<p class="mut" style="margin:8px 0 0"><a href="network.html">Fork network ↗</a> · <a href="people.html">Opened by others ↗</a></p>';
+
+    var tr=d.traffic||null;
+    if(tr&&tr.available){
+      var trows=Object.keys(tr.repos||{}).map(function(n){return {n:n,t:tr.repos[n]||{}}}).filter(function(x){return (x.t.views||0)||(x.t.clones||0)}).sort(function(a,b){return (b.t.views||0)-(a.t.views||0)}).map(function(x){return '<tr><td>'+esc(x.n)+'</td><td>'+(x.t.views||0)+'</td><td>'+(x.t.uniques||0)+'</td><td>'+(x.t.clones||0)+'</td></tr>'}).join("");
+      $("trafficPanel").innerHTML=(trows?('<div class="tw"><table><thead><tr><th>Repo</th><th>Views</th><th>Unique</th><th title="git clones, including CI and scrapers - NOT people">Clones*</th></tr></thead><tbody>'+trows+'</tbody></table></div>'):'<p class="mut" style="margin:0">No traffic recorded in the last 14 days.</p>')+'<p class="mut" style="margin:8px 0 0"><b>* Clones</b> is a <b>git clone</b> count — every checkout of the repository, '
+          +'including CI, mirrors, bots and scrapers. It is <b>not</b> the number of people. A repo showing views 0 and clones 300 '
+          +'has had no human visitors at all: the clones are automation. Read it against <b>Views</b>, which is humans opening the page.</p>'
+          +'<p class="mut" style="margin:8px 0 0">'+esc(tr.note||"")+'</p>';
+    } else {
+      $("trafficPanel").innerHTML='<p class="mut" style="margin:0">'+esc((tr&&tr.note)||"Traffic is not available.")+'</p>';
+    }
+  } else {
+    $("communityPanel").innerHTML='<p class="mut" style="margin:0">No community data yet.</p>';
+  }
+
+  $("controls").innerHTML=(d.controls||[]).map(function(c){return '<a href="'+esc(c.url)+'" title="'+esc(c.what)+'"><span class="play">▶</span> '+esc(c.label)+'</a>'}).join("")||'<span class="mut">No controls yet.</span>';
+
+  var needs=d.attention||[];
+  $("needs").hidden=false;$("needsBody").innerHTML=needs.length?needs.map(function(a){return '<tr><td><a href="'+esc(a.url)+'">'+esc(a.title)+'</a></td><td><span class="badge v">'+esc(a.repo)+'</span></td><td><span class="badge">'+esc(a.kind)+'</span></td><td><a href="'+esc(a.url)+'">open ↗</a></td></tr>'}).join(""):'<tr><td colspan="4" class="mut">Nothing needs you — every workflow is green and no repo is missing metadata.</td></tr>';
+
+  var act=d.activity||[];
+  $("activity").innerHTML=areaChart(act.map(function(a){return a.count}),"#22d3ee",act.length?act[0].date.slice(5)+" → "+act[act.length-1].date.slice(5):"");
+  $("activityNote").textContent=act.reduce(function(s,a){return s+a.count},0)+" pushes in 14 days.";
+
+  var hist=d.history||[],vals=hist.map(function(h){return h.products});
+  if(vals.length){$("trend").innerHTML=lineChart(vals,"#34d399");var f=vals[0],l=vals[vals.length-1];$("trendNote").textContent=hist.length+" snapshot(s) · "+f+" → "+l+(hist.length>1?" ("+(l-f>=0?"+":"")+(l-f)+")":"")}else{$("trendNote").textContent="History starts today."}
+
+  $("conf").innerHTML=donut(d.stats&&(d.stats.metadata_completeness||d.stats.conformance),function(k){var n=parseInt(k,10);return n>=5?"#22c55e":n>=4?"#84cc16":n>=3?"#f59e0b":"#ef4444"});
+  $("confLegend").innerHTML=["5/5","4/5","3/5","≤2"].map(function(t,i){return '<span><span class="swatch" style="background:'+["#22c55e","#84cc16","#f59e0b","#ef4444"][i]+'"></span>'+t+'</span>'}).join("");
+  $("cats").innerHTML=hbars(d.stats&&d.stats.categories,catColour);
+
+  var q=d.quota||{};
+  if(q.available&&q.used_minutes!=null){var pct=Math.min(100,Math.round(q.used_minutes/(q.included_minutes||2000)*100));$("quota").innerHTML='<div class="barrow"><span>minutes used</span><span class="track"><span class="fill" data-w="'+pct+'" style="background:linear-gradient(90deg,#22c55e,#84cc16)"></span></span><span class="num">'+pct+'%</span></div>'}
+  else if(q.estimated_minutes!=null){var pe=Math.min(100,Math.round(q.estimated_minutes/2000*100));$("quota").innerHTML='<div class="barrow"><span>~minutes (est.)</span><span class="track"><span class="fill" data-w="'+Math.max(2,pe)+'" style="background:linear-gradient(90deg,#f59e0b,#f97316)"></span></span><span class="num">'+q.estimated_minutes+'</span></div><p class="mut" style="margin:6px 0 0">Estimated from '+q.private_runs+' private-repo run(s) this month · free tier '+esc(q.included_minutes||2000)+' min.</p>'}
+  else{$("quota").innerHTML='<p class="mut" style="margin:0">'+esc(q.note||"")+'</p>'+(q.private_runs!=null?'<p class="mut" style="margin:6px 0 0">Private-repo runs: <strong>'+q.private_runs+'</strong></p>':'')}
+  animateFills();
+
+  $("automation").innerHTML=(d.automation||[]).map(function(a){return '<tr><td><span class="dot '+tone(a.conclusion)+'"></span><strong>'+esc(a.what)+'</strong> <span class="badge v">'+esc(a.repo)+'</span></td><td><a href="'+esc(a.url)+'">'+esc(a.name)+'</a></td><td>'+esc(a.schedule)+'</td><td><span class="badge '+tone(a.conclusion)+'">'+esc(a.conclusion||"—")+'</span> <span class="mut">'+fmt(a.last_run)+'</span></td></tr>'}).join("")||'<tr><td colspan="4">No automation data yet.</td></tr>';
+
+  $("roadmap").innerHTML=(d.roadmap||[]).map(function(r){var st=r.state||"",cls=st.indexOf("progress")>=0?"warn":st.indexOf("planned")>=0?"v":"";return '<tr><td><a href="'+esc(r.link)+'">'+esc(r.what)+'</a></td><td><span class="badge '+cls+'">'+esc(st)+'</span></td></tr>'}).join("");
+
+  var pz=d.paused||[];
+  if($("pausedCount"))$("pausedCount").textContent=pz.length?(pz.length+" parked"):"";
+  if($("pausedBox"))$("pausedBox").hidden=!pz.length;
+  $("paused").innerHTML=pz.map(function(p){return '<tr><td><strong>'+esc(p.name)+'</strong> <span class="badge v">'+esc(p.id)+'</span><br><span class="mut">since '+esc(p.since)+'</span></td><td>'+esc(p.what)+'</td><td>'+esc(p.why)+'</td><td>'+esc(p.resume)+'</td></tr>'}).join("")||'<tr><td colspan="4" class="mut">Nothing parked.</td></tr>';
+
+  var ch=d.changes||[];$("feedCount").textContent=ch.length;
+  $("feed").innerHTML=ch.map(function(c,i){return '<li style="animation-delay:'+(i*25)+'ms"><span class="badge">'+esc(c.type)+'</span> <strong>'+esc(c.repo)+'</strong> — '+esc(c.text||"")+' <span class="mut">'+fmt(c.when)+'</span></li>'}).join("")||'<li class="mut">No recent activity.</li>';
+
+  var repos=d.repos||[],catSel=$("cat"),catSet=Array.from(new Set(repos.map(function(r){return r.category}).filter(Boolean)));
+  catSel.innerHTML='<option value="">All categories</option>'+catSet.map(function(c){return '<option>'+esc(c)+'</option>'}).join("");
+  var st0=readHash();if(st0.q)$("q").value=st0.q;if(st0.cat)catSel.value=st0.cat;
+  $("repoCount").textContent=repos.length;
+  var LIMIT=150,showAll=false;
+  if(repos.length>LIMIT){$("more").hidden=false;$("more").textContent="Show all "+repos.length}
+  $("more").addEventListener("click",function(){showAll=true;$("more").hidden=true;renderRepos()});
+  function renderRepos(){
+    var q=$("q").value.toLowerCase(),cat=catSel.value;
+    writeHash($("q").value,cat);
+    var filtered=repos.filter(function(r){if(cat&&r.category!==cat)return false;return !q||r.name.toLowerCase().indexOf(q)>=0||(r.description||"").toLowerCase().indexOf(q)>=0});
+    var slice=showAll?filtered:filtered.slice(0,LIMIT);
+    $("repos").innerHTML=slice.map(function(r){
+      var links=[];if(r.homepage)links.push('<a href="'+esc(r.homepage)+'">page</a>');if(r.html_url)links.push('<a href="'+esc(r.html_url)+'">repo</a>');
+      var conf=r.status?'<span class="badge '+confTone(r.status)+'">'+esc(r.status)+'</span> ':"";
+      var chip=r.category?'<span class="cat" style="background:'+catColour(r.category)+'">'+esc(r.category)+'</span>':"";
+      var sp=spark(r.spark||[0],catColour(r.category));
+      return '<tr><td>'+conf+'<a href="repo.html?name='+encodeURIComponent(r.name)+'">'+esc(r.name)+'</a></td><td>'+esc(r.description)+'</td><td>'+chip+'</td><td>'+sp+'</td><td class="mut">'+fmt(r.pushed_at)+'</td><td>'+links.join(" · ")+'</td></tr>';
+    }).join("")||'<tr><td colspan="6" class="mut">No matches.</td></tr>';
+  }
+  renderRepos();
+  $("q").addEventListener("input",renderRepos);catSel.addEventListener("change",renderRepos);
+
+  // remember panel open state
+  ["reposBox","changesBox"].forEach(function(id){var el=$(id);var saved=store.get("open:"+id,null);if(saved!==null)el.open=saved;el.addEventListener("toggle",function(){store.set("open:"+id,el.open)})});
+
+  var L=d.links||{};$("links").innerHTML=Object.keys(L).map(function(k){return '<a href="'+esc(L[k])+'">'+esc(k)+'</a>'}).join("");
+}).catch(function(){$("reckoning").textContent="No data yet — the first refresh has not run.";$("health").textContent="no data"});
+
+// PWA
+if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}
+</script>
+<script>
+// System health - two metrics that were one-off answers in a session until they became
+// files: how many apps are DECIDED BUT UNSPECCED (an app can sit decided for months and
+// never be built because nobody wrote its spec), and the run record, which flags any run
+// that touched a file which LOST lines - the WORKLIST bug, caught when it happens.
+(function () {
+  function bar(label, value, note) {
+    return '<div class="barrow"><span>' + esc(label) + '</span><b>' + esc(String(value)) + '</b></div>'
+         + (note ? '<p class="mut" style="margin:2px 0 8px">' + esc(note) + '</p>' : '');
+  }
+  fetch("SPEC-GAP.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) {
+    var el = document.getElementById("specgap"); if (!el) return;
+    el.innerHTML = bar("Decided but unspecced", d.unspecced + " of " + d.total,
+      d.unspecced_pct + "% of the master list has no spec. An app can sit decided for months and never be built because nobody wrote its spec.");
+  }).catch(function () {
+    var el = document.getElementById("specgap");
+    if (el) el.innerHTML = '<p class="mut">SPEC-GAP.json not published yet.</p>';
+  });
+  fetch("runs.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) {
+    var el = document.getElementById("runlog"); if (!el) return;
+    var h = bar("Runs on record", d.count, "The last " + d.count + " runs, newest last.");
+    if (d.lost_lines && d.lost_lines.length) {
+      h += '<p class="mut"><b>' + d.lost_lines.length + ' run(s) touched a file that LOST lines:</b> '
+         + esc(d.lost_lines.join(", ")) + '</p>';
+    }
+    var last = (d.runs || []).slice(-3).reverse();   // a glance, not a wall
+    if (last.length) {
+      h += '<div class="tw"><table><thead><tr><th>When</th><th>Workflow</th><th>Outcome</th><th>Note</th></tr></thead><tbody>'
+         + last.map(function (r) {
+             return '<tr><td>' + esc((r.at || "").slice(0, 16).replace("T", " ")) + '</td><td>'
+                  + esc(r.workflow || "") + '</td><td>' + esc(r.outcome || "") + '</td><td>'
+                  + esc((r.note || "").slice(0, 70)) + '</td></tr>';
+           }).join("") + '</tbody></table></div>';
+    }
+    el.innerHTML = h;
+  }).catch(function () {
+    var el = document.getElementById("runlog");
+    if (el) el.innerHTML = '<p class="mut">runs.json not published yet.</p>';
+  });
+})();
+</script>
+<script>
+// The leaderboard. TWO AXES, and the reason is not decoration: quality alone keeps a
+// 500k-star repo that has been dead since 2023 at the top, so a one-axis table would
+// rank a dead project first and call it the best. Activity is what separates them.
+//
+// The score is a HEURISTIC and is shown only relative to our own repositories, never as
+// an absolute - the formula is chosen by experience and there is no proof it reflects
+// quality. That caveat is in the panel, not in a comment nobody reads.
+(function () {
+  function lb() {
+    fetch("data.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) {
+      var el = document.getElementById("lb"); if (!el) return;
+      var L = d.leaderboard || {};
+      if (L.error) { el.innerHTML = '<p class="mut">' + esc(L.error) + '</p>'; return; }
+      var rows = (L.rows || []);
+      if (!rows.length) { el.innerHTML = '<p class="mut">No leaderboard yet.</p>'; return; }
+      var top = rows.slice(0, 10);
+      var h = '<div class="tw"><table><thead><tr><th>#</th><th>Repo</th><th>Quality</th><th>Activity</th><th>Stars</th>'
+            + '<th>' + esc(String(L.window_days || 7)) + 'd</th></tr></thead><tbody>';
+      top.forEach(function (x) {
+        var m = x.movement || {}, delta = m.delta;
+        var move = delta === null ? '<span class="mut">added</span>'
+                 : (delta > 0 ? '+' + delta : (delta < 0 ? String(delta) : '0'));
+        h += '<tr><td>' + x.rank + '</td><td>' + esc(x.name) + '</td>'
+           + '<td>' + x.quality + '</td><td>' + x.activity + '</td>'
+           + '<td>' + x.stars + '</td><td>' + move + '</td></tr>';
+      });
+      h += '</tbody></table></div>';
+      el.innerHTML = h;
+      var note = document.getElementById("lbNote");
+      if (note) note.textContent = (L.caveat || '')
+        + ' Movement: up ' + (L.up || []).length + ', down ' + (L.down || []).length
+        + ', added ' + (L.added || []).length + ' over the last ' + (L.window_days || 7) + ' days.';
+    }).catch(function () {
+      var el = document.getElementById("lb");
+      if (el) el.innerHTML = '<p class="mut">The leaderboard needs one console refresh to appear.</p>';
+    });
+  }
+  lb();
+})();
+</script>
+
+<script>
+// The control panel publishes plan.json; this reads it. Cross-origin, but GitHub
+// Pages sends access-control-allow-origin:*, and nothing here is secret - it is the
+// shape of the pipeline, which is the point of publishing it.
+(function(){
+  var b=document.getElementById('cpBody'); if(!b) return;
+  fetch('https://drsamonline.github.io/control-panel/plan.json',{cache:'no-store'})
+    .then(function(r){return r.json();})
+    .then(function(p){
+      var rows=p.stages.map(function(s){
+        return '<div class="barrow"><span>'+esc(s.n+'. '+s.name)+' <span class="mut">— '+esc(s.verb)+'</span></span><b>'+s.count+'</b></div>';
+      }).join('');
+      var routes=p.routes.map(function(r){
+        return '<p class="mut" style="margin:4px 0"><b>'+esc(r.name)+'</b> — '+(r.inputs===0?'no input':'one input')+'</p>';
+      }).join('');
+      b.innerHTML = rows + '<p style="margin:10px 0 0"><b>The routes</b></p>' + routes;
+    })
+    .catch(function(){ b.textContent='could not read the control panel (it may not have published yet)'; });
+})();
+</script>
+
+<script>
+/* A SMOKE TEST, not a feature test - and it says so.
+   It answers the three questions that separate a DEAD app from a WRONG one: did the page
+   come up, are the kits it needs actually loaded, and does storage work. A feature test
+   needs the feature; this needs the app to exist, which is true of every app here.
+   Open the page with ?test to see the result on screen. */
+window.__smokeTest = function () {
+  var out = [];
+  function ok(n, c) { out.push((c ? "PASS " : "FAIL ") + n); }
+  ok("the document rendered", !!document.body && document.body.children.length > 0);
+  ok("a heading is present", !!document.querySelector("h1, h2"));
+  ok("no script threw during load", !window.__bootError);
+  var kits = ["Export","Loom","CryptoKit","Case","Search","Srs","Game","Art","Audio","Ml","UI","Lan","Astro"];
+  var found = kits.filter(function (k) { return window[k]; });
+  ok("at least one kit is loaded (" + (found.join(", ") || "none") + ")", found.length > 0);
+  try {
+    localStorage.setItem("__smoke", "1");
+    ok("storage works", localStorage.getItem("__smoke") === "1");
+    localStorage.removeItem("__smoke");
+  } catch (e) { ok("storage works", false); }
+  console.log(out.join("\n"));
+  if (location.search.indexOf("test") >= 0) {
+    var d = document.createElement("pre");
+    d.textContent = out.join("\n");
+    d.style.cssText = "position:fixed;left:0;right:0;bottom:0;background:#111;color:#eee;padding:12px;font:12px ui-monospace,monospace;z-index:99999;max-height:40vh;overflow:auto;white-space:pre-wrap";
+    document.body.appendChild(d);
+  }
+  return out;
+};
+window.addEventListener("error", function () { window.__bootError = true; });
+</script>
+
+
+
+
+
+<script>
+/* UNDO — at the level every app already shares: the STORE ITSELF.
+   Apps save with localStorage.setItem. This wraps that ONE function, remembers the previous
+   value of whatever it touches, and puts it back on Ctrl+Z or the button.
+   WHY HERE: a per-app undo needs the app to funnel its writes through one function, and where
+   it does not, the undo would quietly do nothing - which is the failure this estate keeps
+   producing. Hooking the store cannot silently do nothing: if the app saves, this sees it. */
+(function () {
+  var history = [], orig = localStorage.setItem.bind(localStorage), LIMIT = 60;
+  localStorage.setItem = function (k, v) {
+    try {
+      var prev = localStorage.getItem(k);
+      if (prev !== String(v) && String(k).indexOf("__") !== 0) {
+        history.push({ k: k, prev: prev });
+        if (history.length > LIMIT) history.shift();
+      }
+    } catch (e) {}
+    return orig(k, v);
+  };
+  function say(m) {
+    var d = document.createElement("div");
+    d.textContent = m;
+    d.style.cssText = "position:fixed;left:50%;transform:translateX(-50%);bottom:52px;background:#111;color:#eee;border:1px solid #444;border-radius:8px;padding:8px 14px;font:13px system-ui;z-index:10000";
+    document.body.appendChild(d);
+    setTimeout(function () { d.remove(); }, 1800);
+  }
+  window.__undo = function () {
+    var h = history.pop();
+    if (!h) { say("Nothing to undo"); return false; }
+    try {
+      if (h.prev === null) localStorage.removeItem(h.k);
+      else orig(h.k, h.prev);
+    } catch (e) { say("Could not undo"); return false; }
+    say("Undone. Reloading.");
+    setTimeout(function () { location.reload(); }, 350);
+    return true;
+  };
+  document.addEventListener("keydown", function (e) {
+    if ((e.ctrlKey || e.metaKey) && String(e.key).toLowerCase() === "z") {
+      var t = e.target || {};
+      if (t.tagName === "INPUT" || t.tagName === "TEXTAREA") return;   // let the field undo its own text
+      e.preventDefault(); window.__undo();
+    }
+  });
+  function add() {
+    if (!document.body || document.getElementById("__undoBtn")) return;
+    var b = document.createElement("button");
+    b.id = "__undoBtn"; b.textContent = "Undo"; b.title = "Undo the last change (Ctrl+Z)";
+    b.style.cssText = "position:fixed;left:10px;bottom:44px;z-index:9998;background:#111;color:#eee;border:1px solid #444;border-radius:8px;padding:6px 10px;font:12px system-ui;cursor:pointer;opacity:.75";
+    b.onmouseenter = function () { b.style.opacity = "1"; };
+    b.onmouseleave = function () { b.style.opacity = ".75"; };
+    b.onclick = window.__undo;
+    document.body.appendChild(b);
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", add);
+  else add();
+})();
+</script>
+
+<style>
+/* A FOCUS RING, because a keyboard you cannot see is not access. Most of these apps
+   removed the default outline and never replaced it. */
+:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+</style>
+<script>
+/* KEYBOARD ACCESS — hooked at document, like the undo is hooked at the store.
+   /  focus search      ?  shortcuts      Esc  leave a field
+   It NEVER steals a key while a field has focus: a shortcut that eats your typing is a
+   bug that looks like a feature. */
+(function () {
+  function typing(e) {
+    var t = e.target || {};
+    return /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName) || t.isContentEditable === true;
+  }
+  function searchField() {
+    return document.querySelector(
+      'input[type="search"], input[placeholder*="search" i], input[id*="search" i],' +
+      ' input[name*="search" i], input[placeholder*="filter" i], input[type="text"]');
+  }
+  function say(m) {
+    var d = document.createElement("div");
+    d.textContent = m;
+    d.style.cssText = "position:fixed;left:50%;transform:translateX(-50%);bottom:86px;background:#111;color:#eee;border:1px solid #444;border-radius:8px;padding:8px 14px;font:13px system-ui;z-index:10000";
+    document.body.appendChild(d);
+    setTimeout(function () { d.remove(); }, 1600);
+  }
+  function overlay() {
+    var old = document.getElementById("__keysHelp");
+    if (old) { old.remove(); return; }
+    var box = document.createElement("div");
+    box.id = "__keysHelp";
+    box.style.cssText = "position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:10001;display:flex;align-items:center;justify-content:center;font:14px system-ui;color:#eee";
+    box.innerHTML = '<div style="background:#15181f;border:1px solid #333;border-radius:12px;padding:20px 24px;max-width:340px">'
+      + '<div style="font-weight:700;margin-bottom:10px">Keyboard</div>'
+      + '<div style="display:grid;grid-template-columns:auto 1fr;gap:6px 14px">'
+      + '<kbd style="background:#222;border-radius:4px;padding:1px 6px">/</kbd><span>focus search</span>'
+      + '<kbd style="background:#222;border-radius:4px;padding:1px 6px">?</kbd><span>this list</span>'
+      + '<kbd style="background:#222;border-radius:4px;padding:1px 6px">Esc</kbd><span>leave a field</span>'
+      + '<kbd style="background:#222;border-radius:4px;padding:1px 6px">Ctrl Z</kbd><span>undo the last change</span>'
+      + '</div><div style="margin-top:12px;opacity:.6;font-size:12px">press ? or click to close</div></div>';
+    box.onclick = function () { box.remove(); };
+    document.body.appendChild(box);
+  }
+  document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey || e.metaKey || e.altKey) return;
+    if (e.key === "Escape") { if (typing(e)) { e.target.blur(); } var b = document.getElementById("__keysHelp"); if (b) b.remove(); return; }
+    if (typing(e)) return;                       // never steal a key from a field
+    if (e.key === "/") {
+      var s = searchField();
+      if (s) { e.preventDefault(); s.focus(); if (s.select) s.select(); say("Search — Esc to leave"); }
+      return;
+    }
+    if (e.key === "?") { e.preventDefault(); overlay(); }
+  });
+  window.__keyboardHelp = overlay;
+})();
+</script>
+<script>
+/* Save my data - the app's own export, part of the page rather than a floating bar. */
+(function () {
+  var b = document.getElementById("save-data"); if (!b) return;
+  b.addEventListener("click", function () {
+    var out = { app: document.title, savedAt: new Date().toISOString(), data: {} };
+    try { for (var i = 0; i < localStorage.length; i++) { var k = localStorage.key(i); out.data[k] = localStorage.getItem(k); } } catch (e) {}
+    var name = (document.title || "app").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+    var blob = new Blob([JSON.stringify(out, null, 2)], { type: "application/json" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = (name || "app") + "-data-" + new Date().toISOString().slice(0, 10) + ".json";
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+  });
+})();
+</script></body>
+</html>
