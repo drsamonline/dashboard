@@ -1,7 +1,7 @@
 {
   "generated": "2026-11-01",
-  "generated_at": "2026-11-01T01:38:10Z",
-  "reckoning": "73 products · 13 kits (role) · avg metadata completeness 4.6/5 · updated automatically.",
+  "generated_at": "2026-11-01T06:53:35Z",
+  "reckoning": "74 products · 13 kits (role) · avg metadata completeness 4.6/5 · updated automatically.",
   "health": "ok",
   "health_detail": {
     "state": "ok",
@@ -14,7 +14,7 @@
   "cards": [
     {
       "title": "Products",
-      "value": "73",
+      "value": "74",
       "tone": ""
     },
     {
@@ -39,27 +39,35 @@
     }
   ],
   "summary": {
-    "products": 73,
+    "products": 74,
     "kits": 13,
     "kits_name_matched": 19,
     "kits_definition": "role",
     "avg": 4.6,
-    "pushes": 103,
-    "byrepo": {}
+    "pushes": 104,
+    "byrepo": {
+      "app-thermals": 1,
+      "ziptastic": 1,
+      "eon-commando": 1,
+      "forge": 1,
+      "dashboard": 1,
+      "dumps-4": 1,
+      "knowledge": 1
+    }
   },
   "stats": {
     "metadata_completeness": {
+      "5": 64,
       "3": 4,
-      "5": 63,
       "2": 6
     },
     "conformance": {
+      "5": 64,
       "3": 4,
-      "5": 63,
       "2": 6
     },
     "categories": {
-      "HTML Apps": 39,
+      "HTML Apps": 40,
       "Utilities": 15,
       "Homeopathy": 11,
       "Games": 6,
@@ -110,7 +118,7 @@
     },
     {
       "date": "2026-10-29",
-      "count": 2
+      "count": 1
     },
     {
       "date": "2026-10-30",
@@ -118,11 +126,11 @@
     },
     {
       "date": "2026-10-31",
-      "count": 79
+      "count": 74
     },
     {
       "date": "2026-11-01",
-      "count": 0
+      "count": 7
     }
   ],
   "attention": [],
@@ -193,123 +201,123 @@
   "changes": [
     {
       "type": "Push",
-      "repo": "ai-bridge",
-      "when": "2026-10-30T09:25:02Z",
+      "repo": "HCS",
+      "when": "2026-10-30T15:17:06Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "ai-bridge",
-      "when": "2026-10-30T10:29:17Z",
+      "repo": "heavenzip",
+      "when": "2026-10-30T17:15:00Z",
       "text": "pushed to main"
-    },
-    {
-      "type": "Release",
-      "repo": "eon-commando",
-      "when": "2026-10-31T21:43:56Z",
-      "text": ""
-    },
-    {
-      "type": "Release",
-      "repo": "eon-commando",
-      "when": "2026-10-31T21:33:58Z",
-      "text": ""
-    },
-    {
-      "type": "Release",
-      "repo": "eon-commando",
-      "when": "2026-10-31T21:18:54Z",
-      "text": ""
-    },
-    {
-      "type": "Release",
-      "repo": "eon-commando",
-      "when": "2026-10-31T21:11:11Z",
-      "text": ""
-    },
-    {
-      "type": "Release",
-      "repo": "eon-commando",
-      "when": "2026-10-31T20:53:54Z",
-      "text": ""
     },
     {
       "type": "Push",
-      "repo": "skills",
-      "when": "2026-10-30T11:32:12Z",
+      "repo": "srs-kit",
+      "when": "2026-10-30T18:13:59Z",
       "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "app-poets-studio",
+      "when": "2026-10-30T18:13:24Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Release",
+      "repo": "eon-commando",
+      "when": "2026-11-01T06:13:34Z",
+      "text": ""
+    },
+    {
+      "type": "Create",
+      "repo": "heavenzip",
+      "when": "2026-10-30T16:46:49Z",
+      "text": ""
+    },
+    {
+      "type": "Release",
+      "repo": "eon-commando",
+      "when": "2026-11-01T06:08:08Z",
+      "text": ""
+    },
+    {
+      "type": "Release",
+      "repo": "eon-commando",
+      "when": "2026-11-01T06:01:59Z",
+      "text": ""
+    },
+    {
+      "type": "Release",
+      "repo": "eon-commando",
+      "when": "2026-11-01T05:57:49Z",
+      "text": ""
+    },
+    {
+      "type": "Release",
+      "repo": "eon-commando",
+      "when": "2026-11-01T05:49:19Z",
+      "text": ""
     },
     {
       "type": "Push",
       "repo": "lexora",
-      "when": "2026-10-29T05:40:37Z",
+      "when": "2026-10-30T18:23:42Z",
       "text": "pushed to main"
     },
     {
       "type": "Release",
-      "repo": "Scrap-and-Gun",
-      "when": "2026-10-31T09:12:45Z",
+      "repo": "eon-commando",
+      "when": "2026-11-01T05:38:26Z",
       "text": ""
     },
     {
-      "type": "Release",
-      "repo": "Scrap-and-Gun",
-      "when": "2026-10-31T09:05:18Z",
-      "text": ""
-    },
-    {
-      "type": "Discussion",
-      "repo": "open-materia-medica",
-      "when": "2026-10-31T08:47:23Z",
-      "text": ""
-    },
-    {
-      "type": "Release",
-      "repo": "Scrap-and-Gun",
-      "when": "2026-10-31T08:45:26Z",
-      "text": ""
-    },
-    {
-      "type": "Release",
-      "repo": "app-lantern",
-      "when": "2026-10-31T07:43:00Z",
-      "text": ""
-    },
-    {
-      "type": "PullRequest",
-      "repo": "audit",
-      "when": "2026-10-31T07:37:22Z",
-      "text": "merged: "
-    },
-    {
-      "type": "PullRequest",
+      "type": "Push",
       "repo": "ziptastic",
-      "when": "2026-10-31T07:37:17Z",
-      "text": "merged: "
+      "when": "2026-10-30T15:59:16Z",
+      "text": "pushed to main"
     },
     {
-      "type": "PullRequest",
-      "repo": "heavenzip",
-      "when": "2026-10-31T07:37:14Z",
-      "text": "merged: "
+      "type": "Push",
+      "repo": "HCS",
+      "when": "2026-10-30T17:16:47Z",
+      "text": "pushed to main"
     },
     {
-      "type": "PullRequest",
+      "type": "Push",
+      "repo": "whispering-body-first-aid",
+      "when": "2026-10-30T18:14:06Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "ui-kit",
+      "when": "2026-10-30T18:14:00Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "the-symphony-companion",
+      "when": "2026-10-30T18:13:58Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Release",
+      "repo": "eon-commando",
+      "when": "2026-11-01T05:22:47Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
       "repo": "ai-bridge",
-      "when": "2026-10-31T07:37:07Z",
-      "text": "merged: "
+      "when": "2026-10-30T18:01:57Z",
+      "text": "pushed to main"
     },
     {
-      "type": "PullRequest",
-      "repo": "audit",
-      "when": "2026-10-31T07:36:12Z",
-      "text": "opened: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "ziptastic",
-      "when": "2026-10-31T07:36:01Z",
-      "text": "opened: "
+      "type": "Push",
+      "repo": "HCS",
+      "when": "2026-10-30T15:22:37Z",
+      "text": "pushed to main"
     }
   ],
   "automation": [
@@ -342,8 +350,8 @@
       "what": "this dashboard",
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/41261881879",
-      "last_run": "2026-11-01T01:37:58Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/41282595932",
+      "last_run": "2026-11-01T06:53:23Z",
       "conclusion": "in_progress"
     },
     {
@@ -447,7 +455,7 @@
       "link": "https://github.com/drsamonline/forge"
     },
     {
-      "what": "Apps live — 92 products, 92 of them pushed in the last 30 days",
+      "what": "Apps live — 93 products, 93 of them pushed in the last 30 days",
       "state": "done",
       "link": "https://drsamonline.github.io/"
     },
@@ -466,8 +474,8 @@
     "planned": 153,
     "built": 2,
     "unbuilt": 151,
-    "live_products": 73,
-    "live_not_planned": 71,
+    "live_products": 74,
+    "live_not_planned": 72,
     "link": "https://github.com/drsamonline/dashboard/blob/main/plan.json"
   },
   "paused": [
@@ -1056,6 +1064,14 @@
     "window": "14 days",
     "note": "Last 14 days — GitHub's retention window.",
     "repos": {
+      "app-thermals": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
       "ziptastic": {
         "views": 36,
         "uniques": 1,
@@ -2617,9 +2633,30 @@
   },
   "repos": [
     {
+      "name": "app-thermals",
+      "description": "Homoeopathic remedies by thermal reaction — what each classical source actually says, quoted in its own words with the source named, and where the sources do not say the same thing. Offline, no accounts.",
+      "pushed_at": "2026-11-01T06:51:36Z",
+      "homepage": "https://drsamonline.github.io/app-thermals/",
+      "html_url": "https://github.com/drsamonline/app-thermals",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
       "name": "ziptastic",
       "description": "The CHCE native engine — a single binary with the codecs embedded.",
-      "pushed_at": "2026-10-31T21:46:23Z",
+      "pushed_at": "2026-11-01T06:18:05Z",
       "homepage": "https://drsamonline.github.io/ziptastic/",
       "html_url": "https://github.com/drsamonline/ziptastic",
       "download": "",
@@ -2634,13 +2671,13 @@
         0,
         0,
         0,
-        0
+        1
       ]
     },
     {
       "name": "eon-commando",
       "description": "EON COMMANDO — a retro run-and-gun platformer in one self-contained HTML file: three eras, five weapons, three bosses, chiptune audio. No dependencies, works offline.",
-      "pushed_at": "2026-10-31T21:43:55Z",
+      "pushed_at": "2026-11-01T06:13:34Z",
       "homepage": "https://drsamonline.github.io/eon-commando/",
       "html_url": "https://github.com/drsamonline/eon-commando",
       "download": "",
@@ -2655,13 +2692,13 @@
         0,
         0,
         0,
-        0
+        1
       ]
     },
     {
       "name": "dumps-4",
       "description": "Pre-merge backups (part 4). Written by drsamonline/backup.",
-      "pushed_at": "2026-10-31T21:42:31Z",
+      "pushed_at": "2026-11-01T04:58:03Z",
       "homepage": "https://drsamonline.github.io/dumps-4/",
       "html_url": "https://github.com/drsamonline/dumps-4",
       "download": "",
@@ -2676,7 +2713,7 @@
         0,
         0,
         0,
-        0
+        1
       ]
     },
     {
@@ -4650,11 +4687,19 @@
     },
     {
       "date": "2026-11-01",
-      "products": 73,
+      "products": 74,
       "kits": 13,
       "avg": 4.6,
-      "pushes": 103,
-      "byrepo": {},
+      "pushes": 104,
+      "byrepo": {
+        "app-thermals": 1,
+        "ziptastic": 1,
+        "eon-commando": 1,
+        "forge": 1,
+        "dashboard": 1,
+        "dumps-4": 1,
+        "knowledge": 1
+      },
       "stars": 77,
       "forks": 1,
       "watchers": 77
