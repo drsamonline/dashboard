@@ -2,17 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "0f9c1ef6cb5f",
-      "at": "2026-10-25T13:05:59Z",
-      "workflow": "self-diagnose",
-      "outcome": "ok",
-      "note": "machinery check: 39 workflows, 2 scheduled, 15 errors, 0 not firing",
-      "files": {},
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "36b7b50a2ee6",
       "at": "2026-10-26T05:00:00Z",
       "workflow": "batch-keyboard",
@@ -506,6 +495,19 @@
       "outcome": "ok",
       "note": "weekly lessons from the record: 157 runs, 63 in the harvest queue; detectors, the harvest queue, and work that repeats",
       "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "9b6b9916df28",
+      "at": "2026-11-02T01:25:00Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "built app-organon-reader from master-list #132 (156/291 sections, OCR losses named not renumbered; 20/20 suite, bites twice; Pages live; EXE/APK release); refresh dispatched to 4 owning repos; health 92/96 green, 3 red and all real defects, none a re-run candidate",
+      "files": {
+        "app-organon-reader": "https://github.com/drsamonline/app-organon-reader"
+      },
       "advanced": [],
       "errors": [],
       "retries": 0
