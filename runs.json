@@ -2,19 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "0cdda47be644",
-      "at": "2026-10-26T06:00:00Z",
-      "workflow": "batch-coverage",
-      "outcome": "ok",
-      "note": "batch-coverage (owner: go). THE GAP I FLAGGED LAST TIME, CLOSED: every batch since the export had been gated on the app already carrying the export instrumentation, so the SAME 14 apps got export, restore, undo and keyboard while ~28 got nothing. This was the coverage pass - all four in ONE insertion, against the repos that had been skipped: 28 MORE APPS. THE COUNT THAT MATTERS (not what I added, what is THERE): 42 apps have a page, export 40, restore 40, undo 40, keyboard 41. THAT IS THE DIFFERENCE between the batches that looked successful and a batch that actually covered the estate - the first counts additions, the second counts presence. Worth recording as its own lesson: A BATCH THAT REPORTS SUCCESS AGAINST ITS OWN FILTER HAS PROVED NOTHING ABOUT THE ESTATE.",
-      "files": [
-        "(28 apps) export + restore + undo + keyboard"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "4e28092c518f",
       "at": "2026-10-26T07:00:00Z",
       "workflow": "close-the-gaps",
@@ -505,6 +492,19 @@
       "workflow": "forge-cycle",
       "outcome": "ok",
       "note": "app-organon-reader 1.1.0: text rectified from three scans of the 1922 Boericke printing, 156 -> 255 of 291 sections, per-section provenance, 21/21, CI green",
+      "files": {
+        "app-organon-reader": "https://github.com/drsamonline/app-organon-reader"
+      },
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "2050cdc27bf9",
+      "at": "2026-11-02T02:50:00Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "app-organon-reader 1.2.0: section list + jump + next/previous + arrow keys, gaps shown in place; sixth-edition-only source guard; 26/26, CI green",
       "files": {
         "app-organon-reader": "https://github.com/drsamonline/app-organon-reader"
       },
