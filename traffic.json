@@ -4,6 +4,61 @@
   "window": "14 days",
   "note": "Last 14 days — GitHub's retention window.",
   "repos": {
+    "neon-engine": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 301,
+      "clone_uniques": 114,
+      "referrers": [],
+      "paths": []
+    },
+    "ziptastic": {
+      "views": 39,
+      "uniques": 2,
+      "clones": 317,
+      "clone_uniques": 123,
+      "referrers": [
+        {
+          "from": "github.com",
+          "count": 4
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/ziptastic/tree/main",
+          "count": 9,
+          "title": "/tree/main"
+        },
+        {
+          "path": "/drsamonline/ziptastic/tree/main/src/engine",
+          "count": 6,
+          "title": "/tree/main/src/engine"
+        },
+        {
+          "path": "/drsamonline/ziptastic",
+          "count": 4,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/ziptastic/new/main",
+          "count": 3,
+          "title": "/new/main"
+        },
+        {
+          "path": "/drsamonline/ziptastic/tree/delete/main/src",
+          "count": 3,
+          "title": "/tree/delete/main/src"
+        }
+      ]
+    },
+    "lumen": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 0,
+      "clone_uniques": 0,
+      "referrers": [],
+      "paths": []
+    },
     "repertory-reader": {
       "views": 0,
       "uniques": 0,
@@ -54,53 +109,6 @@
           "title": "/tree/main/repertory/repertorium-publicum-2008"
         }
       ]
-    },
-    "ziptastic": {
-      "views": 39,
-      "uniques": 2,
-      "clones": 317,
-      "clone_uniques": 123,
-      "referrers": [
-        {
-          "from": "github.com",
-          "count": 4
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/ziptastic/tree/main",
-          "count": 9,
-          "title": "/tree/main"
-        },
-        {
-          "path": "/drsamonline/ziptastic/tree/main/src/engine",
-          "count": 6,
-          "title": "/tree/main/src/engine"
-        },
-        {
-          "path": "/drsamonline/ziptastic",
-          "count": 4,
-          "title": "Overview"
-        },
-        {
-          "path": "/drsamonline/ziptastic/new/main",
-          "count": 3,
-          "title": "/new/main"
-        },
-        {
-          "path": "/drsamonline/ziptastic/tree/delete/main/src",
-          "count": 3,
-          "title": "/tree/delete/main/src"
-        }
-      ]
-    },
-    "lumen": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 0,
-      "clone_uniques": 0,
-      "referrers": [],
-      "paths": []
     },
     "bmi-bmr-tdee-macros-fluid-calculator": {
       "views": 0,
@@ -169,14 +177,6 @@
       "uniques": 0,
       "clones": 523,
       "clone_uniques": 174,
-      "referrers": [],
-      "paths": []
-    },
-    "neon-engine": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 301,
-      "clone_uniques": 114,
       "referrers": [],
       "paths": []
     },

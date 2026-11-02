@@ -1,6 +1,6 @@
 {
   "generated": "2026-11-02",
-  "generated_at": "2026-11-02T11:44:51Z",
+  "generated_at": "2026-11-02T12:47:34Z",
   "reckoning": "79 products · 13 kits (role) · avg metadata completeness 4.6/5 · updated automatically.",
   "health": "ok",
   "health_detail": {
@@ -46,28 +46,28 @@
     "avg": 4.6,
     "pushes": 109,
     "byrepo": {
+      "neon-engine": 1,
+      "ziptastic": 1,
+      "lumen": 1,
+      "dashboard": 1,
+      "drsamonline.github.io": 1,
       "repertory-reader": 1,
       "homoeopathic-materia-medica-repertory-json": 1,
-      "drsamonline.github.io": 1,
       "audit": 1,
       "skills": 1,
       "drsamonline": 1,
-      "ziptastic": 1,
-      "lumen": 1,
       "bmi-bmr-tdee-macros-fluid-calculator": 1,
       "offline-pdf-toolkit": 1,
       "HMS": 1,
       "today-card": 1,
       "seance": 1,
       "neon-games": 1,
-      "neon-engine": 1,
       "lan-kit": 1,
       "game-kit": 1,
       "export-kit": 1,
       "astro-kit": 1,
       "ambient-sound-studio": 1,
       "aethelgard-games": 1,
-      "dashboard": 1,
       "forge": 1,
       "musicgen": 1,
       "app-organon-reader": 1,
@@ -83,15 +83,15 @@
   },
   "stats": {
     "metadata_completeness": {
-      "4": 2,
       "5": 65,
-      "3": 5,
+      "3": 4,
+      "4": 3,
       "2": 7
     },
     "conformance": {
-      "4": 2,
       "5": 65,
-      "3": 5,
+      "3": 4,
+      "4": 3,
       "2": 7
     },
     "categories": {
@@ -229,6 +229,84 @@
   "changes": [
     {
       "type": "Push",
+      "repo": "eon-commando",
+      "when": "2026-10-31T21:43:49Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "kent-repertory-explorer",
+      "when": "2026-10-31T05:26:58Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "ziptastic",
+      "when": "2026-10-31T18:06:50Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "app-jacquard",
+      "when": "2026-10-30T19:17:48Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "backup",
+      "when": "2026-10-31T19:50:48Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Create",
+      "repo": "app-jacquard",
+      "when": "2026-10-30T19:06:19Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
+      "repo": "remedy-relationship-explorer",
+      "when": "2026-10-30T18:30:23Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "PullRequest",
+      "repo": "lumen",
+      "when": "2026-11-02T10:09:44Z",
+      "text": "closed: "
+    },
+    {
+      "type": "Push",
+      "repo": "eon-commando",
+      "when": "2026-10-31T20:53:33Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "eon-commando",
+      "when": "2026-10-31T20:53:28Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "eon-commando",
+      "when": "2026-10-31T20:53:20Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "drsamonline.github.io",
+      "when": "2026-10-30T18:13:38Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "CLDR",
+      "when": "2026-10-30T18:13:35Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
       "repo": "ziptastic",
       "when": "2026-10-31T18:54:35Z",
       "text": "pushed to main"
@@ -268,84 +346,6 @@
       "repo": "neon-velocity",
       "when": "2026-10-30T18:04:49Z",
       "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "eon-commando",
-      "when": "2026-10-31T20:53:31Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "eon-commando",
-      "when": "2026-10-31T20:53:24Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "eon-commando",
-      "when": "2026-10-31T20:53:24Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "eon-commando",
-      "when": "2026-10-31T20:53:23Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "eon-commando",
-      "when": "2026-10-31T20:53:20Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "eon-commando",
-      "when": "2026-10-31T20:53:19Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "eon-commando",
-      "when": "2026-10-31T20:53:36Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "eon-commando",
-      "when": "2026-10-31T20:53:15Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "ziptastic",
-      "when": "2026-10-31T19:34:57Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "Scrap-and-Gun",
-      "when": "2026-10-31T02:55:40Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "dashboard",
-      "when": "2026-10-31T02:55:22Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "skills",
-      "when": "2026-10-30T17:48:56Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Create",
-      "repo": "skills",
-      "when": "2026-10-30T17:48:37Z",
-      "text": ""
     }
   ],
   "automation": [
@@ -356,8 +356,8 @@
       "what": "the project hub",
       "schedule": "daily 03:17 UTC",
       "repo_url": "https://github.com/drsamonline/drsamonline.github.io",
-      "url": "https://github.com/drsamonline/drsamonline.github.io/actions/runs/41438343207",
-      "last_run": "2026-11-02T11:40:28Z",
+      "url": "https://github.com/drsamonline/drsamonline.github.io/actions/runs/41439218132",
+      "last_run": "2026-11-02T11:45:32Z",
       "conclusion": "success"
     },
     {
@@ -378,8 +378,8 @@
       "what": "this dashboard",
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/41439179864",
-      "last_run": "2026-11-02T11:44:37Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/41447515393",
+      "last_run": "2026-11-02T12:47:24Z",
       "conclusion": "in_progress"
     },
     {
@@ -542,6 +542,13 @@
         "html_url": "https://github.com/drsamonline/neon-runner"
       },
       {
+        "name": "neon-engine",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/neon-engine"
+      },
+      {
         "name": "ziptastic",
         "stars": 1,
         "forks": 0,
@@ -589,13 +596,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/neon-games"
-      },
-      {
-        "name": "neon-engine",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/neon-engine"
       },
       {
         "name": "lan-kit",
@@ -1092,6 +1092,61 @@
     "window": "14 days",
     "note": "Last 14 days — GitHub's retention window.",
     "repos": {
+      "neon-engine": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 301,
+        "clone_uniques": 114,
+        "referrers": [],
+        "paths": []
+      },
+      "ziptastic": {
+        "views": 39,
+        "uniques": 2,
+        "clones": 317,
+        "clone_uniques": 123,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 4
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/ziptastic/tree/main",
+            "count": 9,
+            "title": "/tree/main"
+          },
+          {
+            "path": "/drsamonline/ziptastic/tree/main/src/engine",
+            "count": 6,
+            "title": "/tree/main/src/engine"
+          },
+          {
+            "path": "/drsamonline/ziptastic",
+            "count": 4,
+            "title": "Overview"
+          },
+          {
+            "path": "/drsamonline/ziptastic/new/main",
+            "count": 3,
+            "title": "/new/main"
+          },
+          {
+            "path": "/drsamonline/ziptastic/tree/delete/main/src",
+            "count": 3,
+            "title": "/tree/delete/main/src"
+          }
+        ]
+      },
+      "lumen": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
       "repertory-reader": {
         "views": 0,
         "uniques": 0,
@@ -1142,53 +1197,6 @@
             "title": "/tree/main/repertory/repertorium-publicum-2008"
           }
         ]
-      },
-      "ziptastic": {
-        "views": 39,
-        "uniques": 2,
-        "clones": 317,
-        "clone_uniques": 123,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 4
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/ziptastic/tree/main",
-            "count": 9,
-            "title": "/tree/main"
-          },
-          {
-            "path": "/drsamonline/ziptastic/tree/main/src/engine",
-            "count": 6,
-            "title": "/tree/main/src/engine"
-          },
-          {
-            "path": "/drsamonline/ziptastic",
-            "count": 4,
-            "title": "Overview"
-          },
-          {
-            "path": "/drsamonline/ziptastic/new/main",
-            "count": 3,
-            "title": "/new/main"
-          },
-          {
-            "path": "/drsamonline/ziptastic/tree/delete/main/src",
-            "count": 3,
-            "title": "/tree/delete/main/src"
-          }
-        ]
-      },
-      "lumen": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 0,
-        "clone_uniques": 0,
-        "referrers": [],
-        "paths": []
       },
       "bmi-bmr-tdee-macros-fluid-calculator": {
         "views": 0,
@@ -1257,14 +1265,6 @@
         "uniques": 0,
         "clones": 523,
         "clone_uniques": 174,
-        "referrers": [],
-        "paths": []
-      },
-      "neon-engine": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 301,
-        "clone_uniques": 114,
         "referrers": [],
         "paths": []
       },
@@ -2793,6 +2793,72 @@
   },
   "repos": [
     {
+      "name": "neon-engine",
+      "description": "A code-only open-world game engine for the browser — no assets, no dependencies; every texture, mesh and sound is generated at runtime.",
+      "pushed_at": "2026-11-02T12:44:55Z",
+      "homepage": "https://drsamonline.github.io/neon-engine/",
+      "html_url": "https://github.com/drsamonline/neon-engine",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "ziptastic",
+      "description": "The CHCE native engine — a single binary with the codecs embedded.",
+      "pushed_at": "2026-11-02T12:21:13Z",
+      "homepage": "https://drsamonline.github.io/ziptastic/",
+      "html_url": "https://github.com/drsamonline/ziptastic",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "3/5",
+      "status_tone": "warn",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "lumen",
+      "description": "Lumen — a fast, fully offline photo library in the spirit of Google Picasa. Windows, Linux and Android from one Flutter codebase.",
+      "pushed_at": "2026-11-02T12:20:04Z",
+      "homepage": "https://drsamonline.github.io/lumen/",
+      "html_url": "https://github.com/drsamonline/lumen",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "4/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
       "name": "repertory-reader",
       "description": "A quiet reading room for seventeen classical homoeopathic repertories — 271,421 rubrics and 744,394 graded remedy links, read straight from the open JSON library. No account, no server, no tracking, no build step.",
       "pushed_at": "2026-11-02T11:43:39Z",
@@ -2831,50 +2897,6 @@
         0,
         0,
         1,
-        0,
-        0,
-        1
-      ]
-    },
-    {
-      "name": "ziptastic",
-      "description": "The CHCE native engine — a single binary with the codecs embedded.",
-      "pushed_at": "2026-11-02T10:55:36Z",
-      "homepage": "https://drsamonline.github.io/ziptastic/",
-      "html_url": "https://github.com/drsamonline/ziptastic",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "3/5",
-      "status_tone": "warn",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "lumen",
-      "description": "Lumen — a fast, fully offline photo library in the spirit of Google Picasa. Windows, Linux, macOS and Android from one Flutter codebase.",
-      "pushed_at": "2026-11-02T10:43:25Z",
-      "homepage": "https://drsamonline.github.io/lumen/",
-      "html_url": "https://github.com/drsamonline/lumen",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "3/5",
-      "status_tone": "warn",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         0,
         0,
         1
@@ -3007,28 +3029,6 @@
         0,
         1,
         0,
-        0,
-        0,
-        1
-      ]
-    },
-    {
-      "name": "neon-engine",
-      "description": "A code-only open-world game engine for the browser — no assets, no dependencies; every texture, mesh and sound is generated at runtime.",
-      "pushed_at": "2026-11-02T07:23:21Z",
-      "homepage": "https://drsamonline.github.io/neon-engine/",
-      "html_url": "https://github.com/drsamonline/neon-engine",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         0,
         0,
         1
@@ -5080,28 +5080,28 @@
       "avg": 4.6,
       "pushes": 109,
       "byrepo": {
+        "neon-engine": 1,
+        "ziptastic": 1,
+        "lumen": 1,
+        "dashboard": 1,
+        "drsamonline.github.io": 1,
         "repertory-reader": 1,
         "homoeopathic-materia-medica-repertory-json": 1,
-        "drsamonline.github.io": 1,
         "audit": 1,
         "skills": 1,
         "drsamonline": 1,
-        "ziptastic": 1,
-        "lumen": 1,
         "bmi-bmr-tdee-macros-fluid-calculator": 1,
         "offline-pdf-toolkit": 1,
         "HMS": 1,
         "today-card": 1,
         "seance": 1,
         "neon-games": 1,
-        "neon-engine": 1,
         "lan-kit": 1,
         "game-kit": 1,
         "export-kit": 1,
         "astro-kit": 1,
         "ambient-sound-studio": 1,
         "aethelgard-games": 1,
-        "dashboard": 1,
         "forge": 1,
         "musicgen": 1,
         "app-organon-reader": 1,
