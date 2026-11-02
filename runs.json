@@ -2,19 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "36b7b50a2ee6",
-      "at": "2026-10-26T05:00:00Z",
-      "workflow": "batch-keyboard",
-      "outcome": "ok",
-      "note": "batch-keyboard (owner: go). KEYBOARD ACCESS, BATCHED THE SAME WAY: hooked at DOCUMENT, not at each app's internals - the same reasoning as the undo hooking the store. `/` focuses search, `?` shows the shortcuts, Esc leaves a field, and it NEVER STEALS A KEY WHILE A FIELD HAS FOCUS, because a shortcut that eats your typing is a bug wearing a feature's clothes. Also a real :focus-visible ring - most of these apps removed the default outline and never replaced it, so a keyboard user had no idea where they were; a keyboard you cannot see is not access. ADDED TO 14 APPS. THE HONEST GAP THIS EXPOSES: every batch since the export has been gated on the app already carrying the export instrumentation, so the SAME 14 apps now have export, restore, undo AND keyboard - and the other ~28 have none of the four. The batches converged on a subset instead of covering the estate, which is the opposite of what batching was for. NEXT: run all four snippets against the repos that were skipped, which is one pass rather than four.",
-      "files": [
-        "(14 apps) keyboard access"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "0cdda47be644",
       "at": "2026-10-26T06:00:00Z",
       "workflow": "batch-coverage",
@@ -505,6 +492,19 @@
       "workflow": "forge-cycle",
       "outcome": "ok",
       "note": "built app-organon-reader from master-list #132 (156/291 sections, OCR losses named not renumbered; 20/20 suite, bites twice; Pages live; EXE/APK release); refresh dispatched to 4 owning repos; health 92/96 green, 3 red and all real defects, none a re-run candidate",
+      "files": {
+        "app-organon-reader": "https://github.com/drsamonline/app-organon-reader"
+      },
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "1f4b4c01891e",
+      "at": "2026-11-02T02:05:00Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "app-organon-reader 1.1.0: text rectified from three scans of the 1922 Boericke printing, 156 -> 255 of 291 sections, per-section provenance, 21/21, CI green",
       "files": {
         "app-organon-reader": "https://github.com/drsamonline/app-organon-reader"
       },
