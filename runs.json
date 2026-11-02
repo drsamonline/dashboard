@@ -2,19 +2,6 @@
   "count": 40,
   "runs": [
     {
-      "id": "4e28092c518f",
-      "at": "2026-10-26T07:00:00Z",
-      "workflow": "close-the-gaps",
-      "outcome": "ok",
-      "note": "close-the-gaps (owner: complete this and tell me how much we completed). THE FOUR GAPS THE LAST AUDIT MEASURED, CLOSED IN ONE PASS ACROSS 29 REPOS: a smoke test where there was none, a viewport and no fixed widths so it works on a phone, a table that scrolls inside itself, and a version so the licence has something to be released under. THE DIFFERENCE FROM THE EARLIER BATCHES: those each fixed one class against a filter that had quietly narrowed to the same 14 apps; this one counted what was PRESENT across every app and fixed what was missing, in one pass. FINAL COUNT (42 apps with a page): four 42, licence 42, smoke 19, version 42, viewport 40, mobile-clean 31.",
-      "files": [
-        "(29 repos) smoke test + mobile + viewport + version"
-      ],
-      "advanced": [],
-      "errors": [],
-      "retries": 0
-    },
-    {
       "id": "428290048289",
       "at": "2026-10-26T08:00:00Z",
       "workflow": "final-count-at-commit",
@@ -505,6 +492,19 @@
       "workflow": "forge-cycle",
       "outcome": "ok",
       "note": "app-organon-reader 1.2.0: section list + jump + next/previous + arrow keys, gaps shown in place; sixth-edition-only source guard; 26/26, CI green",
+      "files": {
+        "app-organon-reader": "https://github.com/drsamonline/app-organon-reader"
+      },
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "3b7e9a9f26ba",
+      "at": "2026-11-02T07:00:00Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "app-organon-reader 1.3.0: all 291 sections (MediT transcription, corroborated median 0.981 against 3 scans); owner's three sources audited, two refused with reasons; footnotes separated; 29/29; CI green",
       "files": {
         "app-organon-reader": "https://github.com/drsamonline/app-organon-reader"
       },
