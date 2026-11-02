@@ -32,16 +32,19 @@
       "at": "2026-11-02T19:00:00Z",
       "workflow": "forge-cycle",
       "outcome": "ok",
-      "note": "closed rule-rule-shape (P1) with tools/rules.py green at 9/9 rules, BACKLOG regenerated to 33 of 49; recorded the fourth credential failure in PROMPTS/access.md + registry/false-completions.md; credential-guard --check green; refresh outputs already current (dashboard/Matneo/knowledge ~10.3h, nothing dispatched); fleet health 100 public repos: 3 red - ziptastic vendor-check (28 stale .gitmodules entries, fix built and verified locally, not landed), ai-bridge Windows file-write tests, audit health (downstream of forge health.yml/new-app.yml)",
+      "note": "closed rule-rule-shape (P1) with tools/rules.py green at 9/9 rules, BACKLOG regenerated to 33 of 49; recorded the fourth credential failure in PROMPTS/access.md + registry/false-completions.md; credential-guard --check green; refresh outputs already current (dashboard/Matneo/knowledge ~10.3h, nothing dispatched); fleet health 100 public repos: 3 red - ziptastic vendor-check (28 stale .gitmodules entries, fix built and verified locally, not landed), ai-bridge Windows file-write tests, audit health (downstream of forge health.yml/new-app.yml); ziptastic fix landed as PR#2 (28 problems -> vendor OK, verified locally); credential-guard green in CI on this commit (41505808633)",
       "files": {
         "BACKLOG.md": "forge",
         "registry/backlog-done.json": "forge",
         "PROMPTS/access.md": "forge",
-        "registry/false-completions.md": "forge"
+        "registry/false-completions.md": "forge",
+        "forge": "https://github.com/drsamonline/forge/commit/051a9215ca06e878ea25cf8c3a3b4e335cf7f14e",
+        "ziptastic-pr": "https://github.com/drsamonline/ziptastic/pull/2"
       },
       "advanced": [],
       "errors": [
-        "ziptastic vendor-check: fix verified locally, not pushed"
+        "forge new-app.yml / kit-audit.yml / log-append.yml still failing - cause unread, not retried",
+        "ai-bridge CI: 4 Windows file-write test failures - untouched"
       ],
       "retries": 0
     }
