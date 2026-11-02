@@ -1,5 +1,5 @@
 {
-  "count": 1,
+  "count": 3,
   "runs": [
     {
       "id": "f2b8c1d47a90",
@@ -14,6 +14,35 @@
         "neon-engine"
       ],
       "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "e01c56dc2e63",
+      "at": "2026-11-02T16:49:40Z",
+      "workflow": "repo-learning",
+      "outcome": "ok",
+      "note": "weekly lessons from the record: 1 runs, 63 in the harvest queue; detectors, the harvest queue, and work that repeats",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "a71e4c9b0d32",
+      "at": "2026-11-02T19:00:00Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "closed rule-rule-shape (P1) with tools/rules.py green at 9/9 rules, BACKLOG regenerated to 33 of 49; recorded the fourth credential failure in PROMPTS/access.md + registry/false-completions.md; credential-guard --check green; refresh outputs already current (dashboard/Matneo/knowledge ~10.3h, nothing dispatched); fleet health 100 public repos: 3 red - ziptastic vendor-check (28 stale .gitmodules entries, fix built and verified locally, not landed), ai-bridge Windows file-write tests, audit health (downstream of forge health.yml/new-app.yml)",
+      "files": {
+        "BACKLOG.md": "forge",
+        "registry/backlog-done.json": "forge",
+        "PROMPTS/access.md": "forge",
+        "registry/false-completions.md": "forge"
+      },
+      "advanced": [],
+      "errors": [
+        "ziptastic vendor-check: fix verified locally, not pushed"
+      ],
       "retries": 0
     }
   ],
