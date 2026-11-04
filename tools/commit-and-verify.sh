@@ -67,11 +67,15 @@ git config user.email >/dev/null 2>&1 || git config user.email "${GIT_AUTHOR_EMA
 MANIFEST="$(mktemp)"
 present=0
 for f in "${PATHS[@]}"; do
-  if [ -e "$f" ]; then
+  # -f, not -e: a DIRECTORY passed here would make `git hash-object` fail and be
+  # recorded as an empty sha, which the verdict would then report as "did not land" -
+  # a false red. intake.yml legitimately stages a path that may be a directory, so
+  # this must warn and skip rather than lie.
+  if [ -f "$f" ]; then
     printf '%s %s\n' "$(git hash-object -- "$f")" "$f" >> "$MANIFEST"
     present=$((present+1))
   else
-    echo "::warning::$f was not produced by this run - not committed, not verified"
+    echo "::warning::$f is not a regular file (missing, or a directory) - not verified"
   fi
 done
 
@@ -81,6 +85,15 @@ if [ "$present" -eq 0 ]; then
   exit 1
 fi
 
+# MANIFEST.json is written by every generator alongside its output. Use
+# git status --porcelain, not git diff — git diff does not see untracked files, so
+# a MANIFEST.json created on this run (the first run after bootstrap in a repo the
+# bootstrap missed) would be silently dropped.
+if [ -f MANIFEST.json ] && [ -n "$(git status --porcelain -- MANIFEST.json 2>/dev/null)" ]; then
+  _have_manifest=0
+  for _p in "${PATHS[@]}"; do [ "$_p" = "MANIFEST.json" ] && _have_manifest=1; done
+  [ "$_have_manifest" -eq 1 ] || PATHS+=("MANIFEST.json")
+fi
 git add -- "${PATHS[@]}" 2>/dev/null || true
 
 # NOT an early exit. "Nothing staged" does NOT mean "the data is on the branch" -
