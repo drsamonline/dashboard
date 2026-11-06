@@ -166,8 +166,8 @@ footer{max-width:1320px;margin:0 auto;padding:14px 12px 30px;color:var(--mut);fo
   </div>
   </div></details>
 
-  <div class="sec">Built vs planned</div>
-<details class="box"><summary>Built vs planned</summary><div class="body">
+  <div class="sec">Ideas matched vs planned</div>
+<details class="box"><summary>Ideas matched vs planned</summary><div class="body">
   <div class="panel" id="planPanel"><p class="mut" style="margin:0">Loading…</p></div>
 </div></details>
   <div class="sec">Community</div>
@@ -202,6 +202,7 @@ Example: A one-off bell that ends a meeting on time, over the room's Wi-Fi. It r
   <div class="sec">Self-updating</div>
 <details class="box"><summary>What updates itself</summary><div class="body">
   <div class="tw"><table><thead><tr><th>What updates</th><th>Workflow</th><th>Schedule</th><th>Last run</th></tr></thead><tbody id="automation"></tbody></table></div>
+  <p class="mut" id="automationNote" style="margin:8px 0 0"></p>
 </div></details>
   <div class="grid2" style="margin-top:9px">
     <div>
@@ -315,15 +316,15 @@ fetch("data.json",{cache:"no-store"}).then(function(r){return r.json()}).then(fu
   var pl=d.plan||null;
   if(pl&&pl.planned){
     var pp=Math.max(2,Math.round((pl.built||0)/(pl.planned||1)*100));
-    $("planPanel").innerHTML='<div class="barrow"><span>of the plan built</span><span class="track"><span class="fill" data-w="'+pp+'" style="background:linear-gradient(90deg,#8b5cf6,#22d3ee)"></span></span><span class="num">'+(pl.built||0)+'/'+pl.planned+'</span></div>'
+    $("planPanel").innerHTML='<div class="barrow"><span>of the plan matched to a live repo</span><span class="track"><span class="fill" data-w="'+pp+'" style="background:linear-gradient(90deg,#8b5cf6,#22d3ee)"></span></span><span class="num">'+(pl.built||0)+'/'+pl.planned+'</span></div>'
       +'<div class="kpis" style="margin-top:9px">'
       +'<div class="kpi"><div class="k">Planned ideas</div><div class="v">'+pl.planned+'</div></div>'
-      +'<div class="kpi g"><div class="k">Built (matched)</div><div class="v">'+(pl.built||0)+'</div></div>'
+      +'<div class="kpi g"><div class="k">Matched (name)</div><div class="v">'+(pl.built||0)+'</div></div>'
       +'<div class="kpi a"><div class="k">Unbuilt</div><div class="v">'+(pl.unbuilt||0)+'</div></div>'
       +'<div class="kpi b"><div class="k">Live products</div><div class="v">'+(pl.live_products||0)+'</div></div>'
       +'<div class="kpi"><div class="k">Live, not on the plan</div><div class="v">'+(pl.live_not_planned||0)+'</div></div>'
       +'</div>'
-      +'<p class="mut" style="margin:8px 0 0">The idea list is a <strong>forward plan</strong>; the live products are what exists. They are different populations, so the overlap is shown honestly. <a href="'+esc(pl.link||"")+'" target="_blank" rel="noopener">plan.json ↗</a></p>';
+      +'<p class="mut" style="margin:8px 0 0">The idea list is a <strong>forward plan</strong>; the live products are what exists. They are different populations, so the overlap is shown honestly. This count is a <strong>name match</strong>, not the owner’s definition of built (working release + landing page + live demo), which the registry measures - the two were once read as the same number. Plan snapshot: '+esc(pl.plan_generated||"—")+'. <a href="'+esc(pl.link||"")+'" target="_blank" rel="noopener">plan.json ↗</a></p>';
     animateFills();
   } else {
     $("planPanel").innerHTML='<p class="mut" style="margin:0">Needs BILLING_TOKEN — the plan lives in the private registry.</p>';
@@ -384,6 +385,11 @@ fetch("data.json",{cache:"no-store"}).then(function(r){return r.json()}).then(fu
   else{$("quota").innerHTML='<p class="mut" style="margin:0">'+esc(q.note||"")+'</p>'+(q.private_runs!=null?'<p class="mut" style="margin:6px 0 0">Private-repo runs: <strong>'+q.private_runs+'</strong></p>':'')}
   animateFills();
 
+  // WHERE THE LIST COMES FROM. It is the control panel's fleet scan, not a hand-kept
+  // table: the old one named eleven of thirty-three workflows and had drifted from its
+  // own schedule text. When the scan could not be read the note says so, because "?"
+  // on the card and an empty table must not read as "there are none".
+  $("automationNote").textContent=(d.automation_note||"")+(d.automation_source==="fleet-scan"?"":" The list is UNKNOWN this run, not empty.");
   $("automation").innerHTML=(d.automation||[]).map(function(a){return '<tr><td><span class="dot '+tone(a.conclusion)+'"></span><strong>'+esc(a.what)+'</strong> <span class="badge v">'+esc(a.repo)+'</span></td><td><a href="'+esc(a.url)+'">'+esc(a.name)+'</a></td><td>'+esc(a.schedule)+'</td><td><span class="badge '+tone(a.conclusion)+'">'+esc(a.conclusion||"—")+'</span> <span class="mut">'+fmt(a.last_run)+'</span></td></tr>'}).join("")||'<tr><td colspan="4">No automation data yet.</td></tr>';
 
   $("roadmap").innerHTML=(d.roadmap||[]).map(function(r){var st=r.state||"",cls=st.indexOf("progress")>=0?"warn":st.indexOf("planned")>=0?"v":"";return '<tr><td><a href="'+esc(r.link)+'">'+esc(r.what)+'</a></td><td><span class="badge '+cls+'">'+esc(st)+'</span></td></tr>'}).join("");
