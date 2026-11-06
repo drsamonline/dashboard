@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-05",
+  "generated": "2026-11-06",
   "totals": {
     "stars": 102,
     "forks": 1,
@@ -26,6 +26,27 @@
       "forks": 1,
       "watchers": 1,
       "html_url": "https://github.com/drsamonline/neon-runner"
+    },
+    {
+      "name": "game-kit",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 1,
+      "html_url": "https://github.com/drsamonline/game-kit"
+    },
+    {
+      "name": "conqueror-os",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 1,
+      "html_url": "https://github.com/drsamonline/conqueror-os"
+    },
+    {
+      "name": "compress-kit",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 1,
+      "html_url": "https://github.com/drsamonline/compress-kit"
     },
     {
       "name": "BLINKTRANSFER",
@@ -124,13 +145,6 @@
       "forks": 0,
       "watchers": 1,
       "html_url": "https://github.com/drsamonline/remedy-relationship-explorer"
-    },
-    {
-      "name": "conqueror-os",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 1,
-      "html_url": "https://github.com/drsamonline/conqueror-os"
     },
     {
       "name": "eon-commando",
@@ -294,13 +308,6 @@
       "html_url": "https://github.com/drsamonline/gentle-pediatrics-companion"
     },
     {
-      "name": "game-kit",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 1,
-      "html_url": "https://github.com/drsamonline/game-kit"
-    },
-    {
       "name": "frame-kit",
       "stars": 1,
       "forks": 0,
@@ -327,13 +334,6 @@
       "forks": 0,
       "watchers": 1,
       "html_url": "https://github.com/drsamonline/crypto-kit"
-    },
-    {
-      "name": "compress-kit",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 1,
-      "html_url": "https://github.com/drsamonline/compress-kit"
     },
     {
       "name": "chalk-lan",
@@ -721,9 +721,26 @@
   "forked_repos": 1,
   "external": {
     "issues": 0,
-    "prs": 0,
-    "items": [],
-    "unknown": true,
-    "error": "FetchError: HTTPError: HTTP Error 422: Unprocessable Entity"
+    "prs": 3,
+    "items": [
+      {
+        "title": "ci: bump actions/checkout from 4 to 7",
+        "repo": "canteen-lan",
+        "url": "https://github.com/drsamonline/canteen-lan/pull/2",
+        "who": "dependabot[bot]"
+      },
+      {
+        "title": "ci: bump actions/setup-node from 4 to 7",
+        "repo": "canteen-lan",
+        "url": "https://github.com/drsamonline/canteen-lan/pull/1",
+        "who": "dependabot[bot]"
+      },
+      {
+        "title": "ci: bump gradle/actions/setup-gradle from 4.4.3 to 4.4.4 in the actions group across 1 directory",
+        "repo": "app-builder",
+        "url": "https://github.com/drsamonline/app-builder/pull/16",
+        "who": "dependabot[bot]"
+      }
+    ]
   }
 }

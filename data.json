@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-05",
-  "generated_at": "2026-11-05T18:46:17Z",
+  "generated": "2026-11-06",
+  "generated_at": "2026-11-06T00:38:15Z",
   "reckoning": "81 products · 13 kits (role) · avg metadata completeness 4.7/5 · updated automatically.",
   "health": "ok",
   "health_detail": {
@@ -47,69 +47,7 @@
     "pushes": 111,
     "byrepo": {
       "app-builder": 1,
-      "BLINKTRANSFER": 1,
-      "HMS": 1,
-      "Matneo": 1,
-      "ai-bridge": 1,
-      "blinkcode-ai": 1,
-      "app-weft-puzzles": 1,
-      "app-organon-reader": 1,
-      "app-lantern": 1,
-      "app-companion-forge": 1,
-      "aethelgard-rpg-engine": 1,
-      "ambient-sound-studio": 1,
-      "aethelgard-games": 1,
-      "musicgen": 1,
-      "Scrap-and-Gun": 1,
-      "remedy-relationship-explorer": 1,
-      "conqueror-os": 1,
-      "eon-commando": 1,
-      "neon-velocity": 1,
-      "whispering-body-first-aid": 1,
-      "web-kit": 1,
-      "unstoppable-mind-companion": 1,
-      "TTB": 1,
-      "the-symphony-companion": 1,
-      "SmartNotes": 1,
-      "skin-case-tracker": 1,
-      "retro-strike": 1,
-      "read-live-transform-app": 1,
-      "optical-kit": 1,
-      "open-materia-medica": 1,
-      "dashboard": 1,
-      "offline-pdf-toolkit": 1,
-      "neon-runner": 1,
-      "neon-games": 1,
-      "neon-engine": 1,
-      "mnemosyne-companion": 1,
-      "MATERIA-MEDICA-BUILDER": 1,
-      "lumen": 1,
-      "lockhtml": 1,
-      "lan-kit": 1,
-      "idle-city-ages-of-growth": 1,
-      "gentle-pediatrics-companion": 1,
-      "game-kit": 1,
-      "frame-kit": 1,
-      "export-kit": 1,
-      "drsamonline.github.io": 1,
-      "dance-fight": 1,
-      "crypto-kit": 1,
-      "compress-kit": 1,
-      "chalk-lan": 1,
-      "boericke-repertory": 1,
-      "bmi-bmr-tdee-macros-fluid-calculator": 1,
-      "astro-kit": 1,
-      "app-encrypted-case-log": 1,
-      "forge": 1,
-      "audit": 1,
-      "drsamonline": 1,
-      "control-panel": 1,
-      "app-panchang": 1,
-      "dumps-4": 1,
-      "app-thermals": 1,
-      "knowledge": 1,
-      "registry": 1,
-      "dumps": 1
+      "game-kit": 1
     }
   },
   "stats": {
@@ -126,8 +64,8 @@
       "3": 1
     },
     "categories": {
-      "HTML Apps": 48,
       "Utilities": 15,
+      "HTML Apps": 48,
       "Games": 6,
       "Homeopathy": 10,
       "Health Tools": 1,
@@ -135,10 +73,6 @@
     }
   },
   "activity": [
-    {
-      "date": "2026-10-23",
-      "count": 0
-    },
     {
       "date": "2026-10-24",
       "count": 0
@@ -189,10 +123,113 @@
     },
     {
       "date": "2026-11-05",
-      "count": 64
+      "count": 62
+    },
+    {
+      "date": "2026-11-06",
+      "count": 2
     }
   ],
-  "attention": [],
+  "attention": [
+    {
+      "title": "web-kit v1.1: the biggest duplicate in the estate is a capability the kit does not have",
+      "repo": "web-kit",
+      "url": "https://github.com/drsamonline/web-kit/issues/3",
+      "kind": "issue",
+      "created": "2026-10-26T00:46:14Z"
+    },
+    {
+      "title": "fix(landing): the deploy check named one screenshot, so the redesign never published",
+      "repo": "ai-bridge",
+      "url": "https://github.com/drsamonline/ai-bridge/pull/3",
+      "kind": "PR",
+      "created": "2026-11-05T18:40:38Z"
+    },
+    {
+      "title": "fix(build): re-stamp at 0.2.3, and let the offline guard see an <a href> as a link",
+      "repo": "app-panchang",
+      "url": "https://github.com/drsamonline/app-panchang/pull/4",
+      "kind": "PR",
+      "created": "2026-11-05T12:42:03Z"
+    },
+    {
+      "title": "chore(manifest): bootstrap the provenance manifest for the published catalogue",
+      "repo": "Matneo",
+      "url": "https://github.com/drsamonline/Matneo/pull/13",
+      "kind": "PR",
+      "created": "2026-11-04T18:44:28Z"
+    },
+    {
+      "title": "test(manifest): prove the gate in a checkout, and prove it refuses",
+      "repo": "app-builder",
+      "url": "https://github.com/drsamonline/app-builder/pull/17",
+      "kind": "PR",
+      "created": "2026-11-04T18:39:55Z"
+    },
+    {
+      "title": "health: one publisher for the health page (stops the 400 that reds every run)",
+      "repo": "audit",
+      "url": "https://github.com/drsamonline/audit/pull/3",
+      "kind": "PR",
+      "created": "2026-11-04T12:38:16Z"
+    },
+    {
+      "title": "test: a scheme is not a path, and a link is not an asset",
+      "repo": "canteen-lan",
+      "url": "https://github.com/drsamonline/canteen-lan/pull/3",
+      "kind": "PR",
+      "created": "2026-11-04T07:29:11Z"
+    },
+    {
+      "title": "feat(3.2.0): optional service worker — offline over HTTP, unchanged from disk",
+      "repo": "conqueror-os",
+      "url": "https://github.com/drsamonline/conqueror-os/pull/13",
+      "kind": "PR",
+      "created": "2026-11-04T01:44:50Z"
+    },
+    {
+      "title": "ci: bump actions/checkout from 4 to 7",
+      "repo": "canteen-lan",
+      "url": "https://github.com/drsamonline/canteen-lan/pull/2",
+      "kind": "PR",
+      "created": "2026-11-03T20:26:33Z"
+    },
+    {
+      "title": "ci: bump actions/setup-node from 4 to 7",
+      "repo": "canteen-lan",
+      "url": "https://github.com/drsamonline/canteen-lan/pull/1",
+      "kind": "PR",
+      "created": "2026-11-03T20:26:16Z"
+    },
+    {
+      "title": "v3.2.0: optional service worker — installable and offline over HTTP, skipped on file://",
+      "repo": "conqueror-os",
+      "url": "https://github.com/drsamonline/conqueror-os/pull/12",
+      "kind": "PR",
+      "created": "2026-11-01T19:00:36Z"
+    },
+    {
+      "title": "ci: run the Python 3.9 leg on ubuntu-22.04",
+      "repo": "lockhtml",
+      "url": "https://github.com/drsamonline/lockhtml/pull/6",
+      "kind": "PR",
+      "created": "2026-11-01T12:50:18Z"
+    },
+    {
+      "title": "docs(licence): the README links the LICENSE it ships",
+      "repo": "audit",
+      "url": "https://github.com/drsamonline/audit/pull/1",
+      "kind": "PR",
+      "created": "2026-10-31T07:35:49Z"
+    },
+    {
+      "title": "ci: bump gradle/actions/setup-gradle from 4.4.3 to 4.4.4 in the actions group across 1 directory",
+      "repo": "app-builder",
+      "url": "https://github.com/drsamonline/app-builder/pull/16",
+      "kind": "PR",
+      "created": "2026-10-30T18:15:49Z"
+    }
+  ],
   "controls": [
     {
       "label": "Refresh project hub",
@@ -261,121 +298,121 @@
     {
       "type": "PullRequest",
       "repo": "app-builder",
-      "when": "2026-11-05T18:45:31Z",
-      "text": "opened: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "Matneo",
-      "when": "2026-11-05T18:41:40Z",
+      "when": "2026-11-06T00:37:53Z",
       "text": "merged: "
     },
     {
       "type": "Push",
-      "repo": "control-panel",
-      "when": "2026-11-05T15:44:36Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "PullRequest",
       "repo": "ai-bridge",
-      "when": "2026-11-05T18:40:38Z",
-      "text": "opened: "
+      "when": "2026-11-05T18:40:33Z",
+      "text": "pushed to landing-shots-and-guard"
     },
     {
       "type": "Push",
-      "repo": "audit",
-      "when": "2026-11-05T15:44:33Z",
+      "repo": "BLINKTRANSFER",
+      "when": "2026-11-05T18:37:45Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "BLINKTRANSFER",
+      "when": "2026-11-05T18:37:42Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "conqueror-os",
+      "when": "2026-11-05T19:35:59Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "compress-kit",
+      "when": "2026-11-05T19:30:36Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "ambient-sound-studio",
+      "when": "2026-11-05T16:48:21Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "app-organon-reader",
+      "when": "2026-11-05T07:58:21Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "BLINKTRANSFER",
+      "when": "2026-11-05T18:55:14Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "blinkcode-ai",
+      "when": "2026-11-05T18:24:05Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "BLINKTRANSFER",
+      "when": "2026-11-05T18:43:13Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "BLINKTRANSFER",
+      "when": "2026-11-05T18:43:11Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Create",
+      "repo": "ai-bridge",
+      "when": "2026-11-05T18:40:27Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
+      "repo": "blinkcode-ai",
+      "when": "2026-11-05T18:10:22Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "aethelgard-rpg-engine",
+      "when": "2026-11-05T17:32:14Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "TTB",
-      "when": "2026-11-03T18:33:23Z",
+      "when": "2026-11-05T15:57:23Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "blinkcode-ai",
-      "when": "2026-11-05T18:24:07Z",
+      "repo": "the-symphony-companion",
+      "when": "2026-11-05T15:57:19Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "homoeopathic-materia-medica-repertory-json",
-      "when": "2026-11-03T18:28:07Z",
+      "repo": "skin-case-tracker",
+      "when": "2026-11-05T15:57:13Z",
       "text": "pushed to main"
-    },
-    {
-      "type": "Create",
-      "repo": "The_Browser",
-      "when": "2026-11-04T19:40:59Z",
-      "text": ""
     },
     {
       "type": "Push",
       "repo": "remedy-relationship-explorer",
-      "when": "2026-11-05T16:06:37Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "app-builder",
-      "when": "2026-11-05T17:07:40Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "homoeopathic-materia-medica-repertory-json",
-      "when": "2026-11-03T18:21:42Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "blinkcode-ai",
-      "when": "2026-11-05T18:14:26Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "blinkcode-ai",
-      "when": "2026-11-05T18:14:24Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "Scrap-and-Gun",
-      "when": "2026-11-05T15:58:53Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Delete",
-      "repo": "HMS",
-      "when": "2026-11-04T20:24:45Z",
-      "text": ""
-    },
-    {
-      "type": "Push",
-      "repo": "The_Browser",
-      "when": "2026-11-04T20:24:05Z",
+      "when": "2026-11-05T15:56:55Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "open-materia-medica",
-      "when": "2026-11-05T15:56:48Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Delete",
-      "repo": "aethelgard-rpg-engine",
-      "when": "2026-11-04T20:23:50Z",
-      "text": ""
-    },
-    {
-      "type": "Push",
-      "repo": "open-materia-medica",
-      "when": "2026-11-05T15:56:24Z",
+      "when": "2026-11-05T15:56:39Z",
       "text": "pushed to main"
     }
   ],
@@ -409,8 +446,8 @@
       "what": "this dashboard",
       "schedule": "daily 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/42087384583",
-      "last_run": "2026-11-05T18:46:02Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/42138239623",
+      "last_run": "2026-11-06T00:38:03Z",
       "conclusion": "in_progress"
     },
     {
@@ -431,9 +468,9 @@
       "what": "the blog",
       "schedule": "daily 04:12 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/runs/41982226528",
-      "last_run": "2026-11-05T06:42:50Z",
-      "conclusion": "success"
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/42138240993",
+      "last_run": "2026-11-06T00:38:02Z",
+      "conclusion": "pending"
     },
     {
       "repo": "Matneo",
@@ -442,9 +479,9 @@
       "what": "the store",
       "schedule": "daily 04:22 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/runs/41982225919",
-      "last_run": "2026-11-05T06:42:42Z",
-      "conclusion": "success"
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/42138239998",
+      "last_run": "2026-11-06T00:38:04Z",
+      "conclusion": "in_progress"
     },
     {
       "repo": "knowledge",
@@ -580,6 +617,27 @@
         "html_url": "https://github.com/drsamonline/neon-runner"
       },
       {
+        "name": "game-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/game-kit"
+      },
+      {
+        "name": "conqueror-os",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/conqueror-os"
+      },
+      {
+        "name": "compress-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/compress-kit"
+      },
+      {
         "name": "BLINKTRANSFER",
         "stars": 1,
         "forks": 0,
@@ -676,13 +734,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/remedy-relationship-explorer"
-      },
-      {
-        "name": "conqueror-os",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/conqueror-os"
       },
       {
         "name": "eon-commando",
@@ -846,13 +897,6 @@
         "html_url": "https://github.com/drsamonline/gentle-pediatrics-companion"
       },
       {
-        "name": "game-kit",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/game-kit"
-      },
-      {
         "name": "frame-kit",
         "stars": 1,
         "forks": 0,
@@ -879,13 +923,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/crypto-kit"
-      },
-      {
-        "name": "compress-kit",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/compress-kit"
       },
       {
         "name": "chalk-lan",
@@ -1273,10 +1310,27 @@
     "forked_repos": 1,
     "external": {
       "issues": 0,
-      "prs": 0,
-      "items": [],
-      "unknown": true,
-      "error": "FetchError: HTTPError: HTTP Error 422: Unprocessable Entity"
+      "prs": 3,
+      "items": [
+        {
+          "title": "ci: bump actions/checkout from 4 to 7",
+          "repo": "canteen-lan",
+          "url": "https://github.com/drsamonline/canteen-lan/pull/2",
+          "who": "dependabot[bot]"
+        },
+        {
+          "title": "ci: bump actions/setup-node from 4 to 7",
+          "repo": "canteen-lan",
+          "url": "https://github.com/drsamonline/canteen-lan/pull/1",
+          "who": "dependabot[bot]"
+        },
+        {
+          "title": "ci: bump gradle/actions/setup-gradle from 4.4.3 to 4.4.4 in the actions group across 1 directory",
+          "repo": "app-builder",
+          "url": "https://github.com/drsamonline/app-builder/pull/16",
+          "who": "dependabot[bot]"
+        }
+      ]
     }
   },
   "traffic": {
@@ -1284,6 +1338,41 @@
     "window": "14 days",
     "note": "Last 14 days — GitHub's retention window.",
     "repos": {
+      "game-kit": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 360,
+        "clone_uniques": 132,
+        "referrers": [],
+        "paths": []
+      },
+      "conqueror-os": {
+        "views": 1,
+        "uniques": 1,
+        "clones": 1219,
+        "clone_uniques": 242,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 1
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/conqueror-os",
+            "count": 1,
+            "title": "Overview"
+          }
+        ]
+      },
+      "compress-kit": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 260,
+        "clone_uniques": 98,
+        "referrers": [],
+        "paths": []
+      },
       "BLINKTRANSFER": {
         "views": 3,
         "uniques": 2,
@@ -1541,25 +1630,6 @@
             "path": "/drsamonline/remedy-relationship-explorer/releases",
             "count": 1,
             "title": "/releases"
-          }
-        ]
-      },
-      "conqueror-os": {
-        "views": 1,
-        "uniques": 1,
-        "clones": 1219,
-        "clone_uniques": 242,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 1
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/conqueror-os",
-            "count": 1,
-            "title": "Overview"
           }
         ]
       },
@@ -2008,14 +2078,6 @@
           }
         ]
       },
-      "game-kit": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 360,
-        "clone_uniques": 132,
-        "referrers": [],
-        "paths": []
-      },
       "frame-kit": {
         "views": 0,
         "uniques": 0,
@@ -2059,14 +2121,6 @@
             "title": "Overview"
           }
         ]
-      },
-      "compress-kit": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 260,
-        "clone_uniques": 98,
-        "referrers": [],
-        "paths": []
       },
       "chalk-lan": {
         "views": 0,
@@ -3065,9 +3119,34 @@
   },
   "repos": [
     {
+      "name": "conqueror-os",
+      "description": "A private, offline resilience workspace in a single HTML file — read, reflect, journal, track and review.",
+      "pushed_at": "2026-11-05T19:39:07Z",
+      "homepage": "https://drsamonline.github.io/conqueror-os/",
+      "html_url": "https://github.com/drsamonline/conqueror-os",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
       "name": "BLINKTRANSFER",
       "description": "Offline file transfer over animated QR codes — no internet, no Bluetooth, no cables.",
-      "pushed_at": "2026-11-05T18:43:13Z",
+      "pushed_at": "2026-11-05T18:55:14Z",
       "homepage": "https://drsamonline.github.io/BLINKTRANSFER/",
       "html_url": "https://github.com/drsamonline/BLINKTRANSFER",
       "download": "",
@@ -3085,7 +3164,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3109,7 +3189,8 @@
         0,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3133,7 +3214,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3157,7 +3239,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3181,7 +3264,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3205,7 +3289,8 @@
         0,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3229,7 +3314,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3253,7 +3339,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3277,7 +3364,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3301,7 +3389,8 @@
         0,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3325,7 +3414,8 @@
         0,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3349,7 +3439,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3373,7 +3464,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3397,31 +3489,8 @@
         0,
         0,
         0,
-        1
-      ]
-    },
-    {
-      "name": "conqueror-os",
-      "description": "A private, offline resilience workspace in a single HTML file — read, reflect, journal, track and review.",
-      "pushed_at": "2026-11-05T16:04:01Z",
-      "homepage": "https://drsamonline.github.io/conqueror-os/",
-      "html_url": "https://github.com/drsamonline/conqueror-os",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        0,
-        1,
-        1
+        0
       ]
     },
     {
@@ -3445,7 +3514,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3469,7 +3539,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3493,7 +3564,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3517,7 +3589,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3541,7 +3614,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3565,7 +3639,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3589,7 +3664,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3613,7 +3689,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3637,7 +3714,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3661,7 +3739,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3685,7 +3764,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3709,7 +3789,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3733,7 +3814,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3757,7 +3839,8 @@
         0,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3781,7 +3864,8 @@
         0,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3805,7 +3889,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3829,7 +3914,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3853,7 +3939,8 @@
         0,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3877,7 +3964,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3901,7 +3989,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3925,7 +4014,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3949,7 +4039,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3973,7 +4064,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3997,7 +4089,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4021,7 +4114,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4045,7 +4139,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4069,7 +4164,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4093,7 +4189,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4117,7 +4214,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4141,7 +4239,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4165,7 +4264,8 @@
         0,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4189,6 +4289,7 @@
         0,
         0,
         1,
+        0,
         0
       ]
     },
@@ -4213,6 +4314,7 @@
         0,
         0,
         1,
+        0,
         0
       ]
     },
@@ -4232,6 +4334,7 @@
         1,
         1,
         1,
+        0,
         0,
         0,
         0,
@@ -4261,6 +4364,7 @@
         0,
         0,
         1,
+        0,
         0
       ]
     },
@@ -4283,6 +4387,7 @@
         1,
         0,
         1,
+        0,
         0,
         0,
         0
@@ -4309,6 +4414,7 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
@@ -4328,6 +4434,7 @@
         1,
         1,
         1,
+        0,
         0,
         0,
         0,
@@ -4357,6 +4464,7 @@
         0,
         0,
         1,
+        0,
         0
       ]
     },
@@ -4381,6 +4489,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -4405,6 +4514,7 @@
         0,
         0,
         1,
+        0,
         0
       ]
     },
@@ -4429,6 +4539,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -4453,6 +4564,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -4477,6 +4589,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -4501,6 +4614,7 @@
         0,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4525,6 +4639,7 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
@@ -4539,6 +4654,7 @@
       "status": "5/5",
       "status_tone": "ok",
       "spark": [
+        0,
         0,
         0,
         0,
@@ -4573,6 +4689,7 @@
         0,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4596,6 +4713,7 @@
         0,
         0,
         1,
+        0,
         0,
         0
       ]
@@ -4621,6 +4739,7 @@
         0,
         1,
         0,
+        0,
         0
       ]
     },
@@ -4635,6 +4754,7 @@
       "status": "5/5",
       "status_tone": "ok",
       "spark": [
+        0,
         0,
         0,
         0,
@@ -4669,6 +4789,7 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
@@ -4683,6 +4804,7 @@
       "status": "5/5",
       "status_tone": "ok",
       "spark": [
+        0,
         0,
         0,
         0,
@@ -4717,6 +4839,7 @@
         0,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4731,6 +4854,7 @@
       "status": "2/5",
       "status_tone": "bad",
       "spark": [
+        0,
         0,
         0,
         0,
@@ -4765,6 +4889,7 @@
         0,
         0,
         1,
+        0,
         0
       ]
     },
@@ -4789,6 +4914,7 @@
         0,
         0,
         1,
+        0,
         0
       ]
     },
@@ -4813,6 +4939,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4837,6 +4964,7 @@
         0,
         0,
         1,
+        0,
         0
       ]
     },
@@ -4860,6 +4988,7 @@
         0,
         0,
         1,
+        0,
         0,
         0
       ]
@@ -4885,6 +5014,7 @@
         0,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4909,6 +5039,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -4933,6 +5064,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -4957,6 +5089,7 @@
         0,
         0,
         1,
+        0,
         0
       ]
     },
@@ -4981,6 +5114,7 @@
         0,
         0,
         1,
+        0,
         0
       ]
     },
@@ -5004,6 +5138,7 @@
         0,
         1,
         1,
+        0,
         0,
         0
       ]
@@ -5761,9 +5896,21 @@
       "stars": 102,
       "forks": 1,
       "watchers": 102
+    },
+    {
+      "date": "2026-11-06",
+      "products": 81,
+      "kits": 13,
+      "avg": 4.7,
+      "pushes": 111,
+      "byrepo": {
+        "app-builder": 1,
+        "game-kit": 1
+      },
+      "stars": 102,
+      "forks": 1,
+      "watchers": 102
     }
   ],
-  "degraded": [
-    "community: the open issues/PRs search failed (FetchError) - the external counts are UNKNOWN, not zero"
-  ]
+  "degraded": []
 }
