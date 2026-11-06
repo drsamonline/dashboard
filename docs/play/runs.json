@@ -1,0 +1,54 @@
+{
+  "count": 3,
+  "runs": [
+    {
+      "id": "f2b8c1d47a90",
+      "at": "2026-11-02T12:55:00Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "advanced neon-engine: tests/world.cjs, 18 assertions on the two-floor interior, checked to bite 4 ways, CI green (41447210380); app-indian-nutrition-tracker gated on IFCT's own reproduction clause, attempts 2; refresh all four modes ran (curl transport; public list narrower so nothing hand-committed), dashboard+knowledge dispatched; forge health.yml notify repaired (issues:write + github.token)",
+      "files": {
+        "neon-engine": "https://github.com/drsamonline/neon-engine/commit/93c42b532e2b2b4f83bf903853db3af1a657390b"
+      },
+      "advanced": [
+        "neon-engine"
+      ],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "e01c56dc2e63",
+      "at": "2026-11-02T16:49:40Z",
+      "workflow": "repo-learning",
+      "outcome": "ok",
+      "note": "weekly lessons from the record: 1 runs, 63 in the harvest queue; detectors, the harvest queue, and work that repeats",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "a71e4c9b0d32",
+      "at": "2026-11-02T19:00:00Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "closed rule-rule-shape (P1) with tools/rules.py green at 9/9 rules, BACKLOG regenerated to 33 of 49; recorded the fourth credential failure in PROMPTS/access.md + registry/false-completions.md; credential-guard --check green; refresh outputs already current (dashboard/Matneo/knowledge ~10.3h, nothing dispatched); fleet health 100 public repos: 3 red - ziptastic vendor-check (28 stale .gitmodules entries, fix built and verified locally, not landed), ai-bridge Windows file-write tests, audit health (downstream of forge health.yml/new-app.yml); ziptastic fix landed as PR#2 (28 problems -> vendor OK, verified locally); credential-guard green in CI on this commit (41505808633); ziptastic PR#2 MERGED (squash 11ac555), vendor-check green on main (41507969773)",
+      "files": {
+        "BACKLOG.md": "forge",
+        "registry/backlog-done.json": "forge",
+        "PROMPTS/access.md": "forge",
+        "registry/false-completions.md": "forge",
+        "forge": "https://github.com/drsamonline/forge/commit/051a9215ca06e878ea25cf8c3a3b4e335cf7f14e",
+        "ziptastic-pr": "https://github.com/drsamonline/ziptastic/pull/2",
+        "ziptastic-merge": "https://github.com/drsamonline/ziptastic/commit/11ac5556be2096c7d8ea0be3cb68c422098d63f3"
+      },
+      "advanced": [],
+      "errors": [
+        "forge new-app.yml / kit-audit.yml / log-append.yml still failing - cause unread, not retried",
+        "ai-bridge CI: 4 Windows file-write test failures - untouched"
+      ],
+      "retries": 0
+    }
+  ],
+  "lost_lines": []
+}

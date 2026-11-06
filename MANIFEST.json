@@ -3,47 +3,101 @@
   "locked": false,
   "files": {
     "data.json": {
-      "sha": "ac7095f25ba253d1b3452ce692c0740102798b48",
+      "sha": "91b7b792830931c4bb99660ca09e8b2502e939d8",
       "producer": "drsoam@11510d6",
       "class": "generated",
-      "at": "2026-11-06T10:01:50Z"
+      "at": "2026-11-06T10:56:30Z"
     },
     "history.json": {
-      "sha": "1f2138ecf1d597e8ddd3f1dbd3c69505e89d6a84",
+      "sha": "cecf2d357cd32fb83a6565b12d902d683ac94dbc",
       "producer": "drsoam@11510d6",
       "class": "generated",
-      "at": "2026-11-06T10:01:50Z"
+      "at": "2026-11-06T10:56:30Z"
     },
     "changes.json": {
-      "sha": "b5892355b597352e30308f6e63d22a5b20e3208b",
+      "sha": "1c7dd1ab7cb5c2c64c4c35649bf2fe91bf8f10d8",
       "producer": "drsoam@11510d6",
       "class": "generated",
-      "at": "2026-11-06T10:01:50Z"
+      "at": "2026-11-06T10:56:30Z"
     },
     "feed.xml": {
-      "sha": "3608430de3454cfa07357b2d8b73e67909604f96",
+      "sha": "92dbe41d73301721787028fe0e5ab8ed358c1603",
       "producer": "drsoam@11510d6",
       "class": "generated",
-      "at": "2026-11-06T10:01:50Z"
+      "at": "2026-11-06T10:56:30Z"
     },
     "forks.json": {
       "sha": "c038fceb3b3349bfb880e8a87a32d0171dc97c73",
       "producer": "drsoam@11510d6",
       "class": "generated",
-      "at": "2026-11-06T10:01:50Z"
+      "at": "2026-11-06T10:56:30Z"
     },
     "community.json": {
-      "sha": "1383bea0959bf3953ac138152d6d048bb1b470f6",
+      "sha": "4cdf90fd8a0ea64e64edff0ac181d3f59c33009d",
       "producer": "drsoam@11510d6",
       "class": "generated",
-      "at": "2026-11-06T10:01:50Z"
+      "at": "2026-11-06T10:56:30Z"
     },
     "traffic.json": {
-      "sha": "5b737fdc4dbfbaf06b81651146bfd59973005410",
+      "sha": "71de554c341e227430bed635e74901a8f10ee0d8",
       "producer": "drsoam@11510d6",
       "class": "generated",
-      "at": "2026-11-06T10:01:50Z"
+      "at": "2026-11-06T10:56:30Z"
+    },
+    "docs/play/data.json": {
+      "sha": "91b7b792830931c4bb99660ca09e8b2502e939d8",
+      "producer": "refresh.yml@e73ce0e",
+      "class": "generated",
+      "at": "2026-11-06T10:56:30Z"
+    },
+    "docs/play/changes.json": {
+      "sha": "1c7dd1ab7cb5c2c64c4c35649bf2fe91bf8f10d8",
+      "producer": "refresh.yml@e73ce0e",
+      "class": "generated",
+      "at": "2026-11-06T10:56:30Z"
+    },
+    "docs/play/runs.json": {
+      "sha": "01c6320ff2fa06e159eed4f21463c5281962929c",
+      "producer": "refresh.yml@e73ce0e",
+      "class": "generated",
+      "at": "2026-11-06T10:56:30Z"
+    },
+    "docs/play/SPEC-GAP.json": {
+      "sha": "6ee8f2fc3cac5cf3fd459f79a64f80be8fe54294",
+      "producer": "refresh.yml@e73ce0e",
+      "class": "generated",
+      "at": "2026-11-06T10:56:30Z"
+    },
+    "docs/play/feed.xml": {
+      "sha": "92dbe41d73301721787028fe0e5ab8ed358c1603",
+      "producer": "refresh.yml@e73ce0e",
+      "class": "generated",
+      "at": "2026-11-06T10:56:30Z"
+    },
+    "docs/play/history.json": {
+      "sha": "cecf2d357cd32fb83a6565b12d902d683ac94dbc",
+      "producer": "refresh.yml@e73ce0e",
+      "class": "generated",
+      "at": "2026-11-06T10:56:30Z"
+    },
+    "docs/play/forks.json": {
+      "sha": "c038fceb3b3349bfb880e8a87a32d0171dc97c73",
+      "producer": "refresh.yml@e73ce0e",
+      "class": "generated",
+      "at": "2026-11-06T10:56:30Z"
+    },
+    "docs/play/community.json": {
+      "sha": "4cdf90fd8a0ea64e64edff0ac181d3f59c33009d",
+      "producer": "refresh.yml@e73ce0e",
+      "class": "generated",
+      "at": "2026-11-06T10:56:30Z"
+    },
+    "docs/play/traffic.json": {
+      "sha": "71de554c341e227430bed635e74901a8f10ee0d8",
+      "producer": "refresh.yml@e73ce0e",
+      "class": "generated",
+      "at": "2026-11-06T10:56:30Z"
     }
   },
-  "updated": "2026-11-06T10:01:50Z"
+  "updated": "2026-11-06T10:56:30Z"
 }
