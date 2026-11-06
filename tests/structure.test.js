@@ -18,7 +18,23 @@ const fs = require("fs");
 const path = require("path");
 const { JSDOM } = require("jsdom");
 
-const file = process.argv[2] || path.join(__dirname, "..", "index.html");
+// The dashboard has one page: the app at docs/play/. A root index.html existed until
+// the 2026-11-05 page audit deleted it, and this default kept pointing at it - so the
+// layout test was reading a file that was not there. Ask the repo where its page is.
+const fs_ = require("fs");
+function resolvePage() {
+  if (process.argv[2]) return process.argv[2];
+  const root = path.join(__dirname, "..");
+  const declared = path.join(root, "PAGES.json");
+  if (fs_.existsSync(declared)) {
+    try {
+      const pages = JSON.parse(fs_.readFileSync(declared, "utf8"));
+      if (pages.app) return path.join(root, pages.app);
+    } catch (e) { /* fall through to the last resort below */ }
+  }
+  return path.join(root, "docs", "play", "index.html");
+}
+const file = resolvePage();
 const html = fs.readFileSync(file, "utf8");
 // Parse WITHOUT running scripts: this is a layout test, not a runtime test.
 const doc = new JSDOM(html).window.document;
