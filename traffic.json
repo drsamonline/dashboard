@@ -4,6 +4,238 @@
   "window": "14 days",
   "note": "Last 14 days — GitHub's retention window.",
   "repos": {
+    "control-panel": {
+      "views": 3,
+      "uniques": 2,
+      "clones": 846,
+      "clone_uniques": 278,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/drsamonline/control-panel",
+          "count": 3,
+          "title": "Overview"
+        }
+      ]
+    },
+    "accent-oracle": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 0,
+      "clone_uniques": 0,
+      "referrers": [],
+      "paths": []
+    },
+    "corefit-md": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 505,
+      "clone_uniques": 190,
+      "referrers": [],
+      "paths": []
+    },
+    "offline-pdf-toolkit": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 1345,
+      "clone_uniques": 320,
+      "referrers": [],
+      "paths": []
+    },
+    "compfactory": {
+      "views": 6,
+      "uniques": 1,
+      "clones": 61,
+      "clone_uniques": 35,
+      "referrers": [
+        {
+          "from": "github.com",
+          "count": 2
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/compfactory",
+          "count": 2,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/compfactory/new/main",
+          "count": 1,
+          "title": "/new/main"
+        },
+        {
+          "path": "/drsamonline/compfactory/tree/main",
+          "count": 1,
+          "title": "/tree/main"
+        }
+      ]
+    },
+    "chalk-lan": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 1036,
+      "clone_uniques": 260,
+      "referrers": [],
+      "paths": []
+    },
+    "base-bench": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 875,
+      "clone_uniques": 227,
+      "referrers": [],
+      "paths": []
+    },
+    "app-thermals": {
+      "views": 2,
+      "uniques": 1,
+      "clones": 442,
+      "clone_uniques": 90,
+      "referrers": [
+        {
+          "from": "github.com",
+          "count": 2
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/app-thermals",
+          "count": 2,
+          "title": "Overview"
+        }
+      ]
+    },
+    "app-panchang": {
+      "views": 1,
+      "uniques": 1,
+      "clones": 673,
+      "clone_uniques": 173,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/drsamonline/app-panchang",
+          "count": 1,
+          "title": "Overview"
+        }
+      ]
+    },
+    "app-image-toolkit": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 594,
+      "clone_uniques": 158,
+      "referrers": [],
+      "paths": []
+    },
+    "app-organon-reader": {
+      "views": 1,
+      "uniques": 1,
+      "clones": 605,
+      "clone_uniques": 171,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/drsamonline/app-organon-reader",
+          "count": 1,
+          "title": "Overview"
+        }
+      ]
+    },
+    "HCS": {
+      "views": 27,
+      "uniques": 1,
+      "clones": 182,
+      "clone_uniques": 88,
+      "referrers": [
+        {
+          "from": "github.com",
+          "count": 4
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/HCS",
+          "count": 8,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/HCE",
+          "count": 3,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/HCS/edit/main/README.md",
+          "count": 3,
+          "title": "/edit/main/README.md"
+        },
+        {
+          "path": "/drsamonline/HCS/tree/main",
+          "count": 3,
+          "title": "/tree/main"
+        },
+        {
+          "path": "/drsamonline/HCS/blob/main/SOURCES",
+          "count": 2,
+          "title": "/blob/main/SOURCES"
+        }
+      ]
+    },
+    "BLINKTRANSFER": {
+      "views": 5,
+      "uniques": 3,
+      "clones": 824,
+      "clone_uniques": 201,
+      "referrers": [
+        {
+          "from": "drsamonline.github.io",
+          "count": 2
+        },
+        {
+          "from": "github.com",
+          "count": 1
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/BLINKTRANSFER",
+          "count": 4,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/BLINKTRANSFER/pull/8",
+          "count": 1,
+          "title": "/pull/8"
+        }
+      ]
+    },
+    "today-card": {
+      "views": 13,
+      "uniques": 4,
+      "clones": 590,
+      "clone_uniques": 160,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/drsamonline/today-card",
+          "count": 10,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/today-card/actions",
+          "count": 3,
+          "title": "/actions"
+        }
+      ]
+    },
+    "neon-games": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 493,
+      "clone_uniques": 136,
+      "referrers": [],
+      "paths": []
+    },
     "NEO": {
       "views": 0,
       "uniques": 0,
@@ -59,34 +291,6 @@
         }
       ]
     },
-    "BLINKTRANSFER": {
-      "views": 5,
-      "uniques": 3,
-      "clones": 824,
-      "clone_uniques": 201,
-      "referrers": [
-        {
-          "from": "drsamonline.github.io",
-          "count": 2
-        },
-        {
-          "from": "github.com",
-          "count": 1
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/BLINKTRANSFER",
-          "count": 4,
-          "title": "Overview"
-        },
-        {
-          "path": "/drsamonline/BLINKTRANSFER/pull/8",
-          "count": 1,
-          "title": "/pull/8"
-        }
-      ]
-    },
     "helioprism": {
       "views": 1,
       "uniques": 1,
@@ -127,45 +331,6 @@
           "path": "/drsamonline/heavenzip/tree/main",
           "count": 1,
           "title": "/tree/main"
-        }
-      ]
-    },
-    "HCS": {
-      "views": 27,
-      "uniques": 1,
-      "clones": 182,
-      "clone_uniques": 88,
-      "referrers": [
-        {
-          "from": "github.com",
-          "count": 4
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/HCS",
-          "count": 8,
-          "title": "Overview"
-        },
-        {
-          "path": "/drsamonline/HCE",
-          "count": 3,
-          "title": "Overview"
-        },
-        {
-          "path": "/drsamonline/HCS/edit/main/README.md",
-          "count": 3,
-          "title": "/edit/main/README.md"
-        },
-        {
-          "path": "/drsamonline/HCS/tree/main",
-          "count": 3,
-          "title": "/tree/main"
-        },
-        {
-          "path": "/drsamonline/HCS/blob/main/SOURCES",
-          "count": 2,
-          "title": "/blob/main/SOURCES"
         }
       ]
     },
@@ -430,14 +595,6 @@
         }
       ]
     },
-    "offline-pdf-toolkit": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 1345,
-      "clone_uniques": 320,
-      "referrers": [],
-      "paths": []
-    },
     "neon-velocity": {
       "views": 4,
       "uniques": 2,
@@ -484,14 +641,6 @@
           "title": "Overview"
         }
       ]
-    },
-    "neon-games": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 493,
-      "clone_uniques": 136,
-      "referrers": [],
-      "paths": []
     },
     "neon-engine": {
       "views": 0,
@@ -686,14 +835,6 @@
       "uniques": 0,
       "clones": 268,
       "clone_uniques": 98,
-      "referrers": [],
-      "paths": []
-    },
-    "chalk-lan": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 1036,
-      "clone_uniques": 260,
       "referrers": [],
       "paths": []
     },
@@ -940,20 +1081,6 @@
       "referrers": [],
       "paths": []
     },
-    "app-organon-reader": {
-      "views": 1,
-      "uniques": 1,
-      "clones": 605,
-      "clone_uniques": 171,
-      "referrers": [],
-      "paths": [
-        {
-          "path": "/drsamonline/app-organon-reader",
-          "count": 1,
-          "title": "Overview"
-        }
-      ]
-    },
     "app-companion-forge": {
       "views": 0,
       "uniques": 0,
@@ -976,34 +1103,6 @@
         }
       ]
     },
-    "control-panel": {
-      "views": 3,
-      "uniques": 2,
-      "clones": 846,
-      "clone_uniques": 278,
-      "referrers": [],
-      "paths": [
-        {
-          "path": "/drsamonline/control-panel",
-          "count": 3,
-          "title": "Overview"
-        }
-      ]
-    },
-    "app-panchang": {
-      "views": 1,
-      "uniques": 1,
-      "clones": 673,
-      "clone_uniques": 173,
-      "referrers": [],
-      "paths": [
-        {
-          "path": "/drsamonline/app-panchang",
-          "count": 1,
-          "title": "Overview"
-        }
-      ]
-    },
     "dumps-4": {
       "views": 0,
       "uniques": 0,
@@ -1011,25 +1110,6 @@
       "clone_uniques": 1,
       "referrers": [],
       "paths": []
-    },
-    "app-thermals": {
-      "views": 2,
-      "uniques": 1,
-      "clones": 442,
-      "clone_uniques": 90,
-      "referrers": [
-        {
-          "from": "github.com",
-          "count": 2
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/app-thermals",
-          "count": 2,
-          "title": "Overview"
-        }
-      ]
     },
     "dumps": {
       "views": 2,
@@ -1224,14 +1304,6 @@
       "referrers": [],
       "paths": []
     },
-    "app-image-toolkit": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 594,
-      "clone_uniques": 158,
-      "referrers": [],
-      "paths": []
-    },
     "app-jacquard": {
       "views": 0,
       "uniques": 0,
@@ -1254,14 +1326,6 @@
         }
       ]
     },
-    "base-bench": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 875,
-      "clone_uniques": 227,
-      "referrers": [],
-      "paths": []
-    },
     "canteen-lan": {
       "views": 2,
       "uniques": 1,
@@ -1280,14 +1344,6 @@
           "title": "/pull/3"
         }
       ]
-    },
-    "corefit-md": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 505,
-      "clone_uniques": 190,
-      "referrers": [],
-      "paths": []
     },
     "Repertorium-Publicum": {
       "views": 22,
@@ -1359,25 +1415,6 @@
       "referrers": [],
       "paths": []
     },
-    "today-card": {
-      "views": 13,
-      "uniques": 4,
-      "clones": 590,
-      "clone_uniques": 160,
-      "referrers": [],
-      "paths": [
-        {
-          "path": "/drsamonline/today-card",
-          "count": 10,
-          "title": "Overview"
-        },
-        {
-          "path": "/drsamonline/today-card/actions",
-          "count": 3,
-          "title": "/actions"
-        }
-      ]
-    },
     "weft8-classroom": {
       "views": 0,
       "uniques": 0,
@@ -1448,43 +1485,6 @@
           "path": "/drsamonline/homoeopathic-materia-medica-repertory-json/tree/main/repertory/kent-1897",
           "count": 2,
           "title": "/tree/main/repertory/kent-1897"
-        }
-      ]
-    },
-    "accent-oracle": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 0,
-      "clone_uniques": 0,
-      "referrers": [],
-      "paths": []
-    },
-    "compfactory": {
-      "views": 6,
-      "uniques": 1,
-      "clones": 61,
-      "clone_uniques": 35,
-      "referrers": [
-        {
-          "from": "github.com",
-          "count": 2
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/compfactory",
-          "count": 2,
-          "title": "Overview"
-        },
-        {
-          "path": "/drsamonline/compfactory/new/main",
-          "count": 1,
-          "title": "/new/main"
-        },
-        {
-          "path": "/drsamonline/compfactory/tree/main",
-          "count": 1,
-          "title": "/tree/main"
         }
       ]
     },
