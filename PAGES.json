@@ -1,7 +1,7 @@
 {
   "_note": "Pages are set by hand, from the 2026-11-05 audit. A sweep must not restore anything listed in `deleted`, must not create a landing page where `landing` already points, and must not overwrite `landing` or `app`.",
   "manual": true,
-  "landing": "docs/index.html",
+  "landing": null,
   "app": "docs/play/index.html",
   "deleted": [
     {
@@ -28,7 +28,13 @@
       "path": "index.html",
       "pid": "p082",
       "commit": "2b1e8c7c"
+    },
+    {
+      "path": "docs/index.html",
+      "pid": "owner decision 2026-11-06",
+      "commit": "see git log"
     }
   ],
-  "updated": "2026-11-06"
+  "updated": "2026-11-06",
+  "landing_note": "No landing page by design. The dashboard is a single-user tool: the app at docs/play/ is the entry point and there is nothing to introduce. A sweep must not create one."
 }
