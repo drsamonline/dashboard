@@ -57,6 +57,33 @@ jobs:
           BILLING_TOKEN: ${{ secrets.BILLING_TOKEN }}
           TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
         run: python3 .drsoam/drsoam.py dashboard
+      - name: Publish the data where the page reads it
+        run: |
+          # THE CONSOLE HAS BEEN LOADING NOTHING.
+          #
+          # The page is docs/play/index.html and it fetches its data RELATIVELY -
+          # fetch("data.json"), fetch("runs.json"), fetch("SPEC-GAP.json") - so on the
+          # published site every one of those resolves to /dashboard/play/<file>. The
+          # refresh writes them to the REPOSITORY ROOT, and Pages serves only /docs, so
+          # each fetch has been a 404: the live console renders its empty state and
+          # reports nothing. The same is true of the footer's changes.json and feed.xml
+          # links.
+          #
+          # Copy the data to where the page looks. The root copies stay: the registry
+          # and the hub read them through raw.githubusercontent.
+          set -euo pipefail
+          for f in data.json changes.json runs.json SPEC-GAP.json feed.xml \
+                   history.json forks.json community.json traffic.json; do
+            [ -f "$f" ] && cp "$f" "docs/play/$f"
+          done
+          # A new path the manifest does not know is refused by the gate on the next run,
+          # so record what was just published, with the producer that wrote it.
+          python3 tools/manifest.py record \
+            docs/play/data.json docs/play/changes.json docs/play/runs.json \
+            docs/play/SPEC-GAP.json docs/play/feed.xml docs/play/history.json \
+            docs/play/forks.json docs/play/community.json docs/play/traffic.json \
+            --producer "refresh.yml@$(git rev-parse --short HEAD)" || true
+
       - name: Commit if changed
         run: |
           # F-97: the verdict is "did data.json land on the branch", not "did git exit 0".
@@ -71,5 +98,10 @@ jobs:
           # looking for it. The race is real: this workflow fires on push to main AND on
           # dispatch, and cancel-in-progress: false queues rather than cancels, so two
           # runs can reach this step together.
+          # docs/play/ is where the page actually reads them; both sets are committed so
+          # the root copies (registry, hub) and the served copies cannot drift apart.
           bash tools/commit-and-verify.sh "chore: refresh dashboard data [skip ci]" main -- \
-            data.json history.json changes.json feed.xml forks.json community.json traffic.json
+            data.json history.json changes.json feed.xml forks.json community.json traffic.json \
+            docs/play/data.json docs/play/history.json docs/play/changes.json \
+            docs/play/feed.xml docs/play/forks.json docs/play/community.json \
+            docs/play/traffic.json docs/play/runs.json docs/play/SPEC-GAP.json
