@@ -22,5 +22,8 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020   # was @v4
         with:
           node-version: "20"
-      - run: npm ci || npm install
+      # No package-lock.json is committed, so `npm ci` always failed with a
+      # wall of EUSAGE text before falling through to `npm install`. That noise
+      # is what hid the real failure (ENOENT on a page the audit had deleted).
+      - run: npm install --no-audit --no-fund
       - run: node tests/structure.test.js
