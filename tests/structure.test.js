@@ -18,7 +18,12 @@ const fs = require("fs");
 const path = require("path");
 const { JSDOM } = require("jsdom");
 
-const file = process.argv[2] || path.join(__dirname, "..", "index.html");
+// 2026-11-06: the console is the APP page, docs/play/index.html. The root
+// index.html this test used to read was a duplicate that the 2026-11-05 page
+// audit deleted (p082), so the suite was failing on a file the repo had
+// deliberately removed - a red test pointing at a page that no longer exists.
+// PAGES.json records the truth: landing docs/index.html, app docs/play/index.html.
+const file = process.argv[2] || path.join(__dirname, "..", "docs", "play", "index.html");
 const html = fs.readFileSync(file, "utf8");
 // Parse WITHOUT running scripts: this is a layout test, not a runtime test.
 const doc = new JSDOM(html).window.document;
