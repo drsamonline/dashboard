@@ -1,7 +1,10 @@
 /* drsamonline console — a tiny service worker. Shell is cache-first, data is
    network-first (so the console installs and still opens offline). */
-var C = "dc-v1";
-var SHELL = ["./", "./index.html", "./repo.html", "./manifest.webmanifest", "./icon.svg"];
+var C = "dc-v2";
+// repo.html was deleted in the 2026-11-05 page audit. cache.addAll() rejects the
+// WHOLE list if one entry 404s, so its presence did not mean "no offline copy of
+// that page" - it meant the service worker never installed at all.
+var SHELL = ["./", "./index.html", "./manifest.webmanifest", "./icon.svg"];
 self.addEventListener("install", function (e) {
   e.waitUntil(caches.open(C).then(function (c) { return c.addAll(SHELL); }).then(function () { return self.skipWaiting(); }));
 });
