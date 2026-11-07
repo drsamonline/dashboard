@@ -1,5 +1,5 @@
 {
-  "count": 3,
+  "count": 12,
   "runs": [
     {
       "id": "f2b8c1d47a90",
@@ -48,6 +48,185 @@
         "ai-bridge CI: 4 Windows file-write test failures - untouched"
       ],
       "retries": 0
+    },
+    {
+      "id": "aa7b33d6f742",
+      "at": "2026-11-03T14:48:21Z",
+      "workflow": "code-compression",
+      "outcome": "ok",
+      "note": "size report: 38 pages, 4564 KB raw, 1622 KB gzip, 4 over budget",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "b7f3c1a9e204",
+      "at": "2026-11-04T12:45:00Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "advance Aethelgard-Engine: the red test was the defect (index.html wiring in an engine-only repo) and the service worker precached 16 files that do not exist here, so addAll rejected and nothing was cached; .md made network-first; test9.js 14 assertions checked to bite; CI green 41830743178. health: audit PR #3 (health.yml's deploy-pages 400 - two publishers, one impossible). refresh BLOCKED: all four refresh workflows are disabled_manually and cannot be dispatched.",
+      "files": {
+        "PROGRESS.log": "forge",
+        "STATE.json": "forge",
+        "WORKLIST.md": "forge",
+        "aethelgard": "https://github.com/drsamonline/aethelgard-rpg-engine/commit/51eb4e5",
+        "aethelgard-ci": "https://github.com/drsamonline/aethelgard-rpg-engine/actions/runs/41830743178",
+        "audit-pr": "https://github.com/drsamonline/audit/pull/3"
+      },
+      "advanced": [
+        "Aethelgard-Engine"
+      ],
+      "errors": [
+        "refresh workflows disabled_manually - cannot dispatch"
+      ],
+      "retries": 0
+    },
+    {
+      "id": "f18e3f349d8f",
+      "at": "2026-11-04T18:45:07Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "advance open-materia-medica: the app's palette lived only in docs/play (875629d) so the demo was a better page than the app; index.html now equals its served twin and check 6 locks every page, proved to bite. health: app-builder #17 (4 red tests fixed, 18/18 green, plus a refused write is no longer silent) and Matneo #13 (manifest bootstrap - store and posts were publishing nothing to the site and reporting DEGRADED=[]). refresh: all four modes verified, publication blocked on 4 disabled workflows (owner).",
+      "files": {
+        "WORKLIST.md": {
+          "lines": 240
+        },
+        "STATE.json": {
+          "lines": 163
+        },
+        "PROGRESS.log": {
+          "lines": 33
+        }
+      },
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "0120806f22a7",
+      "at": "2026-11-05T06:46:22Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "built game-kit v1.2.0 (voxel world, greedy meshing 256x, edit ops, seeded 3-D noise, terrain, Tiled reader; 115/115 from a fresh clone, checked to bite 3 ways; CI 41982062872); refresh UNBLOCKED by re-enabling 7 auto-disabled schedules through the connector (dashboard 41982226782, Matneo store 41982225919, posts 41982226528, knowledge 41982226460); health: new-app scope + state-set race diagnosed from the log and fixed in PR 44",
+      "files": {
+        "PROGRESS.log": {
+          "lines": 43
+        },
+        "STATE.json": {
+          "lines": 166
+        },
+        "registry/deps.json": {
+          "lines": 223
+        }
+      },
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "c4a91b7e55d1",
+      "at": "2026-11-05T12:45:00Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "advance retro-strike 1.4.1: a saved run is data, never trusted - cleanSave() gate (position inside the arena, hp inside maxhp, a real weapon, finite numbers, unplaceable enemies dropped) or SAVE UNREADABLE - NEW RUN; saveQuit() keeps the run when the save failed. 49 new assertions (tools/test-save.mjs) wired into test.yml, checked to bite 3 ways; 12/12 + 49/49; CI 42028803603. Also closed retro-strike's red Test (stale docs/play build). health: app-panchang PR 4 (stamp drift after the 11-04 sweep + the offline guard counting an <a href> as a cross-origin load; 204/0 locally); Matneo PR 15 (store and posts refresh had published nothing - both served paths unrecorded in MANIFEST.json, write skipped, job green). refresh: all four modes DEGRADED: []; plan block stale 102 -> 111, knowledge unreachable to the App. kit-game-kit-v2 left open on purpose.",
+      "files": {
+        "PROGRESS.log": "forge",
+        "STATE.json": "forge",
+        "WORKLIST.md": "forge",
+        "retro-strike": "https://github.com/drsamonline/retro-strike/commit/a0f68a0",
+        "retro-strike-ci": "https://github.com/drsamonline/retro-strike/actions/runs/42028803603",
+        "app-panchang-pr": "https://github.com/drsamonline/app-panchang/pull/4",
+        "matneo-pr": "https://github.com/drsamonline/Matneo/pull/15"
+      },
+      "advanced": [
+        "retro-strike"
+      ],
+      "errors": [
+        "plan block stale: knowledge says 102 repos, a fresh run measures 111 - knowledge is 403 to the App, cannot dispatch",
+        "6 more repos carry the same post-sweep stamp drift as app-panchang - each needs its own verified PR",
+        "ai-bridge CI, ULTIMATE-WINDOWS-OPTIMIZER CI, The_Browser Build, conqueror-os sw-3.2.0, drsamonline pages still red - untouched"
+      ],
+      "retries": 0
+    },
+    {
+      "id": "6b1f0d84c2ae",
+      "at": "2026-11-06T00:45:00Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "advance HMS 2cbf987: the page sweep had deleted frontend/index.html - the client shell app.py mounts at / - so GET / was 404, 17 contract tests failed and main was red; restored + HHMS-PAGE-MARKER + 3-test guard (checked to bite), 569 passed/2 skipped, CI 42086233028. health: ai-bridge PR 3 (Landing page failing silently since the redesign - a check that named one screenshot; the new page was never published), Matneo PR 15 merged (store and posts published nothing), app-builder PR 18 (GitHub 422s an issue search with no is:issue/is:pull-request; community() UNKNOWN, attention() silently empty). refresh: all four modes, DEGRADED [] with the fix, all four outputs dispatched through the connector.",
+      "files": {
+        "PROGRESS.log": "forge",
+        "STATE.json": "forge",
+        "WORKLIST.md": "forge",
+        "HMS": "https://github.com/drsamonline/HMS/commit/2cbf987",
+        "HMS-ci": "https://github.com/drsamonline/HMS/actions/runs/42086233028",
+        "ai-bridge-pr": "https://github.com/drsamonline/ai-bridge/pull/3",
+        "app-builder-pr": "https://github.com/drsamonline/app-builder/pull/18",
+        "matneo-pr": "https://github.com/drsamonline/Matneo/pull/15"
+      },
+      "advanced": [
+        "HMS"
+      ],
+      "errors": [
+        "The_Browser Build and ULTIMATE-WINDOWS-OPTIMIZER CI stay red - no C++/Windows toolchain here (owner-deferred)",
+        "6 repos still carry the 2026-11-04 sweep stamp drift (app-poets-studio, app-image-toolkit, base-bench, canteen-lan, idle-city, lockhtml)"
+      ],
+      "retries": 0
+    },
+    {
+      "id": "a7c4e1b90d32",
+      "at": "2026-11-06T06:20:00Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "build kit-game-kit-v2 piece: game-kit 1.3.0 sprite batching f5d5d55 - Game.atlas + Game.SpriteBatch, 2,000 sprites -> 4 draw calls, a buffer that spills instead of dropping the tail, a stable z order, missing frames counted; 141/0 (26 new) checked to bite 4 ways; CI 42137796067. health: the 2026-11-05 page sweep broke app entry pages across the estate - restored app-lantern 7d4c040 (80/0), whispering-body-first-aid 646b9a0 (28/0, the suite could not even run), TTB 279616a (all four packages build); app-builder PR 18 merged 541f3f9 (dashboard community/attention); five transient runs re-run. refresh: four modes, dashboard/store/posts run locally and all four outputs dispatched through the connector. kit-game-kit-v2 stays open (scene graph, code-audio).",
+      "files": {
+        "PROGRESS.log": "forge",
+        "STATE.json": "forge",
+        "WORKLIST.md": "forge",
+        "game-kit": "https://github.com/drsamonline/game-kit/commit/f5d5d55",
+        "game-kit-ci": "https://github.com/drsamonline/game-kit/actions/runs/42137796067",
+        "app-lantern": "https://github.com/drsamonline/app-lantern/commit/7d4c040",
+        "whispering-body-first-aid": "https://github.com/drsamonline/whispering-body-first-aid/commit/646b9a0",
+        "TTB": "https://github.com/drsamonline/TTB/commit/279616a",
+        "app-builder-pr": "https://github.com/drsamonline/app-builder/pull/18",
+        "report": "REPORTS/2026-11-06-page-sweep-damage.md"
+      },
+      "advanced": [],
+      "errors": [],
+      "retries": 5
+    },
+    {
+      "id": "3ba078a8b600",
+      "at": "2026-11-06T12:52:00Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "build: game-kit 1.5.0 scene graph d868af1 (214/0, 36 new, mutation-tested ten ways) closes P3 kit-game-kit-v2 at 1/6. health: app-builder's suite had been red since 09:59Z - two tests conflated an unknown fleet scan with an unreadable run history, and DEGRADED/FAILED are module globals nobody cleared between tests; PR https://github.com/drsamonline/app-builder/pull/19, 20/0, checked to bite three ways. refresh: four modes verified locally (DEGRADED [], 0 failed URLs) and published by dispatch - dashboard 42220531870, Matneo store 42220532701, knowledge dispatched. open for the owner: Matneo blog refresh is still red and its repair PR https://github.com/drsamonline/Matneo/pull/16 is CLEAN but unmerged - not retried, because a re-run without the fix is the blind retry the policy forbids."
+    },
+    {
+      "id": "28686ebf642b",
+      "at": "2026-11-07T00:52:00Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "build: P3 CLOSED 2/6 -> 6/6 (39 of 49) - ui-kit (31+22 assertions), ml-kit (22), audio-kit (54) and lib-van-ui (decided, docs/lib-van-ui-decision.md) were all done and unrecorded; re-run from fresh clones, CI green, Pages built, evidence seeded. health: the 2026-11-06 support block broke five repos' no-network tests because the assertion scanned href as if a link were a load; four green repair PRs had been sitting unmerged and were merged (app-panchang#4 c970127, app-builder#19 8611b8a, canteen-lan#3 bce7519, lockhtml#6 c150d99), app-panchang Test and app-builder tests green on main; LEARNINGS 13 written; a duplicate app-panchang PR was closed with a comment. Matneo blog: PR#16 merged (52d8c60) then DEAD-LETTERED at attempt 3 - not dispatched. refresh: dashboard 42320354670, Matneo store 42320367459 success, knowledge dispatched, all through the connector (App 403). open for the owner: the kit classification and the false 'deps.json 16 kits' claim.",
+      "files": {
+        "PROGRESS.log": "forge",
+        "STATE.json": "forge",
+        "BACKLOG.md": "forge",
+        "LEARNINGS.md": "forge",
+        "app-panchang-pr": "https://github.com/drsamonline/app-panchang/pull/4",
+        "app-builder-pr": "https://github.com/drsamonline/app-builder/pull/19",
+        "canteen-lan-pr": "https://github.com/drsamonline/canteen-lan/pull/3",
+        "lockhtml-pr": "https://github.com/drsamonline/lockhtml/pull/6",
+        "matneo-pr": "https://github.com/drsamonline/Matneo/pull/16"
+      },
+      "advanced": [],
+      "errors": [
+        "Matneo blog refresh dead-lettered at 3 of 3 attempts (STATE.json blocked) - the fix is merged, one dispatch would settle it, and that is the owner's call",
+        "the kit classification has three numbers (deps.json 14, repos.json role 'product' for four live kits, catalog 13) and needs the owner",
+        "dashboard#8 conflicts with main and needs a rebase; ai-bridge#3 is UNSTABLE",
+        "page-sweep damage still red: offline-pdf-toolkit (over the 160 KB budget), remedy-relationship-explorer (no app.html), whispering-body-first-aid (demo is not the app), neon-engine tests"
+      ]
     }
   ],
   "lost_lines": []
