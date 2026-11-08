@@ -1,5 +1,5 @@
 {
-  "count": 13,
+  "count": 14,
   "runs": [
     {
       "id": "f2b8c1d47a90",
@@ -257,6 +257,30 @@
         "11 red runs left with links: app-weft-puzzles family strip, ai-bridge landing, whispering-body-first-aid, offline-pdf-toolkit budget (owner), neon-engine, The_Browser and UWO (no local toolchain), aethelgard-games, read-live-transform-app, bmi-bmr-tdee, idle-city, drsamonline pages",
         "the kit classification still has three numbers and needs the owner"
       ],
+      "retries": 0
+    },
+    {
+      "id": "25bbc0f2f8c2",
+      "at": "2026-11-08T12:51:12Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "system: decoded the six base64 truth files and guarded it (truth-files.py + workflow); fixed manifest-audit's #fragment writer; advance: row 4 idle-city page restore 31/31; refresh: four modes DEGRADED []; health: idle-city green, Matneo blog left dead-lettered",
+      "files": {
+        "WORKLIST.md": {
+          "lines": 373
+        },
+        "BACKLOG.md": {
+          "lines": 155
+        },
+        "STATE.json": {
+          "lines": 221
+        },
+        "PROGRESS.log": {
+          "lines": 100
+        }
+      },
+      "advanced": [],
+      "errors": [],
       "retries": 0
     }
   ],
