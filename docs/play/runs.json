@@ -1,5 +1,5 @@
 {
-  "count": 12,
+  "count": 13,
   "runs": [
     {
       "id": "f2b8c1d47a90",
@@ -227,6 +227,37 @@
         "dashboard#8 conflicts with main and needs a rebase; ai-bridge#3 is UNSTABLE",
         "page-sweep damage still red: offline-pdf-toolkit (over the 160 KB budget), remedy-relationship-explorer (no app.html), whispering-body-first-aid (demo is not the app), neon-engine tests"
       ]
+    },
+    {
+      "id": "5e0f3c7a91bd",
+      "at": "2026-11-07T12:35:00Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "build: P4 CLOSED 7/7 (44 of 49) - app-image-toolkit PR #2 merged 9092520; its only red was three assertions that grepped every https?:// and counted the support block's anchors as loads; 207/0, Test 42373233192 green, Pages built. health: the same defect repaired in three more repos - app-poets-studio b0dd99c on main (137/0, plus a badge assertion that accepts 'in CI'), base-bench PR #4 (119/0, plus no app script may call fetch/XHR/WebSocket/EventSource), app-organon-reader PR #2 (36/36 - docs/index.html is the landing page, docs/play/index.html is the app). Every new assertion mutation-tested. Fleet sweep: 113 repos, 16 red, 11 left with links and reasons. refresh: all four drsoam.py modes with no monkeypatch needed - curl is authenticated now - 113 repos/83 products, DEGRADED [], published by dispatch (dashboard 42373368037, knowledge 42373366906, Matneo store 42373366641 all SUCCESS). Matneo blog failed a 4th time on store/blog contention and stays dead-lettered, not retried.",
+      "files": {
+        "PROGRESS.log": "forge",
+        "STATE.json": "forge",
+        "BACKLOG.md": "forge",
+        "LEARNINGS.md": "forge",
+        "registry/backlog-done.json": "forge",
+        "app-image-toolkit-pr": "https://github.com/drsamonline/app-image-toolkit/pull/2",
+        "app-image-toolkit-ci": "https://github.com/drsamonline/app-image-toolkit/actions/runs/42373233192",
+        "app-poets-studio": "https://github.com/drsamonline/app-poets-studio/commit/b0dd99cc010e2d063bd80d28809d748606f60167",
+        "base-bench-pr": "https://github.com/drsamonline/base-bench/pull/4",
+        "app-organon-reader-pr": "https://github.com/drsamonline/app-organon-reader/pull/2",
+        "dashboard-refresh": "https://github.com/drsamonline/dashboard/actions/runs/42373368037",
+        "knowledge-refresh": "https://github.com/drsamonline/knowledge/actions/runs/42373366906",
+        "matneo-store": "https://github.com/drsamonline/Matneo/actions/runs/42373366641",
+        "matneo-blog": "https://github.com/drsamonline/Matneo/actions/runs/42373366325"
+      },
+      "advanced": [],
+      "errors": [
+        "Matneo blog refresh dead-lettered at 3 of 3 and red a 4th time - the cause is store.yml and blog.yml dispatched together pushing the same tree; the fix is a sequence, and the item stays blocked",
+        "the connector contents write ignored the branch parameter and committed app-poets-studio to main (green and tested, but no PR) - git push works from the sandbox, so use a branch",
+        "11 red runs left with links: app-weft-puzzles family strip, ai-bridge landing, whispering-body-first-aid, offline-pdf-toolkit budget (owner), neon-engine, The_Browser and UWO (no local toolchain), aethelgard-games, read-live-transform-app, bmi-bmr-tdee, idle-city, drsamonline pages",
+        "the kit classification still has three numbers and needs the owner"
+      ],
+      "retries": 0
     }
   ],
   "lost_lines": []
