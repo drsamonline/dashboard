@@ -1,11 +1,11 @@
 {
   "generated": "2026-11-09",
-  "generated_at": "2026-11-09T00:39:30Z",
+  "generated_at": "2026-11-09T06:43:13Z",
   "reckoning": "84 products · 13 kits (role) · avg metadata completeness 4.7/5 · updated automatically.",
   "health": "bad",
   "health_detail": {
     "state": "bad",
-    "failing": 2,
+    "failing": 3,
     "cancelled": 0,
     "unobservable": 21,
     "total": 33,
@@ -47,28 +47,46 @@
     "avg": 4.7,
     "pushes": 114,
     "byrepo": {
+      "NEO": 1,
+      "HMS": 1,
+      "knowledge": 1,
+      "skills": 1,
+      "kitbox": 1,
+      "app-builder": 1,
+      "weft8-hardware": 1,
+      "weft8-kit": 1,
+      "weft8-compare": 1,
+      "app-clip-loom": 1,
+      "ziptastic": 1,
+      "drsamonline": 1,
+      "dashboard": 1,
+      "accent-oracle": 1,
+      "HCS": 1,
+      "drsamonline.github.io": 1,
+      "forge": 1,
+      "smartnote-scheduler": 1,
+      "dumps-4": 1,
+      "audit": 1,
       "idle-city-ages-of-growth": 1
     }
   },
   "stats": {
     "metadata_completeness": {
-      "5": 72,
+      "5": 73,
       "4": 4,
-      "3": 2,
-      "1": 1,
-      "2": 5
+      "2": 5,
+      "3": 2
     },
     "conformance": {
-      "5": 72,
+      "5": 73,
       "4": 4,
-      "3": 2,
-      "1": 1,
-      "2": 5
+      "2": 5,
+      "3": 2
     },
     "categories": {
-      "Games": 6,
       "Utilities": 15,
       "HTML Apps": 51,
+      "Games": 6,
       "Homeopathy": 10,
       "Health Tools": 1,
       "Data": 1
@@ -113,7 +131,7 @@
     },
     {
       "date": "2026-11-05",
-      "count": 1
+      "count": 0
     },
     {
       "date": "2026-11-06",
@@ -121,15 +139,15 @@
     },
     {
       "date": "2026-11-07",
-      "count": 86
+      "count": 77
     },
     {
       "date": "2026-11-08",
-      "count": 15
+      "count": 5
     },
     {
       "date": "2026-11-09",
-      "count": 1
+      "count": 21
     }
   ],
   "attention": [
@@ -139,6 +157,34 @@
       "url": "https://github.com/drsamonline/web-kit/issues/3",
       "kind": "issue",
       "created": "2026-10-26T00:46:14Z"
+    },
+    {
+      "title": "B16: module registry and state",
+      "repo": "HMS",
+      "url": "https://github.com/drsamonline/HMS/pull/84",
+      "kind": "PR",
+      "created": "2026-11-09T06:30:12Z"
+    },
+    {
+      "title": "B15a: resolve permissions once per request",
+      "repo": "HMS",
+      "url": "https://github.com/drsamonline/HMS/pull/83",
+      "kind": "PR",
+      "created": "2026-11-09T06:14:13Z"
+    },
+    {
+      "title": "B15: route enumeration gate - fails on the next unguarded route",
+      "repo": "HMS",
+      "url": "https://github.com/drsamonline/HMS/pull/82",
+      "kind": "PR",
+      "created": "2026-11-09T05:01:57Z"
+    },
+    {
+      "title": "fix(health): stop expecting the kits page the page audit deleted on purpose",
+      "repo": "audit",
+      "url": "https://github.com/drsamonline/audit/pull/4",
+      "kind": "PR",
+      "created": "2026-11-09T00:40:37Z"
     },
     {
       "title": "Wave 1: B07 - audit schema with before/after, reason and outcome",
@@ -429,124 +475,124 @@
   },
   "changes": [
     {
+      "type": "PullRequest",
+      "repo": "HMS",
+      "when": "2026-11-09T06:30:12Z",
+      "text": "opened: "
+    },
+    {
       "type": "Push",
-      "repo": "ziptastic",
-      "when": "2026-11-08T14:42:06Z",
+      "repo": "HMS",
+      "when": "2026-11-09T04:14:12Z",
+      "text": "pushed to batch-01-accountability"
+    },
+    {
+      "type": "Push",
+      "repo": "weft8-compare",
+      "when": "2026-11-09T04:37:33Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "PullRequest",
+      "repo": "HMS",
+      "when": "2026-11-09T06:14:13Z",
+      "text": "opened: "
+    },
+    {
+      "type": "Push",
+      "repo": "skills",
+      "when": "2026-11-09T04:16:51Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "NEO",
-      "when": "2026-11-07T09:13:26Z",
-      "text": "pushed to master"
-    },
-    {
-      "type": "Push",
-      "repo": "ULTIMATE-WINDOWS-OPTIMIZER",
-      "when": "2026-11-08T16:26:22Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Create",
-      "repo": "lexora",
-      "when": "2026-11-08T16:25:02Z",
-      "text": ""
-    },
-    {
-      "type": "Create",
-      "repo": "lexora",
-      "when": "2026-11-08T17:42:58Z",
-      "text": ""
-    },
-    {
-      "type": "Create",
-      "repo": "lexora",
-      "when": "2026-11-08T15:49:14Z",
-      "text": ""
-    },
-    {
-      "type": "Push",
-      "repo": "lexora",
-      "when": "2026-11-08T17:36:32Z",
-      "text": "pushed to main"
+      "repo": "HMS",
+      "when": "2026-11-09T05:02:08Z",
+      "text": "pushed to batch-02-enumeration"
     },
     {
       "type": "Push",
       "repo": "ai-bridge",
-      "when": "2026-11-08T09:44:38Z",
+      "when": "2026-11-08T17:35:10Z",
       "text": "pushed to step1-runtime-dir"
     },
     {
       "type": "Push",
       "repo": "ai-bridge",
-      "when": "2026-11-08T09:44:36Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "base-bench",
-      "when": "2026-11-07T08:16:12Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "game-kit",
-      "when": "2026-11-07T08:15:11Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "lexora",
-      "when": "2026-11-08T13:31:03Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "ziptastic",
-      "when": "2026-11-08T09:28:29Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "ai-bridge",
-      "when": "2026-11-08T15:29:17Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "ai-bridge",
-      "when": "2026-11-08T15:22:52Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "ai-bridge",
-      "when": "2026-11-08T15:20:10Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Create",
-      "repo": "lexora",
-      "when": "2026-11-08T18:38:46Z",
-      "text": ""
+      "when": "2026-11-08T17:26:19Z",
+      "text": "pushed to step1-runtime-dir"
     },
     {
       "type": "Push",
       "repo": "kitbox",
-      "when": "2026-11-08T13:00:19Z",
+      "when": "2026-11-08T19:28:02Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "lexora",
+      "when": "2026-11-07T13:20:46Z",
+      "text": "pushed to codec-policy-r4r5-published"
+    },
+    {
+      "type": "Create",
+      "repo": "lexora",
+      "when": "2026-11-07T13:16:25Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
+      "repo": "ULTIMATE-WINDOWS-OPTIMIZER",
+      "when": "2026-11-07T13:11:27Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "ai-bridge",
-      "when": "2026-11-08T17:02:46Z",
+      "when": "2026-11-08T15:29:31Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Delete",
+      "repo": "CLDR",
+      "when": "2026-11-07T13:02:54Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
+      "repo": "CLDR",
+      "when": "2026-11-07T13:01:39Z",
+      "text": "pushed to app-shortcut-and-documentation-cleanup-77d23"
+    },
+    {
+      "type": "PullRequest",
+      "repo": "HMS",
+      "when": "2026-11-09T05:01:57Z",
+      "text": "opened: "
+    },
+    {
+      "type": "Push",
+      "repo": "ULTIMATE-WINDOWS-OPTIMIZER",
+      "when": "2026-11-07T12:57:11Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "The_Browser",
+      "when": "2026-11-07T14:06:40Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "ai-bridge",
-      "when": "2026-11-08T18:24:37Z",
-      "text": "pushed to step1-runtime-dir"
+      "when": "2026-11-08T15:15:51Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "The_Browser",
+      "when": "2026-11-08T16:54:42Z",
+      "text": "pushed to main"
     }
   ],
   "automation": [
@@ -560,9 +606,9 @@
       ],
       "schedule": "weekly (Wed) 05:00 UTC",
       "repo_url": "https://github.com/drsamonline/app-builder",
-      "url": "https://github.com/drsamonline/app-builder/actions/runs/40839797741",
-      "last_run": "2026-10-29T08:07:06Z",
-      "conclusion": "success"
+      "url": "https://github.com/drsamonline/app-builder/actions/runs/42574725994",
+      "last_run": "2026-11-09T06:42:50Z",
+      "conclusion": "queued"
     },
     {
       "repo": "audit",
@@ -616,8 +662,8 @@
       ],
       "schedule": "weekly (Tue) 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/42541336845",
-      "last_run": "2026-11-09T00:39:09Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/42574731924",
+      "last_run": "2026-11-09T06:42:50Z",
       "conclusion": "in_progress"
     },
     {
@@ -644,8 +690,8 @@
       ],
       "schedule": "daily 03:17 UTC",
       "repo_url": "https://github.com/drsamonline/drsamonline",
-      "url": "https://github.com/drsamonline/drsamonline/actions/runs/42471786588",
-      "last_run": "2026-11-08T10:31:53Z",
+      "url": "https://github.com/drsamonline/drsamonline/actions/runs/42546614953",
+      "last_run": "2026-11-09T01:38:34Z",
       "conclusion": "success"
     },
     {
@@ -658,8 +704,8 @@
       ],
       "schedule": "daily 03:37 UTC",
       "repo_url": "https://github.com/drsamonline/drsamonline.github.io",
-      "url": "https://github.com/drsamonline/drsamonline.github.io/actions/runs/42472571773",
-      "last_run": "2026-11-08T10:43:50Z",
+      "url": "https://github.com/drsamonline/drsamonline.github.io/actions/runs/42555656103",
+      "last_run": "2026-11-09T03:19:00Z",
       "conclusion": "success"
     },
     {
@@ -973,8 +1019,8 @@
       "schedule": "weekly (Tue) 04:12 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
       "url": "https://github.com/drsamonline/Matneo/actions/runs/42541345995",
-      "last_run": "2026-11-09T00:39:12Z",
-      "conclusion": "pending"
+      "last_run": "2026-11-09T00:40:57Z",
+      "conclusion": "failure"
     },
     {
       "repo": "Matneo",
@@ -1000,9 +1046,9 @@
       ],
       "schedule": "weekly (Tue) 04:22 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/runs/42541341704",
-      "last_run": "2026-11-09T00:39:12Z",
-      "conclusion": "in_progress"
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/42574744168",
+      "last_run": "2026-11-09T06:42:53Z",
+      "conclusion": "queued"
     },
     {
       "repo": "registry",
@@ -1029,8 +1075,8 @@
       ],
       "schedule": "weekly (Mon) 03:23 UTC",
       "repo_url": "https://github.com/drsamonline/skills",
-      "url": "https://github.com/drsamonline/skills/actions/runs/42391388194",
-      "last_run": "2026-11-07T16:28:34Z",
+      "url": "https://github.com/drsamonline/skills/actions/runs/42572842921",
+      "last_run": "2026-11-09T06:24:45Z",
       "conclusion": "success"
     }
   ],
@@ -1117,11 +1163,11 @@
         "html_url": "https://github.com/drsamonline/neon-runner"
       },
       {
-        "name": "idle-city-ages-of-growth",
+        "name": "NEO",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
-        "html_url": "https://github.com/drsamonline/idle-city-ages-of-growth"
+        "html_url": "https://github.com/drsamonline/NEO"
       },
       {
         "name": "HMS",
@@ -1136,6 +1182,69 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/kitbox"
+      },
+      {
+        "name": "weft8-hardware",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/weft8-hardware"
+      },
+      {
+        "name": "weft8-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/weft8-kit"
+      },
+      {
+        "name": "weft8-compare",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/weft8-compare"
+      },
+      {
+        "name": "app-clip-loom",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/app-clip-loom"
+      },
+      {
+        "name": "ziptastic",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/ziptastic"
+      },
+      {
+        "name": "accent-oracle",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/accent-oracle"
+      },
+      {
+        "name": "HCS",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/HCS"
+      },
+      {
+        "name": "dumps-4",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/dumps-4"
+      },
+      {
+        "name": "idle-city-ages-of-growth",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/idle-city-ages-of-growth"
       },
       {
         "name": "lexora",
@@ -1164,13 +1273,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/The_Browser"
-      },
-      {
-        "name": "ziptastic",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/ziptastic"
       },
       {
         "name": "ULTIMATE-WINDOWS-OPTIMIZER",
@@ -1208,13 +1310,6 @@
         "html_url": "https://github.com/drsamonline/app-image-toolkit"
       },
       {
-        "name": "NEO",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/NEO"
-      },
-      {
         "name": "aethelgard-rpg-engine",
         "stars": 1,
         "forks": 0,
@@ -1248,13 +1343,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/eon-commando"
-      },
-      {
-        "name": "weft8-hardware",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/weft8-hardware"
       },
       {
         "name": "weft8-classroom",
@@ -1318,20 +1406,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/seance"
-      },
-      {
-        "name": "weft8-kit",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/weft8-kit"
-      },
-      {
-        "name": "weft8-compare",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/weft8-compare"
       },
       {
         "name": "web-kit",
@@ -1537,20 +1611,6 @@
         "html_url": "https://github.com/drsamonline/app-companion-forge"
       },
       {
-        "name": "app-clip-loom",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/app-clip-loom"
-      },
-      {
-        "name": "accent-oracle",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/accent-oracle"
-      },
-      {
         "name": "Scrap-and-Gun",
         "stars": 1,
         "forks": 0,
@@ -1563,13 +1623,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/Repertorium-Publicum"
-      },
-      {
-        "name": "HCS",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/HCS"
       },
       {
         "name": "All4ONE",
@@ -1768,13 +1821,6 @@
         "html_url": "https://github.com/drsamonline/neon-velocity"
       },
       {
-        "name": "dumps-4",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/dumps-4"
-      },
-      {
         "name": "dumps-3",
         "stars": 1,
         "forks": 0,
@@ -1845,31 +1891,17 @@
     "window": "14 days",
     "note": "Last 14 days — GitHub's retention window.",
     "repos": {
-      "idle-city-ages-of-growth": {
-        "views": 16,
-        "uniques": 5,
-        "clones": 868,
-        "clone_uniques": 218,
-        "referrers": [
-          {
-            "from": "drsamonline.github.io",
-            "count": 10
-          },
-          {
-            "from": "github.com",
-            "count": 3
-          }
-        ],
+      "NEO": {
+        "views": 1,
+        "uniques": 1,
+        "clones": 175,
+        "clone_uniques": 62,
+        "referrers": [],
         "paths": [
           {
-            "path": "/drsamonline/idle-city-ages-of-growth",
-            "count": 15,
-            "title": "Overview"
-          },
-          {
-            "path": "/drsamonline/idle-city-ages-of-growth/pull/1",
+            "path": "/drsamonline/NEO",
             "count": 1,
-            "title": "/pull/1"
+            "title": "Overview"
           }
         ]
       },
@@ -1895,10 +1927,193 @@
       "kitbox": {
         "views": 0,
         "uniques": 0,
-        "clones": 0,
-        "clone_uniques": 0,
+        "clones": 652,
+        "clone_uniques": 157,
         "referrers": [],
         "paths": []
+      },
+      "weft8-hardware": {
+        "views": 1,
+        "uniques": 1,
+        "clones": 324,
+        "clone_uniques": 105,
+        "referrers": [],
+        "paths": [
+          {
+            "path": "/drsamonline/weft8-hardware/actions/runs/41158513634",
+            "count": 1,
+            "title": "/actions/runs/41158513634"
+          }
+        ]
+      },
+      "weft8-kit": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 319,
+        "clone_uniques": 86,
+        "referrers": [],
+        "paths": []
+      },
+      "weft8-compare": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 395,
+        "clone_uniques": 105,
+        "referrers": [],
+        "paths": []
+      },
+      "app-clip-loom": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 526,
+        "clone_uniques": 145,
+        "referrers": [],
+        "paths": []
+      },
+      "ziptastic": {
+        "views": 44,
+        "uniques": 3,
+        "clones": 1642,
+        "clone_uniques": 430,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 6
+          },
+          {
+            "from": "drsamonline.github.io",
+            "count": 2
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/ziptastic/tree/main",
+            "count": 9,
+            "title": "/tree/main"
+          },
+          {
+            "path": "/drsamonline/ziptastic",
+            "count": 7,
+            "title": "Overview"
+          },
+          {
+            "path": "/drsamonline/ziptastic/tree/main/src/engine",
+            "count": 6,
+            "title": "/tree/main/src/engine"
+          },
+          {
+            "path": "/drsamonline/ziptastic/new/main",
+            "count": 3,
+            "title": "/new/main"
+          },
+          {
+            "path": "/drsamonline/ziptastic/tree/delete/main/src",
+            "count": 3,
+            "title": "/tree/delete/main/src"
+          }
+        ]
+      },
+      "accent-oracle": {
+        "views": 1,
+        "uniques": 1,
+        "clones": 217,
+        "clone_uniques": 81,
+        "referrers": [
+          {
+            "from": "drsamonline.github.io",
+            "count": 1
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/accent-oracle",
+            "count": 1,
+            "title": "Overview"
+          }
+        ]
+      },
+      "HCS": {
+        "views": 27,
+        "uniques": 1,
+        "clones": 220,
+        "clone_uniques": 97,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 4
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/HCS",
+            "count": 8,
+            "title": "Overview"
+          },
+          {
+            "path": "/drsamonline/HCE",
+            "count": 3,
+            "title": "Overview"
+          },
+          {
+            "path": "/drsamonline/HCS/edit/main/README.md",
+            "count": 3,
+            "title": "/edit/main/README.md"
+          },
+          {
+            "path": "/drsamonline/HCS/tree/main",
+            "count": 3,
+            "title": "/tree/main"
+          },
+          {
+            "path": "/drsamonline/HCS/blob/main/SOURCES",
+            "count": 2,
+            "title": "/blob/main/SOURCES"
+          }
+        ]
+      },
+      "smartnote-scheduler": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 3,
+        "clone_uniques": 1,
+        "referrers": [],
+        "paths": []
+      },
+      "dumps-4": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 37,
+        "clone_uniques": 1,
+        "referrers": [],
+        "paths": []
+      },
+      "idle-city-ages-of-growth": {
+        "views": 16,
+        "uniques": 5,
+        "clones": 624,
+        "clone_uniques": 162,
+        "referrers": [
+          {
+            "from": "drsamonline.github.io",
+            "count": 10
+          },
+          {
+            "from": "github.com",
+            "count": 3
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/idle-city-ages-of-growth",
+            "count": 15,
+            "title": "Overview"
+          },
+          {
+            "path": "/drsamonline/idle-city-ages-of-growth/pull/1",
+            "count": 1,
+            "title": "/pull/1"
+          }
+        ]
       },
       "lexora": {
         "views": 11,
@@ -2002,64 +2217,40 @@
         ]
       },
       "The_Browser": {
-        "views": 2,
-        "uniques": 2,
-        "clones": 263,
-        "clone_uniques": 83,
-        "referrers": [],
+        "views": 6,
+        "uniques": 3,
+        "clones": 532,
+        "clone_uniques": 155,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 2
+          },
+          {
+            "from": "drsamonline.github.io",
+            "count": 1
+          }
+        ],
         "paths": [
+          {
+            "path": "/drsamonline/The_Browser",
+            "count": 3,
+            "title": "Overview"
+          },
           {
             "path": "/drsamonline/The_Browser/actions/runs/40444979255",
             "count": 1,
             "title": "/actions/runs/40444979255"
           },
           {
+            "path": "/drsamonline/The_Browser/deployments",
+            "count": 1,
+            "title": "/deployments"
+          },
+          {
             "path": "/drsamonline/The_Browser/tree/main/src",
             "count": 1,
             "title": "/tree/main/src"
-          }
-        ]
-      },
-      "ziptastic": {
-        "views": 44,
-        "uniques": 3,
-        "clones": 1642,
-        "clone_uniques": 430,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 6
-          },
-          {
-            "from": "drsamonline.github.io",
-            "count": 2
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/ziptastic/tree/main",
-            "count": 9,
-            "title": "/tree/main"
-          },
-          {
-            "path": "/drsamonline/ziptastic",
-            "count": 7,
-            "title": "Overview"
-          },
-          {
-            "path": "/drsamonline/ziptastic/tree/main/src/engine",
-            "count": 6,
-            "title": "/tree/main/src/engine"
-          },
-          {
-            "path": "/drsamonline/ziptastic/new/main",
-            "count": 3,
-            "title": "/new/main"
-          },
-          {
-            "path": "/drsamonline/ziptastic/tree/delete/main/src",
-            "count": 3,
-            "title": "/tree/delete/main/src"
           }
         ]
       },
@@ -2117,8 +2308,8 @@
       "CLDR": {
         "views": 1,
         "uniques": 1,
-        "clones": 597,
-        "clone_uniques": 128,
+        "clones": 637,
+        "clone_uniques": 130,
         "referrers": [
           {
             "from": "github.com",
@@ -2172,30 +2363,16 @@
       "app-image-toolkit": {
         "views": 0,
         "uniques": 0,
-        "clones": 713,
-        "clone_uniques": 182,
+        "clones": 715,
+        "clone_uniques": 183,
         "referrers": [],
         "paths": []
-      },
-      "NEO": {
-        "views": 1,
-        "uniques": 1,
-        "clones": 175,
-        "clone_uniques": 62,
-        "referrers": [],
-        "paths": [
-          {
-            "path": "/drsamonline/NEO",
-            "count": 1,
-            "title": "Overview"
-          }
-        ]
       },
       "aethelgard-rpg-engine": {
         "views": 1,
         "uniques": 1,
-        "clones": 370,
-        "clone_uniques": 142,
+        "clones": 263,
+        "clone_uniques": 103,
         "referrers": [],
         "paths": [
           {
@@ -2208,7 +2385,7 @@
       "musicgen": {
         "views": 3,
         "uniques": 1,
-        "clones": 735,
+        "clones": 737,
         "clone_uniques": 210,
         "referrers": [
           {
@@ -2240,8 +2417,8 @@
       "remedy-relationship-explorer": {
         "views": 0,
         "uniques": 0,
-        "clones": 819,
-        "clone_uniques": 206,
+        "clones": 746,
+        "clone_uniques": 184,
         "referrers": [],
         "paths": []
       },
@@ -2271,20 +2448,6 @@
             "path": "/drsamonline/eon-commando/blob/main/index.html",
             "count": 1,
             "title": "/blob/main/index.html"
-          }
-        ]
-      },
-      "weft8-hardware": {
-        "views": 1,
-        "uniques": 1,
-        "clones": 307,
-        "clone_uniques": 99,
-        "referrers": [],
-        "paths": [
-          {
-            "path": "/drsamonline/weft8-hardware/actions/runs/41158513634",
-            "count": 1,
-            "title": "/actions/runs/41158513634"
           }
         ]
       },
@@ -2318,7 +2481,7 @@
       "heavenzip": {
         "views": 4,
         "uniques": 1,
-        "clones": 196,
+        "clones": 197,
         "clone_uniques": 91,
         "referrers": [
           {
@@ -2390,24 +2553,18 @@
         ]
       },
       "export-kit": {
-        "views": 1,
-        "uniques": 1,
-        "clones": 251,
-        "clone_uniques": 89,
+        "views": 0,
+        "uniques": 0,
+        "clones": 219,
+        "clone_uniques": 79,
         "referrers": [],
-        "paths": [
-          {
-            "path": "/drsamonline/export-kit",
-            "count": 1,
-            "title": "Overview"
-          }
-        ]
+        "paths": []
       },
       "today-card": {
         "views": 13,
         "uniques": 4,
-        "clones": 595,
-        "clone_uniques": 150,
+        "clones": 542,
+        "clone_uniques": 139,
         "referrers": [],
         "paths": [
           {
@@ -2425,24 +2582,8 @@
       "seance": {
         "views": 0,
         "uniques": 0,
-        "clones": 489,
-        "clone_uniques": 124,
-        "referrers": [],
-        "paths": []
-      },
-      "weft8-kit": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 319,
-        "clone_uniques": 86,
-        "referrers": [],
-        "paths": []
-      },
-      "weft8-compare": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 395,
-        "clone_uniques": 105,
+        "clones": 455,
+        "clone_uniques": 115,
         "referrers": [],
         "paths": []
       },
@@ -2463,8 +2604,8 @@
       "ui-kit": {
         "views": 0,
         "uniques": 0,
-        "clones": 224,
-        "clone_uniques": 85,
+        "clones": 203,
+        "clone_uniques": 79,
         "referrers": [],
         "paths": []
       },
@@ -2479,8 +2620,8 @@
       "search-kit": {
         "views": 0,
         "uniques": 0,
-        "clones": 231,
-        "clone_uniques": 88,
+        "clones": 184,
+        "clone_uniques": 72,
         "referrers": [],
         "paths": []
       },
@@ -2506,8 +2647,8 @@
       "repertory-kit": {
         "views": 0,
         "uniques": 0,
-        "clones": 190,
-        "clone_uniques": 78,
+        "clones": 148,
+        "clone_uniques": 62,
         "referrers": [],
         "paths": []
       },
@@ -2536,8 +2677,8 @@
       "lumen": {
         "views": 11,
         "uniques": 2,
-        "clones": 687,
-        "clone_uniques": 209,
+        "clones": 688,
+        "clone_uniques": 210,
         "referrers": [
           {
             "from": "github.com",
@@ -2575,24 +2716,18 @@
       "lan-kit": {
         "views": 0,
         "uniques": 0,
-        "clones": 323,
-        "clone_uniques": 124,
+        "clones": 260,
+        "clone_uniques": 108,
         "referrers": [],
         "paths": []
       },
       "crypto-kit": {
-        "views": 1,
-        "uniques": 1,
-        "clones": 338,
-        "clone_uniques": 115,
+        "views": 0,
+        "uniques": 0,
+        "clones": 224,
+        "clone_uniques": 82,
         "referrers": [],
-        "paths": [
-          {
-            "path": "/drsamonline/crypto-kit",
-            "count": 1,
-            "title": "Overview"
-          }
-        ]
+        "paths": []
       },
       "corefit-md": {
         "views": 0,
@@ -2603,15 +2738,15 @@
         "paths": []
       },
       "control-panel": {
-        "views": 3,
-        "uniques": 2,
-        "clones": 887,
-        "clone_uniques": 291,
+        "views": 2,
+        "uniques": 1,
+        "clones": 717,
+        "clone_uniques": 230,
         "referrers": [],
         "paths": [
           {
             "path": "/drsamonline/control-panel",
-            "count": 3,
+            "count": 2,
             "title": "Overview"
           }
         ]
@@ -2656,16 +2791,16 @@
       "chalk-lan": {
         "views": 0,
         "uniques": 0,
-        "clones": 1014,
-        "clone_uniques": 239,
+        "clones": 923,
+        "clone_uniques": 210,
         "referrers": [],
         "paths": []
       },
       "case-kit": {
         "views": 0,
         "uniques": 0,
-        "clones": 340,
-        "clone_uniques": 136,
+        "clones": 180,
+        "clone_uniques": 75,
         "referrers": [],
         "paths": []
       },
@@ -2691,8 +2826,8 @@
       "book-kit": {
         "views": 1,
         "uniques": 1,
-        "clones": 257,
-        "clone_uniques": 81,
+        "clones": 168,
+        "clone_uniques": 60,
         "referrers": [
           {
             "from": "drsamonline.github.io",
@@ -2729,8 +2864,8 @@
       "audio-kit": {
         "views": 3,
         "uniques": 2,
-        "clones": 232,
-        "clone_uniques": 95,
+        "clones": 203,
+        "clone_uniques": 83,
         "referrers": [
           {
             "from": "github.com",
@@ -2748,16 +2883,16 @@
       "astro-kit": {
         "views": 0,
         "uniques": 0,
-        "clones": 387,
-        "clone_uniques": 146,
+        "clones": 280,
+        "clone_uniques": 106,
         "referrers": [],
         "paths": []
       },
       "art-kit": {
         "views": 2,
         "uniques": 2,
-        "clones": 254,
-        "clone_uniques": 106,
+        "clones": 248,
+        "clone_uniques": 104,
         "referrers": [
           {
             "from": "drsamonline.github.io",
@@ -2836,38 +2971,11 @@
         "referrers": [],
         "paths": []
       },
-      "app-clip-loom": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 525,
-        "clone_uniques": 144,
-        "referrers": [],
-        "paths": []
-      },
-      "accent-oracle": {
-        "views": 1,
-        "uniques": 1,
-        "clones": 217,
-        "clone_uniques": 81,
-        "referrers": [
-          {
-            "from": "drsamonline.github.io",
-            "count": 1
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/accent-oracle",
-            "count": 1,
-            "title": "Overview"
-          }
-        ]
-      },
       "Scrap-and-Gun": {
         "views": 7,
         "uniques": 2,
-        "clones": 433,
-        "clone_uniques": 170,
+        "clones": 382,
+        "clone_uniques": 143,
         "referrers": [
           {
             "from": "github.com",
@@ -2945,45 +3053,6 @@
           }
         ]
       },
-      "HCS": {
-        "views": 27,
-        "uniques": 1,
-        "clones": 220,
-        "clone_uniques": 97,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 4
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/HCS",
-            "count": 8,
-            "title": "Overview"
-          },
-          {
-            "path": "/drsamonline/HCE",
-            "count": 3,
-            "title": "Overview"
-          },
-          {
-            "path": "/drsamonline/HCS/edit/main/README.md",
-            "count": 3,
-            "title": "/edit/main/README.md"
-          },
-          {
-            "path": "/drsamonline/HCS/tree/main",
-            "count": 3,
-            "title": "/tree/main"
-          },
-          {
-            "path": "/drsamonline/HCS/blob/main/SOURCES",
-            "count": 2,
-            "title": "/blob/main/SOURCES"
-          }
-        ]
-      },
       "All4ONE": {
         "views": 10,
         "uniques": 6,
@@ -3046,19 +3115,11 @@
           }
         ]
       },
-      "smartnote-scheduler": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 3,
-        "clone_uniques": 1,
-        "referrers": [],
-        "paths": []
-      },
       "retro-strike": {
         "views": 1,
         "uniques": 1,
-        "clones": 412,
-        "clone_uniques": 120,
+        "clones": 342,
+        "clone_uniques": 90,
         "referrers": [],
         "paths": [
           {
@@ -3106,16 +3167,16 @@
       "read-live-transform-app": {
         "views": 0,
         "uniques": 0,
-        "clones": 598,
-        "clone_uniques": 174,
+        "clones": 381,
+        "clone_uniques": 114,
         "referrers": [],
         "paths": []
       },
       "conqueror-os": {
         "views": 1,
         "uniques": 1,
-        "clones": 1041,
-        "clone_uniques": 217,
+        "clones": 850,
+        "clone_uniques": 181,
         "referrers": [
           {
             "from": "github.com",
@@ -3131,45 +3192,45 @@
         ]
       },
       "open-materia-medica": {
-        "views": 34,
-        "uniques": 25,
-        "clones": 559,
-        "clone_uniques": 139,
+        "views": 18,
+        "uniques": 13,
+        "clones": 503,
+        "clone_uniques": 128,
         "referrers": [
-          {
-            "from": "drsamonline.github.io",
-            "count": 20
-          },
           {
             "from": "github.com",
             "count": 8
+          },
+          {
+            "from": "drsamonline.github.io",
+            "count": 7
           }
         ],
         "paths": [
           {
             "path": "/drsamonline/open-materia-medica/releases/tag/app-latest",
-            "count": 20,
+            "count": 7,
             "title": "/releases/tag/app-latest"
           },
           {
             "path": "/drsamonline/open-materia-medica",
-            "count": 8,
+            "count": 7,
             "title": "Overview"
-          },
-          {
-            "path": "/drsamonline/open-materia-medica/issues",
-            "count": 2,
-            "title": "/issues"
-          },
-          {
-            "path": "/drsamonline/open-materia-medica/commit/f6734d24841fb645a09408e14dd44b48f66f137e",
-            "count": 1,
-            "title": "/commit/f6734d24841fb645a09408e14dd44b48f66f137e"
           },
           {
             "path": "/drsamonline/open-materia-medica/discussions/1",
             "count": 1,
             "title": "/discussions/1"
+          },
+          {
+            "path": "/drsamonline/open-materia-medica/issues",
+            "count": 1,
+            "title": "/issues"
+          },
+          {
+            "path": "/drsamonline/open-materia-medica/pulls",
+            "count": 1,
+            "title": "/pulls"
           }
         ]
       },
@@ -3188,10 +3249,10 @@
         ]
       },
       "aethelgard-games": {
-        "views": 3,
-        "uniques": 2,
-        "clones": 762,
-        "clone_uniques": 152,
+        "views": 4,
+        "uniques": 3,
+        "clones": 599,
+        "clone_uniques": 123,
         "referrers": [
           {
             "from": "github.com",
@@ -3203,14 +3264,19 @@
             "path": "/drsamonline/aethelgard-games",
             "count": 3,
             "title": "Overview"
+          },
+          {
+            "path": "/drsamonline/aethelgard-games/blob/main/chronicles/LICENSE-ASSETS.md",
+            "count": 1,
+            "title": "/blob/main/chronicles/LICENSE-ASSETS.md"
           }
         ]
       },
       "whispering-body-first-aid": {
         "views": 0,
         "uniques": 0,
-        "clones": 568,
-        "clone_uniques": 126,
+        "clones": 485,
+        "clone_uniques": 105,
         "referrers": [],
         "paths": []
       },
@@ -3225,8 +3291,8 @@
       "skin-case-tracker": {
         "views": 0,
         "uniques": 0,
-        "clones": 546,
-        "clone_uniques": 136,
+        "clones": 416,
+        "clone_uniques": 97,
         "referrers": [],
         "paths": []
       },
@@ -3296,8 +3362,8 @@
       "helioprism": {
         "views": 1,
         "uniques": 1,
-        "clones": 669,
-        "clone_uniques": 180,
+        "clones": 590,
+        "clone_uniques": 158,
         "referrers": [],
         "paths": [
           {
@@ -3308,53 +3374,24 @@
         ]
       },
       "gentle-pediatrics-companion": {
-        "views": 11,
-        "uniques": 2,
-        "clones": 573,
-        "clone_uniques": 149,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 3
-          },
-          {
-            "from": "drsamonline.github.io",
-            "count": 1
-          }
-        ],
+        "views": 1,
+        "uniques": 1,
+        "clones": 415,
+        "clone_uniques": 109,
+        "referrers": [],
         "paths": [
           {
-            "path": "/drsamonline/gentle-pediatrics-companion",
-            "count": 5,
-            "title": "Overview"
-          },
-          {
-            "path": "/drsamonline/gentle-pediatrics-companion/activity",
+            "path": "/drsamonline/gentle-pediatrics-companion/edit/main/README.md",
             "count": 1,
-            "title": "/activity"
-          },
-          {
-            "path": "/drsamonline/gentle-pediatrics-companion/blob/main/.github/workflows/build-apps.yml",
-            "count": 1,
-            "title": "/blob/main/.github/workflows/build-apps.yml"
-          },
-          {
-            "path": "/drsamonline/gentle-pediatrics-companion/blob/main/docs/shot.png",
-            "count": 1,
-            "title": "/blob/main/docs/shot.png"
-          },
-          {
-            "path": "/drsamonline/gentle-pediatrics-companion/blob/main/index.html",
-            "count": 1,
-            "title": "/blob/main/index.html"
+            "title": "/edit/main/README.md"
           }
         ]
       },
       "dance-fight": {
         "views": 0,
         "uniques": 0,
-        "clones": 651,
-        "clone_uniques": 152,
+        "clones": 540,
+        "clone_uniques": 134,
         "referrers": [],
         "paths": []
       },
@@ -3419,24 +3456,24 @@
       "blinkcode-ai": {
         "views": 0,
         "uniques": 0,
-        "clones": 692,
-        "clone_uniques": 167,
+        "clones": 623,
+        "clone_uniques": 152,
         "referrers": [],
         "paths": []
       },
       "ambient-sound-studio": {
         "views": 0,
         "uniques": 0,
-        "clones": 704,
-        "clone_uniques": 181,
+        "clones": 562,
+        "clone_uniques": 143,
         "referrers": [],
         "paths": []
       },
       "BLINKTRANSFER": {
         "views": 3,
         "uniques": 3,
-        "clones": 988,
-        "clone_uniques": 220,
+        "clones": 904,
+        "clone_uniques": 201,
         "referrers": [
           {
             "from": "drsamonline.github.io",
@@ -3456,10 +3493,10 @@
         ]
       },
       "homoeopathic-materia-medica-repertory-json": {
-        "views": 52,
+        "views": 53,
         "uniques": 8,
-        "clones": 1449,
-        "clone_uniques": 326,
+        "clones": 1442,
+        "clone_uniques": 324,
         "referrers": [
           {
             "from": "github.com",
@@ -3473,7 +3510,7 @@
         "paths": [
           {
             "path": "/drsamonline/homoeopathic-materia-medica-repertory-json",
-            "count": 15,
+            "count": 16,
             "title": "Overview"
           },
           {
@@ -3501,18 +3538,29 @@
       "SmartNotes": {
         "views": 0,
         "uniques": 0,
-        "clones": 625,
-        "clone_uniques": 71,
+        "clones": 610,
+        "clone_uniques": 65,
         "referrers": [],
         "paths": []
       },
       "neon-engine": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 234,
-        "clone_uniques": 90,
-        "referrers": [],
-        "paths": []
+        "views": 1,
+        "uniques": 1,
+        "clones": 202,
+        "clone_uniques": 78,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 1
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/neon-engine",
+            "count": 1,
+            "title": "Overview"
+          }
+        ]
       },
       "UniRep": {
         "views": 0,
@@ -3531,20 +3579,20 @@
         "paths": []
       },
       "neon-velocity": {
-        "views": 5,
+        "views": 4,
         "uniques": 2,
-        "clones": 332,
-        "clone_uniques": 119,
+        "clones": 238,
+        "clone_uniques": 97,
         "referrers": [
           {
             "from": "github.com",
-            "count": 3
+            "count": 2
           }
         ],
         "paths": [
           {
             "path": "/drsamonline/neon-velocity",
-            "count": 4,
+            "count": 3,
             "title": "Overview"
           },
           {
@@ -3553,14 +3601,6 @@
             "title": "/actions/runs/40543779427"
           }
         ]
-      },
-      "dumps-4": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 37,
-        "clone_uniques": 1,
-        "referrers": [],
-        "paths": []
       },
       "dumps-3": {
         "views": 0,
@@ -3598,6 +3638,314 @@
   },
   "repos": [
     {
+      "name": "NEO",
+      "description": "NOVA — a statically typed, compiled systems programming language whose compiler lowers to C, JavaScript, Rust and WebAssembly.",
+      "pushed_at": "2026-11-09T06:38:29Z",
+      "homepage": "https://drsamonline.github.io/NEO/",
+      "html_url": "https://github.com/drsamonline/NEO",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "HMS",
+      "description": "HHMS — a LAN-based hospital management system purpose-built for homeopathic hospitals and clinics, with a server-owned database and no cloud lock-in.",
+      "pushed_at": "2026-11-09T06:30:09Z",
+      "homepage": "https://drsamonline.github.io/HMS/",
+      "html_url": "https://github.com/drsamonline/HMS",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "kitbox",
+      "description": "Kitbox — every tool, one offline app. 280 tools across 21 categories in a single HTML file: no build step, no dependencies, no network, no account.",
+      "pushed_at": "2026-11-09T04:39:52Z",
+      "homepage": "https://drsamonline.github.io/kitbox/",
+      "html_url": "https://github.com/drsamonline/kitbox",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "weft8-hardware",
+      "description": "Weft-8 on real silicon — a C port of the Loom's 8-bit machine, an Arduino/ESP32 sketch and a parity harness.",
+      "pushed_at": "2026-11-09T04:37:41Z",
+      "homepage": "https://drsamonline.github.io/weft8-hardware/",
+      "html_url": "https://github.com/drsamonline/weft8-hardware",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "weft8-compare",
+      "description": "Weft-8 beside x86 and ARM — the same algorithm in three machines, so you can see which part is the computer.",
+      "pushed_at": "2026-11-09T04:37:32Z",
+      "homepage": "https://drsamonline.github.io/weft8-compare/",
+      "html_url": "https://github.com/drsamonline/weft8-compare",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "app-clip-loom",
+      "description": "Clip Loom — clipboard programs you can read: strip tracking, tidy text, keep what matters. Weft-8 on the Loom.",
+      "pushed_at": "2026-11-09T04:37:30Z",
+      "homepage": "https://drsamonline.github.io/app-clip-loom/",
+      "html_url": "https://github.com/drsamonline/app-clip-loom",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "ziptastic",
+      "description": "The CHCE native engine — a single binary with the codecs embedded.",
+      "pushed_at": "2026-11-09T04:13:25Z",
+      "homepage": "https://drsamonline.github.io/ziptastic/",
+      "html_url": "https://github.com/drsamonline/ziptastic",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "accent-oracle",
+      "description": "It listens to four seconds of speech and guesses which accent it heard — on device, with a band on how sure it is.",
+      "pushed_at": "2026-11-09T04:13:17Z",
+      "homepage": "https://drsamonline.github.io/accent-oracle/",
+      "html_url": "https://github.com/drsamonline/accent-oracle",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "HCS",
+      "description": "CHCE — Holistic Compression Sources: the reference compressor sources the CHCE engines are built from.",
+      "pushed_at": "2026-11-09T04:13:15Z",
+      "homepage": "https://drsamonline.github.io/HCS/",
+      "html_url": "https://github.com/drsamonline/HCS",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "4/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "smartnote-scheduler",
+      "description": "Notes that schedule themselves — write in plain English and the note is classified, prioritised, dated and reminded. In development.",
+      "pushed_at": "2026-11-09T03:17:10Z",
+      "homepage": "https://drsamonline.github.io/smartnote-scheduler/",
+      "html_url": "https://github.com/drsamonline/smartnote-scheduler",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "dumps-4",
+      "description": "Pre-merge backups (part 4). Written by drsamonline/backup.",
+      "pushed_at": "2026-11-09T00:43:03Z",
+      "homepage": "https://drsamonline.github.io/dumps-4/",
+      "html_url": "https://github.com/drsamonline/dumps-4",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "2/5",
+      "status_tone": "bad",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
       "name": "idle-city-ages-of-growth",
       "description": "A single-file idle city-builder that grows from a Stone Age village into a Fusion Age world-city.",
       "pushed_at": "2026-11-09T00:38:46Z",
@@ -3623,62 +3971,6 @@
         1,
         1,
         1
-      ]
-    },
-    {
-      "name": "HMS",
-      "description": "HHMS — a LAN-based hospital management system purpose-built for homeopathic hospitals and clinics, with a server-owned database and no cloud lock-in.",
-      "pushed_at": "2026-11-08T19:35:16Z",
-      "homepage": "https://drsamonline.github.io/HMS/",
-      "html_url": "https://github.com/drsamonline/HMS",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        0
-      ]
-    },
-    {
-      "name": "kitbox",
-      "description": "Kitbox — every tool, one offline app. 280 tools across 21 categories in a single HTML file: no build step, no dependencies, no network, no account.",
-      "pushed_at": "2026-11-08T19:28:02Z",
-      "homepage": "https://drsamonline.github.io/kitbox/",
-      "html_url": "https://github.com/drsamonline/kitbox",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0
       ]
     },
     {
@@ -3789,34 +4081,6 @@
         0,
         1,
         0,
-        1,
-        0
-      ]
-    },
-    {
-      "name": "ziptastic",
-      "description": "The CHCE native engine — a single binary with the codecs embedded.",
-      "pushed_at": "2026-11-08T17:07:57Z",
-      "homepage": "https://drsamonline.github.io/ziptastic/",
-      "html_url": "https://github.com/drsamonline/ziptastic",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        0,
-        0,
-        1,
         1,
         0
       ]
@@ -3990,34 +4254,6 @@
       ]
     },
     {
-      "name": "NEO",
-      "description": "NOVA — a statically typed, compiled systems programming language whose compiler lowers to C, JavaScript, Rust and WebAssembly.",
-      "pushed_at": "2026-11-07T09:13:25Z",
-      "homepage": "https://drsamonline.github.io/NEO/",
-      "html_url": "https://github.com/drsamonline/NEO",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1,
-        0,
-        0,
-        1,
-        1,
-        1,
-        0,
-        1,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0
-      ]
-    },
-    {
       "name": "aethelgard-rpg-engine",
       "description": "A dependency-free vanilla-JavaScript engine for deep single-player browser RPGs. Engine only — the games it powers live in aethelgard-games.",
       "pushed_at": "2026-11-07T09:13:13Z",
@@ -4152,34 +4388,6 @@
         1,
         1,
         1,
-        1,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "weft8-hardware",
-      "description": "Weft-8 on real silicon — a C port of the Loom's 8-bit machine, an Arduino/ESP32 sketch and a parity harness.",
-      "pushed_at": "2026-11-07T08:16:15Z",
-      "homepage": "https://drsamonline.github.io/weft8-hardware/",
-      "html_url": "https://github.com/drsamonline/weft8-hardware",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         1,
         0,
         0
@@ -4348,34 +4556,6 @@
         0,
         0,
         0,
-        1,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "weft8-compare",
-      "description": "Weft-8 beside x86 and ARM — the same algorithm in three machines, so you can see which part is the computer.",
-      "pushed_at": "2026-11-07T08:01:41Z",
-      "homepage": "https://drsamonline.github.io/weft8-compare/",
-      "html_url": "https://github.com/drsamonline/weft8-compare",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
         1,
         0,
         0
@@ -4774,62 +4954,6 @@
       ]
     },
     {
-      "name": "app-clip-loom",
-      "description": "Clip Loom — clipboard programs you can read: strip tracking, tidy text, keep what matters. Weft-8 on the Loom.",
-      "pushed_at": "2026-11-07T08:00:17Z",
-      "homepage": "https://drsamonline.github.io/app-clip-loom/",
-      "html_url": "https://github.com/drsamonline/app-clip-loom",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        1,
-        1,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "accent-oracle",
-      "description": "It listens to four seconds of speech and guesses which accent it heard — on device, with a band on how sure it is.",
-      "pushed_at": "2026-11-07T08:00:13Z",
-      "homepage": "https://drsamonline.github.io/accent-oracle/",
-      "html_url": "https://github.com/drsamonline/accent-oracle",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Scrap-and-Gun",
       "description": "SCRAP & GUN — a retro pixel-art arena-defence shooter with tactical construction, escalating waves, persistent upgrades, roguelite drafts, bosses and local co-op.",
       "pushed_at": "2026-11-07T08:00:11Z",
@@ -4878,34 +5002,6 @@
         0,
         0,
         0,
-        0,
-        1,
-        1,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "HCS",
-      "description": "CHCE — Holistic Compression Sources: the reference compressor sources the CHCE engines are built from.",
-      "pushed_at": "2026-11-07T08:00:06Z",
-      "homepage": "https://drsamonline.github.io/HCS/",
-      "html_url": "https://github.com/drsamonline/HCS",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "4/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
         0,
         1,
         1,
@@ -4963,34 +5059,6 @@
         1,
         1,
         1,
-        0,
-        1,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "smartnote-scheduler",
-      "description": "",
-      "pushed_at": "2026-11-07T07:49:40Z",
-      "homepage": "https://drsamonline.github.io/smartnote-scheduler/",
-      "html_url": "https://github.com/drsamonline/smartnote-scheduler",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "1/5",
-      "status_tone": "bad",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         0,
         1,
         0,
@@ -5804,34 +5872,6 @@
         1,
         1,
         1,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "dumps-4",
-      "description": "Pre-merge backups (part 4). Written by drsamonline/backup.",
-      "pushed_at": "2026-11-05T08:49:20Z",
-      "homepage": "https://drsamonline.github.io/dumps-4/",
-      "html_url": "https://github.com/drsamonline/dumps-4",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "2/5",
-      "status_tone": "bad",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        1,
-        0,
         0,
         0,
         0
@@ -6943,6 +6983,26 @@
       "avg": 4.7,
       "pushes": 114,
       "byrepo": {
+        "NEO": 1,
+        "HMS": 1,
+        "knowledge": 1,
+        "skills": 1,
+        "kitbox": 1,
+        "app-builder": 1,
+        "weft8-hardware": 1,
+        "weft8-kit": 1,
+        "weft8-compare": 1,
+        "app-clip-loom": 1,
+        "ziptastic": 1,
+        "drsamonline": 1,
+        "dashboard": 1,
+        "accent-oracle": 1,
+        "HCS": 1,
+        "drsamonline.github.io": 1,
+        "forge": 1,
+        "smartnote-scheduler": 1,
+        "dumps-4": 1,
+        "audit": 1,
         "idle-city-ages-of-growth": 1
       },
       "stars": 103,
