@@ -36,5 +36,6 @@
     }
   ],
   "updated": "2026-11-06",
-  "landing_note": "No landing page by design. The dashboard is a single-user tool: the app at docs/play/ is the entry point and there is nothing to introduce. A sweep must not create one."
+  "landing_note": "No landing page by design. The dashboard is a single-user tool: the app at docs/play/ is the entry point and there is nothing to introduce. A sweep must not create one. The ROOT URL therefore answers 404 by design: https://drsamonline.github.io/dashboard/ has no index.html, and the console at docs/play/index.html is what every link must point at (entry, above). Anything that still links the root is wrong, not the page.",
+  "entry": "https://drsamonline.github.io/dashboard/play/"
 }
