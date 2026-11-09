@@ -110,5 +110,21 @@ ok("the System health panel is capped so it cannot own the row", /\.panel\.cappe
 // 4. the summary is what you click to collapse
 ok("every <details> has a <summary>", [...doc.querySelectorAll("details")].every((d) => d.querySelector("summary")));
 
+// 5. THE APP IS THE SITE. There is no landing page, permanently - the owner's
+//    decision (2026-11-06, restated 2026-11-09): this console is for his own use
+//    and display, so docs/play/index.html is the entry point and the root has no
+//    page. Two things used to drift against that: a sweep restored docs/index.html
+//    as a "missing landing", and every link that pointed at the root 404'd. This
+//    asserts the declaration AND the consequence, so a future restore fails here
+//    rather than silently turning the console back into a two-page site.
+const root = path.join(__dirname, "..");
+const declared = JSON.parse(fs.readFileSync(path.join(root, "PAGES.json"), "utf8"));
+ok("PAGES.json declares NO landing page", !declared.landing, "landing = " + JSON.stringify(declared.landing));
+ok("PAGES.json declares the console as the app", declared.app === "docs/play/index.html", declared.app);
+ok("PAGES.json names the entry URL", /\/play\/$/.test(declared.entry || ""), declared.entry);
+ok("the root has no index.html (the app is the landing)", !fs.existsSync(path.join(root, "docs", "index.html")));
+ok("the 404 page sends the reader to the console, not back to the 404",
+   /href="\.\/play\/"/.test(fs.readFileSync(path.join(root, "docs", "404.html"), "utf8")));
+
 console.log("\n" + pass + " passed, " + fail + " failed");
 process.exit(fail ? 1 : 0);
