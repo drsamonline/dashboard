@@ -1,5 +1,5 @@
 {
-  "count": 15,
+  "count": 17,
   "runs": [
     {
       "id": "f2b8c1d47a90",
@@ -302,6 +302,49 @@
       },
       "advanced": [],
       "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "08fe32797775",
+      "at": "2026-11-09T16:59:40Z",
+      "workflow": "repo-learning",
+      "outcome": "ok",
+      "note": "weekly lessons from the record: 15 runs, 63 in the harvest queue; detectors, the harvest queue, and work that repeats",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "91d30cc158a0",
+      "at": "2026-11-09T18:49:44Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "build: P5 idea-story-engine CLOSED (45 of 49) - app-story-engine built from its spec (QUEUE/app-story-engine.md, master list #136), live at https://github.com/drsamonline/app-story-engine . The state is the story and the state is data: gates and consequences are declarative {var,op,value} triples, nothing is eval-ed. compile() refuses a broken book before a word is shown (missing target, unreachable page, dead end, undeclared variable). 141 assertions, mutation-tested four ways (requires ignored 3 red, trail collapsed to a set 2 red, full disk reported as saved 1 red, random ending 1 red); every failure path in the spec is asserted - a bad choice refused WITH the passage and the state untouched, a corrupt save reported with the passage it claims and never a state, a full disk stopping the saving and not the reading, no fetch/socket/remote script. Test 42676650119 green, Build + deploy 42676650717 green (EXE, Linux, APK, release, demo deployed), Pages enabled, topics set. health: scripts/new-app.py was the bug - its caller omitted the permissions block and app_src, so every app scaffolded since the 2026-11-07 pin move died at startup with no job (F-54 signature); template now renders the canonical caller, proven by scaffolding a throwaway and by this app building green. Fleet sweep (122 repos, 7 days): 69 repo/workflow pairs red; the newest three read and none a transient (app-image-toolkit red only on a PR branch, raylib-starter failure-with-a-green-job and no log - undiagnosable, The_Browser/UWO/offline-pdf-toolkit unchanged), so nothing was blindly re-run. refresh: four drsoam.py modes, DEGRADED [], 15 history snapshots, 122 repos/86 products/14 kits; dashboard + Matneo store + knowledge dispatched through the connector (the last cycle got 403).",
+      "files": {
+        "PROGRESS.log": {
+          "lines": 122
+        },
+        "STATE.json": {
+          "lines": 245
+        },
+        "BACKLOG.md": {
+          "lines": 155
+        },
+        "registry/backlog-done.json": {
+          "lines": 63
+        },
+        "scripts/new-app.py": {
+          "lines": 255
+        }
+      },
+      "advanced": [],
+      "errors": [
+        "69 repo/workflow pairs are red in the last 7 days across 122 repos - a scope decision, not something one bounded run can clear",
+        "Matneo blog.yml dead-lettered at 3/3 and posts therefore not dispatched; the fix merged, one dispatch would settle it, and that is the owner's call",
+        "raylib-starter's Test run reports failure with a green job, no failed step and no readable log - the API cannot say why",
+        "Forge PRs #47 and #48 still both open against the same lint step (from 2026-11-09) - one should be closed"
+      ],
       "retries": 0
     }
   ],
