@@ -1,9 +1,56 @@
 {
-  "generated": "2026-11-08",
+  "generated": "2026-11-09",
   "available": true,
   "window": "14 days",
   "note": "Last 14 days — GitHub's retention window.",
   "repos": {
+    "idle-city-ages-of-growth": {
+      "views": 16,
+      "uniques": 5,
+      "clones": 868,
+      "clone_uniques": 218,
+      "referrers": [
+        {
+          "from": "drsamonline.github.io",
+          "count": 10
+        },
+        {
+          "from": "github.com",
+          "count": 3
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/idle-city-ages-of-growth",
+          "count": 15,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/idle-city-ages-of-growth/pull/1",
+          "count": 1,
+          "title": "/pull/1"
+        }
+      ]
+    },
+    "HMS": {
+      "views": 1,
+      "uniques": 1,
+      "clones": 305,
+      "clone_uniques": 88,
+      "referrers": [
+        {
+          "from": "github.com",
+          "count": 1
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/HMS",
+          "count": 1,
+          "title": "Overview"
+        }
+      ]
+    },
     "kitbox": {
       "views": 0,
       "uniques": 0,
@@ -48,25 +95,6 @@
           "path": "/drsamonline/lexora/actions/workflows/ci.yml",
           "count": 1,
           "title": "/actions/workflows/ci.yml"
-        }
-      ]
-    },
-    "HMS": {
-      "views": 1,
-      "uniques": 1,
-      "clones": 305,
-      "clone_uniques": 88,
-      "referrers": [
-        {
-          "from": "github.com",
-          "count": 1
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/HMS",
-          "count": 1,
-          "title": "Overview"
         }
       ]
     },
@@ -242,34 +270,6 @@
           "path": "/drsamonline/ULTIMATE-WINDOWS-OPTIMIZER/releases/tag/v6.2.2",
           "count": 1,
           "title": "/releases/tag/v6.2.2"
-        }
-      ]
-    },
-    "idle-city-ages-of-growth": {
-      "views": 16,
-      "uniques": 5,
-      "clones": 868,
-      "clone_uniques": 218,
-      "referrers": [
-        {
-          "from": "drsamonline.github.io",
-          "count": 10
-        },
-        {
-          "from": "github.com",
-          "count": 3
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/idle-city-ages-of-growth",
-          "count": 15,
-          "title": "Overview"
-        },
-        {
-          "path": "/drsamonline/idle-city-ages-of-growth/pull/1",
-          "count": 1,
-          "title": "/pull/1"
         }
       ]
     },
