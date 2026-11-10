@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-09",
-  "generated_at": "2026-11-09T18:47:49Z",
-  "reckoning": "86 products · 13 kits (role) · avg metadata completeness 4.7/5 · updated automatically.",
+  "generated": "2026-11-10",
+  "generated_at": "2026-11-10T00:41:09Z",
+  "reckoning": "87 products · 13 kits (role) · avg metadata completeness 4.7/5 · updated automatically.",
   "health": "bad",
   "health_detail": {
     "state": "bad",
@@ -15,7 +15,7 @@
   "cards": [
     {
       "title": "Products",
-      "value": "86",
+      "value": "87",
       "tone": ""
     },
     {
@@ -35,153 +35,37 @@
     },
     {
       "title": "Ideas matched / planned",
-      "value": "11 / 153",
+      "value": "12 / 153",
       "tone": ""
     }
   ],
   "summary": {
-    "products": 86,
+    "products": 87,
     "kits": 13,
     "kits_name_matched": 25,
     "kits_definition": "role",
     "avg": 4.7,
-    "pushes": 122,
+    "pushes": 123,
     "byrepo": {
-      "app-story-engine": 1,
-      "forge": 1,
-      "audit": 1,
-      "ULTIMATE-WINDOWS-OPTIMIZER": 1,
-      "HMS": 1,
-      "raylib-starter": 1,
-      "Repertorium-Publicum": 1,
-      "app-thermals": 1,
-      "repertory-reader": 1,
-      "remedy-relationship-explorer": 1,
-      "All4ONE": 1,
-      "srs-kit": 1,
-      "lan-kit": 1,
-      "web-kit": 1,
-      "art-kit": 1,
-      "search-kit": 1,
-      "backup": 1,
-      "ml-kit": 1,
-      "registry": 1,
-      "app-builder": 1,
-      "profile-kit": 1,
-      "repertory-kit": 1,
-      "optical-kit": 1,
-      "game-kit": 1,
-      "frame-kit": 1,
-      "export-kit": 1,
-      "crypto-kit": 1,
-      "compress-kit": 1,
-      "case-kit": 1,
-      "book-kit": 1,
-      "astro-kit": 1,
-      "app-encrypted-case-log": 1,
-      "widgets-kit": 1,
-      "form-kit": 1,
-      "smartbill-app": 1,
-      "code-kit": 1,
-      "markdown-kit": 1,
-      "compfactory": 1,
-      "tokens-kit": 1,
-      "HCS": 1,
-      "heavenzip": 1,
-      "motion-kit": 1,
-      "TTB": 1,
-      "NEO": 1,
-      "lumen": 1,
-      "ambient-sound-studio": 1,
-      "ai-bridge": 1,
-      "aethelgard-games": 1,
-      "The_Browser": 1,
-      "Scrap-and-Gun": 1,
-      "Matneo": 1,
-      "MATERIA-MEDICA-BUILDER": 1,
-      "BLINKTRANSFER": 1,
-      "dumps-3": 1,
-      "dumps-4": 1,
-      "app-image-toolkit": 1,
-      "offline-pdf-toolkit": 1,
-      "lexora": 1,
-      "feather": 1,
-      "CLDR": 1,
-      "drsamonline.github.io": 1,
-      "skills": 1,
-      "drsamonline": 1,
-      "knowledge": 1,
-      "smartnote-scheduler": 1,
-      "SmartNotes": 1,
-      "eon-commando": 1,
-      "saga-vn-engine": 1,
-      "neon-engine": 1,
-      "lockhtml": 1,
-      "homoeopathic-materia-medica-repertory-json": 1,
-      "dashboard": 1,
-      "control-panel": 1,
-      "corefit-md": 1,
-      "app-lantern": 1,
-      "canteen-lan": 1,
-      "chalk-lan": 1,
-      "blinkcode-ai": 1,
-      "aethelgard-rpg-engine": 1,
-      "retro-strike": 1,
-      "conqueror-os": 1,
-      "idle-city-ages-of-growth": 1,
-      "ziptastic": 1,
-      "weft8-compare": 1,
-      "weft8-kit": 1,
-      "weft8-hardware": 1,
-      "whispering-body-first-aid": 1,
-      "weft8-classroom": 1,
-      "ui-kit": 1,
-      "today-card": 1,
-      "unstoppable-mind-companion": 1,
-      "the-symphony-companion": 1,
-      "seance": 1,
-      "open-materia-medica": 1,
-      "read-live-transform-app": 1,
-      "neon-velocity": 1,
-      "neon-runner": 1,
-      "neon-games": 1,
-      "musicgen": 1,
-      "mnemosyne-companion": 1,
-      "helioprism": 1,
-      "gentle-pediatrics-companion": 1,
-      "dance-fight": 1,
-      "base-bench": 1,
-      "boericke-repertory": 1,
-      "bmi-bmr-tdee-macros-fluid-calculator": 1,
-      "app-weft-puzzles": 1,
-      "audio-kit": 1,
-      "app-poets-studio": 1,
-      "app-panchang": 1,
-      "app-organon-reader": 1,
-      "app-jacquard": 1,
-      "app-companion-forge": 1,
-      "app-clip-loom": 1,
-      "UniRep": 1,
-      "accent-oracle": 1,
-      "skin-case-tracker": 1,
-      "kitbox": 1
+      "app-endpoints": 1,
+      "app-story-engine": 1
     }
   },
   "stats": {
     "metadata_completeness": {
-      "5": 75,
+      "5": 76,
       "4": 4,
       "2": 5,
       "3": 2
     },
     "conformance": {
-      "5": 75,
+      "5": 76,
       "4": 4,
       "2": 5,
       "3": 2
     },
     "categories": {
-      "HTML Apps": 53,
+      "HTML Apps": 54,
       "Utilities": 15,
       "Homeopathy": 10,
       "Games": 6,
@@ -190,10 +74,6 @@
     }
   },
   "activity": [
-    {
-      "date": "2026-10-27",
-      "count": 0
-    },
     {
       "date": "2026-10-28",
       "count": 0
@@ -244,7 +124,11 @@
     },
     {
       "date": "2026-11-09",
-      "count": 118
+      "count": 117
+    },
+    {
+      "date": "2026-11-10",
+      "count": 2
     }
   ],
   "attention": [
@@ -254,6 +138,48 @@
       "url": "https://github.com/drsamonline/web-kit/issues/3",
       "kind": "issue",
       "created": "2026-10-26T00:46:14Z"
+    },
+    {
+      "title": "B29: fourteen buttons become six groups",
+      "repo": "HMS",
+      "url": "https://github.com/drsamonline/HMS/pull/101",
+      "kind": "PR",
+      "created": "2026-11-09T20:59:09Z"
+    },
+    {
+      "title": "B28: the component kit",
+      "repo": "HMS",
+      "url": "https://github.com/drsamonline/HMS/pull/100",
+      "kind": "PR",
+      "created": "2026-11-09T20:40:42Z"
+    },
+    {
+      "title": "test: pin the CDP surface, and make the Windows job green",
+      "repo": "ai-bridge",
+      "url": "https://github.com/drsamonline/ai-bridge/pull/5",
+      "kind": "PR",
+      "created": "2026-11-09T20:29:45Z"
+    },
+    {
+      "title": "build: get the standalone build green again (five stacked breaks)",
+      "repo": "The_Browser",
+      "url": "https://github.com/drsamonline/The_Browser/pull/28",
+      "kind": "PR",
+      "created": "2026-11-09T19:35:14Z"
+    },
+    {
+      "title": "ci: the README claim table must match FINDINGS.md",
+      "repo": "ziptastic",
+      "url": "https://github.com/drsamonline/ziptastic/pull/3",
+      "kind": "PR",
+      "created": "2026-11-09T19:11:44Z"
+    },
+    {
+      "title": "feat(codec): dictionary mode, and a frame that needs one is refused without it",
+      "repo": "lexora",
+      "url": "https://github.com/drsamonline/lexora/pull/39",
+      "kind": "PR",
+      "created": "2026-11-09T19:09:11Z"
     },
     {
       "title": "fix(undo): read the value back, and stop swallowing restore failures",
@@ -352,48 +278,6 @@
       "url": "https://github.com/drsamonline/HMS/pull/95",
       "kind": "PR",
       "created": "2026-11-09T16:11:42Z"
-    },
-    {
-      "title": "fix(canvas): a filled circle is a circle, not a plus sign",
-      "repo": "art-kit",
-      "url": "https://github.com/drsamonline/art-kit/pull/4",
-      "kind": "PR",
-      "created": "2026-11-09T16:02:36Z"
-    },
-    {
-      "title": "fix(palette): one keydown handler, not two",
-      "repo": "search-kit",
-      "url": "https://github.com/drsamonline/search-kit/pull/5",
-      "kind": "PR",
-      "created": "2026-11-09T16:01:21Z"
-    },
-    {
-      "title": "fix(api): the public-list fallback restarted mid-pagination, not at page one",
-      "repo": "backup",
-      "url": "https://github.com/drsamonline/backup/pull/2",
-      "kind": "PR",
-      "created": "2026-11-09T15:55:43Z"
-    },
-    {
-      "title": "fix(crypto-kit): reject instead of throw, and refuse to guess randomness",
-      "repo": "app-encrypted-case-log",
-      "url": "https://github.com/drsamonline/app-encrypted-case-log/pull/4",
-      "kind": "PR",
-      "created": "2026-11-09T15:50:14Z"
-    },
-    {
-      "title": "fix(summary): the calendar day is the clinician's, not UTC",
-      "repo": "case-kit",
-      "url": "https://github.com/drsamonline/case-kit/pull/4",
-      "kind": "PR",
-      "created": "2026-11-09T15:38:12Z"
-    },
-    {
-      "title": "test: the retired retrofit test now checks the rule it was retired for",
-      "repo": "smartbill-app",
-      "url": "https://github.com/drsamonline/smartbill-app/pull/4",
-      "kind": "PR",
-      "created": "2026-11-09T15:37:05Z"
     }
   ],
   "controls": [
@@ -572,123 +456,123 @@
   },
   "changes": [
     {
-      "type": "Create",
-      "repo": "HMS",
-      "when": "2026-11-09T14:03:00Z",
-      "text": ""
-    },
-    {
-      "type": "Create",
-      "repo": "Matneo",
-      "when": "2026-11-09T14:00:36Z",
-      "text": ""
-    },
-    {
-      "type": "PullRequest",
-      "repo": "ULTIMATE-WINDOWS-OPTIMIZER",
-      "when": "2026-11-09T18:34:35Z",
-      "text": "opened: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "HMS",
-      "when": "2026-11-09T18:33:19Z",
-      "text": "opened: "
-    },
-    {
-      "type": "Create",
-      "repo": "lexora",
-      "when": "2026-11-08T17:15:57Z",
-      "text": ""
-    },
-    {
       "type": "Push",
-      "repo": "kitbox",
-      "when": "2026-11-08T17:12:33Z",
+      "repo": "The_Browser",
+      "when": "2026-11-08T10:17:58Z",
       "text": "pushed to main"
-    },
-    {
-      "type": "Create",
-      "repo": "HMS",
-      "when": "2026-11-09T05:01:49Z",
-      "text": ""
-    },
-    {
-      "type": "Create",
-      "repo": "app-image-toolkit",
-      "when": "2026-11-09T13:35:34Z",
-      "text": ""
-    },
-    {
-      "type": "Create",
-      "repo": "lexora",
-      "when": "2026-11-08T16:54:04Z",
-      "text": ""
     },
     {
       "type": "Push",
       "repo": "ai-bridge",
-      "when": "2026-11-08T16:51:07Z",
-      "text": "pushed to step1-runtime-dir"
-    },
-    {
-      "type": "Push",
-      "repo": "The_Browser",
-      "when": "2026-11-08T16:48:33Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "kitbox",
-      "when": "2026-11-08T16:32:04Z",
+      "when": "2026-11-08T10:10:43Z",
       "text": "pushed to main"
     },
     {
       "type": "Create",
-      "repo": "UniRep",
-      "when": "2026-11-09T07:47:06Z",
+      "repo": "ambient-sound-studio",
+      "when": "2026-11-09T14:01:45Z",
       "text": ""
     },
     {
       "type": "Push",
-      "repo": "the-symphony-companion",
-      "when": "2026-11-09T07:47:06Z",
+      "repo": "ziptastic",
+      "when": "2026-11-08T10:07:33Z",
       "text": "pushed to main"
     },
     {
-      "type": "Push",
-      "repo": "read-live-transform-app",
-      "when": "2026-11-09T07:47:03Z",
-      "text": "pushed to main"
+      "type": "Create",
+      "repo": "lan-kit",
+      "when": "2026-11-09T16:19:50Z",
+      "text": ""
     },
     {
-      "type": "Push",
-      "repo": "app-jacquard",
-      "when": "2026-11-09T07:46:51Z",
-      "text": "pushed to main"
+      "type": "Create",
+      "repo": "web-kit",
+      "when": "2026-11-09T16:18:19Z",
+      "text": ""
     },
     {
-      "type": "PullRequest",
+      "type": "Create",
       "repo": "HMS",
-      "when": "2026-11-09T17:31:48Z",
-      "text": "opened: "
+      "when": "2026-11-09T13:39:27Z",
+      "text": ""
     },
     {
       "type": "Push",
-      "repo": "whispering-body-first-aid",
-      "when": "2026-11-09T09:01:06Z",
+      "repo": "app-image-toolkit",
+      "when": "2026-11-09T13:36:51Z",
+      "text": "pushed to badges-are-computed"
+    },
+    {
+      "type": "Create",
+      "repo": "lexora",
+      "when": "2026-11-08T09:30:05Z",
+      "text": ""
+    },
+    {
+      "type": "Create",
+      "repo": "raylib-starter",
+      "when": "2026-11-09T16:56:05Z",
+      "text": ""
+    },
+    {
+      "type": "Create",
+      "repo": "CLDR",
+      "when": "2026-11-09T11:59:09Z",
+      "text": ""
+    },
+    {
+      "type": "Create",
+      "repo": "app-encrypted-case-log",
+      "when": "2026-11-09T15:50:10Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
+      "repo": "boericke-repertory",
+      "when": "2026-11-09T09:00:58Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "remedy-relationship-explorer",
-      "when": "2026-11-09T09:01:03Z",
+      "repo": "app-organon-reader",
+      "when": "2026-11-09T09:00:56Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "dashboard",
-      "when": "2026-11-09T04:13:19Z",
+      "repo": "Repertorium-Publicum",
+      "when": "2026-11-09T09:00:54Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "HMS",
+      "when": "2026-11-09T11:54:17Z",
+      "text": "pushed to batch-10-wizard"
+    },
+    {
+      "type": "Push",
+      "repo": "audit",
+      "when": "2026-11-09T15:55:57Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "HMS",
+      "when": "2026-11-09T16:11:40Z",
+      "text": "pushed to batch-15-nch"
+    },
+    {
+      "type": "Push",
+      "repo": "open-materia-medica",
+      "when": "2026-11-09T07:47:02Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "neon-runner",
+      "when": "2026-11-09T07:47:02Z",
       "text": "pushed to main"
     }
   ],
@@ -759,8 +643,8 @@
       ],
       "schedule": "weekly (Tue) 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/42677141423",
-      "last_run": "2026-11-09T18:47:25Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/42730115632",
+      "last_run": "2026-11-10T00:40:45Z",
       "conclusion": "in_progress"
     },
     {
@@ -1143,9 +1027,9 @@
       ],
       "schedule": "weekly (Tue) 04:22 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/runs/42677154610",
-      "last_run": "2026-11-09T18:47:31Z",
-      "conclusion": "in_progress"
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/42730115210",
+      "last_run": "2026-11-10T00:40:51Z",
+      "conclusion": "success"
     },
     {
       "repo": "registry",
@@ -1191,7 +1075,7 @@
       "link": "https://github.com/drsamonline/forge"
     },
     {
-      "what": "Apps live — 111 products, 111 of them pushed in the last 30 days",
+      "what": "Apps live — 112 products, 112 of them pushed in the last 30 days",
       "state": "done",
       "link": "https://drsamonline.github.io/"
     },
@@ -1208,11 +1092,11 @@
   ],
   "plan": {
     "planned": 153,
-    "built": 11,
+    "built": 12,
     "built_definition": "name matching: a live repository whose name matches the idea's slug. NOT the owner's definition of built (release + landing page + live demo), which the registry measures.",
-    "name_matched": 11,
-    "unbuilt": 142,
-    "live_products": 86,
+    "name_matched": 12,
+    "unbuilt": 141,
+    "live_products": 87,
     "live_not_planned": 75,
     "plan_generated": "2026-10-23",
     "link": "https://github.com/drsamonline/dashboard/blob/main/plan.json"
@@ -1260,18 +1144,46 @@
         "html_url": "https://github.com/drsamonline/neon-runner"
       },
       {
-        "name": "ULTIMATE-WINDOWS-OPTIMIZER",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/ULTIMATE-WINDOWS-OPTIMIZER"
-      },
-      {
         "name": "HMS",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/HMS"
+      },
+      {
+        "name": "ai-bridge",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/ai-bridge"
+      },
+      {
+        "name": "The_Browser",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/The_Browser"
+      },
+      {
+        "name": "ziptastic",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/ziptastic"
+      },
+      {
+        "name": "lexora",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/lexora"
+      },
+      {
+        "name": "ULTIMATE-WINDOWS-OPTIMIZER",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/ULTIMATE-WINDOWS-OPTIMIZER"
       },
       {
         "name": "Repertorium-Publicum",
@@ -1491,25 +1403,11 @@
         "html_url": "https://github.com/drsamonline/ambient-sound-studio"
       },
       {
-        "name": "ai-bridge",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/ai-bridge"
-      },
-      {
         "name": "aethelgard-games",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/aethelgard-games"
-      },
-      {
-        "name": "The_Browser",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/The_Browser"
       },
       {
         "name": "Scrap-and-Gun",
@@ -1559,13 +1457,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/offline-pdf-toolkit"
-      },
-      {
-        "name": "lexora",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/lexora"
       },
       {
         "name": "feather",
@@ -1685,13 +1576,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/idle-city-ages-of-growth"
-      },
-      {
-        "name": "ziptastic",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/ziptastic"
       },
       {
         "name": "weft8-compare",
@@ -1988,6 +1872,14 @@
     "window": "14 days",
     "note": "Last 14 days — GitHub's retention window.",
     "repos": {
+      "app-endpoints": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
       "app-story-engine": {
         "views": 0,
         "uniques": 0,
@@ -1995,6 +1887,196 @@
         "clone_uniques": 0,
         "referrers": [],
         "paths": []
+      },
+      "HMS": {
+        "views": 2,
+        "uniques": 2,
+        "clones": 287,
+        "clone_uniques": 80,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 2
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/HMS",
+            "count": 2,
+            "title": "Overview"
+          }
+        ]
+      },
+      "raylib-starter": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
+      "ai-bridge": {
+        "views": 33,
+        "uniques": 1,
+        "clones": 1362,
+        "clone_uniques": 296,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 3
+          },
+          {
+            "from": "drsamonline.github.io",
+            "count": 1
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/ai-bridge",
+            "count": 12,
+            "title": "Overview"
+          },
+          {
+            "path": "/drsamonline/ai-bridge/actions",
+            "count": 8,
+            "title": "/actions"
+          },
+          {
+            "path": "/drsamonline/ai-bridge/actions/workflows/release.yml",
+            "count": 3,
+            "title": "/actions/workflows/release.yml"
+          },
+          {
+            "path": "/drsamonline/ai-bridge/actions/runs/41780308419",
+            "count": 2,
+            "title": "/actions/runs/41780308419"
+          },
+          {
+            "path": "/drsamonline/ai-bridge/actions/runs/41780949280/job/126412154781",
+            "count": 2,
+            "title": "/actions/runs/41780949280/job/126412154781"
+          }
+        ]
+      },
+      "The_Browser": {
+        "views": 6,
+        "uniques": 3,
+        "clones": 532,
+        "clone_uniques": 155,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 2
+          },
+          {
+            "from": "drsamonline.github.io",
+            "count": 1
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/The_Browser",
+            "count": 3,
+            "title": "Overview"
+          },
+          {
+            "path": "/drsamonline/The_Browser/actions/runs/40444979255",
+            "count": 1,
+            "title": "/actions/runs/40444979255"
+          },
+          {
+            "path": "/drsamonline/The_Browser/deployments",
+            "count": 1,
+            "title": "/deployments"
+          },
+          {
+            "path": "/drsamonline/The_Browser/tree/main/src",
+            "count": 1,
+            "title": "/tree/main/src"
+          }
+        ]
+      },
+      "ziptastic": {
+        "views": 55,
+        "uniques": 3,
+        "clones": 1868,
+        "clone_uniques": 468,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 6
+          },
+          {
+            "from": "drsamonline.github.io",
+            "count": 2
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/ziptastic/tree/main",
+            "count": 9,
+            "title": "/tree/main"
+          },
+          {
+            "path": "/drsamonline/ziptastic",
+            "count": 8,
+            "title": "Overview"
+          },
+          {
+            "path": "/drsamonline/ziptastic/tree/main/src/engine",
+            "count": 7,
+            "title": "/tree/main/src/engine"
+          },
+          {
+            "path": "/drsamonline/ziptastic/new/main",
+            "count": 3,
+            "title": "/new/main"
+          },
+          {
+            "path": "/drsamonline/ziptastic/tree/delete/main/src",
+            "count": 3,
+            "title": "/tree/delete/main/src"
+          }
+        ]
+      },
+      "lexora": {
+        "views": 11,
+        "uniques": 1,
+        "clones": 801,
+        "clone_uniques": 204,
+        "referrers": [
+          {
+            "from": "drsamonline.github.io",
+            "count": 5
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/lexora",
+            "count": 7,
+            "title": "Overview"
+          },
+          {
+            "path": "/drsamonline/lexora/actions/runs/40445634629",
+            "count": 1,
+            "title": "/actions/runs/40445634629"
+          },
+          {
+            "path": "/drsamonline/lexora/actions/runs/41042678671",
+            "count": 1,
+            "title": "/actions/runs/41042678671"
+          },
+          {
+            "path": "/drsamonline/lexora/actions/runs/41042678671/job/124019057946",
+            "count": 1,
+            "title": "/actions/runs/41042678671/job/124019057946"
+          },
+          {
+            "path": "/drsamonline/lexora/actions/workflows/ci.yml",
+            "count": 1,
+            "title": "/actions/workflows/ci.yml"
+          }
+        ]
       },
       "ULTIMATE-WINDOWS-OPTIMIZER": {
         "views": 17,
@@ -2042,33 +2124,6 @@
             "title": "/releases/tag/v6.2.2"
           }
         ]
-      },
-      "HMS": {
-        "views": 2,
-        "uniques": 2,
-        "clones": 287,
-        "clone_uniques": 80,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 2
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/HMS",
-            "count": 2,
-            "title": "Overview"
-          }
-        ]
-      },
-      "raylib-starter": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 0,
-        "clone_uniques": 0,
-        "referrers": [],
-        "paths": []
       },
       "Repertorium-Publicum": {
         "views": 29,
@@ -2622,49 +2677,6 @@
         "referrers": [],
         "paths": []
       },
-      "ai-bridge": {
-        "views": 33,
-        "uniques": 1,
-        "clones": 1362,
-        "clone_uniques": 296,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 3
-          },
-          {
-            "from": "drsamonline.github.io",
-            "count": 1
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/ai-bridge",
-            "count": 12,
-            "title": "Overview"
-          },
-          {
-            "path": "/drsamonline/ai-bridge/actions",
-            "count": 8,
-            "title": "/actions"
-          },
-          {
-            "path": "/drsamonline/ai-bridge/actions/workflows/release.yml",
-            "count": 3,
-            "title": "/actions/workflows/release.yml"
-          },
-          {
-            "path": "/drsamonline/ai-bridge/actions/runs/41780308419",
-            "count": 2,
-            "title": "/actions/runs/41780308419"
-          },
-          {
-            "path": "/drsamonline/ai-bridge/actions/runs/41780949280/job/126412154781",
-            "count": 2,
-            "title": "/actions/runs/41780949280/job/126412154781"
-          }
-        ]
-      },
       "aethelgard-games": {
         "views": 4,
         "uniques": 3,
@@ -2686,44 +2698,6 @@
             "path": "/drsamonline/aethelgard-games/blob/main/chronicles/LICENSE-ASSETS.md",
             "count": 1,
             "title": "/blob/main/chronicles/LICENSE-ASSETS.md"
-          }
-        ]
-      },
-      "The_Browser": {
-        "views": 6,
-        "uniques": 3,
-        "clones": 532,
-        "clone_uniques": 155,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 2
-          },
-          {
-            "from": "drsamonline.github.io",
-            "count": 1
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/The_Browser",
-            "count": 3,
-            "title": "Overview"
-          },
-          {
-            "path": "/drsamonline/The_Browser/actions/runs/40444979255",
-            "count": 1,
-            "title": "/actions/runs/40444979255"
-          },
-          {
-            "path": "/drsamonline/The_Browser/deployments",
-            "count": 1,
-            "title": "/deployments"
-          },
-          {
-            "path": "/drsamonline/The_Browser/tree/main/src",
-            "count": 1,
-            "title": "/tree/main/src"
           }
         ]
       },
@@ -2834,45 +2808,6 @@
         "clone_uniques": 293,
         "referrers": [],
         "paths": []
-      },
-      "lexora": {
-        "views": 11,
-        "uniques": 1,
-        "clones": 801,
-        "clone_uniques": 204,
-        "referrers": [
-          {
-            "from": "drsamonline.github.io",
-            "count": 5
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/lexora",
-            "count": 7,
-            "title": "Overview"
-          },
-          {
-            "path": "/drsamonline/lexora/actions/runs/40445634629",
-            "count": 1,
-            "title": "/actions/runs/40445634629"
-          },
-          {
-            "path": "/drsamonline/lexora/actions/runs/41042678671",
-            "count": 1,
-            "title": "/actions/runs/41042678671"
-          },
-          {
-            "path": "/drsamonline/lexora/actions/runs/41042678671/job/124019057946",
-            "count": 1,
-            "title": "/actions/runs/41042678671/job/124019057946"
-          },
-          {
-            "path": "/drsamonline/lexora/actions/workflows/ci.yml",
-            "count": 1,
-            "title": "/actions/workflows/ci.yml"
-          }
-        ]
       },
       "feather": {
         "views": 14,
@@ -3212,49 +3147,6 @@
             "path": "/drsamonline/idle-city-ages-of-growth/pull/1",
             "count": 1,
             "title": "/pull/1"
-          }
-        ]
-      },
-      "ziptastic": {
-        "views": 55,
-        "uniques": 3,
-        "clones": 1868,
-        "clone_uniques": 468,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 6
-          },
-          {
-            "from": "drsamonline.github.io",
-            "count": 2
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/ziptastic/tree/main",
-            "count": 9,
-            "title": "/tree/main"
-          },
-          {
-            "path": "/drsamonline/ziptastic",
-            "count": 8,
-            "title": "Overview"
-          },
-          {
-            "path": "/drsamonline/ziptastic/tree/main/src/engine",
-            "count": 7,
-            "title": "/tree/main/src/engine"
-          },
-          {
-            "path": "/drsamonline/ziptastic/new/main",
-            "count": 3,
-            "title": "/new/main"
-          },
-          {
-            "path": "/drsamonline/ziptastic/tree/delete/main/src",
-            "count": 3,
-            "title": "/tree/delete/main/src"
           }
         ]
       },
@@ -3777,9 +3669,38 @@
   },
   "repos": [
     {
+      "name": "app-endpoints",
+      "description": "Endpoints — find the right free API for a job: an offline directory of 2,214 public APIs, filterable by auth, CORS and HTTPS. No account, no server, no network at runtime.",
+      "pushed_at": "2026-11-10T00:40:18Z",
+      "homepage": "https://drsamonline.github.io/app-endpoints/",
+      "html_url": "https://github.com/drsamonline/app-endpoints",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
       "name": "app-story-engine",
       "description": "A book the reader moves through: choices, carried state, and a trail of where you have been. Offline, no accounts.",
-      "pushed_at": "2026-11-09T18:46:31Z",
+      "pushed_at": "2026-11-10T00:37:48Z",
       "homepage": "https://drsamonline.github.io/app-story-engine/",
       "html_url": "https://github.com/drsamonline/app-story-engine",
       "download": "",
@@ -3801,7 +3722,182 @@
         0,
         0,
         0,
+        1,
         1
+      ]
+    },
+    {
+      "name": "HMS",
+      "description": "HHMS — a LAN-based hospital management system purpose-built for homeopathic hospitals and clinics, with a server-owned database and no cloud lock-in.",
+      "pushed_at": "2026-11-09T20:59:06Z",
+      "homepage": "https://drsamonline.github.io/HMS/",
+      "html_url": "https://github.com/drsamonline/HMS",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "raylib-starter",
+      "description": "One C file on raylib: fixed timestep, scenes, CRC-checked save and an ECS — the C answer to game-kit, built for the 10 MB ceiling.",
+      "pushed_at": "2026-11-09T20:46:59Z",
+      "homepage": "https://drsamonline.github.io/raylib-starter/",
+      "html_url": "https://github.com/drsamonline/raylib-starter",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "ai-bridge",
+      "description": "A VS Code extension that brings web-chat AI models into the editor, so you can work without leaving the code.",
+      "pushed_at": "2026-11-09T20:42:43Z",
+      "homepage": "https://drsamonline.github.io/ai-bridge/",
+      "html_url": "https://github.com/drsamonline/ai-bridge",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "The_Browser",
+      "description": "Aetheris — an experimental C++ browser engine on a Ladybird/SerenityOS-derived codebase, built to learn how rendering works. Not production-ready.",
+      "pushed_at": "2026-11-09T19:40:02Z",
+      "homepage": "https://drsamonline.github.io/The_Browser/",
+      "html_url": "https://github.com/drsamonline/The_Browser",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "ziptastic",
+      "description": "The CHCE native engine — a single binary with the codecs embedded.",
+      "pushed_at": "2026-11-09T19:11:39Z",
+      "homepage": "https://drsamonline.github.io/ziptastic/",
+      "html_url": "https://github.com/drsamonline/ziptastic",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "lexora",
+      "description": "LEXORA — Layered EXact-text Repository and Adaptive compression architecture: canonicalise text, then compress it with guaranteed byte-exact recovery.",
+      "pushed_at": "2026-11-09T19:09:07Z",
+      "homepage": "https://drsamonline.github.io/lexora/",
+      "html_url": "https://github.com/drsamonline/lexora",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
       ]
     },
     {
@@ -3829,63 +3925,8 @@
         1,
         0,
         1,
-        1
-      ]
-    },
-    {
-      "name": "HMS",
-      "description": "HHMS — a LAN-based hospital management system purpose-built for homeopathic hospitals and clinics, with a server-owned database and no cloud lock-in.",
-      "pushed_at": "2026-11-09T18:33:17Z",
-      "homepage": "https://drsamonline.github.io/HMS/",
-      "html_url": "https://github.com/drsamonline/HMS",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
         1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "raylib-starter",
-      "description": "One C file on raylib: fixed timestep, scenes, CRC-checked save and an ECS — the C answer to game-kit, built for the 10 MB ceiling.",
-      "pushed_at": "2026-11-09T18:31:41Z",
-      "homepage": "https://drsamonline.github.io/raylib-starter/",
-      "html_url": "https://github.com/drsamonline/raylib-starter",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
+        0
       ]
     },
     {
@@ -3913,7 +3954,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3941,7 +3983,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3969,7 +4012,8 @@
         0,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3997,7 +4041,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4025,7 +4070,8 @@
         0,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4053,7 +4099,8 @@
         0,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4081,7 +4128,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4109,7 +4157,8 @@
         0,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4137,7 +4186,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4165,7 +4215,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4193,7 +4244,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4221,7 +4273,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4249,7 +4302,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4277,7 +4331,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4305,35 +4360,8 @@
         1,
         1,
         0,
-        1
-      ]
-    },
-    {
-      "name": "ai-bridge",
-      "description": "A VS Code extension that brings web-chat AI models into the editor, so you can work without leaving the code.",
-      "pushed_at": "2026-11-09T14:01:36Z",
-      "homepage": "https://drsamonline.github.io/ai-bridge/",
-      "html_url": "https://github.com/drsamonline/ai-bridge",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         1,
-        0,
-        1,
-        1,
-        1
+        0
       ]
     },
     {
@@ -4361,35 +4389,8 @@
         1,
         1,
         0,
-        1
-      ]
-    },
-    {
-      "name": "The_Browser",
-      "description": "Aetheris — an experimental C++ browser engine on a Ladybird/SerenityOS-derived codebase, built to learn how rendering works. Not production-ready.",
-      "pushed_at": "2026-11-09T14:01:16Z",
-      "homepage": "https://drsamonline.github.io/The_Browser/",
-      "html_url": "https://github.com/drsamonline/The_Browser",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
         1,
-        1,
-        1,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        1,
-        1
+        0
       ]
     },
     {
@@ -4417,7 +4418,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4445,7 +4447,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4473,7 +4476,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4501,7 +4505,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4529,7 +4534,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4557,7 +4563,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4585,35 +4592,8 @@
         1,
         1,
         0,
-        1
-      ]
-    },
-    {
-      "name": "lexora",
-      "description": "LEXORA — Layered EXact-text Repository and Adaptive compression architecture: canonicalise text, then compress it with guaranteed byte-exact recovery.",
-      "pushed_at": "2026-11-09T12:48:41Z",
-      "homepage": "https://drsamonline.github.io/lexora/",
-      "html_url": "https://github.com/drsamonline/lexora",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        0,
-        1,
-        0,
-        1,
-        1
+        0
       ]
     },
     {
@@ -4641,7 +4621,8 @@
         0,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4669,7 +4650,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4697,7 +4679,8 @@
         0,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4725,7 +4708,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4753,7 +4737,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4781,7 +4766,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4809,7 +4795,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4837,7 +4824,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4865,7 +4853,8 @@
         0,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4893,7 +4882,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4921,7 +4911,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4949,7 +4940,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4977,7 +4969,8 @@
         0,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5005,7 +4998,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5033,7 +5027,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5061,7 +5056,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5089,7 +5085,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5117,7 +5114,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5145,35 +5143,8 @@
         1,
         1,
         1,
-        1
-      ]
-    },
-    {
-      "name": "ziptastic",
-      "description": "The CHCE native engine — a single binary with the codecs embedded.",
-      "pushed_at": "2026-11-09T11:01:56Z",
-      "homepage": "https://drsamonline.github.io/ziptastic/",
-      "html_url": "https://github.com/drsamonline/ziptastic",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         1,
-        1,
-        1,
-        0,
-        0,
-        1,
-        1,
-        1
+        0
       ]
     },
     {
@@ -5201,7 +5172,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5229,7 +5201,8 @@
         0,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5257,7 +5230,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5285,7 +5259,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5313,7 +5288,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5341,7 +5317,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5369,7 +5346,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5397,7 +5375,8 @@
         0,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5425,7 +5404,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5453,7 +5433,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5481,7 +5462,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5509,7 +5491,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5537,7 +5520,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5565,7 +5549,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5593,7 +5578,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5621,7 +5607,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5649,7 +5636,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5677,7 +5665,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5705,7 +5694,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5733,7 +5723,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5761,7 +5752,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5789,7 +5781,8 @@
         0,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5817,7 +5810,8 @@
         0,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5845,7 +5839,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5873,7 +5868,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5901,7 +5897,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5929,7 +5926,8 @@
         0,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5957,7 +5955,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5985,7 +5984,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -6013,7 +6013,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -6041,7 +6042,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -6069,7 +6071,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -6097,6 +6100,7 @@
         0,
         1,
         0,
+        0,
         0
       ]
     },
@@ -6120,6 +6124,7 @@
         0,
         0,
         1,
+        0,
         0,
         0,
         0,
@@ -6153,6 +6158,7 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
@@ -6176,6 +6182,7 @@
         0,
         1,
         1,
+        0,
         0,
         0,
         0,
@@ -7296,6 +7303,20 @@
         "accent-oracle": 1,
         "skin-case-tracker": 1,
         "kitbox": 1
+      },
+      "stars": 103,
+      "forks": 1,
+      "watchers": 103
+    },
+    {
+      "date": "2026-11-10",
+      "products": 87,
+      "kits": 13,
+      "avg": 4.7,
+      "pushes": 123,
+      "byrepo": {
+        "app-endpoints": 1,
+        "app-story-engine": 1
       },
       "stars": 103,
       "forks": 1,
