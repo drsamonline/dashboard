@@ -4,6 +4,22 @@
   "window": "14 days",
   "note": "Last 14 days — GitHub's retention window.",
   "repos": {
+    "planner-pro": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 0,
+      "clone_uniques": 0,
+      "referrers": [],
+      "paths": []
+    },
+    "remedy-finder": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 0,
+      "clone_uniques": 0,
+      "referrers": [],
+      "paths": []
+    },
     "HMS": {
       "views": 2,
       "uniques": 2,
@@ -19,6 +35,490 @@
         {
           "path": "/drsamonline/HMS",
           "count": 2,
+          "title": "Overview"
+        }
+      ]
+    },
+    "neonboom": {
+      "views": 1,
+      "uniques": 1,
+      "clones": 64,
+      "clone_uniques": 16,
+      "referrers": [
+        {
+          "from": "github.com",
+          "count": 1
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/neonboom",
+          "count": 1,
+          "title": "Overview"
+        }
+      ]
+    },
+    "SmartNotes": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 605,
+      "clone_uniques": 62,
+      "referrers": [],
+      "paths": []
+    },
+    "raylib-starter": {
+      "views": 2,
+      "uniques": 1,
+      "clones": 327,
+      "clone_uniques": 99,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/drsamonline/raylib-starter",
+          "count": 2,
+          "title": "Overview"
+        }
+      ]
+    },
+    "homoeopathic-materia-medica-repertory-json": {
+      "views": 53,
+      "uniques": 8,
+      "clones": 1458,
+      "clone_uniques": 327,
+      "referrers": [
+        {
+          "from": "github.com",
+          "count": 7
+        },
+        {
+          "from": "drsamonline.github.io",
+          "count": 6
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/homoeopathic-materia-medica-repertory-json",
+          "count": 16,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/homoeopathic-materia-medica-repertory-json/tree/main/repertory",
+          "count": 8,
+          "title": "/tree/main/repertory"
+        },
+        {
+          "path": "/drsamonline/homoeopathic-materia-medica-repertory-json/tree/main",
+          "count": 4,
+          "title": "/tree/main"
+        },
+        {
+          "path": "/drsamonline/homoeopathic-materia-medica-repertory-json/tree/main/repertory/repertorium-publicum-2008",
+          "count": 3,
+          "title": "/tree/main/repertory/repertorium-publicum-2008"
+        },
+        {
+          "path": "/drsamonline/homoeopathic-materia-medica-repertory-json/tree/main/repertory/kent-1897",
+          "count": 2,
+          "title": "/tree/main/repertory/kent-1897"
+        }
+      ]
+    },
+    "neon-games": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 467,
+      "clone_uniques": 91,
+      "referrers": [],
+      "paths": []
+    },
+    "ziptastic": {
+      "views": 55,
+      "uniques": 3,
+      "clones": 1955,
+      "clone_uniques": 481,
+      "referrers": [
+        {
+          "from": "github.com",
+          "count": 6
+        },
+        {
+          "from": "drsamonline.github.io",
+          "count": 2
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/ziptastic/tree/main",
+          "count": 9,
+          "title": "/tree/main"
+        },
+        {
+          "path": "/drsamonline/ziptastic",
+          "count": 8,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/ziptastic/tree/main/src/engine",
+          "count": 7,
+          "title": "/tree/main/src/engine"
+        },
+        {
+          "path": "/drsamonline/ziptastic/new/main",
+          "count": 3,
+          "title": "/new/main"
+        },
+        {
+          "path": "/drsamonline/ziptastic/tree/delete/main/src",
+          "count": 3,
+          "title": "/tree/delete/main/src"
+        }
+      ]
+    },
+    "music": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 0,
+      "clone_uniques": 0,
+      "referrers": [],
+      "paths": []
+    },
+    "compfactory": {
+      "views": 6,
+      "uniques": 1,
+      "clones": 126,
+      "clone_uniques": 55,
+      "referrers": [
+        {
+          "from": "github.com",
+          "count": 2
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/compfactory",
+          "count": 2,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/compfactory/new/main",
+          "count": 1,
+          "title": "/new/main"
+        },
+        {
+          "path": "/drsamonline/compfactory/tree/main",
+          "count": 1,
+          "title": "/tree/main"
+        }
+      ]
+    },
+    "UniRep": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 35,
+      "clone_uniques": 20,
+      "referrers": [],
+      "paths": []
+    },
+    "unstoppable-mind-companion": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 446,
+      "clone_uniques": 96,
+      "referrers": [],
+      "paths": []
+    },
+    "app-companion-forge": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 505,
+      "clone_uniques": 122,
+      "referrers": [],
+      "paths": []
+    },
+    "weft8-hardware": {
+      "views": 1,
+      "uniques": 1,
+      "clones": 384,
+      "clone_uniques": 114,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/drsamonline/weft8-hardware/actions/runs/41158513634",
+          "count": 1,
+          "title": "/actions/runs/41158513634"
+        }
+      ]
+    },
+    "weft8-compare": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 501,
+      "clone_uniques": 113,
+      "referrers": [],
+      "paths": []
+    },
+    "lofi-studio-pro": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 31,
+      "clone_uniques": 14,
+      "referrers": [],
+      "paths": []
+    },
+    "smartnote-scheduler": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 42,
+      "clone_uniques": 22,
+      "referrers": [],
+      "paths": []
+    },
+    "seance": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 476,
+      "clone_uniques": 115,
+      "referrers": [],
+      "paths": []
+    },
+    "weft8-kit": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 367,
+      "clone_uniques": 89,
+      "referrers": [],
+      "paths": []
+    },
+    "app-story-engine": {
+      "views": 1,
+      "uniques": 1,
+      "clones": 140,
+      "clone_uniques": 41,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/drsamonline/app-story-engine/pulls",
+          "count": 1,
+          "title": "/pulls"
+        }
+      ]
+    },
+    "today-card": {
+      "views": 13,
+      "uniques": 4,
+      "clones": 586,
+      "clone_uniques": 133,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/drsamonline/today-card",
+          "count": 10,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/today-card/actions",
+          "count": 3,
+          "title": "/actions"
+        }
+      ]
+    },
+    "app-weft-puzzles": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 443,
+      "clone_uniques": 119,
+      "referrers": [],
+      "paths": []
+    },
+    "app-clip-loom": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 584,
+      "clone_uniques": 153,
+      "referrers": [],
+      "paths": []
+    },
+    "smartbill-app": {
+      "views": 7,
+      "uniques": 5,
+      "clones": 491,
+      "clone_uniques": 121,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/drsamonline/smartbill-app",
+          "count": 7,
+          "title": "Overview"
+        }
+      ]
+    },
+    "skin-case-tracker": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 434,
+      "clone_uniques": 89,
+      "referrers": [],
+      "paths": []
+    },
+    "app-image-toolkit": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 770,
+      "clone_uniques": 184,
+      "referrers": [],
+      "paths": []
+    },
+    "app-encrypted-case-log": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 657,
+      "clone_uniques": 137,
+      "referrers": [],
+      "paths": []
+    },
+    "base-bench": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 893,
+      "clone_uniques": 198,
+      "referrers": [],
+      "paths": []
+    },
+    "holistic": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 46,
+      "clone_uniques": 17,
+      "referrers": [],
+      "paths": []
+    },
+    "whispering-body-first-aid": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 524,
+      "clone_uniques": 105,
+      "referrers": [],
+      "paths": []
+    },
+    "blinkcode-ai": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 639,
+      "clone_uniques": 145,
+      "referrers": [],
+      "paths": []
+    },
+    "app-panchang": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 579,
+      "clone_uniques": 112,
+      "referrers": [],
+      "paths": []
+    },
+    "app-thermals": {
+      "views": 2,
+      "uniques": 1,
+      "clones": 595,
+      "clone_uniques": 117,
+      "referrers": [
+        {
+          "from": "github.com",
+          "count": 2
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/app-thermals",
+          "count": 2,
+          "title": "Overview"
+        }
+      ]
+    },
+    "app-poets-studio": {
+      "views": 1,
+      "uniques": 1,
+      "clones": 806,
+      "clone_uniques": 156,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/drsamonline/app-poets-studio",
+          "count": 1,
+          "title": "Overview"
+        }
+      ]
+    },
+    "chalk-lan": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 916,
+      "clone_uniques": 199,
+      "referrers": [],
+      "paths": []
+    },
+    "ULTIMATE-WINDOWS-OPTIMIZER": {
+      "views": 16,
+      "uniques": 9,
+      "clones": 419,
+      "clone_uniques": 121,
+      "referrers": [
+        {
+          "from": "github.com",
+          "count": 4
+        },
+        {
+          "from": "Bing",
+          "count": 3
+        },
+        {
+          "from": "yandex.com.tr",
+          "count": 1
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/ULTIMATE-WINDOWS-OPTIMIZER",
+          "count": 10,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/ULTIMATE-WINDOWS-OPTIMIZER/releases/tag/v6.2.0",
+          "count": 3,
+          "title": "/releases/tag/v6.2.0"
+        },
+        {
+          "path": "/drsamonline/ULTIMATE-WINDOWS-OPTIMIZER/releases/tag/v6.2.2",
+          "count": 1,
+          "title": "/releases/tag/v6.2.2"
+        },
+        {
+          "path": "/drsamonline/ULTIMATE-WINDOWS-OPTIMIZER/tree/main/.github",
+          "count": 1,
+          "title": "/tree/main/.github"
+        },
+        {
+          "path": "/drsamonline/ULTIMATE-WINDOWS-OPTIMIZER/tree/main/scripts",
+          "count": 1,
+          "title": "/tree/main/scripts"
+        }
+      ]
+    },
+    "bmi-bmr-tdee-macros-fluid-calculator": {
+      "views": 1,
+      "uniques": 1,
+      "clones": 707,
+      "clone_uniques": 152,
+      "referrers": [
+        {
+          "from": "github.com",
+          "count": 1
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/bmi-bmr-tdee-macros-fluid-calculator",
+          "count": 1,
           "title": "Overview"
         }
       ]
@@ -65,65 +565,6 @@
           "title": "/pulls"
         }
       ]
-    },
-    "music": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 0,
-      "clone_uniques": 0,
-      "referrers": [],
-      "paths": []
-    },
-    "neonboom": {
-      "views": 1,
-      "uniques": 1,
-      "clones": 64,
-      "clone_uniques": 16,
-      "referrers": [
-        {
-          "from": "github.com",
-          "count": 1
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/neonboom",
-          "count": 1,
-          "title": "Overview"
-        }
-      ]
-    },
-    "planner-pro": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 0,
-      "clone_uniques": 0,
-      "referrers": [],
-      "paths": []
-    },
-    "lofi-studio-pro": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 31,
-      "clone_uniques": 14,
-      "referrers": [],
-      "paths": []
-    },
-    "holistic": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 46,
-      "clone_uniques": 17,
-      "referrers": [],
-      "paths": []
-    },
-    "remedy-finder": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 0,
-      "clone_uniques": 0,
-      "referrers": [],
-      "paths": []
     },
     "app-jacquard": {
       "views": 0,
@@ -470,52 +911,6 @@
       "referrers": [],
       "paths": []
     },
-    "app-image-toolkit": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 770,
-      "clone_uniques": 184,
-      "referrers": [],
-      "paths": []
-    },
-    "app-weft-puzzles": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 443,
-      "clone_uniques": 119,
-      "referrers": [],
-      "paths": []
-    },
-    "app-clip-loom": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 584,
-      "clone_uniques": 153,
-      "referrers": [],
-      "paths": []
-    },
-    "weft8-hardware": {
-      "views": 1,
-      "uniques": 1,
-      "clones": 384,
-      "clone_uniques": 114,
-      "referrers": [],
-      "paths": [
-        {
-          "path": "/drsamonline/weft8-hardware/actions/runs/41158513634",
-          "count": 1,
-          "title": "/actions/runs/41158513634"
-        }
-      ]
-    },
-    "weft8-kit": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 367,
-      "clone_uniques": 89,
-      "referrers": [],
-      "paths": []
-    },
     "weft8-classroom": {
       "views": 0,
       "uniques": 0,
@@ -523,76 +918,6 @@
       "clone_uniques": 90,
       "referrers": [],
       "paths": []
-    },
-    "weft8-compare": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 501,
-      "clone_uniques": 113,
-      "referrers": [],
-      "paths": []
-    },
-    "app-thermals": {
-      "views": 2,
-      "uniques": 1,
-      "clones": 595,
-      "clone_uniques": 117,
-      "referrers": [
-        {
-          "from": "github.com",
-          "count": 2
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/app-thermals",
-          "count": 2,
-          "title": "Overview"
-        }
-      ]
-    },
-    "app-story-engine": {
-      "views": 1,
-      "uniques": 1,
-      "clones": 140,
-      "clone_uniques": 41,
-      "referrers": [],
-      "paths": [
-        {
-          "path": "/drsamonline/app-story-engine/pulls",
-          "count": 1,
-          "title": "/pulls"
-        }
-      ]
-    },
-    "compfactory": {
-      "views": 6,
-      "uniques": 1,
-      "clones": 126,
-      "clone_uniques": 55,
-      "referrers": [
-        {
-          "from": "github.com",
-          "count": 2
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/compfactory",
-          "count": 2,
-          "title": "Overview"
-        },
-        {
-          "path": "/drsamonline/compfactory/new/main",
-          "count": 1,
-          "title": "/new/main"
-        },
-        {
-          "path": "/drsamonline/compfactory/tree/main",
-          "count": 1,
-          "title": "/tree/main"
-        }
-      ]
     },
     "backup": {
       "views": 1,
@@ -702,14 +1027,6 @@
         }
       ]
     },
-    "UniRep": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 35,
-      "clone_uniques": 20,
-      "referrers": [],
-      "paths": []
-    },
     "The_Browser": {
       "views": 6,
       "uniques": 3,
@@ -801,14 +1118,6 @@
         }
       ]
     },
-    "smartnote-scheduler": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 42,
-      "clone_uniques": 22,
-      "referrers": [],
-      "paths": []
-    },
     "neon-engine": {
       "views": 1,
       "uniques": 1,
@@ -828,35 +1137,11 @@
         }
       ]
     },
-    "SmartNotes": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 605,
-      "clone_uniques": 62,
-      "referrers": [],
-      "paths": []
-    },
     "saga-vn-engine": {
       "views": 0,
       "uniques": 0,
       "clones": 70,
       "clone_uniques": 31,
-      "referrers": [],
-      "paths": []
-    },
-    "neon-games": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 467,
-      "clone_uniques": 91,
-      "referrers": [],
-      "paths": []
-    },
-    "base-bench": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 893,
-      "clone_uniques": 198,
       "referrers": [],
       "paths": []
     },
@@ -941,22 +1226,6 @@
         }
       ]
     },
-    "app-companion-forge": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 505,
-      "clone_uniques": 122,
-      "referrers": [],
-      "paths": []
-    },
-    "unstoppable-mind-companion": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 446,
-      "clone_uniques": 96,
-      "referrers": [],
-      "paths": []
-    },
     "retro-strike": {
       "views": 7,
       "uniques": 3,
@@ -1003,33 +1272,6 @@
       "referrers": [],
       "paths": []
     },
-    "today-card": {
-      "views": 13,
-      "uniques": 4,
-      "clones": 586,
-      "clone_uniques": 133,
-      "referrers": [],
-      "paths": [
-        {
-          "path": "/drsamonline/today-card",
-          "count": 10,
-          "title": "Overview"
-        },
-        {
-          "path": "/drsamonline/today-card/actions",
-          "count": 3,
-          "title": "/actions"
-        }
-      ]
-    },
-    "skin-case-tracker": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 434,
-      "clone_uniques": 89,
-      "referrers": [],
-      "paths": []
-    },
     "helioprism": {
       "views": 1,
       "uniques": 1,
@@ -1065,22 +1307,6 @@
           "title": "/edit/main/README.md"
         }
       ]
-    },
-    "whispering-body-first-aid": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 524,
-      "clone_uniques": 105,
-      "referrers": [],
-      "paths": []
-    },
-    "blinkcode-ai": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 639,
-      "clone_uniques": 145,
-      "referrers": [],
-      "paths": []
     },
     "TTB": {
       "views": 1,
@@ -1169,76 +1395,6 @@
         }
       ]
     },
-    "bmi-bmr-tdee-macros-fluid-calculator": {
-      "views": 1,
-      "uniques": 1,
-      "clones": 707,
-      "clone_uniques": 152,
-      "referrers": [
-        {
-          "from": "github.com",
-          "count": 1
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/bmi-bmr-tdee-macros-fluid-calculator",
-          "count": 1,
-          "title": "Overview"
-        }
-      ]
-    },
-    "chalk-lan": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 916,
-      "clone_uniques": 199,
-      "referrers": [],
-      "paths": []
-    },
-    "homoeopathic-materia-medica-repertory-json": {
-      "views": 53,
-      "uniques": 8,
-      "clones": 1458,
-      "clone_uniques": 327,
-      "referrers": [
-        {
-          "from": "github.com",
-          "count": 7
-        },
-        {
-          "from": "drsamonline.github.io",
-          "count": 6
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/homoeopathic-materia-medica-repertory-json",
-          "count": 16,
-          "title": "Overview"
-        },
-        {
-          "path": "/drsamonline/homoeopathic-materia-medica-repertory-json/tree/main/repertory",
-          "count": 8,
-          "title": "/tree/main/repertory"
-        },
-        {
-          "path": "/drsamonline/homoeopathic-materia-medica-repertory-json/tree/main",
-          "count": 4,
-          "title": "/tree/main"
-        },
-        {
-          "path": "/drsamonline/homoeopathic-materia-medica-repertory-json/tree/main/repertory/repertorium-publicum-2008",
-          "count": 3,
-          "title": "/tree/main/repertory/repertorium-publicum-2008"
-        },
-        {
-          "path": "/drsamonline/homoeopathic-materia-medica-repertory-json/tree/main/repertory/kent-1897",
-          "count": 2,
-          "title": "/tree/main/repertory/kent-1897"
-        }
-      ]
-    },
     "All4ONE": {
       "views": 6,
       "uniques": 4,
@@ -1274,28 +1430,6 @@
           "path": "/drsamonline/All4ONE/blob/main/TOOL_CATALOG.md",
           "count": 1,
           "title": "/blob/main/TOOL_CATALOG.md"
-        }
-      ]
-    },
-    "seance": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 476,
-      "clone_uniques": 115,
-      "referrers": [],
-      "paths": []
-    },
-    "smartbill-app": {
-      "views": 7,
-      "uniques": 5,
-      "clones": 491,
-      "clone_uniques": 121,
-      "referrers": [],
-      "paths": [
-        {
-          "path": "/drsamonline/smartbill-app",
-          "count": 7,
-          "title": "Overview"
         }
       ]
     },
@@ -1394,36 +1528,6 @@
         }
       ]
     },
-    "app-poets-studio": {
-      "views": 1,
-      "uniques": 1,
-      "clones": 806,
-      "clone_uniques": 156,
-      "referrers": [],
-      "paths": [
-        {
-          "path": "/drsamonline/app-poets-studio",
-          "count": 1,
-          "title": "Overview"
-        }
-      ]
-    },
-    "app-panchang": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 579,
-      "clone_uniques": 112,
-      "referrers": [],
-      "paths": []
-    },
-    "app-encrypted-case-log": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 657,
-      "clone_uniques": 137,
-      "referrers": [],
-      "paths": []
-    },
     "app-organon-reader": {
       "views": 1,
       "uniques": 1,
@@ -1445,20 +1549,6 @@
       "clone_uniques": 0,
       "referrers": [],
       "paths": []
-    },
-    "raylib-starter": {
-      "views": 2,
-      "uniques": 1,
-      "clones": 327,
-      "clone_uniques": 99,
-      "referrers": [],
-      "paths": [
-        {
-          "path": "/drsamonline/raylib-starter",
-          "count": 2,
-          "title": "Overview"
-        }
-      ]
     },
     "musicgen": {
       "views": 3,
@@ -1566,53 +1656,6 @@
         }
       ]
     },
-    "ULTIMATE-WINDOWS-OPTIMIZER": {
-      "views": 16,
-      "uniques": 9,
-      "clones": 419,
-      "clone_uniques": 121,
-      "referrers": [
-        {
-          "from": "github.com",
-          "count": 4
-        },
-        {
-          "from": "Bing",
-          "count": 3
-        },
-        {
-          "from": "yandex.com.tr",
-          "count": 1
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/ULTIMATE-WINDOWS-OPTIMIZER",
-          "count": 10,
-          "title": "Overview"
-        },
-        {
-          "path": "/drsamonline/ULTIMATE-WINDOWS-OPTIMIZER/releases/tag/v6.2.0",
-          "count": 3,
-          "title": "/releases/tag/v6.2.0"
-        },
-        {
-          "path": "/drsamonline/ULTIMATE-WINDOWS-OPTIMIZER/releases/tag/v6.2.2",
-          "count": 1,
-          "title": "/releases/tag/v6.2.2"
-        },
-        {
-          "path": "/drsamonline/ULTIMATE-WINDOWS-OPTIMIZER/tree/main/.github",
-          "count": 1,
-          "title": "/tree/main/.github"
-        },
-        {
-          "path": "/drsamonline/ULTIMATE-WINDOWS-OPTIMIZER/tree/main/scripts",
-          "count": 1,
-          "title": "/tree/main/scripts"
-        }
-      ]
-    },
     "CLDR": {
       "views": 1,
       "uniques": 1,
@@ -1690,49 +1733,6 @@
           "path": "/drsamonline/app-lantern",
           "count": 1,
           "title": "Overview"
-        }
-      ]
-    },
-    "ziptastic": {
-      "views": 55,
-      "uniques": 3,
-      "clones": 1955,
-      "clone_uniques": 481,
-      "referrers": [
-        {
-          "from": "github.com",
-          "count": 6
-        },
-        {
-          "from": "drsamonline.github.io",
-          "count": 2
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/ziptastic/tree/main",
-          "count": 9,
-          "title": "/tree/main"
-        },
-        {
-          "path": "/drsamonline/ziptastic",
-          "count": 8,
-          "title": "Overview"
-        },
-        {
-          "path": "/drsamonline/ziptastic/tree/main/src/engine",
-          "count": 7,
-          "title": "/tree/main/src/engine"
-        },
-        {
-          "path": "/drsamonline/ziptastic/new/main",
-          "count": 3,
-          "title": "/new/main"
-        },
-        {
-          "path": "/drsamonline/ziptastic/tree/delete/main/src",
-          "count": 3,
-          "title": "/tree/delete/main/src"
         }
       ]
     },
