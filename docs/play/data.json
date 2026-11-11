@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-10",
-  "generated_at": "2026-11-10T18:48:30Z",
-  "reckoning": "88 products · 13 kits (role) · avg metadata completeness 4.7/5 · updated automatically.",
+  "generated": "2026-11-11",
+  "generated_at": "2026-11-11T00:43:02Z",
+  "reckoning": "92 products · 13 kits (role) · avg metadata completeness 4.7/5 · updated automatically.",
   "health": "ok",
   "health_detail": {
     "state": "ok",
@@ -15,7 +15,7 @@
   "cards": [
     {
       "title": "Products",
-      "value": "88",
+      "value": "92",
       "tone": ""
     },
     {
@@ -40,133 +40,32 @@
     }
   ],
   "summary": {
-    "products": 88,
+    "products": 92,
     "kits": 13,
     "kits_name_matched": 25,
     "kits_definition": "role",
     "avg": 4.7,
-    "pushes": 124,
+    "pushes": 128,
     "byrepo": {
-      "All4ONE": 1,
-      "HMS": 1,
-      "audit": 1,
-      "forge": 1,
-      "registry": 1,
-      "corefit-md": 1,
-      "drsamonline.github.io": 1,
-      "control-panel": 1,
-      "music": 1,
-      "today-card": 1,
-      "whispering-body-first-aid": 1,
-      "retro-strike": 1,
-      "idle-city-ages-of-growth": 1,
-      "eon-commando": 1,
-      "conqueror-os": 1,
-      "seance": 1,
-      "neon-games": 1,
-      "kitbox": 1,
-      "weft8-kit": 1,
-      "weft8-hardware": 1,
-      "weft8-compare": 1,
-      "weft8-classroom": 1,
-      "unstoppable-mind-companion": 1,
-      "the-symphony-companion": 1,
-      "smartbill-app": 1,
-      "skin-case-tracker": 1,
-      "remedy-relationship-explorer": 1,
-      "read-live-transform-app": 1,
-      "open-materia-medica": 1,
-      "offline-pdf-toolkit": 1,
-      "neon-runner": 1,
-      "mnemosyne-companion": 1,
-      "lockhtml": 1,
-      "helioprism": 1,
-      "gentle-pediatrics-companion": 1,
-      "dance-fight": 1,
-      "chalk-lan": 1,
-      "canteen-lan": 1,
-      "boericke-repertory": 1,
-      "bmi-bmr-tdee-macros-fluid-calculator": 1,
-      "blinkcode-ai": 1,
-      "base-bench": 1,
-      "app-weft-puzzles": 1,
-      "app-poets-studio": 1,
-      "app-panchang": 1,
-      "app-jacquard": 1,
-      "app-image-toolkit": 1,
-      "app-encrypted-case-log": 1,
-      "app-companion-forge": 1,
-      "app-clip-loom": 1,
-      "app-organon-reader": 1,
-      "app-story-engine": 1,
-      "app-endpoints": 1,
-      "app-thermals": 1,
-      "app-builder": 1,
-      "UniRep": 1,
-      "MATERIA-MEDICA-BUILDER": 1,
-      "smartnote-scheduler": 1,
-      "skills": 1,
-      "raylib-starter": 1,
-      "neon-velocity": 1,
-      "musicgen": 1,
-      "lexora": 1,
-      "homoeopathic-materia-medica-repertory-json": 1,
-      "drsamonline": 1,
-      "dashboard": 1,
-      "ai-bridge": 1,
-      "ULTIMATE-WINDOWS-OPTIMIZER": 1,
-      "The_Browser": 1,
-      "TTB": 1,
-      "SmartNotes": 1,
-      "NEO": 1,
-      "CLDR": 1,
-      "BLINKTRANSFER": 1,
-      "Matneo": 1,
-      "knowledge": 1,
-      "dumps-4": 1,
-      "Scrap-and-Gun": 1,
-      "app-lantern": 1,
-      "code-kit": 1,
-      "game-kit": 1,
-      "widgets-kit": 1,
-      "form-kit": 1,
-      "markdown-kit": 1,
-      "tokens-kit": 1,
-      "motion-kit": 1,
-      "lan-kit": 1,
-      "ziptastic": 1,
-      "Repertorium-Publicum": 1,
-      "repertory-reader": 1,
-      "srs-kit": 1,
-      "web-kit": 1,
-      "art-kit": 1,
-      "search-kit": 1,
-      "backup": 1,
-      "case-kit": 1,
-      "compfactory": 1,
-      "HCS": 1,
-      "heavenzip": 1,
-      "lumen": 1,
-      "feather": 1,
-      "neon-engine": 1
+      "aethelgard-rpg-engine": 1
     }
   },
   "stats": {
     "metadata_completeness": {
-      "5": 76,
-      "4": 4,
-      "2": 6,
-      "3": 2
+      "5": 79,
+      "4": 5,
+      "3": 3,
+      "2": 5
     },
     "conformance": {
-      "5": 76,
-      "4": 4,
-      "2": 6,
-      "3": 2
+      "5": 79,
+      "4": 5,
+      "3": 3,
+      "2": 5
     },
     "categories": {
+      "HTML Apps": 59,
       "Utilities": 15,
-      "HTML Apps": 55,
       "Homeopathy": 10,
       "Games": 6,
       "Health Tools": 1,
@@ -174,10 +73,6 @@
     }
   },
   "activity": [
-    {
-      "date": "2026-10-28",
-      "count": 0
-    },
     {
       "date": "2026-10-29",
       "count": 0
@@ -224,11 +119,15 @@
     },
     {
       "date": "2026-11-09",
-      "count": 18
+      "count": 17
     },
     {
       "date": "2026-11-10",
-      "count": 102
+      "count": 106
+    },
+    {
+      "date": "2026-11-11",
+      "count": 1
     }
   ],
   "attention": [
@@ -238,6 +137,34 @@
       "url": "https://github.com/drsamonline/web-kit/issues/3",
       "kind": "issue",
       "created": "2026-10-26T00:46:14Z"
+    },
+    {
+      "title": "Save import refuses what the loader would refuse, and says why",
+      "repo": "aethelgard-rpg-engine",
+      "url": "https://github.com/drsamonline/aethelgard-rpg-engine/pull/10",
+      "kind": "PR",
+      "created": "2026-11-11T00:42:25Z"
+    },
+    {
+      "title": "B51: the handover pack - closes wave 9 and the plan",
+      "repo": "HMS",
+      "url": "https://github.com/drsamonline/HMS/pull/122",
+      "kind": "PR",
+      "created": "2026-11-10T19:53:21Z"
+    },
+    {
+      "title": "B50: the guided first run",
+      "repo": "HMS",
+      "url": "https://github.com/drsamonline/HMS/pull/121",
+      "kind": "PR",
+      "created": "2026-11-10T19:24:45Z"
+    },
+    {
+      "title": "B49: the generated API reference",
+      "repo": "HMS",
+      "url": "https://github.com/drsamonline/HMS/pull/120",
+      "kind": "PR",
+      "created": "2026-11-10T18:58:53Z"
     },
     {
       "title": "feat(generators): Make a QR Code, encoded here rather than by a library",
@@ -350,34 +277,6 @@
       "url": "https://github.com/drsamonline/HMS/pull/108",
       "kind": "PR",
       "created": "2026-11-10T10:07:25Z"
-    },
-    {
-      "title": "B37: the indicator dashboard",
-      "repo": "HMS",
-      "url": "https://github.com/drsamonline/HMS/pull/107",
-      "kind": "PR",
-      "created": "2026-11-10T09:41:53Z"
-    },
-    {
-      "title": "B36: the indicator spine - opens wave 7",
-      "repo": "HMS",
-      "url": "https://github.com/drsamonline/HMS/pull/106",
-      "kind": "PR",
-      "created": "2026-11-10T09:11:14Z"
-    },
-    {
-      "title": "B32: the prescription becomes a document - closes wave 6",
-      "repo": "HMS",
-      "url": "https://github.com/drsamonline/HMS/pull/105",
-      "kind": "PR",
-      "created": "2026-11-10T08:14:16Z"
-    },
-    {
-      "title": "B31: the prescriber's registration number reaches the paper",
-      "repo": "HMS",
-      "url": "https://github.com/drsamonline/HMS/pull/104",
-      "kind": "PR",
-      "created": "2026-11-10T07:33:53Z"
     }
   ],
   "controls": [
@@ -571,123 +470,123 @@
   },
   "changes": [
     {
+      "type": "PullRequest",
+      "repo": "aethelgard-rpg-engine",
+      "when": "2026-11-11T00:42:25Z",
+      "text": "opened: "
+    },
+    {
       "type": "Push",
-      "repo": "game-kit",
-      "when": "2026-11-10T06:33:15Z",
+      "repo": "BLINKTRANSFER",
+      "when": "2026-11-09T07:46:56Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "game-kit",
-      "when": "2026-11-10T06:32:58Z",
+      "repo": "art-kit",
+      "when": "2026-11-09T07:46:54Z",
       "text": "pushed to main"
     },
     {
-      "type": "PullRequest",
-      "repo": "All4ONE",
-      "when": "2026-11-10T18:45:22Z",
-      "text": "opened: "
-    },
-    {
       "type": "Push",
-      "repo": "kitbox",
-      "when": "2026-11-09T04:38:59Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "HMS",
-      "when": "2026-11-10T18:28:33Z",
-      "text": "opened: "
-    },
-    {
-      "type": "Push",
-      "repo": "audit",
-      "when": "2026-11-09T19:13:17Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "HMS",
-      "when": "2026-11-10T18:03:56Z",
-      "text": "opened: "
-    },
-    {
-      "type": "Push",
-      "repo": "The_Browser",
-      "when": "2026-11-10T06:08:39Z",
-      "text": "pushed to msvc-socket-close-and-macros"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "HMS",
-      "when": "2026-11-10T17:40:53Z",
-      "text": "opened: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "HMS",
-      "when": "2026-11-10T17:14:02Z",
-      "text": "opened: "
-    },
-    {
-      "type": "Push",
-      "repo": "raylib-starter",
-      "when": "2026-11-09T18:31:41Z",
+      "repo": "app-organon-reader",
+      "when": "2026-11-09T07:46:52Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "audit",
-      "when": "2026-11-09T19:10:40Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "HMS",
-      "when": "2026-11-10T16:41:24Z",
-      "text": "opened: "
-    },
-    {
-      "type": "Push",
-      "repo": "kitbox",
-      "when": "2026-11-09T01:36:26Z",
+      "when": "2026-11-10T06:51:21Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "repertory-reader",
-      "when": "2026-11-09T11:30:39Z",
+      "repo": "HMS",
+      "when": "2026-11-09T09:25:53Z",
       "text": "pushed to main"
     },
     {
-      "type": "PullRequest",
-      "repo": "HMS",
-      "when": "2026-11-10T14:43:54Z",
-      "text": "opened: "
+      "type": "Push",
+      "repo": "skin-case-tracker",
+      "when": "2026-11-09T09:18:21Z",
+      "text": "pushed to main"
     },
     {
-      "type": "PullRequest",
-      "repo": "HMS",
-      "when": "2026-11-10T14:16:44Z",
-      "text": "opened: "
-    },
-    {
-      "type": "Release",
-      "repo": "seance",
-      "when": "2026-11-10T14:16:03Z",
-      "text": ""
+      "type": "Push",
+      "repo": "widgets-kit",
+      "when": "2026-11-10T06:27:47Z",
+      "text": "pushed to main"
     },
     {
       "type": "Create",
       "repo": "HMS",
-      "when": "2026-11-09T20:40:31Z",
+      "when": "2026-11-09T16:44:58Z",
       "text": ""
     },
     {
       "type": "Push",
-      "repo": "weft8-classroom",
-      "when": "2026-11-09T11:01:55Z",
+      "repo": "The_Browser",
+      "when": "2026-11-10T05:57:48Z",
+      "text": "pushed to msvc-socket-close-and-macros"
+    },
+    {
+      "type": "Push",
+      "repo": "raylib-starter",
+      "when": "2026-11-10T05:56:28Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "raylib-starter",
+      "when": "2026-11-10T05:47:39Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "lan-kit",
+      "when": "2026-11-10T05:47:35Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "HMS",
+      "when": "2026-11-10T06:02:57Z",
+      "text": "pushed to batch-22-homes"
+    },
+    {
+      "type": "Push",
+      "repo": "app-lantern",
+      "when": "2026-11-10T10:05:56Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "lumen",
+      "when": "2026-11-09T06:54:23Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "today-card",
+      "when": "2026-11-09T06:54:09Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "weft8-compare",
+      "when": "2026-11-09T06:53:32Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "app-builder",
+      "when": "2026-11-09T06:52:20Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "app-lantern",
+      "when": "2026-11-10T09:54:06Z",
       "text": "pushed to main"
     }
   ],
@@ -716,8 +615,8 @@
       ],
       "schedule": "daily 03:51 UTC",
       "repo_url": "https://github.com/drsamonline/audit",
-      "url": "https://github.com/drsamonline/audit/actions/runs/42873185300",
-      "last_run": "2026-11-10T18:15:15Z",
+      "url": "https://github.com/drsamonline/audit/actions/runs/42886605711",
+      "last_run": "2026-11-10T19:34:58Z",
       "conclusion": "success"
     },
     {
@@ -758,8 +657,8 @@
       ],
       "schedule": "weekly (Tue) 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/42878827572",
-      "last_run": "2026-11-10T18:48:02Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/42933475218",
+      "last_run": "2026-11-11T00:42:41Z",
       "conclusion": "in_progress"
     },
     {
@@ -1156,9 +1055,9 @@
       ],
       "schedule": "weekly (Tue) 04:12 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/runs/42819743734",
-      "last_run": "2026-11-10T12:54:40Z",
-      "conclusion": "success"
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/42933475193",
+      "last_run": "2026-11-11T00:42:39Z",
+      "conclusion": "pending"
     },
     {
       "repo": "Matneo",
@@ -1184,9 +1083,9 @@
       ],
       "schedule": "weekly (Tue) 04:22 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/runs/42878857023",
-      "last_run": "2026-11-10T18:48:08Z",
-      "conclusion": "queued"
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/42933475398",
+      "last_run": "2026-11-11T00:42:41Z",
+      "conclusion": "in_progress"
     },
     {
       "repo": "registry",
@@ -1232,7 +1131,7 @@
       "link": "https://github.com/drsamonline/forge"
     },
     {
-      "what": "Apps live — 113 products, 113 of them pushed in the last 30 days",
+      "what": "Apps live — 117 products, 117 of them pushed in the last 30 days",
       "state": "done",
       "link": "https://drsamonline.github.io/"
     },
@@ -1253,8 +1152,8 @@
     "built_definition": "name matching: a live repository whose name matches the idea's slug. NOT the owner's definition of built (release + landing page + live demo), which the registry measures.",
     "name_matched": 12,
     "unbuilt": 141,
-    "live_products": 88,
-    "live_not_planned": 76,
+    "live_products": 92,
+    "live_not_planned": 80,
     "plan_generated": "2026-10-23",
     "link": "https://github.com/drsamonline/dashboard/blob/main/plan.json"
   },
@@ -1301,11 +1200,11 @@
         "html_url": "https://github.com/drsamonline/neon-runner"
       },
       {
-        "name": "All4ONE",
+        "name": "aethelgard-rpg-engine",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
-        "html_url": "https://github.com/drsamonline/All4ONE"
+        "html_url": "https://github.com/drsamonline/aethelgard-rpg-engine"
       },
       {
         "name": "HMS",
@@ -1313,6 +1212,34 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/HMS"
+      },
+      {
+        "name": "skin-case-tracker",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/skin-case-tracker"
+      },
+      {
+        "name": "mnemosyne-companion",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/mnemosyne-companion"
+      },
+      {
+        "name": "gentle-pediatrics-companion",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/gentle-pediatrics-companion"
+      },
+      {
+        "name": "All4ONE",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/All4ONE"
       },
       {
         "name": "corefit-md",
@@ -1441,13 +1368,6 @@
         "html_url": "https://github.com/drsamonline/smartbill-app"
       },
       {
-        "name": "skin-case-tracker",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/skin-case-tracker"
-      },
-      {
         "name": "remedy-relationship-explorer",
         "stars": 1,
         "forks": 0,
@@ -1476,13 +1396,6 @@
         "html_url": "https://github.com/drsamonline/offline-pdf-toolkit"
       },
       {
-        "name": "mnemosyne-companion",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/mnemosyne-companion"
-      },
-      {
         "name": "lockhtml",
         "stars": 1,
         "forks": 0,
@@ -1495,13 +1408,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/helioprism"
-      },
-      {
-        "name": "gentle-pediatrics-companion",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/gentle-pediatrics-companion"
       },
       {
         "name": "dance-fight",
@@ -1931,13 +1837,6 @@
         "html_url": "https://github.com/drsamonline/saga-vn-engine"
       },
       {
-        "name": "aethelgard-rpg-engine",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/aethelgard-rpg-engine"
-      },
-      {
         "name": "ui-kit",
         "stars": 1,
         "forks": 0,
@@ -2047,6 +1946,109 @@
     "window": "14 days",
     "note": "Last 14 days — GitHub's retention window.",
     "repos": {
+      "aethelgard-rpg-engine": {
+        "views": 1,
+        "uniques": 1,
+        "clones": 273,
+        "clone_uniques": 104,
+        "referrers": [],
+        "paths": [
+          {
+            "path": "/drsamonline/aethelgard-rpg-engine",
+            "count": 1,
+            "title": "Overview"
+          }
+        ]
+      },
+      "neonboom": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
+      "HMS": {
+        "views": 2,
+        "uniques": 2,
+        "clones": 584,
+        "clone_uniques": 165,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 2
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/HMS",
+            "count": 2,
+            "title": "Overview"
+          }
+        ]
+      },
+      "remedy-finder": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
+      "holistic": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
+      "lofi-studio-pro": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
+      "music": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
+      "skin-case-tracker": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 409,
+        "clone_uniques": 86,
+        "referrers": [],
+        "paths": []
+      },
+      "mnemosyne-companion": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 470,
+        "clone_uniques": 111,
+        "referrers": [],
+        "paths": []
+      },
+      "gentle-pediatrics-companion": {
+        "views": 1,
+        "uniques": 1,
+        "clones": 466,
+        "clone_uniques": 117,
+        "referrers": [],
+        "paths": [
+          {
+            "path": "/drsamonline/gentle-pediatrics-companion/edit/main/README.md",
+            "count": 1,
+            "title": "/edit/main/README.md"
+          }
+        ]
+      },
       "All4ONE": {
         "views": 6,
         "uniques": 4,
@@ -2085,25 +2087,6 @@
           }
         ]
       },
-      "HMS": {
-        "views": 2,
-        "uniques": 2,
-        "clones": 584,
-        "clone_uniques": 165,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 2
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/HMS",
-            "count": 2,
-            "title": "Overview"
-          }
-        ]
-      },
       "corefit-md": {
         "views": 0,
         "uniques": 0,
@@ -2125,14 +2108,6 @@
             "title": "Overview"
           }
         ]
-      },
-      "music": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 0,
-        "clone_uniques": 0,
-        "referrers": [],
-        "paths": []
       },
       "today-card": {
         "views": 13,
@@ -2367,14 +2342,6 @@
           }
         ]
       },
-      "skin-case-tracker": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 409,
-        "clone_uniques": 86,
-        "referrers": [],
-        "paths": []
-      },
       "remedy-relationship-explorer": {
         "views": 0,
         "uniques": 0,
@@ -2461,14 +2428,6 @@
           }
         ]
       },
-      "mnemosyne-companion": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 470,
-        "clone_uniques": 111,
-        "referrers": [],
-        "paths": []
-      },
       "lockhtml": {
         "views": 6,
         "uniques": 3,
@@ -2512,20 +2471,6 @@
             "path": "/drsamonline/helioprism",
             "count": 1,
             "title": "Overview"
-          }
-        ]
-      },
-      "gentle-pediatrics-companion": {
-        "views": 1,
-        "uniques": 1,
-        "clones": 466,
-        "clone_uniques": 117,
-        "referrers": [],
-        "paths": [
-          {
-            "path": "/drsamonline/gentle-pediatrics-companion/edit/main/README.md",
-            "count": 1,
-            "title": "/edit/main/README.md"
           }
         ]
       },
@@ -3735,20 +3680,6 @@
         "referrers": [],
         "paths": []
       },
-      "aethelgard-rpg-engine": {
-        "views": 1,
-        "uniques": 1,
-        "clones": 273,
-        "clone_uniques": 104,
-        "referrers": [],
-        "paths": [
-          {
-            "path": "/drsamonline/aethelgard-rpg-engine",
-            "count": 1,
-            "title": "Overview"
-          }
-        ]
-      },
       "ui-kit": {
         "views": 0,
         "uniques": 0,
@@ -3842,6 +3773,306 @@
   },
   "repos": [
     {
+      "name": "aethelgard-rpg-engine",
+      "description": "A dependency-free vanilla-JavaScript engine for deep single-player browser RPGs. Engine only — the games it powers live in aethelgard-games.",
+      "pushed_at": "2026-11-11T00:42:11Z",
+      "homepage": "https://drsamonline.github.io/aethelgard-rpg-engine/",
+      "html_url": "https://github.com/drsamonline/aethelgard-rpg-engine",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "neonboom",
+      "description": "A beat workstation that lives in a browser tab. 27 procedurally synthesised loops, hardware-style pad grid, canvas arrangement, mixer, master FX and WAV export. Offline-first PWA with a 190 KB single-file build. Zero dependencies.",
+      "pushed_at": "2026-11-10T20:26:07Z",
+      "homepage": "https://drsamonline.github.io/neonboom/",
+      "html_url": "https://github.com/drsamonline/neonboom",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "HMS",
+      "description": "HHMS — a LAN-based hospital management system purpose-built for homeopathic hospitals and clinics, with a server-owned database and no cloud lock-in.",
+      "pushed_at": "2026-11-10T19:53:18Z",
+      "homepage": "https://drsamonline.github.io/HMS/",
+      "html_url": "https://github.com/drsamonline/HMS",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "remedy-finder",
+      "description": "An offline homeopathic repertory workbench — 178 remedies, 634 symptoms, 30,412 graded links from Repertorium Publicum (2008). Single-file HTML, PWA, no account, no tracking.",
+      "pushed_at": "2026-11-10T19:49:27Z",
+      "homepage": "https://drsamonline.github.io/remedy-finder/",
+      "html_url": "https://github.com/drsamonline/remedy-finder",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "holistic",
+      "description": "Eight traditions, one quiet app — numerology, sun-sign astrology, lunar phase and biorhythm. Offline, private, 92 KB, zero network requests.",
+      "pushed_at": "2026-11-10T19:49:17Z",
+      "homepage": "https://drsamonline.github.io/holistic/",
+      "html_url": "https://github.com/drsamonline/holistic",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "4/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "lofi-studio-pro",
+      "description": "A lofi beat machine that runs entirely in the browser. Six tracks, nine ambience layers, live tape chain — offline-first PWA, no samples, no account.",
+      "pushed_at": "2026-11-10T19:46:08Z",
+      "homepage": "https://drsamonline.github.io/lofi-studio-pro/",
+      "html_url": "https://github.com/drsamonline/lofi-studio-pro",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "music",
+      "description": "Album-wise music page for drsamonline.github.io/music — streams from SoundCloud, Suno, Flow Music, Newgrounds and Freesound",
+      "pushed_at": "2026-11-10T19:32:48Z",
+      "homepage": "https://drsamonline.github.io/music/",
+      "html_url": "https://github.com/drsamonline/music",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "3/5",
+      "status_tone": "warn",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "skin-case-tracker",
+      "description": "A private, offline skin-case tracker built on the HHMS dashboard — history, habits, mapping and symptoms — with a 90-day pattern engine, from the book The Skin Is a Liar.",
+      "pushed_at": "2026-11-10T19:20:29Z",
+      "homepage": "https://drsamonline.github.io/skin-case-tracker/",
+      "html_url": "https://github.com/drsamonline/skin-case-tracker",
+      "download": "",
+      "category": "Homeopathy",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "mnemosyne-companion",
+      "description": "A study companion for Mnemosyne Materia Medica — 100 polycrest remedies as poetic pearls, keynotes and spaced-repetition drills.",
+      "pushed_at": "2026-11-10T18:49:16Z",
+      "homepage": "https://drsamonline.github.io/mnemosyne-companion/",
+      "html_url": "https://github.com/drsamonline/mnemosyne-companion",
+      "download": "",
+      "category": "Homeopathy",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "gentle-pediatrics-companion",
+      "description": "A triage-first home companion for a sick child — nine common childhood situations, a red-flag check and remedy orientation from the book Gentle Pediatrics.",
+      "pushed_at": "2026-11-10T18:49:14Z",
+      "homepage": "https://drsamonline.github.io/gentle-pediatrics-companion/",
+      "html_url": "https://github.com/drsamonline/gentle-pediatrics-companion",
+      "download": "",
+      "category": "Homeopathy",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
       "name": "All4ONE",
       "description": "403 working tools in one portable Windows binary — file and folder work, encoding and hashing, images, PDFs, media, documents, network diagnostics, system maintenance, security checks and generators. No installer, no registry writes, no telemetry.",
       "pushed_at": "2026-11-10T18:45:12Z",
@@ -3867,36 +4098,8 @@
         1,
         0,
         1,
-        1
-      ]
-    },
-    {
-      "name": "HMS",
-      "description": "HHMS — a LAN-based hospital management system purpose-built for homeopathic hospitals and clinics, with a server-owned database and no cloud lock-in.",
-      "pushed_at": "2026-11-10T18:28:30Z",
-      "homepage": "https://drsamonline.github.io/HMS/",
-      "html_url": "https://github.com/drsamonline/HMS",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
         1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1
+        0
       ]
     },
     {
@@ -3925,7 +4128,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3954,36 +4158,8 @@
         1,
         0,
         1,
-        1
-      ]
-    },
-    {
-      "name": "music",
-      "description": "Album-wise music page for drsamonline.github.io/music — streams from SoundCloud, Suno, Flow Music, Newgrounds and Freesound",
-      "pushed_at": "2026-11-10T16:32:48Z",
-      "homepage": "https://drsamonline.github.io/music/",
-      "html_url": "https://github.com/drsamonline/music",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "2/5",
-      "status_tone": "bad",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4012,7 +4188,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4041,7 +4218,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4070,7 +4248,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4099,7 +4278,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4128,7 +4308,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4157,7 +4338,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4186,7 +4368,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4215,7 +4398,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4244,7 +4428,8 @@
         0,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4273,7 +4458,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4302,7 +4488,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4331,7 +4518,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4360,7 +4548,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4389,7 +4578,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4418,36 +4608,8 @@
         1,
         0,
         1,
-        1
-      ]
-    },
-    {
-      "name": "skin-case-tracker",
-      "description": "A private, offline skin-case tracker built on the HHMS dashboard — history, habits, mapping and symptoms — with a 90-day pattern engine, from the book The Skin Is a Liar.",
-      "pushed_at": "2026-11-10T15:13:06Z",
-      "homepage": "https://drsamonline.github.io/skin-case-tracker/",
-      "html_url": "https://github.com/drsamonline/skin-case-tracker",
-      "download": "",
-      "category": "Homeopathy",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        0,
-        1,
-        1
+        0
       ]
     },
     {
@@ -4476,7 +4638,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4505,7 +4668,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4534,7 +4698,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4563,7 +4728,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4592,36 +4758,8 @@
         1,
         0,
         1,
-        1
-      ]
-    },
-    {
-      "name": "mnemosyne-companion",
-      "description": "A study companion for Mnemosyne Materia Medica — 100 polycrest remedies as poetic pearls, keynotes and spaced-repetition drills.",
-      "pushed_at": "2026-11-10T15:12:44Z",
-      "homepage": "https://drsamonline.github.io/mnemosyne-companion/",
-      "html_url": "https://github.com/drsamonline/mnemosyne-companion",
-      "download": "",
-      "category": "Homeopathy",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
         1,
-        1,
-        1,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        1
+        0
       ]
     },
     {
@@ -4650,7 +4788,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4679,36 +4818,8 @@
         1,
         0,
         1,
-        1
-      ]
-    },
-    {
-      "name": "gentle-pediatrics-companion",
-      "description": "A triage-first home companion for a sick child — nine common childhood situations, a red-flag check and remedy orientation from the book Gentle Pediatrics.",
-      "pushed_at": "2026-11-10T15:12:13Z",
-      "homepage": "https://drsamonline.github.io/gentle-pediatrics-companion/",
-      "html_url": "https://github.com/drsamonline/gentle-pediatrics-companion",
-      "download": "",
-      "category": "Homeopathy",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
         1,
-        1,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        1
+        0
       ]
     },
     {
@@ -4737,7 +4848,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4766,7 +4878,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4795,7 +4908,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4824,7 +4938,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4853,7 +4968,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4882,7 +4998,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4911,7 +5028,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4940,7 +5058,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4969,7 +5088,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4998,7 +5118,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5027,7 +5148,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5056,7 +5178,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5085,7 +5208,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5114,7 +5238,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5143,7 +5268,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5172,7 +5298,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5201,7 +5328,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5230,7 +5358,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5259,7 +5388,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5288,7 +5418,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5317,7 +5448,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5346,7 +5478,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5375,7 +5508,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5404,7 +5538,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5433,7 +5568,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5462,7 +5598,8 @@
         0,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5491,7 +5628,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5520,7 +5658,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5549,7 +5688,8 @@
         0,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5578,7 +5718,8 @@
         0,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5607,7 +5748,8 @@
         0,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5636,7 +5778,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5665,7 +5808,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5694,7 +5838,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5723,7 +5868,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5752,7 +5898,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5781,7 +5928,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5810,7 +5958,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5839,7 +5988,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5868,7 +6018,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5897,7 +6048,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5926,7 +6078,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5955,7 +6108,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5984,7 +6138,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -6013,7 +6168,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -6042,7 +6198,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -6071,7 +6228,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -6100,7 +6258,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -6129,6 +6288,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6158,6 +6318,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6187,6 +6348,7 @@
         0,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6216,35 +6378,7 @@
         0,
         0,
         1,
-        0
-      ]
-    },
-    {
-      "name": "aethelgard-rpg-engine",
-      "description": "A dependency-free vanilla-JavaScript engine for deep single-player browser RPGs. Engine only — the games it powers live in aethelgard-games.",
-      "pushed_at": "2026-11-09T11:30:31Z",
-      "homepage": "https://drsamonline.github.io/aethelgard-rpg-engine/",
-      "html_url": "https://github.com/drsamonline/aethelgard-rpg-engine",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
         0
       ]
     },
@@ -6274,6 +6408,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6303,6 +6438,7 @@
         1,
         0,
         0,
+        0,
         0
       ]
     },
@@ -6326,6 +6462,7 @@
         0,
         0,
         1,
+        0,
         0,
         0,
         0,
@@ -6361,6 +6498,7 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
@@ -6384,6 +6522,7 @@
         0,
         1,
         1,
+        0,
         0,
         0,
         0,
@@ -7619,6 +7758,19 @@
         "lumen": 1,
         "feather": 1,
         "neon-engine": 1
+      },
+      "stars": 103,
+      "forks": 1,
+      "watchers": 103
+    },
+    {
+      "date": "2026-11-11",
+      "products": 92,
+      "kits": 13,
+      "avg": 4.7,
+      "pushes": 128,
+      "byrepo": {
+        "aethelgard-rpg-engine": 1
       },
       "stars": 103,
       "forks": 1,

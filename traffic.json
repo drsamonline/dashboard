@@ -1,9 +1,112 @@
 {
-  "generated": "2026-11-10",
+  "generated": "2026-11-11",
   "available": true,
   "window": "14 days",
   "note": "Last 14 days — GitHub's retention window.",
   "repos": {
+    "aethelgard-rpg-engine": {
+      "views": 1,
+      "uniques": 1,
+      "clones": 273,
+      "clone_uniques": 104,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/drsamonline/aethelgard-rpg-engine",
+          "count": 1,
+          "title": "Overview"
+        }
+      ]
+    },
+    "neonboom": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 0,
+      "clone_uniques": 0,
+      "referrers": [],
+      "paths": []
+    },
+    "HMS": {
+      "views": 2,
+      "uniques": 2,
+      "clones": 584,
+      "clone_uniques": 165,
+      "referrers": [
+        {
+          "from": "github.com",
+          "count": 2
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/HMS",
+          "count": 2,
+          "title": "Overview"
+        }
+      ]
+    },
+    "remedy-finder": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 0,
+      "clone_uniques": 0,
+      "referrers": [],
+      "paths": []
+    },
+    "holistic": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 0,
+      "clone_uniques": 0,
+      "referrers": [],
+      "paths": []
+    },
+    "lofi-studio-pro": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 0,
+      "clone_uniques": 0,
+      "referrers": [],
+      "paths": []
+    },
+    "music": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 0,
+      "clone_uniques": 0,
+      "referrers": [],
+      "paths": []
+    },
+    "skin-case-tracker": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 409,
+      "clone_uniques": 86,
+      "referrers": [],
+      "paths": []
+    },
+    "mnemosyne-companion": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 470,
+      "clone_uniques": 111,
+      "referrers": [],
+      "paths": []
+    },
+    "gentle-pediatrics-companion": {
+      "views": 1,
+      "uniques": 1,
+      "clones": 466,
+      "clone_uniques": 117,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/drsamonline/gentle-pediatrics-companion/edit/main/README.md",
+          "count": 1,
+          "title": "/edit/main/README.md"
+        }
+      ]
+    },
     "All4ONE": {
       "views": 6,
       "uniques": 4,
@@ -42,25 +145,6 @@
         }
       ]
     },
-    "HMS": {
-      "views": 2,
-      "uniques": 2,
-      "clones": 584,
-      "clone_uniques": 165,
-      "referrers": [
-        {
-          "from": "github.com",
-          "count": 2
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/HMS",
-          "count": 2,
-          "title": "Overview"
-        }
-      ]
-    },
     "corefit-md": {
       "views": 0,
       "uniques": 0,
@@ -82,14 +166,6 @@
           "title": "Overview"
         }
       ]
-    },
-    "music": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 0,
-      "clone_uniques": 0,
-      "referrers": [],
-      "paths": []
     },
     "today-card": {
       "views": 13,
@@ -324,14 +400,6 @@
         }
       ]
     },
-    "skin-case-tracker": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 409,
-      "clone_uniques": 86,
-      "referrers": [],
-      "paths": []
-    },
     "remedy-relationship-explorer": {
       "views": 0,
       "uniques": 0,
@@ -418,14 +486,6 @@
         }
       ]
     },
-    "mnemosyne-companion": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 470,
-      "clone_uniques": 111,
-      "referrers": [],
-      "paths": []
-    },
     "lockhtml": {
       "views": 6,
       "uniques": 3,
@@ -469,20 +529,6 @@
           "path": "/drsamonline/helioprism",
           "count": 1,
           "title": "Overview"
-        }
-      ]
-    },
-    "gentle-pediatrics-companion": {
-      "views": 1,
-      "uniques": 1,
-      "clones": 466,
-      "clone_uniques": 117,
-      "referrers": [],
-      "paths": [
-        {
-          "path": "/drsamonline/gentle-pediatrics-companion/edit/main/README.md",
-          "count": 1,
-          "title": "/edit/main/README.md"
         }
       ]
     },
@@ -1691,20 +1737,6 @@
       "clone_uniques": 35,
       "referrers": [],
       "paths": []
-    },
-    "aethelgard-rpg-engine": {
-      "views": 1,
-      "uniques": 1,
-      "clones": 273,
-      "clone_uniques": 104,
-      "referrers": [],
-      "paths": [
-        {
-          "path": "/drsamonline/aethelgard-rpg-engine",
-          "count": 1,
-          "title": "Overview"
-        }
-      ]
     },
     "ui-kit": {
       "views": 0,
