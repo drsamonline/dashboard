@@ -1,6 +1,6 @@
 {
   "generated": "2026-11-12",
-  "generated_at": "2026-11-12T12:39:11Z",
+  "generated_at": "2026-11-12T18:46:03Z",
   "reckoning": "97 products · 13 kits (role) · avg metadata completeness 4.8/5 · updated automatically.",
   "health": "ok",
   "health_detail": {
@@ -47,6 +47,12 @@
     "avg": 4.8,
     "pushes": 133,
     "byrepo": {
+      "idle-city-ages-of-growth": 1,
+      "heavenzip": 1,
+      "forge": 1,
+      "dashboard": 1,
+      "TTB": 1,
+      "knowledge": 1,
       "skills": 1,
       "ntet-course-source": 1,
       "audit": 1,
@@ -54,18 +60,14 @@
       "kosh": 1,
       "Matneo": 1,
       "drsamonline": 1,
-      "forge": 1,
       "bmi-bmr-tdee-macros-fluid-calculator": 1,
       "ntet-homoeopathy-cbt": 1,
       "conqueror-os": 1,
       "read-live-transform-app": 1,
       "the-symphony-companion": 1,
-      "idle-city-ages-of-growth": 1,
       "retro-strike": 1,
       "today-card": 1,
-      "dashboard": 1,
       "lockhtml": 1,
-      "knowledge": 1,
       "open-materia-medica": 1,
       "app-panchang": 1,
       "BLINKTRANSFER": 1,
@@ -110,7 +112,6 @@
       "chalk-lan": 1,
       "aethelgard-games": 1,
       "app-jacquard": 1,
-      "heavenzip": 1,
       "app-opd-register": 1,
       "frame-kit": 1,
       "music": 1,
@@ -119,23 +120,23 @@
   },
   "stats": {
     "metadata_completeness": {
-      "3": 2,
       "5": 87,
+      "3": 2,
       "4": 3,
       "2": 5
     },
     "conformance": {
-      "3": 2,
       "5": 87,
+      "3": 2,
       "4": 3,
       "2": 5
     },
     "categories": {
-      "HTML Apps": 64,
-      "Health Tools": 1,
-      "Utilities": 15,
-      "Homeopathy": 10,
       "Games": 6,
+      "HTML Apps": 64,
+      "Utilities": 15,
+      "Health Tools": 1,
+      "Homeopathy": 10,
       "Data": 1
     }
   },
@@ -190,11 +191,11 @@
     },
     {
       "date": "2026-11-11",
-      "count": 59
+      "count": 58
     },
     {
       "date": "2026-11-12",
-      "count": 68
+      "count": 69
     }
   ],
   "attention": [
@@ -537,124 +538,124 @@
   },
   "changes": [
     {
-      "type": "Delete",
-      "repo": "holistic",
-      "when": "2026-11-11T04:25:14Z",
-      "text": ""
-    },
-    {
       "type": "Push",
-      "repo": "holistic",
-      "when": "2026-11-11T05:56:15Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "planner-pro",
-      "when": "2026-11-11T07:47:23Z",
+      "repo": "lofi-studio-pro",
+      "when": "2026-11-11T08:58:12Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "lofi-studio-pro",
-      "when": "2026-11-11T04:13:41Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "accent-oracle",
-      "when": "2026-11-11T04:10:55Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "repertory-kit",
-      "when": "2026-11-11T05:44:50Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "holistic",
-      "when": "2026-11-11T05:44:37Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "remedy-finder",
-      "when": "2026-11-11T03:58:44Z",
+      "when": "2026-11-11T04:59:24Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "lofi-studio-pro",
-      "when": "2026-11-11T04:25:53Z",
+      "when": "2026-11-11T04:53:46Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "lofi-studio-pro",
+      "when": "2026-11-11T04:59:13Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "neonboom",
+      "when": "2026-11-11T08:48:08Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "remedy-finder",
-      "when": "2026-11-11T04:23:39Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Delete",
-      "repo": "kosh",
-      "when": "2026-11-12T08:52:19Z",
-      "text": ""
-    },
-    {
-      "type": "Push",
-      "repo": "heavenzip",
-      "when": "2026-11-11T04:10:59Z",
+      "when": "2026-11-11T04:51:35Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "corefit-md",
-      "when": "2026-11-11T04:10:57Z",
+      "repo": "Repertorium-Publicum",
+      "when": "2026-11-11T14:28:43Z",
       "text": "pushed to main"
-    },
-    {
-      "type": "Delete",
-      "repo": "holistic",
-      "when": "2026-11-11T07:12:06Z",
-      "text": ""
     },
     {
       "type": "Push",
-      "repo": "remedy-finder",
-      "when": "2026-11-11T07:05:27Z",
+      "repo": "seance",
+      "when": "2026-11-11T14:22:55Z",
       "text": "pushed to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "kosh",
-      "when": "2026-11-12T11:35:33Z",
-      "text": "merged: "
     },
     {
       "type": "Create",
-      "repo": "kosh",
-      "when": "2026-11-12T08:40:31Z",
+      "repo": "HMS",
+      "when": "2026-11-11T04:40:59Z",
+      "text": ""
+    },
+    {
+      "type": "Delete",
+      "repo": "HMS",
+      "when": "2026-11-11T12:02:40Z",
+      "text": ""
+    },
+    {
+      "type": "Delete",
+      "repo": "HMS",
+      "when": "2026-11-11T12:02:35Z",
+      "text": ""
+    },
+    {
+      "type": "Delete",
+      "repo": "HMS",
+      "when": "2026-11-11T12:02:04Z",
+      "text": ""
+    },
+    {
+      "type": "Delete",
+      "repo": "HMS",
+      "when": "2026-11-11T12:01:54Z",
+      "text": ""
+    },
+    {
+      "type": "Delete",
+      "repo": "HMS",
+      "when": "2026-11-11T12:01:49Z",
+      "text": ""
+    },
+    {
+      "type": "Delete",
+      "repo": "HMS",
+      "when": "2026-11-11T12:01:43Z",
       "text": ""
     },
     {
       "type": "Push",
-      "repo": "remedy-finder",
-      "when": "2026-11-11T03:50:27Z",
+      "repo": "weft8-hardware",
+      "when": "2026-11-11T09:31:33Z",
       "text": "pushed to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "kosh",
-      "when": "2026-11-12T11:20:43Z",
-      "text": "opened: "
     },
     {
       "type": "Push",
-      "repo": "ziptastic",
-      "when": "2026-11-11T10:37:06Z",
+      "repo": "read-live-transform-app",
+      "when": "2026-11-11T14:24:42Z",
       "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "helioprism",
+      "when": "2026-11-11T14:23:08Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "app-poets-studio",
+      "when": "2026-11-11T14:22:15Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Create",
+      "repo": "holistic",
+      "when": "2026-11-11T04:22:41Z",
+      "text": ""
     }
   ],
   "automation": [
@@ -724,8 +725,8 @@
       ],
       "schedule": "weekly (Tue) 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/43219787339",
-      "last_run": "2026-11-12T12:38:45Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/43283152432",
+      "last_run": "2026-11-12T18:45:36Z",
       "conclusion": "in_progress"
     },
     {
@@ -1122,8 +1123,8 @@
       ],
       "schedule": "weekly (Tue) 04:12 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/runs/43170743967",
-      "last_run": "2026-11-12T06:53:08Z",
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/43219823719",
+      "last_run": "2026-11-12T12:39:14Z",
       "conclusion": "success"
     },
     {
@@ -1150,8 +1151,8 @@
       ],
       "schedule": "weekly (Tue) 04:22 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/runs/43219810423",
-      "last_run": "2026-11-12T12:38:50Z",
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/43283177218",
+      "last_run": "2026-11-12T18:45:39Z",
       "conclusion": "queued"
     },
     {
@@ -1267,6 +1268,27 @@
         "html_url": "https://github.com/drsamonline/neon-runner"
       },
       {
+        "name": "idle-city-ages-of-growth",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/idle-city-ages-of-growth"
+      },
+      {
+        "name": "heavenzip",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/heavenzip"
+      },
+      {
+        "name": "TTB",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/TTB"
+      },
+      {
         "name": "bmi-bmr-tdee-macros-fluid-calculator",
         "stars": 1,
         "forks": 0,
@@ -1293,13 +1315,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/the-symphony-companion"
-      },
-      {
-        "name": "idle-city-ages-of-growth",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/idle-city-ages-of-growth"
       },
       {
         "name": "retro-strike",
@@ -1596,13 +1611,6 @@
         "html_url": "https://github.com/drsamonline/app-jacquard"
       },
       {
-        "name": "heavenzip",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/heavenzip"
-      },
-      {
         "name": "frame-kit",
         "stars": 1,
         "forks": 0,
@@ -1790,13 +1798,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/All4ONE"
-      },
-      {
-        "name": "TTB",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/TTB"
       },
       {
         "name": "CLDR",
@@ -1995,6 +1996,72 @@
     "window": "14 days",
     "note": "Last 14 days — GitHub's retention window.",
     "repos": {
+      "idle-city-ages-of-growth": {
+        "views": 17,
+        "uniques": 7,
+        "clones": 668,
+        "clone_uniques": 160,
+        "referrers": [
+          {
+            "from": "drsamonline.github.io",
+            "count": 10
+          },
+          {
+            "from": "github.com",
+            "count": 5
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/idle-city-ages-of-growth",
+            "count": 17,
+            "title": "Overview"
+          }
+        ]
+      },
+      "heavenzip": {
+        "views": 4,
+        "uniques": 1,
+        "clones": 272,
+        "clone_uniques": 110,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 2
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/heavenzip",
+            "count": 2,
+            "title": "Overview"
+          },
+          {
+            "path": "/drsamonline/heavenzip/new/main",
+            "count": 1,
+            "title": "/new/main"
+          },
+          {
+            "path": "/drsamonline/heavenzip/tree/main",
+            "count": 1,
+            "title": "/tree/main"
+          }
+        ]
+      },
+      "TTB": {
+        "views": 1,
+        "uniques": 1,
+        "clones": 311,
+        "clone_uniques": 101,
+        "referrers": [],
+        "paths": [
+          {
+            "path": "/drsamonline/TTB",
+            "count": 1,
+            "title": "Overview"
+          }
+        ]
+      },
       "ntet-course-source": {
         "views": 0,
         "uniques": 0,
@@ -2072,29 +2139,6 @@
         "clone_uniques": 114,
         "referrers": [],
         "paths": []
-      },
-      "idle-city-ages-of-growth": {
-        "views": 17,
-        "uniques": 7,
-        "clones": 668,
-        "clone_uniques": 160,
-        "referrers": [
-          {
-            "from": "drsamonline.github.io",
-            "count": 10
-          },
-          {
-            "from": "github.com",
-            "count": 5
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/idle-city-ages-of-growth",
-            "count": 17,
-            "title": "Overview"
-          }
-        ]
       },
       "retro-strike": {
         "views": 7,
@@ -2752,35 +2796,6 @@
         "clone_uniques": 155,
         "referrers": [],
         "paths": []
-      },
-      "heavenzip": {
-        "views": 4,
-        "uniques": 1,
-        "clones": 272,
-        "clone_uniques": 110,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 2
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/heavenzip",
-            "count": 2,
-            "title": "Overview"
-          },
-          {
-            "path": "/drsamonline/heavenzip/new/main",
-            "count": 1,
-            "title": "/new/main"
-          },
-          {
-            "path": "/drsamonline/heavenzip/tree/main",
-            "count": 1,
-            "title": "/tree/main"
-          }
-        ]
       },
       "app-opd-register": {
         "views": 1,
@@ -3457,20 +3472,6 @@
           }
         ]
       },
-      "TTB": {
-        "views": 1,
-        "uniques": 1,
-        "clones": 311,
-        "clone_uniques": 101,
-        "referrers": [],
-        "paths": [
-          {
-            "path": "/drsamonline/TTB",
-            "count": 1,
-            "title": "Overview"
-          }
-        ]
-      },
       "CLDR": {
         "views": 1,
         "uniques": 1,
@@ -3860,6 +3861,99 @@
   },
   "repos": [
     {
+      "name": "idle-city-ages-of-growth",
+      "description": "A single-file idle city-builder that grows from a Stone Age village into a Fusion Age world-city.",
+      "pushed_at": "2026-11-12T18:44:05Z",
+      "homepage": "https://drsamonline.github.io/idle-city-ages-of-growth/",
+      "html_url": "https://github.com/drsamonline/idle-city-ages-of-growth",
+      "download": "",
+      "category": "Games",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "heavenzip",
+      "description": "The CHCE orchestrator — chains prebuilt compression binaries into one pipeline.",
+      "pushed_at": "2026-11-12T13:51:22Z",
+      "homepage": "https://drsamonline.github.io/heavenzip/",
+      "html_url": "https://github.com/drsamonline/heavenzip",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "TTB",
+      "description": "TinyToolBox — 591 tiny utilities bundled into one lightweight, offline-first browser extension for Chrome, Edge, Firefox and Safari.",
+      "pushed_at": "2026-11-12T12:40:47Z",
+      "homepage": "https://drsamonline.github.io/TTB/",
+      "html_url": "https://github.com/drsamonline/TTB",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
       "name": "ntet-course-source",
       "description": "PRIVATE — source, question bank, build tooling and licence keys for the NTET 2026 Homoeopathy course.",
       "pushed_at": "2026-11-12T12:26:17Z",
@@ -4070,37 +4164,6 @@
         1,
         1,
         0,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "idle-city-ages-of-growth",
-      "description": "A single-file idle city-builder that grows from a Stone Age village into a Fusion Age world-city.",
-      "pushed_at": "2026-11-12T06:55:23Z",
-      "homepage": "https://drsamonline.github.io/idle-city-ages-of-growth/",
-      "html_url": "https://github.com/drsamonline/idle-city-ages-of-growth",
-      "download": "",
-      "category": "Games",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        1,
         1,
         1,
         1,
@@ -5503,37 +5566,6 @@
       ]
     },
     {
-      "name": "heavenzip",
-      "description": "The CHCE orchestrator — chains prebuilt compression binaries into one pipeline.",
-      "pushed_at": "2026-11-12T05:43:23Z",
-      "homepage": "https://drsamonline.github.io/heavenzip/",
-      "html_url": "https://github.com/drsamonline/heavenzip",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        1,
-        0,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
       "name": "app-opd-register",
       "description": "A daily OPD register for multi-location clinics — month register, dashboard, day-wise statistics, print and Excel. Offline, no account, no server.",
       "pushed_at": "2026-11-12T04:40:44Z",
@@ -6271,37 +6303,6 @@
         0,
         1,
         0,
-        1,
-        1,
-        1,
-        0
-      ]
-    },
-    {
-      "name": "TTB",
-      "description": "TinyToolBox — 591 tiny utilities bundled into one lightweight, offline-first browser extension for Chrome, Edge, Firefox and Safari.",
-      "pushed_at": "2026-11-11T15:04:14Z",
-      "homepage": "https://drsamonline.github.io/TTB/",
-      "html_url": "https://github.com/drsamonline/TTB",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        0,
-        1,
         1,
         1,
         1,
@@ -8241,6 +8242,12 @@
       "avg": 4.8,
       "pushes": 133,
       "byrepo": {
+        "idle-city-ages-of-growth": 1,
+        "heavenzip": 1,
+        "forge": 1,
+        "dashboard": 1,
+        "TTB": 1,
+        "knowledge": 1,
         "skills": 1,
         "ntet-course-source": 1,
         "audit": 1,
@@ -8248,18 +8255,14 @@
         "kosh": 1,
         "Matneo": 1,
         "drsamonline": 1,
-        "forge": 1,
         "bmi-bmr-tdee-macros-fluid-calculator": 1,
         "ntet-homoeopathy-cbt": 1,
         "conqueror-os": 1,
         "read-live-transform-app": 1,
         "the-symphony-companion": 1,
-        "idle-city-ages-of-growth": 1,
         "retro-strike": 1,
         "today-card": 1,
-        "dashboard": 1,
         "lockhtml": 1,
-        "knowledge": 1,
         "open-materia-medica": 1,
         "app-panchang": 1,
         "BLINKTRANSFER": 1,
@@ -8304,7 +8307,6 @@
         "chalk-lan": 1,
         "aethelgard-games": 1,
         "app-jacquard": 1,
-        "heavenzip": 1,
         "app-opd-register": 1,
         "frame-kit": 1,
         "music": 1,

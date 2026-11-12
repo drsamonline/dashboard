@@ -4,6 +4,72 @@
   "window": "14 days",
   "note": "Last 14 days — GitHub's retention window.",
   "repos": {
+    "idle-city-ages-of-growth": {
+      "views": 17,
+      "uniques": 7,
+      "clones": 668,
+      "clone_uniques": 160,
+      "referrers": [
+        {
+          "from": "drsamonline.github.io",
+          "count": 10
+        },
+        {
+          "from": "github.com",
+          "count": 5
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/idle-city-ages-of-growth",
+          "count": 17,
+          "title": "Overview"
+        }
+      ]
+    },
+    "heavenzip": {
+      "views": 4,
+      "uniques": 1,
+      "clones": 272,
+      "clone_uniques": 110,
+      "referrers": [
+        {
+          "from": "github.com",
+          "count": 2
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/heavenzip",
+          "count": 2,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/heavenzip/new/main",
+          "count": 1,
+          "title": "/new/main"
+        },
+        {
+          "path": "/drsamonline/heavenzip/tree/main",
+          "count": 1,
+          "title": "/tree/main"
+        }
+      ]
+    },
+    "TTB": {
+      "views": 1,
+      "uniques": 1,
+      "clones": 311,
+      "clone_uniques": 101,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/drsamonline/TTB",
+          "count": 1,
+          "title": "Overview"
+        }
+      ]
+    },
     "ntet-course-source": {
       "views": 0,
       "uniques": 0,
@@ -81,29 +147,6 @@
       "clone_uniques": 114,
       "referrers": [],
       "paths": []
-    },
-    "idle-city-ages-of-growth": {
-      "views": 17,
-      "uniques": 7,
-      "clones": 668,
-      "clone_uniques": 160,
-      "referrers": [
-        {
-          "from": "drsamonline.github.io",
-          "count": 10
-        },
-        {
-          "from": "github.com",
-          "count": 5
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/idle-city-ages-of-growth",
-          "count": 17,
-          "title": "Overview"
-        }
-      ]
     },
     "retro-strike": {
       "views": 7,
@@ -761,35 +804,6 @@
       "clone_uniques": 155,
       "referrers": [],
       "paths": []
-    },
-    "heavenzip": {
-      "views": 4,
-      "uniques": 1,
-      "clones": 272,
-      "clone_uniques": 110,
-      "referrers": [
-        {
-          "from": "github.com",
-          "count": 2
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/heavenzip",
-          "count": 2,
-          "title": "Overview"
-        },
-        {
-          "path": "/drsamonline/heavenzip/new/main",
-          "count": 1,
-          "title": "/new/main"
-        },
-        {
-          "path": "/drsamonline/heavenzip/tree/main",
-          "count": 1,
-          "title": "/tree/main"
-        }
-      ]
     },
     "app-opd-register": {
       "views": 1,
@@ -1463,20 +1477,6 @@
           "path": "/drsamonline/All4ONE/blob/main/TOOL_CATALOG.md",
           "count": 1,
           "title": "/blob/main/TOOL_CATALOG.md"
-        }
-      ]
-    },
-    "TTB": {
-      "views": 1,
-      "uniques": 1,
-      "clones": 311,
-      "clone_uniques": 101,
-      "referrers": [],
-      "paths": [
-        {
-          "path": "/drsamonline/TTB",
-          "count": 1,
-          "title": "Overview"
         }
       ]
     },
