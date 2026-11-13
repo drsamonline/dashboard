@@ -28,11 +28,32 @@
       "html_url": "https://github.com/drsamonline/neon-runner"
     },
     {
+      "name": "All4ONE",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 1,
+      "html_url": "https://github.com/drsamonline/All4ONE"
+    },
+    {
       "name": "KILN",
       "stars": 1,
       "forks": 0,
       "watchers": 1,
       "html_url": "https://github.com/drsamonline/KILN"
+    },
+    {
+      "name": "heavenzip",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 1,
+      "html_url": "https://github.com/drsamonline/heavenzip"
+    },
+    {
+      "name": "conqueror-os",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 1,
+      "html_url": "https://github.com/drsamonline/conqueror-os"
     },
     {
       "name": "mood-mixer",
@@ -84,13 +105,6 @@
       "html_url": "https://github.com/drsamonline/idle-city-ages-of-growth"
     },
     {
-      "name": "heavenzip",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 1,
-      "html_url": "https://github.com/drsamonline/heavenzip"
-    },
-    {
       "name": "TTB",
       "stars": 1,
       "forks": 0,
@@ -103,13 +117,6 @@
       "forks": 0,
       "watchers": 1,
       "html_url": "https://github.com/drsamonline/bmi-bmr-tdee-macros-fluid-calculator"
-    },
-    {
-      "name": "conqueror-os",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 1,
-      "html_url": "https://github.com/drsamonline/conqueror-os"
     },
     {
       "name": "read-live-transform-app",
@@ -581,13 +588,6 @@
       "html_url": "https://github.com/drsamonline/ULTIMATE-WINDOWS-OPTIMIZER"
     },
     {
-      "name": "All4ONE",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 1,
-      "html_url": "https://github.com/drsamonline/All4ONE"
-    },
-    {
       "name": "CLDR",
       "stars": 1,
       "forks": 0,
@@ -742,14 +742,8 @@
   "forked_repos": 1,
   "external": {
     "issues": 0,
-    "prs": 3,
+    "prs": 2,
     "items": [
-      {
-        "title": "chore(deps): bump actions/setup-node from 4 to 7",
-        "repo": "conqueror-os",
-        "url": "https://github.com/drsamonline/conqueror-os/pull/15",
-        "who": "dependabot[bot]"
-      },
       {
         "title": "ci: bump actions/checkout from 4 to 7",
         "repo": "canteen-lan",

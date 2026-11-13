@@ -1,6 +1,6 @@
 {
   "generated": "2026-11-13",
-  "generated_at": "2026-11-13T12:42:48Z",
+  "generated_at": "2026-11-13T18:49:21Z",
   "reckoning": "101 products · 13 kits (role) · avg metadata completeness 4.8/5 · updated automatically.",
   "health": "ok",
   "health_detail": {
@@ -47,19 +47,22 @@
     "avg": 4.8,
     "pushes": 137,
     "byrepo": {
-      "KILN": 1,
-      "audit": 1,
       "kinemorph": 1,
+      "All4ONE": 1,
+      "KILN": 1,
+      "forge": 1,
+      "kinemotif": 1,
+      "heavenzip": 1,
+      "conqueror-os": 1,
+      "dashboard": 1,
+      "knowledge": 1,
+      "audit": 1,
       "drsamonline.github.io": 1,
       "drsamonline": 1,
-      "kinemotif": 1,
       "mood-mixer": 1,
-      "forge": 1,
       "app-lantern": 1,
       "ai-bridge": 1,
       "neon-engine": 1,
-      "dashboard": 1,
-      "knowledge": 1,
       "lexora": 1
     }
   },
@@ -132,15 +135,15 @@
     },
     {
       "date": "2026-11-11",
-      "count": 54
+      "count": 53
     },
     {
       "date": "2026-11-12",
-      "count": 63
+      "count": 61
     },
     {
       "date": "2026-11-13",
-      "count": 14
+      "count": 17
     }
   ],
   "attention": [
@@ -243,13 +246,6 @@
       "created": "2026-11-10T12:40:08Z"
     },
     {
-      "title": "chore(deps): bump actions/setup-node from 4 to 7",
-      "repo": "conqueror-os",
-      "url": "https://github.com/drsamonline/conqueror-os/pull/15",
-      "kind": "PR",
-      "created": "2026-11-10T11:07:01Z"
-    },
-    {
       "title": "fix(campaign): one kill streak cleared two missions, and the chain forgot itself on reload",
       "repo": "neon-engine",
       "url": "https://github.com/drsamonline/neon-engine/pull/4",
@@ -290,6 +286,13 @@
       "url": "https://github.com/drsamonline/TTB/pull/6",
       "kind": "PR",
       "created": "2026-11-09T14:01:08Z"
+    },
+    {
+      "title": "chore(sweep): drift resolved: protect 1 as hand",
+      "repo": "Scrap-and-Gun",
+      "url": "https://github.com/drsamonline/Scrap-and-Gun/pull/2",
+      "kind": "PR",
+      "created": "2026-11-09T14:00:59Z"
     }
   ],
   "controls": [
@@ -483,123 +486,123 @@
   },
   "changes": [
     {
-      "type": "Create",
+      "type": "Push",
+      "repo": "the-symphony-companion",
+      "when": "2026-11-12T06:47:47Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "weft8-kit",
+      "when": "2026-11-12T06:46:45Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
       "repo": "weft8-compare",
-      "when": "2026-11-11T18:50:39Z",
-      "text": ""
-    },
-    {
-      "type": "Create",
-      "repo": "offline-pdf-toolkit",
-      "when": "2026-11-11T18:49:31Z",
-      "text": ""
-    },
-    {
-      "type": "Create",
-      "repo": "gentle-pediatrics-companion",
-      "when": "2026-11-11T18:49:12Z",
-      "text": ""
-    },
-    {
-      "type": "Create",
-      "repo": "skin-case-tracker",
-      "when": "2026-11-11T18:48:59Z",
-      "text": ""
+      "when": "2026-11-12T06:46:37Z",
+      "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "whispering-body-first-aid",
-      "when": "2026-11-11T18:48:20Z",
-      "text": "pushed to pin-full-sha-2026-11-12"
+      "repo": "app-endpoints",
+      "when": "2026-11-12T06:46:24Z",
+      "text": "pushed to main"
     },
     {
-      "type": "Create",
-      "repo": "MATERIA-MEDICA-BUILDER",
-      "when": "2026-11-11T18:46:57Z",
-      "text": ""
+      "type": "Push",
+      "repo": "app-weft-puzzles",
+      "when": "2026-11-12T06:43:22Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "mood-mixer",
+      "when": "2026-11-13T00:49:10Z",
+      "text": "pushed to main"
     },
     {
       "type": "Delete",
       "repo": "ziptastic",
-      "when": "2026-11-11T19:16:06Z",
+      "when": "2026-11-11T19:57:25Z",
       "text": ""
     },
     {
       "type": "Push",
-      "repo": "ziptastic",
-      "when": "2026-11-11T19:16:04Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "audit",
-      "when": "2026-11-11T16:52:44Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Create",
-      "repo": "ziptastic",
-      "when": "2026-11-11T19:11:31Z",
-      "text": ""
-    },
-    {
-      "type": "Push",
-      "repo": "app-opd-register",
-      "when": "2026-11-11T16:15:49Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "audit",
-      "when": "2026-11-11T16:45:24Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "export-kit",
-      "when": "2026-11-11T18:32:36Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "audio-kit",
-      "when": "2026-11-11T18:32:18Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "audit",
-      "when": "2026-11-11T16:43:16Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Create",
-      "repo": "kosh",
-      "when": "2026-11-12T01:44:21Z",
-      "text": ""
-    },
-    {
-      "type": "Delete",
-      "repo": "kosh",
-      "when": "2026-11-11T18:29:46Z",
-      "text": ""
-    },
-    {
-      "type": "Push",
-      "repo": "audit",
-      "when": "2026-11-11T16:37:06Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "ziptastic",
+      "repo": "motion-kit",
       "when": "2026-11-11T19:57:24Z",
       "text": "pushed to main"
     },
     {
+      "type": "Push",
+      "repo": "kosh",
+      "when": "2026-11-12T06:40:04Z",
+      "text": "pushed to ct1-ct2-windows-macos"
+    },
+    {
+      "type": "Push",
+      "repo": "tokens-kit",
+      "when": "2026-11-11T19:57:10Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "aethelgard-games",
+      "when": "2026-11-12T06:35:39Z",
+      "text": "pushed to main"
+    },
+    {
       "type": "Create",
-      "repo": "eon-commando",
-      "when": "2026-11-11T18:50:46Z",
+      "repo": "kosh",
+      "when": "2026-11-12T06:50:38Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
+      "repo": "read-live-transform-app",
+      "when": "2026-11-12T06:48:04Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "skin-case-tracker",
+      "when": "2026-11-12T06:47:51Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "gentle-pediatrics-companion",
+      "when": "2026-11-12T06:47:42Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "remedy-relationship-explorer",
+      "when": "2026-11-12T06:47:33Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "helioprism",
+      "when": "2026-11-12T06:47:21Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "app-image-toolkit",
+      "when": "2026-11-12T06:44:58Z",
+      "text": "pushed to pin-full-sha-2026-11-12"
+    },
+    {
+      "type": "Create",
+      "repo": "motion-kit",
+      "when": "2026-11-12T01:16:36Z",
+      "text": ""
+    },
+    {
+      "type": "Create",
+      "repo": "smartbill-app",
+      "when": "2026-11-12T01:15:58Z",
       "text": ""
     }
   ],
@@ -670,8 +673,8 @@
       ],
       "schedule": "weekly (Tue) 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/43427436190",
-      "last_run": "2026-11-13T12:42:25Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/43486236664",
+      "last_run": "2026-11-13T18:48:53Z",
       "conclusion": "in_progress"
     },
     {
@@ -1213,11 +1216,32 @@
         "html_url": "https://github.com/drsamonline/neon-runner"
       },
       {
+        "name": "All4ONE",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/All4ONE"
+      },
+      {
         "name": "KILN",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/KILN"
+      },
+      {
+        "name": "heavenzip",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/heavenzip"
+      },
+      {
+        "name": "conqueror-os",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/conqueror-os"
       },
       {
         "name": "mood-mixer",
@@ -1269,13 +1293,6 @@
         "html_url": "https://github.com/drsamonline/idle-city-ages-of-growth"
       },
       {
-        "name": "heavenzip",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/heavenzip"
-      },
-      {
         "name": "TTB",
         "stars": 1,
         "forks": 0,
@@ -1288,13 +1305,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/bmi-bmr-tdee-macros-fluid-calculator"
-      },
-      {
-        "name": "conqueror-os",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/conqueror-os"
       },
       {
         "name": "read-live-transform-app",
@@ -1766,13 +1776,6 @@
         "html_url": "https://github.com/drsamonline/ULTIMATE-WINDOWS-OPTIMIZER"
       },
       {
-        "name": "All4ONE",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/All4ONE"
-      },
-      {
         "name": "CLDR",
         "stars": 1,
         "forks": 0,
@@ -1927,14 +1930,8 @@
     "forked_repos": 1,
     "external": {
       "issues": 0,
-      "prs": 3,
+      "prs": 2,
       "items": [
-        {
-          "title": "chore(deps): bump actions/setup-node from 4 to 7",
-          "repo": "conqueror-os",
-          "url": "https://github.com/drsamonline/conqueror-os/pull/15",
-          "who": "dependabot[bot]"
-        },
         {
           "title": "ci: bump actions/checkout from 4 to 7",
           "repo": "canteen-lan",
@@ -1955,19 +1952,47 @@
     "window": "14 days",
     "note": "Last 14 days — GitHub's retention window.",
     "repos": {
-      "KILN": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 115,
-        "clone_uniques": 22,
-        "referrers": [],
-        "paths": []
-      },
       "kinemorph": {
         "views": 0,
         "uniques": 0,
         "clones": 0,
         "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
+      "All4ONE": {
+        "views": 3,
+        "uniques": 3,
+        "clones": 433,
+        "clone_uniques": 122,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 2
+          },
+          {
+            "from": "drsamonline.github.io",
+            "count": 1
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/All4ONE",
+            "count": 2,
+            "title": "Overview"
+          },
+          {
+            "path": "/drsamonline/All4ONE/blob/main/TOOL_CATALOG.md",
+            "count": 1,
+            "title": "/blob/main/TOOL_CATALOG.md"
+          }
+        ]
+      },
+      "KILN": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 115,
+        "clone_uniques": 22,
         "referrers": [],
         "paths": []
       },
@@ -1978,6 +2003,54 @@
         "clone_uniques": 0,
         "referrers": [],
         "paths": []
+      },
+      "heavenzip": {
+        "views": 4,
+        "uniques": 1,
+        "clones": 393,
+        "clone_uniques": 133,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 2
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/heavenzip",
+            "count": 2,
+            "title": "Overview"
+          },
+          {
+            "path": "/drsamonline/heavenzip/new/main",
+            "count": 1,
+            "title": "/new/main"
+          },
+          {
+            "path": "/drsamonline/heavenzip/tree/main",
+            "count": 1,
+            "title": "/tree/main"
+          }
+        ]
+      },
+      "conqueror-os": {
+        "views": 2,
+        "uniques": 2,
+        "clones": 809,
+        "clone_uniques": 152,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 2
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/conqueror-os",
+            "count": 2,
+            "title": "Overview"
+          }
+        ]
       },
       "mood-mixer": {
         "views": 0,
@@ -2148,35 +2221,6 @@
           }
         ]
       },
-      "heavenzip": {
-        "views": 4,
-        "uniques": 1,
-        "clones": 393,
-        "clone_uniques": 133,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 2
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/heavenzip",
-            "count": 2,
-            "title": "Overview"
-          },
-          {
-            "path": "/drsamonline/heavenzip/new/main",
-            "count": 1,
-            "title": "/new/main"
-          },
-          {
-            "path": "/drsamonline/heavenzip/tree/main",
-            "count": 1,
-            "title": "/tree/main"
-          }
-        ]
-      },
       "TTB": {
         "views": 1,
         "uniques": 1,
@@ -2233,25 +2277,6 @@
         "clone_uniques": 33,
         "referrers": [],
         "paths": []
-      },
-      "conqueror-os": {
-        "views": 2,
-        "uniques": 2,
-        "clones": 809,
-        "clone_uniques": 152,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 2
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/conqueror-os",
-            "count": 2,
-            "title": "Overview"
-          }
-        ]
       },
       "read-live-transform-app": {
         "views": 0,
@@ -3495,34 +3520,6 @@
           }
         ]
       },
-      "All4ONE": {
-        "views": 3,
-        "uniques": 3,
-        "clones": 433,
-        "clone_uniques": 122,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 2
-          },
-          {
-            "from": "drsamonline.github.io",
-            "count": 1
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/All4ONE",
-            "count": 2,
-            "title": "Overview"
-          },
-          {
-            "path": "/drsamonline/All4ONE/blob/main/TOOL_CATALOG.md",
-            "count": 1,
-            "title": "/blob/main/TOOL_CATALOG.md"
-          }
-        ]
-      },
       "CLDR": {
         "views": 1,
         "uniques": 1,
@@ -3863,41 +3860,9 @@
   },
   "repos": [
     {
-      "name": "KILN",
-      "description": "Spec in. Finished app out. A deterministic compiler for offline single-file apps — no model, no network, no dependencies.",
-      "pushed_at": "2026-11-13T12:10:34Z",
-      "homepage": "https://drsamonline.github.io/KILN/",
-      "html_url": "https://github.com/drsamonline/KILN",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
-    },
-    {
       "name": "kinemorph",
       "description": "A browser animation studio for real video: React + TypeScript + PixiJS editor with a GSAP timeline, a Tone.js generative score and WebCodecs MP4 export. The heavy sibling of Kinemotif.",
-      "pushed_at": "2026-11-13T11:32:02Z",
+      "pushed_at": "2026-11-13T18:47:37Z",
       "homepage": "https://drsamonline.github.io/kinemorph/",
       "html_url": "https://github.com/drsamonline/kinemorph",
       "download": "",
@@ -3927,9 +3892,73 @@
       ]
     },
     {
+      "name": "All4ONE",
+      "description": "403 working tools in one portable Windows binary — file and folder work, encoding and hashing, images, PDFs, media, documents, network diagnostics, system maintenance, security checks and generators. No installer, no registry writes, no telemetry.",
+      "pushed_at": "2026-11-13T18:45:14Z",
+      "homepage": "https://drsamonline.github.io/All4ONE/",
+      "html_url": "https://github.com/drsamonline/All4ONE",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "KILN",
+      "description": "Spec in. Finished app out. A deterministic compiler for offline single-file apps — no model, no network, no dependencies.",
+      "pushed_at": "2026-11-13T18:45:12Z",
+      "homepage": "https://drsamonline.github.io/KILN/",
+      "html_url": "https://github.com/drsamonline/KILN",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
       "name": "kinemotif",
       "description": "A single-file HTML animation studio: turn a paragraph into a moving, scored presentation. Six art styles, real shape morphing, a procedurally synthesised soundtrack, and a one-file offline HTML export.",
-      "pushed_at": "2026-11-13T08:19:04Z",
+      "pushed_at": "2026-11-13T14:46:36Z",
       "homepage": "https://drsamonline.github.io/kinemotif/",
       "html_url": "https://github.com/drsamonline/kinemotif",
       "download": "",
@@ -3955,6 +3984,70 @@
         0,
         0,
         0,
+        1
+      ]
+    },
+    {
+      "name": "heavenzip",
+      "description": "The CHCE orchestrator — chains prebuilt compression binaries into one pipeline.",
+      "pushed_at": "2026-11-13T13:14:24Z",
+      "homepage": "https://drsamonline.github.io/heavenzip/",
+      "html_url": "https://github.com/drsamonline/heavenzip",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "conqueror-os",
+      "description": "A private, offline resilience workspace in a single HTML file — read, reflect, journal, track and review.",
+      "pushed_at": "2026-11-13T12:50:14Z",
+      "homepage": "https://drsamonline.github.io/conqueror-os/",
+      "html_url": "https://github.com/drsamonline/conqueror-os",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
         1
       ]
     },
@@ -4183,38 +4276,6 @@
       ]
     },
     {
-      "name": "heavenzip",
-      "description": "The CHCE orchestrator — chains prebuilt compression binaries into one pipeline.",
-      "pushed_at": "2026-11-12T13:51:22Z",
-      "homepage": "https://drsamonline.github.io/heavenzip/",
-      "html_url": "https://github.com/drsamonline/heavenzip",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        1,
-        0,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1,
-        1,
-        0
-      ]
-    },
-    {
       "name": "TTB",
       "description": "TinyToolBox — 591 tiny utilities bundled into one lightweight, offline-first browser extension for Chrome, Edge, Firefox and Safari.",
       "pushed_at": "2026-11-12T12:40:47Z",
@@ -4370,38 +4431,6 @@
         0,
         0,
         0,
-        1,
-        0
-      ]
-    },
-    {
-      "name": "conqueror-os",
-      "description": "A private, offline resilience workspace in a single HTML file — read, reflect, journal, track and review.",
-      "pushed_at": "2026-11-12T06:58:01Z",
-      "homepage": "https://drsamonline.github.io/conqueror-os/",
-      "html_url": "https://github.com/drsamonline/conqueror-os",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        0,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1,
         1,
         0
       ]
@@ -6551,38 +6580,6 @@
       ]
     },
     {
-      "name": "All4ONE",
-      "description": "403 working tools in one portable Windows binary — file and folder work, encoding and hashing, images, PDFs, media, documents, network diagnostics, system maintenance, security checks and generators. No installer, no registry writes, no telemetry.",
-      "pushed_at": "2026-11-11T15:04:26Z",
-      "homepage": "https://drsamonline.github.io/All4ONE/",
-      "html_url": "https://github.com/drsamonline/All4ONE",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        1,
-        0,
-        1,
-        1,
-        1,
-        0,
-        0
-      ]
-    },
-    {
       "name": "CLDR",
       "description": "A single tiny Rust binary that sits in the system tray, pops up on a keystroke and runs whatever you type — a sum, a path, an app or a search.",
       "pushed_at": "2026-11-11T15:04:08Z",
@@ -8550,19 +8547,22 @@
       "avg": 4.8,
       "pushes": 137,
       "byrepo": {
-        "KILN": 1,
-        "audit": 1,
         "kinemorph": 1,
+        "All4ONE": 1,
+        "KILN": 1,
+        "forge": 1,
+        "kinemotif": 1,
+        "heavenzip": 1,
+        "conqueror-os": 1,
+        "dashboard": 1,
+        "knowledge": 1,
+        "audit": 1,
         "drsamonline.github.io": 1,
         "drsamonline": 1,
-        "kinemotif": 1,
         "mood-mixer": 1,
-        "forge": 1,
         "app-lantern": 1,
         "ai-bridge": 1,
         "neon-engine": 1,
-        "dashboard": 1,
-        "knowledge": 1,
         "lexora": 1
       },
       "stars": 105,
