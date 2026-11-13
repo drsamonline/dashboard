@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-12",
-  "generated_at": "2026-11-12T18:46:03Z",
-  "reckoning": "97 products · 13 kits (role) · avg metadata completeness 4.8/5 · updated automatically.",
+  "generated": "2026-11-13",
+  "generated_at": "2026-11-13T00:50:49Z",
+  "reckoning": "99 products · 13 kits (role) · avg metadata completeness 4.8/5 · updated automatically.",
   "health": "ok",
   "health_detail": {
     "state": "ok",
@@ -15,7 +15,7 @@
   "cards": [
     {
       "title": "Products",
-      "value": "97",
+      "value": "99",
       "tone": ""
     },
     {
@@ -35,116 +35,45 @@
     },
     {
       "title": "Ideas matched / planned",
-      "value": "12 / 153",
+      "value": "13 / 153",
       "tone": ""
     }
   ],
   "summary": {
-    "products": 97,
+    "products": 99,
     "kits": 13,
     "kits_name_matched": 25,
     "kits_definition": "role",
     "avg": 4.8,
-    "pushes": 133,
+    "pushes": 135,
     "byrepo": {
-      "idle-city-ages-of-growth": 1,
-      "heavenzip": 1,
-      "forge": 1,
-      "dashboard": 1,
-      "TTB": 1,
-      "knowledge": 1,
-      "skills": 1,
-      "ntet-course-source": 1,
-      "audit": 1,
-      "drsamonline.github.io": 1,
-      "kosh": 1,
-      "Matneo": 1,
-      "drsamonline": 1,
-      "bmi-bmr-tdee-macros-fluid-calculator": 1,
-      "ntet-homoeopathy-cbt": 1,
-      "conqueror-os": 1,
-      "read-live-transform-app": 1,
-      "the-symphony-companion": 1,
-      "retro-strike": 1,
-      "today-card": 1,
-      "lockhtml": 1,
-      "open-materia-medica": 1,
-      "app-panchang": 1,
-      "BLINKTRANSFER": 1,
-      "blinkcode-ai": 1,
-      "neon-games": 1,
-      "dance-fight": 1,
-      "whispering-body-first-aid": 1,
-      "boericke-repertory": 1,
-      "skin-case-tracker": 1,
-      "gentle-pediatrics-companion": 1,
-      "unstoppable-mind-companion": 1,
-      "remedy-relationship-explorer": 1,
-      "offline-pdf-toolkit": 1,
-      "helioprism": 1,
-      "seance": 1,
-      "app-companion-forge": 1,
-      "canteen-lan": 1,
-      "app-clip-loom": 1,
-      "weft8-hardware": 1,
-      "weft8-kit": 1,
-      "weft8-classroom": 1,
-      "weft8-compare": 1,
-      "app-thermals": 1,
-      "app-story-engine": 1,
-      "app-endpoints": 1,
-      "app-encrypted-case-log": 1,
-      "app-image-toolkit": 1,
-      "app-poets-studio": 1,
-      "app-builder": 1,
-      "kitbox": 1,
-      "app-weft-puzzles": 1,
-      "base-bench": 1,
-      "app-organon-reader": 1,
-      "HMS": 1,
-      "eon-commando": 1,
-      "mnemosyne-companion": 1,
-      "MATERIA-MEDICA-BUILDER": 1,
-      "smartbill-app": 1,
-      "ambient-sound-studio": 1,
-      "Repertorium-Publicum": 1,
-      "neon-runner": 1,
-      "chalk-lan": 1,
-      "aethelgard-games": 1,
-      "app-jacquard": 1,
-      "app-opd-register": 1,
-      "frame-kit": 1,
-      "music": 1,
-      "motion-kit": 1
+      "mood-mixer": 1,
+      "lexora": 1
     }
   },
   "stats": {
     "metadata_completeness": {
-      "5": 87,
+      "5": 89,
       "3": 2,
       "4": 3,
       "2": 5
     },
     "conformance": {
-      "5": 87,
+      "5": 89,
       "3": 2,
       "4": 3,
       "2": 5
     },
     "categories": {
-      "Games": 6,
-      "HTML Apps": 64,
+      "HTML Apps": 66,
       "Utilities": 15,
+      "Games": 6,
       "Health Tools": 1,
       "Homeopathy": 10,
       "Data": 1
     }
   },
   "activity": [
-    {
-      "date": "2026-10-30",
-      "count": 0
-    },
     {
       "date": "2026-10-31",
       "count": 0
@@ -191,11 +120,15 @@
     },
     {
       "date": "2026-11-11",
-      "count": 58
+      "count": 57
     },
     {
       "date": "2026-11-12",
-      "count": 69
+      "count": 70
+    },
+    {
+      "date": "2026-11-13",
+      "count": 2
     }
   ],
   "attention": [
@@ -539,123 +472,123 @@
   "changes": [
     {
       "type": "Push",
-      "repo": "lofi-studio-pro",
-      "when": "2026-11-11T08:58:12Z",
+      "repo": "HMS",
+      "when": "2026-11-11T09:32:16Z",
+      "text": "pushed to batch-48-audit"
+    },
+    {
+      "type": "Push",
+      "repo": "bmi-bmr-tdee-macros-fluid-calculator",
+      "when": "2026-11-11T14:24:59Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "lofi-studio-pro",
-      "when": "2026-11-11T04:59:24Z",
+      "repo": "gentle-pediatrics-companion",
+      "when": "2026-11-11T14:23:42Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "lofi-studio-pro",
-      "when": "2026-11-11T04:53:46Z",
+      "repo": "neon-runner",
+      "when": "2026-11-11T14:23:30Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "lofi-studio-pro",
-      "when": "2026-11-11T04:59:13Z",
+      "repo": "Matneo",
+      "when": "2026-11-11T09:16:20Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "neonboom",
-      "when": "2026-11-11T08:48:08Z",
+      "repo": "mnemosyne-companion",
+      "when": "2026-11-11T15:43:26Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "web-kit",
+      "when": "2026-11-11T15:35:21Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "remedy-finder",
-      "when": "2026-11-11T04:51:35Z",
+      "when": "2026-11-11T08:57:32Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "Repertorium-Publicum",
-      "when": "2026-11-11T14:28:43Z",
+      "repo": "compfactory",
+      "when": "2026-11-11T17:43:06Z",
       "text": "pushed to main"
     },
     {
-      "type": "Push",
-      "repo": "seance",
-      "when": "2026-11-11T14:22:55Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Create",
+      "type": "Delete",
       "repo": "HMS",
-      "when": "2026-11-11T04:40:59Z",
+      "when": "2026-11-11T12:02:31Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
+      "repo": "lumen",
+      "when": "2026-11-11T15:29:52Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Delete",
+      "repo": "HMS",
+      "when": "2026-11-11T12:02:38Z",
       "text": ""
     },
     {
       "type": "Delete",
       "repo": "HMS",
-      "when": "2026-11-11T12:02:40Z",
+      "when": "2026-11-11T12:02:33Z",
       "text": ""
     },
     {
       "type": "Delete",
       "repo": "HMS",
-      "when": "2026-11-11T12:02:35Z",
+      "when": "2026-11-11T12:01:32Z",
       "text": ""
     },
     {
       "type": "Delete",
       "repo": "HMS",
-      "when": "2026-11-11T12:02:04Z",
+      "when": "2026-11-11T12:01:28Z",
       "text": ""
     },
     {
       "type": "Delete",
       "repo": "HMS",
-      "when": "2026-11-11T12:01:54Z",
+      "when": "2026-11-11T12:01:26Z",
       "text": ""
     },
     {
       "type": "Delete",
       "repo": "HMS",
-      "when": "2026-11-11T12:01:49Z",
+      "when": "2026-11-11T12:01:24Z",
       "text": ""
     },
     {
       "type": "Delete",
       "repo": "HMS",
-      "when": "2026-11-11T12:01:43Z",
+      "when": "2026-11-11T12:01:17Z",
+      "text": ""
+    },
+    {
+      "type": "Delete",
+      "repo": "HMS",
+      "when": "2026-11-11T12:01:05Z",
       "text": ""
     },
     {
       "type": "Push",
-      "repo": "weft8-hardware",
-      "when": "2026-11-11T09:31:33Z",
+      "repo": "audit",
+      "when": "2026-11-11T17:26:42Z",
       "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "read-live-transform-app",
-      "when": "2026-11-11T14:24:42Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "helioprism",
-      "when": "2026-11-11T14:23:08Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "app-poets-studio",
-      "when": "2026-11-11T14:22:15Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Create",
-      "repo": "holistic",
-      "when": "2026-11-11T04:22:41Z",
-      "text": ""
     }
   ],
   "automation": [
@@ -725,8 +658,8 @@
       ],
       "schedule": "weekly (Tue) 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/43283152432",
-      "last_run": "2026-11-12T18:45:36Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/43340234504",
+      "last_run": "2026-11-13T00:50:26Z",
       "conclusion": "in_progress"
     },
     {
@@ -1123,9 +1056,9 @@
       ],
       "schedule": "weekly (Tue) 04:12 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/runs/43219823719",
-      "last_run": "2026-11-12T12:39:14Z",
-      "conclusion": "success"
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/43340243155",
+      "last_run": "2026-11-13T00:50:26Z",
+      "conclusion": "pending"
     },
     {
       "repo": "Matneo",
@@ -1151,9 +1084,9 @@
       ],
       "schedule": "weekly (Tue) 04:22 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/runs/43283177218",
-      "last_run": "2026-11-12T18:45:39Z",
-      "conclusion": "queued"
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/43340243151",
+      "last_run": "2026-11-13T00:50:27Z",
+      "conclusion": "in_progress"
     },
     {
       "repo": "registry",
@@ -1199,7 +1132,7 @@
       "link": "https://github.com/drsamonline/forge"
     },
     {
-      "what": "Apps live — 122 products, 122 of them pushed in the last 30 days",
+      "what": "Apps live — 124 products, 124 of them pushed in the last 30 days",
       "state": "done",
       "link": "https://drsamonline.github.io/"
     },
@@ -1216,12 +1149,12 @@
   ],
   "plan": {
     "planned": 153,
-    "built": 12,
+    "built": 13,
     "built_definition": "name matching: a live repository whose name matches the idea's slug. NOT the owner's definition of built (release + landing page + live demo), which the registry measures.",
-    "name_matched": 12,
-    "unbuilt": 141,
-    "live_products": 97,
-    "live_not_planned": 85,
+    "name_matched": 13,
+    "unbuilt": 140,
+    "live_products": 99,
+    "live_not_planned": 86,
     "plan_generated": "2026-10-23",
     "link": "https://github.com/drsamonline/dashboard/blob/main/plan.json"
   },
@@ -1241,9 +1174,9 @@
   },
   "community": {
     "totals": {
-      "stars": 103,
+      "stars": 105,
       "forks": 1,
-      "watchers": 103
+      "watchers": 105
     },
     "repos": [
       {
@@ -1266,6 +1199,34 @@
         "forks": 1,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/neon-runner"
+      },
+      {
+        "name": "mood-mixer",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/mood-mixer"
+      },
+      {
+        "name": "lexora",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/lexora"
+      },
+      {
+        "name": "KILN",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/KILN"
+      },
+      {
+        "name": "BLINKTRANSFER",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/BLINKTRANSFER"
       },
       {
         "name": "idle-city-ages-of-growth",
@@ -1350,13 +1311,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/app-panchang"
-      },
-      {
-        "name": "BLINKTRANSFER",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/BLINKTRANSFER"
       },
       {
         "name": "blinkcode-ai",
@@ -1681,13 +1635,6 @@
         "html_url": "https://github.com/drsamonline/ml-kit"
       },
       {
-        "name": "lexora",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/lexora"
-      },
-      {
         "name": "control-panel",
         "stars": 1,
         "forks": 0,
@@ -1996,6 +1943,79 @@
     "window": "14 days",
     "note": "Last 14 days — GitHub's retention window.",
     "repos": {
+      "mood-mixer": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
+      "lexora": {
+        "views": 10,
+        "uniques": 1,
+        "clones": 859,
+        "clone_uniques": 228,
+        "referrers": [
+          {
+            "from": "drsamonline.github.io",
+            "count": 5
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/lexora",
+            "count": 7,
+            "title": "Overview"
+          },
+          {
+            "path": "/drsamonline/lexora/actions/runs/41042678671",
+            "count": 1,
+            "title": "/actions/runs/41042678671"
+          },
+          {
+            "path": "/drsamonline/lexora/actions/runs/41042678671/job/124019057946",
+            "count": 1,
+            "title": "/actions/runs/41042678671/job/124019057946"
+          },
+          {
+            "path": "/drsamonline/lexora/actions/workflows/ci.yml",
+            "count": 1,
+            "title": "/actions/workflows/ci.yml"
+          }
+        ]
+      },
+      "KILN": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
+      "BLINKTRANSFER": {
+        "views": 3,
+        "uniques": 3,
+        "clones": 870,
+        "clone_uniques": 193,
+        "referrers": [
+          {
+            "from": "drsamonline.github.io",
+            "count": 1
+          },
+          {
+            "from": "github.com",
+            "count": 1
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/BLINKTRANSFER",
+            "count": 3,
+            "title": "Overview"
+          }
+        ]
+      },
       "idle-city-ages-of-growth": {
         "views": 17,
         "uniques": 7,
@@ -2274,29 +2294,6 @@
         "clone_uniques": 110,
         "referrers": [],
         "paths": []
-      },
-      "BLINKTRANSFER": {
-        "views": 3,
-        "uniques": 3,
-        "clones": 870,
-        "clone_uniques": 193,
-        "referrers": [
-          {
-            "from": "drsamonline.github.io",
-            "count": 1
-          },
-          {
-            "from": "github.com",
-            "count": 1
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/BLINKTRANSFER",
-            "count": 3,
-            "title": "Overview"
-          }
-        ]
       },
       "blinkcode-ai": {
         "views": 0,
@@ -3046,40 +3043,6 @@
         "clone_uniques": 73,
         "referrers": [],
         "paths": []
-      },
-      "lexora": {
-        "views": 10,
-        "uniques": 1,
-        "clones": 859,
-        "clone_uniques": 228,
-        "referrers": [
-          {
-            "from": "drsamonline.github.io",
-            "count": 5
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/lexora",
-            "count": 7,
-            "title": "Overview"
-          },
-          {
-            "path": "/drsamonline/lexora/actions/runs/41042678671",
-            "count": 1,
-            "title": "/actions/runs/41042678671"
-          },
-          {
-            "path": "/drsamonline/lexora/actions/runs/41042678671/job/124019057946",
-            "count": 1,
-            "title": "/actions/runs/41042678671/job/124019057946"
-          },
-          {
-            "path": "/drsamonline/lexora/actions/workflows/ci.yml",
-            "count": 1,
-            "title": "/actions/workflows/ci.yml"
-          }
-        ]
       },
       "holistic": {
         "views": 0,
@@ -3861,6 +3824,134 @@
   },
   "repos": [
     {
+      "name": "mood-mixer",
+      "description": "A private, offline-ready color playground: three mood sliders in, a four-color palette out. HSL/RGB/HSV, six harmony schemes, WCAG contrast, CSS/JSON/Tailwind/PNG export, PWA. No tracking.",
+      "pushed_at": "2026-11-13T00:49:09Z",
+      "homepage": "https://drsamonline.github.io/mood-mixer/",
+      "html_url": "https://github.com/drsamonline/mood-mixer",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "lexora",
+      "description": "LEXORA — Layered EXact-text Repository and Adaptive compression architecture: canonicalise text, then compress it with guaranteed byte-exact recovery.",
+      "pushed_at": "2026-11-13T00:48:32Z",
+      "homepage": "https://drsamonline.github.io/lexora/",
+      "html_url": "https://github.com/drsamonline/lexora",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "KILN",
+      "description": "Spec in. Finished app out. A deterministic compiler for offline single-file apps — no model, no network, no dependencies.",
+      "pushed_at": "2026-11-12T20:58:49Z",
+      "homepage": "https://drsamonline.github.io/KILN/",
+      "html_url": "https://github.com/drsamonline/KILN",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "BLINKTRANSFER",
+      "description": "Offline file transfer over animated QR codes — no internet, no Bluetooth, no cables.",
+      "pushed_at": "2026-11-12T18:54:34Z",
+      "homepage": "https://drsamonline.github.io/BLINKTRANSFER/",
+      "html_url": "https://github.com/drsamonline/BLINKTRANSFER",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
       "name": "idle-city-ages-of-growth",
       "description": "A single-file idle city-builder that grows from a Stone Age village into a Fusion Age world-city.",
       "pushed_at": "2026-11-12T18:44:05Z",
@@ -3888,7 +3979,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3919,7 +4011,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3950,7 +4043,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -3981,7 +4075,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4012,7 +4107,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4043,7 +4139,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4074,7 +4171,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4105,7 +4203,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4136,7 +4235,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4167,7 +4267,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4198,7 +4299,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4229,7 +4331,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4260,7 +4363,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4291,7 +4395,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4322,38 +4427,8 @@
         1,
         1,
         1,
-        1
-      ]
-    },
-    {
-      "name": "BLINKTRANSFER",
-      "description": "Offline file transfer over animated QR codes — no internet, no Bluetooth, no cables.",
-      "pushed_at": "2026-11-12T06:48:37Z",
-      "homepage": "https://drsamonline.github.io/BLINKTRANSFER/",
-      "html_url": "https://github.com/drsamonline/BLINKTRANSFER",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1,
-        1
+        0
       ]
     },
     {
@@ -4384,7 +4459,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4415,7 +4491,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4446,7 +4523,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4477,7 +4555,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4508,7 +4587,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4539,7 +4619,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4570,7 +4651,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4601,7 +4683,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4632,7 +4715,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4663,7 +4747,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4694,7 +4779,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4725,7 +4811,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4756,7 +4843,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4787,7 +4875,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4818,7 +4907,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4849,7 +4939,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4880,7 +4971,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4911,7 +5003,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4942,7 +5035,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4973,7 +5067,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5004,7 +5099,8 @@
         0,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5035,7 +5131,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5066,7 +5163,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5097,7 +5195,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5128,7 +5227,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5159,7 +5259,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5190,7 +5291,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5221,7 +5323,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5252,7 +5355,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5283,7 +5387,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5314,7 +5419,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5345,7 +5451,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5376,7 +5483,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5407,7 +5515,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5438,7 +5547,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5469,7 +5579,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5500,7 +5611,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5531,7 +5643,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5562,7 +5675,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5593,7 +5707,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5624,7 +5739,8 @@
         0,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5655,6 +5771,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5686,6 +5803,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5717,6 +5835,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5748,6 +5867,7 @@
         0,
         0,
         1,
+        0,
         0
       ]
     },
@@ -5779,6 +5899,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5810,6 +5931,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5841,37 +5963,7 @@
         1,
         0,
         1,
-        0
-      ]
-    },
-    {
-      "name": "lexora",
-      "description": "LEXORA — Layered EXact-text Repository and Adaptive compression architecture: canonicalise text, then compress it with guaranteed byte-exact recovery.",
-      "pushed_at": "2026-11-11T18:32:47Z",
-      "homepage": "https://drsamonline.github.io/lexora/",
-      "html_url": "https://github.com/drsamonline/lexora",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
         0,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        0,
-        1,
-        0,
-        1,
-        1,
-        1,
-        1,
         0
       ]
     },
@@ -5903,6 +5995,7 @@
         0,
         0,
         1,
+        0,
         0
       ]
     },
@@ -5934,6 +6027,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5965,6 +6059,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5996,6 +6091,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -6027,6 +6123,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -6058,6 +6155,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6089,6 +6187,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6120,6 +6219,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -6151,6 +6251,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -6182,6 +6283,7 @@
         0,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6213,6 +6315,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -6244,6 +6347,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -6275,6 +6379,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -6306,6 +6411,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -6337,6 +6443,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -6368,6 +6475,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -6399,6 +6507,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -6430,6 +6539,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -6461,6 +6571,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -6492,6 +6603,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -6523,6 +6635,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -6554,6 +6667,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -6585,6 +6699,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -6616,6 +6731,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -6647,6 +6763,7 @@
         0,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6678,6 +6795,7 @@
         0,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6709,6 +6827,7 @@
         1,
         1,
         0,
+        0,
         0
       ]
     },
@@ -6738,6 +6857,7 @@
         0,
         0,
         1,
+        0,
         0,
         0,
         0
@@ -6771,6 +6891,7 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
@@ -6794,6 +6915,7 @@
         0,
         0,
         1,
+        0,
         0,
         0,
         0,
@@ -6833,6 +6955,7 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
@@ -6856,6 +6979,7 @@
         0,
         1,
         1,
+        0,
         0,
         0,
         0,
@@ -8315,6 +8439,20 @@
       "stars": 103,
       "forks": 1,
       "watchers": 103
+    },
+    {
+      "date": "2026-11-13",
+      "products": 99,
+      "kits": 13,
+      "avg": 4.8,
+      "pushes": 135,
+      "byrepo": {
+        "mood-mixer": 1,
+        "lexora": 1
+      },
+      "stars": 105,
+      "forks": 1,
+      "watchers": 105
     }
   ],
   "degraded": []
