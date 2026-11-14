@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-13",
-  "generated_at": "2026-11-13T18:49:21Z",
-  "reckoning": "101 products · 13 kits (role) · avg metadata completeness 4.8/5 · updated automatically.",
+  "generated": "2026-11-14",
+  "generated_at": "2026-11-14T00:37:24Z",
+  "reckoning": "102 products · 13 kits (role) · avg metadata completeness 4.8/5 · updated automatically.",
   "health": "ok",
   "health_detail": {
     "state": "ok",
@@ -15,7 +15,7 @@
   "cards": [
     {
       "title": "Products",
-      "value": "101",
+      "value": "102",
       "tone": ""
     },
     {
@@ -40,47 +40,31 @@
     }
   ],
   "summary": {
-    "products": 101,
+    "products": 102,
     "kits": 13,
     "kits_name_matched": 25,
     "kits_definition": "role",
     "avg": 4.8,
-    "pushes": 137,
+    "pushes": 138,
     "byrepo": {
-      "kinemorph": 1,
-      "All4ONE": 1,
-      "KILN": 1,
-      "forge": 1,
-      "kinemotif": 1,
-      "heavenzip": 1,
-      "conqueror-os": 1,
-      "dashboard": 1,
-      "knowledge": 1,
-      "audit": 1,
-      "drsamonline.github.io": 1,
-      "drsamonline": 1,
-      "mood-mixer": 1,
-      "app-lantern": 1,
-      "ai-bridge": 1,
-      "neon-engine": 1,
-      "lexora": 1
+      "aethelgard-rpg-engine": 1
     }
   },
   "stats": {
     "metadata_completeness": {
       "5": 91,
+      "4": 4,
       "3": 2,
-      "4": 3,
       "2": 5
     },
     "conformance": {
       "5": 91,
+      "4": 4,
       "3": 2,
-      "4": 3,
       "2": 5
     },
     "categories": {
-      "HTML Apps": 68,
+      "HTML Apps": 69,
       "Utilities": 15,
       "Games": 6,
       "Health Tools": 1,
@@ -89,10 +73,6 @@
     }
   },
   "activity": [
-    {
-      "date": "2026-10-31",
-      "count": 0
-    },
     {
       "date": "2026-11-01",
       "count": 0
@@ -135,7 +115,7 @@
     },
     {
       "date": "2026-11-11",
-      "count": 53
+      "count": 51
     },
     {
       "date": "2026-11-12",
@@ -143,7 +123,11 @@
     },
     {
       "date": "2026-11-13",
-      "count": 17
+      "count": 19
+    },
+    {
+      "date": "2026-11-14",
+      "count": 1
     }
   ],
   "attention": [
@@ -153,6 +137,27 @@
       "url": "https://github.com/drsamonline/web-kit/issues/3",
       "kind": "issue",
       "created": "2026-10-26T00:46:14Z"
+    },
+    {
+      "title": "test: run the content validator on every push (test10.js)",
+      "repo": "aethelgard-rpg-engine",
+      "url": "https://github.com/drsamonline/aethelgard-rpg-engine/pull/11",
+      "kind": "PR",
+      "created": "2026-11-14T00:34:48Z"
+    },
+    {
+      "title": "ci: bump actions/setup-python from 5 to 7",
+      "repo": "tessera",
+      "url": "https://github.com/drsamonline/tessera/pull/2",
+      "kind": "PR",
+      "created": "2026-11-13T20:09:41Z"
+    },
+    {
+      "title": "ci: bump actions/checkout from 4 to 7",
+      "repo": "tessera",
+      "url": "https://github.com/drsamonline/tessera/pull/1",
+      "kind": "PR",
+      "created": "2026-11-13T20:09:37Z"
     },
     {
       "title": "fix(dist): rebuild the bundles after the README support block changed",
@@ -272,27 +277,6 @@
       "url": "https://github.com/drsamonline/aethelgard-games/pull/4",
       "kind": "PR",
       "created": "2026-11-09T14:01:32Z"
-    },
-    {
-      "title": "chore(sweep): drift resolved: protect 2 as hand",
-      "repo": "The_Browser",
-      "url": "https://github.com/drsamonline/The_Browser/pull/27",
-      "kind": "PR",
-      "created": "2026-11-09T14:01:20Z"
-    },
-    {
-      "title": "chore(sweep): drift resolved: protect 2 as hand",
-      "repo": "TTB",
-      "url": "https://github.com/drsamonline/TTB/pull/6",
-      "kind": "PR",
-      "created": "2026-11-09T14:01:08Z"
-    },
-    {
-      "title": "chore(sweep): drift resolved: protect 1 as hand",
-      "repo": "Scrap-and-Gun",
-      "url": "https://github.com/drsamonline/Scrap-and-Gun/pull/2",
-      "kind": "PR",
-      "created": "2026-11-09T14:00:59Z"
     }
   ],
   "controls": [
@@ -487,123 +471,123 @@
   "changes": [
     {
       "type": "Push",
-      "repo": "the-symphony-companion",
-      "when": "2026-11-12T06:47:47Z",
+      "repo": "ntet-homoeopathy-cbt",
+      "when": "2026-11-12T06:52:53Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "PullRequest",
+      "repo": "aethelgard-rpg-engine",
+      "when": "2026-11-14T00:34:48Z",
+      "text": "opened: "
+    },
+    {
+      "type": "Create",
+      "repo": "kitbox",
+      "when": "2026-11-12T05:57:51Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
+      "repo": "idle-city-ages-of-growth",
+      "when": "2026-11-12T06:48:09Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Create",
+      "repo": "app-image-toolkit",
+      "when": "2026-11-12T06:44:46Z",
+      "text": ""
+    },
+    {
+      "type": "Create",
+      "repo": "app-poets-studio",
+      "when": "2026-11-12T06:44:29Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
+      "repo": "app-organon-reader",
+      "when": "2026-11-12T06:36:32Z",
+      "text": "pushed to pin-full-sha-2026-11-12"
+    },
+    {
+      "type": "Push",
+      "repo": "HMS",
+      "when": "2026-11-12T06:35:10Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "weft8-kit",
-      "when": "2026-11-12T06:46:45Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "weft8-compare",
-      "when": "2026-11-12T06:46:37Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "app-endpoints",
-      "when": "2026-11-12T06:46:24Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "app-weft-puzzles",
-      "when": "2026-11-12T06:43:22Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "mood-mixer",
-      "when": "2026-11-13T00:49:10Z",
+      "repo": "Matneo",
+      "when": "2026-11-12T09:59:56Z",
       "text": "pushed to main"
     },
     {
       "type": "Delete",
-      "repo": "ziptastic",
-      "when": "2026-11-11T19:57:25Z",
+      "repo": "heavenzip",
+      "when": "2026-11-12T05:26:29Z",
       "text": ""
     },
     {
       "type": "Push",
-      "repo": "motion-kit",
-      "when": "2026-11-11T19:57:24Z",
+      "repo": "heavenzip",
+      "when": "2026-11-12T05:26:28Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "kosh",
-      "when": "2026-11-12T06:40:04Z",
-      "text": "pushed to ct1-ct2-windows-macos"
-    },
-    {
-      "type": "Push",
-      "repo": "tokens-kit",
-      "when": "2026-11-11T19:57:10Z",
+      "repo": "app-opd-register",
+      "when": "2026-11-12T01:57:13Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "aethelgard-games",
-      "when": "2026-11-12T06:35:39Z",
+      "repo": "ntet-homoeopathy-cbt",
+      "when": "2026-11-12T07:23:55Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "KILN",
+      "when": "2026-11-13T04:37:36Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "ntet-homoeopathy-cbt",
+      "when": "2026-11-12T06:07:00Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "heavenzip",
+      "when": "2026-11-12T01:39:44Z",
+      "text": "pushed to phase-0-cli-and-ini"
+    },
+    {
+      "type": "Push",
+      "repo": "music",
+      "when": "2026-11-12T01:36:37Z",
       "text": "pushed to main"
     },
     {
       "type": "Create",
       "repo": "kosh",
-      "when": "2026-11-12T06:50:38Z",
+      "when": "2026-11-12T05:58:02Z",
       "text": ""
     },
     {
       "type": "Push",
-      "repo": "read-live-transform-app",
-      "when": "2026-11-12T06:48:04Z",
+      "repo": "Matneo",
+      "when": "2026-11-12T10:05:30Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "skin-case-tracker",
-      "when": "2026-11-12T06:47:51Z",
+      "repo": "KILN",
+      "when": "2026-11-13T06:14:17Z",
       "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "gentle-pediatrics-companion",
-      "when": "2026-11-12T06:47:42Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "remedy-relationship-explorer",
-      "when": "2026-11-12T06:47:33Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "helioprism",
-      "when": "2026-11-12T06:47:21Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "app-image-toolkit",
-      "when": "2026-11-12T06:44:58Z",
-      "text": "pushed to pin-full-sha-2026-11-12"
-    },
-    {
-      "type": "Create",
-      "repo": "motion-kit",
-      "when": "2026-11-12T01:16:36Z",
-      "text": ""
-    },
-    {
-      "type": "Create",
-      "repo": "smartbill-app",
-      "when": "2026-11-12T01:15:58Z",
-      "text": ""
     }
   ],
   "automation": [
@@ -673,8 +657,8 @@
       ],
       "schedule": "weekly (Tue) 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/43486236664",
-      "last_run": "2026-11-13T18:48:53Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/43535377252",
+      "last_run": "2026-11-14T00:37:02Z",
       "conclusion": "in_progress"
     },
     {
@@ -1147,7 +1131,7 @@
       "link": "https://github.com/drsamonline/forge"
     },
     {
-      "what": "Apps live — 126 products, 126 of them pushed in the last 30 days",
+      "what": "Apps live — 127 products, 127 of them pushed in the last 30 days",
       "state": "done",
       "link": "https://drsamonline.github.io/"
     },
@@ -1168,8 +1152,8 @@
     "built_definition": "name matching: a live repository whose name matches the idea's slug. NOT the owner's definition of built (release + landing page + live demo), which the registry measures.",
     "name_matched": 13,
     "unbuilt": 140,
-    "live_products": 101,
-    "live_not_planned": 88,
+    "live_products": 102,
+    "live_not_planned": 89,
     "plan_generated": "2026-10-23",
     "link": "https://github.com/drsamonline/dashboard/blob/main/plan.json"
   },
@@ -1189,9 +1173,9 @@
   },
   "community": {
     "totals": {
-      "stars": 105,
+      "stars": 126,
       "forks": 1,
-      "watchers": 105
+      "watchers": 126
     },
     "repos": [
       {
@@ -1216,11 +1200,18 @@
         "html_url": "https://github.com/drsamonline/neon-runner"
       },
       {
-        "name": "All4ONE",
+        "name": "aethelgard-rpg-engine",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
-        "html_url": "https://github.com/drsamonline/All4ONE"
+        "html_url": "https://github.com/drsamonline/aethelgard-rpg-engine"
+      },
+      {
+        "name": "NEO",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/NEO"
       },
       {
         "name": "KILN",
@@ -1228,6 +1219,34 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/KILN"
+      },
+      {
+        "name": "tessera",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/tessera"
+      },
+      {
+        "name": "kinemorph",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/kinemorph"
+      },
+      {
+        "name": "kinemotif",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/kinemotif"
+      },
+      {
+        "name": "All4ONE",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/All4ONE"
       },
       {
         "name": "heavenzip",
@@ -1300,11 +1319,32 @@
         "html_url": "https://github.com/drsamonline/TTB"
       },
       {
+        "name": "ntet-course-source",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/ntet-course-source"
+      },
+      {
+        "name": "kosh",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/kosh"
+      },
+      {
         "name": "bmi-bmr-tdee-macros-fluid-calculator",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/bmi-bmr-tdee-macros-fluid-calculator"
+      },
+      {
+        "name": "ntet-homoeopathy-cbt",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/ntet-homoeopathy-cbt"
       },
       {
         "name": "read-live-transform-app",
@@ -1496,6 +1536,13 @@
         "html_url": "https://github.com/drsamonline/app-thermals"
       },
       {
+        "name": "app-endpoints",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/app-endpoints"
+      },
+      {
         "name": "app-encrypted-case-log",
         "stars": 1,
         "forks": 0,
@@ -1615,11 +1662,32 @@
         "html_url": "https://github.com/drsamonline/frame-kit"
       },
       {
+        "name": "music",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/music"
+      },
+      {
+        "name": "motion-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/motion-kit"
+      },
+      {
         "name": "ziptastic",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/ziptastic"
+      },
+      {
+        "name": "tokens-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/tokens-kit"
       },
       {
         "name": "compress-kit",
@@ -1650,6 +1718,20 @@
         "html_url": "https://github.com/drsamonline/HCS"
       },
       {
+        "name": "UniRep",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/UniRep"
+      },
+      {
+        "name": "remedy-finder",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/remedy-finder"
+      },
+      {
         "name": "Scrap-and-Gun",
         "stars": 1,
         "forks": 0,
@@ -1662,6 +1744,13 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/ui-kit"
+      },
+      {
+        "name": "smartnote-scheduler",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/smartnote-scheduler"
       },
       {
         "name": "saga-vn-engine",
@@ -1713,13 +1802,6 @@
         "html_url": "https://github.com/drsamonline/art-kit"
       },
       {
-        "name": "aethelgard-rpg-engine",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/aethelgard-rpg-engine"
-      },
-      {
         "name": "accent-oracle",
         "stars": 1,
         "forks": 0,
@@ -1734,11 +1816,11 @@
         "html_url": "https://github.com/drsamonline/The_Browser"
       },
       {
-        "name": "NEO",
+        "name": "neonboom",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
-        "html_url": "https://github.com/drsamonline/NEO"
+        "html_url": "https://github.com/drsamonline/neonboom"
       },
       {
         "name": "web-kit",
@@ -1874,6 +1956,55 @@
         "html_url": "https://github.com/drsamonline/feather"
       },
       {
+        "name": "markdown-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/markdown-kit"
+      },
+      {
+        "name": "code-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/code-kit"
+      },
+      {
+        "name": "form-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/form-kit"
+      },
+      {
+        "name": "widgets-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/widgets-kit"
+      },
+      {
+        "name": "raylib-starter",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/raylib-starter"
+      },
+      {
+        "name": "planner-pro",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/planner-pro"
+      },
+      {
+        "name": "lofi-studio-pro",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/lofi-studio-pro"
+      },
+      {
         "name": "dumps-4",
         "stars": 1,
         "forks": 0,
@@ -1930,8 +2061,20 @@
     "forked_repos": 1,
     "external": {
       "issues": 0,
-      "prs": 2,
+      "prs": 4,
       "items": [
+        {
+          "title": "ci: bump actions/setup-python from 5 to 7",
+          "repo": "tessera",
+          "url": "https://github.com/drsamonline/tessera/pull/2",
+          "who": "dependabot[bot]"
+        },
+        {
+          "title": "ci: bump actions/checkout from 4 to 7",
+          "repo": "tessera",
+          "url": "https://github.com/drsamonline/tessera/pull/1",
+          "who": "dependabot[bot]"
+        },
         {
           "title": "ci: bump actions/checkout from 4 to 7",
           "repo": "canteen-lan",
@@ -1952,7 +2095,53 @@
     "window": "14 days",
     "note": "Last 14 days — GitHub's retention window.",
     "repos": {
+      "aethelgard-rpg-engine": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 245,
+        "clone_uniques": 92,
+        "referrers": [],
+        "paths": []
+      },
+      "NEO": {
+        "views": 1,
+        "uniques": 1,
+        "clones": 186,
+        "clone_uniques": 57,
+        "referrers": [],
+        "paths": [
+          {
+            "path": "/drsamonline/NEO",
+            "count": 1,
+            "title": "Overview"
+          }
+        ]
+      },
+      "KILN": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 115,
+        "clone_uniques": 22,
+        "referrers": [],
+        "paths": []
+      },
+      "tessera": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
       "kinemorph": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
+      "kinemotif": {
         "views": 0,
         "uniques": 0,
         "clones": 0,
@@ -1987,22 +2176,6 @@
             "title": "/blob/main/TOOL_CATALOG.md"
           }
         ]
-      },
-      "KILN": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 115,
-        "clone_uniques": 22,
-        "referrers": [],
-        "paths": []
-      },
-      "kinemotif": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 0,
-        "clone_uniques": 0,
-        "referrers": [],
-        "paths": []
       },
       "heavenzip": {
         "views": 4,
@@ -3302,14 +3475,6 @@
           }
         ]
       },
-      "aethelgard-rpg-engine": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 245,
-        "clone_uniques": 92,
-        "referrers": [],
-        "paths": []
-      },
       "accent-oracle": {
         "views": 1,
         "uniques": 1,
@@ -3359,20 +3524,6 @@
             "path": "/drsamonline/The_Browser/tree/main/src",
             "count": 1,
             "title": "/tree/main/src"
-          }
-        ]
-      },
-      "NEO": {
-        "views": 1,
-        "uniques": 1,
-        "clones": 186,
-        "clone_uniques": 57,
-        "referrers": [],
-        "paths": [
-          {
-            "path": "/drsamonline/NEO",
-            "count": 1,
-            "title": "Overview"
           }
         ]
       },
@@ -3860,9 +4011,141 @@
   },
   "repos": [
     {
+      "name": "aethelgard-rpg-engine",
+      "description": "A dependency-free vanilla-JavaScript engine for deep single-player browser RPGs. Engine only — the games it powers live in aethelgard-games.",
+      "pushed_at": "2026-11-14T00:34:36Z",
+      "homepage": "https://drsamonline.github.io/aethelgard-rpg-engine/",
+      "html_url": "https://github.com/drsamonline/aethelgard-rpg-engine",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "NEO",
+      "description": "NOVA — a statically typed, compiled systems programming language whose compiler lowers to C, JavaScript, Rust and WebAssembly.",
+      "pushed_at": "2026-11-13T20:47:26Z",
+      "homepage": "https://drsamonline.github.io/NEO/",
+      "html_url": "https://github.com/drsamonline/NEO",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "KILN",
+      "description": "Spec in. Finished app out. A deterministic compiler for offline single-file apps — no model, no network, no dependencies.",
+      "pushed_at": "2026-11-13T20:38:51Z",
+      "homepage": "https://drsamonline.github.io/KILN/",
+      "html_url": "https://github.com/drsamonline/KILN",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "tessera",
+      "description": "TESSERA - the mosaic layer above every CRM. Federation mesh, universal ledger, seat-based workforce. A specification, audited: 43 defects found, 43 closed.",
+      "pushed_at": "2026-11-13T20:31:43Z",
+      "homepage": "https://drsamonline.github.io/tessera/",
+      "html_url": "https://github.com/drsamonline/tessera",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "4/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
       "name": "kinemorph",
       "description": "A browser animation studio for real video: React + TypeScript + PixiJS editor with a GSAP timeline, a Tone.js generative score and WebCodecs MP4 export. The heavy sibling of Kinemotif.",
-      "pushed_at": "2026-11-13T18:47:37Z",
+      "pushed_at": "2026-11-13T20:29:29Z",
       "homepage": "https://drsamonline.github.io/kinemorph/",
       "html_url": "https://github.com/drsamonline/kinemorph",
       "download": "",
@@ -3888,7 +4171,41 @@
         0,
         0,
         0,
-        1
+        1,
+        0
+      ]
+    },
+    {
+      "name": "kinemotif",
+      "description": "A single-file HTML animation studio: turn a paragraph into a moving, scored presentation. Six art styles, real shape morphing, a procedurally synthesised soundtrack, and a one-file offline HTML export.",
+      "pushed_at": "2026-11-13T20:29:23Z",
+      "homepage": "https://drsamonline.github.io/kinemotif/",
+      "html_url": "https://github.com/drsamonline/kinemotif",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
       ]
     },
     {
@@ -3920,71 +4237,8 @@
         1,
         1,
         0,
-        1
-      ]
-    },
-    {
-      "name": "KILN",
-      "description": "Spec in. Finished app out. A deterministic compiler for offline single-file apps — no model, no network, no dependencies.",
-      "pushed_at": "2026-11-13T18:45:12Z",
-      "homepage": "https://drsamonline.github.io/KILN/",
-      "html_url": "https://github.com/drsamonline/KILN",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
-    },
-    {
-      "name": "kinemotif",
-      "description": "A single-file HTML animation studio: turn a paragraph into a moving, scored presentation. Six art styles, real shape morphing, a procedurally synthesised soundtrack, and a one-file offline HTML export.",
-      "pushed_at": "2026-11-13T14:46:36Z",
-      "homepage": "https://drsamonline.github.io/kinemotif/",
-      "html_url": "https://github.com/drsamonline/kinemotif",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4016,7 +4270,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4048,7 +4303,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4080,7 +4336,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4112,7 +4369,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4144,7 +4402,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4176,7 +4435,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4208,7 +4468,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4240,6 +4501,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4272,6 +4534,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4304,6 +4567,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4336,6 +4600,7 @@
         0,
         0,
         1,
+        0,
         0
       ]
     },
@@ -4368,6 +4633,7 @@
         0,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4400,6 +4666,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4432,6 +4699,7 @@
         0,
         0,
         1,
+        0,
         0
       ]
     },
@@ -4464,6 +4732,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4496,6 +4765,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4528,6 +4798,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4560,6 +4831,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4592,6 +4864,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4624,6 +4897,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4656,6 +4930,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4688,6 +4963,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4720,6 +4996,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4752,6 +5029,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4784,6 +5062,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4816,6 +5095,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4848,6 +5128,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4880,6 +5161,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4912,6 +5194,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4944,6 +5227,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -4976,6 +5260,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5008,6 +5293,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5040,6 +5326,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5072,6 +5359,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5104,6 +5392,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5136,6 +5425,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5168,6 +5458,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5200,6 +5491,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5232,6 +5524,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5264,6 +5557,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5296,6 +5590,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5328,6 +5623,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5360,6 +5656,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5392,6 +5689,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5424,6 +5722,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5456,6 +5755,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5488,6 +5788,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5520,6 +5821,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5552,6 +5854,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5584,6 +5887,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5616,6 +5920,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5648,6 +5953,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5680,6 +5986,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5712,6 +6019,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5744,6 +6052,7 @@
         0,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5776,6 +6085,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5808,6 +6118,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5840,6 +6151,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5872,6 +6184,7 @@
         0,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5904,6 +6217,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5936,6 +6250,7 @@
         0,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5968,6 +6283,7 @@
         1,
         1,
         1,
+        0,
         0
       ]
     },
@@ -5999,6 +6315,7 @@
         1,
         1,
         1,
+        0,
         0,
         0
       ]
@@ -6032,6 +6349,7 @@
         1,
         1,
         0,
+        0,
         0
       ]
     },
@@ -6063,6 +6381,7 @@
         1,
         1,
         1,
+        0,
         0,
         0
       ]
@@ -6096,6 +6415,7 @@
         0,
         1,
         0,
+        0,
         0
       ]
     },
@@ -6127,6 +6447,7 @@
         1,
         1,
         1,
+        0,
         0,
         0
       ]
@@ -6160,6 +6481,7 @@
         1,
         1,
         0,
+        0,
         0
       ]
     },
@@ -6191,6 +6513,7 @@
         1,
         0,
         1,
+        0,
         0,
         0
       ]
@@ -6224,6 +6547,7 @@
         0,
         1,
         0,
+        0,
         0
       ]
     },
@@ -6255,6 +6579,7 @@
         1,
         1,
         1,
+        0,
         0,
         0
       ]
@@ -6288,6 +6613,7 @@
         1,
         1,
         0,
+        0,
         0
       ]
     },
@@ -6320,37 +6646,6 @@
         1,
         1,
         0,
-        0
-      ]
-    },
-    {
-      "name": "aethelgard-rpg-engine",
-      "description": "A dependency-free vanilla-JavaScript engine for deep single-player browser RPGs. Engine only — the games it powers live in aethelgard-games.",
-      "pushed_at": "2026-11-11T18:32:05Z",
-      "homepage": "https://drsamonline.github.io/aethelgard-rpg-engine/",
-      "html_url": "https://github.com/drsamonline/aethelgard-rpg-engine",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        0,
-        1,
         0,
         0
       ]
@@ -6384,6 +6679,7 @@
         0,
         1,
         0,
+        0,
         0
       ]
     },
@@ -6416,37 +6712,6 @@
         1,
         1,
         0,
-        0
-      ]
-    },
-    {
-      "name": "NEO",
-      "description": "NOVA — a statically typed, compiled systems programming language whose compiler lowers to C, JavaScript, Rust and WebAssembly.",
-      "pushed_at": "2026-11-11T18:31:45Z",
-      "homepage": "https://drsamonline.github.io/NEO/",
-      "html_url": "https://github.com/drsamonline/NEO",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1,
-        0,
-        0,
-        1,
-        1,
-        1,
-        0,
-        1,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1,
         0,
         0
       ]
@@ -6480,6 +6745,7 @@
         0,
         1,
         0,
+        0,
         0
       ]
     },
@@ -6511,6 +6777,7 @@
         1,
         1,
         1,
+        0,
         0,
         0
       ]
@@ -6544,6 +6811,7 @@
         1,
         1,
         0,
+        0,
         0
       ]
     },
@@ -6575,6 +6843,7 @@
         1,
         1,
         1,
+        0,
         0,
         0
       ]
@@ -6608,6 +6877,7 @@
         1,
         1,
         0,
+        0,
         0
       ]
     },
@@ -6639,6 +6909,7 @@
         1,
         1,
         1,
+        0,
         0,
         0
       ]
@@ -6672,6 +6943,7 @@
         1,
         1,
         0,
+        0,
         0
       ]
     },
@@ -6703,6 +6975,7 @@
         1,
         1,
         1,
+        0,
         0,
         0
       ]
@@ -6736,6 +7009,7 @@
         1,
         1,
         0,
+        0,
         0
       ]
     },
@@ -6767,6 +7041,7 @@
         1,
         1,
         1,
+        0,
         0,
         0
       ]
@@ -6800,6 +7075,7 @@
         1,
         1,
         0,
+        0,
         0
       ]
     },
@@ -6831,6 +7107,7 @@
         1,
         1,
         1,
+        0,
         0,
         0
       ]
@@ -6864,6 +7141,7 @@
         0,
         1,
         0,
+        0,
         0
       ]
     },
@@ -6895,6 +7173,7 @@
         0,
         0,
         1,
+        0,
         0,
         0
       ]
@@ -6928,6 +7207,7 @@
         1,
         0,
         0,
+        0,
         0
       ]
     },
@@ -6957,6 +7237,7 @@
         0,
         0,
         1,
+        0,
         0,
         0,
         0,
@@ -6992,6 +7273,7 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
@@ -7015,6 +7297,7 @@
         0,
         0,
         1,
+        0,
         0,
         0,
         0,
@@ -7056,6 +7339,7 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
@@ -7079,6 +7363,7 @@
         0,
         1,
         1,
+        0,
         0,
         0,
         0,
@@ -8568,6 +8853,19 @@
       "stars": 105,
       "forks": 1,
       "watchers": 105
+    },
+    {
+      "date": "2026-11-14",
+      "products": 102,
+      "kits": 13,
+      "avg": 4.8,
+      "pushes": 138,
+      "byrepo": {
+        "aethelgard-rpg-engine": 1
+      },
+      "stars": 126,
+      "forks": 1,
+      "watchers": 126
     }
   ],
   "degraded": []
