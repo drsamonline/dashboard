@@ -1,11 +1,18 @@
 {
   "generated": "2026-11-14",
   "totals": {
-    "stars": 126,
+    "stars": 127,
     "forks": 1,
-    "watchers": 126
+    "watchers": 127
   },
   "repos": [
+    {
+      "name": "kinemorph",
+      "stars": 2,
+      "forks": 0,
+      "watchers": 2,
+      "html_url": "https://github.com/drsamonline/kinemorph"
+    },
     {
       "name": "app-poets-studio",
       "stars": 2,
@@ -28,11 +35,25 @@
       "html_url": "https://github.com/drsamonline/neon-runner"
     },
     {
-      "name": "KILN",
+      "name": "SmartNotes",
       "stars": 1,
       "forks": 0,
       "watchers": 1,
-      "html_url": "https://github.com/drsamonline/KILN"
+      "html_url": "https://github.com/drsamonline/SmartNotes"
+    },
+    {
+      "name": "heavenzip",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 1,
+      "html_url": "https://github.com/drsamonline/heavenzip"
+    },
+    {
+      "name": "weft8-classroom",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 1,
+      "html_url": "https://github.com/drsamonline/weft8-classroom"
     },
     {
       "name": "tessera",
@@ -40,20 +61,6 @@
       "forks": 0,
       "watchers": 1,
       "html_url": "https://github.com/drsamonline/tessera"
-    },
-    {
-      "name": "open-materia-medica",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 1,
-      "html_url": "https://github.com/drsamonline/open-materia-medica"
-    },
-    {
-      "name": "kinemorph",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 1,
-      "html_url": "https://github.com/drsamonline/kinemorph"
     },
     {
       "name": "NEO",
@@ -70,6 +77,20 @@
       "html_url": "https://github.com/drsamonline/kinemotif"
     },
     {
+      "name": "KILN",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 1,
+      "html_url": "https://github.com/drsamonline/KILN"
+    },
+    {
+      "name": "open-materia-medica",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 1,
+      "html_url": "https://github.com/drsamonline/open-materia-medica"
+    },
+    {
       "name": "aethelgard-rpg-engine",
       "stars": 1,
       "forks": 0,
@@ -82,13 +103,6 @@
       "forks": 0,
       "watchers": 1,
       "html_url": "https://github.com/drsamonline/All4ONE"
-    },
-    {
-      "name": "heavenzip",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 1,
-      "html_url": "https://github.com/drsamonline/heavenzip"
     },
     {
       "name": "conqueror-os",
@@ -341,13 +355,6 @@
       "forks": 0,
       "watchers": 1,
       "html_url": "https://github.com/drsamonline/weft8-kit"
-    },
-    {
-      "name": "weft8-classroom",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 1,
-      "html_url": "https://github.com/drsamonline/weft8-classroom"
     },
     {
       "name": "weft8-compare",
@@ -693,13 +700,6 @@
       "html_url": "https://github.com/drsamonline/CLDR"
     },
     {
-      "name": "SmartNotes",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 1,
-      "html_url": "https://github.com/drsamonline/SmartNotes"
-    },
-    {
       "name": "crypto-kit",
       "stars": 1,
       "forks": 0,
@@ -889,8 +889,14 @@
   "forked_repos": 1,
   "external": {
     "issues": 0,
-    "prs": 4,
+    "prs": 5,
     "items": [
+      {
+        "title": "ci: bump drsamonline/app-builder/.github/workflows/build.yml from 49c2e0b172890f9334bbc7167a0e7fb5cd3756ba to a9b6c79b987bcf6426c5682cfa84bb94d432fe88",
+        "repo": "weft8-classroom",
+        "url": "https://github.com/drsamonline/weft8-classroom/pull/3",
+        "who": "dependabot[bot]"
+      },
       {
         "title": "ci: bump actions/setup-python from 5 to 7",
         "repo": "tessera",
