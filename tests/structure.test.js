@@ -143,6 +143,13 @@ ok("the KILN panel names the skipped gates, not just the passes",
    /Skipped gates/.test(html));
 ok("the KILN panel links the status page when both feeds fail",
    /KILN\/docs\/status\.html/.test(html));
+// A number without its age is the failure this console exists to prevent, and KILN's
+// feed is the first one that carries a timestamp. Past 48 hours the daily republish has
+// stopped, and every figure has to be read as historical.
+ok("the KILN panel shows how old the measurement is",
+   /row\("Measured"/.test(html) && /function age\(stamp\)/.test(html));
+ok("the KILN panel marks a feed older than 48 hours",
+   /hrs > 48/.test(html) && /more than 48 hours old/.test(html));
 
 console.log("\n" + pass + " passed, " + fail + " failed");
 process.exit(fail ? 1 : 0);

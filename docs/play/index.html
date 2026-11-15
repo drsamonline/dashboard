@@ -532,11 +532,31 @@ if("serviceWorker" in navigator){window.addEventListener("load",function(){navig
   function row(k, v, cls) {
     return '<tr><td>' + esc(k) + '</td><td class="' + (cls || "") + '"><b>' + esc(String(v)) + '</b></td></tr>';
   }
+  function age(stamp) {
+    if (!stamp) return null;
+    var then = Date.parse(stamp);
+    if (isNaN(then)) return null;
+    var mins = Math.max(0, Math.round((Date.now() - then) / 60000));
+    if (mins < 60) return mins + " min";
+    var hrs = Math.round(mins / 60);
+    if (hrs < 48) return hrs + " h";
+    return Math.round(hrs / 24) + " days";
+  }
+
   function render(d, source) {
     var g = d.guards || {}, s = d.specs || {};
     var ok = d.ok === true;
+    var a = age(d.generated_at);
+    // DATA_CONTRACTS.md: a number older than one refresh interval is a historical figure.
+    // KILN republishes daily, so anything past 48 hours means the schedule itself died.
+    var stale = false;
+    if (d.generated_at) {
+      var hrs = (Date.now() - Date.parse(d.generated_at)) / 3600000;
+      stale = hrs > 48;
+    }
     var h = '<div class="tw"><table><tbody>'
       + row("Version", d.version || "?")
+      + row("Measured", (a ? a + " ago" : "no timestamp"), stale ? "bad" : "")
       + row("Verdict", ok ? "pass" : "fail", ok ? "ok" : "bad")
       + row("Guards", (g.passed != null ? g.passed : "?") + " of " + (g.total || "?") + ", " + (g.failed || 0) + " failed")
       + row("Skipped gates", (g.skipped != null ? g.skipped : "?"))
@@ -555,7 +575,9 @@ if("serviceWorker" in navigator){window.addEventListener("load",function(){navig
     el.innerHTML = h;
     if (note) {
       note.textContent = "Read from " + source + ". A skipped gate is a decision, not a pass; "
-        + "KILN publishes the skips beside the passes for that reason.";
+        + "KILN publishes the skips beside the passes for that reason."
+        + (stale ? " This figure is more than 48 hours old, which means the daily republish "
+                 + "has stopped: treat every number here as historical." : "");
     }
   }
   function fallback() {
