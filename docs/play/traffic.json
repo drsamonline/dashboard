@@ -4,24 +4,13 @@
   "window": "14 days",
   "note": "Last 14 days — GitHub's retention window.",
   "repos": {
-    "HMS": {
-      "views": 2,
-      "uniques": 2,
-      "clones": 1472,
-      "clone_uniques": 350,
-      "referrers": [
-        {
-          "from": "github.com",
-          "count": 1
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/HMS",
-          "count": 2,
-          "title": "Overview"
-        }
-      ]
+    "base-bench": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 886,
+      "clone_uniques": 184,
+      "referrers": [],
+      "paths": []
     },
     "NEO": {
       "views": 1,
@@ -37,19 +26,43 @@
         }
       ]
     },
-    "kosh": {
+    "pico": {
       "views": 0,
       "uniques": 0,
-      "clones": 598,
-      "clone_uniques": 113,
+      "clones": 0,
+      "clone_uniques": 0,
       "referrers": [],
       "paths": []
     },
-    "musicgen": {
-      "views": 3,
+    "kitbox": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 1276,
+      "clone_uniques": 284,
+      "referrers": [],
+      "paths": []
+    },
+    "tessera-app": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 0,
+      "clone_uniques": 0,
+      "referrers": [],
+      "paths": []
+    },
+    "tessera": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 43,
+      "clone_uniques": 18,
+      "referrers": [],
+      "paths": []
+    },
+    "KILN": {
+      "views": 1,
       "uniques": 1,
-      "clones": 827,
-      "clone_uniques": 236,
+      "clones": 687,
+      "clone_uniques": 90,
       "referrers": [
         {
           "from": "github.com",
@@ -58,24 +71,11 @@
       ],
       "paths": [
         {
-          "path": "/drsamonline/musicgen",
-          "count": 2,
-          "title": "Overview"
-        },
-        {
-          "path": "/drsamonline/musicgen/pull/1",
+          "path": "/drsamonline/KILN",
           "count": 1,
-          "title": "/pull/1"
+          "title": "Overview"
         }
       ]
-    },
-    "tokens-kit": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 158,
-      "clone_uniques": 71,
-      "referrers": [],
-      "paths": []
     },
     "sui": {
       "views": 0,
@@ -84,25 +84,6 @@
       "clone_uniques": 0,
       "referrers": [],
       "paths": []
-    },
-    "neon-engine": {
-      "views": 2,
-      "uniques": 2,
-      "clones": 210,
-      "clone_uniques": 80,
-      "referrers": [
-        {
-          "from": "github.com",
-          "count": 2
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/neon-engine",
-          "count": 2,
-          "title": "Overview"
-        }
-      ]
     },
     "boericke-repertory": {
       "views": 16,
@@ -140,6 +121,128 @@
           "path": "/drsamonline/boericke-repertory/blob/main/index.html",
           "count": 1,
           "title": "/blob/main/index.html"
+        }
+      ]
+    },
+    "app-clip-loom": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 713,
+      "clone_uniques": 174,
+      "referrers": [],
+      "paths": []
+    },
+    "All4ONE": {
+      "views": 2,
+      "uniques": 2,
+      "clones": 391,
+      "clone_uniques": 121,
+      "referrers": [
+        {
+          "from": "drsamonline.github.io",
+          "count": 1
+        },
+        {
+          "from": "github.com",
+          "count": 1
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/All4ONE",
+          "count": 1,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/All4ONE/blob/main/TOOL_CATALOG.md",
+          "count": 1,
+          "title": "/blob/main/TOOL_CATALOG.md"
+        }
+      ]
+    },
+    "kinemorph": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 162,
+      "clone_uniques": 50,
+      "referrers": [],
+      "paths": []
+    },
+    "musicgen": {
+      "views": 3,
+      "uniques": 1,
+      "clones": 827,
+      "clone_uniques": 236,
+      "referrers": [
+        {
+          "from": "github.com",
+          "count": 1
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/musicgen",
+          "count": 2,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/musicgen/pull/1",
+          "count": 1,
+          "title": "/pull/1"
+        }
+      ]
+    },
+    "HMS": {
+      "views": 2,
+      "uniques": 2,
+      "clones": 1472,
+      "clone_uniques": 350,
+      "referrers": [
+        {
+          "from": "github.com",
+          "count": 1
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/HMS",
+          "count": 2,
+          "title": "Overview"
+        }
+      ]
+    },
+    "kosh": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 598,
+      "clone_uniques": 113,
+      "referrers": [],
+      "paths": []
+    },
+    "tokens-kit": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 158,
+      "clone_uniques": 71,
+      "referrers": [],
+      "paths": []
+    },
+    "neon-engine": {
+      "views": 2,
+      "uniques": 2,
+      "clones": 210,
+      "clone_uniques": 80,
+      "referrers": [
+        {
+          "from": "github.com",
+          "count": 2
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/neon-engine",
+          "count": 2,
+          "title": "Overview"
         }
       ]
     },
@@ -256,49 +359,6 @@
       "referrers": [],
       "paths": []
     },
-    "tessera-app": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 0,
-      "clone_uniques": 0,
-      "referrers": [],
-      "paths": []
-    },
-    "tessera": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 43,
-      "clone_uniques": 18,
-      "referrers": [],
-      "paths": []
-    },
-    "pico": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 0,
-      "clone_uniques": 0,
-      "referrers": [],
-      "paths": []
-    },
-    "KILN": {
-      "views": 1,
-      "uniques": 1,
-      "clones": 687,
-      "clone_uniques": 90,
-      "referrers": [
-        {
-          "from": "github.com",
-          "count": 1
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/KILN",
-          "count": 1,
-          "title": "Overview"
-        }
-      ]
-    },
     "mnemosyne-companion": {
       "views": 0,
       "uniques": 0,
@@ -407,14 +467,6 @@
       "uniques": 0,
       "clones": 557,
       "clone_uniques": 133,
-      "referrers": [],
-      "paths": []
-    },
-    "app-clip-loom": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 713,
-      "clone_uniques": 174,
       "referrers": [],
       "paths": []
     },
@@ -614,14 +666,6 @@
       "referrers": [],
       "paths": []
     },
-    "kinemorph": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 162,
-      "clone_uniques": 50,
-      "referrers": [],
-      "paths": []
-    },
     "kinemotif": {
       "views": 0,
       "uniques": 0,
@@ -680,34 +724,6 @@
       "clone_uniques": 98,
       "referrers": [],
       "paths": []
-    },
-    "All4ONE": {
-      "views": 2,
-      "uniques": 2,
-      "clones": 391,
-      "clone_uniques": 121,
-      "referrers": [
-        {
-          "from": "drsamonline.github.io",
-          "count": 1
-        },
-        {
-          "from": "github.com",
-          "count": 1
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/All4ONE",
-          "count": 1,
-          "title": "Overview"
-        },
-        {
-          "path": "/drsamonline/All4ONE/blob/main/TOOL_CATALOG.md",
-          "count": 1,
-          "title": "/blob/main/TOOL_CATALOG.md"
-        }
-      ]
     },
     "conqueror-os": {
       "views": 2,
@@ -1043,22 +1059,6 @@
           "title": "Overview"
         }
       ]
-    },
-    "kitbox": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 1276,
-      "clone_uniques": 284,
-      "referrers": [],
-      "paths": []
-    },
-    "base-bench": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 886,
-      "clone_uniques": 184,
-      "referrers": [],
-      "paths": []
     },
     "app-organon-reader": {
       "views": 1,
