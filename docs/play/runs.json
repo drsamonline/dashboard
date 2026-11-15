@@ -1,5 +1,5 @@
 {
-  "count": 17,
+  "count": 22,
   "runs": [
     {
       "id": "f2b8c1d47a90",
@@ -345,6 +345,73 @@
         "raylib-starter's Test run reports failure with a green job, no failed step and no readable log - the API cannot say why",
         "Forge PRs #47 and #48 still both open against the same lint step (from 2026-11-09) - one should be closed"
       ],
+      "retries": 0
+    },
+    {
+      "id": "93bbb46cc419",
+      "at": "2026-11-10T06:33:53Z",
+      "workflow": "kit-audit",
+      "outcome": "ok",
+      "note": "scheduled kit audit: {'repos_scanned': 86, 'dead_vendored_kits': 1, 'signals': 111, 'unreadable': 0} (dead vendored kits are a FACT; signals are hints to look)",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "c878e7c83577",
+      "at": "2026-11-10T15:26:58Z",
+      "workflow": "code-compression",
+      "outcome": "ok",
+      "note": "size report: 5 pages, 568 KB raw, 143 KB gzip, 0 over budget",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "7db46ddafc1f",
+      "at": "2026-11-10T17:59:41Z",
+      "workflow": "self-diagnose",
+      "outcome": "ok",
+      "note": "machinery check: 211 workflows, 12 scheduled, 12 errors, 1 not firing",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "f780d173a094",
+      "at": "2026-11-11T16:00:19Z",
+      "workflow": "self-diagnose",
+      "outcome": "ok",
+      "note": "machinery check: 230 workflows, 12 scheduled, 65 errors, 0 not firing",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "c9d8513f24e7",
+      "at": "2026-11-14T18:48:41Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "build none (BACKLOG 47/49, both open items need a Windows toolchain); advance retro-strike: secret chests could be placed on lava (22/720 procedural, 2/48 campaign), now refused like placeProps already did, proven by new tools/test-map.mjs over 132 arenas with the guard stripped to show the old code fails; refresh all four drsoam.py modes DEGRADED [] and FAILED_URLS {}, published by dispatch (dashboard 43628051532, knowledge 43628063278, Matneo store 43628063138, Matneo blog 43628063346 - all success); health 145 repos, 3 failures: 1 permanently ignored, 2 new and repaired by PR (tokens-kit README claim 55 vs 60, musicgen landing linking two assets the repo never contained)",
+      "files": {
+        "PROGRESS.log": {
+          "lines": 238
+        },
+        "STATE.json": {
+          "lines": 334
+        },
+        "WORKLIST.md": {
+          "lines": 314
+        }
+      },
+      "advanced": [
+        "advance-retro-strike-chest-placement"
+      ],
+      "errors": [],
       "retries": 0
     }
   ],

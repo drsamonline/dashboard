@@ -1,9 +1,90 @@
 {
-  "generated": "2026-11-14",
+  "generated": "2026-11-15",
   "available": true,
   "window": "14 days",
   "note": "Last 14 days — GitHub's retention window.",
   "repos": {
+    "HMS": {
+      "views": 2,
+      "uniques": 2,
+      "clones": 1472,
+      "clone_uniques": 350,
+      "referrers": [
+        {
+          "from": "github.com",
+          "count": 1
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/HMS",
+          "count": 2,
+          "title": "Overview"
+        }
+      ]
+    },
+    "NEO": {
+      "views": 1,
+      "uniques": 1,
+      "clones": 219,
+      "clone_uniques": 69,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/drsamonline/NEO",
+          "count": 1,
+          "title": "Overview"
+        }
+      ]
+    },
+    "kosh": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 598,
+      "clone_uniques": 113,
+      "referrers": [],
+      "paths": []
+    },
+    "musicgen": {
+      "views": 3,
+      "uniques": 1,
+      "clones": 827,
+      "clone_uniques": 236,
+      "referrers": [
+        {
+          "from": "github.com",
+          "count": 1
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/musicgen",
+          "count": 2,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/musicgen/pull/1",
+          "count": 1,
+          "title": "/pull/1"
+        }
+      ]
+    },
+    "tokens-kit": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 158,
+      "clone_uniques": 71,
+      "referrers": [],
+      "paths": []
+    },
+    "sui": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 0,
+      "clone_uniques": 0,
+      "referrers": [],
+      "paths": []
+    },
     "neon-engine": {
       "views": 2,
       "uniques": 2,
@@ -218,14 +299,6 @@
         }
       ]
     },
-    "sui": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 0,
-      "clone_uniques": 0,
-      "referrers": [],
-      "paths": []
-    },
     "mnemosyne-companion": {
       "views": 0,
       "uniques": 0,
@@ -260,49 +333,6 @@
       "clone_uniques": 150,
       "referrers": [],
       "paths": []
-    },
-    "HMS": {
-      "views": 2,
-      "uniques": 2,
-      "clones": 1472,
-      "clone_uniques": 350,
-      "referrers": [
-        {
-          "from": "github.com",
-          "count": 1
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/HMS",
-          "count": 2,
-          "title": "Overview"
-        }
-      ]
-    },
-    "musicgen": {
-      "views": 3,
-      "uniques": 1,
-      "clones": 827,
-      "clone_uniques": 236,
-      "referrers": [
-        {
-          "from": "github.com",
-          "count": 1
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/musicgen",
-          "count": 2,
-          "title": "Overview"
-        },
-        {
-          "path": "/drsamonline/musicgen/pull/1",
-          "count": 1,
-          "title": "/pull/1"
-        }
-      ]
     },
     "seance": {
       "views": 0,
@@ -395,20 +425,6 @@
       "clone_uniques": 144,
       "referrers": [],
       "paths": []
-    },
-    "NEO": {
-      "views": 1,
-      "uniques": 1,
-      "clones": 219,
-      "clone_uniques": 69,
-      "referrers": [],
-      "paths": [
-        {
-          "path": "/drsamonline/NEO",
-          "count": 1,
-          "title": "Overview"
-        }
-      ]
     },
     "saga-vn-engine": {
       "views": 0,
@@ -530,14 +546,6 @@
       "uniques": 0,
       "clones": 133,
       "clone_uniques": 55,
-      "referrers": [],
-      "paths": []
-    },
-    "tokens-kit": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 158,
-      "clone_uniques": 71,
       "referrers": [],
       "paths": []
     },
@@ -822,14 +830,6 @@
       "uniques": 0,
       "clones": 17,
       "clone_uniques": 2,
-      "referrers": [],
-      "paths": []
-    },
-    "kosh": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 598,
-      "clone_uniques": 113,
       "referrers": [],
       "paths": []
     },
