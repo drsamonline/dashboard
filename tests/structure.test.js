@@ -126,5 +126,23 @@ ok("the root has no index.html (the app is the landing)", !fs.existsSync(path.jo
 ok("the 404 page sends the reader to the console, not back to the 404",
    /href="\.\/play\/"/.test(fs.readFileSync(path.join(root, "docs", "404.html"), "utf8")));
 
+// 6. KILN PUBLISHES ITS GATES, SO THE DASHBOARD READS THEM. The panel exists
+//    because KILN is the only project in the estate that emits its own gate
+//    results as data. Two things must stay true: it reads the published feed
+//    (not a re-derivation), and it has a fallback that says which source it used.
+//    A panel that silently shows nothing is worse than no panel.
+const kilnPanel = doc.getElementById("kiln");
+ok("the KILN gates panel exists", !!kilnPanel);
+ok("the KILN panel reads KILN's published status feed",
+   /raw\.githubusercontent\.com\/drsamonline\/KILN\/status\/status\.json/.test(html));
+ok("the KILN panel falls back to the badge file on Pages",
+   /drsamonline\.github\.io\/KILN\/docs\/badge\.json/.test(html));
+ok("the KILN panel says which source it read",
+   /Read from \" \+ source/.test(html) && /the badge file on Pages/.test(html));
+ok("the KILN panel names the skipped gates, not just the passes",
+   /Skipped gates/.test(html));
+ok("the KILN panel links the status page when both feeds fail",
+   /KILN\/docs\/status\.html/.test(html));
+
 console.log("\n" + pass + " passed, " + fail + " failed");
 process.exit(fail ? 1 : 0);

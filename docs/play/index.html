@@ -162,6 +162,7 @@ footer{max-width:1320px;margin:0 auto;padding:14px 12px 30px;color:var(--mut);fo
     <div class="panel capped"><h2>System health</h2><p class="mut" style="margin:0 0 8px">Two numbers that used to be one-off answers in a session: how many apps are DECIDED BUT UNSPECCED, and the run record (which flags any run that touched a file which lost lines).</p><div id="specgap"></div><div id="runlog"></div></div>
     <div class="panel"><h2>Metadata completeness</h2><p class="mut" style="margin:0 0 8px">Five metadata booleans per repository — a description, a licence, a homepage, Pages, and not archived — not build quality: a repo whose build failed on its latest run still scores 5/5. How many repos satisfy each system rule — topics, a licence, a changelog, a test, a description. A bar at 100% means every repo passes that rule; a short bar is the work list.</p><div id="conf"></div><div class="legend" id="confLegend"></div></div>
     <div class="panel"><h2>Categories</h2><p class="mut" style="margin:0 0 8px">Repos grouped by what they are — kit, app, system, meta — with the count in each. It answers "how much is tooling versus product".</p><div id="cats"></div></div>
+    <div class="panel"><h2>KILN gates</h2><p class="mut" style="margin:0 0 8px">KILN publishes the result of every gate it runs, so this panel reads a number rather than guessing one. It fetches <code>status.json</code> from KILN's <code>status</code> branch, republished by its CI on every push to main. If that fetch fails it falls back to the badge file on Pages, which carries the same counts, and says so.</p><div id="kiln"></div><p class="mut" id="kilnNote" style="margin:6px 0 0"></p></div>
     <div class="panel"><h2>Actions budget</h2><p class="mut" style="margin:0 0 8px">GitHub Actions minutes used this month against the free allowance. Everything here is built to run inside it — no paid runners.</p><div id="quota"></div></div>
   </div>
   </div></details>
@@ -514,6 +515,73 @@ if("serviceWorker" in navigator){window.addEventListener("load",function(){navig
     });
   }
   lb();
+})();
+</script>
+
+<script>
+// KILN is the one project in the estate that publishes its own gate results as data,
+// so the dashboard reads them instead of re-deriving them. Cross-origin: raw.githubusercontent
+// sends access-control-allow-origin:*, and the fallback is on Pages, which does too.
+(function () {
+  var el = document.getElementById("kiln");
+  var note = document.getElementById("kilnNote");
+  if (!el) return;
+  var RAW = "https://raw.githubusercontent.com/drsamonline/KILN/status/status.json";
+  var BADGE = "https://drsamonline.github.io/KILN/docs/badge.json";
+
+  function row(k, v, cls) {
+    return '<tr><td>' + esc(k) + '</td><td class="' + (cls || "") + '"><b>' + esc(String(v)) + '</b></td></tr>';
+  }
+  function render(d, source) {
+    var g = d.guards || {}, s = d.specs || {};
+    var ok = d.ok === true;
+    var h = '<div class="tw"><table><tbody>'
+      + row("Version", d.version || "?")
+      + row("Verdict", ok ? "pass" : "fail", ok ? "ok" : "bad")
+      + row("Guards", (g.passed != null ? g.passed : "?") + " of " + (g.total || "?") + ", " + (g.failed || 0) + " failed")
+      + row("Skipped gates", (g.skipped != null ? g.skipped : "?"))
+      + row("Specs", (s.total || 0) + " built, " + (s.failed || 0) + " failing")
+      + row("Changelog versions", d.versions != null ? d.versions : "?")
+      + '</tbody></table></div>';
+    if (d.sizes_kb) {
+      h += '<p class="mut" style="margin:8px 0 0">Largest generated app '
+         + esc(String(d.sizes_kb.largest)) + ' KB against a ' + esc(String(d.sizes_kb.ceiling))
+         + ' KB ceiling.</p>';
+    }
+    if (d.failures && d.failures.length) {
+      h += '<p class="bad" style="margin:8px 0 0">Failing: '
+         + d.failures.map(function (f) { return esc(f.name); }).join(", ") + '</p>';
+    }
+    el.innerHTML = h;
+    if (note) {
+      note.textContent = "Read from " + source + ". A skipped gate is a decision, not a pass; "
+        + "KILN publishes the skips beside the passes for that reason.";
+    }
+  }
+  function fallback() {
+    fetch(BADGE, { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (b) {
+     try {
+      var m = String(b.message || "");
+      el.innerHTML = '<div class="tw"><table><tbody>'
+        + row("Verdict", b.color === "brightgreen" ? "pass" : "fail",
+              b.color === "brightgreen" ? "ok" : "bad")
+        + row("From the badge", m)
+        + '</tbody></table></div>';
+      if (note) note.textContent = "The status feed did not answer, so this is the badge file on Pages. "
+        + "It carries the guard counts but not the sizes or the skip list.";
+     } catch (err) {
+      el.innerHTML = '<p class="mut">The badge answered but could not be read: ' + esc(err.message) + '</p>';
+     }
+    }).catch(function () {
+      el.innerHTML = '<p class="mut">KILN publishes its gates at '
+        + '<a href="https://drsamonline.github.io/KILN/docs/status.html">docs/status.html</a>, '
+        + 'but neither feed answered from this page.</p>';
+    });
+  }
+  fetch(RAW, { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error(String(r.status)); return r.json(); })
+    .then(function (d) { render(d, "KILN's published status feed"); })
+    .catch(fallback);
 })();
 </script>
 
