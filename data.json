@@ -1,6 +1,6 @@
 {
   "generated": "2026-11-16",
-  "generated_at": "2026-11-16T00:46:55Z",
+  "generated_at": "2026-11-16T06:45:04Z",
   "reckoning": "111 products · 13 kits (role) · avg metadata completeness 4.7/5 · updated automatically.",
   "health": "ok",
   "health_detail": {
@@ -47,25 +47,44 @@
     "avg": 4.7,
     "pushes": 146,
     "byrepo": {
+      "neon-engine": 1,
+      "UniRep": 1,
+      "heavenzip": 1,
+      "audit": 1,
+      "The_Browser": 1,
+      "skills": 1,
+      "tessera": 1,
+      "drsamonline.github.io": 1,
+      "dashboard": 1,
+      "corpus-extendum": 1,
+      "NEO": 1,
+      "corpus-extendum-vault-01": 1,
+      "volumen": 1,
+      "nodus": 1,
+      "sorex": 1,
+      "forge": 1,
+      "All4ONE": 1,
+      "Matneo": 1,
+      "knowledge": 1,
       "lexora": 1
     }
   },
   "stats": {
     "metadata_completeness": {
-      "5": 96,
-      "3": 5,
+      "5": 97,
       "2": 6,
-      "4": 4
+      "3": 5,
+      "4": 3
     },
     "conformance": {
-      "5": 96,
-      "3": 5,
+      "5": 97,
       "2": 6,
-      "4": 4
+      "3": 5,
+      "4": 3
     },
     "categories": {
-      "Utilities": 15,
       "HTML Apps": 78,
+      "Utilities": 15,
       "Games": 6,
       "Homeopathy": 10,
       "Health Tools": 1,
@@ -111,7 +130,7 @@
     },
     {
       "date": "2026-11-12",
-      "count": 11
+      "count": 10
     },
     {
       "date": "2026-11-13",
@@ -119,15 +138,15 @@
     },
     {
       "date": "2026-11-14",
-      "count": 23
+      "count": 22
     },
     {
       "date": "2026-11-15",
-      "count": 74
+      "count": 57
     },
     {
       "date": "2026-11-16",
-      "count": 1
+      "count": 20
     }
   ],
   "attention": [
@@ -144,6 +163,13 @@
       "url": "https://github.com/drsamonline/web-kit/issues/3",
       "kind": "issue",
       "created": "2026-10-26T00:46:14Z"
+    },
+    {
+      "title": "fix(landing): generate the dark-theme button contrast rule instead of hand-editing",
+      "repo": "All4ONE",
+      "url": "https://github.com/drsamonline/All4ONE/pull/28",
+      "kind": "PR",
+      "created": "2026-11-16T00:47:10Z"
     },
     {
       "title": "fix(pages): a screenshot with a cache-buster is still a screenshot",
@@ -277,13 +303,6 @@
       "url": "https://github.com/drsamonline/app-lantern/pull/2",
       "kind": "PR",
       "created": "2026-11-13T06:54:55Z"
-    },
-    {
-      "title": "fix(ci): the landing page check counted zero of its four screenshots",
-      "repo": "ai-bridge",
-      "url": "https://github.com/drsamonline/ai-bridge/pull/6",
-      "kind": "PR",
-      "created": "2026-11-13T06:54:13Z"
     }
   ],
   "controls": [
@@ -477,124 +496,124 @@
   },
   "changes": [
     {
-      "type": "Delete",
-      "repo": "kosh",
-      "when": "2026-11-15T12:46:12Z",
+      "type": "PullRequest",
+      "repo": "audit",
+      "when": "2026-11-09T00:40:37Z",
+      "text": "closed: "
+    },
+    {
+      "type": "IssueComment",
+      "repo": "audit",
+      "when": "2026-11-16T06:38:25Z",
       "text": ""
     },
     {
-      "type": "Delete",
-      "repo": "ziptastic",
-      "when": "2026-11-15T12:46:03Z",
+      "type": "PullRequest",
+      "repo": "audit",
+      "when": "2026-11-04T12:38:26Z",
+      "text": "closed: "
+    },
+    {
+      "type": "IssueComment",
+      "repo": "audit",
+      "when": "2026-11-16T06:38:22Z",
       "text": ""
     },
     {
-      "type": "Push",
-      "repo": "HCS",
-      "when": "2026-11-15T12:45:07Z",
-      "text": "pushed to lpaq9-statement"
+      "type": "IssueComment",
+      "repo": "audit",
+      "when": "2026-11-16T06:38:18Z",
+      "text": ""
+    },
+    {
+      "type": "PullRequest",
+      "repo": "audit",
+      "when": "2026-10-31T07:35:49Z",
+      "text": "closed: "
     },
     {
       "type": "Push",
-      "repo": "kinemorph",
-      "when": "2026-11-13T20:17:22Z",
+      "repo": "UniRep",
+      "when": "2026-11-16T05:14:33Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "KILN",
-      "when": "2026-11-13T13:39:32Z",
+      "repo": "The_Browser",
+      "when": "2026-11-16T02:50:51Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "kinemorph",
-      "when": "2026-11-13T17:07:40Z",
+      "repo": "kinemotif",
+      "when": "2026-11-13T19:16:48Z",
       "text": "pushed to main"
     },
     {
-      "type": "Create",
-      "repo": "musicgen",
-      "when": "2026-11-14T18:47:15Z",
+      "type": "Watch",
+      "repo": "app-story-engine",
+      "when": "2026-11-16T05:56:19Z",
       "text": ""
     },
     {
-      "type": "Create",
-      "repo": "tokens-kit",
-      "when": "2026-11-14T18:46:09Z",
-      "text": ""
-    },
-    {
-      "type": "Push",
-      "repo": "KILN",
-      "when": "2026-11-13T16:40:35Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "sui",
-      "when": "2026-11-14T18:29:57Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Create",
-      "repo": "ziptastic",
-      "when": "2026-11-15T11:49:43Z",
+      "type": "Watch",
+      "repo": "holistic",
+      "when": "2026-11-16T05:54:54Z",
       "text": ""
     },
     {
       "type": "Push",
-      "repo": "tessera",
-      "when": "2026-11-14T18:22:40Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "sui",
-      "when": "2026-11-15T11:34:03Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Delete",
-      "repo": "ziptastic",
-      "when": "2026-11-14T18:11:58Z",
-      "text": ""
-    },
-    {
-      "type": "Create",
-      "repo": "kosh",
-      "when": "2026-11-15T11:29:19Z",
-      "text": ""
-    },
-    {
-      "type": "Create",
       "repo": "heavenzip",
-      "when": "2026-11-15T11:28:06Z",
+      "when": "2026-11-15T17:25:23Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Watch",
+      "repo": "app-opd-register",
+      "when": "2026-11-16T05:45:50Z",
+      "text": ""
+    },
+    {
+      "type": "Watch",
+      "repo": "sui",
+      "when": "2026-11-16T05:42:09Z",
+      "text": ""
+    },
+    {
+      "type": "Watch",
+      "repo": "tessera-app",
+      "when": "2026-11-16T05:42:06Z",
       "text": ""
     },
     {
       "type": "Push",
-      "repo": "dance-fight",
-      "when": "2026-11-14T18:06:23Z",
+      "repo": "The_Browser",
+      "when": "2026-11-15T17:20:13Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "NEO",
-      "when": "2026-11-14T18:05:17Z",
-      "text": "pushed to master"
-    },
-    {
-      "type": "Push",
-      "repo": "app-image-toolkit",
-      "when": "2026-11-14T18:05:15Z",
+      "repo": "The_Browser",
+      "when": "2026-11-15T17:20:04Z",
       "text": "pushed to main"
     },
     {
-      "type": "Push",
-      "repo": "aethelgard-games",
-      "when": "2026-11-14T18:05:03Z",
-      "text": "pushed to main"
+      "type": "Watch",
+      "repo": "TOOLWORKS",
+      "when": "2026-11-16T05:38:55Z",
+      "text": ""
+    },
+    {
+      "type": "Watch",
+      "repo": "sorex",
+      "when": "2026-11-16T05:24:07Z",
+      "text": ""
+    },
+    {
+      "type": "Watch",
+      "repo": "nodus",
+      "when": "2026-11-16T05:24:05Z",
+      "text": ""
     }
   ],
   "automation": [
@@ -664,8 +683,8 @@
       ],
       "schedule": "weekly (Tue) 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/43782360910",
-      "last_run": "2026-11-16T00:46:34Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/43818853317",
+      "last_run": "2026-11-16T06:44:39Z",
       "conclusion": "in_progress"
     },
     {
@@ -1062,9 +1081,9 @@
       ],
       "schedule": "weekly (Tue) 04:12 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/runs/43782360987",
-      "last_run": "2026-11-16T00:46:32Z",
-      "conclusion": "pending"
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/43818853655",
+      "last_run": "2026-11-16T06:44:39Z",
+      "conclusion": "in_progress"
     },
     {
       "repo": "Matneo",
@@ -1090,9 +1109,9 @@
       ],
       "schedule": "weekly (Tue) 04:22 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/runs/43782360978",
-      "last_run": "2026-11-16T00:46:34Z",
-      "conclusion": "in_progress"
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/43818853623",
+      "last_run": "2026-11-16T06:44:37Z",
+      "conclusion": "pending"
     },
     {
       "repo": "registry",
@@ -1119,8 +1138,8 @@
       ],
       "schedule": "weekly (Mon) 03:23 UTC",
       "repo_url": "https://github.com/drsamonline/skills",
-      "url": "https://github.com/drsamonline/skills/actions/runs/43219678392",
-      "last_run": "2026-11-12T12:38:08Z",
+      "url": "https://github.com/drsamonline/skills/actions/runs/43803110731",
+      "last_run": "2026-11-16T04:16:51Z",
       "conclusion": "success"
     }
   ],
@@ -1180,9 +1199,9 @@
   },
   "community": {
     "totals": {
-      "stars": 130,
+      "stars": 139,
       "forks": 1,
-      "watchers": 130
+      "watchers": 139
     },
     "repos": [
       {
@@ -1221,11 +1240,18 @@
         "html_url": "https://github.com/drsamonline/neon-runner"
       },
       {
-        "name": "lexora",
+        "name": "neon-engine",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
-        "html_url": "https://github.com/drsamonline/lexora"
+        "html_url": "https://github.com/drsamonline/neon-engine"
+      },
+      {
+        "name": "UniRep",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/UniRep"
       },
       {
         "name": "heavenzip",
@@ -1242,6 +1268,13 @@
         "html_url": "https://github.com/drsamonline/The_Browser"
       },
       {
+        "name": "tessera",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/tessera"
+      },
+      {
         "name": "corpus-extendum",
         "stars": 1,
         "forks": 0,
@@ -1249,11 +1282,53 @@
         "html_url": "https://github.com/drsamonline/corpus-extendum"
       },
       {
+        "name": "NEO",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/NEO"
+      },
+      {
         "name": "corpus-extendum-vault-01",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/corpus-extendum-vault-01"
+      },
+      {
+        "name": "volumen",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/volumen"
+      },
+      {
+        "name": "nodus",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/nodus"
+      },
+      {
+        "name": "sorex",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/sorex"
+      },
+      {
+        "name": "All4ONE",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/All4ONE"
+      },
+      {
+        "name": "lexora",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/lexora"
       },
       {
         "name": "dumps-4",
@@ -1333,6 +1408,13 @@
         "html_url": "https://github.com/drsamonline/compfactory"
       },
       {
+        "name": "TOOLWORKS",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/TOOLWORKS"
+      },
+      {
         "name": "KILN",
         "stars": 1,
         "forks": 0,
@@ -1359,13 +1441,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/unstoppable-mind-companion"
-      },
-      {
-        "name": "tessera",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/tessera"
       },
       {
         "name": "open-materia-medica",
@@ -1401,6 +1476,20 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/TTB"
+      },
+      {
+        "name": "tessera-app",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/tessera-app"
+      },
+      {
+        "name": "sui",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/sui"
       },
       {
         "name": "ntet-homoeopathy-cbt",
@@ -1452,6 +1541,13 @@
         "html_url": "https://github.com/drsamonline/canteen-lan"
       },
       {
+        "name": "app-opd-register",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/app-opd-register"
+      },
+      {
         "name": "app-lantern",
         "stars": 1,
         "forks": 0,
@@ -1464,13 +1560,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/SmartNotes"
-      },
-      {
-        "name": "All4ONE",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/All4ONE"
       },
       {
         "name": "lockhtml",
@@ -1522,13 +1611,6 @@
         "html_url": "https://github.com/drsamonline/Scrap-and-Gun"
       },
       {
-        "name": "UniRep",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/UniRep"
-      },
-      {
         "name": "app-encrypted-case-log",
         "stars": 1,
         "forks": 0,
@@ -1543,6 +1625,13 @@
         "html_url": "https://github.com/drsamonline/retro-strike"
       },
       {
+        "name": "holistic",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/holistic"
+      },
+      {
         "name": "app-thermals",
         "stars": 1,
         "forks": 0,
@@ -1555,13 +1644,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/app-panchang"
-      },
-      {
-        "name": "NEO",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/NEO"
       },
       {
         "name": "ambient-sound-studio",
@@ -1618,13 +1700,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/tokens-kit"
-      },
-      {
-        "name": "neon-engine",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/neon-engine"
       },
       {
         "name": "bmi-bmr-tdee-macros-fluid-calculator",
@@ -1800,6 +1875,13 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/weft8-hardware"
+      },
+      {
+        "name": "app-story-engine",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/app-story-engine"
       },
       {
         "name": "app-endpoints",
@@ -2140,38 +2222,38 @@
     "window": "14 days",
     "note": "Last 14 days — GitHub's retention window.",
     "repos": {
-      "lexora": {
-        "views": 1,
-        "uniques": 1,
-        "clones": 720,
-        "clone_uniques": 216,
+      "neon-engine": {
+        "views": 2,
+        "uniques": 2,
+        "clones": 233,
+        "clone_uniques": 89,
         "referrers": [
           {
-            "from": "drsamonline.github.io",
-            "count": 1
+            "from": "github.com",
+            "count": 2
           }
         ],
         "paths": [
           {
-            "path": "/drsamonline/lexora",
-            "count": 1,
+            "path": "/drsamonline/neon-engine",
+            "count": 2,
             "title": "Overview"
           }
         ]
+      },
+      "UniRep": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 137,
+        "clone_uniques": 57,
+        "referrers": [],
+        "paths": []
       },
       "heavenzip": {
         "views": 0,
         "uniques": 0,
         "clones": 506,
         "clone_uniques": 161,
-        "referrers": [],
-        "paths": []
-      },
-      "sorex": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 0,
-        "clone_uniques": 0,
         "referrers": [],
         "paths": []
       },
@@ -2208,6 +2290,50 @@
           }
         ]
       },
+      "tessera": {
+        "views": 2,
+        "uniques": 2,
+        "clones": 367,
+        "clone_uniques": 96,
+        "referrers": [],
+        "paths": [
+          {
+            "path": "/drsamonline/tessera",
+            "count": 2,
+            "title": "Overview"
+          }
+        ]
+      },
+      "corpus-extendum": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
+      "NEO": {
+        "views": 1,
+        "uniques": 1,
+        "clones": 299,
+        "clone_uniques": 88,
+        "referrers": [],
+        "paths": [
+          {
+            "path": "/drsamonline/NEO",
+            "count": 1,
+            "title": "Overview"
+          }
+        ]
+      },
+      "corpus-extendum-vault-01": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
       "volumen": {
         "views": 0,
         "uniques": 0,
@@ -2224,7 +2350,7 @@
         "referrers": [],
         "paths": []
       },
-      "corpus-extendum": {
+      "sorex": {
         "views": 0,
         "uniques": 0,
         "clones": 0,
@@ -2232,13 +2358,52 @@
         "referrers": [],
         "paths": []
       },
-      "corpus-extendum-vault-01": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 0,
-        "clone_uniques": 0,
-        "referrers": [],
-        "paths": []
+      "All4ONE": {
+        "views": 2,
+        "uniques": 2,
+        "clones": 371,
+        "clone_uniques": 119,
+        "referrers": [
+          {
+            "from": "drsamonline.github.io",
+            "count": 1
+          },
+          {
+            "from": "github.com",
+            "count": 1
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/All4ONE",
+            "count": 1,
+            "title": "Overview"
+          },
+          {
+            "path": "/drsamonline/All4ONE/blob/main/TOOL_CATALOG.md",
+            "count": 1,
+            "title": "/blob/main/TOOL_CATALOG.md"
+          }
+        ]
+      },
+      "lexora": {
+        "views": 1,
+        "uniques": 1,
+        "clones": 720,
+        "clone_uniques": 216,
+        "referrers": [
+          {
+            "from": "drsamonline.github.io",
+            "count": 1
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/lexora",
+            "count": 1,
+            "title": "Overview"
+          }
+        ]
       },
       "dumps-4": {
         "views": 0,
@@ -2474,20 +2639,6 @@
         "clone_uniques": 93,
         "referrers": [],
         "paths": []
-      },
-      "tessera": {
-        "views": 2,
-        "uniques": 2,
-        "clones": 367,
-        "clone_uniques": 96,
-        "referrers": [],
-        "paths": [
-          {
-            "path": "/drsamonline/tessera",
-            "count": 2,
-            "title": "Overview"
-          }
-        ]
       },
       "open-materia-medica": {
         "views": 9,
@@ -2752,34 +2903,6 @@
         "referrers": [],
         "paths": []
       },
-      "All4ONE": {
-        "views": 2,
-        "uniques": 2,
-        "clones": 371,
-        "clone_uniques": 119,
-        "referrers": [
-          {
-            "from": "drsamonline.github.io",
-            "count": 1
-          },
-          {
-            "from": "github.com",
-            "count": 1
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/All4ONE",
-            "count": 1,
-            "title": "Overview"
-          },
-          {
-            "path": "/drsamonline/All4ONE/blob/main/TOOL_CATALOG.md",
-            "count": 1,
-            "title": "/blob/main/TOOL_CATALOG.md"
-          }
-        ]
-      },
       "lockhtml": {
         "views": 5,
         "uniques": 3,
@@ -2935,14 +3058,6 @@
           }
         ]
       },
-      "UniRep": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 137,
-        "clone_uniques": 57,
-        "referrers": [],
-        "paths": []
-      },
       "app-encrypted-case-log": {
         "views": 0,
         "uniques": 0,
@@ -3063,20 +3178,6 @@
         "paths": [
           {
             "path": "/drsamonline/app-panchang",
-            "count": 1,
-            "title": "Overview"
-          }
-        ]
-      },
-      "NEO": {
-        "views": 1,
-        "uniques": 1,
-        "clones": 299,
-        "clone_uniques": 88,
-        "referrers": [],
-        "paths": [
-          {
-            "path": "/drsamonline/NEO",
             "count": 1,
             "title": "Overview"
           }
@@ -3222,25 +3323,6 @@
         "clone_uniques": 74,
         "referrers": [],
         "paths": []
-      },
-      "neon-engine": {
-        "views": 2,
-        "uniques": 2,
-        "clones": 233,
-        "clone_uniques": 89,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 2
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/neon-engine",
-            "count": 2,
-            "title": "Overview"
-          }
-        ]
       },
       "bmi-bmr-tdee-macros-fluid-calculator": {
         "views": 1,
@@ -4043,6 +4125,426 @@
   },
   "repos": [
     {
+      "name": "neon-engine",
+      "description": "A code-only open-world game engine for the browser — no assets, no dependencies; every texture, mesh and sound is generated at runtime.",
+      "pushed_at": "2026-11-16T06:42:30Z",
+      "homepage": "https://drsamonline.github.io/neon-engine/",
+      "html_url": "https://github.com/drsamonline/neon-engine",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "UniRep",
+      "description": "Universal index over the classical homoeopathic repertories — one search surface across several books. Policy documents here; the app runs on Replit.",
+      "pushed_at": "2026-11-16T06:41:15Z",
+      "homepage": "https://replit.com/@sohilmomin2000/Homeopathic-Digital-Repe",
+      "html_url": "https://github.com/drsamonline/UniRep",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "heavenzip",
+      "description": "The CHCE orchestrator — chains prebuilt compression binaries into one pipeline.",
+      "pushed_at": "2026-11-16T04:25:25Z",
+      "homepage": "https://drsamonline.github.io/heavenzip/",
+      "html_url": "https://github.com/drsamonline/heavenzip",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "The_Browser",
+      "description": "Aetheris — an experimental C++ browser engine on a Ladybird/SerenityOS-derived codebase, built to learn how rendering works. Not production-ready.",
+      "pushed_at": "2026-11-16T04:21:40Z",
+      "homepage": "https://drsamonline.github.io/The_Browser/",
+      "html_url": "https://github.com/drsamonline/The_Browser",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "tessera",
+      "description": "UNDER DEVELOPMENT — not finished, not released. Federation mesh + CRM core with a hash-chained ledger. 748 tests, 53 documents, 4 claims unverified.",
+      "pushed_at": "2026-11-16T04:13:01Z",
+      "homepage": "https://drsamonline.github.io/tessera/",
+      "html_url": "https://github.com/drsamonline/tessera",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "corpus-extendum",
+      "description": "The public domain, properly shelved — a free library of out-of-copyright books, readable in the page as PDF, EPUB or text. No accounts, no tracking, no paywall.",
+      "pushed_at": "2026-11-16T03:53:19Z",
+      "homepage": "https://drsamonline.github.io/corpus-extendum/",
+      "html_url": "https://github.com/drsamonline/corpus-extendum",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "NEO",
+      "description": "NOVA — a statically typed, compiled systems programming language whose compiler lowers to C, JavaScript, Rust and WebAssembly.",
+      "pushed_at": "2026-11-16T03:40:43Z",
+      "homepage": "https://drsamonline.github.io/NEO/",
+      "html_url": "https://github.com/drsamonline/NEO",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "corpus-extendum-vault-01",
+      "description": "Book storage for Corpus Extendum — the public-domain library. Ten books, PDF + EPUB + text + records. No website here on purpose: Pages caps a site at 1 GB, and this vault is built to reach 2.5 GB.",
+      "pushed_at": "2026-11-16T02:34:59Z",
+      "homepage": "https://drsamonline.github.io/corpus-extendum-vault-01/",
+      "html_url": "https://github.com/drsamonline/corpus-extendum-vault-01",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "2/5",
+      "status_tone": "bad",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "volumen",
+      "description": "The web as text, at the speed of reading. Fork of Lynx with deterministic markdown and JSON dumps for automation. Tier 3 of the Aetheris browser family.",
+      "pushed_at": "2026-11-16T01:57:31Z",
+      "homepage": "https://drsamonline.github.io/volumen/",
+      "html_url": "https://github.com/drsamonline/volumen",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "3/5",
+      "status_tone": "warn",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "nodus",
+      "description": "One browser core, many faces. Fork of NetSurf rebuilt as a library with framebuffer, GTK, headless and text frontends. Tier 1 of the Aetheris browser family.",
+      "pushed_at": "2026-11-16T01:57:29Z",
+      "homepage": "https://drsamonline.github.io/nodus/",
+      "html_url": "https://github.com/drsamonline/nodus",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "3/5",
+      "status_tone": "warn",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "sorex",
+      "description": "A featherweight FLTK browser for machines the modern web forgot. Fork of Dillo, hardened for speed, scriptable from the shell. Tier 2 of the Aetheris browser family.",
+      "pushed_at": "2026-11-16T01:57:25Z",
+      "homepage": "https://drsamonline.github.io/sorex/",
+      "html_url": "https://github.com/drsamonline/sorex",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "3/5",
+      "status_tone": "warn",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "All4ONE",
+      "description": "403 working tools in one portable Windows binary — file and folder work, encoding and hashing, images, PDFs, media, documents, network diagnostics, system maintenance, security checks and generators. No installer, no registry writes, no telemetry.",
+      "pushed_at": "2026-11-16T00:47:08Z",
+      "homepage": "https://drsamonline.github.io/All4ONE/",
+      "html_url": "https://github.com/drsamonline/All4ONE",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
       "name": "lexora",
       "description": "LEXORA — Layered EXact-text Repository and Adaptive compression architecture: canonicalise text, then compress it with guaranteed byte-exact recovery.",
       "pushed_at": "2026-11-16T00:42:48Z",
@@ -4075,251 +4577,6 @@
         0,
         1,
         1
-      ]
-    },
-    {
-      "name": "heavenzip",
-      "description": "The CHCE orchestrator — chains prebuilt compression binaries into one pipeline.",
-      "pushed_at": "2026-11-15T19:56:10Z",
-      "homepage": "https://drsamonline.github.io/heavenzip/",
-      "html_url": "https://github.com/drsamonline/heavenzip",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        1,
-        0,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0
-      ]
-    },
-    {
-      "name": "sorex",
-      "description": "A featherweight FLTK browser for machines the modern web forgot. Fork of Dillo, hardened for speed, scriptable from the shell. Tier 2 of the Aetheris browser family.",
-      "pushed_at": "2026-11-15T19:52:50Z",
-      "homepage": "https://drsamonline.github.io/sorex/",
-      "html_url": "https://github.com/drsamonline/sorex",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "3/5",
-      "status_tone": "warn",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "The_Browser",
-      "description": "Aetheris — an experimental C++ browser engine on a Ladybird/SerenityOS-derived codebase, built to learn how rendering works. Not production-ready.",
-      "pushed_at": "2026-11-15T19:52:24Z",
-      "homepage": "https://drsamonline.github.io/The_Browser/",
-      "html_url": "https://github.com/drsamonline/The_Browser",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1,
-        1,
-        1,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        1,
-        1,
-        0
-      ]
-    },
-    {
-      "name": "volumen",
-      "description": "The web as text, at the speed of reading. Fork of Lynx with deterministic markdown and JSON dumps for automation. Tier 3 of the Aetheris browser family.",
-      "pushed_at": "2026-11-15T19:52:14Z",
-      "homepage": "https://drsamonline.github.io/volumen/",
-      "html_url": "https://github.com/drsamonline/volumen",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "3/5",
-      "status_tone": "warn",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "nodus",
-      "description": "One browser core, many faces. Fork of NetSurf rebuilt as a library with framebuffer, GTK, headless and text frontends. Tier 1 of the Aetheris browser family.",
-      "pushed_at": "2026-11-15T19:52:05Z",
-      "homepage": "https://drsamonline.github.io/nodus/",
-      "html_url": "https://github.com/drsamonline/nodus",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "3/5",
-      "status_tone": "warn",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "corpus-extendum",
-      "description": "The public domain, properly shelved — a free library of out-of-copyright books, readable in the page as PDF, EPUB or text. No accounts, no tracking, no paywall.",
-      "pushed_at": "2026-11-15T19:51:29Z",
-      "homepage": "https://drsamonline.github.io/corpus-extendum/",
-      "html_url": "https://github.com/drsamonline/corpus-extendum",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "corpus-extendum-vault-01",
-      "description": "Book storage for Corpus Extendum — the public-domain library. Ten books, PDF + EPUB + text + records. No website here on purpose: Pages caps a site at 1 GB, and this vault is built to reach 2.5 GB.",
-      "pushed_at": "2026-11-15T19:34:56Z",
-      "homepage": "https://drsamonline.github.io/corpus-extendum-vault-01/",
-      "html_url": "https://github.com/drsamonline/corpus-extendum-vault-01",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "2/5",
-      "status_tone": "bad",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
       ]
     },
     {
@@ -4843,41 +5100,6 @@
         1,
         0,
         0,
-        1,
-        0
-      ]
-    },
-    {
-      "name": "tessera",
-      "description": "UNDER DEVELOPMENT — not finished, not released. Federation mesh + CRM core with a hash-chained ledger. 748 tests, 53 documents, 4 claims unverified.",
-      "pushed_at": "2026-11-15T13:44:45Z",
-      "homepage": "https://drsamonline.github.io/tessera/",
-      "html_url": "https://github.com/drsamonline/tessera",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
         1,
         0
       ]
@@ -5478,41 +5700,6 @@
       ]
     },
     {
-      "name": "All4ONE",
-      "description": "403 working tools in one portable Windows binary — file and folder work, encoding and hashing, images, PDFs, media, documents, network diagnostics, system maintenance, security checks and generators. No installer, no registry writes, no telemetry.",
-      "pushed_at": "2026-11-15T10:30:43Z",
-      "homepage": "https://drsamonline.github.io/All4ONE/",
-      "html_url": "https://github.com/drsamonline/All4ONE",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        1,
-        0,
-        1,
-        1,
-        1,
-        0,
-        1,
-        0,
-        1,
-        0
-      ]
-    },
-    {
       "name": "lockhtml",
       "description": "PIN-protect or one-time-view any HTML file with AES-256-GCM — a cross-platform CLI plus a browser GUI that runs on any OS.",
       "pushed_at": "2026-11-15T09:51:56Z",
@@ -5758,41 +5945,6 @@
       ]
     },
     {
-      "name": "UniRep",
-      "description": "Universal index over the classical homoeopathic repertories — one search surface across several books. Policy documents here; the app runs on Replit.",
-      "pushed_at": "2026-11-15T09:05:02Z",
-      "homepage": "https://replit.com/@sohilmomin2000/Homeopathic-Digital-Repe",
-      "html_url": "https://github.com/drsamonline/UniRep",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "4/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        1,
-        1,
-        1,
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
-    },
-    {
       "name": "app-encrypted-case-log",
       "description": "Per-patient clinical notes encrypted on the device with AES-256-GCM — offline, no account, no server.",
       "pushed_at": "2026-11-15T07:44:21Z",
@@ -5998,41 +6150,6 @@
         1,
         0,
         0,
-        1,
-        0
-      ]
-    },
-    {
-      "name": "NEO",
-      "description": "NOVA — a statically typed, compiled systems programming language whose compiler lowers to C, JavaScript, Rust and WebAssembly.",
-      "pushed_at": "2026-11-15T07:35:09Z",
-      "homepage": "https://drsamonline.github.io/NEO/",
-      "html_url": "https://github.com/drsamonline/NEO",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1,
-        0,
-        0,
-        1,
-        1,
-        1,
-        0,
-        1,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1,
-        0,
-        0,
-        1,
         1,
         0
       ]
@@ -6314,41 +6431,6 @@
         0,
         1,
         1,
-        0
-      ]
-    },
-    {
-      "name": "neon-engine",
-      "description": "A code-only open-world game engine for the browser — no assets, no dependencies; every texture, mesh and sound is generated at runtime.",
-      "pushed_at": "2026-11-14T18:41:28Z",
-      "homepage": "https://drsamonline.github.io/neon-engine/",
-      "html_url": "https://github.com/drsamonline/neon-engine",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        1,
-        1,
-        1,
-        0,
-        1,
-        1,
-        0,
         0
       ]
     },
@@ -9558,11 +9640,30 @@
       "avg": 4.7,
       "pushes": 146,
       "byrepo": {
+        "neon-engine": 1,
+        "UniRep": 1,
+        "heavenzip": 1,
+        "audit": 1,
+        "The_Browser": 1,
+        "skills": 1,
+        "tessera": 1,
+        "drsamonline.github.io": 1,
+        "dashboard": 1,
+        "corpus-extendum": 1,
+        "NEO": 1,
+        "corpus-extendum-vault-01": 1,
+        "volumen": 1,
+        "nodus": 1,
+        "sorex": 1,
+        "forge": 1,
+        "All4ONE": 1,
+        "Matneo": 1,
+        "knowledge": 1,
         "lexora": 1
       },
-      "stars": 130,
+      "stars": 139,
       "forks": 1,
-      "watchers": 130
+      "watchers": 139
     }
   ],
   "degraded": []

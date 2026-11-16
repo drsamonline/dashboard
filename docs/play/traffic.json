@@ -4,38 +4,38 @@
   "window": "14 days",
   "note": "Last 14 days — GitHub's retention window.",
   "repos": {
-    "lexora": {
-      "views": 1,
-      "uniques": 1,
-      "clones": 720,
-      "clone_uniques": 216,
+    "neon-engine": {
+      "views": 2,
+      "uniques": 2,
+      "clones": 233,
+      "clone_uniques": 89,
       "referrers": [
         {
-          "from": "drsamonline.github.io",
-          "count": 1
+          "from": "github.com",
+          "count": 2
         }
       ],
       "paths": [
         {
-          "path": "/drsamonline/lexora",
-          "count": 1,
+          "path": "/drsamonline/neon-engine",
+          "count": 2,
           "title": "Overview"
         }
       ]
+    },
+    "UniRep": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 137,
+      "clone_uniques": 57,
+      "referrers": [],
+      "paths": []
     },
     "heavenzip": {
       "views": 0,
       "uniques": 0,
       "clones": 506,
       "clone_uniques": 161,
-      "referrers": [],
-      "paths": []
-    },
-    "sorex": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 0,
-      "clone_uniques": 0,
       "referrers": [],
       "paths": []
     },
@@ -72,6 +72,50 @@
         }
       ]
     },
+    "tessera": {
+      "views": 2,
+      "uniques": 2,
+      "clones": 367,
+      "clone_uniques": 96,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/drsamonline/tessera",
+          "count": 2,
+          "title": "Overview"
+        }
+      ]
+    },
+    "corpus-extendum": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 0,
+      "clone_uniques": 0,
+      "referrers": [],
+      "paths": []
+    },
+    "NEO": {
+      "views": 1,
+      "uniques": 1,
+      "clones": 299,
+      "clone_uniques": 88,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/drsamonline/NEO",
+          "count": 1,
+          "title": "Overview"
+        }
+      ]
+    },
+    "corpus-extendum-vault-01": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 0,
+      "clone_uniques": 0,
+      "referrers": [],
+      "paths": []
+    },
     "volumen": {
       "views": 0,
       "uniques": 0,
@@ -88,7 +132,7 @@
       "referrers": [],
       "paths": []
     },
-    "corpus-extendum": {
+    "sorex": {
       "views": 0,
       "uniques": 0,
       "clones": 0,
@@ -96,13 +140,52 @@
       "referrers": [],
       "paths": []
     },
-    "corpus-extendum-vault-01": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 0,
-      "clone_uniques": 0,
-      "referrers": [],
-      "paths": []
+    "All4ONE": {
+      "views": 2,
+      "uniques": 2,
+      "clones": 371,
+      "clone_uniques": 119,
+      "referrers": [
+        {
+          "from": "drsamonline.github.io",
+          "count": 1
+        },
+        {
+          "from": "github.com",
+          "count": 1
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/All4ONE",
+          "count": 1,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/All4ONE/blob/main/TOOL_CATALOG.md",
+          "count": 1,
+          "title": "/blob/main/TOOL_CATALOG.md"
+        }
+      ]
+    },
+    "lexora": {
+      "views": 1,
+      "uniques": 1,
+      "clones": 720,
+      "clone_uniques": 216,
+      "referrers": [
+        {
+          "from": "drsamonline.github.io",
+          "count": 1
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/lexora",
+          "count": 1,
+          "title": "Overview"
+        }
+      ]
     },
     "dumps-4": {
       "views": 0,
@@ -338,20 +421,6 @@
       "clone_uniques": 93,
       "referrers": [],
       "paths": []
-    },
-    "tessera": {
-      "views": 2,
-      "uniques": 2,
-      "clones": 367,
-      "clone_uniques": 96,
-      "referrers": [],
-      "paths": [
-        {
-          "path": "/drsamonline/tessera",
-          "count": 2,
-          "title": "Overview"
-        }
-      ]
     },
     "open-materia-medica": {
       "views": 9,
@@ -616,34 +685,6 @@
       "referrers": [],
       "paths": []
     },
-    "All4ONE": {
-      "views": 2,
-      "uniques": 2,
-      "clones": 371,
-      "clone_uniques": 119,
-      "referrers": [
-        {
-          "from": "drsamonline.github.io",
-          "count": 1
-        },
-        {
-          "from": "github.com",
-          "count": 1
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/All4ONE",
-          "count": 1,
-          "title": "Overview"
-        },
-        {
-          "path": "/drsamonline/All4ONE/blob/main/TOOL_CATALOG.md",
-          "count": 1,
-          "title": "/blob/main/TOOL_CATALOG.md"
-        }
-      ]
-    },
     "lockhtml": {
       "views": 5,
       "uniques": 3,
@@ -799,14 +840,6 @@
         }
       ]
     },
-    "UniRep": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 137,
-      "clone_uniques": 57,
-      "referrers": [],
-      "paths": []
-    },
     "app-encrypted-case-log": {
       "views": 0,
       "uniques": 0,
@@ -927,20 +960,6 @@
       "paths": [
         {
           "path": "/drsamonline/app-panchang",
-          "count": 1,
-          "title": "Overview"
-        }
-      ]
-    },
-    "NEO": {
-      "views": 1,
-      "uniques": 1,
-      "clones": 299,
-      "clone_uniques": 88,
-      "referrers": [],
-      "paths": [
-        {
-          "path": "/drsamonline/NEO",
           "count": 1,
           "title": "Overview"
         }
@@ -1086,25 +1105,6 @@
       "clone_uniques": 74,
       "referrers": [],
       "paths": []
-    },
-    "neon-engine": {
-      "views": 2,
-      "uniques": 2,
-      "clones": 233,
-      "clone_uniques": 89,
-      "referrers": [
-        {
-          "from": "github.com",
-          "count": 2
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/neon-engine",
-          "count": 2,
-          "title": "Overview"
-        }
-      ]
     },
     "bmi-bmr-tdee-macros-fluid-calculator": {
       "views": 1,
