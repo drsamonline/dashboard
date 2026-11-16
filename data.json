@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-15",
-  "generated_at": "2026-11-15T18:44:07Z",
-  "reckoning": "106 products · 13 kits (role) · avg metadata completeness 4.8/5 · updated automatically.",
+  "generated": "2026-11-16",
+  "generated_at": "2026-11-16T00:46:55Z",
+  "reckoning": "111 products · 13 kits (role) · avg metadata completeness 4.7/5 · updated automatically.",
   "health": "ok",
   "health_detail": {
     "state": "ok",
@@ -15,7 +15,7 @@
   "cards": [
     {
       "title": "Products",
-      "value": "106",
+      "value": "111",
       "tone": ""
     },
     {
@@ -25,7 +25,7 @@
     },
     {
       "title": "Metadata completeness",
-      "value": "4.8/5",
+      "value": "4.7/5",
       "tone": "ok"
     },
     {
@@ -40,112 +40,39 @@
     }
   ],
   "summary": {
-    "products": 106,
+    "products": 111,
     "kits": 13,
     "kits_name_matched": 25,
     "kits_definition": "role",
-    "avg": 4.8,
-    "pushes": 142,
+    "avg": 4.7,
+    "pushes": 146,
     "byrepo": {
-      "idle-city-ages-of-growth": 1,
-      "heavenzip": 1,
-      "The_Browser": 1,
-      "pico": 1,
-      "astro-kit": 1,
-      "app-builder": 1,
-      "ai-bridge": 1,
-      "ziptastic": 1,
-      "whispering-body-first-aid": 1,
-      "weft8-kit": 1,
-      "Matneo": 1,
-      "chalk-lan": 1,
-      "HCS": 1,
-      "forge": 1,
-      "audit": 1,
-      "lexora": 1,
-      "kosh": 1,
-      "compfactory": 1,
-      "TOOLWORKS": 1,
-      "KILN": 1,
-      "kinemotif": 1,
-      "corefit-md": 1,
-      "unstoppable-mind-companion": 1,
-      "tessera": 1,
-      "dashboard": 1,
-      "open-materia-medica": 1,
-      "conqueror-os": 1,
-      "helioprism": 1,
-      "lumen": 1,
-      "drsamonline.github.io": 1,
-      "TTB": 1,
-      "knowledge": 1,
-      "tessera-app": 1,
-      "sui": 1,
-      "ntet-homoeopathy-cbt": 1,
-      "blinkcode-ai": 1,
-      "app-weft-puzzles": 1,
-      "app-companion-forge": 1,
-      "CLDR": 1,
-      "BLINKTRANSFER": 1,
-      "drsamonline": 1,
-      "canteen-lan": 1,
-      "app-opd-register": 1,
-      "app-lantern": 1,
-      "SmartNotes": 1,
-      "All4ONE": 1,
-      "lockhtml": 1,
-      "neonboom": 1,
-      "app-jacquard": 1,
-      "repertory-reader": 1,
-      "eon-commando": 1,
-      "app-organon-reader": 1,
-      "Scrap-and-Gun": 1,
-      "UniRep": 1,
-      "dumps-4": 1,
-      "app-encrypted-case-log": 1,
-      "retro-strike": 1,
-      "holistic": 1,
-      "app-thermals": 1,
-      "app-poets-studio": 1,
-      "app-panchang": 1,
-      "NEO": 1,
-      "ambient-sound-studio": 1,
-      "base-bench": 1,
-      "kitbox": 1,
-      "boericke-repertory": 1,
-      "app-clip-loom": 1,
-      "kinemorph": 1,
-      "musicgen": 1,
-      "HMS": 1
+      "lexora": 1
     }
   },
   "stats": {
     "metadata_completeness": {
-      "5": 95,
-      "4": 4,
-      "2": 5,
-      "3": 2
+      "5": 96,
+      "3": 5,
+      "2": 6,
+      "4": 4
     },
     "conformance": {
-      "5": 95,
-      "4": 4,
-      "2": 5,
-      "3": 2
+      "5": 96,
+      "3": 5,
+      "2": 6,
+      "4": 4
     },
     "categories": {
-      "Games": 6,
-      "HTML Apps": 73,
       "Utilities": 15,
+      "HTML Apps": 78,
+      "Games": 6,
       "Homeopathy": 10,
       "Health Tools": 1,
       "Data": 1
     }
   },
   "activity": [
-    {
-      "date": "2026-11-02",
-      "count": 1
-    },
     {
       "date": "2026-11-03",
       "count": 1
@@ -196,7 +123,11 @@
     },
     {
       "date": "2026-11-15",
-      "count": 70
+      "count": 74
+    },
+    {
+      "date": "2026-11-16",
+      "count": 1
     }
   ],
   "attention": [
@@ -215,18 +146,11 @@
       "created": "2026-10-26T00:46:14Z"
     },
     {
-      "title": "feat(release): bundle every tool, with its source and an honest licence note",
-      "repo": "heavenzip",
-      "url": "https://github.com/drsamonline/heavenzip/pull/31",
+      "title": "fix(pages): a screenshot with a cache-buster is still a screenshot",
+      "repo": "ai-bridge",
+      "url": "https://github.com/drsamonline/ai-bridge/pull/7",
       "kind": "PR",
-      "created": "2026-11-15T18:42:35Z"
-    },
-    {
-      "title": "feat(autotune): three winners, not one — smallest, fastest, balanced",
-      "repo": "heavenzip",
-      "url": "https://github.com/drsamonline/heavenzip/pull/30",
-      "kind": "PR",
-      "created": "2026-11-15T18:42:05Z"
+      "created": "2026-11-15T18:44:38Z"
     },
     {
       "title": "fix(demo): rebuild the committed play page — CI red since 07:25Z",
@@ -353,6 +277,13 @@
       "url": "https://github.com/drsamonline/app-lantern/pull/2",
       "kind": "PR",
       "created": "2026-11-13T06:54:55Z"
+    },
+    {
+      "title": "fix(ci): the landing page check counted zero of its four screenshots",
+      "repo": "ai-bridge",
+      "url": "https://github.com/drsamonline/ai-bridge/pull/6",
+      "kind": "PR",
+      "created": "2026-11-13T06:54:13Z"
     }
   ],
   "controls": [
@@ -546,124 +477,124 @@
   },
   "changes": [
     {
-      "type": "PullRequest",
-      "repo": "heavenzip",
-      "when": "2026-11-15T18:42:35Z",
-      "text": "opened: "
+      "type": "Delete",
+      "repo": "kosh",
+      "when": "2026-11-15T12:46:12Z",
+      "text": ""
     },
     {
-      "type": "PullRequest",
-      "repo": "heavenzip",
-      "when": "2026-11-15T18:42:05Z",
-      "text": "opened: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "heavenzip",
-      "when": "2026-11-15T18:38:15Z",
-      "text": "merged: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "heavenzip",
-      "when": "2026-11-15T18:33:52Z",
-      "text": "opened: "
+      "type": "Delete",
+      "repo": "ziptastic",
+      "when": "2026-11-15T12:46:03Z",
+      "text": ""
     },
     {
       "type": "Push",
-      "repo": "tessera-app",
-      "when": "2026-11-14T14:37:23Z",
-      "text": "pushed to main"
+      "repo": "HCS",
+      "when": "2026-11-15T12:45:07Z",
+      "text": "pushed to lpaq9-statement"
     },
     {
       "type": "Push",
-      "repo": "heavenzip",
-      "when": "2026-11-15T17:06:49Z",
+      "repo": "kinemorph",
+      "when": "2026-11-13T20:17:22Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "KILN",
-      "when": "2026-11-13T13:03:50Z",
+      "when": "2026-11-13T13:39:32Z",
       "text": "pushed to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "heavenzip",
-      "when": "2026-11-15T17:55:17Z",
-      "text": "merged: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "heavenzip",
-      "when": "2026-11-15T17:51:45Z",
-      "text": "opened: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "heavenzip",
-      "when": "2026-11-15T17:44:22Z",
-      "text": "merged: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "heavenzip",
-      "when": "2026-11-15T17:41:15Z",
-      "text": "opened: "
     },
     {
       "type": "Push",
-      "repo": "The_Browser",
-      "when": "2026-11-15T15:19:03Z",
+      "repo": "kinemorph",
+      "when": "2026-11-13T17:07:40Z",
       "text": "pushed to main"
     },
     {
-      "type": "PullRequest",
-      "repo": "heavenzip",
-      "when": "2026-11-15T17:35:03Z",
-      "text": "merged: "
+      "type": "Create",
+      "repo": "musicgen",
+      "when": "2026-11-14T18:47:15Z",
+      "text": ""
+    },
+    {
+      "type": "Create",
+      "repo": "tokens-kit",
+      "when": "2026-11-14T18:46:09Z",
+      "text": ""
     },
     {
       "type": "Push",
       "repo": "KILN",
-      "when": "2026-11-13T11:31:56Z",
+      "when": "2026-11-13T16:40:35Z",
       "text": "pushed to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "heavenzip",
-      "when": "2026-11-15T17:31:41Z",
-      "text": "opened: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "heavenzip",
-      "when": "2026-11-15T17:25:22Z",
-      "text": "merged: "
     },
     {
       "type": "Push",
-      "repo": "kinemotif",
-      "when": "2026-11-13T12:51:35Z",
+      "repo": "sui",
+      "when": "2026-11-14T18:29:57Z",
       "text": "pushed to main"
     },
     {
-      "type": "PullRequest",
-      "repo": "heavenzip",
-      "when": "2026-11-15T17:22:02Z",
-      "text": "opened: "
+      "type": "Create",
+      "repo": "ziptastic",
+      "when": "2026-11-15T11:49:43Z",
+      "text": ""
     },
     {
-      "type": "PullRequest",
-      "repo": "heavenzip",
-      "when": "2026-11-15T17:16:17Z",
-      "text": "merged: "
+      "type": "Push",
+      "repo": "tessera",
+      "when": "2026-11-14T18:22:40Z",
+      "text": "pushed to main"
     },
     {
-      "type": "PullRequest",
+      "type": "Push",
+      "repo": "sui",
+      "when": "2026-11-15T11:34:03Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Delete",
+      "repo": "ziptastic",
+      "when": "2026-11-14T18:11:58Z",
+      "text": ""
+    },
+    {
+      "type": "Create",
+      "repo": "kosh",
+      "when": "2026-11-15T11:29:19Z",
+      "text": ""
+    },
+    {
+      "type": "Create",
       "repo": "heavenzip",
-      "when": "2026-11-15T17:12:48Z",
-      "text": "opened: "
+      "when": "2026-11-15T11:28:06Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
+      "repo": "dance-fight",
+      "when": "2026-11-14T18:06:23Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "NEO",
+      "when": "2026-11-14T18:05:17Z",
+      "text": "pushed to master"
+    },
+    {
+      "type": "Push",
+      "repo": "app-image-toolkit",
+      "when": "2026-11-14T18:05:15Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "aethelgard-games",
+      "when": "2026-11-14T18:05:03Z",
+      "text": "pushed to main"
     }
   ],
   "automation": [
@@ -733,8 +664,8 @@
       ],
       "schedule": "weekly (Tue) 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/43748364410",
-      "last_run": "2026-11-15T18:43:41Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/43782360910",
+      "last_run": "2026-11-16T00:46:34Z",
       "conclusion": "in_progress"
     },
     {
@@ -1131,9 +1062,9 @@
       ],
       "schedule": "weekly (Tue) 04:12 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/runs/43748364568",
-      "last_run": "2026-11-15T18:43:42Z",
-      "conclusion": "in_progress"
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/43782360987",
+      "last_run": "2026-11-16T00:46:32Z",
+      "conclusion": "pending"
     },
     {
       "repo": "Matneo",
@@ -1159,9 +1090,9 @@
       ],
       "schedule": "weekly (Tue) 04:22 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/runs/43715185407",
-      "last_run": "2026-11-15T12:42:34Z",
-      "conclusion": "success"
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/43782360978",
+      "last_run": "2026-11-16T00:46:34Z",
+      "conclusion": "in_progress"
     },
     {
       "repo": "registry",
@@ -1207,7 +1138,7 @@
       "link": "https://github.com/drsamonline/forge"
     },
     {
-      "what": "Apps live — 131 products, 131 of them pushed in the last 30 days",
+      "what": "Apps live — 136 products, 136 of them pushed in the last 30 days",
       "state": "done",
       "link": "https://drsamonline.github.io/"
     },
@@ -1228,8 +1159,8 @@
     "built_definition": "name matching: a live repository whose name matches the idea's slug. NOT the owner's definition of built (release + landing page + live demo), which the registry measures.",
     "name_matched": 13,
     "unbuilt": 140,
-    "live_products": 106,
-    "live_not_planned": 93,
+    "live_products": 111,
+    "live_not_planned": 98,
     "plan_generated": "2026-10-23",
     "link": "https://github.com/drsamonline/dashboard/blob/main/plan.json"
   },
@@ -1249,9 +1180,9 @@
   },
   "community": {
     "totals": {
-      "stars": 128,
+      "stars": 130,
       "forks": 1,
-      "watchers": 128
+      "watchers": 130
     },
     "repos": [
       {
@@ -1290,11 +1221,11 @@
         "html_url": "https://github.com/drsamonline/neon-runner"
       },
       {
-        "name": "idle-city-ages-of-growth",
+        "name": "lexora",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
-        "html_url": "https://github.com/drsamonline/idle-city-ages-of-growth"
+        "html_url": "https://github.com/drsamonline/lexora"
       },
       {
         "name": "heavenzip",
@@ -1311,11 +1242,32 @@
         "html_url": "https://github.com/drsamonline/The_Browser"
       },
       {
-        "name": "astro-kit",
+        "name": "corpus-extendum",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
-        "html_url": "https://github.com/drsamonline/astro-kit"
+        "html_url": "https://github.com/drsamonline/corpus-extendum"
+      },
+      {
+        "name": "corpus-extendum-vault-01",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/corpus-extendum-vault-01"
+      },
+      {
+        "name": "dumps-4",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/dumps-4"
+      },
+      {
+        "name": "idle-city-ages-of-growth",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/idle-city-ages-of-growth"
       },
       {
         "name": "ai-bridge",
@@ -1323,6 +1275,13 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/ai-bridge"
+      },
+      {
+        "name": "astro-kit",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/astro-kit"
       },
       {
         "name": "ziptastic",
@@ -1358,13 +1317,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/HCS"
-      },
-      {
-        "name": "lexora",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/lexora"
       },
       {
         "name": "kosh",
@@ -1575,13 +1527,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/UniRep"
-      },
-      {
-        "name": "dumps-4",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/dumps-4"
       },
       {
         "name": "app-encrypted-case-log",
@@ -2195,21 +2140,21 @@
     "window": "14 days",
     "note": "Last 14 days — GitHub's retention window.",
     "repos": {
-      "idle-city-ages-of-growth": {
-        "views": 7,
-        "uniques": 7,
-        "clones": 788,
-        "clone_uniques": 172,
+      "lexora": {
+        "views": 1,
+        "uniques": 1,
+        "clones": 720,
+        "clone_uniques": 216,
         "referrers": [
           {
-            "from": "github.com",
-            "count": 6
+            "from": "drsamonline.github.io",
+            "count": 1
           }
         ],
         "paths": [
           {
-            "path": "/drsamonline/idle-city-ages-of-growth",
-            "count": 7,
+            "path": "/drsamonline/lexora",
+            "count": 1,
             "title": "Overview"
           }
         ]
@@ -2219,6 +2164,14 @@
         "uniques": 0,
         "clones": 506,
         "clone_uniques": 161,
+        "referrers": [],
+        "paths": []
+      },
+      "sorex": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
         "referrers": [],
         "paths": []
       },
@@ -2255,21 +2208,64 @@
           }
         ]
       },
-      "pico": {
+      "volumen": {
         "views": 0,
         "uniques": 0,
-        "clones": 385,
-        "clone_uniques": 59,
+        "clones": 0,
+        "clone_uniques": 0,
         "referrers": [],
         "paths": []
       },
-      "astro-kit": {
+      "nodus": {
         "views": 0,
         "uniques": 0,
-        "clones": 303,
-        "clone_uniques": 110,
+        "clones": 0,
+        "clone_uniques": 0,
         "referrers": [],
         "paths": []
+      },
+      "corpus-extendum": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
+      "corpus-extendum-vault-01": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
+      "dumps-4": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 16,
+        "clone_uniques": 1,
+        "referrers": [],
+        "paths": []
+      },
+      "idle-city-ages-of-growth": {
+        "views": 7,
+        "uniques": 7,
+        "clones": 788,
+        "clone_uniques": 172,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 6
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/idle-city-ages-of-growth",
+            "count": 7,
+            "title": "Overview"
+          }
+        ]
       },
       "ai-bridge": {
         "views": 11,
@@ -2309,6 +2305,22 @@
             "title": "/actions/runs/41780308419/job/126410134911"
           }
         ]
+      },
+      "pico": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 385,
+        "clone_uniques": 59,
+        "referrers": [],
+        "paths": []
+      },
+      "astro-kit": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 303,
+        "clone_uniques": 110,
+        "referrers": [],
+        "paths": []
       },
       "ziptastic": {
         "views": 19,
@@ -2391,25 +2403,6 @@
         "paths": [
           {
             "path": "/drsamonline/HCS",
-            "count": 1,
-            "title": "Overview"
-          }
-        ]
-      },
-      "lexora": {
-        "views": 1,
-        "uniques": 1,
-        "clones": 720,
-        "clone_uniques": 216,
-        "referrers": [
-          {
-            "from": "drsamonline.github.io",
-            "count": 1
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/lexora",
             "count": 1,
             "title": "Overview"
           }
@@ -2947,14 +2940,6 @@
         "uniques": 0,
         "clones": 137,
         "clone_uniques": 57,
-        "referrers": [],
-        "paths": []
-      },
-      "dumps-4": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 16,
-        "clone_uniques": 1,
         "referrers": [],
         "paths": []
       },
@@ -4058,13 +4043,13 @@
   },
   "repos": [
     {
-      "name": "idle-city-ages-of-growth",
-      "description": "A single-file idle city-builder that grows from a Stone Age village into a Fusion Age world-city.",
-      "pushed_at": "2026-11-15T18:43:15Z",
-      "homepage": "https://drsamonline.github.io/idle-city-ages-of-growth/",
-      "html_url": "https://github.com/drsamonline/idle-city-ages-of-growth",
+      "name": "lexora",
+      "description": "LEXORA — Layered EXact-text Repository and Adaptive compression architecture: canonicalise text, then compress it with guaranteed byte-exact recovery.",
+      "pushed_at": "2026-11-16T00:42:48Z",
+      "homepage": "https://drsamonline.github.io/lexora/",
+      "html_url": "https://github.com/drsamonline/lexora",
       "download": "",
-      "category": "Games",
+      "category": "Utilities",
       "status": "5/5",
       "status_tone": "ok",
       "spark": [
@@ -4074,17 +4059,18 @@
         1,
         1,
         1,
+        1,
+        1,
         0,
+        1,
         0,
+        1,
         0,
         1,
         1,
         1,
         1,
-        1,
-        1,
-        1,
-        1,
+        0,
         1,
         0,
         1,
@@ -4094,7 +4080,7 @@
     {
       "name": "heavenzip",
       "description": "The CHCE orchestrator — chains prebuilt compression binaries into one pipeline.",
-      "pushed_at": "2026-11-15T18:42:32Z",
+      "pushed_at": "2026-11-15T19:56:10Z",
       "homepage": "https://drsamonline.github.io/heavenzip/",
       "html_url": "https://github.com/drsamonline/heavenzip",
       "download": "",
@@ -4122,13 +4108,49 @@
         1,
         1,
         1,
-        1
+        1,
+        0
+      ]
+    },
+    {
+      "name": "sorex",
+      "description": "A featherweight FLTK browser for machines the modern web forgot. Fork of Dillo, hardened for speed, scriptable from the shell. Tier 2 of the Aetheris browser family.",
+      "pushed_at": "2026-11-15T19:52:50Z",
+      "homepage": "https://drsamonline.github.io/sorex/",
+      "html_url": "https://github.com/drsamonline/sorex",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "3/5",
+      "status_tone": "warn",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
       ]
     },
     {
       "name": "The_Browser",
       "description": "Aetheris — an experimental C++ browser engine on a Ladybird/SerenityOS-derived codebase, built to learn how rendering works. Not production-ready.",
-      "pushed_at": "2026-11-15T17:20:15Z",
+      "pushed_at": "2026-11-15T19:52:24Z",
       "homepage": "https://drsamonline.github.io/The_Browser/",
       "html_url": "https://github.com/drsamonline/The_Browser",
       "download": "",
@@ -4156,7 +4178,253 @@
         0,
         0,
         1,
-        1
+        1,
+        0
+      ]
+    },
+    {
+      "name": "volumen",
+      "description": "The web as text, at the speed of reading. Fork of Lynx with deterministic markdown and JSON dumps for automation. Tier 3 of the Aetheris browser family.",
+      "pushed_at": "2026-11-15T19:52:14Z",
+      "homepage": "https://drsamonline.github.io/volumen/",
+      "html_url": "https://github.com/drsamonline/volumen",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "3/5",
+      "status_tone": "warn",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "nodus",
+      "description": "One browser core, many faces. Fork of NetSurf rebuilt as a library with framebuffer, GTK, headless and text frontends. Tier 1 of the Aetheris browser family.",
+      "pushed_at": "2026-11-15T19:52:05Z",
+      "homepage": "https://drsamonline.github.io/nodus/",
+      "html_url": "https://github.com/drsamonline/nodus",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "3/5",
+      "status_tone": "warn",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "corpus-extendum",
+      "description": "The public domain, properly shelved — a free library of out-of-copyright books, readable in the page as PDF, EPUB or text. No accounts, no tracking, no paywall.",
+      "pushed_at": "2026-11-15T19:51:29Z",
+      "homepage": "https://drsamonline.github.io/corpus-extendum/",
+      "html_url": "https://github.com/drsamonline/corpus-extendum",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "corpus-extendum-vault-01",
+      "description": "Book storage for Corpus Extendum — the public-domain library. Ten books, PDF + EPUB + text + records. No website here on purpose: Pages caps a site at 1 GB, and this vault is built to reach 2.5 GB.",
+      "pushed_at": "2026-11-15T19:34:56Z",
+      "homepage": "https://drsamonline.github.io/corpus-extendum-vault-01/",
+      "html_url": "https://github.com/drsamonline/corpus-extendum-vault-01",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "2/5",
+      "status_tone": "bad",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "dumps-4",
+      "description": "Pre-merge backups (part 4). Written by drsamonline/backup.",
+      "pushed_at": "2026-11-15T18:48:02Z",
+      "homepage": "https://drsamonline.github.io/dumps-4/",
+      "html_url": "https://github.com/drsamonline/dumps-4",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "2/5",
+      "status_tone": "bad",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "idle-city-ages-of-growth",
+      "description": "A single-file idle city-builder that grows from a Stone Age village into a Fusion Age world-city.",
+      "pushed_at": "2026-11-15T18:45:35Z",
+      "homepage": "https://drsamonline.github.io/idle-city-ages-of-growth/",
+      "html_url": "https://github.com/drsamonline/idle-city-ages-of-growth",
+      "download": "",
+      "category": "Games",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "ai-bridge",
+      "description": "A VS Code extension that brings web-chat AI models into the editor, so you can work without leaving the code.",
+      "pushed_at": "2026-11-15T18:44:29Z",
+      "homepage": "https://drsamonline.github.io/ai-bridge/",
+      "html_url": "https://github.com/drsamonline/ai-bridge",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
       ]
     },
     {
@@ -4190,41 +4458,8 @@
         0,
         0,
         1,
-        1
-      ]
-    },
-    {
-      "name": "ai-bridge",
-      "description": "A VS Code extension that brings web-chat AI models into the editor, so you can work without leaving the code.",
-      "pushed_at": "2026-11-15T16:34:04Z",
-      "homepage": "https://drsamonline.github.io/ai-bridge/",
-      "html_url": "https://github.com/drsamonline/ai-bridge",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         1,
-        0,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        0,
-        1
+        0
       ]
     },
     {
@@ -4258,7 +4493,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4292,7 +4528,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4326,7 +4563,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4360,41 +4598,8 @@
         0,
         0,
         0,
-        1
-      ]
-    },
-    {
-      "name": "lexora",
-      "description": "LEXORA — Layered EXact-text Repository and Adaptive compression architecture: canonicalise text, then compress it with guaranteed byte-exact recovery.",
-      "pushed_at": "2026-11-15T14:42:47Z",
-      "homepage": "https://drsamonline.github.io/lexora/",
-      "html_url": "https://github.com/drsamonline/lexora",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        0,
-        1,
-        0,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        0,
-        1
+        0
       ]
     },
     {
@@ -4428,7 +4633,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4462,7 +4668,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4496,7 +4703,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4530,7 +4738,8 @@
         0,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4564,7 +4773,8 @@
         0,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4598,7 +4808,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4632,7 +4843,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4666,7 +4878,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4700,7 +4913,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4734,7 +4948,8 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4768,7 +4983,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4802,7 +5018,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4836,7 +5053,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4870,7 +5088,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4904,7 +5123,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4938,7 +5158,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -4972,7 +5193,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5006,7 +5228,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5040,7 +5263,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5074,7 +5298,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5108,7 +5333,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5142,7 +5368,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5176,7 +5403,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5210,7 +5438,8 @@
         0,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5244,7 +5473,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5278,7 +5508,8 @@
         0,
         1,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5312,7 +5543,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5346,7 +5578,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5380,7 +5613,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5414,7 +5648,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5448,7 +5683,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5482,7 +5718,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5516,7 +5753,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5550,41 +5788,8 @@
         0,
         0,
         0,
-        1
-      ]
-    },
-    {
-      "name": "dumps-4",
-      "description": "Pre-merge backups (part 4). Written by drsamonline/backup.",
-      "pushed_at": "2026-11-15T07:47:54Z",
-      "homepage": "https://drsamonline.github.io/dumps-4/",
-      "html_url": "https://github.com/drsamonline/dumps-4",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "2/5",
-      "status_tone": "bad",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         1,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        1
+        0
       ]
     },
     {
@@ -5618,7 +5823,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5652,7 +5858,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5686,7 +5893,8 @@
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5720,7 +5928,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5754,7 +5963,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5788,7 +5998,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5822,7 +6033,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5856,7 +6068,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5890,7 +6103,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5924,7 +6138,8 @@
         1,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5958,7 +6173,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -5992,7 +6208,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -6026,7 +6243,8 @@
         0,
         1,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -6060,7 +6278,8 @@
         0,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -6094,7 +6313,8 @@
         1,
         0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -6128,6 +6348,7 @@
         0,
         1,
         1,
+        0,
         0
       ]
     },
@@ -6162,6 +6383,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6196,6 +6418,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6230,6 +6453,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6264,6 +6488,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6298,6 +6523,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6332,6 +6558,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6366,6 +6593,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6400,6 +6628,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6434,6 +6663,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6468,6 +6698,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6502,6 +6733,7 @@
         0,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6536,6 +6768,7 @@
         0,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6570,6 +6803,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6604,6 +6838,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6638,6 +6873,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6672,6 +6908,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6706,6 +6943,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6740,6 +6978,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6774,6 +7013,7 @@
         1,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6808,6 +7048,7 @@
         0,
         0,
         1,
+        0,
         0
       ]
     },
@@ -6842,6 +7083,7 @@
         0,
         1,
         0,
+        0,
         0
       ]
     },
@@ -6874,6 +7116,7 @@
         0,
         0,
         1,
+        0,
         0,
         0,
         0
@@ -6910,6 +7153,7 @@
         1,
         0,
         0,
+        0,
         0
       ]
     },
@@ -6942,6 +7186,7 @@
         1,
         1,
         1,
+        0,
         0,
         0,
         0
@@ -6978,6 +7223,7 @@
         1,
         0,
         0,
+        0,
         0
       ]
     },
@@ -7010,6 +7256,7 @@
         1,
         1,
         1,
+        0,
         0,
         0,
         0
@@ -7046,6 +7293,7 @@
         1,
         0,
         0,
+        0,
         0
       ]
     },
@@ -7078,6 +7326,7 @@
         1,
         1,
         1,
+        0,
         0,
         0,
         0
@@ -7114,6 +7363,7 @@
         1,
         0,
         0,
+        0,
         0
       ]
     },
@@ -7145,6 +7395,7 @@
         0,
         0,
         1,
+        0,
         0,
         0,
         0,
@@ -7182,6 +7433,7 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
@@ -7213,6 +7465,7 @@
         1,
         1,
         1,
+        0,
         0,
         0,
         0,
@@ -7250,6 +7503,7 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
@@ -7281,6 +7535,7 @@
         1,
         0,
         1,
+        0,
         0,
         0,
         0,
@@ -7318,6 +7573,7 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
@@ -7349,6 +7605,7 @@
         1,
         1,
         1,
+        0,
         0,
         0,
         0,
@@ -7386,6 +7643,7 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
@@ -7417,6 +7675,7 @@
         1,
         1,
         1,
+        0,
         0,
         0,
         0,
@@ -7454,6 +7713,7 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
@@ -7488,6 +7748,7 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
@@ -7517,6 +7778,7 @@
         0,
         0,
         1,
+        0,
         0,
         0,
         0,
@@ -7556,6 +7818,7 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
@@ -7579,6 +7842,7 @@
         0,
         0,
         1,
+        0,
         0,
         0,
         0,
@@ -7624,6 +7888,7 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
@@ -7647,6 +7912,7 @@
         0,
         1,
         1,
+        0,
         0,
         0,
         0,
@@ -9284,6 +9550,19 @@
       "stars": 128,
       "forks": 1,
       "watchers": 128
+    },
+    {
+      "date": "2026-11-16",
+      "products": 111,
+      "kits": 13,
+      "avg": 4.7,
+      "pushes": 146,
+      "byrepo": {
+        "lexora": 1
+      },
+      "stars": 130,
+      "forks": 1,
+      "watchers": 130
     }
   ],
   "degraded": []
