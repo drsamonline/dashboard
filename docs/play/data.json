@@ -1,6 +1,6 @@
 {
   "generated": "2026-11-16",
-  "generated_at": "2026-11-16T12:47:40Z",
+  "generated_at": "2026-11-16T18:44:16Z",
   "reckoning": "111 products · 13 kits (role) · avg metadata completeness 4.7/5 · updated automatically.",
   "health": "bad",
   "health_detail": {
@@ -47,49 +47,67 @@
     "avg": 4.7,
     "pushes": 146,
     "byrepo": {
-      "Matneo": 1,
-      "conqueror-os": 1,
-      "sui": 1,
-      "audit": 1,
-      "drsamonline.github.io": 1,
-      "skills": 1,
       "heavenzip": 1,
-      "drsamonline": 1,
-      "corpus-extendum": 1,
+      "All4ONE": 1,
+      "audit": 1,
       "The_Browser": 1,
-      "corpus-extendum-vault-01": 1,
-      "app-story-engine": 1,
-      "dumps-3": 1,
-      "UniRep": 1,
-      "forge": 1,
-      "dashboard": 1,
-      "knowledge": 1,
-      "neon-engine": 1,
-      "tessera": 1,
-      "NEO": 1,
+      "pico": 1,
       "volumen": 1,
       "nodus": 1,
       "sorex": 1,
-      "All4ONE": 1,
+      "corpus-extendum": 1,
+      "corpus-extendum-vault-01": 1,
+      "sui": 1,
+      "tessera": 1,
+      "tessera-app": 1,
+      "ziptastic": 1,
+      "forge": 1,
+      "aethelgard-games": 1,
+      "TTB": 1,
+      "Scrap-and-Gun": 1,
+      "Repertorium-Publicum": 1,
+      "NEO": 1,
+      "Matneo": 1,
+      "MATERIA-MEDICA-BUILDER": 1,
+      "BLINKTRANSFER": 1,
+      "dumps-3": 1,
+      "TOOLWORKS": 1,
+      "planner-pro": 1,
+      "ntet-homoeopathy-cbt": 1,
+      "mood-mixer": 1,
+      "kinemotif": 1,
+      "kinemorph": 1,
+      "holistic": 1,
+      "registry": 1,
+      "KILN": 1,
+      "dashboard": 1,
+      "knowledge": 1,
+      "conqueror-os": 1,
+      "drsamonline.github.io": 1,
+      "skills": 1,
+      "drsamonline": 1,
+      "app-story-engine": 1,
+      "UniRep": 1,
+      "neon-engine": 1,
       "lexora": 1
     }
   },
   "stats": {
     "metadata_completeness": {
       "5": 97,
-      "2": 6,
       "3": 5,
+      "2": 6,
       "4": 3
     },
     "conformance": {
       "5": 97,
-      "2": 6,
       "3": 5,
+      "2": 6,
       "4": 3
     },
     "categories": {
-      "Utilities": 15,
       "HTML Apps": 78,
+      "Utilities": 15,
       "Games": 6,
       "Homeopathy": 10,
       "Health Tools": 1,
@@ -131,27 +149,27 @@
     },
     {
       "date": "2026-11-11",
-      "count": 32
+      "count": 30
     },
     {
       "date": "2026-11-12",
-      "count": 9
+      "count": 8
     },
     {
       "date": "2026-11-13",
-      "count": 1
+      "count": 0
     },
     {
       "date": "2026-11-14",
-      "count": 22
+      "count": 20
     },
     {
       "date": "2026-11-15",
-      "count": 54
+      "count": 42
     },
     {
       "date": "2026-11-16",
-      "count": 25
+      "count": 43
     }
   ],
   "attention": [
@@ -168,6 +186,13 @@
       "url": "https://github.com/drsamonline/web-kit/issues/3",
       "kind": "issue",
       "created": "2026-10-26T00:46:14Z"
+    },
+    {
+      "title": "fix(release): the tag, the source and the asset name now say the same thing",
+      "repo": "heavenzip",
+      "url": "https://github.com/drsamonline/heavenzip/pull/62",
+      "kind": "PR",
+      "created": "2026-11-16T18:33:22Z"
     },
     {
       "title": "ci: bump drsamonline/app-builder/.github/workflows/build.yml from 49c2e0b172890f9334bbc7167a0e7fb5cd3756ba to 85949b5b7ef6a47a40731cc01e8c2cd65ceeda4c",
@@ -301,13 +326,6 @@
       "url": "https://github.com/drsamonline/tessera/pull/2",
       "kind": "PR",
       "created": "2026-11-13T20:09:41Z"
-    },
-    {
-      "title": "ci: bump actions/checkout from 4 to 7",
-      "repo": "tessera",
-      "url": "https://github.com/drsamonline/tessera/pull/1",
-      "kind": "PR",
-      "created": "2026-11-13T20:09:37Z"
     }
   ],
   "controls": [
@@ -502,122 +520,122 @@
   "changes": [
     {
       "type": "Push",
-      "repo": "audit",
-      "when": "2026-11-16T11:03:36Z",
+      "repo": "volumen",
+      "when": "2026-11-16T01:57:32Z",
       "text": "pushed to main"
     },
     {
+      "type": "PullRequest",
+      "repo": "heavenzip",
+      "when": "2026-11-16T18:33:22Z",
+      "text": "opened: "
+    },
+    {
       "type": "Push",
-      "repo": "tessera",
-      "when": "2026-11-14T07:24:28Z",
+      "repo": "ziptastic",
+      "when": "2026-11-16T15:08:00Z",
+      "text": "pushed to windows-build"
+    },
+    {
+      "type": "PullRequest",
+      "repo": "audit",
+      "when": "2026-11-16T18:31:04Z",
+      "text": "merged: "
+    },
+    {
+      "type": "PullRequest",
+      "repo": "audit",
+      "when": "2026-11-16T18:28:48Z",
+      "text": "opened: "
+    },
+    {
+      "type": "Push",
+      "repo": "sui",
+      "when": "2026-11-16T15:04:48Z",
       "text": "pushed to main"
     },
     {
       "type": "Create",
-      "repo": "Matneo",
-      "when": "2026-11-14T07:00:05Z",
+      "repo": "heavenzip",
+      "when": "2026-11-16T13:58:57Z",
       "text": ""
     },
     {
-      "type": "Delete",
-      "repo": "heavenzip",
-      "when": "2026-11-16T09:31:28Z",
-      "text": ""
+      "type": "Push",
+      "repo": "audit",
+      "when": "2026-11-16T14:55:30Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "HCS",
+      "when": "2026-11-15T09:56:48Z",
+      "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "pico",
-      "when": "2026-11-15T03:47:29Z",
+      "when": "2026-11-15T09:55:14Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "PullRequest",
+      "repo": "heavenzip",
+      "when": "2026-11-16T18:03:07Z",
+      "text": "merged: "
+    },
+    {
+      "type": "PullRequest",
+      "repo": "heavenzip",
+      "when": "2026-11-16T17:58:53Z",
+      "text": "opened: "
+    },
+    {
+      "type": "PullRequest",
+      "repo": "heavenzip",
+      "when": "2026-11-16T17:53:03Z",
+      "text": "merged: "
+    },
+    {
+      "type": "Push",
+      "repo": "Matneo",
+      "when": "2026-11-15T10:30:45Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "kitbox",
-      "when": "2026-11-15T05:10:31Z",
+      "repo": "sui",
+      "when": "2026-11-15T09:39:41Z",
       "text": "pushed to main"
+    },
+    {
+      "type": "PullRequest",
+      "repo": "heavenzip",
+      "when": "2026-11-16T17:48:58Z",
+      "text": "opened: "
+    },
+    {
+      "type": "Release",
+      "repo": "tessera",
+      "when": "2026-11-16T17:47:36Z",
+      "text": ""
+    },
+    {
+      "type": "PullRequest",
+      "repo": "heavenzip",
+      "when": "2026-11-16T17:43:36Z",
+      "text": "merged: "
+    },
+    {
+      "type": "Create",
+      "repo": "HCS",
+      "when": "2026-11-15T10:18:23Z",
+      "text": ""
     },
     {
       "type": "Push",
       "repo": "KILN",
-      "when": "2026-11-15T05:01:48Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "audit",
-      "when": "2026-11-16T10:31:15Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "The_Browser",
-      "when": "2026-11-16T10:30:58Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "tessera-app",
-      "when": "2026-11-15T04:53:06Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "The_Browser",
-      "when": "2026-11-16T06:56:50Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "heavenzip",
-      "when": "2026-11-16T11:39:15Z",
-      "text": "merged: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "heavenzip",
-      "when": "2026-11-16T11:32:54Z",
-      "text": "opened: "
-    },
-    {
-      "type": "Push",
-      "repo": "tessera-app",
-      "when": "2026-11-15T04:36:50Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "heavenzip",
-      "when": "2026-11-16T11:26:47Z",
-      "text": "merged: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "heavenzip",
-      "when": "2026-11-16T11:22:52Z",
-      "text": "opened: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "heavenzip",
-      "when": "2026-11-16T11:17:15Z",
-      "text": "merged: "
-    },
-    {
-      "type": "Push",
-      "repo": "audit",
-      "when": "2026-11-16T10:14:06Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "heavenzip",
-      "when": "2026-11-16T11:13:17Z",
-      "text": "opened: "
-    },
-    {
-      "type": "Push",
-      "repo": "corpus-extendum",
-      "when": "2026-11-16T10:53:29Z",
+      "when": "2026-11-15T10:18:18Z",
       "text": "pushed to main"
     }
   ],
@@ -661,7 +679,7 @@
       "schedule": "weekly (Mon) 03:31 UTC",
       "repo_url": "https://github.com/drsamonline/audit",
       "url": "https://github.com/drsamonline/audit/actions/runs/43862270587",
-      "last_run": "2026-11-16T11:58:18Z",
+      "last_run": "2026-11-16T12:50:03Z",
       "conclusion": "failure"
     },
     {
@@ -688,8 +706,8 @@
       ],
       "schedule": "weekly (Tue) 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/43869708140",
-      "last_run": "2026-11-16T12:47:11Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/43931880483",
+      "last_run": "2026-11-16T18:43:53Z",
       "conclusion": "in_progress"
     },
     {
@@ -1087,8 +1105,8 @@
       "schedule": "weekly (Tue) 04:12 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
       "url": "https://github.com/drsamonline/Matneo/actions/runs/43869707685",
-      "last_run": "2026-11-16T12:47:18Z",
-      "conclusion": "queued"
+      "last_run": "2026-11-16T12:47:26Z",
+      "conclusion": "success"
     },
     {
       "repo": "Matneo",
@@ -1210,18 +1228,18 @@
     },
     "repos": [
       {
-        "name": "app-poets-studio",
-        "stars": 2,
-        "forks": 0,
-        "watchers": 2,
-        "html_url": "https://github.com/drsamonline/app-poets-studio"
-      },
-      {
         "name": "kinemorph",
         "stars": 2,
         "forks": 0,
         "watchers": 2,
         "html_url": "https://github.com/drsamonline/kinemorph"
+      },
+      {
+        "name": "app-poets-studio",
+        "stars": 2,
+        "forks": 0,
+        "watchers": 2,
+        "html_url": "https://github.com/drsamonline/app-poets-studio"
       },
       {
         "name": "homoeopathic-materia-medica-repertory-json",
@@ -1245,20 +1263,6 @@
         "html_url": "https://github.com/drsamonline/neon-runner"
       },
       {
-        "name": "conqueror-os",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/conqueror-os"
-      },
-      {
-        "name": "sui",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/sui"
-      },
-      {
         "name": "heavenzip",
         "stars": 1,
         "forks": 0,
@@ -1266,11 +1270,11 @@
         "html_url": "https://github.com/drsamonline/heavenzip"
       },
       {
-        "name": "corpus-extendum",
+        "name": "All4ONE",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
-        "html_url": "https://github.com/drsamonline/corpus-extendum"
+        "html_url": "https://github.com/drsamonline/All4ONE"
       },
       {
         "name": "The_Browser",
@@ -1278,55 +1282,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/The_Browser"
-      },
-      {
-        "name": "corpus-extendum-vault-01",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/corpus-extendum-vault-01"
-      },
-      {
-        "name": "app-story-engine",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/app-story-engine"
-      },
-      {
-        "name": "dumps-3",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/dumps-3"
-      },
-      {
-        "name": "UniRep",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/UniRep"
-      },
-      {
-        "name": "neon-engine",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/neon-engine"
-      },
-      {
-        "name": "tessera",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/tessera"
-      },
-      {
-        "name": "NEO",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/NEO"
       },
       {
         "name": "volumen",
@@ -1350,11 +1305,179 @@
         "html_url": "https://github.com/drsamonline/sorex"
       },
       {
-        "name": "All4ONE",
+        "name": "corpus-extendum",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
-        "html_url": "https://github.com/drsamonline/All4ONE"
+        "html_url": "https://github.com/drsamonline/corpus-extendum"
+      },
+      {
+        "name": "corpus-extendum-vault-01",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/corpus-extendum-vault-01"
+      },
+      {
+        "name": "sui",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/sui"
+      },
+      {
+        "name": "tessera",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/tessera"
+      },
+      {
+        "name": "tessera-app",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/tessera-app"
+      },
+      {
+        "name": "ziptastic",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/ziptastic"
+      },
+      {
+        "name": "aethelgard-games",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/aethelgard-games"
+      },
+      {
+        "name": "TTB",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/TTB"
+      },
+      {
+        "name": "Scrap-and-Gun",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/Scrap-and-Gun"
+      },
+      {
+        "name": "Repertorium-Publicum",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/Repertorium-Publicum"
+      },
+      {
+        "name": "NEO",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/NEO"
+      },
+      {
+        "name": "MATERIA-MEDICA-BUILDER",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/MATERIA-MEDICA-BUILDER"
+      },
+      {
+        "name": "BLINKTRANSFER",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/BLINKTRANSFER"
+      },
+      {
+        "name": "dumps-3",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/dumps-3"
+      },
+      {
+        "name": "TOOLWORKS",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/TOOLWORKS"
+      },
+      {
+        "name": "planner-pro",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/planner-pro"
+      },
+      {
+        "name": "ntet-homoeopathy-cbt",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/ntet-homoeopathy-cbt"
+      },
+      {
+        "name": "mood-mixer",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/mood-mixer"
+      },
+      {
+        "name": "kinemotif",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/kinemotif"
+      },
+      {
+        "name": "holistic",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/holistic"
+      },
+      {
+        "name": "KILN",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/KILN"
+      },
+      {
+        "name": "conqueror-os",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/conqueror-os"
+      },
+      {
+        "name": "app-story-engine",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/app-story-engine"
+      },
+      {
+        "name": "UniRep",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/UniRep"
+      },
+      {
+        "name": "neon-engine",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/neon-engine"
       },
       {
         "name": "lexora",
@@ -1390,13 +1513,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/astro-kit"
-      },
-      {
-        "name": "ziptastic",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/ziptastic"
       },
       {
         "name": "whispering-body-first-aid",
@@ -1441,27 +1557,6 @@
         "html_url": "https://github.com/drsamonline/compfactory"
       },
       {
-        "name": "TOOLWORKS",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/TOOLWORKS"
-      },
-      {
-        "name": "KILN",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/KILN"
-      },
-      {
-        "name": "kinemotif",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/kinemotif"
-      },
-      {
         "name": "corefit-md",
         "stars": 1,
         "forks": 0,
@@ -1497,27 +1592,6 @@
         "html_url": "https://github.com/drsamonline/lumen"
       },
       {
-        "name": "TTB",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/TTB"
-      },
-      {
-        "name": "tessera-app",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/tessera-app"
-      },
-      {
-        "name": "ntet-homoeopathy-cbt",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/ntet-homoeopathy-cbt"
-      },
-      {
         "name": "blinkcode-ai",
         "stars": 1,
         "forks": 0,
@@ -1544,13 +1618,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/CLDR"
-      },
-      {
-        "name": "BLINKTRANSFER",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/BLINKTRANSFER"
       },
       {
         "name": "canteen-lan",
@@ -1623,13 +1690,6 @@
         "html_url": "https://github.com/drsamonline/app-organon-reader"
       },
       {
-        "name": "Scrap-and-Gun",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/Scrap-and-Gun"
-      },
-      {
         "name": "app-encrypted-case-log",
         "stars": 1,
         "forks": 0,
@@ -1642,13 +1702,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/retro-strike"
-      },
-      {
-        "name": "holistic",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/holistic"
       },
       {
         "name": "app-thermals",
@@ -1756,25 +1809,11 @@
         "html_url": "https://github.com/drsamonline/today-card"
       },
       {
-        "name": "MATERIA-MEDICA-BUILDER",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/MATERIA-MEDICA-BUILDER"
-      },
-      {
         "name": "skin-case-tracker",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/skin-case-tracker"
-      },
-      {
-        "name": "aethelgard-games",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/aethelgard-games"
       },
       {
         "name": "dance-fight",
@@ -1868,13 +1907,6 @@
         "html_url": "https://github.com/drsamonline/aethelgard-rpg-engine"
       },
       {
-        "name": "mood-mixer",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/mood-mixer"
-      },
-      {
         "name": "ntet-course-source",
         "stars": 1,
         "forks": 0,
@@ -1901,13 +1933,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/app-endpoints"
-      },
-      {
-        "name": "Repertorium-Publicum",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/Repertorium-Publicum"
       },
       {
         "name": "frame-kit",
@@ -2120,13 +2145,6 @@
         "html_url": "https://github.com/drsamonline/raylib-starter"
       },
       {
-        "name": "planner-pro",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/planner-pro"
-      },
-      {
         "name": "dumps",
         "stars": 1,
         "forks": 0,
@@ -2233,33 +2251,6 @@
     "window": "14 days",
     "note": "Last 14 days — GitHub's retention window.",
     "repos": {
-      "conqueror-os": {
-        "views": 2,
-        "uniques": 2,
-        "clones": 784,
-        "clone_uniques": 161,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 2
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/conqueror-os",
-            "count": 2,
-            "title": "Overview"
-          }
-        ]
-      },
-      "sui": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 197,
-        "clone_uniques": 64,
-        "referrers": [],
-        "paths": []
-      },
       "heavenzip": {
         "views": 0,
         "uniques": 0,
@@ -2268,13 +2259,33 @@
         "referrers": [],
         "paths": []
       },
-      "corpus-extendum": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 0,
-        "clone_uniques": 0,
-        "referrers": [],
-        "paths": []
+      "All4ONE": {
+        "views": 2,
+        "uniques": 2,
+        "clones": 371,
+        "clone_uniques": 119,
+        "referrers": [
+          {
+            "from": "drsamonline.github.io",
+            "count": 1
+          },
+          {
+            "from": "github.com",
+            "count": 1
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/All4ONE",
+            "count": 1,
+            "title": "Overview"
+          },
+          {
+            "path": "/drsamonline/All4ONE/blob/main/TOOL_CATALOG.md",
+            "count": 1,
+            "title": "/blob/main/TOOL_CATALOG.md"
+          }
+        ]
       },
       "The_Browser": {
         "views": 5,
@@ -2309,90 +2320,13 @@
           }
         ]
       },
-      "corpus-extendum-vault-01": {
+      "pico": {
         "views": 0,
         "uniques": 0,
-        "clones": 0,
-        "clone_uniques": 0,
+        "clones": 385,
+        "clone_uniques": 59,
         "referrers": [],
         "paths": []
-      },
-      "app-story-engine": {
-        "views": 1,
-        "uniques": 1,
-        "clones": 285,
-        "clone_uniques": 88,
-        "referrers": [],
-        "paths": [
-          {
-            "path": "/drsamonline/app-story-engine/pulls",
-            "count": 1,
-            "title": "/pulls"
-          }
-        ]
-      },
-      "dumps-3": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 46,
-        "clone_uniques": 1,
-        "referrers": [],
-        "paths": []
-      },
-      "UniRep": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 137,
-        "clone_uniques": 57,
-        "referrers": [],
-        "paths": []
-      },
-      "neon-engine": {
-        "views": 2,
-        "uniques": 2,
-        "clones": 233,
-        "clone_uniques": 89,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 2
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/neon-engine",
-            "count": 2,
-            "title": "Overview"
-          }
-        ]
-      },
-      "tessera": {
-        "views": 2,
-        "uniques": 2,
-        "clones": 367,
-        "clone_uniques": 96,
-        "referrers": [],
-        "paths": [
-          {
-            "path": "/drsamonline/tessera",
-            "count": 2,
-            "title": "Overview"
-          }
-        ]
-      },
-      "NEO": {
-        "views": 1,
-        "uniques": 1,
-        "clones": 299,
-        "clone_uniques": 88,
-        "referrers": [],
-        "paths": [
-          {
-            "path": "/drsamonline/NEO",
-            "count": 1,
-            "title": "Overview"
-          }
-        ]
       },
       "volumen": {
         "views": 0,
@@ -2418,16 +2352,101 @@
         "referrers": [],
         "paths": []
       },
-      "All4ONE": {
+      "corpus-extendum": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
+      "corpus-extendum-vault-01": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
+      "sui": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 197,
+        "clone_uniques": 64,
+        "referrers": [],
+        "paths": []
+      },
+      "tessera": {
         "views": 2,
         "uniques": 2,
-        "clones": 371,
-        "clone_uniques": 119,
+        "clones": 367,
+        "clone_uniques": 96,
+        "referrers": [],
+        "paths": [
+          {
+            "path": "/drsamonline/tessera",
+            "count": 2,
+            "title": "Overview"
+          }
+        ]
+      },
+      "tessera-app": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 143,
+        "clone_uniques": 44,
+        "referrers": [],
+        "paths": []
+      },
+      "ziptastic": {
+        "views": 19,
+        "uniques": 3,
+        "clones": 2087,
+        "clone_uniques": 508,
         "referrers": [
           {
-            "from": "drsamonline.github.io",
-            "count": 1
+            "from": "github.com",
+            "count": 4
           },
+          {
+            "from": "drsamonline.github.io",
+            "count": 2
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/ziptastic",
+            "count": 5,
+            "title": "Overview"
+          },
+          {
+            "path": "/drsamonline/ziptastic/commit/36553e700fdd2f4af7bab57cbc7d7d1440a2c81d",
+            "count": 2,
+            "title": "/commit/36553e700fdd2f4af7bab57cbc7d7d1440a2c81d"
+          },
+          {
+            "path": "/drsamonline/ziptastic/commit/671619a7ab9cc92f0afab731b0c8326b34e0dcf7",
+            "count": 2,
+            "title": "/commit/671619a7ab9cc92f0afab731b0c8326b34e0dcf7"
+          },
+          {
+            "path": "/drsamonline/ziptastic/tree/main/include/chimera",
+            "count": 1,
+            "title": "/tree/main/include/chimera"
+          },
+          {
+            "path": "/drsamonline/ziptastic/tree/main/plugins",
+            "count": 1,
+            "title": "/tree/main/plugins"
+          }
+        ]
+      },
+      "aethelgard-games": {
+        "views": 3,
+        "uniques": 3,
+        "clones": 570,
+        "clone_uniques": 106,
+        "referrers": [
           {
             "from": "github.com",
             "count": 1
@@ -2435,14 +2454,308 @@
         ],
         "paths": [
           {
-            "path": "/drsamonline/All4ONE",
-            "count": 1,
+            "path": "/drsamonline/aethelgard-games",
+            "count": 2,
             "title": "Overview"
           },
           {
-            "path": "/drsamonline/All4ONE/blob/main/TOOL_CATALOG.md",
+            "path": "/drsamonline/aethelgard-games/blob/main/chronicles/LICENSE-ASSETS.md",
             "count": 1,
-            "title": "/blob/main/TOOL_CATALOG.md"
+            "title": "/blob/main/chronicles/LICENSE-ASSETS.md"
+          }
+        ]
+      },
+      "TTB": {
+        "views": 1,
+        "uniques": 1,
+        "clones": 323,
+        "clone_uniques": 104,
+        "referrers": [],
+        "paths": [
+          {
+            "path": "/drsamonline/TTB",
+            "count": 1,
+            "title": "Overview"
+          }
+        ]
+      },
+      "Scrap-and-Gun": {
+        "views": 4,
+        "uniques": 4,
+        "clones": 408,
+        "clone_uniques": 150,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 2
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/Scrap-and-Gun",
+            "count": 2,
+            "title": "Overview"
+          },
+          {
+            "path": "/drsamonline/Scrap-and-Gun/blob/main/docs/ARCHITECTURE.md",
+            "count": 1,
+            "title": "/blob/main/docs/ARCHITECTURE.md"
+          },
+          {
+            "path": "/drsamonline/Scrap-and-Gun/releases",
+            "count": 1,
+            "title": "/releases"
+          }
+        ]
+      },
+      "Repertorium-Publicum": {
+        "views": 27,
+        "uniques": 7,
+        "clones": 619,
+        "clone_uniques": 161,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 7
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/Repertorium-Publicum",
+            "count": 8,
+            "title": "Overview"
+          },
+          {
+            "path": "/drsamonline/kent-repertory-explorer",
+            "count": 5,
+            "title": "Overview"
+          },
+          {
+            "path": "/drsamonline/kent-repertory-explorer/blob/main/docs/assets/landing-desktop.png",
+            "count": 2,
+            "title": "/blob/main/docs/assets/landing-desktop.png"
+          },
+          {
+            "path": "/drsamonline/Repertorium-Publicum/activity",
+            "count": 1,
+            "title": "/activity"
+          },
+          {
+            "path": "/drsamonline/Repertorium-Publicum/blob/main/docs/assets/app-desktop.png",
+            "count": 1,
+            "title": "/blob/main/docs/assets/app-desktop.png"
+          }
+        ]
+      },
+      "NEO": {
+        "views": 1,
+        "uniques": 1,
+        "clones": 299,
+        "clone_uniques": 88,
+        "referrers": [],
+        "paths": [
+          {
+            "path": "/drsamonline/NEO",
+            "count": 1,
+            "title": "Overview"
+          }
+        ]
+      },
+      "MATERIA-MEDICA-BUILDER": {
+        "views": 1,
+        "uniques": 1,
+        "clones": 410,
+        "clone_uniques": 90,
+        "referrers": [],
+        "paths": [
+          {
+            "path": "/drsamonline/MATERIA-MEDICA-BUILDER",
+            "count": 1,
+            "title": "Overview"
+          }
+        ]
+      },
+      "BLINKTRANSFER": {
+        "views": 2,
+        "uniques": 2,
+        "clones": 826,
+        "clone_uniques": 191,
+        "referrers": [
+          {
+            "from": "drsamonline.github.io",
+            "count": 1
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/BLINKTRANSFER",
+            "count": 2,
+            "title": "Overview"
+          }
+        ]
+      },
+      "dumps-3": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 46,
+        "clone_uniques": 1,
+        "referrers": [],
+        "paths": []
+      },
+      "TOOLWORKS": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
+      "planner-pro": {
+        "views": 2,
+        "uniques": 2,
+        "clones": 378,
+        "clone_uniques": 106,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 2
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/planner-pro",
+            "count": 2,
+            "title": "Overview"
+          }
+        ]
+      },
+      "ntet-homoeopathy-cbt": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 101,
+        "clone_uniques": 33,
+        "referrers": [],
+        "paths": []
+      },
+      "mood-mixer": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 292,
+        "clone_uniques": 107,
+        "referrers": [],
+        "paths": []
+      },
+      "kinemotif": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 179,
+        "clone_uniques": 69,
+        "referrers": [],
+        "paths": []
+      },
+      "kinemorph": {
+        "views": 3,
+        "uniques": 2,
+        "clones": 231,
+        "clone_uniques": 69,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 3
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/kinemorph",
+            "count": 3,
+            "title": "Overview"
+          }
+        ]
+      },
+      "holistic": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 339,
+        "clone_uniques": 132,
+        "referrers": [],
+        "paths": []
+      },
+      "KILN": {
+        "views": 1,
+        "uniques": 1,
+        "clones": 902,
+        "clone_uniques": 131,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 1
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/KILN",
+            "count": 1,
+            "title": "Overview"
+          }
+        ]
+      },
+      "conqueror-os": {
+        "views": 2,
+        "uniques": 2,
+        "clones": 784,
+        "clone_uniques": 161,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 2
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/conqueror-os",
+            "count": 2,
+            "title": "Overview"
+          }
+        ]
+      },
+      "app-story-engine": {
+        "views": 1,
+        "uniques": 1,
+        "clones": 285,
+        "clone_uniques": 88,
+        "referrers": [],
+        "paths": [
+          {
+            "path": "/drsamonline/app-story-engine/pulls",
+            "count": 1,
+            "title": "/pulls"
+          }
+        ]
+      },
+      "UniRep": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 137,
+        "clone_uniques": 57,
+        "referrers": [],
+        "paths": []
+      },
+      "neon-engine": {
+        "views": 2,
+        "uniques": 2,
+        "clones": 233,
+        "clone_uniques": 89,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 2
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/neon-engine",
+            "count": 2,
+            "title": "Overview"
           }
         ]
       },
@@ -2531,14 +2844,6 @@
           }
         ]
       },
-      "pico": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 385,
-        "clone_uniques": 59,
-        "referrers": [],
-        "paths": []
-      },
       "astro-kit": {
         "views": 0,
         "uniques": 0,
@@ -2546,49 +2851,6 @@
         "clone_uniques": 110,
         "referrers": [],
         "paths": []
-      },
-      "ziptastic": {
-        "views": 19,
-        "uniques": 3,
-        "clones": 2087,
-        "clone_uniques": 508,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 4
-          },
-          {
-            "from": "drsamonline.github.io",
-            "count": 2
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/ziptastic",
-            "count": 5,
-            "title": "Overview"
-          },
-          {
-            "path": "/drsamonline/ziptastic/commit/36553e700fdd2f4af7bab57cbc7d7d1440a2c81d",
-            "count": 2,
-            "title": "/commit/36553e700fdd2f4af7bab57cbc7d7d1440a2c81d"
-          },
-          {
-            "path": "/drsamonline/ziptastic/commit/671619a7ab9cc92f0afab731b0c8326b34e0dcf7",
-            "count": 2,
-            "title": "/commit/671619a7ab9cc92f0afab731b0c8326b34e0dcf7"
-          },
-          {
-            "path": "/drsamonline/ziptastic/tree/main/include/chimera",
-            "count": 1,
-            "title": "/tree/main/include/chimera"
-          },
-          {
-            "path": "/drsamonline/ziptastic/tree/main/plugins",
-            "count": 1,
-            "title": "/tree/main/plugins"
-          }
-        ]
       },
       "whispering-body-first-aid": {
         "views": 0,
@@ -2646,41 +2908,6 @@
         "uniques": 0,
         "clones": 239,
         "clone_uniques": 91,
-        "referrers": [],
-        "paths": []
-      },
-      "TOOLWORKS": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 0,
-        "clone_uniques": 0,
-        "referrers": [],
-        "paths": []
-      },
-      "KILN": {
-        "views": 1,
-        "uniques": 1,
-        "clones": 902,
-        "clone_uniques": 131,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 1
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/KILN",
-            "count": 1,
-            "title": "Overview"
-          }
-        ]
-      },
-      "kinemotif": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 179,
-        "clone_uniques": 69,
         "referrers": [],
         "paths": []
       },
@@ -2784,36 +3011,6 @@
           }
         ]
       },
-      "TTB": {
-        "views": 1,
-        "uniques": 1,
-        "clones": 323,
-        "clone_uniques": 104,
-        "referrers": [],
-        "paths": [
-          {
-            "path": "/drsamonline/TTB",
-            "count": 1,
-            "title": "Overview"
-          }
-        ]
-      },
-      "tessera-app": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 143,
-        "clone_uniques": 44,
-        "referrers": [],
-        "paths": []
-      },
-      "ntet-homoeopathy-cbt": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 101,
-        "clone_uniques": 33,
-        "referrers": [],
-        "paths": []
-      },
       "blinkcode-ai": {
         "views": 0,
         "uniques": 0,
@@ -2853,25 +3050,6 @@
           {
             "path": "/drsamonline/CLDR",
             "count": 1,
-            "title": "Overview"
-          }
-        ]
-      },
-      "BLINKTRANSFER": {
-        "views": 2,
-        "uniques": 2,
-        "clones": 826,
-        "clone_uniques": 191,
-        "referrers": [
-          {
-            "from": "drsamonline.github.io",
-            "count": 1
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/BLINKTRANSFER",
-            "count": 2,
             "title": "Overview"
           }
         ]
@@ -3062,35 +3240,6 @@
           }
         ]
       },
-      "Scrap-and-Gun": {
-        "views": 4,
-        "uniques": 4,
-        "clones": 408,
-        "clone_uniques": 150,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 2
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/Scrap-and-Gun",
-            "count": 2,
-            "title": "Overview"
-          },
-          {
-            "path": "/drsamonline/Scrap-and-Gun/blob/main/docs/ARCHITECTURE.md",
-            "count": 1,
-            "title": "/blob/main/docs/ARCHITECTURE.md"
-          },
-          {
-            "path": "/drsamonline/Scrap-and-Gun/releases",
-            "count": 1,
-            "title": "/releases"
-          }
-        ]
-      },
       "app-encrypted-case-log": {
         "views": 0,
         "uniques": 0,
@@ -3145,14 +3294,6 @@
             "title": "/releases"
           }
         ]
-      },
-      "holistic": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 339,
-        "clone_uniques": 132,
-        "referrers": [],
-        "paths": []
       },
       "app-thermals": {
         "views": 4,
@@ -3287,25 +3428,6 @@
         "referrers": [],
         "paths": []
       },
-      "kinemorph": {
-        "views": 3,
-        "uniques": 2,
-        "clones": 231,
-        "clone_uniques": 69,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 3
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/kinemorph",
-            "count": 3,
-            "title": "Overview"
-          }
-        ]
-      },
       "musicgen": {
         "views": 3,
         "uniques": 1,
@@ -3414,20 +3536,6 @@
           }
         ]
       },
-      "MATERIA-MEDICA-BUILDER": {
-        "views": 1,
-        "uniques": 1,
-        "clones": 410,
-        "clone_uniques": 90,
-        "referrers": [],
-        "paths": [
-          {
-            "path": "/drsamonline/MATERIA-MEDICA-BUILDER",
-            "count": 1,
-            "title": "Overview"
-          }
-        ]
-      },
       "skin-case-tracker": {
         "views": 0,
         "uniques": 0,
@@ -3435,30 +3543,6 @@
         "clone_uniques": 122,
         "referrers": [],
         "paths": []
-      },
-      "aethelgard-games": {
-        "views": 3,
-        "uniques": 3,
-        "clones": 570,
-        "clone_uniques": 106,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 1
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/aethelgard-games",
-            "count": 2,
-            "title": "Overview"
-          },
-          {
-            "path": "/drsamonline/aethelgard-games/blob/main/chronicles/LICENSE-ASSETS.md",
-            "count": 1,
-            "title": "/blob/main/chronicles/LICENSE-ASSETS.md"
-          }
-        ]
       },
       "dance-fight": {
         "views": 0,
@@ -3613,14 +3697,6 @@
         "referrers": [],
         "paths": []
       },
-      "mood-mixer": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 292,
-        "clone_uniques": 107,
-        "referrers": [],
-        "paths": []
-      },
       "ntet-course-source": {
         "views": 0,
         "uniques": 0,
@@ -3652,45 +3728,6 @@
         "clone_uniques": 85,
         "referrers": [],
         "paths": []
-      },
-      "Repertorium-Publicum": {
-        "views": 27,
-        "uniques": 7,
-        "clones": 619,
-        "clone_uniques": 161,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 7
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/Repertorium-Publicum",
-            "count": 8,
-            "title": "Overview"
-          },
-          {
-            "path": "/drsamonline/kent-repertory-explorer",
-            "count": 5,
-            "title": "Overview"
-          },
-          {
-            "path": "/drsamonline/kent-repertory-explorer/blob/main/docs/assets/landing-desktop.png",
-            "count": 2,
-            "title": "/blob/main/docs/assets/landing-desktop.png"
-          },
-          {
-            "path": "/drsamonline/Repertorium-Publicum/activity",
-            "count": 1,
-            "title": "/activity"
-          },
-          {
-            "path": "/drsamonline/Repertorium-Publicum/blob/main/docs/assets/app-desktop.png",
-            "count": 1,
-            "title": "/blob/main/docs/assets/app-desktop.png"
-          }
-        ]
       },
       "neon-runner": {
         "views": 0,
@@ -4073,25 +4110,6 @@
           }
         ]
       },
-      "planner-pro": {
-        "views": 2,
-        "uniques": 2,
-        "clones": 378,
-        "clone_uniques": 106,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 2
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/planner-pro",
-            "count": 2,
-            "title": "Overview"
-          }
-        ]
-      },
       "lofi-studio-pro": {
         "views": 0,
         "uniques": 0,
@@ -4136,6 +4154,1021 @@
   },
   "repos": [
     {
+      "name": "heavenzip",
+      "description": "The CHCE orchestrator — chains prebuilt compression binaries into one pipeline.",
+      "pushed_at": "2026-11-16T18:42:41Z",
+      "homepage": "https://drsamonline.github.io/heavenzip/",
+      "html_url": "https://github.com/drsamonline/heavenzip",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "All4ONE",
+      "description": "403 working tools in one portable Windows binary — file and folder work, encoding and hashing, images, PDFs, media, documents, network diagnostics, system maintenance, security checks and generators. No installer, no registry writes, no telemetry.",
+      "pushed_at": "2026-11-16T18:42:24Z",
+      "homepage": "https://drsamonline.github.io/All4ONE/",
+      "html_url": "https://github.com/drsamonline/All4ONE",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "The_Browser",
+      "description": "Aetheris — an experimental C++ browser engine on a Ladybird/SerenityOS-derived codebase, built to learn how rendering works. Not production-ready.",
+      "pushed_at": "2026-11-16T18:39:59Z",
+      "homepage": "https://drsamonline.github.io/The_Browser/",
+      "html_url": "https://github.com/drsamonline/The_Browser",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "pico",
+      "description": "A personal automation engine on the Python standard library alone: 66 rules, four risk tiers, universal undo, and an optional model that may only propose a command — never run one.",
+      "pushed_at": "2026-11-16T18:35:28Z",
+      "homepage": "https://drsamonline.github.io/pico/",
+      "html_url": "https://github.com/drsamonline/pico",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "volumen",
+      "description": "The web as text, at the speed of reading. Fork of Lynx with deterministic markdown and JSON dumps for automation. Tier 3 of the Aetheris browser family.",
+      "pushed_at": "2026-11-16T18:32:02Z",
+      "homepage": "https://drsamonline.github.io/volumen/",
+      "html_url": "https://github.com/drsamonline/volumen",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "3/5",
+      "status_tone": "warn",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "nodus",
+      "description": "One browser core, many faces. Fork of NetSurf rebuilt as a library with framebuffer, GTK, headless and text frontends. Tier 1 of the Aetheris browser family.",
+      "pushed_at": "2026-11-16T18:32:00Z",
+      "homepage": "https://drsamonline.github.io/nodus/",
+      "html_url": "https://github.com/drsamonline/nodus",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "3/5",
+      "status_tone": "warn",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "sorex",
+      "description": "A featherweight FLTK browser for machines the modern web forgot. Fork of Dillo, hardened for speed, scriptable from the shell. Tier 2 of the Aetheris browser family.",
+      "pushed_at": "2026-11-16T18:31:57Z",
+      "homepage": "https://drsamonline.github.io/sorex/",
+      "html_url": "https://github.com/drsamonline/sorex",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "3/5",
+      "status_tone": "warn",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "corpus-extendum",
+      "description": "The public domain, properly shelved — a free library of out-of-copyright books, readable in the page as PDF, EPUB or text. No accounts, no tracking, no paywall.",
+      "pushed_at": "2026-11-16T18:18:46Z",
+      "homepage": "https://drsamonline.github.io/corpus-extendum/",
+      "html_url": "https://github.com/drsamonline/corpus-extendum",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "corpus-extendum-vault-01",
+      "description": "Book storage for Corpus Extendum — the public-domain library. Ten books, PDF + EPUB + text + records. No website here on purpose: Pages caps a site at 1 GB, and this vault is built to reach 2.5 GB.",
+      "pushed_at": "2026-11-16T18:01:23Z",
+      "homepage": "https://drsamonline.github.io/corpus-extendum-vault-01/",
+      "html_url": "https://github.com/drsamonline/corpus-extendum-vault-01",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "2/5",
+      "status_tone": "bad",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "sui",
+      "description": "Sui — verification-first, privacy-aware free-tier AI gateway. Free tiers, verified before use.",
+      "pushed_at": "2026-11-16T17:53:39Z",
+      "homepage": "https://drsamonline.github.io/sui/",
+      "html_url": "https://github.com/drsamonline/sui",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "tessera",
+      "description": "UNDER DEVELOPMENT — not finished, not released. Federation mesh + CRM core with a hash-chained ledger. 748 tests, 53 documents, 4 claims unverified.",
+      "pushed_at": "2026-11-16T17:47:35Z",
+      "homepage": "https://drsamonline.github.io/tessera/",
+      "html_url": "https://github.com/drsamonline/tessera",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "tessera-app",
+      "description": "UNDER DEVELOPMENT — not finished, not released. Single-file CRM console: provenance per field, hash-chained ledger, works offline and as an installable app.",
+      "pushed_at": "2026-11-16T17:41:30Z",
+      "homepage": "https://drsamonline.github.io/tessera-app/",
+      "html_url": "https://github.com/drsamonline/tessera-app",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "ziptastic",
+      "description": "The CHCE native engine — a single binary with the codecs embedded.",
+      "pushed_at": "2026-11-16T17:26:38Z",
+      "homepage": "https://drsamonline.github.io/ziptastic/",
+      "html_url": "https://github.com/drsamonline/ziptastic",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "aethelgard-games",
+      "description": "Two free Aethelgard browser games — a visual novel (The Books) and a role-playing game (Chronicles of Fate).",
+      "pushed_at": "2026-11-16T13:46:44Z",
+      "homepage": "https://drsamonline.github.io/aethelgard-games/",
+      "html_url": "https://github.com/drsamonline/aethelgard-games",
+      "download": "",
+      "category": "Games",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "TTB",
+      "description": "TinyToolBox — 591 tiny utilities bundled into one lightweight, offline-first browser extension for Chrome, Edge, Firefox and Safari.",
+      "pushed_at": "2026-11-16T13:46:31Z",
+      "homepage": "https://drsamonline.github.io/TTB/",
+      "html_url": "https://github.com/drsamonline/TTB",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Scrap-and-Gun",
+      "description": "SCRAP & GUN — a retro pixel-art arena-defence shooter with tactical construction, escalating waves, persistent upgrades, roguelite drafts, bosses and local co-op.",
+      "pushed_at": "2026-11-16T13:46:23Z",
+      "homepage": "https://drsamonline.github.io/Scrap-and-Gun/",
+      "html_url": "https://github.com/drsamonline/Scrap-and-Gun",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Repertorium-Publicum",
+      "description": "Repertorium Publicum (2008), an open Kent-derived repertory, as a searchable ledger — 74,480 rubrics, 735,460 graded remedy links, a case builder and grade-weighted repertorisation. Offline in one HTML file: no server, no account.",
+      "pushed_at": "2026-11-16T13:46:18Z",
+      "homepage": "https://drsamonline.github.io/Repertorium-Publicum/",
+      "html_url": "https://github.com/drsamonline/Repertorium-Publicum",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "NEO",
+      "description": "NOVA — a statically typed, compiled systems programming language whose compiler lowers to C, JavaScript, Rust and WebAssembly.",
+      "pushed_at": "2026-11-16T13:46:14Z",
+      "homepage": "https://drsamonline.github.io/NEO/",
+      "html_url": "https://github.com/drsamonline/NEO",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MATERIA-MEDICA-BUILDER",
+      "description": "Build your own materia medica and repertory — offline, private and yours to export.",
+      "pushed_at": "2026-11-16T13:46:04Z",
+      "homepage": "https://drsamonline.github.io/MATERIA-MEDICA-BUILDER/",
+      "html_url": "https://github.com/drsamonline/MATERIA-MEDICA-BUILDER",
+      "download": "",
+      "category": "Homeopathy",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "BLINKTRANSFER",
+      "description": "Offline file transfer over animated QR codes — no internet, no Bluetooth, no cables.",
+      "pushed_at": "2026-11-16T13:45:50Z",
+      "homepage": "https://drsamonline.github.io/BLINKTRANSFER/",
+      "html_url": "https://github.com/drsamonline/BLINKTRANSFER",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "dumps-3",
+      "description": "Pre-merge backups (part 3). Written by drsamonline/backup.",
+      "pushed_at": "2026-11-16T13:41:20Z",
+      "homepage": "https://drsamonline.github.io/dumps-3/",
+      "html_url": "https://github.com/drsamonline/dumps-3",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "2/5",
+      "status_tone": "bad",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "TOOLWORKS",
+      "description": "969 tools from TTB and All4ONE in one searchable index. Both stay their own projects.",
+      "pushed_at": "2026-11-16T13:30:48Z",
+      "homepage": "https://drsamonline.github.io/TOOLWORKS/",
+      "html_url": "https://github.com/drsamonline/TOOLWORKS",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "4/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "planner-pro",
+      "description": "An offline-first planner for day, week, month and year. Multi-profile, PIN locked, no accounts, no servers, no networking code. ~210 KB of vanilla JS.",
+      "pushed_at": "2026-11-16T13:30:11Z",
+      "homepage": "https://drsamonline.github.io/planner-pro/",
+      "html_url": "https://github.com/drsamonline/planner-pro",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "ntet-homoeopathy-cbt",
+      "description": "Offline-first NTET 2026 (Homoeopathy) preparation console: 8-unit blueprint, 15-day plan, 100-question NTA-style CBT simulator, unit diagnostics. Single HTML file, no dependencies.",
+      "pushed_at": "2026-11-16T13:29:58Z",
+      "homepage": "https://drsamonline.github.io/ntet-homoeopathy-cbt/",
+      "html_url": "https://github.com/drsamonline/ntet-homoeopathy-cbt",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "4/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "mood-mixer",
+      "description": "A private, offline-ready color playground: three mood sliders in, a four-color palette out. HSL/RGB/HSV, six harmony schemes, WCAG contrast, CSS/JSON/Tailwind/PNG export, PWA. No tracking.",
+      "pushed_at": "2026-11-16T13:29:41Z",
+      "homepage": "https://drsamonline.github.io/mood-mixer/",
+      "html_url": "https://github.com/drsamonline/mood-mixer",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "kinemotif",
+      "description": "A single-file HTML animation studio: turn a paragraph into a moving, scored presentation. Six art styles, real shape morphing, a procedurally synthesised soundtrack, and a one-file offline HTML export.",
+      "pushed_at": "2026-11-16T13:29:17Z",
+      "homepage": "https://drsamonline.github.io/kinemotif/",
+      "html_url": "https://github.com/drsamonline/kinemotif",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "kinemorph",
+      "description": "A browser animation studio for real video: React + TypeScript + PixiJS editor with a GSAP timeline, a Tone.js generative score and WebCodecs MP4 export. The heavy sibling of Kinemotif.",
+      "pushed_at": "2026-11-16T13:28:56Z",
+      "homepage": "https://drsamonline.github.io/kinemorph/",
+      "html_url": "https://github.com/drsamonline/kinemorph",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "holistic",
+      "description": "Eight traditions, one quiet app — numerology, sun-sign astrology, lunar phase and biorhythm. Offline, private, 92 KB, zero network requests.",
+      "pushed_at": "2026-11-16T13:28:33Z",
+      "homepage": "https://drsamonline.github.io/holistic/",
+      "html_url": "https://github.com/drsamonline/holistic",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "KILN",
+      "description": "Spec in. Finished app out. A deterministic compiler for offline single-file apps — no model, no network, no dependencies.",
+      "pushed_at": "2026-11-16T12:54:29Z",
+      "homepage": "https://drsamonline.github.io/KILN/",
+      "html_url": "https://github.com/drsamonline/KILN",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
       "name": "conqueror-os",
       "description": "A private, offline resilience workspace in a single HTML file — read, reflect, journal, track and review.",
       "pushed_at": "2026-11-16T12:47:03Z",
@@ -4171,181 +5204,6 @@
       ]
     },
     {
-      "name": "sui",
-      "description": "Sui — verification-first, privacy-aware free-tier AI gateway. Free tiers, verified before use.",
-      "pushed_at": "2026-11-16T12:06:40Z",
-      "homepage": "https://drsamonline.github.io/sui/",
-      "html_url": "https://github.com/drsamonline/sui",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "heavenzip",
-      "description": "The CHCE orchestrator — chains prebuilt compression binaries into one pipeline.",
-      "pushed_at": "2026-11-16T11:39:17Z",
-      "homepage": "https://drsamonline.github.io/heavenzip/",
-      "html_url": "https://github.com/drsamonline/heavenzip",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        1,
-        0,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "corpus-extendum",
-      "description": "The public domain, properly shelved — a free library of out-of-copyright books, readable in the page as PDF, EPUB or text. No accounts, no tracking, no paywall.",
-      "pushed_at": "2026-11-16T11:03:23Z",
-      "homepage": "https://drsamonline.github.io/corpus-extendum/",
-      "html_url": "https://github.com/drsamonline/corpus-extendum",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
-    },
-    {
-      "name": "The_Browser",
-      "description": "Aetheris — an experimental C++ browser engine on a Ladybird/SerenityOS-derived codebase, built to learn how rendering works. Not production-ready.",
-      "pushed_at": "2026-11-16T10:53:25Z",
-      "homepage": "https://drsamonline.github.io/The_Browser/",
-      "html_url": "https://github.com/drsamonline/The_Browser",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1,
-        1,
-        1,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "corpus-extendum-vault-01",
-      "description": "Book storage for Corpus Extendum — the public-domain library. Ten books, PDF + EPUB + text + records. No website here on purpose: Pages caps a site at 1 GB, and this vault is built to reach 2.5 GB.",
-      "pushed_at": "2026-11-16T10:19:25Z",
-      "homepage": "https://drsamonline.github.io/corpus-extendum-vault-01/",
-      "html_url": "https://github.com/drsamonline/corpus-extendum-vault-01",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "2/5",
-      "status_tone": "bad",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
-    },
-    {
       "name": "app-story-engine",
       "description": "A book the reader moves through: choices, carried state, and a trail of where you have been. Offline, no accounts.",
       "pushed_at": "2026-11-16T09:55:02Z",
@@ -4374,41 +5232,6 @@
         1,
         1,
         1,
-        0,
-        0,
-        0,
-        1
-      ]
-    },
-    {
-      "name": "dumps-3",
-      "description": "Pre-merge backups (part 3). Written by drsamonline/backup.",
-      "pushed_at": "2026-11-16T09:41:42Z",
-      "homepage": "https://drsamonline.github.io/dumps-3/",
-      "html_url": "https://github.com/drsamonline/dumps-3",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "2/5",
-      "status_tone": "bad",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
         0,
         0,
         0,
@@ -4482,216 +5305,6 @@
         1,
         1,
         0,
-        1
-      ]
-    },
-    {
-      "name": "tessera",
-      "description": "UNDER DEVELOPMENT — not finished, not released. Federation mesh + CRM core with a hash-chained ledger. 748 tests, 53 documents, 4 claims unverified.",
-      "pushed_at": "2026-11-16T04:13:01Z",
-      "homepage": "https://drsamonline.github.io/tessera/",
-      "html_url": "https://github.com/drsamonline/tessera",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "NEO",
-      "description": "NOVA — a statically typed, compiled systems programming language whose compiler lowers to C, JavaScript, Rust and WebAssembly.",
-      "pushed_at": "2026-11-16T03:40:43Z",
-      "homepage": "https://drsamonline.github.io/NEO/",
-      "html_url": "https://github.com/drsamonline/NEO",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1,
-        0,
-        0,
-        1,
-        1,
-        1,
-        0,
-        1,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1,
-        0,
-        0,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "volumen",
-      "description": "The web as text, at the speed of reading. Fork of Lynx with deterministic markdown and JSON dumps for automation. Tier 3 of the Aetheris browser family.",
-      "pushed_at": "2026-11-16T01:57:31Z",
-      "homepage": "https://drsamonline.github.io/volumen/",
-      "html_url": "https://github.com/drsamonline/volumen",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "3/5",
-      "status_tone": "warn",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
-    },
-    {
-      "name": "nodus",
-      "description": "One browser core, many faces. Fork of NetSurf rebuilt as a library with framebuffer, GTK, headless and text frontends. Tier 1 of the Aetheris browser family.",
-      "pushed_at": "2026-11-16T01:57:29Z",
-      "homepage": "https://drsamonline.github.io/nodus/",
-      "html_url": "https://github.com/drsamonline/nodus",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "3/5",
-      "status_tone": "warn",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
-    },
-    {
-      "name": "sorex",
-      "description": "A featherweight FLTK browser for machines the modern web forgot. Fork of Dillo, hardened for speed, scriptable from the shell. Tier 2 of the Aetheris browser family.",
-      "pushed_at": "2026-11-16T01:57:25Z",
-      "homepage": "https://drsamonline.github.io/sorex/",
-      "html_url": "https://github.com/drsamonline/sorex",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "3/5",
-      "status_tone": "warn",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
-    },
-    {
-      "name": "All4ONE",
-      "description": "403 working tools in one portable Windows binary — file and folder work, encoding and hashing, images, PDFs, media, documents, network diagnostics, system maintenance, security checks and generators. No installer, no registry writes, no telemetry.",
-      "pushed_at": "2026-11-16T00:47:08Z",
-      "homepage": "https://drsamonline.github.io/All4ONE/",
-      "html_url": "https://github.com/drsamonline/All4ONE",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        1,
-        0,
-        1,
-        1,
-        1,
-        0,
-        1,
-        0,
-        1,
         1
       ]
     },
@@ -4831,76 +5444,6 @@
         0,
         1,
         0,
-        1,
-        0
-      ]
-    },
-    {
-      "name": "pico",
-      "description": "A personal automation engine on the Python standard library alone: 66 rules, four risk tiers, universal undo, and an optional model that may only propose a command — never run one.",
-      "pushed_at": "2026-11-15T17:08:05Z",
-      "homepage": "https://drsamonline.github.io/pico/",
-      "html_url": "https://github.com/drsamonline/pico",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0
-      ]
-    },
-    {
-      "name": "ziptastic",
-      "description": "The CHCE native engine — a single binary with the codecs embedded.",
-      "pushed_at": "2026-11-15T15:00:13Z",
-      "homepage": "https://drsamonline.github.io/ziptastic/",
-      "html_url": "https://github.com/drsamonline/ziptastic",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        1,
         1,
         0
       ]
@@ -5081,111 +5624,6 @@
       ]
     },
     {
-      "name": "TOOLWORKS",
-      "description": "969 tools from TTB and All4ONE in one searchable index. Both stay their own projects.",
-      "pushed_at": "2026-11-15T14:40:49Z",
-      "homepage": "https://drsamonline.github.io/TOOLWORKS/",
-      "html_url": "https://github.com/drsamonline/TOOLWORKS",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "4/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
-    },
-    {
-      "name": "KILN",
-      "description": "Spec in. Finished app out. A deterministic compiler for offline single-file apps — no model, no network, no dependencies.",
-      "pushed_at": "2026-11-15T14:15:16Z",
-      "homepage": "https://drsamonline.github.io/KILN/",
-      "html_url": "https://github.com/drsamonline/KILN",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        0
-      ]
-    },
-    {
-      "name": "kinemotif",
-      "description": "A single-file HTML animation studio: turn a paragraph into a moving, scored presentation. Six art styles, real shape morphing, a procedurally synthesised soundtrack, and a one-file offline HTML export.",
-      "pushed_at": "2026-11-15T14:06:17Z",
-      "homepage": "https://drsamonline.github.io/kinemotif/",
-      "html_url": "https://github.com/drsamonline/kinemotif",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        0
-      ]
-    },
-    {
       "name": "corefit-md",
       "description": "CoreFit MD — a five-minute video-guided morning core routine. Clip-accurate playback (every set opens at 0:30), six-week progression, streaks, trilingual UI. Static, offline-first, no backend.",
       "pushed_at": "2026-11-15T13:44:56Z",
@@ -5361,111 +5799,6 @@
       ]
     },
     {
-      "name": "TTB",
-      "description": "TinyToolBox — 591 tiny utilities bundled into one lightweight, offline-first browser extension for Chrome, Edge, Firefox and Safari.",
-      "pushed_at": "2026-11-15T12:45:59Z",
-      "homepage": "https://drsamonline.github.io/TTB/",
-      "html_url": "https://github.com/drsamonline/TTB",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        1,
-        0
-      ]
-    },
-    {
-      "name": "tessera-app",
-      "description": "UNDER DEVELOPMENT — not finished, not released. Single-file CRM console: provenance per field, hash-chained ledger, works offline and as an installable app.",
-      "pushed_at": "2026-11-15T11:57:26Z",
-      "homepage": "https://drsamonline.github.io/tessera-app/",
-      "html_url": "https://github.com/drsamonline/tessera-app",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0
-      ]
-    },
-    {
-      "name": "ntet-homoeopathy-cbt",
-      "description": "Offline-first NTET 2026 (Homoeopathy) preparation console: 8-unit blueprint, 15-day plan, 100-question NTA-style CBT simulator, unit diagnostics. Single HTML file, no dependencies.",
-      "pushed_at": "2026-11-15T11:54:41Z",
-      "homepage": "https://drsamonline.github.io/ntet-homoeopathy-cbt/",
-      "html_url": "https://github.com/drsamonline/ntet-homoeopathy-cbt",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "4/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        1,
-        0
-      ]
-    },
-    {
       "name": "blinkcode-ai",
       "description": "An optical file-transfer PWA — compress a file into a File DNA container, paint it as SpectraCode colour matrices and recover it with a camera.",
       "pushed_at": "2026-11-15T11:54:35Z",
@@ -5599,41 +5932,6 @@
         1,
         1,
         0,
-        0,
-        0,
-        1,
-        0
-      ]
-    },
-    {
-      "name": "BLINKTRANSFER",
-      "description": "Offline file transfer over animated QR codes — no internet, no Bluetooth, no cables.",
-      "pushed_at": "2026-11-15T11:54:25Z",
-      "homepage": "https://drsamonline.github.io/BLINKTRANSFER/",
-      "html_url": "https://github.com/drsamonline/BLINKTRANSFER",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1,
-        1,
         0,
         0,
         1,
@@ -5991,41 +6289,6 @@
       ]
     },
     {
-      "name": "Scrap-and-Gun",
-      "description": "SCRAP & GUN — a retro pixel-art arena-defence shooter with tactical construction, escalating waves, persistent upgrades, roguelite drafts, bosses and local co-op.",
-      "pushed_at": "2026-11-15T09:14:09Z",
-      "homepage": "https://drsamonline.github.io/Scrap-and-Gun/",
-      "html_url": "https://github.com/drsamonline/Scrap-and-Gun",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        1,
-        1,
-        0,
-        1,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1,
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
-    },
-    {
       "name": "app-encrypted-case-log",
       "description": "Per-patient clinical notes encrypted on the device with AES-256-GCM — offline, no account, no server.",
       "pushed_at": "2026-11-15T07:44:21Z",
@@ -6091,41 +6354,6 @@
         1,
         0,
         1,
-        1,
-        0
-      ]
-    },
-    {
-      "name": "holistic",
-      "description": "Eight traditions, one quiet app — numerology, sun-sign astrology, lunar phase and biorhythm. Offline, private, 92 KB, zero network requests.",
-      "pushed_at": "2026-11-15T07:41:45Z",
-      "homepage": "https://drsamonline.github.io/holistic/",
-      "html_url": "https://github.com/drsamonline/holistic",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
         1,
         0
       ]
@@ -6411,41 +6639,6 @@
       ]
     },
     {
-      "name": "kinemorph",
-      "description": "A browser animation studio for real video: React + TypeScript + PixiJS editor with a GSAP timeline, a Tone.js generative score and WebCodecs MP4 export. The heavy sibling of Kinemotif.",
-      "pushed_at": "2026-11-15T04:02:56Z",
-      "homepage": "https://drsamonline.github.io/kinemorph/",
-      "html_url": "https://github.com/drsamonline/kinemorph",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        0
-      ]
-    },
-    {
       "name": "musicgen",
       "description": "A pocket generative composer — an offline-first PWA that writes, synthesises, masters and exports music in the browser, with no server and no samples.",
       "pushed_at": "2026-11-15T03:52:55Z",
@@ -6691,41 +6884,6 @@
       ]
     },
     {
-      "name": "MATERIA-MEDICA-BUILDER",
-      "description": "Build your own materia medica and repertory — offline, private and yours to export.",
-      "pushed_at": "2026-11-14T18:06:45Z",
-      "homepage": "https://drsamonline.github.io/MATERIA-MEDICA-BUILDER/",
-      "html_url": "https://github.com/drsamonline/MATERIA-MEDICA-BUILDER",
-      "download": "",
-      "category": "Homeopathy",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        1,
-        1,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        0,
-        0
-      ]
-    },
-    {
       "name": "skin-case-tracker",
       "description": "A private, offline skin-case tracker built on the HHMS dashboard — history, habits, mapping and symptoms — with a 90-day pattern engine, from the book The Skin Is a Liar.",
       "pushed_at": "2026-11-14T18:06:40Z",
@@ -6752,41 +6910,6 @@
         0,
         1,
         1,
-        1,
-        1,
-        0,
-        1,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "aethelgard-games",
-      "description": "Two free Aethelgard browser games — a visual novel (The Books) and a role-playing game (Chronicles of Fate).",
-      "pushed_at": "2026-11-14T18:06:31Z",
-      "homepage": "https://drsamonline.github.io/aethelgard-games/",
-      "html_url": "https://github.com/drsamonline/aethelgard-games",
-      "download": "",
-      "category": "Games",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        0,
         1,
         1,
         0,
@@ -7216,41 +7339,6 @@
       ]
     },
     {
-      "name": "mood-mixer",
-      "description": "A private, offline-ready color playground: three mood sliders in, a four-color palette out. HSL/RGB/HSV, six harmony schemes, WCAG contrast, CSS/JSON/Tailwind/PNG export, PWA. No tracking.",
-      "pushed_at": "2026-11-13T08:06:08Z",
-      "homepage": "https://drsamonline.github.io/mood-mixer/",
-      "html_url": "https://github.com/drsamonline/mood-mixer",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "ntet-course-source",
       "description": "PRIVATE — source, question bank, build tooling and licence keys for the NTET 2026 Homoeopathy course.",
       "pushed_at": "2026-11-12T12:26:17Z",
@@ -7381,41 +7469,6 @@
         0,
         0,
         0,
-        1,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Repertorium-Publicum",
-      "description": "Repertorium Publicum (2008), an open Kent-derived repertory, as a searchable ledger — 74,480 rubrics, 735,460 graded remedy links, a case builder and grade-weighted repertorisation. Offline in one HTML file: no server, no account.",
-      "pushed_at": "2026-11-12T06:35:51Z",
-      "homepage": "https://drsamonline.github.io/Repertorium-Publicum/",
-      "html_url": "https://github.com/drsamonline/Repertorium-Publicum",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        1,
         1,
         1,
         1,
@@ -7802,41 +7855,6 @@
         0,
         1,
         1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "planner-pro",
-      "description": "An offline-first planner for day, week, month and year. Multi-profile, PIN locked, no accounts, no servers, no networking code. ~210 KB of vanilla JS.",
-      "pushed_at": "2026-11-11T14:52:13Z",
-      "homepage": "https://drsamonline.github.io/planner-pro/",
-      "html_url": "https://github.com/drsamonline/planner-pro",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         1,
         0,
         0,
@@ -9651,30 +9669,48 @@
       "avg": 4.7,
       "pushes": 146,
       "byrepo": {
-        "Matneo": 1,
-        "conqueror-os": 1,
-        "sui": 1,
-        "audit": 1,
-        "drsamonline.github.io": 1,
-        "skills": 1,
         "heavenzip": 1,
-        "drsamonline": 1,
-        "corpus-extendum": 1,
+        "All4ONE": 1,
+        "audit": 1,
         "The_Browser": 1,
-        "corpus-extendum-vault-01": 1,
-        "app-story-engine": 1,
-        "dumps-3": 1,
-        "UniRep": 1,
-        "forge": 1,
-        "dashboard": 1,
-        "knowledge": 1,
-        "neon-engine": 1,
-        "tessera": 1,
-        "NEO": 1,
+        "pico": 1,
         "volumen": 1,
         "nodus": 1,
         "sorex": 1,
-        "All4ONE": 1,
+        "corpus-extendum": 1,
+        "corpus-extendum-vault-01": 1,
+        "sui": 1,
+        "tessera": 1,
+        "tessera-app": 1,
+        "ziptastic": 1,
+        "forge": 1,
+        "aethelgard-games": 1,
+        "TTB": 1,
+        "Scrap-and-Gun": 1,
+        "Repertorium-Publicum": 1,
+        "NEO": 1,
+        "Matneo": 1,
+        "MATERIA-MEDICA-BUILDER": 1,
+        "BLINKTRANSFER": 1,
+        "dumps-3": 1,
+        "TOOLWORKS": 1,
+        "planner-pro": 1,
+        "ntet-homoeopathy-cbt": 1,
+        "mood-mixer": 1,
+        "kinemotif": 1,
+        "kinemorph": 1,
+        "holistic": 1,
+        "registry": 1,
+        "KILN": 1,
+        "dashboard": 1,
+        "knowledge": 1,
+        "conqueror-os": 1,
+        "drsamonline.github.io": 1,
+        "skills": 1,
+        "drsamonline": 1,
+        "app-story-engine": 1,
+        "UniRep": 1,
+        "neon-engine": 1,
         "lexora": 1
       },
       "stars": 139,
