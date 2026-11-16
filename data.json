@@ -1,13 +1,13 @@
 {
   "generated": "2026-11-16",
-  "generated_at": "2026-11-16T06:45:04Z",
+  "generated_at": "2026-11-16T12:47:40Z",
   "reckoning": "111 products · 13 kits (role) · avg metadata completeness 4.7/5 · updated automatically.",
-  "health": "ok",
+  "health": "bad",
   "health_detail": {
-    "state": "ok",
-    "failing": 0,
+    "state": "bad",
+    "failing": 1,
     "cancelled": 0,
-    "unobservable": 25,
+    "unobservable": 24,
     "total": 36,
     "source": "fleet-scan",
     "note": "cancelled runs are excluded: a superseded push is intended behaviour, not a fault. unobservable means the console could not read the history - which is NOT the same as 'never ran'. 36 scheduled workflows in 14 repositories, read from the control panel's fleet scan."
@@ -47,25 +47,30 @@
     "avg": 4.7,
     "pushes": 146,
     "byrepo": {
-      "neon-engine": 1,
-      "UniRep": 1,
-      "heavenzip": 1,
+      "Matneo": 1,
+      "conqueror-os": 1,
+      "sui": 1,
       "audit": 1,
-      "The_Browser": 1,
-      "skills": 1,
-      "tessera": 1,
       "drsamonline.github.io": 1,
-      "dashboard": 1,
+      "skills": 1,
+      "heavenzip": 1,
+      "drsamonline": 1,
       "corpus-extendum": 1,
-      "NEO": 1,
+      "The_Browser": 1,
       "corpus-extendum-vault-01": 1,
+      "app-story-engine": 1,
+      "dumps-3": 1,
+      "UniRep": 1,
+      "forge": 1,
+      "dashboard": 1,
+      "knowledge": 1,
+      "neon-engine": 1,
+      "tessera": 1,
+      "NEO": 1,
       "volumen": 1,
       "nodus": 1,
       "sorex": 1,
-      "forge": 1,
       "All4ONE": 1,
-      "Matneo": 1,
-      "knowledge": 1,
       "lexora": 1
     }
   },
@@ -83,8 +88,8 @@
       "4": 3
     },
     "categories": {
-      "HTML Apps": 78,
       "Utilities": 15,
+      "HTML Apps": 78,
       "Games": 6,
       "Homeopathy": 10,
       "Health Tools": 1,
@@ -118,7 +123,7 @@
     },
     {
       "date": "2026-11-09",
-      "count": 1
+      "count": 0
     },
     {
       "date": "2026-11-10",
@@ -130,7 +135,7 @@
     },
     {
       "date": "2026-11-12",
-      "count": 10
+      "count": 9
     },
     {
       "date": "2026-11-13",
@@ -142,11 +147,11 @@
     },
     {
       "date": "2026-11-15",
-      "count": 57
+      "count": 54
     },
     {
       "date": "2026-11-16",
-      "count": 20
+      "count": 25
     }
   ],
   "attention": [
@@ -163,6 +168,13 @@
       "url": "https://github.com/drsamonline/web-kit/issues/3",
       "kind": "issue",
       "created": "2026-10-26T00:46:14Z"
+    },
+    {
+      "title": "ci: bump drsamonline/app-builder/.github/workflows/build.yml from 49c2e0b172890f9334bbc7167a0e7fb5cd3756ba to 85949b5b7ef6a47a40731cc01e8c2cd65ceeda4c",
+      "repo": "app-story-engine",
+      "url": "https://github.com/drsamonline/app-story-engine/pull/2",
+      "kind": "PR",
+      "created": "2026-11-16T09:55:04Z"
     },
     {
       "title": "fix(landing): generate the dark-theme button contrast rule instead of hand-editing",
@@ -296,13 +308,6 @@
       "url": "https://github.com/drsamonline/tessera/pull/1",
       "kind": "PR",
       "created": "2026-11-13T20:09:37Z"
-    },
-    {
-      "title": "fix(dist): rebuild the bundles after the README support block changed",
-      "repo": "app-lantern",
-      "url": "https://github.com/drsamonline/app-lantern/pull/2",
-      "kind": "PR",
-      "created": "2026-11-13T06:54:55Z"
     }
   ],
   "controls": [
@@ -496,124 +501,124 @@
   },
   "changes": [
     {
-      "type": "PullRequest",
-      "repo": "audit",
-      "when": "2026-11-09T00:40:37Z",
-      "text": "closed: "
-    },
-    {
-      "type": "IssueComment",
-      "repo": "audit",
-      "when": "2026-11-16T06:38:25Z",
-      "text": ""
-    },
-    {
-      "type": "PullRequest",
-      "repo": "audit",
-      "when": "2026-11-04T12:38:26Z",
-      "text": "closed: "
-    },
-    {
-      "type": "IssueComment",
-      "repo": "audit",
-      "when": "2026-11-16T06:38:22Z",
-      "text": ""
-    },
-    {
-      "type": "IssueComment",
-      "repo": "audit",
-      "when": "2026-11-16T06:38:18Z",
-      "text": ""
-    },
-    {
-      "type": "PullRequest",
-      "repo": "audit",
-      "when": "2026-10-31T07:35:49Z",
-      "text": "closed: "
-    },
-    {
       "type": "Push",
-      "repo": "UniRep",
-      "when": "2026-11-16T05:14:33Z",
+      "repo": "audit",
+      "when": "2026-11-16T11:03:36Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
-      "repo": "The_Browser",
-      "when": "2026-11-16T02:50:51Z",
+      "repo": "tessera",
+      "when": "2026-11-14T07:24:28Z",
       "text": "pushed to main"
     },
     {
-      "type": "Push",
-      "repo": "kinemotif",
-      "when": "2026-11-13T19:16:48Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Watch",
-      "repo": "app-story-engine",
-      "when": "2026-11-16T05:56:19Z",
+      "type": "Create",
+      "repo": "Matneo",
+      "when": "2026-11-14T07:00:05Z",
       "text": ""
     },
     {
-      "type": "Watch",
-      "repo": "holistic",
-      "when": "2026-11-16T05:54:54Z",
-      "text": ""
-    },
-    {
-      "type": "Push",
+      "type": "Delete",
       "repo": "heavenzip",
-      "when": "2026-11-15T17:25:23Z",
+      "when": "2026-11-16T09:31:28Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
+      "repo": "pico",
+      "when": "2026-11-15T03:47:29Z",
       "text": "pushed to main"
     },
     {
-      "type": "Watch",
-      "repo": "app-opd-register",
-      "when": "2026-11-16T05:45:50Z",
-      "text": ""
+      "type": "Push",
+      "repo": "kitbox",
+      "when": "2026-11-15T05:10:31Z",
+      "text": "pushed to main"
     },
     {
-      "type": "Watch",
-      "repo": "sui",
-      "when": "2026-11-16T05:42:09Z",
-      "text": ""
+      "type": "Push",
+      "repo": "KILN",
+      "when": "2026-11-15T05:01:48Z",
+      "text": "pushed to main"
     },
     {
-      "type": "Watch",
+      "type": "Push",
+      "repo": "audit",
+      "when": "2026-11-16T10:31:15Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "The_Browser",
+      "when": "2026-11-16T10:30:58Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
       "repo": "tessera-app",
-      "when": "2026-11-16T05:42:06Z",
-      "text": ""
-    },
-    {
-      "type": "Push",
-      "repo": "The_Browser",
-      "when": "2026-11-15T17:20:13Z",
+      "when": "2026-11-15T04:53:06Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "The_Browser",
-      "when": "2026-11-15T17:20:04Z",
+      "when": "2026-11-16T06:56:50Z",
       "text": "pushed to main"
     },
     {
-      "type": "Watch",
-      "repo": "TOOLWORKS",
-      "when": "2026-11-16T05:38:55Z",
-      "text": ""
+      "type": "PullRequest",
+      "repo": "heavenzip",
+      "when": "2026-11-16T11:39:15Z",
+      "text": "merged: "
     },
     {
-      "type": "Watch",
-      "repo": "sorex",
-      "when": "2026-11-16T05:24:07Z",
-      "text": ""
+      "type": "PullRequest",
+      "repo": "heavenzip",
+      "when": "2026-11-16T11:32:54Z",
+      "text": "opened: "
     },
     {
-      "type": "Watch",
-      "repo": "nodus",
-      "when": "2026-11-16T05:24:05Z",
-      "text": ""
+      "type": "Push",
+      "repo": "tessera-app",
+      "when": "2026-11-15T04:36:50Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "PullRequest",
+      "repo": "heavenzip",
+      "when": "2026-11-16T11:26:47Z",
+      "text": "merged: "
+    },
+    {
+      "type": "PullRequest",
+      "repo": "heavenzip",
+      "when": "2026-11-16T11:22:52Z",
+      "text": "opened: "
+    },
+    {
+      "type": "PullRequest",
+      "repo": "heavenzip",
+      "when": "2026-11-16T11:17:15Z",
+      "text": "merged: "
+    },
+    {
+      "type": "Push",
+      "repo": "audit",
+      "when": "2026-11-16T10:14:06Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "PullRequest",
+      "repo": "heavenzip",
+      "when": "2026-11-16T11:13:17Z",
+      "text": "opened: "
+    },
+    {
+      "type": "Push",
+      "repo": "corpus-extendum",
+      "when": "2026-11-16T10:53:29Z",
+      "text": "pushed to main"
     }
   ],
   "automation": [
@@ -641,8 +646,8 @@
       ],
       "schedule": "daily 03:51 UTC",
       "repo_url": "https://github.com/drsamonline/audit",
-      "url": "https://github.com/drsamonline/audit/actions/runs/43716153378",
-      "last_run": "2026-11-15T12:54:50Z",
+      "url": "https://github.com/drsamonline/audit/actions/runs/43863479764",
+      "last_run": "2026-11-16T12:07:09Z",
       "conclusion": "success"
     },
     {
@@ -655,9 +660,9 @@
       ],
       "schedule": "weekly (Mon) 03:31 UTC",
       "repo_url": "https://github.com/drsamonline/audit",
-      "url": "https://github.com/drsamonline/audit/actions/runs/42859904921",
-      "last_run": "2026-11-10T16:58:08Z",
-      "conclusion": "success"
+      "url": "https://github.com/drsamonline/audit/actions/runs/43862270587",
+      "last_run": "2026-11-16T11:58:18Z",
+      "conclusion": "failure"
     },
     {
       "repo": "control-panel",
@@ -683,8 +688,8 @@
       ],
       "schedule": "weekly (Tue) 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/43818853317",
-      "last_run": "2026-11-16T06:44:39Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/43869708140",
+      "last_run": "2026-11-16T12:47:11Z",
       "conclusion": "in_progress"
     },
     {
@@ -711,8 +716,8 @@
       ],
       "schedule": "daily 03:17 UTC",
       "repo_url": "https://github.com/drsamonline/drsamonline",
-      "url": "https://github.com/drsamonline/drsamonline/actions/runs/43707445665",
-      "last_run": "2026-11-15T11:08:30Z",
+      "url": "https://github.com/drsamonline/drsamonline/actions/runs/43859366797",
+      "last_run": "2026-11-16T11:37:46Z",
       "conclusion": "success"
     },
     {
@@ -725,8 +730,8 @@
       ],
       "schedule": "daily 03:37 UTC",
       "repo_url": "https://github.com/drsamonline/drsamonline.github.io",
-      "url": "https://github.com/drsamonline/drsamonline.github.io/actions/runs/43708886764",
-      "last_run": "2026-11-15T11:30:22Z",
+      "url": "https://github.com/drsamonline/drsamonline.github.io/actions/runs/43862418152",
+      "last_run": "2026-11-16T12:01:07Z",
       "conclusion": "success"
     },
     {
@@ -1081,9 +1086,9 @@
       ],
       "schedule": "weekly (Tue) 04:12 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/runs/43818853655",
-      "last_run": "2026-11-16T06:44:39Z",
-      "conclusion": "in_progress"
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/43869707685",
+      "last_run": "2026-11-16T12:47:18Z",
+      "conclusion": "queued"
     },
     {
       "repo": "Matneo",
@@ -1095,9 +1100,9 @@
       ],
       "schedule": "monthly (days 1,16) 03:00 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/workflows/store-images.yml",
-      "last_run": null,
-      "conclusion": "no runs yet"
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/43849598781",
+      "last_run": "2026-11-16T10:32:02Z",
+      "conclusion": "success"
     },
     {
       "repo": "Matneo",
@@ -1109,9 +1114,9 @@
       ],
       "schedule": "weekly (Tue) 04:22 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/runs/43818853623",
-      "last_run": "2026-11-16T06:44:37Z",
-      "conclusion": "pending"
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/43869707289",
+      "last_run": "2026-11-16T12:47:17Z",
+      "conclusion": "success"
     },
     {
       "repo": "registry",
@@ -1138,8 +1143,8 @@
       ],
       "schedule": "weekly (Mon) 03:23 UTC",
       "repo_url": "https://github.com/drsamonline/skills",
-      "url": "https://github.com/drsamonline/skills/actions/runs/43803110731",
-      "last_run": "2026-11-16T04:16:51Z",
+      "url": "https://github.com/drsamonline/skills/actions/runs/43859725118",
+      "last_run": "2026-11-16T11:41:03Z",
       "conclusion": "success"
     }
   ],
@@ -1240,18 +1245,18 @@
         "html_url": "https://github.com/drsamonline/neon-runner"
       },
       {
-        "name": "neon-engine",
+        "name": "conqueror-os",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
-        "html_url": "https://github.com/drsamonline/neon-engine"
+        "html_url": "https://github.com/drsamonline/conqueror-os"
       },
       {
-        "name": "UniRep",
+        "name": "sui",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
-        "html_url": "https://github.com/drsamonline/UniRep"
+        "html_url": "https://github.com/drsamonline/sui"
       },
       {
         "name": "heavenzip",
@@ -1261,11 +1266,53 @@
         "html_url": "https://github.com/drsamonline/heavenzip"
       },
       {
+        "name": "corpus-extendum",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/corpus-extendum"
+      },
+      {
         "name": "The_Browser",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/The_Browser"
+      },
+      {
+        "name": "corpus-extendum-vault-01",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/corpus-extendum-vault-01"
+      },
+      {
+        "name": "app-story-engine",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/app-story-engine"
+      },
+      {
+        "name": "dumps-3",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/dumps-3"
+      },
+      {
+        "name": "UniRep",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/UniRep"
+      },
+      {
+        "name": "neon-engine",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/neon-engine"
       },
       {
         "name": "tessera",
@@ -1275,25 +1322,11 @@
         "html_url": "https://github.com/drsamonline/tessera"
       },
       {
-        "name": "corpus-extendum",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/corpus-extendum"
-      },
-      {
         "name": "NEO",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/NEO"
-      },
-      {
-        "name": "corpus-extendum-vault-01",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/corpus-extendum-vault-01"
       },
       {
         "name": "volumen",
@@ -1450,13 +1483,6 @@
         "html_url": "https://github.com/drsamonline/open-materia-medica"
       },
       {
-        "name": "conqueror-os",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/conqueror-os"
-      },
-      {
         "name": "helioprism",
         "stars": 1,
         "forks": 0,
@@ -1483,13 +1509,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/tessera-app"
-      },
-      {
-        "name": "sui",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/sui"
       },
       {
         "name": "ntet-homoeopathy-cbt",
@@ -1877,13 +1896,6 @@
         "html_url": "https://github.com/drsamonline/weft8-hardware"
       },
       {
-        "name": "app-story-engine",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/app-story-engine"
-      },
-      {
         "name": "app-endpoints",
         "stars": 1,
         "forks": 0,
@@ -2115,13 +2127,6 @@
         "html_url": "https://github.com/drsamonline/planner-pro"
       },
       {
-        "name": "dumps-3",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/dumps-3"
-      },
-      {
         "name": "dumps",
         "stars": 1,
         "forks": 0,
@@ -2164,13 +2169,19 @@
     "forked_repos": 1,
     "external": {
       "issues": 1,
-      "prs": 7,
+      "prs": 8,
       "items": [
         {
           "title": "Knerr 1896: abbreviation \"Strain.\" (OCR of \"Stram.\") resolves to Stannum instead of Stramonium — 262 links",
           "repo": "homoeopathic-materia-medica-repertory-json",
           "url": "https://github.com/drsamonline/homoeopathic-materia-medica-repertory-json/issues/1",
           "who": "meirakalile-ship-it"
+        },
+        {
+          "title": "ci: bump drsamonline/app-builder/.github/workflows/build.yml from 49c2e0b172890f9334bbc7167a0e7fb5cd3756ba to 85949b5b7ef6a47a40731cc01e8c2cd65ceeda4c",
+          "repo": "app-story-engine",
+          "url": "https://github.com/drsamonline/app-story-engine/pull/2",
+          "who": "dependabot[bot]"
         },
         {
           "title": "ci: bump drsamonline/app-builder/.github/workflows/build.yml from 49c2e0b172890f9334bbc7167a0e7fb5cd3756ba to a9b6c79b987bcf6426c5682cfa84bb94d432fe88",
@@ -2222,11 +2233,11 @@
     "window": "14 days",
     "note": "Last 14 days — GitHub's retention window.",
     "repos": {
-      "neon-engine": {
+      "conqueror-os": {
         "views": 2,
         "uniques": 2,
-        "clones": 233,
-        "clone_uniques": 89,
+        "clones": 784,
+        "clone_uniques": 161,
         "referrers": [
           {
             "from": "github.com",
@@ -2235,17 +2246,17 @@
         ],
         "paths": [
           {
-            "path": "/drsamonline/neon-engine",
+            "path": "/drsamonline/conqueror-os",
             "count": 2,
             "title": "Overview"
           }
         ]
       },
-      "UniRep": {
+      "sui": {
         "views": 0,
         "uniques": 0,
-        "clones": 137,
-        "clone_uniques": 57,
+        "clones": 197,
+        "clone_uniques": 64,
         "referrers": [],
         "paths": []
       },
@@ -2254,6 +2265,14 @@
         "uniques": 0,
         "clones": 506,
         "clone_uniques": 161,
+        "referrers": [],
+        "paths": []
+      },
+      "corpus-extendum": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
         "referrers": [],
         "paths": []
       },
@@ -2290,6 +2309,63 @@
           }
         ]
       },
+      "corpus-extendum-vault-01": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 0,
+        "clone_uniques": 0,
+        "referrers": [],
+        "paths": []
+      },
+      "app-story-engine": {
+        "views": 1,
+        "uniques": 1,
+        "clones": 285,
+        "clone_uniques": 88,
+        "referrers": [],
+        "paths": [
+          {
+            "path": "/drsamonline/app-story-engine/pulls",
+            "count": 1,
+            "title": "/pulls"
+          }
+        ]
+      },
+      "dumps-3": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 46,
+        "clone_uniques": 1,
+        "referrers": [],
+        "paths": []
+      },
+      "UniRep": {
+        "views": 0,
+        "uniques": 0,
+        "clones": 137,
+        "clone_uniques": 57,
+        "referrers": [],
+        "paths": []
+      },
+      "neon-engine": {
+        "views": 2,
+        "uniques": 2,
+        "clones": 233,
+        "clone_uniques": 89,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 2
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/neon-engine",
+            "count": 2,
+            "title": "Overview"
+          }
+        ]
+      },
       "tessera": {
         "views": 2,
         "uniques": 2,
@@ -2304,14 +2380,6 @@
           }
         ]
       },
-      "corpus-extendum": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 0,
-        "clone_uniques": 0,
-        "referrers": [],
-        "paths": []
-      },
       "NEO": {
         "views": 1,
         "uniques": 1,
@@ -2325,14 +2393,6 @@
             "title": "Overview"
           }
         ]
-      },
-      "corpus-extendum-vault-01": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 0,
-        "clone_uniques": 0,
-        "referrers": [],
-        "paths": []
       },
       "volumen": {
         "views": 0,
@@ -2673,25 +2733,6 @@
           }
         ]
       },
-      "conqueror-os": {
-        "views": 2,
-        "uniques": 2,
-        "clones": 784,
-        "clone_uniques": 161,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 2
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/conqueror-os",
-            "count": 2,
-            "title": "Overview"
-          }
-        ]
-      },
       "helioprism": {
         "views": 0,
         "uniques": 0,
@@ -2762,14 +2803,6 @@
         "uniques": 0,
         "clones": 143,
         "clone_uniques": 44,
-        "referrers": [],
-        "paths": []
-      },
-      "sui": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 197,
-        "clone_uniques": 64,
         "referrers": [],
         "paths": []
       },
@@ -3612,20 +3645,6 @@
         "referrers": [],
         "paths": []
       },
-      "app-story-engine": {
-        "views": 1,
-        "uniques": 1,
-        "clones": 285,
-        "clone_uniques": 88,
-        "referrers": [],
-        "paths": [
-          {
-            "path": "/drsamonline/app-story-engine/pulls",
-            "count": 1,
-            "title": "/pulls"
-          }
-        ]
-      },
       "app-endpoints": {
         "views": 0,
         "uniques": 0,
@@ -4081,14 +4100,6 @@
         "referrers": [],
         "paths": []
       },
-      "dumps-3": {
-        "views": 0,
-        "uniques": 0,
-        "clones": 46,
-        "clone_uniques": 1,
-        "referrers": [],
-        "paths": []
-      },
       "dumps": {
         "views": 0,
         "uniques": 0,
@@ -4125,13 +4136,13 @@
   },
   "repos": [
     {
-      "name": "neon-engine",
-      "description": "A code-only open-world game engine for the browser — no assets, no dependencies; every texture, mesh and sound is generated at runtime.",
-      "pushed_at": "2026-11-16T06:42:30Z",
-      "homepage": "https://drsamonline.github.io/neon-engine/",
-      "html_url": "https://github.com/drsamonline/neon-engine",
+      "name": "conqueror-os",
+      "description": "A private, offline resilience workspace in a single HTML file — read, reflect, journal, track and review.",
+      "pushed_at": "2026-11-16T12:47:03Z",
+      "homepage": "https://drsamonline.github.io/conqueror-os/",
+      "html_url": "https://github.com/drsamonline/conqueror-os",
       "download": "",
-      "category": "HTML Apps",
+      "category": "Utilities",
       "status": "5/5",
       "status_tone": "ok",
       "spark": [
@@ -4142,29 +4153,29 @@
         1,
         1,
         0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
         0,
         1,
         1,
         1,
         1,
-        0,
-        0,
-        1,
-        1,
         1,
         0,
         1,
-        1,
-        0,
         1
       ]
     },
     {
-      "name": "UniRep",
-      "description": "Universal index over the classical homoeopathic repertories — one search surface across several books. Policy documents here; the app runs on Replit.",
-      "pushed_at": "2026-11-16T06:41:15Z",
-      "homepage": "https://replit.com/@sohilmomin2000/Homeopathic-Digital-Repe",
-      "html_url": "https://github.com/drsamonline/UniRep",
+      "name": "sui",
+      "description": "Sui — verification-first, privacy-aware free-tier AI gateway. Free tiers, verified before use.",
+      "pushed_at": "2026-11-16T12:06:40Z",
+      "homepage": "https://drsamonline.github.io/sui/",
+      "html_url": "https://github.com/drsamonline/sui",
       "download": "",
       "category": "HTML Apps",
       "status": "5/5",
@@ -4181,15 +4192,15 @@
         0,
         0,
         0,
-        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0,
         1,
-        1,
-        1,
-        0,
-        0,
-        0,
         1,
         1
       ]
@@ -4197,7 +4208,7 @@
     {
       "name": "heavenzip",
       "description": "The CHCE orchestrator — chains prebuilt compression binaries into one pipeline.",
-      "pushed_at": "2026-11-16T04:25:25Z",
+      "pushed_at": "2026-11-16T11:39:17Z",
       "homepage": "https://drsamonline.github.io/heavenzip/",
       "html_url": "https://github.com/drsamonline/heavenzip",
       "download": "",
@@ -4230,9 +4241,44 @@
       ]
     },
     {
+      "name": "corpus-extendum",
+      "description": "The public domain, properly shelved — a free library of out-of-copyright books, readable in the page as PDF, EPUB or text. No accounts, no tracking, no paywall.",
+      "pushed_at": "2026-11-16T11:03:23Z",
+      "homepage": "https://drsamonline.github.io/corpus-extendum/",
+      "html_url": "https://github.com/drsamonline/corpus-extendum",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
       "name": "The_Browser",
       "description": "Aetheris — an experimental C++ browser engine on a Ladybird/SerenityOS-derived codebase, built to learn how rendering works. Not production-ready.",
-      "pushed_at": "2026-11-16T04:21:40Z",
+      "pushed_at": "2026-11-16T10:53:25Z",
       "homepage": "https://drsamonline.github.io/The_Browser/",
       "html_url": "https://github.com/drsamonline/The_Browser",
       "download": "",
@@ -4261,6 +4307,181 @@
         0,
         1,
         1,
+        1
+      ]
+    },
+    {
+      "name": "corpus-extendum-vault-01",
+      "description": "Book storage for Corpus Extendum — the public-domain library. Ten books, PDF + EPUB + text + records. No website here on purpose: Pages caps a site at 1 GB, and this vault is built to reach 2.5 GB.",
+      "pushed_at": "2026-11-16T10:19:25Z",
+      "homepage": "https://drsamonline.github.io/corpus-extendum-vault-01/",
+      "html_url": "https://github.com/drsamonline/corpus-extendum-vault-01",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "2/5",
+      "status_tone": "bad",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "app-story-engine",
+      "description": "A book the reader moves through: choices, carried state, and a trail of where you have been. Offline, no accounts.",
+      "pushed_at": "2026-11-16T09:55:02Z",
+      "homepage": "https://drsamonline.github.io/app-story-engine/",
+      "html_url": "https://github.com/drsamonline/app-story-engine",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "dumps-3",
+      "description": "Pre-merge backups (part 3). Written by drsamonline/backup.",
+      "pushed_at": "2026-11-16T09:41:42Z",
+      "homepage": "https://drsamonline.github.io/dumps-3/",
+      "html_url": "https://github.com/drsamonline/dumps-3",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "2/5",
+      "status_tone": "bad",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "UniRep",
+      "description": "Universal index over the classical homoeopathic repertories — one search surface across several books. Policy documents here; the app runs on Replit.",
+      "pushed_at": "2026-11-16T07:18:42Z",
+      "homepage": "https://drsamonline.github.io/UniRep/",
+      "html_url": "https://github.com/drsamonline/UniRep",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "neon-engine",
+      "description": "A code-only open-world game engine for the browser — no assets, no dependencies; every texture, mesh and sound is generated at runtime.",
+      "pushed_at": "2026-11-16T06:42:30Z",
+      "homepage": "https://drsamonline.github.io/neon-engine/",
+      "html_url": "https://github.com/drsamonline/neon-engine",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
         1
       ]
     },
@@ -4300,41 +4521,6 @@
       ]
     },
     {
-      "name": "corpus-extendum",
-      "description": "The public domain, properly shelved — a free library of out-of-copyright books, readable in the page as PDF, EPUB or text. No accounts, no tracking, no paywall.",
-      "pushed_at": "2026-11-16T03:53:19Z",
-      "homepage": "https://drsamonline.github.io/corpus-extendum/",
-      "html_url": "https://github.com/drsamonline/corpus-extendum",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
-    },
-    {
       "name": "NEO",
       "description": "NOVA — a statically typed, compiled systems programming language whose compiler lowers to C, JavaScript, Rust and WebAssembly.",
       "pushed_at": "2026-11-16T03:40:43Z",
@@ -4366,41 +4552,6 @@
         0,
         1,
         1,
-        1
-      ]
-    },
-    {
-      "name": "corpus-extendum-vault-01",
-      "description": "Book storage for Corpus Extendum — the public-domain library. Ten books, PDF + EPUB + text + records. No website here on purpose: Pages caps a site at 1 GB, and this vault is built to reach 2.5 GB.",
-      "pushed_at": "2026-11-16T02:34:59Z",
-      "homepage": "https://drsamonline.github.io/corpus-extendum-vault-01/",
-      "html_url": "https://github.com/drsamonline/corpus-extendum-vault-01",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "2/5",
-      "status_tone": "bad",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         1
       ]
     },
@@ -5140,41 +5291,6 @@
       ]
     },
     {
-      "name": "conqueror-os",
-      "description": "A private, offline resilience workspace in a single HTML file — read, reflect, journal, track and review.",
-      "pushed_at": "2026-11-15T12:56:13Z",
-      "homepage": "https://drsamonline.github.io/conqueror-os/",
-      "html_url": "https://github.com/drsamonline/conqueror-os",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        0,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        0
-      ]
-    },
-    {
       "name": "helioprism",
       "description": "One app, two optical transports — send a file with light over QR codes or a colour matrix, with no network at all.",
       "pushed_at": "2026-11-15T12:49:16Z",
@@ -5285,41 +5401,6 @@
       "pushed_at": "2026-11-15T11:57:26Z",
       "homepage": "https://drsamonline.github.io/tessera-app/",
       "html_url": "https://github.com/drsamonline/tessera-app",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0
-      ]
-    },
-    {
-      "name": "sui",
-      "description": "Sui — verification-first, privacy-aware free-tier AI gateway. Free tiers, verified before use.",
-      "pushed_at": "2026-11-15T11:57:08Z",
-      "homepage": "https://drsamonline.github.io/sui/",
-      "html_url": "https://github.com/drsamonline/sui",
       "download": "",
       "category": "HTML Apps",
       "status": "5/5",
@@ -7275,41 +7356,6 @@
       ]
     },
     {
-      "name": "app-story-engine",
-      "description": "A book the reader moves through: choices, carried state, and a trail of where you have been. Offline, no accounts.",
-      "pushed_at": "2026-11-12T06:46:26Z",
-      "homepage": "https://drsamonline.github.io/app-story-engine/",
-      "html_url": "https://github.com/drsamonline/app-story-engine",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "app-endpoints",
       "description": "Endpoints — find the right free API for a job: an offline directory of 2,214 public APIs, filterable by auth, CORS and HTTPS. No account, no server, no network at runtime.",
       "pushed_at": "2026-11-12T06:46:22Z",
@@ -7827,41 +7873,6 @@
         0,
         0,
         1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "dumps-3",
-      "description": "Pre-merge backups (part 3). Written by drsamonline/backup.",
-      "pushed_at": "2026-11-09T13:56:31Z",
-      "homepage": "https://drsamonline.github.io/dumps-3/",
-      "html_url": "https://github.com/drsamonline/dumps-3",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "2/5",
-      "status_tone": "bad",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
         0,
         0,
         0,
@@ -9640,25 +9651,30 @@
       "avg": 4.7,
       "pushes": 146,
       "byrepo": {
-        "neon-engine": 1,
-        "UniRep": 1,
-        "heavenzip": 1,
+        "Matneo": 1,
+        "conqueror-os": 1,
+        "sui": 1,
         "audit": 1,
-        "The_Browser": 1,
-        "skills": 1,
-        "tessera": 1,
         "drsamonline.github.io": 1,
-        "dashboard": 1,
+        "skills": 1,
+        "heavenzip": 1,
+        "drsamonline": 1,
         "corpus-extendum": 1,
-        "NEO": 1,
+        "The_Browser": 1,
         "corpus-extendum-vault-01": 1,
+        "app-story-engine": 1,
+        "dumps-3": 1,
+        "UniRep": 1,
+        "forge": 1,
+        "dashboard": 1,
+        "knowledge": 1,
+        "neon-engine": 1,
+        "tessera": 1,
+        "NEO": 1,
         "volumen": 1,
         "nodus": 1,
         "sorex": 1,
-        "forge": 1,
         "All4ONE": 1,
-        "Matneo": 1,
-        "knowledge": 1,
         "lexora": 1
       },
       "stars": 139,
