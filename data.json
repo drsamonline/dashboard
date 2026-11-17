@@ -1,6 +1,6 @@
 {
   "generated": "2026-11-17",
-  "generated_at": "2026-11-17T12:27:55Z",
+  "generated_at": "2026-11-17T12:45:04Z",
   "reckoning": "111 products · 13 kits (role) · avg metadata completeness 4.7/5 · updated automatically.",
   "health": "bad",
   "health_detail": {
@@ -47,7 +47,11 @@
     "avg": 4.7,
     "pushes": 145,
     "byrepo": {
+      "Matneo": 1,
+      "SmartNotes": 1,
+      "NEO": 1,
       "audit": 1,
+      "dashboard": 1,
       "drsamonline.github.io": 1,
       "ziptastic": 1,
       "The_Browser": 1,
@@ -69,8 +73,6 @@
       "sorex": 1,
       "forge": 1,
       "musicgen": 1,
-      "dashboard": 1,
-      "Matneo": 1,
       "knowledge": 1,
       "open-materia-medica": 1,
       "HCS": 1,
@@ -99,8 +101,8 @@
       "4": 3
     },
     "categories": {
-      "HTML Apps": 78,
       "Utilities": 15,
+      "HTML Apps": 78,
       "Games": 6,
       "Homeopathy": 10,
       "Health Tools": 1,
@@ -154,15 +156,15 @@
     },
     {
       "date": "2026-11-15",
-      "count": 30
+      "count": 29
     },
     {
       "date": "2026-11-16",
-      "count": 30
+      "count": 29
     },
     {
       "date": "2026-11-17",
-      "count": 36
+      "count": 38
     }
   ],
   "attention": [
@@ -200,6 +202,13 @@
       "url": "https://github.com/drsamonline/web-kit/issues/3",
       "kind": "issue",
       "created": "2026-10-26T00:46:14Z"
+    },
+    {
+      "title": "fix(repo): unify versions, drop the dead C backend, wire the integration tests, and correct the docs",
+      "repo": "NEO",
+      "url": "https://github.com/drsamonline/NEO/pull/19",
+      "kind": "PR",
+      "created": "2026-11-17T12:30:19Z"
     },
     {
       "title": "ci: bump drsamonline/app-builder/.github/workflows/build.yml from 49c2e0b172890f9334bbc7167a0e7fb5cd3756ba to 85949b5b7ef6a47a40731cc01e8c2cd65ceeda4c",
@@ -333,13 +342,6 @@
       "url": "https://github.com/drsamonline/base-bench/pull/7",
       "kind": "PR",
       "created": "2026-11-17T02:14:47Z"
-    },
-    {
-      "title": "ci: bump drsamonline/app-builder/.github/workflows/build.yml from 49c2e0b172890f9334bbc7167a0e7fb5cd3756ba to 85949b5b7ef6a47a40731cc01e8c2cd65ceeda4c",
-      "repo": "lockhtml",
-      "url": "https://github.com/drsamonline/lockhtml/pull/9",
-      "kind": "PR",
-      "created": "2026-11-17T01:25:05Z"
     }
   ],
   "controls": [
@@ -533,6 +535,48 @@
   },
   "changes": [
     {
+      "type": "Create",
+      "repo": "heavenzip",
+      "when": "2026-11-17T04:19:02Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
+      "repo": "heavenzip",
+      "when": "2026-11-17T02:33:51Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "Push",
+      "repo": "SmartNotes",
+      "when": "2026-11-15T10:30:48Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "IssueComment",
+      "repo": "NEO",
+      "when": "2026-11-17T12:33:47Z",
+      "text": ""
+    },
+    {
+      "type": "Push",
+      "repo": "nodus",
+      "when": "2026-11-16T01:57:30Z",
+      "text": "pushed to main"
+    },
+    {
+      "type": "PullRequest",
+      "repo": "NEO",
+      "when": "2026-11-17T12:30:19Z",
+      "text": "opened: "
+    },
+    {
+      "type": "Create",
+      "repo": "kosh",
+      "when": "2026-11-15T10:22:20Z",
+      "text": ""
+    },
+    {
       "type": "Issues",
       "repo": "HCS",
       "when": "2026-11-17T12:24:43Z",
@@ -609,48 +653,6 @@
       "repo": "ziptastic",
       "when": "2026-11-17T10:48:04Z",
       "text": ""
-    },
-    {
-      "type": "Push",
-      "repo": "Scrap-and-Gun",
-      "when": "2026-11-16T13:46:23Z",
-      "text": "pushed to drift"
-    },
-    {
-      "type": "Push",
-      "repo": "HCS",
-      "when": "2026-11-15T09:05:11Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "corpus-extendum-vault-01",
-      "when": "2026-11-16T02:34:59Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "PullRequest",
-      "repo": "ziptastic",
-      "when": "2026-11-17T11:18:14Z",
-      "text": "merged: "
-    },
-    {
-      "type": "PullRequest",
-      "repo": "ziptastic",
-      "when": "2026-11-17T11:13:19Z",
-      "text": "opened: "
-    },
-    {
-      "type": "Delete",
-      "repo": "heavenzip",
-      "when": "2026-11-17T01:35:13Z",
-      "text": ""
-    },
-    {
-      "type": "Create",
-      "repo": "heavenzip",
-      "when": "2026-11-16T02:22:29Z",
-      "text": ""
     }
   ],
   "automation": [
@@ -678,8 +680,8 @@
       ],
       "schedule": "daily 03:51 UTC",
       "repo_url": "https://github.com/drsamonline/audit",
-      "url": "https://github.com/drsamonline/audit/actions/runs/43863479764",
-      "last_run": "2026-11-16T12:07:09Z",
+      "url": "https://github.com/drsamonline/audit/actions/runs/44083911079",
+      "last_run": "2026-11-17T12:32:34Z",
       "conclusion": "success"
     },
     {
@@ -720,8 +722,8 @@
       ],
       "schedule": "weekly (Tue) 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/44083272346",
-      "last_run": "2026-11-17T12:27:20Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/44085992513",
+      "last_run": "2026-11-17T12:44:40Z",
       "conclusion": "in_progress"
     },
     {
@@ -1118,9 +1120,9 @@
       ],
       "schedule": "weekly (Tue) 04:12 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/runs/44032687783",
-      "last_run": "2026-11-17T06:38:28Z",
-      "conclusion": "success"
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/44085992628",
+      "last_run": "2026-11-17T12:44:39Z",
+      "conclusion": "pending"
     },
     {
       "repo": "Matneo",
@@ -1146,9 +1148,9 @@
       ],
       "schedule": "weekly (Tue) 04:22 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/runs/44032687921",
-      "last_run": "2026-11-17T06:38:41Z",
-      "conclusion": "success"
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/44085993547",
+      "last_run": "2026-11-17T12:44:41Z",
+      "conclusion": "in_progress"
     },
     {
       "repo": "registry",
@@ -1275,6 +1277,20 @@
         "forks": 1,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/neon-runner"
+      },
+      {
+        "name": "SmartNotes",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/SmartNotes"
+      },
+      {
+        "name": "NEO",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/NEO"
       },
       {
         "name": "ziptastic",
@@ -1550,13 +1566,6 @@
         "html_url": "https://github.com/drsamonline/Repertorium-Publicum"
       },
       {
-        "name": "NEO",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/NEO"
-      },
-      {
         "name": "MATERIA-MEDICA-BUILDER",
         "stars": 1,
         "forks": 0,
@@ -1772,13 +1781,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/app-lantern"
-      },
-      {
-        "name": "SmartNotes",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/SmartNotes"
       },
       {
         "name": "neonboom",
@@ -2385,6 +2387,39 @@
     "window": "14 days",
     "note": "Last 14 days — GitHub's retention window.",
     "repos": {
+      "SmartNotes": {
+        "views": 1,
+        "uniques": 1,
+        "clones": 213,
+        "clone_uniques": 75,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 1
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/SmartNotes",
+            "count": 1,
+            "title": "Overview"
+          }
+        ]
+      },
+      "NEO": {
+        "views": 1,
+        "uniques": 1,
+        "clones": 428,
+        "clone_uniques": 128,
+        "referrers": [],
+        "paths": [
+          {
+            "path": "/drsamonline/NEO",
+            "count": 1,
+            "title": "Overview"
+          }
+        ]
+      },
       "ziptastic": {
         "views": 18,
         "uniques": 2,
@@ -3153,20 +3188,6 @@
           }
         ]
       },
-      "NEO": {
-        "views": 1,
-        "uniques": 1,
-        "clones": 428,
-        "clone_uniques": 128,
-        "referrers": [],
-        "paths": [
-          {
-            "path": "/drsamonline/NEO",
-            "count": 1,
-            "title": "Overview"
-          }
-        ]
-      },
       "MATERIA-MEDICA-BUILDER": {
         "views": 2,
         "uniques": 2,
@@ -3754,25 +3775,6 @@
             "path": "/drsamonline/app-lantern/actions/workflows/test.yml",
             "count": 3,
             "title": "/actions/workflows/test.yml"
-          }
-        ]
-      },
-      "SmartNotes": {
-        "views": 1,
-        "uniques": 1,
-        "clones": 213,
-        "clone_uniques": 75,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 1
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/SmartNotes",
-            "count": 1,
-            "title": "Overview"
           }
         ]
       },
@@ -4753,6 +4755,78 @@
     }
   },
   "repos": [
+    {
+      "name": "SmartNotes",
+      "description": "SmartNote Scheduler — AI-powered notes, reminders and scheduling: write in plain English and it files itself.",
+      "pushed_at": "2026-11-17T12:42:44Z",
+      "homepage": "https://drsamonline.github.io/SmartNotes/",
+      "html_url": "https://github.com/drsamonline/SmartNotes",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "NEO",
+      "description": "NOVA — a statically typed, compiled systems programming language whose compiler lowers to C, JavaScript, Rust and WebAssembly.",
+      "pushed_at": "2026-11-17T12:34:03Z",
+      "homepage": "https://drsamonline.github.io/NEO/",
+      "html_url": "https://github.com/drsamonline/NEO",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
     {
       "name": "ziptastic",
       "description": "The CHCE native engine — a single binary with the codecs embedded.",
@@ -6230,42 +6304,6 @@
       ]
     },
     {
-      "name": "NEO",
-      "description": "NOVA — a statically typed, compiled systems programming language whose compiler lowers to C, JavaScript, Rust and WebAssembly.",
-      "pushed_at": "2026-11-16T13:46:14Z",
-      "homepage": "https://drsamonline.github.io/NEO/",
-      "html_url": "https://github.com/drsamonline/NEO",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1,
-        0,
-        0,
-        1,
-        1,
-        1,
-        0,
-        1,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1,
-        0,
-        0,
-        1,
-        1,
-        1,
-        0
-      ]
-    },
-    {
       "name": "MATERIA-MEDICA-BUILDER",
       "description": "Build your own materia medica and repertory — offline, private and yours to export.",
       "pushed_at": "2026-11-16T13:46:04Z",
@@ -7340,42 +7378,6 @@
         0,
         1,
         0,
-        1,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "SmartNotes",
-      "description": "SmartNote Scheduler — AI-powered notes, reminders and scheduling: write in plain English and it files itself.",
-      "pushed_at": "2026-11-15T10:30:47Z",
-      "homepage": "https://drsamonline.github.io/SmartNotes/",
-      "html_url": "https://github.com/drsamonline/SmartNotes",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        1,
-        1,
-        1,
-        0,
-        1,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        0,
-        0,
-        1,
-        1,
-        1,
-        0,
-        0,
-        1,
         1,
         0,
         0
@@ -10435,7 +10437,11 @@
       "avg": 4.7,
       "pushes": 145,
       "byrepo": {
+        "Matneo": 1,
+        "SmartNotes": 1,
+        "NEO": 1,
         "audit": 1,
+        "dashboard": 1,
         "drsamonline.github.io": 1,
         "ziptastic": 1,
         "The_Browser": 1,
@@ -10457,8 +10463,6 @@
         "sorex": 1,
         "forge": 1,
         "musicgen": 1,
-        "dashboard": 1,
-        "Matneo": 1,
         "knowledge": 1,
         "open-materia-medica": 1,
         "HCS": 1,
