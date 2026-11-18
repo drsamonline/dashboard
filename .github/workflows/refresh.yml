@@ -45,6 +45,28 @@ jobs:
           fetch-depth: 1
           repository: drsamonline/app-builder
           path: .drsoam
+      # A NARROW TOKEN MUST NOT PUBLISH A NARROWER ESTATE (2026-11-18).
+      #
+      # This step used to read `secrets.FANOUT_TOKEN || github.token`. The fallback
+      # looked defensive and did the opposite of what it looked like: with the secret
+      # absent, github.token authenticated as THIS repository, drsoam's /user/repos
+      # returned one repository, repos() fell back to the public list, and the plan
+      # block counted 136 repos / 103 products / 14 kits where the estate is 147 /
+      # 111 / 20. Every run was green and nothing said the number was narrow.
+      #
+      # So the secret is REQUIRED and the fallback is gone: an absent FANOUT_TOKEN
+      # fails here, before a line is written, and the module is put in
+      # DRSOAM_REQUIRE_FULL_SCOPE mode so a token that answers but cannot see the
+      # private repositories raises instead of returning the public list.
+      - name: Require a cross-repository token
+        env:
+          TOK: ${{ secrets.FANOUT_TOKEN }}
+        run: |
+          if [ -z "$TOK" ]; then
+            echo "::error::FANOUT_TOKEN is not set. Refusing to publish a public-only view of the estate as if it were the estate — set the secret, then re-run."
+            exit 1
+          fi
+          echo "FANOUT_TOKEN present (${#TOK} chars, value not printed)"
       - name: Regenerate
         env:
           # FANOUT_TOKEN FIRST. `github.token` is scoped to THIS repository, so drsoam's
@@ -53,7 +75,11 @@ jobs:
           # cross-repository read token the same code returns all 83 and says `scope: all`.
           # Falls back to github.token when the secret is absent, so this changes nothing
           # until the secret is set.
-          GH_TOKEN: ${{ secrets.FANOUT_TOKEN || github.token }}
+          # No fallback to github.token: see the guard above. The dashboard publishes a
+          # count of the estate, and a repository-scoped token makes that count wrong
+          # without failing anything.
+          GH_TOKEN: ${{ secrets.FANOUT_TOKEN }}
+          DRSOAM_REQUIRE_FULL_SCOPE: "1"
           BILLING_TOKEN: ${{ secrets.BILLING_TOKEN }}
           TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
         run: python3 .drsoam/drsoam.py dashboard
