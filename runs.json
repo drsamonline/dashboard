@@ -1,5 +1,5 @@
 {
-  "count": 22,
+  "count": 26,
   "runs": [
     {
       "id": "f2b8c1d47a90",
@@ -412,6 +412,63 @@
         "advance-retro-strike-chest-placement"
       ],
       "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "9f320587dece",
+      "at": "2026-11-16T15:24:36Z",
+      "workflow": "kit-audit",
+      "outcome": "ok",
+      "note": "scheduled kit audit: {'repos_scanned': 89, 'dead_vendored_kits': 1, 'signals': 115, 'unreadable': 0} (dead vendored kits are a FACT; signals are hints to look)",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "f18c65f384db",
+      "at": "2026-11-16T16:38:39Z",
+      "workflow": "repo-learning",
+      "outcome": "ok",
+      "note": "weekly lessons from the record: 23 runs, 115 in the harvest queue; detectors, the harvest queue, and work that repeats",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "290fb2a61e18",
+      "at": "2026-11-17T16:44:21Z",
+      "workflow": "code-compression",
+      "outcome": "ok",
+      "note": "size report: 19 pages, 1527 KB raw, 334 KB gzip, 1 over budget",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "92aa4fa59ce9",
+      "at": "2026-11-18T12:47Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "advance: lexora P3.7 (zh-1 + the tokenizer recorded per document, ADR-0024) — 732/14, CI green 44307101982; health: 69 repos scanned API-free (the REST API was rate-limited for both credentials), 3 red on main head (All4ONE, lockhtml, app-encrypted-case-log) reported not patched, attempts 1/3 each",
+      "files": {
+        "lexora": [
+          "packages/lexora-lang-zh/",
+          "src/lexora/catalog.py",
+          "src/lexora/cli.py",
+          "tests/test_language_chinese_plugin.py",
+          "tests/test_catalog_tokenizer.py",
+          "docs/ADR/ADR-0024-tokenizer-recording.md"
+        ]
+      },
+      "advanced": [
+        "lexora"
+      ],
+      "errors": [
+        "GitHub REST API rate-limited for both credentials (403, reset 2026-11-18T13:16:45Z): CI reads and workflow re-runs unavailable"
+      ],
       "retries": 0
     }
   ],
