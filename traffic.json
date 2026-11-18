@@ -1,9 +1,239 @@
 {
-  "generated": "2026-11-17",
+  "generated": "2026-11-18",
   "available": true,
   "window": "14 days",
   "note": "Last 14 days — GitHub's retention window.",
   "repos": {
+    "app-panchang": {
+      "views": 1,
+      "uniques": 1,
+      "clones": 442,
+      "clone_uniques": 106,
+      "referrers": [
+        {
+          "from": "github.com",
+          "count": 1
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/app-panchang",
+          "count": 1,
+          "title": "Overview"
+        }
+      ]
+    },
+    "TTB": {
+      "views": 1,
+      "uniques": 1,
+      "clones": 330,
+      "clone_uniques": 105,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/drsamonline/TTB",
+          "count": 1,
+          "title": "Overview"
+        }
+      ]
+    },
+    "app-companion-forge": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 352,
+      "clone_uniques": 94,
+      "referrers": [],
+      "paths": []
+    },
+    "the-symphony-companion": {
+      "views": 0,
+      "uniques": 0,
+      "clones": 420,
+      "clone_uniques": 106,
+      "referrers": [],
+      "paths": []
+    },
+    "smartbill-app": {
+      "views": 2,
+      "uniques": 2,
+      "clones": 429,
+      "clone_uniques": 104,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/drsamonline/smartbill-app",
+          "count": 2,
+          "title": "Overview"
+        }
+      ]
+    },
+    "NEO": {
+      "views": 1,
+      "uniques": 1,
+      "clones": 428,
+      "clone_uniques": 128,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/drsamonline/NEO",
+          "count": 1,
+          "title": "Overview"
+        }
+      ]
+    },
+    "canteen-lan": {
+      "views": 2,
+      "uniques": 1,
+      "clones": 559,
+      "clone_uniques": 158,
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/drsamonline/canteen-lan",
+          "count": 1,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/canteen-lan/pull/3",
+          "count": 1,
+          "title": "/pull/3"
+        }
+      ]
+    },
+    "The_Browser": {
+      "views": 11,
+      "uniques": 3,
+      "clones": 1320,
+      "clone_uniques": 313,
+      "referrers": [
+        {
+          "from": "drsamonline.github.io",
+          "count": 2
+        },
+        {
+          "from": "github.com",
+          "count": 2
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/The_Browser",
+          "count": 6,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/The_Browser/releases",
+          "count": 3,
+          "title": "/releases"
+        },
+        {
+          "path": "/drsamonline/The_Browser/deployments",
+          "count": 1,
+          "title": "/deployments"
+        },
+        {
+          "path": "/drsamonline/The_Browser/tree/main/src",
+          "count": 1,
+          "title": "/tree/main/src"
+        }
+      ]
+    },
+    "MATERIA-MEDICA-BUILDER": {
+      "views": 2,
+      "uniques": 2,
+      "clones": 436,
+      "clone_uniques": 102,
+      "referrers": [
+        {
+          "from": "github.com",
+          "count": 1
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/MATERIA-MEDICA-BUILDER",
+          "count": 2,
+          "title": "Overview"
+        }
+      ]
+    },
+    "ziptastic": {
+      "views": 18,
+      "uniques": 2,
+      "clones": 1635,
+      "clone_uniques": 397,
+      "referrers": [
+        {
+          "from": "github.com",
+          "count": 3
+        },
+        {
+          "from": "drsamonline.github.io",
+          "count": 1
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/ziptastic",
+          "count": 5,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/ziptastic/commit/36553e700fdd2f4af7bab57cbc7d7d1440a2c81d",
+          "count": 1,
+          "title": "/commit/36553e700fdd2f4af7bab57cbc7d7d1440a2c81d"
+        },
+        {
+          "path": "/drsamonline/ziptastic/commit/671619a7ab9cc92f0afab731b0c8326b34e0dcf7",
+          "count": 1,
+          "title": "/commit/671619a7ab9cc92f0afab731b0c8326b34e0dcf7"
+        },
+        {
+          "path": "/drsamonline/ziptastic/releases/tag/v1.4.2",
+          "count": 1,
+          "title": "/releases/tag/v1.4.2"
+        },
+        {
+          "path": "/drsamonline/ziptastic/tree/main/include/chimera",
+          "count": 1,
+          "title": "/tree/main/include/chimera"
+        }
+      ]
+    },
+    "KILN": {
+      "views": 8,
+      "uniques": 6,
+      "clones": 1393,
+      "clone_uniques": 262,
+      "referrers": [
+        {
+          "from": "github.com",
+          "count": 4
+        }
+      ],
+      "paths": [
+        {
+          "path": "/drsamonline/KILN",
+          "count": 4,
+          "title": "Overview"
+        },
+        {
+          "path": "/drsamonline/KILN/releases/tag/v1.3.2",
+          "count": 2,
+          "title": "/releases/tag/v1.3.2"
+        },
+        {
+          "path": "/drsamonline/KILN/pulls",
+          "count": 1,
+          "title": "/pulls"
+        },
+        {
+          "path": "/drsamonline/KILN/releases",
+          "count": 1,
+          "title": "/releases"
+        }
+      ]
+    },
     "retro-strike": {
       "views": 14,
       "uniques": 5,
@@ -51,63 +281,6 @@
         }
       ]
     },
-    "ziptastic": {
-      "views": 18,
-      "uniques": 2,
-      "clones": 1635,
-      "clone_uniques": 397,
-      "referrers": [
-        {
-          "from": "github.com",
-          "count": 3
-        },
-        {
-          "from": "drsamonline.github.io",
-          "count": 1
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/ziptastic",
-          "count": 5,
-          "title": "Overview"
-        },
-        {
-          "path": "/drsamonline/ziptastic/commit/36553e700fdd2f4af7bab57cbc7d7d1440a2c81d",
-          "count": 1,
-          "title": "/commit/36553e700fdd2f4af7bab57cbc7d7d1440a2c81d"
-        },
-        {
-          "path": "/drsamonline/ziptastic/commit/671619a7ab9cc92f0afab731b0c8326b34e0dcf7",
-          "count": 1,
-          "title": "/commit/671619a7ab9cc92f0afab731b0c8326b34e0dcf7"
-        },
-        {
-          "path": "/drsamonline/ziptastic/releases/tag/v1.4.2",
-          "count": 1,
-          "title": "/releases/tag/v1.4.2"
-        },
-        {
-          "path": "/drsamonline/ziptastic/tree/main/include/chimera",
-          "count": 1,
-          "title": "/tree/main/include/chimera"
-        }
-      ]
-    },
-    "NEO": {
-      "views": 1,
-      "uniques": 1,
-      "clones": 428,
-      "clone_uniques": 128,
-      "referrers": [],
-      "paths": [
-        {
-          "path": "/drsamonline/NEO",
-          "count": 1,
-          "title": "Overview"
-        }
-      ]
-    },
     "app-poets-studio": {
       "views": 0,
       "uniques": 0,
@@ -115,44 +288,6 @@
       "clone_uniques": 130,
       "referrers": [],
       "paths": []
-    },
-    "The_Browser": {
-      "views": 11,
-      "uniques": 3,
-      "clones": 1320,
-      "clone_uniques": 313,
-      "referrers": [
-        {
-          "from": "drsamonline.github.io",
-          "count": 2
-        },
-        {
-          "from": "github.com",
-          "count": 2
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/The_Browser",
-          "count": 6,
-          "title": "Overview"
-        },
-        {
-          "path": "/drsamonline/The_Browser/releases",
-          "count": 3,
-          "title": "/releases"
-        },
-        {
-          "path": "/drsamonline/The_Browser/deployments",
-          "count": 1,
-          "title": "/deployments"
-        },
-        {
-          "path": "/drsamonline/The_Browser/tree/main/src",
-          "count": 1,
-          "title": "/tree/main/src"
-        }
-      ]
     },
     "control-panel": {
       "views": 0,
@@ -936,20 +1071,6 @@
         }
       ]
     },
-    "TTB": {
-      "views": 1,
-      "uniques": 1,
-      "clones": 330,
-      "clone_uniques": 105,
-      "referrers": [],
-      "paths": [
-        {
-          "path": "/drsamonline/TTB",
-          "count": 1,
-          "title": "Overview"
-        }
-      ]
-    },
     "Scrap-and-Gun": {
       "views": 4,
       "uniques": 4,
@@ -976,25 +1097,6 @@
           "path": "/drsamonline/Scrap-and-Gun/releases",
           "count": 1,
           "title": "/releases"
-        }
-      ]
-    },
-    "MATERIA-MEDICA-BUILDER": {
-      "views": 2,
-      "uniques": 2,
-      "clones": 436,
-      "clone_uniques": 102,
-      "referrers": [
-        {
-          "from": "github.com",
-          "count": 1
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/MATERIA-MEDICA-BUILDER",
-          "count": 2,
-          "title": "Overview"
         }
       ]
     },
@@ -1128,40 +1230,6 @@
       "paths": [
         {
           "path": "/drsamonline/holistic/releases",
-          "count": 1,
-          "title": "/releases"
-        }
-      ]
-    },
-    "KILN": {
-      "views": 8,
-      "uniques": 6,
-      "clones": 1393,
-      "clone_uniques": 262,
-      "referrers": [
-        {
-          "from": "github.com",
-          "count": 4
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/KILN",
-          "count": 4,
-          "title": "Overview"
-        },
-        {
-          "path": "/drsamonline/KILN/releases/tag/v1.3.2",
-          "count": 2,
-          "title": "/releases/tag/v1.3.2"
-        },
-        {
-          "path": "/drsamonline/KILN/pulls",
-          "count": 1,
-          "title": "/pulls"
-        },
-        {
-          "path": "/drsamonline/KILN/releases",
           "count": 1,
           "title": "/releases"
         }
@@ -1427,33 +1495,6 @@
       "referrers": [],
       "paths": []
     },
-    "app-companion-forge": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 352,
-      "clone_uniques": 94,
-      "referrers": [],
-      "paths": []
-    },
-    "canteen-lan": {
-      "views": 2,
-      "uniques": 1,
-      "clones": 559,
-      "clone_uniques": 158,
-      "referrers": [],
-      "paths": [
-        {
-          "path": "/drsamonline/canteen-lan",
-          "count": 1,
-          "title": "Overview"
-        },
-        {
-          "path": "/drsamonline/canteen-lan/pull/3",
-          "count": 1,
-          "title": "/pull/3"
-        }
-      ]
-    },
     "app-opd-register": {
       "views": 2,
       "uniques": 2,
@@ -1629,25 +1670,6 @@
         }
       ]
     },
-    "app-panchang": {
-      "views": 1,
-      "uniques": 1,
-      "clones": 442,
-      "clone_uniques": 106,
-      "referrers": [
-        {
-          "from": "github.com",
-          "count": 1
-        }
-      ],
-      "paths": [
-        {
-          "path": "/drsamonline/app-panchang",
-          "count": 1,
-          "title": "Overview"
-        }
-      ]
-    },
     "kitbox": {
       "views": 1,
       "uniques": 1,
@@ -1761,28 +1783,6 @@
           "title": "/tree/main/.github"
         }
       ]
-    },
-    "smartbill-app": {
-      "views": 2,
-      "uniques": 2,
-      "clones": 429,
-      "clone_uniques": 104,
-      "referrers": [],
-      "paths": [
-        {
-          "path": "/drsamonline/smartbill-app",
-          "count": 2,
-          "title": "Overview"
-        }
-      ]
-    },
-    "the-symphony-companion": {
-      "views": 0,
-      "uniques": 0,
-      "clones": 420,
-      "clone_uniques": 106,
-      "referrers": [],
-      "paths": []
     },
     "widgets-kit": {
       "views": 0,
