@@ -1,13 +1,13 @@
 {
   "generated": "2026-11-18",
-  "generated_at": "2026-11-18T00:53:16Z",
+  "generated_at": "2026-11-18T06:44:36Z",
   "reckoning": "111 products · 13 kits (role) · avg metadata completeness 4.7/5 · updated automatically.",
-  "health": "bad",
+  "health": "ok",
   "health_detail": {
-    "state": "bad",
-    "failing": 2,
+    "state": "ok",
+    "failing": 0,
     "cancelled": 0,
-    "unobservable": 27,
+    "unobservable": 29,
     "total": 47,
     "source": "fleet-scan",
     "note": "cancelled runs are excluded: a superseded push is intended behaviour, not a fault. unobservable means the console could not read the history - which is NOT the same as 'never ran'. 47 scheduled workflows in 22 repositories, read from the control panel's fleet scan."
@@ -47,7 +47,17 @@
     "avg": 4.7,
     "pushes": 144,
     "byrepo": {
+      "NEO": 1,
+      "idle-city-ages-of-growth": 1,
+      "audit": 1,
+      "The_Browser": 1,
+      "sui": 1,
+      "ziptastic": 1,
       "app-panchang": 1,
+      "dashboard": 1,
+      "forge": 1,
+      "Matneo": 1,
+      "knowledge": 1,
       "TTB": 1
     }
   },
@@ -65,10 +75,10 @@
       "4": 3
     },
     "categories": {
-      "HTML Apps": 78,
       "Utilities": 15,
-      "Homeopathy": 10,
       "Games": 6,
+      "HTML Apps": 78,
+      "Homeopathy": 10,
       "Health Tools": 1,
       "Data": 1
     }
@@ -120,15 +130,15 @@
     },
     {
       "date": "2026-11-16",
-      "count": 23
+      "count": 22
     },
     {
       "date": "2026-11-17",
-      "count": 56
+      "count": 47
     },
     {
       "date": "2026-11-18",
-      "count": 2
+      "count": 12
     }
   ],
   "attention": [
@@ -152,6 +162,13 @@
       "url": "https://github.com/drsamonline/web-kit/issues/3",
       "kind": "issue",
       "created": "2026-10-26T00:46:14Z"
+    },
+    {
+      "title": "fix(shot): docs/shot.png was a capture of a 404 page",
+      "repo": "app-panchang",
+      "url": "https://github.com/drsamonline/app-panchang/pull/9",
+      "kind": "PR",
+      "created": "2026-11-18T05:05:33Z"
     },
     {
       "title": "0.2.4 — re-stamp: the a11y fix shipped without moving VERSION",
@@ -285,13 +302,6 @@
       "url": "https://github.com/drsamonline/mnemosyne-companion/pull/4",
       "kind": "PR",
       "created": "2026-11-17T12:54:57Z"
-    },
-    {
-      "title": "ci: bump drsamonline/app-builder/.github/workflows/build.yml from 49c2e0b172890f9334bbc7167a0e7fb5cd3756ba to 85949b5b7ef6a47a40731cc01e8c2cd65ceeda4c",
-      "repo": "neon-games",
-      "url": "https://github.com/drsamonline/neon-games/pull/3",
-      "kind": "PR",
-      "created": "2026-11-17T11:34:41Z"
     }
   ],
   "controls": [
@@ -540,124 +550,124 @@
   },
   "changes": [
     {
+      "type": "PullRequest",
+      "repo": "NEO",
+      "when": "2026-11-18T06:25:04Z",
+      "text": "merged: "
+    },
+    {
+      "type": "PullRequest",
+      "repo": "NEO",
+      "when": "2026-11-18T06:24:53Z",
+      "text": "opened: "
+    },
+    {
+      "type": "PullRequest",
+      "repo": "NEO",
+      "when": "2026-11-18T06:14:28Z",
+      "text": "merged: "
+    },
+    {
+      "type": "PullRequest",
+      "repo": "NEO",
+      "when": "2026-11-18T06:14:19Z",
+      "text": "opened: "
+    },
+    {
+      "type": "PullRequest",
+      "repo": "NEO",
+      "when": "2026-11-18T06:03:59Z",
+      "text": "merged: "
+    },
+    {
+      "type": "PullRequest",
+      "repo": "NEO",
+      "when": "2026-11-18T06:03:50Z",
+      "text": "opened: "
+    },
+    {
       "type": "Push",
-      "repo": "audit",
-      "when": "2026-11-17T10:21:26Z",
+      "repo": "ziptastic",
+      "when": "2026-11-17T10:52:30Z",
       "text": "pushed to main"
     },
     {
       "type": "PullRequest",
-      "repo": "app-panchang",
-      "when": "2026-11-18T00:50:11Z",
+      "repo": "NEO",
+      "when": "2026-11-18T05:55:44Z",
+      "text": "merged: "
+    },
+    {
+      "type": "PullRequest",
+      "repo": "NEO",
+      "when": "2026-11-18T05:55:34Z",
       "text": "opened: "
     },
     {
-      "type": "Delete",
-      "repo": "heavenzip",
-      "when": "2026-11-16T11:07:45Z",
-      "text": ""
-    },
-    {
       "type": "Push",
-      "repo": "ziptastic",
-      "when": "2026-11-17T10:11:16Z",
+      "repo": "The_Browser",
+      "when": "2026-11-17T10:34:31Z",
       "text": "pushed to main"
     },
     {
+      "type": "Release",
+      "repo": "sui",
+      "when": "2026-11-18T05:51:30Z",
+      "text": ""
+    },
+    {
+      "type": "PullRequest",
+      "repo": "ziptastic",
+      "when": "2026-11-18T05:48:59Z",
+      "text": "merged: "
+    },
+    {
       "type": "Push",
-      "repo": "heavenzip",
-      "when": "2026-11-17T10:43:26Z",
+      "repo": "audit",
+      "when": "2026-11-17T08:04:16Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "The_Browser",
-      "when": "2026-11-17T07:27:40Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Delete",
-      "repo": "ziptastic",
-      "when": "2026-11-17T11:18:17Z",
-      "text": ""
-    },
-    {
-      "type": "Delete",
-      "repo": "heavenzip",
-      "when": "2026-11-17T10:19:50Z",
-      "text": ""
-    },
-    {
-      "type": "Push",
-      "repo": "musicgen",
-      "when": "2026-11-17T06:49:24Z",
-      "text": "pushed to support-assets-files"
-    },
-    {
-      "type": "Push",
-      "repo": "audit",
-      "when": "2026-11-17T19:07:32Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
-      "repo": "audit",
-      "when": "2026-11-17T04:05:12Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Delete",
-      "repo": "heavenzip",
-      "when": "2026-11-17T07:03:37Z",
-      "text": ""
-    },
-    {
-      "type": "Push",
-      "repo": "audit",
-      "when": "2026-11-17T10:02:08Z",
+      "when": "2026-11-17T10:46:44Z",
       "text": "pushed to main"
     },
     {
       "type": "Push",
       "repo": "The_Browser",
-      "when": "2026-11-17T10:01:50Z",
+      "when": "2026-11-17T08:03:55Z",
       "text": "pushed to main"
     },
     {
-      "type": "Push",
-      "repo": "audit",
-      "when": "2026-11-17T06:55:26Z",
-      "text": "pushed to main"
-    },
-    {
-      "type": "Push",
+      "type": "PullRequest",
       "repo": "ziptastic",
-      "when": "2026-11-17T10:07:13Z",
-      "text": "pushed to 22-wav-trial-recursion"
+      "when": "2026-11-18T05:44:46Z",
+      "text": "opened: "
     },
     {
-      "type": "Push",
-      "repo": "audit",
-      "when": "2026-11-17T06:15:20Z",
-      "text": "pushed to main"
+      "type": "PullRequest",
+      "repo": "NEO",
+      "when": "2026-11-18T05:43:54Z",
+      "text": "merged: "
     },
     {
-      "type": "Push",
-      "repo": "The_Browser",
-      "when": "2026-11-17T06:35:49Z",
-      "text": "pushed to main"
+      "type": "PullRequest",
+      "repo": "NEO",
+      "when": "2026-11-18T05:43:42Z",
+      "text": "opened: "
     },
     {
-      "type": "Push",
-      "repo": "heavenzip",
-      "when": "2026-11-17T10:39:12Z",
-      "text": "pushed to optional-steps-degrade"
+      "type": "PullRequest",
+      "repo": "NEO",
+      "when": "2026-11-18T05:35:05Z",
+      "text": "merged: "
     },
     {
-      "type": "Push",
-      "repo": "corpus-extendum",
-      "when": "2026-11-16T10:19:21Z",
-      "text": "pushed to main"
+      "type": "PullRequest",
+      "repo": "NEO",
+      "when": "2026-11-18T05:34:52Z",
+      "text": "opened: "
     }
   ],
   "automation": [
@@ -685,9 +695,9 @@
       ],
       "schedule": "weekly (Mon) 05:25 UTC",
       "repo_url": "https://github.com/drsamonline/audit",
-      "url": "https://github.com/drsamonline/audit/actions/runs/43879913419",
-      "last_run": "2026-11-16T13:53:52Z",
-      "conclusion": "failure"
+      "url": "https://github.com/drsamonline/audit/actions/workflows/contrast.yml",
+      "last_run": null,
+      "conclusion": "no runs yet"
     },
     {
       "repo": "audit",
@@ -713,9 +723,9 @@
       ],
       "schedule": "weekly (Mon) 03:31 UTC",
       "repo_url": "https://github.com/drsamonline/audit",
-      "url": "https://github.com/drsamonline/audit/actions/runs/43862270587",
-      "last_run": "2026-11-16T12:50:03Z",
-      "conclusion": "failure"
+      "url": "https://github.com/drsamonline/audit/actions/workflows/licence-check.yml",
+      "last_run": null,
+      "conclusion": "no runs yet"
     },
     {
       "repo": "compfactory",
@@ -769,8 +779,8 @@
       ],
       "schedule": "weekly (Tue) 03:47 UTC",
       "repo_url": "https://github.com/drsamonline/dashboard",
-      "url": "https://github.com/drsamonline/dashboard/actions/runs/44211386819",
-      "last_run": "2026-11-18T00:52:43Z",
+      "url": "https://github.com/drsamonline/dashboard/actions/runs/44253509336",
+      "last_run": "2026-11-18T06:44:05Z",
       "conclusion": "in_progress"
     },
     {
@@ -1240,8 +1250,8 @@
       "schedule": "weekly (Tue) 04:12 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
       "url": "https://github.com/drsamonline/Matneo/actions/runs/44211385905",
-      "last_run": "2026-11-18T00:52:40Z",
-      "conclusion": "pending"
+      "last_run": "2026-11-18T00:53:10Z",
+      "conclusion": "success"
     },
     {
       "repo": "Matneo",
@@ -1267,9 +1277,9 @@
       ],
       "schedule": "weekly (Tue) 04:22 UTC",
       "repo_url": "https://github.com/drsamonline/Matneo",
-      "url": "https://github.com/drsamonline/Matneo/actions/runs/44211385893",
-      "last_run": "2026-11-18T00:52:43Z",
-      "conclusion": "in_progress"
+      "url": "https://github.com/drsamonline/Matneo/actions/runs/44253526985",
+      "last_run": "2026-11-18T06:44:09Z",
+      "conclusion": "queued"
     },
     {
       "repo": "NEO",
@@ -1338,8 +1348,8 @@
       ],
       "schedule": "weekly (Mon) 04:17 UTC",
       "repo_url": "https://github.com/drsamonline/ziptastic",
-      "url": "https://github.com/drsamonline/ziptastic/actions/runs/44161152164",
-      "last_run": "2026-11-17T19:41:39Z",
+      "url": "https://github.com/drsamonline/ziptastic/actions/runs/44246859976",
+      "last_run": "2026-11-18T05:49:52Z",
       "conclusion": "success"
     }
   ],
@@ -1440,6 +1450,41 @@
         "html_url": "https://github.com/drsamonline/neon-runner"
       },
       {
+        "name": "NEO",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/NEO"
+      },
+      {
+        "name": "idle-city-ages-of-growth",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/idle-city-ages-of-growth"
+      },
+      {
+        "name": "The_Browser",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/The_Browser"
+      },
+      {
+        "name": "sui",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/sui"
+      },
+      {
+        "name": "ziptastic",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "html_url": "https://github.com/drsamonline/ziptastic"
+      },
+      {
         "name": "app-panchang",
         "stars": 1,
         "forks": 0,
@@ -1475,13 +1520,6 @@
         "html_url": "https://github.com/drsamonline/smartbill-app"
       },
       {
-        "name": "NEO",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/NEO"
-      },
-      {
         "name": "canteen-lan",
         "stars": 1,
         "forks": 0,
@@ -1489,25 +1527,11 @@
         "html_url": "https://github.com/drsamonline/canteen-lan"
       },
       {
-        "name": "The_Browser",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/The_Browser"
-      },
-      {
         "name": "MATERIA-MEDICA-BUILDER",
         "stars": 1,
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/MATERIA-MEDICA-BUILDER"
-      },
-      {
-        "name": "ziptastic",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/ziptastic"
       },
       {
         "name": "KILN",
@@ -1543,13 +1567,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/BLINKTRANSFER"
-      },
-      {
-        "name": "idle-city-ages-of-growth",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/idle-city-ages-of-growth"
       },
       {
         "name": "unstoppable-mind-companion",
@@ -1809,13 +1826,6 @@
         "forks": 0,
         "watchers": 1,
         "html_url": "https://github.com/drsamonline/corpus-extendum-vault-01"
-      },
-      {
-        "name": "sui",
-        "stars": 1,
-        "forks": 0,
-        "watchers": 1,
-        "html_url": "https://github.com/drsamonline/sui"
       },
       {
         "name": "tessera",
@@ -2656,6 +2666,149 @@
     "window": "14 days",
     "note": "Last 14 days — GitHub's retention window.",
     "repos": {
+      "NEO": {
+        "views": 1,
+        "uniques": 1,
+        "clones": 428,
+        "clone_uniques": 128,
+        "referrers": [],
+        "paths": [
+          {
+            "path": "/drsamonline/NEO",
+            "count": 1,
+            "title": "Overview"
+          }
+        ]
+      },
+      "idle-city-ages-of-growth": {
+        "views": 7,
+        "uniques": 7,
+        "clones": 777,
+        "clone_uniques": 167,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 6
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/idle-city-ages-of-growth",
+            "count": 7,
+            "title": "Overview"
+          }
+        ]
+      },
+      "The_Browser": {
+        "views": 11,
+        "uniques": 3,
+        "clones": 1320,
+        "clone_uniques": 313,
+        "referrers": [
+          {
+            "from": "drsamonline.github.io",
+            "count": 2
+          },
+          {
+            "from": "github.com",
+            "count": 2
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/The_Browser",
+            "count": 6,
+            "title": "Overview"
+          },
+          {
+            "path": "/drsamonline/The_Browser/releases",
+            "count": 3,
+            "title": "/releases"
+          },
+          {
+            "path": "/drsamonline/The_Browser/deployments",
+            "count": 1,
+            "title": "/deployments"
+          },
+          {
+            "path": "/drsamonline/The_Browser/tree/main/src",
+            "count": 1,
+            "title": "/tree/main/src"
+          }
+        ]
+      },
+      "sui": {
+        "views": 3,
+        "uniques": 3,
+        "clones": 477,
+        "clone_uniques": 129,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 1
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/sui",
+            "count": 1,
+            "title": "Overview"
+          },
+          {
+            "path": "/drsamonline/sui/pulls",
+            "count": 1,
+            "title": "/pulls"
+          },
+          {
+            "path": "/drsamonline/sui/releases",
+            "count": 1,
+            "title": "/releases"
+          }
+        ]
+      },
+      "ziptastic": {
+        "views": 18,
+        "uniques": 2,
+        "clones": 1635,
+        "clone_uniques": 397,
+        "referrers": [
+          {
+            "from": "github.com",
+            "count": 3
+          },
+          {
+            "from": "drsamonline.github.io",
+            "count": 1
+          }
+        ],
+        "paths": [
+          {
+            "path": "/drsamonline/ziptastic",
+            "count": 5,
+            "title": "Overview"
+          },
+          {
+            "path": "/drsamonline/ziptastic/commit/36553e700fdd2f4af7bab57cbc7d7d1440a2c81d",
+            "count": 1,
+            "title": "/commit/36553e700fdd2f4af7bab57cbc7d7d1440a2c81d"
+          },
+          {
+            "path": "/drsamonline/ziptastic/commit/671619a7ab9cc92f0afab731b0c8326b34e0dcf7",
+            "count": 1,
+            "title": "/commit/671619a7ab9cc92f0afab731b0c8326b34e0dcf7"
+          },
+          {
+            "path": "/drsamonline/ziptastic/releases/tag/v1.4.2",
+            "count": 1,
+            "title": "/releases/tag/v1.4.2"
+          },
+          {
+            "path": "/drsamonline/ziptastic/tree/main/include/chimera",
+            "count": 1,
+            "title": "/tree/main/include/chimera"
+          }
+        ]
+      },
       "app-panchang": {
         "views": 1,
         "uniques": 1,
@@ -2719,20 +2872,6 @@
           }
         ]
       },
-      "NEO": {
-        "views": 1,
-        "uniques": 1,
-        "clones": 428,
-        "clone_uniques": 128,
-        "referrers": [],
-        "paths": [
-          {
-            "path": "/drsamonline/NEO",
-            "count": 1,
-            "title": "Overview"
-          }
-        ]
-      },
       "canteen-lan": {
         "views": 2,
         "uniques": 1,
@@ -2752,44 +2891,6 @@
           }
         ]
       },
-      "The_Browser": {
-        "views": 11,
-        "uniques": 3,
-        "clones": 1320,
-        "clone_uniques": 313,
-        "referrers": [
-          {
-            "from": "drsamonline.github.io",
-            "count": 2
-          },
-          {
-            "from": "github.com",
-            "count": 2
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/The_Browser",
-            "count": 6,
-            "title": "Overview"
-          },
-          {
-            "path": "/drsamonline/The_Browser/releases",
-            "count": 3,
-            "title": "/releases"
-          },
-          {
-            "path": "/drsamonline/The_Browser/deployments",
-            "count": 1,
-            "title": "/deployments"
-          },
-          {
-            "path": "/drsamonline/The_Browser/tree/main/src",
-            "count": 1,
-            "title": "/tree/main/src"
-          }
-        ]
-      },
       "MATERIA-MEDICA-BUILDER": {
         "views": 2,
         "uniques": 2,
@@ -2806,49 +2907,6 @@
             "path": "/drsamonline/MATERIA-MEDICA-BUILDER",
             "count": 2,
             "title": "Overview"
-          }
-        ]
-      },
-      "ziptastic": {
-        "views": 18,
-        "uniques": 2,
-        "clones": 1635,
-        "clone_uniques": 397,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 3
-          },
-          {
-            "from": "drsamonline.github.io",
-            "count": 1
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/ziptastic",
-            "count": 5,
-            "title": "Overview"
-          },
-          {
-            "path": "/drsamonline/ziptastic/commit/36553e700fdd2f4af7bab57cbc7d7d1440a2c81d",
-            "count": 1,
-            "title": "/commit/36553e700fdd2f4af7bab57cbc7d7d1440a2c81d"
-          },
-          {
-            "path": "/drsamonline/ziptastic/commit/671619a7ab9cc92f0afab731b0c8326b34e0dcf7",
-            "count": 1,
-            "title": "/commit/671619a7ab9cc92f0afab731b0c8326b34e0dcf7"
-          },
-          {
-            "path": "/drsamonline/ziptastic/releases/tag/v1.4.2",
-            "count": 1,
-            "title": "/releases/tag/v1.4.2"
-          },
-          {
-            "path": "/drsamonline/ziptastic/tree/main/include/chimera",
-            "count": 1,
-            "title": "/tree/main/include/chimera"
           }
         ]
       },
@@ -2978,25 +3036,6 @@
           {
             "path": "/drsamonline/BLINKTRANSFER",
             "count": 2,
-            "title": "Overview"
-          }
-        ]
-      },
-      "idle-city-ages-of-growth": {
-        "views": 7,
-        "uniques": 7,
-        "clones": 777,
-        "clone_uniques": 167,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 6
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/idle-city-ages-of-growth",
-            "count": 7,
             "title": "Overview"
           }
         ]
@@ -3655,35 +3694,6 @@
         "clone_uniques": 56,
         "referrers": [],
         "paths": []
-      },
-      "sui": {
-        "views": 3,
-        "uniques": 3,
-        "clones": 477,
-        "clone_uniques": 129,
-        "referrers": [
-          {
-            "from": "github.com",
-            "count": 1
-          }
-        ],
-        "paths": [
-          {
-            "path": "/drsamonline/sui",
-            "count": 1,
-            "title": "Overview"
-          },
-          {
-            "path": "/drsamonline/sui/pulls",
-            "count": 1,
-            "title": "/pulls"
-          },
-          {
-            "path": "/drsamonline/sui/releases",
-            "count": 1,
-            "title": "/releases"
-          }
-        ]
       },
       "tessera": {
         "views": 4,
@@ -5025,9 +5035,194 @@
   },
   "repos": [
     {
+      "name": "NEO",
+      "description": "NOVA — a statically typed, compiled systems programming language whose compiler lowers to C, JavaScript, Rust and WebAssembly.",
+      "pushed_at": "2026-11-18T06:42:26Z",
+      "homepage": "https://drsamonline.github.io/NEO/",
+      "html_url": "https://github.com/drsamonline/NEO",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "idle-city-ages-of-growth",
+      "description": "A single-file idle city-builder that grows from a Stone Age village into a Fusion Age world-city.",
+      "pushed_at": "2026-11-18T06:39:11Z",
+      "homepage": "https://drsamonline.github.io/idle-city-ages-of-growth/",
+      "html_url": "https://github.com/drsamonline/idle-city-ages-of-growth",
+      "download": "",
+      "category": "Games",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "The_Browser",
+      "description": "Aetheris — an experimental C++ browser engine on a Ladybird/SerenityOS-derived codebase, built to learn how rendering works. Not production-ready.",
+      "pushed_at": "2026-11-18T06:37:40Z",
+      "homepage": "https://drsamonline.github.io/The_Browser/",
+      "html_url": "https://github.com/drsamonline/The_Browser",
+      "download": "",
+      "category": "Utilities",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "sui",
+      "description": "Sui — verification-first, privacy-aware free-tier AI gateway. Free tiers, verified before use.",
+      "pushed_at": "2026-11-18T06:37:01Z",
+      "homepage": "https://drsamonline.github.io/sui/",
+      "html_url": "https://github.com/drsamonline/sui",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "ziptastic",
+      "description": "The CHCE native engine — a single binary with the codecs embedded.",
+      "pushed_at": "2026-11-18T05:49:00Z",
+      "homepage": "https://drsamonline.github.io/ziptastic/",
+      "html_url": "https://github.com/drsamonline/ziptastic",
+      "download": "",
+      "category": "HTML Apps",
+      "status": "5/5",
+      "status_tone": "ok",
+      "spark": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
       "name": "app-panchang",
       "description": "A daily Indian almanac — tithi, nakshatra, yoga, karana, rahu-kaal and muhurat, computed offline.",
-      "pushed_at": "2026-11-18T00:50:03Z",
+      "pushed_at": "2026-11-18T05:05:27Z",
       "homepage": "https://drsamonline.github.io/app-panchang/",
       "html_url": "https://github.com/drsamonline/app-panchang",
       "download": "",
@@ -5210,43 +5405,6 @@
       ]
     },
     {
-      "name": "NEO",
-      "description": "NOVA — a statically typed, compiled systems programming language whose compiler lowers to C, JavaScript, Rust and WebAssembly.",
-      "pushed_at": "2026-11-17T20:52:33Z",
-      "homepage": "https://drsamonline.github.io/NEO/",
-      "html_url": "https://github.com/drsamonline/NEO",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1,
-        0,
-        0,
-        1,
-        1,
-        1,
-        0,
-        1,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1,
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        0
-      ]
-    },
-    {
       "name": "canteen-lan",
       "description": "Order from your table over the room's own Wi-Fi — a LAN canteen board built with Forge.",
       "pushed_at": "2026-11-17T20:25:08Z",
@@ -5284,43 +5442,6 @@
       ]
     },
     {
-      "name": "The_Browser",
-      "description": "Aetheris — an experimental C++ browser engine on a Ladybird/SerenityOS-derived codebase, built to learn how rendering works. Not production-ready.",
-      "pushed_at": "2026-11-17T20:15:34Z",
-      "homepage": "https://drsamonline.github.io/The_Browser/",
-      "html_url": "https://github.com/drsamonline/The_Browser",
-      "download": "",
-      "category": "Utilities",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        1,
-        1,
-        1,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        0
-      ]
-    },
-    {
       "name": "MATERIA-MEDICA-BUILDER",
       "description": "Build your own materia medica and repertory — offline, private and yours to export.",
       "pushed_at": "2026-11-17T20:08:30Z",
@@ -5354,43 +5475,6 @@
         0,
         1,
         0,
-        0
-      ]
-    },
-    {
-      "name": "ziptastic",
-      "description": "The CHCE native engine — a single binary with the codecs embedded.",
-      "pushed_at": "2026-11-17T19:40:42Z",
-      "homepage": "https://drsamonline.github.io/ziptastic/",
-      "html_url": "https://github.com/drsamonline/ziptastic",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
         0
       ]
     },
@@ -5612,43 +5696,6 @@
         0,
         1,
         1,
-        1,
-        0
-      ]
-    },
-    {
-      "name": "idle-city-ages-of-growth",
-      "description": "A single-file idle city-builder that grows from a Stone Age village into a Fusion Age world-city.",
-      "pushed_at": "2026-11-17T16:14:57Z",
-      "homepage": "https://drsamonline.github.io/idle-city-ages-of-growth/",
-      "html_url": "https://github.com/drsamonline/idle-city-ages-of-growth",
-      "download": "",
-      "category": "Games",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        1,
-        0,
         1,
         0
       ]
@@ -7091,43 +7138,6 @@
         0,
         0,
         0,
-        1,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "sui",
-      "description": "Sui — verification-first, privacy-aware free-tier AI gateway. Free tiers, verified before use.",
-      "pushed_at": "2026-11-16T17:53:39Z",
-      "homepage": "https://drsamonline.github.io/sui/",
-      "html_url": "https://github.com/drsamonline/sui",
-      "download": "",
-      "category": "HTML Apps",
-      "status": "5/5",
-      "status_tone": "ok",
-      "spark": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
         1,
         0,
         0
@@ -10879,7 +10889,17 @@
       "avg": 4.7,
       "pushes": 144,
       "byrepo": {
+        "NEO": 1,
+        "idle-city-ages-of-growth": 1,
+        "audit": 1,
+        "The_Browser": 1,
+        "sui": 1,
+        "ziptastic": 1,
         "app-panchang": 1,
+        "dashboard": 1,
+        "forge": 1,
+        "Matneo": 1,
+        "knowledge": 1,
         "TTB": 1
       },
       "stars": 139,
