@@ -1,5 +1,5 @@
 {
-  "count": 26,
+  "count": 28,
   "runs": [
     {
       "id": "f2b8c1d47a90",
@@ -470,6 +470,42 @@
         "GitHub REST API rate-limited for both credentials (403, reset 2026-11-18T13:16:45Z): CI reads and workflow re-runs unavailable"
       ],
       "retries": 0
+    },
+    {
+      "id": "bb6dfeca49d7",
+      "at": "2026-11-18T17:05:57Z",
+      "workflow": "self-diagnose",
+      "outcome": "ok",
+      "note": "machinery check: 282 workflows, 28 scheduled, 18 errors, 7 not firing",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "01dc3334270f",
+      "at": "2026-11-19T18:45Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "build: none (queue empty, the 2 open P6 items need a Windows/C++ toolchain). advance: open-materia-medica (WORKLIST row 7 -> 16) - the search now answers a phrase whose words never co-occur and says so (search-core.js + 40 assertions in CI); 2 new content checks (served-asset parity, sw.js precache). CI green 44589765449. refresh: all four modes verified, DEGRADED [], 117 repos / 153 in the plan; dispatch still 403 (no actions:write, no connector) -> refresh-dispatch-dashboard and refresh-matneo-blog-dispatch DEAD-LETTERED at 3/3. health: 153 repos, 3 red on latest run, all known and none new (1 owner-ignored, 1 third-party libcss, 1 transient apt).",
+      "files": {
+        "open-materia-medica": [
+          "docs/play/assets/search-core.js",
+          "assets/search-core.js",
+          "tools/test-search.js",
+          "docs/play/search.html",
+          "docs/play/sw.js",
+          "sw.js",
+          "tools/check_content.py",
+          "tools/test_check_content.py",
+          ".github/workflows/content-check.yml"
+        ]
+      },
+      "advanced": [
+        "open-materia-medica"
+      ],
+      "errors": [],
+      "retries": 2
     }
   ],
   "lost_lines": []
