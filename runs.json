@@ -1,5 +1,5 @@
 {
-  "count": 28,
+  "count": 29,
   "runs": [
     {
       "id": "f2b8c1d47a90",
@@ -506,6 +506,39 @@
       ],
       "errors": [],
       "retries": 2
+    },
+    {
+      "id": "c4a1e0b7d2f9",
+      "at": "2026-11-20T18:31Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "build: none (queue empty; the 2 open P6 items still need a local Windows/C++/PowerShell toolchain). advance: idle-city-ages-of-growth (WORKLIST row 7 -> 16) - the ascension is now SCORED and Legacy is a 7-rank ladder (src/legacy.js, 42 assertions, suite 190, 3 mutations caught, v1.4.0 on main 36d4d3c, CI green). refresh: all four drsoam.py modes verified in the tree that owns each output, DEGRADED [] twice, 117 repos; dispatch still 403 (no WORKFLOWS permission) so the two dispatch items stay dead-lettered and were not retried. health: 158 repos, 133 success, 4 non-success all known/self-healed, nothing new broken, no attempt bumped.",
+      "files": {
+        "idle-city-ages-of-growth": [
+          "src/legacy.js",
+          "test/legacy.test.js",
+          "src/game.js",
+          "src/index.html",
+          "build/build.js",
+          "test/content.test.js",
+          "test/build.test.js",
+          "package.json",
+          "CHANGELOG.md",
+          "README.md",
+          "docs/GAMEPLAY.md",
+          "docs/index.html",
+          "index.html",
+          "idle-city.min.html",
+          "docs/play/index.html",
+          "docs/play/idle-city.min.html",
+          "MANIFEST.json"
+        ]
+      },
+      "advanced": [
+        "idle-city-ages-of-growth"
+      ],
+      "errors": [],
+      "retries": 0
     }
   ],
   "lost_lines": []
