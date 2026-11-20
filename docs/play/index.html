@@ -335,7 +335,7 @@ fetch("data.json",{cache:"no-store"}).then(function(r){return r.json()}).then(fu
   if(cm){
     var ct=cm.totals||{},cx=cm.external||{};
     var crows=(cm.repos||[]).map(function(r){
-      var nm=r.forks?('<a href="forks.html?repo='+encodeURIComponent(r.name)+'">'+esc(r.name)+'</a>'):esc(r.name);
+      var nm=(r.forks&&r.html_url)?('<a href="'+esc(r.html_url)+'/forks" target="_blank" rel="noopener">'+esc(r.name)+'</a>'):esc(r.name);
       return '<tr><td>'+nm+'</td><td>'+(r.stars||0)+'</td><td>'+(r.forks||0)+'</td><td>'+(r.watchers||0)+'</td></tr>';
     }).join("");
     $("communityPanel").innerHTML='<div class="kpis">'
@@ -348,7 +348,7 @@ fetch("data.json",{cache:"no-store"}).then(function(r){return r.json()}).then(fu
       +(crows?('<div class="tw"><table><thead><tr><th>Repo</th><th>Stars</th><th>Forks</th><th>Watchers</th></tr></thead><tbody>'+crows+'</tbody></table></div>'):'')
       +(((cx.items||[]).length)?('<p class="mut" style="margin:8px 0 0">Opened by others: '+cx.items.map(function(i){return '<a href="'+esc(i.url)+'" target="_blank" rel="noopener">'+esc(i.who)+' → '+esc(i.repo)+'</a>'}).join(' · ')+'</p>'):'')
       +(((d.history||[]).length>1)?('<div style="margin-top:10px">'+areaChart(d.history.map(function(h){return h.stars||0}),"#8b5cf6","stars over time")+'</div>'):'')
-      +'<p class="mut" style="margin:8px 0 0"><a href="network.html">Fork network ↗</a> · <a href="people.html">Opened by others ↗</a></p>';
+      ;
 
     var tr=d.traffic||null;
     if(tr&&tr.available){
@@ -416,11 +416,12 @@ fetch("data.json",{cache:"no-store"}).then(function(r){return r.json()}).then(fu
     var filtered=repos.filter(function(r){if(cat&&r.category!==cat)return false;return !q||r.name.toLowerCase().indexOf(q)>=0||(r.description||"").toLowerCase().indexOf(q)>=0});
     var slice=showAll?filtered:filtered.slice(0,LIMIT);
     $("repos").innerHTML=slice.map(function(r){
-      var links=[];if(r.homepage)links.push('<a href="'+esc(r.homepage)+'">page</a>');if(r.html_url)links.push('<a href="'+esc(r.html_url)+'">repo</a>');
+      var links=[];if(r.homepage)links.push('<a href="'+esc(r.homepage)+'">page</a>');
       var conf=r.status?'<span class="badge '+confTone(r.status)+'">'+esc(r.status)+'</span> ':"";
       var chip=r.category?'<span class="cat" style="background:'+catColour(r.category)+'">'+esc(r.category)+'</span>':"";
       var sp=spark(r.spark||[0],catColour(r.category));
-      return '<tr><td>'+conf+'<a href="repo.html?name='+encodeURIComponent(r.name)+'">'+esc(r.name)+'</a></td><td>'+esc(r.description)+'</td><td>'+chip+'</td><td>'+sp+'</td><td class="mut">'+fmt(r.pushed_at)+'</td><td>'+links.join(" · ")+'</td></tr>';
+      var nm=r.html_url?('<a href="'+esc(r.html_url)+'" target="_blank" rel="noopener">'+esc(r.name)+'</a>'):esc(r.name);
+      return '<tr><td>'+conf+nm+'</td><td>'+esc(r.description)+'</td><td>'+chip+'</td><td>'+sp+'</td><td class="mut">'+fmt(r.pushed_at)+'</td><td>'+links.join(" · ")+'</td></tr>';
     }).join("")||'<tr><td colspan="6" class="mut">No matches.</td></tr>';
   }
   renderRepos();

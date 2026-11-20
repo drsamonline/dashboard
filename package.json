@@ -4,7 +4,7 @@
   "private": true,
   "description": "Structure tests for the drsamonline system console.",
   "scripts": {
-    "test": "node tests/structure.test.js"
+    "test": "node tests/structure.test.js && node tests/links.test.js"
   },
   "devDependencies": {
     "jsdom": "^29.1.1"

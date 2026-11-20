@@ -1,7 +1,10 @@
 /* drsamonline console — a tiny service worker. Shell is cache-first, data is
    network-first (so the console installs and still opens offline). */
 var C = "dc-v1";
-var SHELL = ["./", "./index.html", "./repo.html", "./manifest.webmanifest", "./icon.svg"];
+// This root copy is not published: Pages serves /docs (see PAGES.json). repo.html
+// and a root index.html no longer exist, and cache.addAll() rejects the whole list
+// if one entry 404s - so this list is kept to files that are really there.
+var SHELL = ["./", "./index.html", "./manifest.webmanifest", "./icon.svg"];
 self.addEventListener("install", function (e) {
   e.waitUntil(caches.open(C).then(function (c) { return c.addAll(SHELL); }).then(function () { return self.skipWaiting(); }));
 });
