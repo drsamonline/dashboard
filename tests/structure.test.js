@@ -110,19 +110,30 @@ ok("the System health panel is capped so it cannot own the row", /\.panel\.cappe
 // 4. the summary is what you click to collapse
 ok("every <details> has a <summary>", [...doc.querySelectorAll("details")].every((d) => d.querySelector("summary")));
 
-// 5. THE APP IS THE SITE. There is no landing page, permanently - the owner's
-//    decision (2026-11-06, restated 2026-11-09): this console is for his own use
-//    and display, so docs/play/index.html is the entry point and the root has no
-//    page. Two things used to drift against that: a sweep restored docs/index.html
-//    as a "missing landing", and every link that pointed at the root 404'd. This
-//    asserts the declaration AND the consequence, so a future restore fails here
-//    rather than silently turning the console back into a two-page site.
+// 5. THE APP IS THE SITE; THE ROOT IS AN ALIAS. The owner's decision of 2026-11-06
+//    (restated 2026-11-09) was that docs/play/index.html is the entry point and the
+//    root has no page, so a sweep could not restore docs/index.html as a "missing
+//    landing". That produced a different bug: the root answered 404, and GitHub's
+//    "Visit site" button, the deployments panel and every old bookmark point at the
+//    root - so the owner kept landing on a 404 for a site that was working.
+//    2026-11-20: the root may exist, but ONLY as a redirect. This asserts the
+//    declaration, the redirect, and that the page carries no content of its own, so
+//    a future restore that grows the root into a second page fails here instead.
 const root = path.join(__dirname, "..");
 const declared = JSON.parse(fs.readFileSync(path.join(root, "PAGES.json"), "utf8"));
-ok("PAGES.json declares NO landing page", !declared.landing, "landing = " + JSON.stringify(declared.landing));
+const rootPage = path.join(root, "docs", "index.html");
+const rootHtml = fs.existsSync(rootPage) ? fs.readFileSync(rootPage, "utf8") : "";
+ok("PAGES.json declares the root as the landing alias", declared.landing === "docs/index.html", "landing = " + JSON.stringify(declared.landing));
 ok("PAGES.json declares the console as the app", declared.app === "docs/play/index.html", declared.app);
 ok("PAGES.json names the entry URL", /\/play\/$/.test(declared.entry || ""), declared.entry);
-ok("the root has no index.html (the app is the landing)", !fs.existsSync(path.join(root, "docs", "index.html")));
+ok("the root exists", fs.existsSync(rootPage));
+ok("the root redirects to the console (meta refresh)",
+   /http-equiv="refresh"[^>]*url=\.\/play\//i.test(rootHtml));
+ok("the root redirects to the console (script)", /location\.replace\("\.\/play\/"\)/.test(rootHtml));
+ok("the root canonical points at the console", /rel="canonical" href="https:\/\/drsamonline\.github\.io\/dashboard\/play\/"/.test(rootHtml));
+ok("the root is noindex (it is an alias, not a page)", /name="robots" content="noindex"/.test(rootHtml));
+ok("the root has no navigation of its own", !/<nav|<header|<h1/i.test(rootHtml));
+ok("the root carries no console markup", !/communityPanel|kiln|repoCount|data\.json/.test(rootHtml));
 ok("the 404 page sends the reader to the console, not back to the 404",
    /href="\.\/play\/"/.test(fs.readFileSync(path.join(root, "docs", "404.html"), "utf8")));
 

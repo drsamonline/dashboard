@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>drsamonline — system console</title>
+<!-- This page is an ALIAS, not a landing page. The console is docs/play/index.html;
+     the root exists only because GitHub's "Visit site" button and every old bookmark
+     point at the site root, and a 404 there reads as "the dashboard is broken".
+     Owner decision 2026-11-20, recorded in PAGES.json. It must stay this small: a
+     redirect with nothing to read, no navigation, no content of its own. -->
+<meta http-equiv="refresh" content="0; url=./play/" />
+<meta name="robots" content="noindex" />
+<link rel="canonical" href="https://drsamonline.github.io/dashboard/play/" />
+<style>
+  :root { --bg:#0b0d12; --ink:#eef1f6; --dim:#93a0b4; --acc:#8b5cf6; color-scheme: dark light; }
+  @media (prefers-color-scheme: light) { :root { --bg:#f7f8fa; --ink:#12161c; --dim:#5b6674; } }
+  body { margin:0; min-height:100vh; display:grid; place-items:center; text-align:center;
+         background:var(--bg); color:var(--ink); font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  p { color:var(--dim); margin:0; }
+  a { color:var(--acc); }
+</style>
+<script>location.replace("./play/");</script>
+</head>
+<body>
+<p>Opening the console — <a href="./play/">continue to drsamonline.github.io/dashboard/play/</a></p>
+</body>
+</html>

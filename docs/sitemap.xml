@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- The site root has NO page by design (PAGES.json: landing is null). Listing it
-       here told crawlers the entry point was a 404. The console at /play/ is the site. -->
+  <!-- The console at /play/ is the site. The root is a noindex redirect to it
+       (PAGES.json: landing is docs/index.html), so it is not listed: a crawler that
+       followed it here would only be told to go to /play/ anyway. -->
   <url><loc>https://drsamonline.github.io/dashboard/play/</loc><priority>1.0</priority></url>
 </urlset>

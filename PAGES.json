@@ -1,7 +1,7 @@
 {
   "_note": "Pages are set by hand, from the 2026-11-05 audit. A sweep must not restore anything listed in `deleted`, must not create a landing page where `landing` already points, and must not overwrite `landing` or `app`.",
   "manual": true,
-  "landing": null,
+  "landing": "docs/index.html",
   "app": "docs/play/index.html",
   "deleted": [
     {
@@ -23,19 +23,21 @@
       "path": "forks.html",
       "pid": "p081",
       "commit": "2c5a949e"
-    },
+    }
+  ],
+  "updated": "2026-11-20",
+  "landing_note": "The root is an ALIAS, not a landing page. docs/index.html is a redirect to docs/play/index.html and nothing else: no navigation, no content, noindex. It exists because GitHub's \"Visit site\" button, the Pages deployments panel and every old bookmark point at the site root, and a 404 there reads as \"the dashboard is broken\" - the owner hit it repeatedly (2026-11-20). A sweep may not grow this page: it must not gain sections, links or copy, and the console at docs/play/ stays the only real page. tests/structure.test.js asserts the redirect.",
+  "entry": "https://drsamonline.github.io/dashboard/play/",
+  "restored": [
     {
       "path": "index.html",
       "pid": "p082",
-      "commit": "2b1e8c7c"
+      "why": "superseded 2026-11-20: the root is a redirect to the console, not a page"
     },
     {
       "path": "docs/index.html",
       "pid": "owner decision 2026-11-06",
-      "commit": "see git log"
+      "why": "superseded 2026-11-20: the root is a redirect to the console, not a page"
     }
-  ],
-  "updated": "2026-11-06",
-  "landing_note": "No landing page by design. The dashboard is a single-user tool: the app at docs/play/ is the entry point and there is nothing to introduce. A sweep must not create one. The ROOT URL therefore answers 404 by design: https://drsamonline.github.io/dashboard/ has no index.html, and the console at docs/play/index.html is what every link must point at (entry, above). Anything that still links the root is wrong, not the page.",
-  "entry": "https://drsamonline.github.io/dashboard/play/"
+  ]
 }

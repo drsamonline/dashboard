@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.4 — 2026-11-20
+
+- **The site root stops answering 404.** `docs/index.html` is now a redirect to `docs/play/`, and
+  nothing else — no navigation, no content, `noindex`, canonical to the console. The 2026-11-06
+  decision that the root should have no page was made to stop a sweep restoring a "missing
+  landing"; what it actually produced was the owner landing on a 404 from GitHub's "Visit site"
+  button, the deployments panel and old bookmarks, for a site that was working. `PAGES.json`
+  records the new decision (`landing: docs/index.html`, the two root entries moved from `deleted`
+  to `restored`), and `tests/structure.test.js` now asserts the redirect, the canonical, the
+  noindex — and that the root never grows a nav, a heading or console markup of its own.
+
 ## 1.0.3 — 2026-11-20
 
 - **A returning reader now gets the current page, not the one they cached.** `docs/play/sw.js`
