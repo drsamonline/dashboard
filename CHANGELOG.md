@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.3 — 2026-11-20
+
+- **A returning reader now gets the current page, not the one they cached.** `docs/play/sw.js`
+  served the shell cache-first under a fixed cache name, so anyone who had opened the console
+  once kept their old `index.html` — still linking `repo.html` — long after the fix had shipped
+  and deployed. Navigations are network-first with the cache kept as the offline fallback, the
+  cache name is bumped to `dc-v3` so existing copies are replaced, and only `res.ok` responses
+  are stored (a 404 must not become the offline copy).
+
 ## 1.0.2 — 2026-11-20
 
 - **Clicking a repository no longer lands on a 404.** The 2026-11-05 page audit deleted
