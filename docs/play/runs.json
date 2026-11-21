@@ -1,5 +1,5 @@
 {
-  "count": 22,
+  "count": 30,
   "runs": [
     {
       "id": "f2b8c1d47a90",
@@ -413,6 +413,139 @@
       ],
       "errors": [],
       "retries": 0
+    },
+    {
+      "id": "9f320587dece",
+      "at": "2026-11-16T15:24:36Z",
+      "workflow": "kit-audit",
+      "outcome": "ok",
+      "note": "scheduled kit audit: {'repos_scanned': 89, 'dead_vendored_kits': 1, 'signals': 115, 'unreadable': 0} (dead vendored kits are a FACT; signals are hints to look)",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "f18c65f384db",
+      "at": "2026-11-16T16:38:39Z",
+      "workflow": "repo-learning",
+      "outcome": "ok",
+      "note": "weekly lessons from the record: 23 runs, 115 in the harvest queue; detectors, the harvest queue, and work that repeats",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "290fb2a61e18",
+      "at": "2026-11-17T16:44:21Z",
+      "workflow": "code-compression",
+      "outcome": "ok",
+      "note": "size report: 19 pages, 1527 KB raw, 334 KB gzip, 1 over budget",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "92aa4fa59ce9",
+      "at": "2026-11-18T12:47Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "advance: lexora P3.7 (zh-1 + the tokenizer recorded per document, ADR-0024) — 732/14, CI green 44307101982; health: 69 repos scanned API-free (the REST API was rate-limited for both credentials), 3 red on main head (All4ONE, lockhtml, app-encrypted-case-log) reported not patched, attempts 1/3 each",
+      "files": {
+        "lexora": [
+          "packages/lexora-lang-zh/",
+          "src/lexora/catalog.py",
+          "src/lexora/cli.py",
+          "tests/test_language_chinese_plugin.py",
+          "tests/test_catalog_tokenizer.py",
+          "docs/ADR/ADR-0024-tokenizer-recording.md"
+        ]
+      },
+      "advanced": [
+        "lexora"
+      ],
+      "errors": [
+        "GitHub REST API rate-limited for both credentials (403, reset 2026-11-18T13:16:45Z): CI reads and workflow re-runs unavailable"
+      ],
+      "retries": 0
+    },
+    {
+      "id": "bb6dfeca49d7",
+      "at": "2026-11-18T17:05:57Z",
+      "workflow": "self-diagnose",
+      "outcome": "ok",
+      "note": "machinery check: 282 workflows, 28 scheduled, 18 errors, 7 not firing",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "01dc3334270f",
+      "at": "2026-11-19T18:45Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "build: none (queue empty, the 2 open P6 items need a Windows/C++ toolchain). advance: open-materia-medica (WORKLIST row 7 -> 16) - the search now answers a phrase whose words never co-occur and says so (search-core.js + 40 assertions in CI); 2 new content checks (served-asset parity, sw.js precache). CI green 44589765449. refresh: all four modes verified, DEGRADED [], 117 repos / 153 in the plan; dispatch still 403 (no actions:write, no connector) -> refresh-dispatch-dashboard and refresh-matneo-blog-dispatch DEAD-LETTERED at 3/3. health: 153 repos, 3 red on latest run, all known and none new (1 owner-ignored, 1 third-party libcss, 1 transient apt).",
+      "files": {
+        "open-materia-medica": [
+          "docs/play/assets/search-core.js",
+          "assets/search-core.js",
+          "tools/test-search.js",
+          "docs/play/search.html",
+          "docs/play/sw.js",
+          "sw.js",
+          "tools/check_content.py",
+          "tools/test_check_content.py",
+          ".github/workflows/content-check.yml"
+        ]
+      },
+      "advanced": [
+        "open-materia-medica"
+      ],
+      "errors": [],
+      "retries": 2
+    },
+    {
+      "id": "c4a1e0b7d2f9",
+      "at": "2026-11-20T18:31Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "build: none (queue empty; the 2 open P6 items still need a local Windows/C++/PowerShell toolchain). advance: idle-city-ages-of-growth (WORKLIST row 7 -> 16) - the ascension is now SCORED and Legacy is a 7-rank ladder (src/legacy.js, 42 assertions, suite 190, 3 mutations caught, v1.4.0 on main 36d4d3c, CI green). refresh: all four drsoam.py modes verified in the tree that owns each output, DEGRADED [] twice, 117 repos; dispatch still 403 (no WORKFLOWS permission) so the two dispatch items stay dead-lettered and were not retried. health: 158 repos, 133 success, 4 non-success all known/self-healed, nothing new broken, no attempt bumped.",
+      "files": {
+        "idle-city-ages-of-growth": [
+          "src/legacy.js",
+          "test/legacy.test.js",
+          "src/game.js",
+          "src/index.html",
+          "build/build.js",
+          "test/content.test.js",
+          "test/build.test.js",
+          "package.json",
+          "CHANGELOG.md",
+          "README.md",
+          "docs/GAMEPLAY.md",
+          "docs/index.html",
+          "index.html",
+          "idle-city.min.html",
+          "docs/play/index.html",
+          "docs/play/idle-city.min.html",
+          "MANIFEST.json"
+        ]
+      },
+      "advanced": [
+        "idle-city-ages-of-growth"
+      ],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "27eb5d771db4",
+      "at": "2026-11-21T06:39Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "build: none (queue empty; the 2 open P6 items still need a local Windows/C++/PowerShell toolchain, and rows 1-6 are toolchain- or owner-blocked). advance: neon-engine (WORKLIST row 7 -> 16) - AUTHORED BEATS, the roadmap item 1.25.0 left open: a set-piece phase can open with an event (a line) or a placed objective (a spot the player must stand on before the phase's metric counts at all, via reach()); 102 assertions, five mutations red, PR #5 with CI green. refresh: all four drsoam.py modes verified in the tree that owns each output (dashboard 117 repos, DEGRADED []; store 10 products identical; posts 10 vs 4 published; plan block regenerated) - PUBLISHING BLOCKED, dispatch 403. health: 104 green, 2 red (nodus static analysis, kinemorph dependabot PR), 8 actions endpoints unreadable - and `gh run rerun` is 403 too, so nothing could be repaired."
     }
   ],
   "lost_lines": []
