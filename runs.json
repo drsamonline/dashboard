@@ -1,5 +1,5 @@
 {
-  "count": 29,
+  "count": 30,
   "runs": [
     {
       "id": "f2b8c1d47a90",
@@ -539,6 +539,13 @@
       ],
       "errors": [],
       "retries": 0
+    },
+    {
+      "id": "27eb5d771db4",
+      "at": "2026-11-21T06:39Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "build: none (queue empty; the 2 open P6 items still need a local Windows/C++/PowerShell toolchain, and rows 1-6 are toolchain- or owner-blocked). advance: neon-engine (WORKLIST row 7 -> 16) - AUTHORED BEATS, the roadmap item 1.25.0 left open: a set-piece phase can open with an event (a line) or a placed objective (a spot the player must stand on before the phase's metric counts at all, via reach()); 102 assertions, five mutations red, PR #5 with CI green. refresh: all four drsoam.py modes verified in the tree that owns each output (dashboard 117 repos, DEGRADED []; store 10 products identical; posts 10 vs 4 published; plan block regenerated) - PUBLISHING BLOCKED, dispatch 403. health: 104 green, 2 red (nodus static analysis, kinemorph dependabot PR), 8 actions endpoints unreadable - and `gh run rerun` is 403 too, so nothing could be repaired."
     }
   ],
   "lost_lines": []
