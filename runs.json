@@ -1,5 +1,5 @@
 {
-  "count": 30,
+  "count": 31,
   "runs": [
     {
       "id": "f2b8c1d47a90",
@@ -546,6 +546,21 @@
       "workflow": "forge-cycle",
       "outcome": "ok",
       "note": "build: none (queue empty; the 2 open P6 items still need a local Windows/C++/PowerShell toolchain, and rows 1-6 are toolchain- or owner-blocked). advance: neon-engine (WORKLIST row 7 -> 16) - AUTHORED BEATS, the roadmap item 1.25.0 left open: a set-piece phase can open with an event (a line) or a placed objective (a spot the player must stand on before the phase's metric counts at all, via reach()); 102 assertions, five mutations red, PR #5 with CI green. refresh: all four drsoam.py modes verified in the tree that owns each output (dashboard 117 repos, DEGRADED []; store 10 products identical; posts 10 vs 4 published; plan block regenerated) - PUBLISHING BLOCKED, dispatch 403. health: 104 green, 2 red (nodus static analysis, kinemorph dependabot PR), 8 actions endpoints unreadable - and `gh run rerun` is 403 too, so nothing could be repaired."
+    },
+    {
+      "at": "2026-11-22T00:30Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "build: none - POST /orgs/drsamonline/repos answers 404 Not Found with the App credential, so no spec'd NEW app or kit can be created; there is no GITHUB_* connector tool in this session. advance: open-materia-medica (WORKLIST row 7 -> 15) - a remedy NAME typed one letter wrong (beladonna, nux-vomica, belladnona) is now offered instead of refused: run() carries a suggest list of candidate names one edit away (bounded Damerau-Levenshtein, cap 5), each naming the word it answers for, filled only when the query found nothing and never counted as a hit; 65 assertions (was 40), ten mutations red including the two that survived first; sw.js omm-v24 -> omm-v25; VERSION 1.1.0; PR https://github.com/drsamonline/open-materia-medica/pull/7 CI green. refresh: verified - all four modes of drsoam.py ran in the repo that owns each output with a gh-backed _get, DEGRADED [] and 0 failed fetches (118 repos, 10 products, 10 posts, plan block); publishing not attempted, the dispatches are dead-lettered 3/3 and the App has no WORKFLOWS permission (403). health: 138 green, 7 no-runs, 11 Actions-API 403, 1 queued (this PR), 2 red and both already settled (drsamonline pages, ignored by the owner; nodus Static Analysis, dead-lettered). 0 re-runs, 0 repairs. access: PROMPTS/access.md corrected - the App now has admin+push on the private forge, so the connector is no longer the only write path (and is not available at all here); repo create, workflow dispatch and description edits remain 403/404.",
+      "items": [
+        {
+          "item": "advance-open-materia-medica-spelling",
+          "repo": "open-materia-medica",
+          "result": "pr-open",
+          "pr": "https://github.com/drsamonline/open-materia-medica/pull/7"
+        }
+      ],
+      "id": "cad5dc72837d"
     }
   ],
   "lost_lines": []
