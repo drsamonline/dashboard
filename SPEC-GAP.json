@@ -1,7 +1,464 @@
 {
   "total": 152,
-  "specced": 152,
-  "unspecced": 0,
-  "unspecced_pct": 0,
-  "list": []
+  "specced": 38,
+  "unspecced": 114,
+  "unspecced_pct": 75,
+  "list": [
+    {
+      "n": "4",
+      "app": "Mimic"
+    },
+    {
+      "n": "5",
+      "app": "Palate"
+    },
+    {
+      "n": "7",
+      "app": "Socratic"
+    },
+    {
+      "n": "8",
+      "app": "Steelman"
+    },
+    {
+      "n": "9",
+      "app": "Undertow"
+    },
+    {
+      "n": "10",
+      "app": "Clip Stack"
+    },
+    {
+      "n": "12",
+      "app": "Form Filler"
+    },
+    {
+      "n": "14",
+      "app": "Report Assembler"
+    },
+    {
+      "n": "15",
+      "app": "Kundli"
+    },
+    {
+      "n": "16",
+      "app": "Moonphase"
+    },
+    {
+      "n": "17",
+      "app": "Panchang"
+    },
+    {
+      "n": "18",
+      "app": "Runes"
+    },
+    {
+      "n": "19",
+      "app": "Tarot Ledger"
+    },
+    {
+      "n": "21",
+      "app": "Horizon"
+    },
+    {
+      "n": "22",
+      "app": "Rainroom"
+    },
+    {
+      "n": "23",
+      "app": "Zen Garden"
+    },
+    {
+      "n": "25",
+      "app": "Primary Source"
+    },
+    {
+      "n": "27",
+      "app": "Red Flag"
+    },
+    {
+      "n": "28",
+      "app": "Rumor Map"
+    },
+    {
+      "n": "29",
+      "app": "Fuel Log"
+    },
+    {
+      "n": "30",
+      "app": "Handoff"
+    },
+    {
+      "n": "32",
+      "app": "Today Card"
+    },
+    {
+      "n": "33",
+      "app": "Where's My"
+    },
+    {
+      "n": "34",
+      "app": "Grimoire"
+    },
+    {
+      "n": "35",
+      "app": "Mantra"
+    },
+    {
+      "n": "36",
+      "app": "Sacred Geometry"
+    },
+    {
+      "n": "38",
+      "app": "Tree of Life"
+    },
+    {
+      "n": "39",
+      "app": "Accent Oracle"
+    },
+    {
+      "n": "41",
+      "app": "Dice of Chaos"
+    },
+    {
+      "n": "42",
+      "app": "Portrait Oracle"
+    },
+    {
+      "n": "43",
+      "app": "Time Machine"
+    },
+    {
+      "n": "44",
+      "app": "Dungeon of One"
+    },
+    {
+      "n": "45",
+      "app": "Hex"
+    },
+    {
+      "n": "46",
+      "app": "Idle Empire"
+    },
+    {
+      "n": "48",
+      "app": "Nightfall"
+    },
+    {
+      "n": "49",
+      "app": "Thread"
+    },
+    {
+      "n": "51",
+      "app": "Counterfactual"
+    },
+    {
+      "n": "52",
+      "app": "Decision Journal"
+    },
+    {
+      "n": "53",
+      "app": "Friction"
+    },
+    {
+      "n": "54",
+      "app": "Peripheral Vision"
+    },
+    {
+      "n": "56",
+      "app": "Blackboard"
+    },
+    {
+      "n": "57",
+      "app": "Canteen"
+    },
+    {
+      "n": "58",
+      "app": "Chalk"
+    },
+    {
+      "n": "59",
+      "app": "Choir"
+    },
+    {
+      "n": "60",
+      "app": "Dropzone"
+    },
+    {
+      "n": "62",
+      "app": "Lantern"
+    },
+    {
+      "n": "65",
+      "app": "Vault"
+    },
+    {
+      "n": "66",
+      "app": "Family Medicine"
+    },
+    {
+      "n": "68",
+      "app": "Paper Trail"
+    },
+    {
+      "n": "69",
+      "app": "Subscriptions"
+    },
+    {
+      "n": "70",
+      "app": "Wardrobe"
+    },
+    {
+      "n": "72",
+      "app": "Panic Harbor"
+    },
+    {
+      "n": "73",
+      "app": "Sleep Ledger"
+    },
+    {
+      "n": "74",
+      "app": "Tether"
+    },
+    {
+      "n": "76",
+      "app": "Desk Booking"
+    },
+    {
+      "n": "77",
+      "app": "Expense Snap"
+    },
+    {
+      "n": "80",
+      "app": "Visitor"
+    },
+    {
+      "n": "81",
+      "app": "Antiphon"
+    },
+    {
+      "n": "84",
+      "app": "Cairn"
+    },
+    {
+      "n": "85",
+      "app": "Chronofuge"
+    },
+    {
+      "n": "86",
+      "app": "Fermata"
+    },
+    {
+      "n": "87",
+      "app": "Herbarium"
+    },
+    {
+      "n": "88",
+      "app": "Jacquard"
+    },
+    {
+      "n": "89",
+      "app": "Kiln"
+    },
+    {
+      "n": "91",
+      "app": "Marginalia"
+    },
+    {
+      "n": "98",
+      "app": "Barter"
+    },
+    {
+      "n": "99",
+      "app": "Beam"
+    },
+    {
+      "n": "101",
+      "app": "Chirp Key"
+    },
+    {
+      "n": "102",
+      "app": "Constellation"
+    },
+    {
+      "n": "103",
+      "app": "Hush"
+    },
+    {
+      "n": "104",
+      "app": "Last Letter"
+    },
+    {
+      "n": "105",
+      "app": "Prism"
+    },
+    {
+      "n": "107",
+      "app": "Sonar Drop"
+    },
+    {
+      "n": "108",
+      "app": "Sound Map"
+    },
+    {
+      "n": "109",
+      "app": "Tap"
+    },
+    {
+      "n": "110",
+      "app": "Time Capsule"
+    },
+    {
+      "n": "111",
+      "app": "Batch"
+    },
+    {
+      "n": "112",
+      "app": "Context Switch Guard"
+    },
+    {
+      "n": "113",
+      "app": "Deadline Dial"
+    },
+    {
+      "n": "115",
+      "app": "Inbox Coach"
+    },
+    {
+      "n": "116",
+      "app": "Meeting Autopsy"
+    },
+    {
+      "n": "117",
+      "app": "Reading Digest"
+    },
+    {
+      "n": "118",
+      "app": "Standup"
+    },
+    {
+      "n": "119",
+      "app": "Two-Minute"
+    },
+    {
+      "n": "120",
+      "app": "Blind Rank"
+    },
+    {
+      "n": "122",
+      "app": "Hotseat"
+    },
+    {
+      "n": "123",
+      "app": "Same Picture"
+    },
+    {
+      "n": "124",
+      "app": "Screenshot Sleuth"
+    },
+    {
+      "n": "125",
+      "app": "Beacon Watcher"
+    },
+    {
+      "n": "126",
+      "app": "Harvest"
+    },
+    {
+      "n": "128",
+      "app": "Encrypted Case Log"
+    },
+    {
+      "n": "129",
+      "app": "Thermals"
+    },
+    {
+      "n": "130",
+      "app": "Poet's Studio"
+    },
+    {
+      "n": "131",
+      "app": "Image Toolkit"
+    },
+    {
+      "n": "132",
+      "app": "Organon Reader"
+    },
+    {
+      "n": "134",
+      "app": "Endpoints"
+    },
+    {
+      "n": "135",
+      "app": "Pull the Plug"
+    },
+    {
+      "n": "137",
+      "app": "Chart Bench"
+    },
+    {
+      "n": "138",
+      "app": "Palette Doctor"
+    },
+    {
+      "n": "139",
+      "app": "Diff Bench"
+    },
+    {
+      "n": "140",
+      "app": "Cron Desk"
+    },
+    {
+      "n": "141",
+      "app": "Regex Bench"
+    },
+    {
+      "n": "142",
+      "app": "Base Bench"
+    },
+    {
+      "n": "143",
+      "app": "Shift Ledger"
+    },
+    {
+      "n": "144",
+      "app": "Dose Card"
+    },
+    {
+      "n": "145",
+      "app": "Growth Chart"
+    },
+    {
+      "n": "146",
+      "app": "Vaccine Schedule"
+    },
+    {
+      "n": "147",
+      "app": "Prescription Pad"
+    },
+    {
+      "n": "148",
+      "app": "Referral Note"
+    },
+    {
+      "n": "149",
+      "app": "Stock Card"
+    },
+    {
+      "n": "150",
+      "app": "Attendance Sheet"
+    },
+    {
+      "n": "151",
+      "app": "Fee Ledger"
+    },
+    {
+      "n": "152",
+      "app": "Rota Planner"
+    },
+    {
+      "n": "153",
+      "app": "Consent Book"
+    }
+  ]
 }
