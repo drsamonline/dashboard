@@ -1,5 +1,5 @@
 {
-  "count": 31,
+  "count": 33,
   "runs": [
     {
       "id": "f2b8c1d47a90",
@@ -561,6 +561,34 @@
         }
       ],
       "id": "cad5dc72837d"
+    },
+    {
+      "id": "185754296073",
+      "at": "2026-11-23T18:52:46Z",
+      "workflow": "repo-learning",
+      "outcome": "ok",
+      "note": "weekly lessons from the record: 31 runs, 115 in the harvest queue; detectors, the harvest queue, and work that repeats",
+      "files": {},
+      "advanced": [],
+      "errors": [],
+      "retries": 0
+    },
+    {
+      "id": "95481346173",
+      "at": "2026-11-24T00:40:00Z",
+      "workflow": "forge-cycle",
+      "outcome": "ok",
+      "note": "build=none (BACKLOG 57/59, both open items need an absent Windows toolchain; repo creation 404) | advance=All4ONE amortisation-schedule, the 408th tool (25 assertions, 10/10 mutations red) PR https://github.com/drsamonline/All4ONE/pull/30 | refresh=four modes verified DEGRADED=[] (nothing publishable: dispatch 403) | health=app-jacquard ghost ink 1.63:1 fixed + guarded, PR https://github.com/drsamonline/app-jacquard/pull/4; licence-badge gate (15/149) and UniRep 503 diagnosed and left for the owner",
+      "files": {
+        "PROGRESS.log": "appended",
+        "STATE.json": "updated",
+        "WORKLIST.md": "rotated"
+      },
+      "advanced": [
+        "All4ONE"
+      ],
+      "errors": [],
+      "retries": 0
     }
   ],
   "lost_lines": []
